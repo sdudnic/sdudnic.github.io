@@ -1,8 +1,10 @@
----
-permalink: /covid19
-layout: default
----
 
+---
+layout: page
+title: covid-19
+permalink: /about/
+---
+# Coronavirus cases evolution in France
 <html>
 
 <head>

@@ -1,3 +1,9 @@
+---
+layout: page
+title: cv
+permalink: /cv/
+---
+
 # Serge Dudnic  
 ingénieur d’étude et dev .net certifié; en .NET depuis 2005
 

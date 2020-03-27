@@ -1,9 +1,9 @@
-
 ---
 layout: page
 title: covid-19
 permalink: /about/
 ---
+
 # Coronavirus cases evolution in France
 <html>
 

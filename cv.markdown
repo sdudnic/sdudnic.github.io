@@ -1,5 +1,5 @@
-ingénieur d’étude et dev .net certifié   
-en .NET depuis 2005
+# Serge Dudnic  
+ingénieur d’étude et dev .net certifié; en .NET depuis 2005
 
 ## Formation
 *	2012 : Cours "SQL Server 2008, mise en œuvre", ORSYS 

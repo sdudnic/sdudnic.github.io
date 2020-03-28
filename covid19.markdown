@@ -1,10 +1,8 @@
 ---
 layout: page
-title: covid-19
-permalink: /about/
+title: Coronavirus cases evolution in last 7 days in France
+permalink: /covid-19/
 ---
-
-# Coronavirus cases evolution in France
 
 <html>
 

@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: bodega lu serge
-
+lang: ro
 description: >- # this means to ignore newlines until "baseurl:"
   La un păhar de vorbă între Moldoveni...
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -31,6 +31,10 @@ github_username:  sdudnic
 theme: minima
 plugins:
   - jekyll-feed
+
+header_pages:
+  - cv.md
+  - covid19.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

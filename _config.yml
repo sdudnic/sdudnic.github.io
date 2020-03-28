@@ -35,7 +35,7 @@ plugins:
 
 header_pages:
   - cv.md
-  - /covid-19
+  - covid-19
 
 # Exclude from processing.
 # The following items will not be processed, by default.

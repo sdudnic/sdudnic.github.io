@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 # Coronavirus cases evolution in France
+
 <html>
 
 <head>
@@ -12,6 +13,22 @@ permalink: /about/
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
+
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=France",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+                "x-rapidapi-key": "947bb4b211msh8eec36febfc74aep15de04jsn7439704837ab"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+
         const daysNumber = 7;
 
         var startDate = new Date(Date.now());
@@ -91,6 +108,7 @@ permalink: /about/
             getConfirmed().then(getRecovered).then(getDeaths).then(finalize);
         }
     </script>
+
 </head>
 
 <body>

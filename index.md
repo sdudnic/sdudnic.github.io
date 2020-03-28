@@ -4,3 +4,4 @@
 
 layout: home
 ---
+welcome to the blog page of Serge

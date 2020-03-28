@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: bodega lu sergee
+title: bodega lu serge
 lang: ro
 timezone: Europe/Paris
 description: La un păhar de vorbă între Moldoveni...
@@ -35,7 +35,7 @@ plugins:
 
 header_pages:
   - cv.md
-  - covid19.md
+  - /covid-19
 
 # Exclude from processing.
 # The following items will not be processed, by default.

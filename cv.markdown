@@ -10,12 +10,14 @@ ingénieur d’étude et dev .net certifié; en .NET depuis 2005
 ## Formation
 *	2012 : Cours "SQL Server 2008, mise en œuvre", ORSYS 
 *	2005 : Ingénieur Diplômé (BAC+5) en Technologies Informationnelles Filière Francophone Informatique, Université Technique de Moldova
+
 ### Certifications	
 * 2019 : HTML/CSS, JavaScript, C# and SQL (TestDome)
 * 70-486 : Developing ASP.NET MVC 4 Web Applications (Microsoft)
 * 70-480 : Programming in HTML5 with JavaScript and CSS3 (Microsoft)
 * 2012 : Visual Basic 2008 Fundamentals (Brainbench)
 * 2009 : C# (Brainbench)
+
 ### Langues	
 * Anglais : Courant, Russe, Moldave (Roumain) : Natale
 

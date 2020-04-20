@@ -1,7 +1,7 @@
 ---
 layout: page
 title: cv
-permalink: /marina/
+permalink: /marina
 ---
 
 # Marina Pihurov  

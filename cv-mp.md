@@ -4,7 +4,7 @@ title: Marina Pihurov
 permalink: /marina
 ---
 
-> Food Quality Engineer
+> **Food Quality Engineer**
 
 ## Education
 * _Oct 18 - Jun 20_: Master in Food Engineering (EQF Level 7), Politehnica University of Bucharest (Romania)

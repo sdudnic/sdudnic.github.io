@@ -7,42 +7,38 @@ permalink: /marina
 _**food quality engineer**_
 
 ## Education
-*	Oct 18 - Jun 20: Master in Food Engineering (EQF Level 7), Politehnica University of Bucharest (Romania)
-*	Sep 14 - Jul 18: Bachelor's Degree (EQF Level 6) in Food Engineering, Consumer and Environmental Protection, Aurel Vlaicu University, Arad (Romania)
-*	Sep 15 - Feb 16: Erasmus Exchange, Food Biological Engineering, Bachelor's Degree in Food Engineering, Instituto Politécnico de Castelo Branco (Portugal)
+*	_Oct 18 - Jun 20_: Master in Food Engineering (EQF Level 7), Politehnica University of Bucharest (Romania)
+*	_Sep 14 - Jul 18_: Bachelor's Degree (EQF Level 6) in Food Engineering, Consumer and Environmental Protection, Aurel Vlaicu University, Arad (Romania)
+*	_Sep 15 - Feb 16_: Erasmus Exchange, Food Biological Engineering, Bachelor's Degree in Food Engineering, Instituto Politécnico de Castelo Branco (Portugal)
 
 ### Languages
-* French, Portughese: Beginner; English : Proficient; Russian, Romanian: Native.
+* _French, Portughese_: Beginner; _English_ : Proficient; _Russian, Romanian_: Native.
 
-## IT Skills
+### IT Skills
 * Office: Word, Excel, PowerPoint
 * Stats: SuperStat, Bunga, Ciunga
 
 ## Work experience
-### Food Microbiology Technician at Institute of Food Research, Buharest (Romania)
-_Mars 20 - ..._ Developpement et Maintenance de la solution ERP Atimeüs
- * Ajout des nouvelles fonctionnalités ;
- * Suivi des tickets.
+### Institute of Food Research, Bucharest (Romania)
+_Jul 20 - ..._ Food Microbiology Technician : Project Name
+ * Task one;
+ * Task two.
  
-_Environnement_	Team 4 pers., ASP.NET MVC 5; Azure DevOps; VueJS;
+_Environnement_	Team X people., technology 1, technology 2;
 
-### FNAC DARTY
+### The National Institute of Research, Bucharest (Romania)
 _Janv. – Mars 20_ Développement et maintenance du site fnac.com (équipe "Care" du Fnac Digital Factory) 
- * Ajout des nouvelles fonctionnalités sur les Web API ;
- * Ecriture systématique des tests unitaires des API et d’intégration (Postman) ;
- * Revues de code systématiques ;
- * Exécution des tests de non-régression (TNR) et rapports de bogues.  
+ * Task one;
+ * Task two.
  
-_Environnement_	Team 12 pers. (PO, Tech-lead, testeurs, front + back devs), ASP.NET Core 2.2, ASP.NET MVC; Git, GitLab, TFS
+_Environnement_	Team X pers., technology 1, technology 2;
 
-### CATALINA MARKETING
+### The Institute for Research, Development & Innovation in Natural & Technical Sciences, Aurel Vlaicu University, Arad (Romania) 
 _Sept. – Oct. 19_ Développeur : développement et ajout des fonctionnalités sur un nouvel outil de gestion des rapports PowerBI 
-
-* Ajout des fonctionnalités sur un nouvel outil de gestion des rapports PowerBI (ajout /modification des nouveaux utilisateurs/rôles, envoi de mails, ajout/modification des nouveaux rapports) ;
-* Ajout et chargement des rapports PowerBI spécifiques à un utilisateur ;
-* Travail en équipe avec un chef de projet.  
-
-_Environnement_	ASP.NET/EF - Core 2.2, JS/HTML5/CSS3, VS 2019, SQL Server Azure (2014)/SSMS 18, VSTS/DevOps, OAuth, PowerBI
+ * Task one;
+ * Task two.
+ 
+_Environnement_	Team 4 pers., technology 1, technology 2;
 
 
 ## Stages

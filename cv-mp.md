@@ -4,12 +4,11 @@ title: Marina Pihurov
 permalink: /marina
 ---
 
-_**food quality engineer**_
+_**Food Quality Engineer**_
 
 ## Education
-*	_Oct 18 - Jun 20_: Master in Food Engineering (EQF Level 7), Politehnica University of Bucharest (Romania)
-*	_Sep 14 - Jul 18_: Bachelor's Degree (EQF Level 6) in Food Engineering, Consumer and Environmental Protection, Aurel Vlaicu University, Arad (Romania)
-*	_Sep 15 - Feb 16_: Erasmus Exchange, Food Biological Engineering, Bachelor's Degree in Food Engineering, Instituto Politécnico de Castelo Branco (Portugal)
+* _Oct 18 - Jun 20_: Master in Food Engineering (EQF Level 7), Politehnica University of Bucharest (Romania)
+* _Sep 14 - Jul 18_: Bachelor's Degree (EQF Level 6) in Food Engineering, Consumer and Environmental Protection, Aurel Vlaicu University, Arad (Romania)
 
 ### Languages
 * _French, Portughese_: Beginner; _English_ : Proficient; _Russian, Romanian_: Native.
@@ -18,42 +17,47 @@ _**food quality engineer**_
 * Office: Word, Excel, PowerPoint
 * Stats: SuperStat, Bunga, Ciunga
 
-## Work experience
+## Work Experience
 ### Institute of Food Research, Bucharest (Romania)
-_Jul 20 - ..._ Food Microbiology Technician : Project Name
+_Jul 20 - ..._ Food Microbiology Technician | Project Name
  * Task one;
  * Task two.
  
-_Environnement_	Team X people., technology 1, technology 2;
+_Environnement_ Team X people., technology 1, technology 2;
 
 ### The National Institute of Research, Bucharest (Romania)
-_Janv. – Mars 20_ Développement et maintenance du site fnac.com (équipe "Care" du Fnac Digital Factory) 
+_Jan – Jun 19_ Engineer in Food Industry | Development for Machines and Installations Designed to Agriculture and Food Industry 
  * Task one;
  * Task two.
  
-_Environnement_	Team X pers., technology 1, technology 2;
+_Environnement_ Team X pers., technology 1, technology 2;
 
 ### The Institute for Research, Development & Innovation in Natural & Technical Sciences, Aurel Vlaicu University, Arad (Romania) 
-_Sept. – Oct. 19_ Développeur : développement et ajout des fonctionnalités sur un nouvel outil de gestion des rapports PowerBI 
+_Sept. – Oct. 19_ Intern? | Project name
  * Task one;
  * Task two.
  
-_Environnement_	Team 4 pers., technology 1, technology 2;
+_Environnement_ Team X pers., technology 1, technology 2;
 
+### Sanitary Veterinary and Food Safety Directorate of Arad (Romania)
+_Jun – Jul 17_ Intern? | Project name
+ * Task one;
+ * Task two.
+ 
+_Environnement_ Team X pers., technology 1, technology 2;
 
-## Stages
-### Pentalog (Orléans)
-_2005_	Stagiaire : Réalisation du serveur-client léger web local pour l'utilisation en déconnecté sur l'intranet de l'entreprise.
-* Réalisation d'un serveur-client léger web local pour le réseau local intranet: a mail, news & planning local intégrateur pour travail en déconnecté; 
-* Intégration des applications desktop (WinForms), Web Services, Windows Services, Applications de déploiement; Développement du projet de déploiement; Éléments de cryptage en .NET;
-* Rédaction de documentation fonctionnelle et technique, digrammes UML; édition graphique des images.
+### Agricultural Society Combined Agro-Industrial Curtici, Arad (Romania)
+_2016_ Intern? | Project name
+ * Task one;
+ * Task two.
+ 
+_Environnement_ Team X pers., technology 1, technology 2;
+ 
+## Interships
 
-_Environnement_ .NET 1.4, XML, XSL(T), CSS, SSI, .NET, JavaScript, HTML, HTTP ; Windows XP, UML (Rational Rose)
-
-### Université Laval (Québec, Canada)
-_2003_	Stagiaire : Stage linguistique et culturel - Université Laval (Québec, Canada)
-* Cours d’intelligence artificielle ;
-* Pratique en Prolog ;
-* Connaissance avec les entreprises locales et internationales de Québec dans le domaine des TI: iXmedia, DMR Canada - Fujitsu
-
-_Environnement_ IA, Prolog
+### Polytechnic Institute of Castelo Branco (Portugal)
+_Sep 15 - Feb 16_ Student | Erasmus Exchange, Food Biological Engineering
+ * Task one;
+ * Task two.
+ 
+_Environnement_ Team X pers., technology 1, technology 2;

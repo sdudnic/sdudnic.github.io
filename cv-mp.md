@@ -10,64 +10,69 @@ permalink: /marina
 
 ### Education
 * 2020 _Master in Food Engineering_ (EQF L7), Politehnica University of Bucharest 
-* 2018 _Bachelor's Degree in Food Engineering, Consumer and Environmental Protection_ (EQF L6), Aurel Vlaicu University, Arad
+* 2018 _Bachelor's Degree in Food Engineering, Consumer & Environmental Protection_ (EQF L6), Aurel Vlaicu University, Arad
 
 ### Languages
 * _French, Portughese_: Beginner; _English_ : Proficient; _Russian, Romanian_: Native
 
 ### IT Skills
 * _Office_: Word, Excel, PowerPoint
-* _Stats_: SuperStat, Bunga, Ciunga
 
 #### Citizenship: _Republic of Moldova_
-  
-  
-  
+
 ---
 ## Work Experience
 
 
-> #### `Jul 20->...` Institute of Food Research, Bucharest
+> #### `Jul 19->...` Institute of Food Research, Bucharest
 
-_Food Microbiology Technician_ | Project Name
- * Task one;
- * Task two 
-_Environnement_ Team X people., technology 1, technology 2;
+_Food Microbiology Technician_ | Microbiological analysis of food products (10 people team)
+ * detected the specific pathogenic bacteria, yeasts and molds;
+ * used horizontal method in enumeration of the microorganisms, VIDAS method in bacteria detection; 
+ * performed microbiological analyzes and interpreted the results.
 
 > #### `Jan->Jun 19` National Institute of Research, Bucharest
 
-_Engineer in Food Industry_ | Development for Machines and Installations Designed to Agriculture and Food Industry 
- * Task one;
- * Task two 
-_Environnement_ Team X pers., technology 1, technology 2;
-
-> #### `Sep->Oct 19` Institute for Research, Development & Innovation in Natural & Technical Sciences, Aurel Vlaicu University, Arad
-
-_Intern_ | Project name
- * Task one;
- * Task two 
-_Environnement_ Team X pers., technology 1, technology 2;
-
-> #### `Jun->Jul 17` Sanitary Veterinary and Food Safety Directorate of Arad
-
-_Intern_ | Project name
- * Task one;
- * Task two 
-_Environnement_ Team X pers., technology 1, technology 2;
-
-> #### `2016` Curtici Agroindustrial Combinate, Arad
-
-_Intern_ | Project name
- * Task one;
- * Task two 
-_Environnement_ Team X pers., technology 1, technology 2;
+_Engineer in Food Industry_ | A study of soil remediation methods (10 people team)
+ * studied the soil remediation methods using fungi-based technology;
+ * wrote a scientific article describing the study results;
  
 --- 
 ## Interships
 
+> #### `Sep->Oct 19` Institute for Research, Development & Innovation in Natural & Technical Sciences, Aurel Vlaicu University, Arad
+
+_Intern_ | Study of biological risks during the production of seed and fruit bars (2 people team)
+ * fabricated the seed and fruits bars following the HACCP method;
+ * studied and described the associated microbiological risks;
+ * presented the study results in a scientific conference;
+ 
+> #### `Jun->Jul 17` Sanitary Veterinary and Food Safety Directorate of Arad (3 people team)
+
+_Intern_ | Food microbiology
+ * learned how to perform a analysis in a microbiological laboratory at all stages;
+ * prepared the culture media for microbiological analysis;
+ * cultivated strains of bacteria, fungi and yeast;
+
+> #### `2016` Curtici Agroindustrial Combinate, Arad
+
+_Intern_ | Laboratory assistant (10 people team)
+ * studied the technological process of producing meat and dairy products;
+ * prepared samples for microbiological analysis;
+ * performed the microbiological tests on samples;
+
+
 > #### `Sep 15->Feb 16` Polytechnic Institute of Castelo Branco (Portugal)
 
 _Student_ | Erasmus Exchange, Food Biological Engineering
- * Task one;
- * Task two 
-_Environnement_ Team X pers., technology 1, technology 2;
+ * performed laboratory work specified by the curriculum; 
+ * practiced centrifugation, inoculation, incubation; 
+ * familiarised with enzymatic engineering and genetic engineering
+ 
+## Publications & Appearances
+
+ * Pihurov, M., Vladut, V., Bordean, D., & Ferdes, M. "Mycoremediation of heavy metal-contaminated soil" International Symposium ISB-INMA TEH Agricultural and Mechanical Engineering Paper, Bucharest, Romania, Oct 2019
+ * Pihurov, M., Ferdes, M., & Toma, L. "Mycoremediation of wastewater containing textile azoic dyes for household use", Conference Paper, June 2019
+ * Ipate, G., Vladut, V., & Pihurov, M. "Numerical simulation and experimental evaluation of the rheological behaviour of cheese", Lozenec, Bulgaria, June 2019
+ * Ipate, G., Musuroi, G., Constantin, G., Stefan, E., Zăbavă, B., & Pihurov, M. (2019). Experimental and numerical simulation research of sedimentation process in stationary column of aqueous suspension of solids. E3S Web of Conferences, 112, 231-247. https://doi.org/10.1051/e3sconf/201911203028
+ * Ferdes, M., Dinca, M., Toma, L., & Pihurov, M. "Inhibitory effect of essential oils on common fungal phytopathogens fusarium and alternaria", International Symposium ISB-INMATEH – Agricultural and Mechanical Engineering, Bucharest, Romania, November 2018

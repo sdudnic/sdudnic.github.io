@@ -43,7 +43,7 @@ _Engineer in Food Industry_ | A study of soil remediation methods (10 people tea
 > #### `Sep->Oct 19` Institute for Research, Development & Innovation in Natural & Technical Sciences, Aurel Vlaicu University, Arad
 
 _Intern_ | Study of biological risks during the production of seed and fruit bars (2 people team)
- * fabricated the seed and fruits bars following the HACCP method;
+ * fabricated the seed and fruit bars following the HACCP method;
  * studied and described the associated microbiological risks;
  * presented the study results in a scientific conference.
  
@@ -65,14 +65,14 @@ _Intern_ | Laboratory assistant (10 people team)
 > #### `Sep 15->Feb 16` Polytechnic Institute of Castelo Branco (Portugal)
 
 _Student_ | Erasmus Exchange, Food Biological Engineering
- * performed laboratory work specified by the curriculum; 
- * practiced centrifugation, inoculation, incubation; 
- * familiarized with enzymatic engineering and genetic engineering.
+* performed laboratory works specified in the curriculum; 
+* practiced in microbiology techniques (bacteria inoculation, cultivation and centrifugation); 
+* attended enzymatic engineering and genetic engineering courses.
  
 ## Publications & Appearances
 
  * Pihurov, M., Vladut, V., Bordean, D., & Ferdes, M. "Mycoremediation of heavy metal-contaminated soil" International Symposium ISB-INMA TEH Agricultural and Mechanical Engineering Paper, Bucharest, Romania, Oct 2019
  * Pihurov, M., Ferdes, M., & Toma, L. "Mycoremediation of wastewater containing textile azoic dyes for household use", Conference Paper, June 2019
- * Ipate, G., Vladut, V., & Pihurov, M. "Numerical simulation and experimental evaluation of the rheological behaviour of cheese", Lozenec, Bulgaria, June 2019
+ * Ipate, G., Vladut, V., & Pihurov, M. "Numerical simulation and experimental evaluation of the rheological behaviour of cheese", Research people and actual tasks on multidisciplinary sciences, Lozenec, Bulgaria, June 2019
  * Ipate, G., Musuroi, G., Constantin, G., Stefan, E., Zăbavă, B., & Pihurov, M. (2019). Experimental and numerical simulation research of sedimentation process in stationary column of aqueous suspension of solids. E3S Web of Conferences, 112, 231-247. https://doi.org/10.1051/e3sconf/201911203028
  * Ferdes, M., Dinca, M., Toma, L., & Pihurov, M. "Inhibitory effect of essential oils on common fungal phytopathogens fusarium and alternaria", International Symposium ISB-INMATEH – Agricultural and Mechanical Engineering, Bucharest, Romania, November 2018

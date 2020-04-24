@@ -4,7 +4,7 @@ title: Marina Pihurov
 permalink: /marina
 ---
 
-> **Food Quality Engineer**
+> **Food quality engineer**
 
 <small>str. Splaiul Independenței 060029 Bucharest, Romania / pihurov.marina@gmail.com / +40 746 470 356</small>
 

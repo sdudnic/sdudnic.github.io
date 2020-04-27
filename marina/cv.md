@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Marina Pihurov
-permalink: /marina
+permalink: /marina/cv
 ---
 
 > **Food quality engineer**

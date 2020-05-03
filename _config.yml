@@ -34,7 +34,6 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - cv.md
   - covid-19
 
 show_excerpts: true

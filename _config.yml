@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - [covid-19 stats](http://dudnic.com/covid-19/)
+  - /covid-19/
 
 show_excerpts: true
 excerpt_separator: <!--more-->

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ce nastorojeste in CuCo...
+title:  Şi nastorojește în CuCo...
 date:   2020-05-08 00:06:37 +0100
 tags: [juridice, creditul rusesc, curtea constitutionala, moldova, credit]
 published: true
@@ -14,7 +14,7 @@ Joi, 7 mai 2020, Curtea Constituțională a declarat neconstituționale:
 
 <!--more-->
 
-Ce cam nastorojeshte in kestia asta cu CuCo... e ca hotararile CuCo nu se pot contesta... ei pot sa decidă orice. Sa presupunem un caz pur teoretic, se planifica o decizie foarte importanta de la care un anumit grup coninteresat ar fi in mare castig. Pentru a trece hotararea, la cele 6 persoane se da o suma colosala de bani. Ei acolo pot sa hotarasca orice. Absolut. Constitutional, neconstitutional, putin conteaza. Oricum nimeni nu poate contesta.
+Ce cam nastorojeshte în kestia asta cu CuCo... e că hotararile CuCo nu se pot contesta... ei pot sa decidă orice. Sa presupunem un caz pur teoretic, se planifica o decizie foarte importanta de la care un anumit grup coninteresat ar fi in mare castig. Pentru a trece hotararea, la cele 6 persoane se da o suma colosala de bani. Ei acolo pot sa hotarasca orice. Absolut. Constitutional, neconstitutional, putin conteaza. Oricum nimeni nu poate contesta.
 Si chiar daca sunt scosi ulterior din functie, suma respectiva ar putea sa le ajuga pentru un trai frumos undeva prin partile Floridei, cum mai avem un compatriot...
 <!--more-->
 Pe de alta parte, cred ca situatia nu a fost chiar asa in acest caz. Eu sincer cred ca acordul avea multe probleme de ordin juridic, si deci, nici tare nu trebuia de se fortat pentru a lua asa o decizie. Ei doar nu sunt economisti, dar pur juristi.

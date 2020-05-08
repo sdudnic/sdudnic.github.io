@@ -4,3 +4,4 @@
 
 layout: home
 ---
+*modernizează Moldova* - semnează [petiția pentru nediscriminare, aici](https://www.petitieonline.com/history-md)!

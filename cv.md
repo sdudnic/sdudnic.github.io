@@ -9,7 +9,7 @@ ingénieur d’étude et dev .net certifié; en .NET depuis 2005
 
 ## Formation
 *	2012 : Cours "SQL Server 2008, mise en œuvre", ORSYS 
-*	2005 : Ingénieur diplômé (Master / Bac+5) en Technologies de l'information, Filière Francophone Informatique, Université Technique de Moldavie
+*	2005 : Ingénieur diplômé (Master/Bac+5) en Technologies de l'information, Filière Francophone Informatique, Université Technique de Moldavie
 
 ### Certifications	
 * 2019 : HTML/CSS, JavaScript, C# and SQL (TestDome)
@@ -31,9 +31,9 @@ ingénieur d’étude et dev .net certifié; en .NET depuis 2005
 
 ## Expérience professionnelle
 ### INFEENY [ECONOCOM]
-_Mars 20 - ..._ Developpement et Maintenance de la solution ERP Atimeüs
+_Mars 20 - ..._ Développementt et Maintenance de la solution ERP Atimeüs
  * Ajout des nouvelles fonctionnalités ;
- * Suivi des tickets.
+ * Suivi des tickets.    
  
 _Environnement_	Team 4 pers., ASP.NET MVC 5; Azure DevOps; VueJS;
 

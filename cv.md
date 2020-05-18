@@ -9,7 +9,7 @@ ingénieur d’étude et dev .net certifié; en .NET depuis 2005
 
 ## Formation
 *	2012 : Cours "SQL Server 2008, mise en œuvre", ORSYS 
-*	2005 : Ingénieur Diplômé (BAC+5) en Technologies Informationnelles Filière Francophone Informatique, Université Technique de Moldova
+*	2005 : Ingénieur diplômé (Master / Bac+5) en Technologies de l'information, Filière Francophone Informatique, Université Technique de Moldavie
 
 ### Certifications	
 * 2019 : HTML/CSS, JavaScript, C# and SQL (TestDome)

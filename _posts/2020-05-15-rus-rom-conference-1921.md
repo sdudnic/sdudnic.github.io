@@ -43,3 +43,5 @@ published: true
  е) договор, подписанный румынским правительством и генералом Авереску (9 марта 1918 г.), предусматривал эвакуацию Бессарабии румынами".  
   
 *АВПРФ. Ф. 125. Оп. 3. Д.7. П.8. Л. 1,2,8, 9.*
+
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSWk7Su6FgCKC0OAZ_lWurlNjAlPV6FrVsjznb6mDdKZLqpXsSlE_4XpjAIafuIDcXs_m0hqi033sOL/pub?embedded=true"></iframe>

@@ -9,21 +9,14 @@ published: true
 In articolul de fata sunt prezentate sursele istorice care pomenesc despre moldoveni ca etnici, si despre moldoveneasca ca limba.
 Daca ai alte surse de adaugat, comenteaza si completam colectia! ;)
 
-## Etnie, natiune, popor: moldoveni, moldovean
-* Население Бессарабской губернии по переписи 1897 г. [source 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3&__xts__%5B0%5D=68.ARABAVG_gMQ0mBiWXr4U81-X7cP3sR24BeH8o3n2FAZCX3uKtWpTVpaO6S_2r7qrpkCYaoRYbwSHfAFQktvMYor7uxETr5lWmDhj9rLFp_aacWTB0VvLbWrofsg15gwvC6Bf_lmthqGSReByHgVQOEqHXZLJx0cU2v9g6lVXlbNvOrBt-FZ3PotQp3vs-sLrknyCh9DO7F5TAlHQGLn7bU6m-kutWJ_nXdWapZRMHrTtz_S6_XR-tpYA2jTv8WTILUV6B0wpaPwCSWq7EqceL5iHUCtPNH9rwHZxXqfMP0aiuYoawtP9iwpOetKQKKuEk34jkgKMLZIfeY4Q2dcZFUQ&__tn__=-R)
-
-
 ## Limba moldovenească
-Doua chestii sa fie luate in considerare. Vom porni de la permiza ca 
-1) limba moldovenească sau româna este aceeasi limba. Unica ce difera este denumirea data acestei limbi unice de catre populatia diferita.
-2) cand vorbim de limba, nu subintelegem dialecte, sau graiuri. Este vorba exclusiv de denumirea limbii - treaptei superioara a clasificarii lingvistice.
-2') vom nota ca in dependenta de punctul de vedere, clasificarea *limbii* moldovenesti drept *grai* al limbii valahe(române) nu are mai mult sens sau argumentabilitate decat clasificarea dialectului *valah* al limbii *moldovenesti*. Totul depinde de atitudinea fata de referintele istorice luate ca baza la asa reflectii, si angajarea politica a expertilor ce discuta aceste chestiuni.
 
 * 1642-1647; Grigore Ureche, Letopisețul Țării Moldovei; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200816467417)
 * 1737; Principatus Moldaviae nova & accurata descriptio [Document cartographique] / Delineante Principe Demetrio Cantemirio
 Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/283281999726108?__xts__%5B0%5D=68.ARD84uxPxAHd37vhUvpTfIgbCNWLzsFbVcGxoTjjQnNWpanPkfVelp8JSL4l0bWosVZYlssFCXZN4GB4a8IZ6xnd-SQI504hmqIy8usCcDk6edUgb9v5msoGck4kuwog1R-wE2gyqDpXN-3oPyiSxtE_Ck78GrJ8me-CYu0uudgrYPCdjkx9bH06NPFzHtsShdGSSsbaOLLMgZNetZP7nagMRECQwYUMbg0hF9NL0dYaSo26OHoW_APuKdFPnt-Ilq55YAAufPd5vjZE0U3wmJG5smJ8J7nylTGE9Zhun3MnWltIVpVJoKVdI5q-AoietdpuTA41t8TczxkFMKp_LVY&__tn__=-R)
 * ~1750; Moldaviae principatus delineante principe Demetrio Cantemirio / [de la main de d'Anville]; Anville, Jean-Baptiste Bourguignon d' (1697-1782). Cartographe Auteur :  Cantemir, Dimitrie (1673-1723). [sursa 2](https://gallica.bnf.fr/ark:/12148/btv1b5962821v)
 * 1750; Moldaviae principatus delineante principe Demetrio Cantemirio, Jean-Baptiste Bourguignon d’Anville ~1750; [source 1](https://www.facebook.com/groups/greatmoldova/permalink/674118456703979/)
+* 1764; "Histoire universelle depuis le commencement du Monde, jusqu'à present", à Amsterdam et a Leipzig; [source](https://gallica.bnf.fr/ark:/12148/bpt6k9779807w/f541.image)
 * 1769; Despre citirea evalgheliei in limba moldoveneasca [source 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220206465478/?type=3); [source 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219729798859/?type=3); [source 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219716465527/?type=3); [source 4](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219703132195/?type=3)
 * 1777; "Histoire de la Moldavie et de la Valachie: avec une dissertation sur l'état actuel de ces deux provinces"; Jean-Louis Carra, Société typographique des Deux-Ponts, Jassy [page 7](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA7#v=onepage&q&f=false) "[Ovidius] avoit composé plusieurs poëmes en langue Moldave"; [page 218](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA218#v=onepage&q&f=false) "langue Valaque et Moldave"
 * 1785; Curioznică, Iaşi; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209173133248)
@@ -64,3 +57,12 @@ Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/2
 * 2000; Analele Acedemei Române, Editura Academiei Române, diversi autori [source 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199516467547/?type=3); [source 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199513134214/?type=3); [source 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199563134209/?type=3)
 * 2014; Limba vorbită în raioanele Moldovei (Recensămînt 2014); [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200083134157)
 * 2018; Abecedar, Limba Moldovenească; Odessa [source 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/289035209150787/?type=3&__xts__%5B0%5D=68.ARBNCcJ91rts9RvHwIX5q3XPFe-d24_u5d-76RdmAk3_8sIh-GbT3Ok7SOxOzj14M8d1QYfRNmYW_WvsyqfBCCcpcT8yNWcJ9cnRRB4NQMG2lRrr0PqcPjxdpfpIdkZeVnaT2FS3Y42b16WdubM9SBDdYfWCOeWgrLJmBYoDZw0brXNti-4C4P2aU4wdDaOGSVmewmE3z7EJ0FAFYPqlCTozs5CDV5a0L877UB5InEceXrkrB67xtgVvGJfilqIvQD_4h_nOXjvLFN3qzhQfmqArz0MgVEbp_Rp-DXJgTJ2wxEj2fxzK3lDDnomKIcNRtJEfrw9kKqStv8bIldtZLhE&__tn__=-R)
+
+Doua chestii sa fie luate in considerare. Vom porni de la permiza ca 
+1) limba moldovenească sau româna este aceeasi limba. Unica ce difera este denumirea data acestei limbi unice de catre populatia diferita.
+2) cand vorbim de limba, nu subintelegem dialecte, sau graiuri. Este vorba exclusiv de denumirea limbii - treaptei superioara a clasificarii lingvistice.
+2') vom nota ca in dependenta de punctul de vedere, clasificarea *limbii* moldovenesti drept *grai* al limbii valahe(române) nu are mai mult sens sau argumentabilitate decat clasificarea dialectului *valah* al limbii *moldovenesti*. Totul depinde de atitudinea fata de referintele istorice luate ca baza la asa reflectii, si angajarea politica a expertilor ce discuta aceste chestiuni.
+
+## Etnie, natiune, popor: moldoveni, moldovean
+* Население Бессарабской губернии по переписи 1897 г. [source 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3&__xts__%5B0%5D=68.ARABAVG_gMQ0mBiWXr4U81-X7cP3sR24BeH8o3n2FAZCX3uKtWpTVpaO6S_2r7qrpkCYaoRYbwSHfAFQktvMYor7uxETr5lWmDhj9rLFp_aacWTB0VvLbWrofsg15gwvC6Bf_lmthqGSReByHgVQOEqHXZLJx0cU2v9g6lVXlbNvOrBt-FZ3PotQp3vs-sLrknyCh9DO7F5TAlHQGLn7bU6m-kutWJ_nXdWapZRMHrTtz_S6_XR-tpYA2jTv8WTILUV6B0wpaPwCSWq7EqceL5iHUCtPNH9rwHZxXqfMP0aiuYoawtP9iwpOetKQKKuEk34jkgKMLZIfeY4Q2dcZFUQ&__tn__=-R)
+* ... [in completare]

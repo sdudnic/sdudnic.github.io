@@ -59,8 +59,7 @@ Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/2
 * 1841; "Datoriile călugărilor a unora cătră alţii, în viaţa lor cea de obşce. S-au tipărit ruseşce la Sanct Petersburg în tipografia Preasfîntului Sinod la 1816 în luna August, iară de pre cea rusască s-au tălmăcit pe limba moldovenească şi s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chişinău, la anul 1841 în luna lui August"
 * 1844; Theoretisch-praktische Grammatik der dacoromanischen, das ist, der moldauischen oder wallachischen Sprache, Theoktist Blazewicz [sursa 1](https://www.facebook.com/EramAvodlom/posts/283374073050234?__xts__%5B0%5D=68.ARAphL7m4CT_cy4isu_jBLPkwJJfcjPeFWPtKHJ4AkHZG4lM9E5_rAc2PF7VS5tkjKcG2Asj1Wul_VLAfrOSZqBuzQj51jOC-SN0_DoBInHWfKebOrRPyTi1O0IT4GezOzoDTPicmCSzPgD1qZuW6hCy0fBuW0EBgYxLYllqa_76r0bYgik3D5_NdbXC4dpLfFUBL6-8yR9-MefUgY2eUCRJJTVu9dHMVjjwPAXJojVCt5lmEbCTAPmsBdG8AFETKJBky6RlBZKToW9-Odct2hnB2SfQZhBwm7uUrC5iwPlJ0eo__3lXIabqyVUtMXH99D07FTe9c-XGCDPQCzlxgW0&__tn__=-R) 
 * 1849; Le Constitutionnel; 29 mai 1849 (n° 149), p. 2
-* 1849; Le Constitutionnel; 30 mai 1849 (n° 150), p. 2
-* 1849; Le Constitutionnel; 30 mai 1849 (n° 150), p. 1
+* 1849; Le Constitutionnel; 30 mai 1849 (n° 150), p. 1, 2
 * 1851; Gazette nationale ou le Moniteur universel; 9 juin 1851 (n° 160), p. 3
 * 1851; Gazette nationale ou le Moniteur universel; 21 septembre 1851 (n° 264), p. 4
 * 1851; Le Constitutionnel; 21 septembre 1851 (n° 264), p. 3

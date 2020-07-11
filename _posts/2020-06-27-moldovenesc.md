@@ -1,4 +1,4 @@
----
+--- 
 layout: post
 title:  Referitnte istorice de etnonime moldovean şi limba moldovenească
 date:   2020-06-08 19:14:00 +0100
@@ -13,6 +13,7 @@ Daca ai alte surse de adăugat, comentează şi completăm colecţia! ;)
 ## Limba moldovenească
 
 * 1642-1647; Grigore Ureche, Letopisețul Țării Moldovei; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200816467417)
+* 1700-1712; Nicolae Costin, Letopiseţul Ţării Moldovei de la zidirea lumii până la 1601, ediţie cu o introducere de Ioan Şt.Petre, Bucureşti, 1942, p.463.
 * 1737; Principatus Moldaviae nova & accurata descriptio [Document cartographique] / Delineante Principe Demetrio Cantemirio
 Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/283281999726108?__xts__%5B0%5D=68.ARD84uxPxAHd37vhUvpTfIgbCNWLzsFbVcGxoTjjQnNWpanPkfVelp8JSL4l0bWosVZYlssFCXZN4GB4a8IZ6xnd-SQI504hmqIy8usCcDk6edUgb9v5msoGck4kuwog1R-wE2gyqDpXN-3oPyiSxtE_Ck78GrJ8me-CYu0uudgrYPCdjkx9bH06NPFzHtsShdGSSsbaOLLMgZNetZP7nagMRECQwYUMbg0hF9NL0dYaSo26OHoW_APuKdFPnt-Ilq55YAAufPd5vjZE0U3wmJG5smJ8J7nylTGE9Zhun3MnWltIVpVJoKVdI5q-AoietdpuTA41t8TczxkFMKp_LVY&__tn__=-R)
 * ~1750; Moldaviae principatus delineante principe Demetrio Cantemirio / [de la main de d'Anville]; Anville, Jean-Baptiste Bourguignon d' (1697-1782). Cartographe Auteur :  Cantemir, Dimitrie (1673-1723). [sursa 2](https://gallica.bnf.fr/ark:/12148/btv1b5962821v)

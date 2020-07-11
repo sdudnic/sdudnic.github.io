@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Referitnte istorice de etnonime moldovean si limba moldoveneasca
+title:  Referitnte istorice de etnonime moldovean şi limba moldovenească
 date:   2020-06-08 19:14:00 +0100
-tags: [moldova, limba, moldovean, moldoveneasca, denumirea limbii, limba moldoveneasca, etnie moldoveana, istorie, surse istorice]
+tags: [moldova, limba, moldovean, moldovenească, denumirea limbii, limba moldovenească, etnie moldoveana, istorie, surse istorice]
 published: true
 comment_issue_id: 3
 ---
 
-In articolul de fata sunt prezentate sursele istorice care pomenesc despre moldoveni ca etnici, si despre moldoveneasca ca limba.
-Daca ai alte surse de adaugat, comenteaza si completam colectia! ;)
+In articolul de faţă sunt prezentate sursele istorice care pomenesc despre "moldoveni" ca etnici şi despre "moldovenească" ca limbă.
+Daca ai alte surse de adăugat, comentează şi completăm colecţia! ;)
 
 ## Limba moldovenească
 
@@ -24,7 +24,7 @@ Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/2
 * 1789; Deale casii voarbe, rusesti si moldovenesti; [source 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220966465402/?type=3)
 * 1795; Amfilohie Hotiniul, Deobşte Gheografie pe limba moldovenească scoasă de pe gheografia lui Вufier, după orînduiala care acum mai pe urmă s-au aşezat în Academie dela Parizi, Iași; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209616466537)
 * 1795; "Gramatică teologhicească, scoasă în limba moldovenească, de pe bogoslovia lui Platon, arhiepiscopul de Moscova şi de pe alte cărţi bisericeşti" [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405222779798554)
-* 1796; "Gramatica de la învătătura fizicii, scoasă de pre limba italienească pre limba moldovenească, întru care să cuprinde tot ceea ce omul voieşte a şti şi a învăŃa în cer şi pre pământ din lucrurile cele mai cunoscute şi mai trebuincioase. Anul 1796, april 10", Amfilohie Hotiniul [source](https://www.academia.edu/1313549/_Gramatica_de_la_%C3%AEnv%C4%83%C5%A3%C4%83tura_fizicii._Considera%C5%A3ii_asupra_terminologiei_astronomice)
+* 1796; "Gramatica de la învătătura fizicii, scoasă de pre limba italienească pre limba moldovenească, întru care să cuprinde tot ceea ce omul voieşte a şti şi a învăţa în cer şi pre pământ din lucrurile cele mai cunoscute şi mai trebuincioase. Anul 1796, april 10", Amfilohie Hotiniul [source](https://www.academia.edu/1313549/_Gramatica_de_la_%C3%AEnv%C4%83%C5%A3%C4%83tura_fizicii._Considera%C5%A3ii_asupra_terminologiei_astronomice)
 * 1804; "Nouveau dictionnaire historique, ou Histoire abrégée de tous les hommes qui se sont fait un nom... depuis le commencement du monde jusqu'à nos jours"; Chaudon, Delandine; Lyon [source](https://gallica.bnf.fr/ark:/12148/bpt6k63411547/f81.image) ("histoire... écrite en langue moldave")
 * 1814; "de pe Sărbie pre limba Moldovineasca am lălmăcit la anul 1814 Iulie în 29", Cliucer Pavăl Debrid [source](https://books.google.com/books?id=CMNJAAAAMAAJ&q=%22limba+moldovineasca%22&dq=%22limba+moldovineasca%22&hl=en&sa=X&ved=2ahUKEwjNt8_Z6sPqAhUoxoUKHQsJCZcQ6AEwAXoECAEQAg)
 * 1815; Slujba, la pomenirea Sfîntului slăvitului mare glăsuitoriului; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405210223133143)

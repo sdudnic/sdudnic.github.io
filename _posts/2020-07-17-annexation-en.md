@@ -45,152 +45,151 @@ When brought before the Diet, this resolution was promptly accepted by the leade
 
 After a brief recess, the representatives of the Peasants' Soviet members announce that after consultation they have decided to support the project of union as outlined in the resolution. The President calls for a vote; all but 13 members of the Diet are present. The resolution is adopted by a vote of 86 for, 3 against, 36 present but refraining from voting, for the reasons given above; see pp. 151-7 for the list. Bessarabia, by the vote of its sole constituted authority, however makeshift, is now a part of Roumania.
 
-### Voted for Union on March 27 (0. S.), 1918.
- 1 * Alexandri, Neculae : 60, journalist, Hotin
- 2 * Alistar-Balan, Elena: 42, doctor, Akkerman
- 3 * Buzdugan, Ion: 30, teacher, Baltz
- 4 * Buiuk, Ilarion: 27, farmer, Orhei
- 5 Bivol, Neculae : 33, farmer, Kishineff
- 6 * Budishtean, Ignatie : 30, farmer, Baltz
- 7 Barca, Teodor : 24, teacher, Soroca
- 8 * Bosie-Codreanu, Neculae : 32, engineer, Hotin
- 9 * Botnarciuk, Shtefan: 43, farmer, Baltz; Ukrainian
- 10 * Buruiana, Gheorghe : 33, coop. official, Kishineff
- 11 Ba,rca, Teodosie : 23, farmer, Kishineff
- 12 Bogos, Vlad: 24, student, Kishineff
- 13 Bodescu, Vlad: 50, lawyer, Kishineff
- 14 * Baltaga, Alegandru : 55, priest, Orhei
- 15 * Valutza, Ion: 24, student, Baltz
- 16 * Grosu, Neculae : 27, student, Kishineff
- 17 * Gafencu, Vasile : 30, farmer, Baltz
- 18 Galitzky, Simion : n. d.
- 19 Ghenzul, Vasile : 35, civil service, Kishineff (?)
- 20 Ga,ina,, Andrei: 33, farmer, Orhei
- 21 * Gropa, Alegandru : 38, coop. official, Baltz
- 22 * Dragomir, Dumitru : 28, farmer, Akkerman
- 23 Dutkiewicz, Felix: n. d. ; Pole
- 24 Dron, Dimitrie : 25, student, Baltz
- 25 * Epuri, Boris; 36, civil service, Baltz
- 26 * Erhan, Pantelimon: 34, professor, Bender
- 27 * Zubac, Vitalie : 23, army officer, Ismail
- 28 * Ignatiuc, Ion: 25, farmer, Kishineff (?)
- 29 * Inculetz, Ion: 35, professor, Kishineff
- 30 * Ioncu, Teofil : 32, civil service, Orhei
- 31 * Crihan, Anton: 25, student, Baltz
- 32 * Creanga, Ion: 24, teacher, Bender
- 33 * Chiriac, Afanasie: 27, farmer, Bender
- 34 * Ca,raush, Dumitru : 25, student, Soroca
- 35 * Codreanu, Ion: 39, farmer, Soroca
- 36 * Cazacliu, Grigorie : 26, student, Soroca
- 37 * Caraiman, Anton: 38, farmer, Orhei
- 38 * Cocarla, Pavel: 24, artisan, Orhei
- 39 * Costin, Ion: 35, lawyer, Kishineff
- 40 * Chiorescu, Vlad : 30, coop. official, Kishineff
- 41 * Cazacliu, Ion: 48, civil service, Soroca
- 42 Cazacliu, Vlad : 29, student, Soroca
- 43 Lashcu, Vasile : 60, journalist, Kishineff
- 44 Mamaliga, Neculae : 38, gardener, Kishineff
- 45 Minciuna, Mihail: 32, farmer, Orhei
- 46 * Morariu, Auatolie : 23, farmer, Hotin
- 47 * Morariu, Alegandru: 37, farmer, Hot1H
- 48 * Marza, Dimitrie : 23, teacher, Hotin
- 49 * Mare, Gheorghe : 36, professor, Akkerman
- 50 Maculetzcu, Mihail: 56, farmer, Orhei
- 51 Marchitan, Dimitrie : 32, farmer, Baltz
- 52 * Neaga, Teodor : 37, professor, Kishineff
- 53 * Nastasa, Gheorghe : 22, teacher, Soroca
- 54 * Osoian, Constantin: 32, farmer, Baltz
- 55 * Pa,ntea, Gherman : 24, teacher, Baltz
- 56 Mandrescu, Vasile: 29, farmer, Orhei
- 57 * Pelivan, Ion: 40, lawyer, Baltz
- 58 * Palii, Eftimie : 37, gardener, Soroca
- 59 * PasCa,lutza., Ion: 25, soldier, Baltz
- 60 * Picior-Mare, Petru: 30, civil service, Baltz
- 61 * Sinicliu, Elefterie: 22, farmer, Orhei
- 62 * Suruceanu, Neculae : 28, army officer, Kishineff
- 63 * Silistraru, Tim.: 23, army officer, Bender
- 64 * Zbierea, Kiril : 27, surveyor, Cahul
- 65 * Sacara, Nicolae: 24, professor, Kishineff
- 66 * Scobioala, Andrei: 32, professor, Baltz
- 67 * Spinei, Kiril: 34, farmer, Soroca
- 68 Stavriu, Gheorghe : 35, farmer, Cahul
- 69 * Suruceanu, Teodor: 52, farmer, Kishineff
- 70 * Tudor, Gheorghe : 33, teacher, Baltz
- 71 * Tudos, Ion: 33, farmer, Baltz
- 72 * Turcuman, Grigore: 26, farmer, Soroca
- 73 * Uncu, Teodor: 34, civil service, Orhei
- 74 * Halippa, Pantelimon: 34, journalist, Soroca
- 75 Hertza, Teodor : n. d.
- 76 * Tzurcan, Leonid: 23, civil service, Kishineff
- 77 * Tzantzu, Vasile : 35, teacher, Kishineff
- 78 * Cernautzan, Neculae : 26, soldier, Hotin
- 79 * Ciornei, Neculae: 25, farmer, Cahul
- 80 * Cijevschi, Vasile : 37, army officer, Bender
- 81 * Ciorascu, Vasile : 31, farmer, Kishineff
- 82 Cernof, Nicolae : n. d.
- 83 Sholtuz, Nicolae : 60, farmer, Soroca
- 84 Stere, Constantin: 54, professor, Soroca
- 85 * Munteanu, Zamfir : n. d.
- 86 Sucevan, Iacov; n., d,
+#### Voted for Union on March 27 (0. S.), 1918
+1. * Alexandri, Neculae : 60, journalist, Hotin
+2. * Alistar-Balan, Elena: 42, doctor, Akkerman
+3. * Buzdugan, Ion: 30, teacher, Baltz
+4. * Buiuk, Ilarion: 27, farmer, Orhei
+5. Bivol, Neculae : 33, farmer, Kishineff
+6. * Budishtean, Ignatie : 30, farmer, Baltz
+7. Barca, Teodor : 24, teacher, Soroca
+8. * Bosie-Codreanu, Neculae : 32, engineer, Hotin
+9. * Botnarciuk, Shtefan: 43, farmer, Baltz; Ukrainian
+10. * Buruiana, Gheorghe : 33, coop. official, Kishineff
+11. Ba,rca, Teodosie : 23, farmer, Kishineff
+12. Bogos, Vlad: 24, student, Kishineff
+13. Bodescu, Vlad: 50, lawyer, Kishineff
+14. * Baltaga, Alegandru : 55, priest, Orhei
+15. * Valutza, Ion: 24, student, Baltz
+16. * Grosu, Neculae : 27, student, Kishineff
+17. * Gafencu, Vasile : 30, farmer, Baltz
+18. Galitzky, Simion : n. d.
+19. Ghenzul, Vasile : 35, civil service, Kishineff (?)
+20. Ga,ina,, Andrei: 33, farmer, Orhei
+21. * Gropa, Alegandru : 38, coop. official, Baltz
+22. * Dragomir, Dumitru : 28, farmer, Akkerman
+23. Dutkiewicz, Felix: n. d. ; Pole
+24. Dron, Dimitrie : 25, student, Baltz
+25. * Epuri, Boris; 36, civil service, Baltz
+26. * Erhan, Pantelimon: 34, professor, Bender
+27. * Zubac, Vitalie : 23, army officer, Ismail
+28. * Ignatiuc, Ion: 25, farmer, Kishineff (?)
+29. * Inculetz, Ion: 35, professor, Kishineff
+30. * Ioncu, Teofil : 32, civil service, Orhei
+31. * Crihan, Anton: 25, student, Baltz
+32. * Creanga, Ion: 24, teacher, Bender
+33. * Chiriac, Afanasie: 27, farmer, Bender
+34. * Ca,raush, Dumitru : 25, student, Soroca
+35. * Codreanu, Ion: 39, farmer, Soroca
+36. * Cazacliu, Grigorie : 26, student, Soroca
+37. * Caraiman, Anton: 38, farmer, Orhei
+38. * Cocarla, Pavel: 24, artisan, Orhei
+39. * Costin, Ion: 35, lawyer, Kishineff
+40. * Chiorescu, Vlad : 30, coop. official, Kishineff
+41. * Cazacliu, Ion: 48, civil service, Soroca
+42. Cazacliu, Vlad : 29, student, Soroca
+43. Lashcu, Vasile : 60, journalist, Kishineff
+44. Mamaliga, Neculae : 38, gardener, Kishineff
+45. Minciuna, Mihail: 32, farmer, Orhei
+46. * Morariu, Auatolie : 23, farmer, Hotin
+47. * Morariu, Alegandru: 37, farmer, Hot1H
+48. * Marza, Dimitrie : 23, teacher, Hotin
+49. * Mare, Gheorghe : 36, professor, Akkerman
+50. Maculetzcu, Mihail: 56, farmer, Orhei
+51. Marchitan, Dimitrie : 32, farmer, Baltz
+52. * Neaga, Teodor : 37, professor, Kishineff
+53. * Nastasa, Gheorghe : 22, teacher, Soroca
+54. * Osoian, Constantin: 32, farmer, Baltz
+55. * Pa,ntea, Gherman : 24, teacher, Baltz
+56. Mandrescu, Vasile: 29, farmer, Orhei
+57. * Pelivan, Ion: 40, lawyer, Baltz
+58. * Palii, Eftimie : 37, gardener, Soroca
+59. * PasCa,lutza., Ion: 25, soldier, Baltz
+60. * Picior-Mare, Petru: 30, civil service, Baltz
+61. * Sinicliu, Elefterie: 22, farmer, Orhei
+62. * Suruceanu, Neculae : 28, army officer, Kishineff
+63. * Silistraru, Tim.: 23, army officer, Bender
+64. * Zbierea, Kiril : 27, surveyor, Cahul
+65. * Sacara, Nicolae: 24, professor, Kishineff
+66. * Scobioala, Andrei: 32, professor, Baltz
+67. * Spinei, Kiril: 34, farmer, Soroca
+68. Stavriu, Gheorghe : 35, farmer, Cahul
+69. * Suruceanu, Teodor: 52, farmer, Kishineff
+70. * Tudor, Gheorghe : 33, teacher, Baltz
+71. * Tudos, Ion: 33, farmer, Baltz
+72. * Turcuman, Grigore: 26, farmer, Soroca
+73. * Uncu, Teodor: 34, civil service, Orhei
+74. * Halippa, Pantelimon: 34, journalist, Soroca
+75. Hertza, Teodor : n. d.
+76. * Tzurcan, Leonid: 23, civil service, Kishineff
+77. * Tzantzu, Vasile : 35, teacher, Kishineff
+78. * Cernautzan, Neculae : 26, soldier, Hotin
+79. * Ciornei, Neculae: 25, farmer, Cahul
+80. * Cijevschi, Vasile : 37, army officer, Bender
+81. * Ciorascu, Vasile : 31, farmer, Kishineff
+82. Cernof, Nicolae : n. d.
+83. Sholtuz, Nicolae : 60, farmer, Soroca
+84. Stere, Constantin: 54, professor, Soroca
+85. * Munteanu, Zamfir : n. d.
+86. Sucevan, Iacov; n., d,
  
- ### Voted against Union
- 1 Balamez, Shtefan: 35, civil service, Kishineff; Bulgarian
- 2 Osmolovsky, Arcadie : n. d.; Ukrainian
- 3 Starenki, Mihail : n. d.; Ukrainian
+ #### Voted against Union
+1. Balamez, Shtefan: 35, civil service, Kishineff; Bulgarian
+2. Osmolovsky, Arcadie : n. d.; Ukrainian
+3. Starenki, Mihail : n. d.; Ukrainian
  
- ### Refrained from Voting
- 1 * Almendingher, Philipp: 50, farmer, Akkerman ; German
- 2 * Bacsan, Zaharia: 49, farmer, Baltz
- 3 Buciushcan, Gavril : 29, teacher, Orhei
- 4 * Budnicenko, Nikitza: 36, farmer, Baltz; Ukrainian
- 5 * Brinici, Gheorghe: 30, farmer, Baltz; Ukrainian
- 6 Vizitiu, Eftimie : 37, farmer, Soroca
- 7 * Gherman, Isac : 60, lawyer, Kishineff ; Hebrew
- 8 Garbuz (Harbuz), Ioan: 31, civil service, Kishineff
- 9 * Grubsky, Andrei: Kishineff; Ukrainian
- 10 Diaconovici, Dragomir : n. d.
- 11* Dumitrashcu, Ion: 28, farmer, Orhei
- 12 Donico-Iordakesco, Serghie; Kishineff
- 13 Corali (Coval ? ), Vasile : n. d.; Ukrainian
- 14 * Curdinovsky, Vasile: 46, professor, Poltava
- 15 Krivorukoff, Ivan: 42, workman, Bender; Russian
- 16 * Kenigschatz, Eugen: 58, lawyer, Kishineff; Hebrew
- 17 Cuncev, Petre : 47, farmer; Bulgarian
- 18 Culava, Alexe: 43, farmer, Ismail
- 19 Kiriloff, Teodor : 37, lawyer, Ismail (?) ; Bulgarian
- 20 Lichtmann, Samuel; 60, civil service; Hebrew
- 21 von Loesch, Alexander: n. d.; German
- 22 Luneff, Vladimir: 39, professor; Russian
- 23 Moldovan, Teodor : n. d.
- 24 * Misircoff, Cristo: 43, professor,. Bolgrad; Bulgarian
- 25 * Nagorneac, Iacov: 39, farmer, Hotin; Ukrainian
- 26 * Nikitiuk, Teodor: 35, surveyor, Cahul; Ukrainian
- 27 Popa, Ion: 28, farmer, Baltz
- 28 Ponomareff, Gheorghe : n. d.
- 29 Poliatinciuk, Petre : 36, civil service, Podolia; Ukrainian
- 30 Slutski, Moise; 62, doctor, Kishineff (?) ; Hebrew
- 31 Savenko, Mihail; n. d.; Ukrainian
- 32 Tziganko, Vladimir: 31, engineer; Russian
- 33 * Iurcu, Constantin; 34, farmer, Hotin
- 34 Manitzin, Petre; 35, teacher; Russian
- 35 Mildov (Maldoc?), Dimitrie; n. d.; Bulgarian
- 36 Greculoff, Alexandru : n. d.; Russian
+#### Refrained from Voting
+1. * Almendingher, Philipp: 50, farmer, Akkerman ; German
+2. * Bacsan, Zaharia: 49, farmer, Baltz
+3. Buciushcan, Gavril : 29, teacher, Orhei
+4. * Budnicenko, Nikitza: 36, farmer, Baltz; Ukrainian
+5. * Brinici, Gheorghe: 30, farmer, Baltz; Ukrainian
+6. Vizitiu, Eftimie : 37, farmer, Soroca
+7. * Gherman, Isac : 60, lawyer, Kishineff ; Hebrew
+8. Garbuz (Harbuz), Ioan: 31, civil service, Kishineff
+9. * Grubsky, Andrei: Kishineff; Ukrainian
+10. Diaconovici, Dragomir : n. d.
+11.* Dumitrashcu, Ion: 28, farmer, Orhei
+12. Donico-Iordakesco, Serghie; Kishineff
+13. Corali (Coval ? ), Vasile : n. d.; Ukrainian
+14. * Curdinovsky, Vasile: 46, professor, Poltava
+15. Krivorukoff, Ivan: 42, workman, Bender; Russian
+16. * Kenigschatz, Eugen: 58, lawyer, Kishineff; Hebrew
+17. Cuncev, Petre : 47, farmer; Bulgarian
+18. Culava, Alexe: 43, farmer, Ismail
+19. Kiriloff, Teodor : 37, lawyer, Ismail (?) ; Bulgarian
+20. Lichtmann, Samuel; 60, civil service; Hebrew
+21. von Loesch, Alexander: n. d.; German
+22. Luneff, Vladimir: 39, professor; Russian
+23. Moldovan, Teodor : n. d.
+24. * Misircoff, Cristo: 43, professor,. Bolgrad; Bulgarian
+25. * Nagorneac, Iacov: 39, farmer, Hotin; Ukrainian
+26. * Nikitiuk, Teodor: 35, surveyor, Cahul; Ukrainian
+27. Popa, Ion: 28, farmer, Baltz
+28. Ponomareff, Gheorghe : n. d.
+29. Poliatinciuk, Petre : 36, civil service, Podolia; Ukrainian
+30. Slutski, Moise; 62, doctor, Kishineff (?) ; Hebrew
+31. Savenko, Mihail; n. d.; Ukrainian
+32. Tziganko, Vladimir: 31, engineer; Russian
+33. * Iurcu, Constantin; 34, farmer, Hotin
+34. Manitzin, Petre; 35, teacher; Russian
+35. Mildov (Maldoc?), Dimitrie; n. d.; Bulgarian
+36. Greculoff, Alexandru : n. d.; Russian
 
 ### Absent from this Session
- 1 Bajbeuk-Melicoff: 45, surveyor, Orhei; Armenian
- 2 Ghertza (Hertza), Ioan; 34, farmer, Kishineff
- 3 * Corobcean, Teodor : 37, coop. official, Soroca
- 4 Landau, Gutman: 40, civil service; Hebrew
- 5 Novacoff, Anton: n. d.; Bulgarian
- 6 Rugina, Anton: n. d.
- 7 Sirbu, Gheorghe ; n. d.
- 8 Savciuc, Kalistrat : n. d.; Ukrainian
- 9 * Stanevici, Teodor : 51, judge, Kishineff ; Russian
- 10 Tzurcan, Alexandru: 32, farmer, Soroca
- 11 Ceornega, Ion: 40, farmer, Ismail
- 12 Steinberg (Sch6nberg?), Mendel: n. d.; Hebrew
- 13 Tcepciu (?), Gheorghe : n. d.
- 
+1. Bajbeuk-Melicoff: 45, surveyor, Orhei; Armenian
+2. Ghertza (Hertza), Ioan; 34, farmer, Kishineff
+3. * Corobcean, Teodor : 37, coop. official, Soroca
+4. Landau, Gutman: 40, civil service; Hebrew
+5. Novacoff, Anton: n. d.; Bulgarian
+6. Rugina, Anton: n. d.
+7. Sirbu, Gheorghe ; n. d.
+8. Savciuc, Kalistrat : n. d.; Ukrainian
+9. * Stanevici, Teodor : 51, judge, Kishineff ; Russian
+10. Tzurcan, Alexandru: 32, farmer, Soroca
+11. Ceornega, Ion: 40, farmer, Ismail
+12. Steinberg (Sch6nberg?), Mendel: n. d.; Hebrew
+13. Tcepciu (?), Gheorghe : n. d.
 
 
 [...]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Days of Romanian annexation of Bessarabia; extracts of a Charles Upson Clark book
+title: Days of Romanian annexation of Bessarabia
 tags: [Bessarabia, Romania, 1918, union, great romania, annexation, Sfatul Tarii, Diet, history]
 published: true
 ---

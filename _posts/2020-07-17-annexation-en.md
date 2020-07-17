@@ -5,10 +5,11 @@ tags: [Bessarabia, Romania, 1918, union, great romania, annexation, Sfatul Tarii
 published: true
 ---
 
-Here bellow I present some extracts of the book **"Bessarabia. Russia and Roumania on the Black Sea"** by _Charles Upson Clark_; Dodd, Mead&Co; New-York, 1927 
-The text belongs to University of Washington, [the source and legal right are here](https://depts.washington.edu/cartah/text_archive/clark/meta_pag.shtml).
+Here bellow I present some extracts of the book **"Bessarabia. Russia and Roumania on the Black Sea"** by _Charles Upson Clark_; Dodd, Mead&Co; New-York, 1927  
+<small>The text belongs to University of Washington, [the source and legal right are here](https://depts.washington.edu/cartah/text_archive/clark/meta_pag.shtml)</small>
 
-## The extracts are related to Romanian annexation(aka union w.) of Bessarabia, 1918
+The extracts are related to 
+### Romanian annexation(aka union w.) of Bessarabia, 1918
 
 "the Diet was mainly appointive, and would not be considered a duly representative body in normal times in any western country"
 

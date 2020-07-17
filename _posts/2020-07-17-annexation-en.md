@@ -11,14 +11,12 @@ Here bellow I present some extracts of the book **"Bessarabia. Russia and Rouman
 #### The extracts are related to Romanian annexation (a.k.a union with) of Bessarabia, 1918
 
 [...]
-"the Diet was mainly appointive, and would not be considered a duly representative body in normal times in any western country"
+the Diet[Sfatul Țării, n.r.] was mainly appointive, and would not be considered a duly representative body in normal times in any western country.
 
 [...]
-"Local Bolshevist committees now arose all over Bessarabia, disregarding the Diet, whose lack of funds and of armed support made it more impotent every day."
+Local Bolshevist committees now arose all over Bessarabia, disregarding the Diet, whose lack of funds and of armed support made it more impotent every day.
 
 [...]
-"I have marked with an asterisk the names of those who were in the Diet from the beginning, and have given such data about them (age, profession and county) as I could glean, so that one can judge of the character of the assembly; n. d. indicates that I have no information"
-
 "The news that Roumanian troops had been asked for, roused great resentment among those who still clung to the hope of a Bessarabian state within the Russian Federated Republic. President Inculetz of the Diet, and President Erhan of the Council of Directors General, telegraphed, under date of Jan. 6, 1918: "Jassy, Roumanian Government. We protest against the introduction of Roumanian armies into the territory of the Moldavian Republic. We demand categorically the immediate cessation of shipments of troops, and the prompt recall of those troops already over the border. The introduction of Roumanian troops into Bessarabia threatens us with the horrors of civil war, which has already begun. The Russian troops must be <!--more-->allowed to pass freely without any hindrance." The Bolshevist Soviet of Kishineff, in its indignation at the calling for Roumanian troops, put a price on the heads of the Moldavian Directors-Cristi, Pelivan and Codreanu-whom it held responsible for this action, and endeavored to dispossess the Diet of all power. Disorder increased; four pro-Bolshevist members of the Diet were murdered-Pantir, Prakhnitzky, Tchumatchenko and Grinfeld."
 
 President Inculetz, in introducing him, reminded the deputies through what a crisis they were passing, and emphasized the assurance given him, that the Roumanian troops were in Bessarabia solely for the preservation of order and the safeguarding of the railway communications and army supplies and munitions. Gen. Broshteanu, in his address, bade his hearers banish any fears they might have of losing their newly won liberties. "I am bound to declare to you," he said, "that Roumania is herself in too difficult a situation to have any thoughts of conflict or conquest." Our .only purpose, he went on, is to guard munitions, communications and the railways; but we have also brought you security. In every town through which we have passed, I have been told: the arrival of your army has given us the first restful night's sleep we have had in months. We of the Roumanian Army hope that under our protection you will proceed to develop your Republic as you see fit. We do not wish to interfere.
@@ -45,6 +43,8 @@ When brought before the Diet, this resolution was promptly accepted by the leade
 
 After a brief recess, the representatives of the Peasants' Soviet members announce that after consultation they have decided to support the project of union as outlined in the resolution. The President calls for a vote; all but 13 members of the Diet are present. The resolution is adopted by a vote of 86 for, 3 against, 36 present but refraining from voting, for the reasons given above; see pp. 151-7 for the list. Bessarabia, by the vote of its sole constituted authority, however makeshift, is now a part of Roumania.
 
+[...]
+I have marked with an asterisk the names of those who were in the Diet from the beginning, and have given such data about them (age, profession and county) as I could glean, so that one can judge of the character of the assembly; n. d. indicates that I have no information
 #### Voted for Union on March 27 (0. S.), 1918
 1. * Alexandri, Neculae : 60, journalist, Hotin
 2. * Alistar-Balan, Elena: 42, doctor, Akkerman

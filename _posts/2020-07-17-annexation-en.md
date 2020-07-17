@@ -6,7 +6,7 @@ published: true
 ---
 
 Here bellow I present some extracts of the book **"Bessarabia. Russia and Roumania on the Black Sea"**  
-<small>by _Charles Upson Clark_; Dodd, Mead&Co; New-York, 1927 - the text belongs to **University of Washington**, [the source and all the rights are here](https://depts.washington.edu/cartah/text_archive/clark/meta_pag.shtml)</small>
+<small>by _Charles Upson Clark_; Dodd, Mead&Co; New-York, 1927 - the text belongs to **University of Washington**, [the full source and all the rights are here](https://depts.washington.edu/cartah/text_archive/clark/meta_pag.shtml)</small>
 
 #### The extracts are related to Romanian annexation (a.k.a union with) of Bessarabia, 1918
 
@@ -133,7 +133,7 @@ After a brief recess, the representatives of the Peasants' Soviet members announ
 85. * Munteanu, Zamfir : n. d.
 86. Sucevan, Iacov; n., d,
  
- #### Voted against Union
+#### Voted against Union
 1. Balamez, Shtefan: 35, civil service, Kishineff; Bulgarian
 2. Osmolovsky, Arcadie : n. d.; Ukrainian
 3. Starenki, Mihail : n. d.; Ukrainian
@@ -199,3 +199,6 @@ For a day or two, Kishineff gave itself up to celebration; but then the Diet aga
 The resultant confusion was endless. The Council made overtures to the Russian lawyers and judges, to continue in a transition regime and clear up the dockets; but the majority crossed the Dniester and waited patiently for the restoration of Russian rule, so that the Council had to establish a complete new judiciary from quite inadequate material. Gendarmes and police had to be improvised from Bessarabia itself and the Old Kingdom, under prefects whom they tried to choose from non-partisan quarters, but who were not " of the career," as most of those now in Bessarabia are proud to boast that they are. Furthermore, control of these matters was taken out of the hands of the Council through the terms of the Treaty of Bucharest (see "Greater Roumania," chapters XVI-XVII), which laid Bessarabia under requisition for the Central Powers; this necessitated military control, martial law, censorship, etc., under the Roumanian Gen. Vaitoianu, later Prime Minister, who was charged with carrying out the burdensome requisitions. As usually happens in a Bessarabian crisis, there was a drought; as everywhere, people drew unfavorable comparisons with the good old days under the Russian Empire, not realizing that the times themselves were out of joint.
 
 No wonder that discontent was widespread, and that blame for the hard times was laid upon the Moldavian leaders of the Diet, and the Roumanians. The Mayor of Kishineff, A. C. Schmidt, led the malcontents; he was replaced, as was the Communal Council, elected in the wild days of 1917, when all Russian soldiers who happened to be in Kishineff were allowed to vote. The Council of Directors General also abolished the Provincial Zemstvo, as an anachronism in the new governmental structure, and introduced the Roumanian judicial system. This was all in the inevitable evolution of the situation, but staggered conservative Bessarabians, who had never taken the Diet seriously, and who had not dreamed as yet that Bessarabia might really have started on a path leading away from Russia. A number of earnest supporters of autonomy united with Russians of various political beliefs in protests against one or other of the actions of the Roumanians; these will be found in the booklet entitled "The Roumanian Occupation in Bessarabia: Documents," of the "Publications of the Bessarabian Delegation," presented to the Peace Conference in Paris in 1919 by MM. Krupensky and Schmidt. The more important of these documents are: the minutes of a meeting of the Kishineff Justices of the Peace held Oct. 21, 1918, protesting against the promulgation by royal decree of several fundamental changes in the judicial procedure in Bessarabia; these included the substitution of Roumanian for Russian in the courts, the abolition of the Russian position of J. P. and the substitution of a new class of assistant judges; appointment of judges by the Crown in place of election; power of the Crown to remove judges; and insistence upon taking the oath of allegiance to Roumania as a condition to retention in office of the present judges, the latter being perhaps the most repugnant stipulation to many of them.
+
+[...]
+<small>the full source text and all the rights are [here](https://depts.washington.edu/cartah/text_archive/clark/meta_pag.shtml)</small>

@@ -11,7 +11,7 @@ In articolul de faţă sunt prezentate sursele istorice care pomenesc despre "mo
 Daca ai alte surse de adăugat, comentează şi completăm colecţia! ;)
 
 ## Limba moldovenească
-
+* 1524, "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R)
 * 1642-1647; Grigore Ureche, Letopisețul Țării Moldovei; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200816467417)
 * 1700-1712; Nicolae Costin, Letopiseţul Ţării Moldovei de la zidirea lumii până la 1601, ediţie cu o introducere de Ioan Şt.Petre, Bucureşti, 1942, p.463.
 * 1737; Principatus Moldaviae nova & accurata descriptio [Document cartographique] / Delineante Principe Demetrio Cantemirio

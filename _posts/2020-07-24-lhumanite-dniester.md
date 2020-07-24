@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Les dessous de la campagne des "Massacres du Dniester"
+title: Les dessous de la campagne des "Massacres du Dniester" - 1932
 tags: [Bessarabie, Roumanie, 1932, union, pravda, Geo London, l'humanité, URSS, massacre]
 published: true
 ---
+(un article de L'Humanité (PCF), le 14 avril 1932 - [source - BnF](https://gallica.bnf.fr/ark:/12148/bpt6k404238k/f3.item.r=dnie.zoom))
 
-Un article de L'Humanité (PCF), le 14 avril 1932 ([source - BnF](https://gallica.bnf.fr/ark:/12148/bpt6k404238k/f3.item.r=dnie.zoom))
-
-## Les dessous de la campagne des "Massacres du Dniester"
 *Nous avons, dans l'Humanité, fait litière de la campagne de la presse pourrie sur les prétendus "massacres du Dniester". L'ignoble individu qui a nom Géo London, hier, sur la place de Paris, a encore bavé sur l'U.R.S.S. les immondes calomnies fabriquées dans les salles de torture de la Sigourantza roumaine.
 Mais les travailleurs bessarabiens, eux même, malgré l'abominable régime de terreur que font régner sur la Bessarabie les assassins de Bucarest ceux-là même avec qui banqueta London - se sont élevés avec vigueur contre cette campagne qui prépare la guerre contre l'Union Soviétique. Les lettres de nos correspondants que nous avons reproduites sont probantes,
 Les renseignements complémentaires qui parviennent de Roumanie dévoilent les fils cachés de la machination criminelle, dont l'inspiration vient de Paris et dont Geo London et les social-fascistes roumains se sont faits avec tant de vilenie les abjects instruments.

@@ -12,6 +12,7 @@ Un article de L'Humanité (PCF), le 14 avril 1932 ([source - BnF](https://gallic
 Mais les travailleurs bessarabiens, eux même, malgré l'abominable régime de terreur que font régner sur la Bessarabie les assassins de Bucarest ceux-là même avec qui banqueta London - se sont élevés avec vigueur contre cette campagne qui prépare la guerre contre l'Union Soviétique. Les lettres de nos correspondants que nous avons reproduites sont probantes,
 Les renseignements complémentaires qui parviennent de Roumanie dévoilent les fils cachés de la machination criminelle, dont l'inspiration vient de Paris et dont Geo London et les social-fascistes roumains se sont faits avec tant de vilenie les abjects instruments.
 Voici à ce sujet une lettre de Roumanie, publiée par la Pravda du 8 avril, et qui dévoile : des faits dont Geo London s'est bien gardé de parler :*
+<!--more-->
 ### La genèse de la campagne 
 Petit à petit on découvre la genèse de l'ignoble campagne antisoviétique déclenchée par la bourgeoisie roumaine et par ses complices dans la préparation de l'intervention, sous le mot d'ordre, ronflant des « cruautés du Dniester».
 Déjà, au cours de l'automne dernier, le ministère de l'intérieur de Roumanie avertissait la municipalité de Kichinev et d'autres villes de Bessarabie de l'imminence « d'une grande poussée de réfugiés d'au delà du Dniester et leur demandait de prendre les mesures nécessaires pour l'abri et l'alimentation de ces réfugiés».

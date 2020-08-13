@@ -22,6 +22,7 @@ Daca ai alte surse de adăugat, comentează şi completăm colecţia! ;)
 * 1700-1712; Nicolae Costin, Letopiseţul Ţării Moldovei de la zidirea lumii până la 1601, ediţie cu o introducere de Ioan Şt.Petre, Bucureşti, 1942, p.463.
 * 1716; Moldava lingua, linguae moldavicae, vocabula moldavorum, moldavorum lingua, moldavis lingua, vocabula moldavis, moldavicussermo, moldavus sermonem, moldavorum litterae, moldavica lingua, moldavorum historicus la D.Cantemir. Descriptio Moldaviae. Berlin, 1716;
 * 1717; лимба молдовеняскэ la D.Cantemir. Хроникул... P. 363 (Petersburg);
+* 1719; "Breve vocabulario italiano-muldavo" de Fra Silvestro Amelio (Silvestro Amelio) [sursa](http://dspace.bcu-iasi.ro/handle/123456789/5580)
 * 1734; молдавский язык la Antioh Cantemir (Rusia);
 * 1741; L’idiome moldave în Livre historique..., 1741, Franţa;
 * 1737; Principatus Moldaviae nova & accurata descriptio [Document cartographique] / Delineante Principe Demetrio Cantemirio
@@ -32,10 +33,12 @@ Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/2
 * 1762; "Dictionarului grecesc-slavon-moldovenesc-latin" (1762) al lui Nicolae Milescu-Spatarul;
 * 1764; "Histoire universelle depuis le commencement du Monde, jusqu'à present", à Amsterdam et a Leipzig; [source](https://gallica.bnf.fr/ark:/12148/bpt6k9779807w/f541.image)
 * 1769; Despre citirea evalgheliei in limba moldoveneasca [source 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220206465478/?type=3); [source 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219729798859/?type=3); [source 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219716465527/?type=3); [source 4](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219703132195/?type=3)
+* 1770; "Gramatica moldovenească"  pregătită pentru tipar de preotul Macarie, cu cheltuiala vistiernicului Ioan Cantacuzino
 * 1771; "moldauischen Sprache" în D.Cantemir Descriptio Moldaviae. Berlin;
 * 1777; "Histoire de la Moldavie et de la Valachie: avec une dissertation sur l'état actuel de ces deux provinces"; Jean-Louis Carra, Société typographique des Deux-Ponts, Jassy [page 7](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA7#v=onepage&q&f=false) "[Ovidius] avoit composé plusieurs poëmes en langue Moldave"; [page 218](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA218#v=onepage&q&f=false) "langue Valaque et Moldave"
 * 1785; Curioznică, Iaşi; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209173133248)
 * 1787; Moldauische Sprache la Goethe, Călătorie în Italia;
+* 1789; "În scurta adunare a numero după capetile ce s-au așezat, în doao limbi, întru folosul celor ce vor a învăța limba rusească și moldovenească" de protopoul Mihail Strilbițchi, Iași;
 * 1789; Deale casii voarbe, rusesti si moldovenesti; [source 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220966465402/?type=3)
 * 1795; Amfilohie Hotiniul, Deobşte Gheografie pe limba moldovenească scoasă de pe gheografia lui Вufier, după orînduiala care acum mai pe urmă s-au aşezat în Academie dela Parizi, Iași; [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209616466537)
 * 1795; "Gramatică teologhicească, scoasă în limba moldovenească, de pe bogoslovia lui Platon, arhiepiscopul de Moscova şi de pe alte cărţi bisericeşti" [source 1](https://www.facebook.com/limbamoldoveneasca/posts/2405222779798554)
@@ -87,6 +90,7 @@ Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/2
 * 1863; "Bucoavnă adică începătoare învăţătură pentru cei ce voesc a învăţa carte Slavoneşce şi Moldoveneşce. S-au tipărit în tipografia Casii Arhiereşci în Chişinău, 1863 anul" (retiparirea celei din 1861, cu text rusesc)
 * 1865; "Cursul primitiv de limbă moldovenească" de I. Doncev (1865)
 * 1877; Le Monde illustré; 31 mars 1877 (T40,A21,N1042), p. 6
+* 1879; "Moldavian-Russian Grammar" de Toader Școleriu
 * 1883; La Croix; 1 janvier 1883, p. 15
 * 1895; La Croix; 17 octobre 1895 (n° 3823), p. 3
 * 1896; Paris; 28 juillet 1896, p. 2

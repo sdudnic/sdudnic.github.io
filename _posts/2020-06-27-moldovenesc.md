@@ -1,14 +1,14 @@
 --- 
 layout: post
-title:  Referitnte istorice de etnonime moldovean şi limba moldovenească
+title:  Referințe istorice de etnonime moldovean și limba moldovenească
 date:   2020-06-08 19:14:00 +0100
 tags: [moldova, limba, moldovean, moldovenească, denumirea limbii, limba moldovenească, etnie moldoveana, istorie, surse istorice]
 published: true
 comment_issue_id: 3
 ---
 
-In articolul de faţă sunt prezentate sursele istorice care pomenesc despre "moldoveni" ca etnici şi despre "moldovenească" ca limbă.
-Daca ai alte surse de adăugat, comentează şi completăm colecţia! ;)
+In articolul de față sunt prezentate sursele istorice care pomenesc despre "moldoveni" ca etnici și despre "moldovenească" ca limbă.
+Daca ai alte surse de adăugat, comentează și completăm colecția! ;)
 
 ## Limba moldovenească
 * 1524, "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R), [direct](https://books.google.com/books?id=At9MAAAAcAAJ&pg=PA61&sa=X&ved=2ahUKEwiPmdm8_tbqAhXCz4UKHRUXAtU4UBC7BTACegQIARAU#v=onepage&q&f=false)
@@ -27,7 +27,7 @@ Daca ai alte surse de adăugat, comentează şi completăm colecţia! ;)
 * 1741; L’idiome moldave în Livre historique..., 1741, Franţa;
 * 1737; Principatus Moldaviae nova & accurata descriptio [Document cartographique] / Delineante Principe Demetrio Cantemirio
 Dimitrie Cantemir, 1737; [source 1](https://www.facebook.com/EramAvodlom/posts/283281999726108?__xts__%5B0%5D=68.ARD84uxPxAHd37vhUvpTfIgbCNWLzsFbVcGxoTjjQnNWpanPkfVelp8JSL4l0bWosVZYlssFCXZN4GB4a8IZ6xnd-SQI504hmqIy8usCcDk6edUgb9v5msoGck4kuwog1R-wE2gyqDpXN-3oPyiSxtE_Ck78GrJ8me-CYu0uudgrYPCdjkx9bH06NPFzHtsShdGSSsbaOLLMgZNetZP7nagMRECQwYUMbg0hF9NL0dYaSo26OHoW_APuKdFPnt-Ilq55YAAufPd5vjZE0U3wmJG5smJ8J7nylTGE9Zhun3MnWltIVpVJoKVdI5q-AoietdpuTA41t8TczxkFMKp_LVY&__tn__=-R)
-* 1745; Idioma moldavorum la Onufrie, misionar (Lvov,1745);
+* 1745; Idioma moldavorum la Onufrie, misionar (Lvov);
 * ~1750; Moldaviae principatus delineante principe Demetrio Cantemirio / [de la main de d'Anville]; Anville, Jean-Baptiste Bourguignon d' (1697-1782). Cartographe Auteur :  Cantemir, Dimitrie (1673-1723). [sursa 2](https://gallica.bnf.fr/ark:/12148/btv1b5962821v)
 * 1750; Moldaviae principatus delineante principe Demetrio Cantemirio, Jean-Baptiste Bourguignon d’Anville ~1750; [source 1](https://www.facebook.com/groups/greatmoldova/permalink/674118456703979/)
 * 1762; "Dictionarului grecesc-slavon-moldovenesc-latin" (1762) al lui Nicolae Milescu-Spatarul;

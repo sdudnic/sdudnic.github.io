@@ -8,21 +8,21 @@ published: true
 Astăzi, 27 august, marcăm ziua Independenței Republicii Moldova. Sa vedem de ce această independență importantă pentru fiecare stat. Care e sensul acestei independențe și ce ne aduce nouă, cetățenilor Republicii Moldova.
 Să începem de la înființarea mărcii Moldova, foarte pe scurt, după care vom vedea ce probleme avem în prezent.
 
-1346 - descălecarea lui Dragoș, înființarea mărcii Moldova
-1359 - declararea independența Moldovei, cu Bogdan I, de la Ungaria
-1365 - recunoașterea independenței Moldovei de către Ungaria;
-1457-1504 - domnia lui Ștefan cel Mare, când Moldova se afirma ca Subiect, și nu Obiect, al relațiilor internaționale;
-1775 - cedarea de către Imperiul Otoman a părții de Nord a Moldovei (Bucovina) imperiului Habsburgic;
-1812 - cedarea de către Im. Otoman a părții de Est a Moldovei (Basarabia) Imperiului Rus
-1856 - trei județe din sudul Basarabiei revin la Moldova de Vest
-1859 - apariția principatelor Unite a Moldovei și Țării Românești
-1878 - dispariția de jure a Moldovei (de Vest), formarea statului modern România
-1878 - cele trei județe de Sud ale Basarabiei revin la Basarabia (simbolic e că județele Basarabene nu intra în România nou creată)
-1917 - apariția primei Republici Moldovenești : Basarabia se proclamă Republică Democratică Moldovenească, de la URSS
-1918 - alipirea Basarabiei la România, nerecunoscută de URSS, de aceea are loc la
-1924 - crearea Republicii Autonome Sovietice Socialiste Moldovenești la stânga Nistrului
-1940 - apariția Republicii Sovietice Socialiste Moldovenești în cadrul URSS
-1990 - declarația de independentă a Transnistriei, nerecunoscută
+1346 - descălecarea lui Dragoș, înființarea mărcii Moldova  
+1359 - declararea independența Moldovei, cu Bogdan I, de la Ungaria  
+1365 - recunoașterea independenței Moldovei de către Ungaria;  
+1457-1504 - domnia lui Ștefan cel Mare, când Moldova se afirma ca Subiect, și nu Obiect, al relațiilor internaționale;  
+1775 - cedarea de către Imperiul Otoman a părții de Nord a Moldovei (Bucovina) imperiului Habsburgic;  
+1812 - cedarea de către Im. Otoman a părții de Est a Moldovei (Basarabia) Imperiului Rus  
+1856 - trei județe din sudul Basarabiei revin la Moldova de Vest  
+1859 - apariția principatelor Unite a Moldovei și Țării Românești  
+1878 - dispariția de jure a Moldovei (de Vest), formarea statului modern România  
+1878 - cele trei județe de Sud ale Basarabiei revin la Basarabia (simbolic e că județele Basarabene nu intra în România nou creată)  
+1917 - apariția primei Republici Moldovenești : Basarabia se proclamă Republică Democratică Moldovenească, de la URSS  
+1918 - alipirea Basarabiei la România, nerecunoscută de URSS, de aceea are loc la  
+1924 - crearea Republicii Autonome Sovietice Socialiste Moldovenești la stânga Nistrului  
+1940 - apariția Republicii Sovietice Socialiste Moldovenești în cadrul URSS  
+1990 - declarația de independentă a Transnistriei, nerecunoscută  
 1991, 27 august - proclamarea independenței Republicii Moldova
 
 Pentru adepții naționaliști ardenți amintesc că Moldovenii dintre Nistru și Prut practic nu au participat la crearea/consolidarea statului român, și în toată istoria sa seculara a fost administrată de România timp sumar de 25 de ani. 
@@ -38,9 +38,12 @@ Haideți sa presupunem ca exista o lege, în care se zice "este interzis furtul,
 Dacă cineva fura, este pedepsit conform legii. Ce se întâmplă la noi. 
 În lege/constituie scrie, dacă e sa prescurtam: "partidele care militează împotriva suveranității, democrației, și chema la violenta sunt anticonstituționale/ilegale" și niciun partid nu este pedepsit, deoarece nu ar chema la violente. Asta ca și cum, din legea de mai sus, oamenii care fura, însă nu și omoară, trebuie sa fie achitați imediat!
 
-Sa vedem Constituția RM, Art. 41(4) "Partidele și alte organizații social-politice care, prin scopurile ori prin activitatea lor, militează împotriva pluralismului politic, a principiilor statului de drept, a suveranității și independenței, a integrității teritoriale a Republicii Moldova sînt neconstituționale", legea "privind partidele politice", nr. 294 21/12/2007: "Art.3(1) Sînt interzise partidele politice care, prin statutul, programul și/sau activitatea lor, militează împotriva suveranității, [...] utilizează [...] mijloace ilegale sau violente, incompatibile cu principiile fundamentale ale democrației."
+Sa vedem Constituția RM, 
+> Art. 41(4) "Partidele și alte organizații social-politice care, prin scopurile ori prin activitatea lor, militează împotriva pluralismului politic, a principiilor statului de drept, a suveranității și independenței, a integrității teritoriale a Republicii Moldova sînt neconstituționale", 
+legea "privind partidele politice", nr. 294 21/12/2007: 
+> Art.3(1) Sînt interzise partidele politice care, prin statutul, programul și/sau activitatea lor, militează împotriva suveranității, [...] utilizează [...] mijloace ilegale sau violente, incompatibile cu principiile fundamentale ale democrației.
 
-Fiecare din punctele acestei legi interzic activitatea politică, respectiv dacă un partid militează împotriva Suveranității conform acestei legi el este ilegal Independent dacă utilizează sau nu mijloace violente. 
+*Fiecare* din punctele acestei legi interzic activitatea politică, respectiv dacă un partid militează împotriva Suveranității conform acestei legi el este ilegal Independent dacă utilizează sau nu mijloace violente. 
 Oare juriștii noștri nu pot să vină de sine stătător la așa concluzii elementare?
 
 Și când unii politicieni de la noi spun "la mulți ani Moldova" și în același timp insistă că populația majoritară a Moldovei sunt români, contrar expresii populației exprimată în recensămintele naționale, ca limba de stat se numește "română", contrar acelorași recensăminte, care sunt niște expresii democratice a populației, cât și a Constituției, adoptată de un parlament, ales democratic, că unică literatură ce se merită de învățat la copii este cea a românilor și că unica istorie care se mărită de învățat la școală este istoria românilor, care este sensul sa spui "La mulți ani Moldova!" Ce perspective are o țară cu o identitate de stat impusă, a unei țări vecine. Oare Austria, vecina Germaniei, nu poate fi un exemplu pentru Moldova a unei tari Europene, Democratice și Prospere, cu identitatea sa proprie?
@@ -49,5 +52,5 @@ Am dori ca Europa sa fie mandra ca are în componența sa, așa a un stat frumos
 
 La Mulți Ani!
 
-Să trăiască Republica!
-Și sa trăiască Moldova!
+**Să trăiască Republica!  
+Și sa trăiască Moldova!**

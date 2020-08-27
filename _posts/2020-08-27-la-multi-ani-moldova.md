@@ -1,6 +1,6 @@
 ---
 layout: post
-title: La multi ani, Moldova 
+title: La mulți ani, Moldova!
 tags: [Moldova, independenta, 1991, istorie, suveranitate, ziua națională]
 published: true
 ---

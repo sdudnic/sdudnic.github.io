@@ -40,7 +40,8 @@ Dacă cineva fura, este pedepsit conform legii. Ce se întâmplă la noi.
 
 Sa vedem Constituția RM, 
 > Art. 41(4) "Partidele și alte organizații social-politice care, prin scopurile ori prin activitatea lor, militează împotriva pluralismului politic, a principiilor statului de drept, a suveranității și independenței, a integrității teritoriale a Republicii Moldova sînt neconstituționale", 
-legea "privind partidele politice", nr. 294 21/12/2007: 
+
+Legea "privind partidele politice", nr. 294 21/12/2007: 
 > Art.3(1) Sînt interzise partidele politice care, prin statutul, programul și/sau activitatea lor, militează împotriva suveranității, [...] utilizează [...] mijloace ilegale sau violente, incompatibile cu principiile fundamentale ale democrației.
 
 *Fiecare* din punctele acestei legi interzic activitatea politică, respectiv dacă un partid militează împotriva Suveranității conform acestei legi el este ilegal Independent dacă utilizează sau nu mijloace violente. 

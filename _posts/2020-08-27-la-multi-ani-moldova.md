@@ -35,9 +35,9 @@ Președintele Moldovean, care în programul sau electoral promitea acordul de fr
 
 Mai sus pomeneam de **partide anticonstituționale și ilegale. Despre ce partide ar fi vorba?**
 
-Haideți sa presupunem ca exista o lege, în care se zice "este interzis furtul, violul și omorul"
-Dacă cineva fura, este pedepsit conform legii. Ce se întâmplă la noi. 
-În lege/constituie scrie, dacă e sa prescurtam: "partidele care militează împotriva suveranității, democrației, și chema la violenta sunt anticonstituționale/ilegale" și niciun partid nu este pedepsit, deoarece nu ar chema la violente. Asta ca și cum, din legea de mai sus, oamenii care fura, însă nu și omoară, trebuie sa fie achitați imediat!
+Haideți sa presupunem ca exista o lege, în care se zice *"este interzis furtul, violul și omorul"*
+Dacă cineva *fură, este pedepsit* conform legii. Ce se întâmplă la noi?! 
+În lege/Constituție scrie, dacă e sa prescurtăm: "partidele care militează împotriva suveranității, democrației, și chema la violență sunt anticonstituționale/ilegale". Însa niciun partid anti-suveran naționalist nu este pedepsit, pe motiv că nu ar chema la violențe. Asta ca și cum, din legea de mai sus, oamenii care *fură*, însă nu și *omoară*, trebuie sa fie achitați imediat!
 
 Sa vedem Constituția RM, 
 > Art. 41(4) "Partidele și alte organizații social-politice care, prin scopurile ori prin activitatea lor, militează împotriva pluralismului politic, a principiilor statului de drept, a suveranității și independenței, a integrității teritoriale a Republicii Moldova sînt neconstituționale", 

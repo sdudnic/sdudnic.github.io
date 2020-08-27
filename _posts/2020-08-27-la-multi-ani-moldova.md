@@ -9,16 +9,16 @@ Astăzi, 27 august, marcăm ziua Independenței Republicii Moldova. Sa vedem de 
 Să începem de la înființarea mărcii Moldova, foarte pe scurt, după care vom vedea ce probleme avem în prezent.
 
 1346 - descălecarea lui Dragoș, înființarea mărcii Moldova  
-1359 - declararea independența Moldovei, cu Bogdan I, de la Ungaria  
-1365 - recunoașterea independenței Moldovei de către Ungaria;  
-1457-1504 - domnia lui Ștefan cel Mare, când Moldova se afirma ca Subiect, și nu Obiect, al relațiilor internaționale;  
-1775 - cedarea de către Imperiul Otoman a părții de Nord a Moldovei (Bucovina) imperiului Habsburgic;  
+1359 - declararea independenței Moldovei, Bogdan I, de la Ungaria  
+1365 - recunoașterea independenței Moldovei de către Ungaria  
+1457-1504 - domnia lui Ștefan cel Mare, când Moldova se afirma ca Subiect, și nu Obiect, al relațiilor internaționale  
+1775 - cedarea de către Imperiul Otoman a părții de Nord a Moldovei (Bucovina) imperiului Habsburgic  
 1812 - cedarea de către Im. Otoman a părții de Est a Moldovei (Basarabia) Imperiului Rus  
 1856 - trei județe din sudul Basarabiei revin la Moldova de Vest  
 1859 - apariția principatelor Unite a Moldovei și Țării Românești  
 1878 - dispariția de jure a Moldovei (de Vest), formarea statului modern România  
 1878 - cele trei județe de Sud ale Basarabiei revin la Basarabia (simbolic e că județele Basarabene nu intra în România nou creată)  
-1917 - apariția primei Republici Moldovenești : Basarabia se proclamă Republică Democratică Moldovenească, de la URSS  
+1917 - apariția primei Republici Moldovenești: Basarabia se proclamă Republică Democratică Moldovenească, de la URSS  
 1918 - alipirea Basarabiei la România, nerecunoscută de URSS, de aceea are loc la  
 1924 - crearea Republicii Autonome Sovietice Socialiste Moldovenești la stânga Nistrului  
 1940 - apariția Republicii Sovietice Socialiste Moldovenești în cadrul URSS  
@@ -27,12 +27,13 @@ Să începem de la înființarea mărcii Moldova, foarte pe scurt, după care vo
 
 Pentru adepții naționaliști ardenți amintesc că Moldovenii dintre Nistru și Prut practic nu au participat la crearea/consolidarea statului român, și în toată istoria sa seculara a fost administrată de România timp sumar de 25 de ani. 
 
-Din păcate după destrămarea URSS, Moldova, economic, dar și social, și politic, a degradat simțitor. Independență a arătat pregătirea, dat fiind și experiența slabă a elitelor politice locale de a administra o republica. Noi nu am avut elite refugiate, care au revenit în tara, după exemplul țărilor Baltice. O parte din experți străini au plecat sau au fost mânați de valul de naționalism care a cuprins tânăra republica, alta parte a elitei au emigrat din țară, care și pe unde, prin România, Rusia, în alte tari europene și nu doar. Starurile Moldovenești, mai vechi sau mai noi, de cele mai multe ori trăiau sau se produceau în străinătate. Care au fost cauzele acestei lipse de entuziasm în construirea unui stat în conformitate cu noile principii democratice? Probabil, Moldovenilor le încurca lipsa oarecare de reactivitate. Ei sunt greu de schimbat. Revoluțiile și evoluțiile pot fi catalizate, sau simulate la noi, însă conservatismul național joacă un rol dublu: pe de o parte, conserva autenticitatea națională, pe de alta, însă, frânează schimbările și reformele. Poporul greu reacționează la orice îi propun noii lideri. Inclusiv la înlocuirea simbolurilor identității naționale. Însă dacă aceasta se insista, și persista, cu timpul, oamenii la fel de greu se vor debarasa de asemenea clișee. 
+Din păcate *după destrămarea URSS*, Moldova, economic, dar și social, și politic, a degradat simțitor. Independență a arătat pregătirea, dat fiind și experiența slabă a elitelor politice locale de a administra o republica. Noi nu am avut elite refugiate, care au revenit în tara, după exemplul țărilor Baltice. O parte din experți străini au plecat sau au fost mânați de valul de naționalism care a cuprins tânăra republica, alta parte a elitei au emigrat din țară, care și pe unde, prin România, Rusia, în alte tari europene și nu doar. Starurile Moldovenești, mai vechi sau mai noi, de cele mai multe ori trăiau sau se produceau în străinătate. Care au fost cauzele acestei lipse de entuziasm în construirea unui stat în conformitate cu noile principii democratice? Probabil, Moldovenilor le încurca lipsa oarecare de reactivitate. Ei sunt greu de schimbat. Revoluțiile și evoluțiile pot fi catalizate, sau simulate la noi, însă conservatismul național joacă un rol dublu: pe de o parte, conserva autenticitatea națională, pe de alta, însă, frânează schimbările și reformele. Poporul greu reacționează la orice îi propun noii lideri. Inclusiv la înlocuirea simbolurilor identității naționale. Însă dacă aceasta se insista, și persista, cu timpul, oamenii la fel de greu se vor debarasa de asemenea clișee. 
 
-Ce s-a făcut oare de către conducerea noastră pentru consolidarea statului? 
+*Ce s-a făcut oare de către conducerea noastră pentru consolidarea statului?* 
+
 Președintele Moldovean, care în programul sau electoral promitea acordul de frontieră cu țara vecină și "Istoria Moldovei", sancționarea partidelor anticonstituționale și ilegale, și în final sa se laude doar cu crearea câtorva comisii, rezultatul cel mai probabil al cărora va fi doar consumul banilor din bugetul de stat pentru salariile membrilor acestor comisii. Când un ministru, aparent moldovenist, refuza sa recunoască ca istoria Moldovei este discriminatorie pentru 93,1% ale populației, care nu s-au declarat români?
 
-Mai sus pomeneam de partide anticonstituționale și ilegale. Despre ce partide ar fi vorba?
+Mai sus pomeneam de **partide anticonstituționale și ilegale. Despre ce partide ar fi vorba?**
 
 Haideți sa presupunem ca exista o lege, în care se zice "este interzis furtul, violul și omorul"
 Dacă cineva fura, este pedepsit conform legii. Ce se întâmplă la noi. 

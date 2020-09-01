@@ -90,7 +90,7 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1861; "Bucoavnă 'adică Începătoare învățătură pentru cei ce voesc a învăța carte moldovenească. Sau tipărit în tipografia Casii Arhierești în Chișinău, anul 1861"
 * 1863; "Bucoavnă adică începătoare învățătură pentru cei ce voesc a învăța carte Slavoneșce și Moldoveneșce. S-au tipărit în tipografia Casii Arhiereșci în Chișinău, 1863 anul" (retiparirea celei din 1861, cu text rusesc)
 * 1865; "Cursul primitiv de limbă moldovenească" de I. Doncev
-* 1870; "Romancero español" de Mihai Eminescu, Copii de pe natura: "Acest autor de caraghioslâcuri, moldoveneşte de mascarade", "Moretto c-a tradus-o de pe moldovenie pe spaniolie", "tălmăcită de pe moldovenie"
+* 1870; "Romancero español" de Mihai Eminescu, Copii de pe natura: "Acest autor de caraghioslâcuri, moldoveneşte de mascarade", "Moretto c-a tradus-o de pe moldovenie pe spaniolie", "tălmăcită de pe moldovenie", [(sursa)](https://ro.wikisource.org/wiki/Romancero_espa%C3%B1ol)
 * 1877; Le Monde illustré; 31 mars 1877 (T40,A21,N1042), p. 6
 * 1879; "Moldavian-Russian Grammar" de Toader Școleriu
 * 1883; La Croix; 1 janvier 1883, p. 15

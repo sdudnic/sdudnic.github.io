@@ -80,7 +80,6 @@ _Mai 14 – Mars 18_ Ingénieur-développeur TMA : Mise à jour et maintenance d
 * Création d’un nouveau site sur les innovations, en ASP.NET Core
 * Maintenance des sites, migration sur la plateforme Umbraco ;
 * Ajout de nouveaux modules fonctionnels et pages sur le site;
-* Migration des sites de la plateforme Amazon vers Microsoft Azure 
 
 _Environnement_	.NET (3.5-4), ASP.NET/MVC/Razor, ASP.NET Core 1.1-2, Azure Table Storage, CMS Umbraco (v4.7-6), MySQL 5.1, Mercurial, Microsoft Azure, HTML /CSS3 / JS / AngularJS & Angular 6
 

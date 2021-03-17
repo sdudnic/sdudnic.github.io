@@ -134,5 +134,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
 
 ## Etnie, natiune, popor: moldoveni, moldovean
 * 1352—1564; Молдавско-польская летопись; "Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь"  [(sursa)](http://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952)
+* 1765; "Observations historiques et géographiques, sur les peuples barbares...", Charles de Peyssonnel ([Langue] Moldave, Nation Moldave, Histoire de Moldavie) [sursa](https://books.google.com/books?id=7LpNbuX0mLIC&lpg=PA22&ots=Owzh40YUFT&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&pg=PA22#v=snippet&q=nation%20moldave&f=false)
 * Население Бессарабской губернии по переписи 1897 г. [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3&__xts__%5B0%5D=68.ARABAVG_gMQ0mBiWXr4U81-X7cP3sR24BeH8o3n2FAZCX3uKtWpTVpaO6S_2r7qrpkCYaoRYbwSHfAFQktvMYor7uxETr5lWmDhj9rLFp_aacWTB0VvLbWrofsg15gwvC6Bf_lmthqGSReByHgVQOEqHXZLJx0cU2v9g6lVXlbNvOrBt-FZ3PotQp3vs-sLrknyCh9DO7F5TAlHQGLn7bU6m-kutWJ_nXdWapZRMHrTtz_S6_XR-tpYA2jTv8WTILUV6B0wpaPwCSWq7EqceL5iHUCtPNH9rwHZxXqfMP0aiuYoawtP9iwpOetKQKKuEk34jkgKMLZIfeY4Q2dcZFUQ&__tn__=-R)
 * ... [in completare]

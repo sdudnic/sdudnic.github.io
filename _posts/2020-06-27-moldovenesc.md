@@ -34,20 +34,30 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1764; "Histoire universelle depuis le commencement du Monde, jusqu'à present", à Amsterdam et a Leipzig; [sursa](https://gallica.bnf.fr/ark:/12148/bpt6k9779807w/f541.image)
 * 1765; "Observations historiques et géographiques, sur les peuples barbares...", Charles de Peyssonnel ([Langue] Moldave, Nation Moldave, Histoire de Moldavie) [sursa](https://books.google.com/books?id=7LpNbuX0mLIC&lpg=PA22&ots=Owzh40YUFT&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&pg=PA22#v=snippet&q=nation%20moldave&f=false)
 * 1769; Despre citirea evalgheliei in limba moldoveneasca [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220206465478/?type=3); [sursa 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219729798859/?type=3); [sursa 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219716465527/?type=3); [sursa 4](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219703132195/?type=3)
-* 1770; "Gramatica moldovenească"  pregătită pentru tipar de preotul Macarie, cu cheltuiala vistiernicului Ioan Cantacuzino
+* 1770; "Gramatica mold[ovenească] : a Parintelui Macarie"  pregătită pentru tipar de preotul Macarie, cu cheltuiala vistiernicului Ioan Cantacuzino [Bibi. Acad. R.P.R., cota 102]
 * 1771; "moldauischen Sprache" în D.Cantemir Descriptio Moldaviae. Berlin;
 * 1777; "Histoire de la Moldavie et de la Valachie: avec une dissertation sur l'état actuel de ces deux provinces"; Jean-Louis Carra, Société typographique des Deux-Ponts, Jassy [page 7](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA7#v=onepage&q&f=false) "[Ovidius] avoit composé plusieurs poëmes en langue Moldave"; [page 218](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA218#v=onepage&q&f=false) "langue Valaque et Moldave"
+* 1783; [Metastasio], Ahileu la ostrovul Șirului. [Comedie tradusă - probabil de Al. Beldiman - în Moldova] „din limba grecească pe limba moldovinească”. [Manuscris din 1783; Bibi. Acad. R.P.R., cota 1818].
 * 1785; Curioznică, Iași; [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209173133248)
 * 1787; Moldauische Sprache la Goethe, Călătorie în Italia;
+* 1789; Toader Școleriu, Lecțione, adecă cuvîntare, scoase de la întîie parte a gramaticii... Pentru învățătura limbii moldovenești și rusești. Ieși, în Tipografie cea politicească;
 * 1789; "În scurta adunare a numero după capetile ce s-au așezat, în doao limbi, întru folosul celor ce vor a învăța limba rusească și moldovenească" de protopoul Mihail Strilbițchi, Iași;
 * 1789; Deale casii voarbe, rusesti si moldovenesti; [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220966465402/?type=3)
+* 1794; Nils Nystrom, Mijlociri noauă aflate păntru stingerea focului. Tălmăcit din limba șvețască în nemțască și moldovenească. Liov, Tipariu lui Pilier.
+* 1794; Critil și Andronius. Acum întîi tipărită... de pre limba grecească pre limba noastră moldovenească... Iași, în sfînta mitropolie.
 * 1795; Amfilohie Hotiniul, Deobște Gheografie pe limba moldovenească scoasă de pe gheografia lui Вufier, după orînduiala care acum mai pe urmă s-au așezat în Academie dela Parizi, Iași; [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209616466537)
+* 1795; Amfilohie Hotiniul, De obște gheografiepe limba moldovenească. Scoasă de pe Gheografia lui Bufier... Acum întîi tipărită în zilele prealuminatului și preaînălțatului domnului nostru Alexandru Ioan Calimah voevod... în sfînta Mitropolie în Iași, 1795.
 * 1795; "Gramatică teologhicească, scoasă în limba moldovenească, de pe bogoslovia lui Platon, arhiepiscopul de Moscova și de pe alte cărți bisericești" [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405222779798554)
 * 1796; "Gramatica de la învătătura fizicii, scoasă de pre limba italienească pre limba moldovenească, întru care să cuprinde tot ceea ce omul voiește a ști și a învăța în cer și pre pământ din lucrurile cele mai cunoscute și mai trebuincioase. Anul 1796, april 10", Amfilohie Hotiniul [sursa](https://www.academia.edu/1313549/_Gramatica_de_la_%C3%AEnv%C4%83%C5%A3%C4%83tura_fizicii._Considera%C5%A3ii_asupra_terminologiei_astronomice)
 * 1804; "Nouveau dictionnaire historique, ou Histoire abrégée de tous les hommes qui se sont fait un nom... depuis le commencement du monde jusqu'à nos jours"; Chaudon, Delandine; Lyon [sursa](https://gallica.bnf.fr/ark:/12148/bpt6k63411547/f81.image) ("histoire... écrite en langue moldave")
+* 1806; Fr. G. Ducray Duminil, Alexii sau căsuța din codru. Acum întăi tălmăcită din limba franțuzească întru ce moldovenească de cel mai gios iscălit Aleco Beldeman. [Manuscris din 1806; Bibi. Acad. R.P.R., cota 1781]
+* 1806; Fr. Th. Mărie de Baculard d’Amaud, Adelson și Salvini. Poveste englezască sau jalnică tîmplare. Tălmăcită de pe acea franțuzască pe limba moldovenească de Fotis Calafati. [Manuscris din 1806; Bibi. Acad. R.P.R., cota 558]
+* 1808; Florian, Galatia. Tragodie păstorescă a domnului... tălmăcită de pe limba grecească pe limba moldovinească de Constantin Stamate. Ieși. [Manuscris; Bibi. Acad. R.P.R., cota 3502].
 * 1814; "de pe Sărbie pre limba Moldovineasca am lălmăcit la anul 1814 Iulie în 29", Cliucer Pavăl Debrid [sursa](https://books.google.com/books?id=CMNJAAAAMAAJ&q=%22limba+moldovineasca%22&dq=%22limba+moldovineasca%22&hl=en&sa=X&ved=2ahUKEwjNt8_Z6sPqAhUoxoUKHQsJCZcQ6AEwAXoECAEQAg)
 * 1815; Slujba, la pomenirea Sfîntului slăvitului mare glăsuitoriului; [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405210223133143)
+* 1815; Abatele Prevost, Istorie cavalieriului de Grie și a iubiții sale Manon Lesco, care tălmăcindu-se de pe limba franțuzască în limba moldovenească prin osteneala și osârdie drepții dumisale banului Aleco Beldiman, s-au prescris acum de mine, în anul 1815... Costachi Borș. [Manuscris; Bibi. Acad. R.P.R, cota 193]
 * 1818; Rückert, Cristian-Albert. învățătură pentru facerea pâinii// Iași, 1818, via: Bibliografia românească veche (BRV), vol. III. 1809–1830. București: Atelierele Grafice Socec & Co., Soc. Anonimă, 1912, p. 240-241 ("ai poruncit nu numai a să tălmaci în limba moldovenească a patriei noastre"), [sursa FB](https://www.facebook.com/groups/greatmoldova/permalink/753883825394108)
+* 1818; loan Beldiman, Istorie a celor mai gingașe amoruri a Parisului. Din ce grecească s-au tălmăcit în limba moldovenească, prin osteneala și osârdie drepții sale... S-au prescris de mine iscălitul la 1818, Costachi Borș. [Manuscris; Bibi. Acad. R.P.R., cota 126]
 * 1819; Cartea liturgică "Mineiul de obște"; Mitropolitul Chișinăului și Hotinului, Gavriil Bănulescu-Bodoni [sursa](https://razboiulpentrutrecut.wordpress.com/2013/07/17/care-era-limba-bastinasilor-din-moldova-de-est-marturii-din-titlurile-tipariturilor-din-sec-xviii-xx/)
 * 1819; "Scurtă russască gramatică, cu tălmăcire în limba moldovenească pentru ucenicii Seminarei Chișinăului și ale altor scoale den Basarabia, cu adăogirea cuvintelor și a dialogurilor, ce se întrebuințază mai adesăori în limba rusască și moldovenească" Chișinău, Tipografia mitropoliei Chișinăului, 1819 [sursa](https://tiparituriromanesti.wordpress.com/2011/10/28/scurta-rusasca-gramatica-cu-talmacire-in-limba-moldoveneasca-chisinau-1819/)
 * 1820; Le Constitutionnel, 12 novembre 1820 (n° 317), p. 2  [sursa](https://www.retronews.fr/journal/le-constitutionnel/12-novembre-1820/22/378501/2?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=0)
@@ -57,8 +67,11 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1821; "Tipic bisericesc, adunat în scurt pentru cea mai lesne învățătură celor ce nu-l șciu și îndreptarea printr-însul ce cuprinde în sine acestea: care, după care, și cum se cuvine slujitorilor bisericești a ceti și a cînta… s-au tălmăcit moldovenește de pre cel slovenesc și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, anul 1821"; "Tipicul", 1821
 * 1822; "Bucoavnă, adică începătoare învățătură pentru cei ce voesc a învăța carte moldovenește. S-au tipărit în duhovniceasca tipografie a Basarabiei în Chișinău"
 * 1822; Învățătură Părintească; [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405210506466448)
+* 1823; Rollin, Frumusețile a istoriei romînești sau tabla întîmplărilor cari au înveșnicit pe romani. Acum întăieși dată tălmăcită de pe limba franțuzască pe limba moldovenească prin serdariul Vasilie Vîmav. [Manuscris din 1823; Bibi. Acad. R.P.R., cota 175]
 * 1824; Viceregele rus Voronțov ordona că „învățătură în școlile lancasteriene (din Basarabia) se va face înainte de toate și preferențial în rusă și nu învață moldovenește decât elevii care doresc să deprindă această limbă pe lângă rusă” (Ion G. Pelivan, op. cit., p. 18-19)
+* 1824; Chesar Becearia, Pentru greșele și pedepsi, politicește prăvite. De pe limba grecească vulgare în moldove[nească tăl]măcită de banul Vasilie Vîmav. [Manuscris din 1824; Bibi. Acad. R.P.R., cota 185]
 * 1824: La langue moldave la d’Hauterive. Tableau de Moldavie. Paris
+* 1825; Condillac, Loghica sau întăile tălmăciri meșteșugului de a să socoti cineva bine. Scrisi de... și acum întăieși dată de pe grecească pe limba moldovenească tălmăcită de banul Vasile Vîmav [Manuscris din 1825; Bibi. Acad. R.P.R., cota 425];
 * 1827; "Instrucțiea Bisericilor mai gios însemnate. S-au tipărit la preasfîntut Sinod la anul 1820. Iară de pre cea slavenească s-au tălmăcit pe limba moldovenească, și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1827"
 * 1828; Gazette nationale ou le Moniteur universel, 22 mai 1828 (n° 143), p. 1 [sursa](https://www.retronews.fr/journal/gazette-nationale-ou-le-moniteur-universel/22-mai-1828/149/2236841/1?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=4)
 * 1828; "Așezâmîntul pentru ocîrmuirea Oblastiei dinpreună statul lui, tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie din Chișinău, 1828, Aprilie 27 zile"
@@ -72,6 +85,7 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1834; "Limba moldovenească și limba valahă", Bessarabien - Bemerkungen und Bedanken; J. G. Zucker; Frankfurt
 * 1834; Journal des débats politiques et littéraires; 1 octobre 1834, p. 1
 * 1834; Gazette de France; 2 octobre 1834, p. 2
+* 1836; Dr. TollHausen, Instrucție în scurt de prințipurile ighienismului sau a sistemii morizoniane și de întrebuințarea doftoriei universale de veghetaluri. Aduse în limba moldovenească de pe acele franțuzești... tălmăcite [de căminarul C. Veisa] de pe însuși cartea dumisale Morizon, ce au ieșit în limba germană. Iași, Tipografia s[fmtei] mitropolii
 * 1837; Journal des débats politiques et littéraires; 16 décembre 1837, p. 2
 * 1838; Journal des débats politiques et littéraires; 8 décembre 1838, p. 2
 * 1838; Gazette nationale ou le Moniteur universel; 9 décembre 1838 (n° 343), p. 2
@@ -79,6 +93,7 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1838; Gazette de France; 10 décembre 1838, p. 4
 * 1840; Le Constitutionnel; 12 octobre 1840 (n° 286), p. 2
 * 1840; Gramatica și Hristomatia de limbă valaho-moldovenească a lui Iacob Hâncu (1840)
+* 1841; "Spicuitorul moldo-romîn". Jurnal scientific, literar și industrial, rediguit de o soțietate de literați. Iașii, Institutul Albinei
 * 1841; "Datoriile călugărilor a unora cătră alții, în viața lor cea de obșce. S-au tipărit ruseșce la Sanct Petersburg în tipografia Preasfîntului Sinod la 1816 în luna August, iară de pre cea rusască s-au tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1841 în luna lui August"
 * 1844; Theoretisch-praktische Grammatik der dacoromanischen, das ist, der moldauischen oder wallachischen Sprache, Theoktist Blazewicz [sursa 1](https://www.facebook.com/EramAvodlom/posts/283374073050234?__xts__%5B0%5D=68.ARAphL7m4CT_cy4isu_jBLPkwJJfcjPeFWPtKHJ4AkHZG4lM9E5_rAc2PF7VS5tkjKcG2Asj1Wul_VLAfrOSZqBuzQj51jOC-SN0_DoBInHWfKebOrRPyTi1O0IT4GezOzoDTPicmCSzPgD1qZuW6hCy0fBuW0EBgYxLYllqa_76r0bYgik3D5_NdbXC4dpLfFUBL6-8yR9-MefUgY2eUCRJJTVu9dHMVjjwPAXJojVCt5lmEbCTAPmsBdG8AFETKJBky6RlBZKToW9-Odct2hnB2SfQZhBwm7uUrC5iwPlJ0eo__3lXIabqyVUtMXH99D07FTe9c-XGCDPQCzlxgW0&__tn__=-R) 
 * 1849; Le Constitutionnel; 29 mai 1849 (n° 149), p. 2
@@ -96,6 +111,11 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1877; Le Monde illustré; 31 mars 1877 (T40,A21,N1042), p. 6
 * 1879; "Moldavian-Russian Grammar" de Toader Școleriu
 * 1883; La Croix; 1 janvier 1883, p. 15
+* 1888; Elena Didia Odorica Sevastos, Cîntece moldovenești. Iași, Tipografia națională
+
+
+
+
 * 1895; La Croix; 17 octobre 1895 (n° 3823), p. 3
 * 1896; Paris; 28 juillet 1896, p. 2
 * 1898; "Dicționar scurt pentru convorbiri ruso-moldovenești" (1898)
@@ -136,4 +156,10 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
 * 1352—1564; Молдавско-польская летопись; "Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь"  [(sursa)](http://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952)
 * 1765; "Observations historiques et géographiques, sur les peuples barbares...", Charles de Peyssonnel ([Langue] Moldave, Nation Moldave, Histoire de Moldavie) [sursa](https://books.google.com/books?id=7LpNbuX0mLIC&lpg=PA22&ots=Owzh40YUFT&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&pg=PA22#v=snippet&q=nation%20moldave&f=false)
 * Население Бессарабской губернии по переписи 1897 г. [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3&__xts__%5B0%5D=68.ARABAVG_gMQ0mBiWXr4U81-X7cP3sR24BeH8o3n2FAZCX3uKtWpTVpaO6S_2r7qrpkCYaoRYbwSHfAFQktvMYor7uxETr5lWmDhj9rLFp_aacWTB0VvLbWrofsg15gwvC6Bf_lmthqGSReByHgVQOEqHXZLJx0cU2v9g6lVXlbNvOrBt-FZ3PotQp3vs-sLrknyCh9DO7F5TAlHQGLn7bU6m-kutWJ_nXdWapZRMHrTtz_S6_XR-tpYA2jTv8WTILUV6B0wpaPwCSWq7EqceL5iHUCtPNH9rwHZxXqfMP0aiuYoawtP9iwpOetKQKKuEk34jkgKMLZIfeY4Q2dcZFUQ&__tn__=-R)
+* 1845; Gh. Asachi, Lupta moldovenilor cu cavalerii crucieri la anul 1423. Iași, 1845
+* 1898; Al. Gîdei, Studiu asupra cronicarilor moldoveni din punct de vedere al limbei, metodei și cugetărei... Cu o prefață de V. A. Urechia. București, 1898
+* 1901; Principele Dimitrie Cantemir, Hronicul vechimei romano-moldo-vlahilor, publicat sub auspiciile Academiei Romîne... de Gr. C. Tocilescu. (Cu un portret și două facsimile), București, Inst. de arte grafice Carol Gobl, 1901.
+* 1908; I. Bogdan, Documentul rîzenilor din 1484 și organizarea armatei moldovene în sec. XV. București, Carol Gobl, 1908. (Extras din Analele Academiei Române. Seria Il-a. Tom. XXX. Memoriile Secțiunii istorice)
+* 1925; N. A. Bogdan, Din trecutul comerțului moldovenesc și mai ales al celui ieșan. Productele solului, porturi, târguri și iarmaroace... documente, memorii și note culese și comentate de... Tipărite din inițiativa și cu o prefață a d-lui N. V. Ștefăniu... cu 89 ilustrații. Iași, Institutul modem de arte grafice N. V. Ștefăniu & D. Staierman, [1925]
+* 1926;  Gh. Cardaș, Cântece poporane moldovenești. Editura Librăriei diec., Arad, 1926. (Cu un glosar). (Biblioteca Semănătorul, nr.-le 157-159)
 * ... [in completare]

@@ -98,6 +98,7 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1841; "Spicuitorul moldo-romîn". Jurnal scientific, literar și industrial, rediguit de o soțietate de literați. Iașii, Institutul Albinei
 * 1841; "Datoriile călugărilor a unora cătră alții, în viața lor cea de obșce. S-au tipărit ruseșce la Sanct Petersburg în tipografia Preasfîntului Sinod la 1816 în luna August, iară de pre cea rusască s-au tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1841 în luna lui August"
 * 1844; Theoretisch-praktische Grammatik der dacoromanischen, das ist, der moldauischen oder wallachischen Sprache, Theoktist Blazewicz [sursa 1](https://www.facebook.com/EramAvodlom/posts/283374073050234?__xts__%5B0%5D=68.ARAphL7m4CT_cy4isu_jBLPkwJJfcjPeFWPtKHJ4AkHZG4lM9E5_rAc2PF7VS5tkjKcG2Asj1Wul_VLAfrOSZqBuzQj51jOC-SN0_DoBInHWfKebOrRPyTi1O0IT4GezOzoDTPicmCSzPgD1qZuW6hCy0fBuW0EBgYxLYllqa_76r0bYgik3D5_NdbXC4dpLfFUBL6-8yR9-MefUgY2eUCRJJTVu9dHMVjjwPAXJojVCt5lmEbCTAPmsBdG8AFETKJBky6RlBZKToW9-Odct2hnB2SfQZhBwm7uUrC5iwPlJ0eo__3lXIabqyVUtMXH99D07FTe9c-XGCDPQCzlxgW0&__tn__=-R) 
+* 1848, Iași, în 12 Marite, traducere in franceza sistematica ca "langue moldave", a sintagmelor "limba nationala" ou limba romaneasca, [Documente privitóre la istoria românilor, Volume 6, 1895](https://www.google.com/books/edition/Documente_privit%C3%B3re_la_istoria_rom%C3%A2nil/MQVSAQAAMAAJ?hl=en&gbpv=0&kptab=getbook)
 * 1849; Le Constitutionnel; 29 mai 1849 (n° 149), p. 2
 * 1849; Le Constitutionnel; 30 mai 1849 (n° 150), p. 1, 2
 * 1851; Gazette nationale ou le Moniteur universel; 9 juin 1851 (n° 160), p. 3
@@ -114,10 +115,6 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 * 1879; "Moldavian-Russian Grammar" de Toader Școleriu
 * 1883; La Croix; 1 janvier 1883, p. 15
 * 1888; Elena Didia Odorica Sevastos, Cîntece moldovenești. Iași, Tipografia națională
-
-
-
-
 * 1895; La Croix; 17 octobre 1895 (n° 3823), p. 3
 * 1896; Paris; 28 juillet 1896, p. 2
 * 1898; "Dicționar scurt pentru convorbiri ruso-moldovenești" (1898)

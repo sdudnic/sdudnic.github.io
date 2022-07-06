@@ -10,7 +10,12 @@ M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In M
 
 Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
-Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646](https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646) (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
+Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646](https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646) (accesat la 06/07/2022 00:06 UTC), 
+
+![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)  
+Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
+
+"Verificatorul independent", (specializat, pesemne, în verificarea informațiilor din surse ruse, sau pro-ruse) descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:
 
 > "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
 
@@ -18,7 +23,7 @@ Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-infor
 
 > "Din păcate, acum în Moldova, se încearcă același lucru [ca și în Ucraina]: eliminarea a tot ce este rusesc. Președinta [Maia Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia. Este regretabil" spune Ministrul Rus. 
 
-Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). Am hotărât să vedem detaliile acestor date. 
+Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar fi putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). Am hotărât să vedem detaliile acestor date. 
 
 Sa analizam ce declară Lavrov:  
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
@@ -39,8 +44,6 @@ Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (list
 Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova. 
 Pe când cu primele trei parca este totul clar, ceva mai vag pentru un cititor care nu prea cunoaște subiectul (însă, pesemne, si pentru unii parlamentari care au adoptat respectiva lege)
 
-![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)  
-Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
 De ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
 

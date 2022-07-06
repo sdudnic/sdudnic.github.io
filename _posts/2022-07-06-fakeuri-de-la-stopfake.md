@@ -11,7 +11,7 @@ Demult nu am mai publicat știri, însă m-am lovit recent de ipocrizia, care ne
 Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
 Vom da un exemplu pe linkul https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646 (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
-https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org
+(https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org)
 "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
 
 "Din păcate, acum în Moldova, se încearcă același lucru [ca și în Ucraina]: eliminarea a tot ce este rusesc. Președinta [Maia Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia. Este regretabil"
@@ -27,6 +27,7 @@ Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despr
 Ne focalizăm deci pe valoarea de adevăr a propoziției b).
 
 pe pagina analizata a stopfals, se mai precizează, citez "posturilor de radio și televiziune li se interzice să retransmită programe informative și informativ-analitice din alte țări decât statele membre ale Uniunii Europene, Statele Unite ale Americii, Canada și statele care au ratificat Convenția europeană privind televiziunea transfrontalieră"
+![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)
 
 Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (lista albă): 
 a) statele membre ale Uniunii Europene;

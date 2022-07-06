@@ -29,6 +29,8 @@ Sa analizam ce declară Lavrov:
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
   b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
+StopFals va încerca să lege tei de curmei, si anume, punctul b sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, ca _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc", sau, în alta variantă utilizata în text "cultura rusă".
+
 Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despre interzicerea știrilor din Rusia), aceasta ar adeveri si propoziția a), care afirmă despre existenta unei _încercări_ (se constata o încercare, nu un fapt împlinit) de a interzice totul ce e rusesc.
 
 Ne focalizăm deci pe valoarea de adevăr a propoziției b).
@@ -65,6 +67,17 @@ Si daca nu este o altă tara, ar fi oare greșită afirmația că se _încearcă
 Faptul ca inscripțiile in limba rusa sunt înlocuite cu cele in engleza (unde ați mai văzut tara neanglofona in care Curtea Constituțională sa fie labelizată în Engleza?), cum putem vedea la intrarea în Curtea Constituțională, însă și in alte sfere, cum este dispariția limbii ruse de pe multiplele site-urile oficiale. 
 
 Nu ne vom opri asupra întrebării care au fost cauzele includerii pe lista alba a SUA si Canadei. Nu ne vom întreba din care considerente informația din aceste două țări experții din PAS o consideră mai fiabile decât, sa zicem, din Israel. Nu ne vom întreba dacă Coreea de Sud sau Japonia merită și ele ceva încredere. Vom presupune ca minunea economică Singapore, sunt foarte periculoși pentru democrația si securitatea Moldovenească. Ce ne pasă și cum am putea sa tratăm informațiile din Emiratele Arabe Unite și Arabia Saudită, sau din democrațiile subdezvoltate democratic fata de Republica Moldova cum sunt Australia sau Noua Zeelanda ca sa merite încrederea noastră. Ne întrebam doar ce vor face Indienii când vor afla că nu mai pot transmite produsele Bollywood în Republica Moldova! Ce sa mai vorbim foștii colegi de integrare UE din Georgia (spun, foștii, că Republica Moldova, spre deosebire de Georgia, este, practic aproape integrată în UE, o rămas doar să interzică propaganda din tarile care nu au ratificat Convenția europeană privind televiziunea transfrontalieră)!
+
+### "Nu anulează cultura rusă"
+
+Autorii, site-ului, puțin inspirați, vor încerca să sugereze cititorului ca Lavrov ar merge mai departe, să zică câ Legea susnumita ar "anula cultura rusă". Ei utilizează fraza, citez 
+
+> "Legea interzice dezinformarea, dar nu anulează cultura rusă"
+
+Așa expresie, care nu are nu doar nicio sursă, însă si nicio logică, este demna si se regăsește doar pe siteuri de presa galbena, gândită să scoată din apa chioară borș rosu de sfeclă, însă nicidecum enunțată de un ministru de externe.
+
+
+Fiți vigilenți si verificați întotdeauna atât sursele, cat si logica ce vi se încearcă a impune, mai ales împotriva cuiva.
 
 #StopFakeNews
 

@@ -10,11 +10,13 @@ M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In M
 
 Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
-Vom da un exemplu pe linkul [https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646] (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
-(https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org)
-"К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
+Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646](https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646) (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
 
-"Din păcate, acum în Moldova, se încearcă același lucru [ca și în Ucraina]: eliminarea a tot ce este rusesc. Președinta [Maia Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia. Este regretabil"
+> "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
+
+[sursa aici](https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org)
+
+> "Din păcate, acum în Moldova, se încearcă același lucru [ca și în Ucraina]: eliminarea a tot ce este rusesc. Președinta [Maia Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia. Este regretabil" spune Ministrul Rus. 
 
 Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). Am hotărât să vedem detaliile acestor date. 
 
@@ -44,12 +46,12 @@ De ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? Oare 
 Convenția europeană privind televiziunea transfrontalieră [nu a fost ratificată la ziua de astăzi][1] de un șir țări UE ca Belgia (țara, în care se află capitala UE), Danemarca, Grecia, Luxemburg, Regatul Țărilor de Jos (Olanda), Suedia, însa și majoritatea absoluta a țârilor lumii care nu sunt membre UE! Astfel, laolaltă cu Rusia, legea ar interzice știrile din Armenia, Azerbaidjan, Georgia, Islanda, Monaco, Belarus și Kazakhstan. 
 
 Lista de țări care nu/au ratificat convenția le puteți găsi aici:
-https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132
+[https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132)
 
 
 Deci, din cele de sus, reiese ca punctul b) este un fapt obiectiv ce reiese din legea care intrase atunci in vigoare. Fapt, care si a specificat Lavrov in partea a doua a enunțului de mai sus. 
 
-In ce privește punctul a) (depre incercarea de a interzice totul ce e rusesc), in afara faptului ca reiese din a):
+In ce privește punctul a) (despre încercarea de a interzice totul ce e rusesc), in afara faptului ca reiese din a):
 
 Credem că este evident ca Maia Sandu nu intenționa să filtreze (cu toate că de jure a făcut-o) "valurile imense" de știri ce veneau spre Moldova din ...Nicaragua, Mexic sau Burkina Faso. Cum și nu s-ar osteni deputații noștri dragi să taie fluxul imens de știri din care se inspiră sursele Moldovenești din Armenia, Azerbaidjan sau Kazahstan. 
 

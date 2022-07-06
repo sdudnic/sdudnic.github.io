@@ -50,7 +50,7 @@ Si apoi, de ce a fost nevoie de specificat aparte țările din punctele (a) si (
 
 Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
 
-Convenția europeană privind televiziunea transfrontalieră [nu a fost ratificată la ziua de astăzi][1] de un șir țări UE ca Belgia (țara, în care se află capitala UE), Danemarca, Grecia, Luxemburg, Regatul Țărilor de Jos (Olanda), Suedia, însa și majoritatea absoluta a țârilor lumii care nu sunt membre UE! Astfel, laolaltă cu Rusia, legea ar interzice știrile din Armenia, Azerbaidjan, Georgia, Islanda, Monaco, Belarus și Kazakhstan. 
+Convenția europeană privind televiziunea transfrontalieră, din exces de democrație, probabil, [nu a fost ratificată la ziua de astăzi][1] de un șir țări UE, ca: Belgia (țara, în care se află capitala UE), Danemarca, Grecia, Luxemburg, Regatul Țărilor de Jos (Olanda), Suedia, însa și majoritatea absoluta a țârilor lumii care nu sunt membre UE! Astfel, laolaltă cu Rusia, legea ar interzice știrile din Armenia, Azerbaidjan, Georgia, Islanda, Monaco, Belarus și Kazakhstan. 
 
 Lista de țări care nu/au ratificat convenția le puteți găsi aici:
 [https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132)

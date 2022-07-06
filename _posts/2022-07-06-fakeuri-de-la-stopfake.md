@@ -35,7 +35,7 @@ Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despr
 
 Ne focalizăm deci pe valoarea de adevăr a propoziției b).
 
-pe pagina analizata a stopfals, se mai precizează, citez "posturilor de radio și televiziune li se interzice să retransmită programe informative și informativ-analitice din alte țări decât statele membre ale Uniunii Europene, Statele Unite ale Americii, Canada și statele care au ratificat Convenția europeană privind televiziunea transfrontalieră"
+pe pagina analizata a stopfals, se mai precizează, că legea promulgată, presupune, citez "posturilor de radio și televiziune li se interzice să retransmită programe informative și informativ-analitice din alte țări decât statele membre ale Uniunii Europene, Statele Unite ale Americii, Canada și statele care au ratificat Convenția europeană privind televiziunea transfrontalieră"
 
 Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (lista albă):  
   a) statele membre ale Uniunii Europene;  
@@ -55,13 +55,13 @@ Lista de țări care nu/au ratificat convenția le puteți găsi aici:
 [https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132)
 
 
-Deci, din cele de sus, reiese ca punctul b) este un fapt obiectiv ce reiese din legea care intrase atunci in vigoare, intr-adevar, in Republica Moldova nu vor mai fi (legal) disponibile știri din Rusia - fapt, care a și specificat Lavrov in partea a doua a enunțului de mai sus. 
+Deci, din cele de sus, reiese ca punctul b) este un fapt obiectiv ce reiese din legea care intrase atunci in vigoare, într-adevăr, in Republica Moldova nu vor mai fi (legal) disponibile știri din Rusia - fapt, care a și specificat Lavrov in partea a doua a enunțului de mai sus. 
 
 In ce privește punctul a) (despre încercarea de a interzice totul ce e rusesc), in afara faptului ca reiese din a):
 
 Credem că este evident ca Maia Sandu nu intenționa să filtreze (cu toate că de jure a făcut-o) "valurile imense" de știri ce veneau spre Moldova din ...Nicaragua, Mexic sau Burkina Faso. Cum și nu s-ar osteni deputații noștri dragi să taie fluxul imens de știri din care se inspiră sursele Moldovenești din Armenia, Azerbaidjan sau Kazahstan. 
 
-Sa ne contraargumenteze StopFals cu denumirea unei alte țări decât Rusia, care ar merita osteneala deputaților noștri neobosiți sa își schimbe focalizarea neobosită de la soluționarea problemelor stringente ale economiei paralizate și inflației galopante, probleme cu care lupta neobosit zi de zi.
+Sa ne contraargumenteze StopFals cu denumirea unei alte țări decât Rusia, care ar merita osteneala deputaților noștri neobosiți să-și schimbe focalizarea neobosită de la soluționarea problemelor stringente ale economiei paralizate și inflației galopante, probleme cu care lupta neobosit zi de zi.
 
 Si daca nu este o altă tara, ar fi oare greșită afirmația că se _încearcă_ a interzice totul ce e rus? Oare simbolurile V, Z, panglica interzisa a Sfântului Gheorghe vine din Siria sau Trinidad?
 Faptul ca inscripțiile in limba rusa sunt înlocuite cu cele in engleza (unde ați mai văzut tara neanglofona in care Curtea Constituțională sa fie labelizată în Engleza?), cum putem vedea la intrarea în Curtea Constituțională, însă și in alte sfere, cum este dispariția limbii ruse de pe multiplele site-urile oficiale. 
@@ -70,11 +70,11 @@ Nu ne vom opri asupra întrebării care au fost cauzele includerii pe lista alba
 
 ### "Nu anulează cultura rusă"
 
-Autorii, site-ului, puțin inspirați, vor încerca să sugereze cititorului ca Lavrov ar merge mai departe, să zică câ Legea susnumita ar "anula cultura rusă". Ei utilizează fraza, citez 
+Autorii, site-ului, puțin inspirați, vor încerca să sugereze cititorului că Lavrov ar merge mai departe, să zică, că Legea susnumita ar "anula cultura rusă". Ei utilizează fraza, citez 
 
 > "Legea interzice dezinformarea, dar nu anulează cultura rusă"
 
-Așa expresie, care nu are nu doar nicio sursă, însă si nicio logică, este demna si se regăsește doar pe siteuri de presa galbena, gândită să scoată din apa chioară borș rosu de sfeclă, însă nicidecum enunțată de un ministru de externe.
+Așa expresie, care nu are nu doar nicio sursă, însă si nicio logică, este demna și se regăsește doar pe siteuri de presa galbenă, gândită să scoată din apa chioară borș rosu de sfeclă, însă nicidecum enunțată de un ministru de externe.
 
 
 Fiți vigilenți si verificați întotdeauna atât sursele, cat si logica ce vi se încearcă a impune, mai ales împotriva cuiva.

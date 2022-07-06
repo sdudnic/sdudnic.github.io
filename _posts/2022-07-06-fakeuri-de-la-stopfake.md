@@ -6,7 +6,7 @@ published: true
 ---
 
 
-Demult nu am mai publicat știri, însă m-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar Made In Moldova și am hotărât sa nu trecem pe alături, ca tare iritante ai aleatoare sunt câteodată "intervențiile" automate, si blocările Facebook a mesajelor "ciao, Bella". 
+M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In Moldova_ și am hotărât să nu trecem pe alături, că tare iritante și aleatoare sunt câteodată "intervențiile" automate și blocările Facebook a mesajelor tip "ciao, bella"... 
 
 Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
@@ -18,8 +18,10 @@ Vom da un exemplu pe linkul https://stopfals.md/ro/article/fals-legea-securitati
 
 Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). Am hotărât să vedem detaliile acestor date. 
 
-Sa analizam ce declară Lavrov
+Sa analizam ce declară Lavrov:
+
 a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;
+
 b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
 Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despre interzicerea știrilor din Rusia), aceasta ar adeveri si propoziția a), care afirmă despre existenta unei _încercări_ (se constata o încercare, nu un fapt împlinit) de a interzice totul ce e rusesc.
@@ -30,10 +32,15 @@ pe pagina analizata a stopfals, se mai precizează, citez "posturilor de radio �
 ![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)
 
 Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (lista albă): 
-a) statele membre ale Uniunii Europene;
-b) Statele Unite ale Americii;
-c) Canada;
-d) statele care au ratificat Convenția europeană privind televiziunea transfrontalieră.
+
+  a) statele membre ale Uniunii Europene;
+
+  b) Statele Unite ale Americii;
+
+  c) Canada;
+
+  d) statele care au ratificat Convenția europeană privind televiziunea transfrontalieră.
+
 
 Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova. 
 Pe când cu primele trei parca este totul clar, ceva mai vag pentru un cititor care nu prea cunoaște subiectul (însă, pesemne, si pentru unii parlamentari care au adoptat respectiva lege)

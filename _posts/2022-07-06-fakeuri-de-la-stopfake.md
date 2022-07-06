@@ -39,7 +39,8 @@ Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (list
 Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova. 
 Pe când cu primele trei parca este totul clar, ceva mai vag pentru un cititor care nu prea cunoaște subiectul (însă, pesemne, si pentru unii parlamentari care au adoptat respectiva lege)
 
-![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)
+![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)  
+Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
 De ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
 

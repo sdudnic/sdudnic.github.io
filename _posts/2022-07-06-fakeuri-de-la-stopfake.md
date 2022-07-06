@@ -10,7 +10,7 @@ M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In M
 
 Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
-Vom da un exemplu pe linkul https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646 (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
+Vom da un exemplu pe linkul [https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646] (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
 (https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org)
 "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
 
@@ -18,32 +18,26 @@ Vom da un exemplu pe linkul https://stopfals.md/ro/article/fals-legea-securitati
 
 Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). Am hotărât să vedem detaliile acestor date. 
 
-Sa analizam ce declară Lavrov:
-
-a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;
-
-b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
+Sa analizam ce declară Lavrov:  
+  a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
+  b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
 Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despre interzicerea știrilor din Rusia), aceasta ar adeveri si propoziția a), care afirmă despre existenta unei _încercări_ (se constata o încercare, nu un fapt împlinit) de a interzice totul ce e rusesc.
 
 Ne focalizăm deci pe valoarea de adevăr a propoziției b).
 
 pe pagina analizata a stopfals, se mai precizează, citez "posturilor de radio și televiziune li se interzice să retransmită programe informative și informativ-analitice din alte țări decât statele membre ale Uniunii Europene, Statele Unite ale Americii, Canada și statele care au ratificat Convenția europeană privind televiziunea transfrontalieră"
-![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)
 
-Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (lista albă): 
-
-  a) statele membre ale Uniunii Europene;
-
-  b) Statele Unite ale Americii;
-
-  c) Canada;
-
+Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (lista albă):  
+  a) statele membre ale Uniunii Europene;  
+  b) Statele Unite ale Americii;  
+  c) Canada;  
   d) statele care au ratificat Convenția europeană privind televiziunea transfrontalieră.
-
 
 Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova. 
 Pe când cu primele trei parca este totul clar, ceva mai vag pentru un cititor care nu prea cunoaște subiectul (însă, pesemne, si pentru unii parlamentari care au adoptat respectiva lege)
+
+![imaginea de pe siteul StopFake.Md](../assets/2022-07-06%2001_30_53-Stop%20Fals%20_%20FALS_LegeaSecuritatiiInformaționale.png)
 
 De ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
 

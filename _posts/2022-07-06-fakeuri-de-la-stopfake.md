@@ -12,7 +12,7 @@ Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(M
 
 Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646](https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646) (accesat la 06/07/2022 00:06 UTC), 
 
-![imaginea de pe siteul StopFake.Md](./../assets/2022-07-06-fakeuri-de-la-stopfake.png)  
+![imaginea de pe siteul StopFake.Md](/assets/2022-07-06-fakeuri-de-la-stopfake.png)  
 Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
 "Verificatorul independent", (specializat, pesemne, în verificarea informațiilor din surse ruse, sau pro-ruse) descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:

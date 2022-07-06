@@ -43,11 +43,12 @@ Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (list
   c) Canada;  
   d) statele care au ratificat Convenția europeană privind televiziunea transfrontalieră.
 
-Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova. 
+Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova, si nu ar trebui legal sa apară în mass-media din țară. 
 Pe când cu primele trei parca este totul clar, ceva mai vag pentru un cititor care nu prea cunoaște subiectul (însă, pesemne, si pentru unii parlamentari care au adoptat respectiva lege)
 
+Si apoi, de ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? 
 
-De ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
+Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
 
 Convenția europeană privind televiziunea transfrontalieră [nu a fost ratificată la ziua de astăzi][1] de un șir țări UE ca Belgia (țara, în care se află capitala UE), Danemarca, Grecia, Luxemburg, Regatul Țărilor de Jos (Olanda), Suedia, însa și majoritatea absoluta a țârilor lumii care nu sunt membre UE! Astfel, laolaltă cu Rusia, legea ar interzice știrile din Armenia, Azerbaidjan, Georgia, Islanda, Monaco, Belarus și Kazakhstan. 
 

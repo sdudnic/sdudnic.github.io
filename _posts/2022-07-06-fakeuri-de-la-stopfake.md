@@ -55,7 +55,7 @@ Lista de țări care nu/au ratificat convenția le puteți găsi aici:
 [https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132)
 
 
-Deci, din cele de sus, reiese ca punctul b) este un fapt obiectiv ce reiese din legea care intrase atunci in vigoare. Fapt, care si a specificat Lavrov in partea a doua a enunțului de mai sus. 
+Deci, din cele de sus, reiese ca punctul b) este un fapt obiectiv ce reiese din legea care intrase atunci in vigoare, intr-adevar, in Republica Moldova nu vor mai fi (legal) disponibile știri din Rusia - fapt, care a și specificat Lavrov in partea a doua a enunțului de mai sus. 
 
 In ce privește punctul a) (despre încercarea de a interzice totul ce e rusesc), in afara faptului ca reiese din a):
 

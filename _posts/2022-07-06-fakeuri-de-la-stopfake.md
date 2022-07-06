@@ -8,7 +8,7 @@ published: true
 
 M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In Moldova_ și am hotărât să nu trecem pe alături, că tare iritante și aleatoare sunt câteodată "intervențiile" automate și blocările Facebook a mesajelor tip "ciao, bella"... 
 
-Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
+Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicată pe această rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
 Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646](https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646) (accesat la 06/07/2022 00:06 UTC), 
 
@@ -29,7 +29,7 @@ Sa analizam ce declară Lavrov:
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
   b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
-StopFals va încerca să lege tei de curmei, si anume, punctul b sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, ca _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc", sau, în alta variantă utilizata în text "cultura rusă".
+StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, ca _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc", sau, în alta variantă utilizata în text "cultura rusă".
 
 Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despre interzicerea știrilor din Rusia), aceasta ar adeveri si propoziția a), care afirmă despre existenta unei _încercări_ (se constata o încercare, nu un fapt împlinit) de a interzice totul ce e rusesc.
 

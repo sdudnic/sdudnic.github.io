@@ -15,7 +15,7 @@ Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-infor
 ![imaginea de pe siteul StopFake.Md](/assets/2022-07-06-fakeuri-de-la-stopfake.png)  
 Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
-"Verificatorul independent", (specializat, pesemne, în verificarea informațiilor din surse ruse, sau pro-ruse) descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:
+"Verificatorul independent" - specializat, pesemne, în verificarea informațiilor din surse ruse, sau pro-ruse - descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:
 
 > "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
 
@@ -29,7 +29,7 @@ Sa analizam ce declară Lavrov:
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
   b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
-StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, ca _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc", sau, în alta variantă utilizata în text "cultura rusă".
+StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, că _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc" (sau, în variantă și mai fantasmagorică întâlnită în text - ar "anula" "cultura rusă"!).
 
 Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despre interzicerea știrilor din Rusia), aceasta ar adeveri si propoziția a), care afirmă despre existenta unei _încercări_ (se constata o încercare, nu un fapt împlinit) de a interzice totul ce e rusesc.
 

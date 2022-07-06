@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Fake-uri de la StopFake
+title: Fake-uri de la StopFake.md 
 tags: [Moldova, stopFake, fakenews, stopfals.md, propaganda, Rusia, SUA, meta, cenzura, facebook]
 published: true
 ---
 
-#StopFakeNews
-portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura, informația), induce el însuși în eroare opinia publică.  
+
+Demult nu am mai publicat știri, însă m-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar Made In Moldova și am hotărât sa nu trecem pe alături, ca tare iritante ai aleatoare sunt câteodată "intervențiile" automate, si blocările Facebook a mesajelor "ciao, Bella". 
+
+Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicata pe aceasta rețea de socializare, ar induce el însuși în eroare opinia publică.  
 
 Vom da un exemplu pe linkul https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646 (accesat la 06/07/2022 00:06 UTC), care descrie ca ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov
 https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org
@@ -52,5 +54,6 @@ Si daca nu este o altă tara, ar fi oare greșită afirmația că se _încearcă
 
 Nu ne vom opri asupra întrebării care au fost cauzele includerii pe lista alba a SUA si Canadei. Nu ne vom întreba din care considerente informația din aceste două țări experții din PAS o consideră mai fiabile decât, sa zicem, din Israel. Nu ne vom întreba dacă Coreea de Sud sau Japonia merită și ele ceva încredere. Vom presupune ca minunea economică Singapore, sunt foarte periculoși pentru democrația si securitatea Moldovenească. Ce ne pasă și cum am putea sa tratăm informațiile din Emiratele Arabe Unite și Arabia Saudită, sau din democrațiile subdezvoltate democratic fata de Republica Moldova cum sunt Australia sau Noua Zeelanda ca sa merite încrederea noastră. Ne întrebam doar ce vor face Indienii când vor afla că nu mai pot transmite produsele Bollywood în Republica Moldova! Ce sa mai vorbim foștii colegi de integrare UE din Georgia (spun, foștii, că Republica Moldova, spre deosebire de Georgia, este, practic aproape integrată în UE, o rămas doar sa interzică tarile din Convenția europeană privind televiziunea transfrontalieră)!
 
+#StopFakeNews
 
 [1](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132)

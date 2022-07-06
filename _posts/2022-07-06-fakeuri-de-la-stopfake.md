@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fake-uri de la StopFake.md 
+title: Fake unfake, sau cum StopFals.md simulează lupta cu fakeurile
 tags: [Moldova, stopFake, fakenews, stopfals.md, propaganda, Rusia, SUA, meta, cenzura, facebook]
 published: true
 ---

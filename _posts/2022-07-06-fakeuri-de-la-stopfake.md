@@ -27,7 +27,7 @@ Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar fi putut f
 Am hotărât să analizam doua elemente din ce declară Lavrov:  
 
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
-  
+
   b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
 StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, că _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc" (sau, în variantă și mai fantasmagorică întâlnită în text - ar "anula" "cultura rusă"!).
@@ -45,13 +45,12 @@ Notăm, deci, țările din care știrile sunt "autorizate" de aceasta lege (list
   d) statele care au ratificat Convenția europeană privind televiziunea transfrontalieră.
 
 Respectiv, după o logică de excludere, restul țărilor nu sunt autorizate pentru a fi retransmise în Moldova, si nu ar trebui legal sa apară în mass-media din țară. 
+
 Pe când cu primele trei parca este totul clar, ceva mai vag pentru un cititor care nu prea cunoaște subiectul (însă, pesemne, si pentru unii parlamentari care au adoptat respectiva lege)
 
-Si apoi, de ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? 
+Si apoi, de ce a fost nevoie de specificat aparte țările din punctele (a) si (d)? Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
 
-Oare Convenția nu este o capodoperă a democrației si bunelor practici care ar fi semnată in mod natural de toate statele libere din UE, si doar vicleana Rusia nu ar fi ratificat-o?
-
-Convenția europeană privind televiziunea transfrontalieră, din exces de democrație, probabil, [nu a fost ratificată la ziua de astăzi][1] de un șir țări UE, ca: Belgia (țara, în care se află capitala UE), Danemarca, Grecia, Luxemburg, Regatul Țărilor de Jos (Olanda), Suedia, însa și majoritatea absoluta a țârilor lumii care nu sunt membre UE! Astfel, laolaltă cu Rusia, legea ar interzice știrile din Armenia, Azerbaidjan, Georgia, Islanda, Monaco, Belarus și Kazakhstan. 
+Convenția europeană privind televiziunea transfrontalieră, din exces de democrație, [nu a fost ratificată la ziua de astăzi][1] de un șir țări UE, ca: Belgia (țara, în care se află capitala UE), Danemarca, Grecia, Luxemburg, Regatul Țărilor de Jos (Olanda), Suedia, însa și majoritatea absoluta a țârilor lumii care nu sunt membre UE! Astfel, laolaltă cu Rusia, legea ar interzice știrile din Armenia, Azerbaidjan, Georgia, Islanda, Monaco, Belarus și Kazakhstan. 
 
 Lista de țări care nu/au ratificat convenția le puteți găsi aici:
 [https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132](https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=132)

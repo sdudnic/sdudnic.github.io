@@ -6,16 +6,15 @@ published: true
 ---
 
 
-M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In Moldova_ și am hotărât să nu trecem pe alături, că tare iritante și aleatoare sunt câteodată "intervențiile" automate și blocările Facebook a mesajelor tip "ciao, bella"... 
-
-Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicată pe această rețea de socializare, ar induce el însuși în eroare opinia publică.  
+M-am lovit recent de ipocrizia, care ne blochează pe Facebook, chiar _Made In Moldova_ și am hotărât să nu trecem pe alături. 
+Portalul StopFals.md, care se fălește ca a început o colaborare cu Facebook(Meta) pentru a filtra (citește, cenzura), informația publicată pe această rețea de socializare, ar induce el însuși în eroare opinia publică.
 
 Vom da un exemplu pe linkul [stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646](https://stopfals.md/ro/article/fals-legea-securitatii-informationale-anuleaza-tot-ce-e-rusesc-180646) (accesat la 06/07/2022 00:06 UTC), 
 
 ![imaginea de pe siteul StopFake.Md](/assets/2022-07-06-fakeuri-de-la-stopfake.png)  
 Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
-"Verificatorul independent" - specializat, pesemne, în verificarea informațiilor din surse ruse, sau pro-ruse - descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:
+"Verificatorul independent"  descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:
 
 > "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
 
@@ -23,10 +22,12 @@ Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
 > "Din păcate, acum în Moldova, se încearcă același lucru [ca și în Ucraina]: eliminarea a tot ce este rusesc. Președinta [Maia Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia. Este regretabil" spune Ministrul Rus. 
 
-Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar fi putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). Am hotărât să vedem detaliile acestor date. 
+Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar fi putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). 
 
-Sa analizam ce declară Lavrov:  
+Am hotărât să analizam doua elemente din ce declară Lavrov:  
+
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
+  
   b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
 StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, că _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc" (sau, în variantă și mai fantasmagorică întâlnită în text - ar "anula" "cultura rusă"!).

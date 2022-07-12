@@ -22,15 +22,15 @@ Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
 > "Din păcate, acum în Moldova, se încearcă același lucru [ca și în Ucraina]: eliminarea a tot ce este rusesc. Președinta [Maia Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia. Este regretabil" spune Ministrul Rus. 
 
-Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar fi putut face așa declarații distorsionate pe care le poate verifica orice puști (inclusiv de la stopfals). 
+Ne-a mirat cum de un diplomat așa de experimentat cum este Lavrov ar fi putut face declarații false (cum ar pretinde StopFals) pe care le poate verifica cu ușurință orice puști (inclusiv de la StopFals). 
 
-Am hotărât să analizam doua elemente din ce declară Lavrov:  
+Am hotărât să analizam doua elemente din ce declară Lavrov, dacă corespund cu "învinuirile" StopFals, și anume:  
 
   a) acum [la momentul citatului] în Moldova, se încearcă eliminarea a tot ce este rusesc;  
 
   b) Președinta [Sandu] a semnat o lege prin care în Moldova nu vor mai fi disponibile știri din Rusia.
 
-StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), si sa sugereze ca Lavrov ar spune, de fapt, că _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc" (sau, în variantă și mai fantasmagorică întâlnită în text - ar "anula" "cultura rusă"!).
+StopFals va încerca să lege tei de curmei, si anume, punctul (b) sa atârne la (a), și sa sugereze ca Lavrov ar spune, de fapt, că _legea_ (promulgata de Sandu) ar interzice "totul ce e rusesc" (sau, în variantă și mai fantasmagorică întâlnită în text - ar "anula" "cultura rusă"!).
 
 Acum, utilizând o logică simplă, daca propoziția b) ar fi adevărată (despre interzicerea știrilor din Rusia), aceasta ar adeveri si propoziția a), care afirmă despre existenta unei _încercări_ (se constata o încercare, nu un fapt împlinit) de a interzice totul ce e rusesc.
 

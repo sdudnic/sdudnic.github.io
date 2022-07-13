@@ -1,6 +1,6 @@
 --- 
 layout: post
-title:  Referințe istorice de etnonime moldovean și limba moldovenească
+title:  Referințe istorice de etnonime moldovean și limbă moldovenească
 date:   2020-06-08 19:14:00 +0100
 tags: [moldova, limba, moldovean, moldovenească, denumirea limbii, limba moldovenească, etnie moldoveana, istorie, surse istorice]
 published: true

@@ -10,7 +10,9 @@ comment_issue_id: 3
 În articolul de față sunt prezentate sursele istorice care pomenesc despre "moldoveni" ca etnici și despre "moldovenească" ca limbă.
 Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 
-## Limba moldovenească
+## Limba moldovenească, surse documentare istorice
+afișate în ordine cronologică 
+
 * ~1481-1504; Petru Clănău, vel spătar sub Ștefan Vodă iscălește un "act doveditor de limba ce se vorbea sub Ștefan Voda Cel Mare în Moldova": "pohtii al scripti(scri) pe Moldovenie [...] dupi latinie, si scriptulam cu mâna mea în târg în Vaslui", [(sursa)](https://books.google.com/books?id=SIpaAAAAcAAJ&pg=PA151#v=onepage)
 * 1524, "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R), [direct](https://books.google.com/books?id=At9MAAAAcAAJ&pg=PA61&sa=X&ved=2ahUKEwiPmdm8_tbqAhXCz4UKHRUXAtU4UBC7BTACegQIARAU#v=onepage&q&f=false)
 * 1591; Moldauische Sprasche ("aus den Slavonischen in die Moldavische Sprasche gezogen"), documentele lui P. Șchiopu, Tirol

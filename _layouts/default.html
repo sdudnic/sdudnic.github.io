@@ -1,9 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="{{ page.lang | default: site.lang | default: "ro" }}">
 
   {%- include head.html -%}
 
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="jrjJcN5I"></script>
+    
 
     {%- include header.html -%}
 

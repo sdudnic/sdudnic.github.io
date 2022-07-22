@@ -4,4 +4,5 @@
 
 layout: home
 ---
-*modernizează Moldova* - semnează [petiția pentru Istoria Moldovei, aici](https://www.petitieonline.com/history-md)!
+- Semnează [petiția pentru Istoria Moldovei, aici](https://www.petitieonline.com/history-md) *modernizează Moldova*!
+- Află detaliile peripeției petiției pentru istoria Moldovei, [aici](./istoria/)

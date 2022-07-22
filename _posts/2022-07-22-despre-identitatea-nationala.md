@@ -7,4 +7,4 @@ published: true
 
 Câteva concepții despre identitatea națională, moldoveni, limba moldoveneasca, suveranitatea Republicii Moldova, proiecte de unire cu România etc. 30 min. Partea I. 
 
-<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fserge.dudnic%2Fvideos%2F785331309303678%2F&show_text=false&width=267&t=15" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+<div class="fb-video" data-href="https://www.facebook.com/serge.dudnic/videos/785331309303678/" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/serge.dudnic/videos/785331309303678/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/serge.dudnic/videos/785331309303678/"></a><p>Despre identitatea noastră</p>Posted by <a href="#" role="button">Serge Dudnic</a> on Thursday, July 21, 2022</blockquote></div>

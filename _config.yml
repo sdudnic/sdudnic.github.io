@@ -34,6 +34,9 @@ plugins:
 header_pages:
   - /covid-19
 
+site:
+  paginate: true
+
 show_excerpts: true
 excerpt_separator: <!--more-->
 
@@ -42,6 +45,7 @@ minima:
     twitter: sdudnic
     github: sdudnic
     facebook: serge.dudnic
+    
 
 # Exclude from processing.
 # The following items will not be processed, by default.

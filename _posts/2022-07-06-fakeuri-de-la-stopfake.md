@@ -16,6 +16,8 @@ Fig.1 - Imaginea de pe siteul StopFake.Md (linkul menționat mai sus)
 
 "Verificatorul independent"  descrie că ar fi "fake" (falsă) următoarea declarație a ministrului de externe a Federației Ruse, Serghei Lavrov:
 
+<!--more-->
+
 > "К сожалению, сейчас в Молдове пытаются предпринять такую же [как на Украине] отмену всего русского. Президент [Майя Санду] подписала закон о том, что никаких новостей из России больше в Молдове не будет. Это печально", - сказал министр.
 
 [sursa aici](https://tass.ru/politika/15017975?utm_source=web.telegram.org&utm_medium=referral&utm_campaign=web.telegram.org&utm_referrer=web.telegram.org)

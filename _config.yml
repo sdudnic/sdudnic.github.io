@@ -21,7 +21,10 @@
 title: bodega lu serge
 lang: ro
 timezone: Europe/Paris
-description: La un păhar de vorbă între Moldoveni...
+description: > #
+Deoarece nimeni in afara de noi nu va putea face ceva pentru noi, 
+anume noi, Moldovenii, trebuie sa luam treburile în mâni, 
+sa nu lasam sa decida pentru noi fratii mai mari...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dudnic.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -31,8 +34,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages:
-  - /covid-19
+header_pages:  
+  - /istoria
+  - istoria
+  - ./istoria
+  - covid-19
 
 site.paginate: true
 
@@ -40,6 +46,8 @@ show_excerpts: true
 excerpt_separator: <!--more-->
 
 minima:
+  date_format: "%d/%m/%y"
+
   social_links:
     twitter: sdudnic
     github: sdudnic

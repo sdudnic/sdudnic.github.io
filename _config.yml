@@ -34,8 +34,7 @@ plugins:
 header_pages:
   - /covid-19
 
-site:
-  paginate: true
+site.paginate: true
 
 show_excerpts: true
 excerpt_separator: <!--more-->

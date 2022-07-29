@@ -2,6 +2,7 @@
 layout: post
 title: Максим Мірошниченко(UA) - "Забытая война: как украинско-румынский конфликт 1918-го создал современную Молдову"
 tags: [Moldova, identitate, etnie, naționalism, suveranitate, ideologie, propaganda]
+date: 2020-04-15 00:59:37 +0100
 published: true
 ---
 

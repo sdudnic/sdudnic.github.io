@@ -9,8 +9,8 @@ published: true
 ![Bessarabiya-Ukrayina-1918](/assets/ua-md-1918/Bessarabiya-Ukrayina-1918.jpg)
 
 # Забытая война: как украинско-румынский конфликт 1918-го создал современную Молдову 
-<small>(перевод [с Украинского 13/04/2020 09:00](https://novynarnia.com/2020/04/13/bessarabia-1918/))
-
+<small>
+(перевод [с Украинского 13/04/2020 09:00](https://novynarnia.com/2020/04/13/bessarabia-1918/))  
 автор: Максим Мирошниченко (UA)
 </small>
 

@@ -12,6 +12,7 @@ Să începem de la înființarea mărcii Moldova, foarte pe scurt, după care vo
 1359 - declararea independenței Moldovei, Bogdan I, de la Ungaria  
 1365 - recunoașterea independenței Moldovei de către Ungaria  
 1457-1504 - domnia lui Ștefan cel Mare, când Moldova se afirma ca Subiect, și nu Obiect, al relațiilor internaționale  
+<!--more-->
 1775 - cedarea de către Imperiul Otoman a părții de Nord a Moldovei (Bucovina) imperiului Habsburgic  
 1812 - cedarea de către Im. Otoman a părții de Est a Moldovei (Basarabia) Imperiului Rus  
 1856 - trei județe din sudul Basarabiei revin la Moldova de Vest  

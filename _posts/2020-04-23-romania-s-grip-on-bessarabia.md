@@ -5,13 +5,14 @@ date:   2020-04-23 20:04:37 +0100
 categories: [moldova, romania]
 published: true
 ---
-<img style="float: right;" src="/assets/rumania-grip-bessarabia.jpg">
 Представляем вашему вниманию перевод на русский новозеландской статьи о (цитирую) "Румынском захвате Бессарабии" 1918-го года.
  
 Оригинал в полном объеме представлен ниже.
 Bellow is presented the artice of the "The Evening Star" newspaper of Dunedin (New Zealand) published on April 15, 1924.
 
 <!--more-->
+
+<img style="float: right;" src="/assets/rumania-grip-bessarabia.jpg">
 
 РУМЫНСКИЙ ЗАХВАТ БЕССАРАБИИ  
  ---

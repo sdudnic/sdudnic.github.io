@@ -22,6 +22,7 @@ afișate în ordine cronologică
 * 1677; "Despre limba moldovenească sau rumînească" de Miron Costin
 * 1697; Alphabetum Moldavorum... la Edward Bernard, Catalogi librorum... Oxania (Anglia)
 * 1642-1647; Grigore Ureche, Letopisețul Țării Moldovei; [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200816467417)
+<!--more-->
 * 1699; enciplopedistul german Schurzfleischius Conrad Samuel in cartea "Opera historica politica", editată la 1699, utilizează glotonimul "lingua moldavorum";
 * 1700-1712; Nicolae Costin, Letopisețul țării Moldovei de la zidirea lumii până la 1601, ediție cu o introducere de Ioan șt.Petre, București, 1942, p.463.
 * 1716; Moldava lingua, linguae moldavicae, vocabula moldavorum, moldavorum lingua, moldavis lingua, vocabula moldavis, moldavicussermo, moldavus sermonem, moldavorum litterae, moldavica lingua, moldavorum historicus la D.Cantemir. Descriptio Moldaviae; Berlin;

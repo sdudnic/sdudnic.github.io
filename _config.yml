@@ -22,9 +22,13 @@ title: bodega lu serge
 lang: ro
 timezone: Europe/Paris
 description: > # this means to ignore newlines until "show_excerpts:"
-Deoarece nimeni in afara de noi nu va putea face ceva pentru noi, 
-anume noi, Moldovenii, trebuie sa luam treburile în mâni, 
-sa nu lasam sa decida pentru noi fratii mai mari...
+  Deoarece nimeni in afara de noi nu va putea face ceva pentru noi, 
+  anume noi, Moldovenii, trebuie sa luam treburile în mâni, 
+  sa nu lasam sa decida pentru noi fratii mai mari...
+
+show_excerpts: true
+excerpt_separator: <!--more-->
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dudnic.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -42,8 +46,6 @@ header_pages:
 
 site.paginate: true
 
-show_excerpts: true
-excerpt_separator: <!--more-->
 
 minima:
   date_format: "%d/%m/%y"

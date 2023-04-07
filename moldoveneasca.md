@@ -1,6 +1,6 @@
 --- 
 layout: page
-title:  Referințe istorice a glotonimului "moldovenească" pentru limba moldovenilor
+title:  Referințe istorice ale glotonimului "moldovenească"
 tags: [moldoveneasca, limba, glotonim, moldovean, moldovenească, denumirea limbii, limba moldovenească, istorie, surse istorice]
 permalink: /moldoveneasca/
 ---

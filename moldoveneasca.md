@@ -54,6 +54,7 @@ Sursele sunt afișate în ordine cronologică:
 | 1697 | Alphabetum Moldavorum... la Edward Bernard, Catalogi librorum... Oxania (Anglia) |
 | 1697 | "Chronologia" lui Miron Costin (1697): "Și acum încep eu să povestesc despre limba moldovenească și despre scrisul nostru moldovenesc, precum și despre cât de diferită este limba noastră de limba ungurească, poloneză, germană și turcească și de limba valahă sau românească, precum și de toate celelalte limbi ale lumii." (diferita) |
 | 1699 | enciplopedistul german Schurzfleischius Conrad Samuel in cartea "Opera historica politica", editată la 1699, utilizează glotonimul "lingua moldavorum" |
+| 1699 | Nicolae Milescu - "Descrierea Moldovei" (cca. 1699) Nicolae Milescu, un cărturar și diplomat moldovean, utilizează termenul "limba moldovenească" pentru a se referi la limba vorbita în Moldova, fără a menționa limba "română". |
 | 1700-1712 | Nicolae Costin, Letopisețul țării Moldovei de la zidirea lumii până la 1601, ediție cu o introducere de Ioan șt.Petre, București, 1942, p.463. |
 | 1710 | Scrisoarea lui Dimitrie Cantemir către Academia de Științe din Berlin - 1710 Dimitrie Cantemir, domnitor al Moldovei și un intelectual de mare anvergură, a trimis în 1710 o scrisoare către Academia de Științe din Berlin în care vorbește despre limba moldovenească. |
 | 1714 | Dimitrie Cantemir, Descriptio Moldaviae (1714): "Lingua moldavica eadem est, quae et valachica, quae cum daco-rum linguae propinqua sit, ab eisdem etiam ab aliisq. Slavorum linguis nonnihil differt." |

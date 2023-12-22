@@ -166,7 +166,7 @@ Sursele sunt afișate în ordine cronologică:
 | 1851 | Le Constitutionnel, 21 septembre 1851 (n° 264), p. 3 |
 | 1851 | Journal du Cher, 23 septembre 1851 (A44, N114), p. 1 |
 | 1851 | "Fabule alcătuite în limba moldovinească", Ioan Sîrbu, Chișinău, tipografia lui Popov |
-| 1852 | "Die Propaganda, ihre Provinzen und ihr Recht; Verlag der Dieterichschen Buchhandlung", pag. 518 - Principato di Moldavia - Lingua Moldava; Principato du Vallachia - Lingua come nella Moldavia |
+| 1852 | "Die Propaganda, ihre Provinzen und ihr Recht"; Verlag der Dieterichschen Buchhandlung, [pag. 518](https://www.google.fr/books/edition/Die_Propaganda_ihre_Provinzen_und_ihr_Re/OcxoAAAAcAAJ?hl=en&gbpv=1&pg=PA518&printsec=frontcover) - Principato di Moldavia - Lingua Moldava; Principato du Vallachia - Lingua come nella Moldavia |
 | 1856 | La Presse, 8 juillet 1856, p. 1 |
 | 1861 | "Cronica vorbilor" a lui Iacob Mureșianu (1861): "Noi moldovenii, care avem o limbă deosebită, numită 'moldovenească', nu trebuie să o numim 'română' și să ne lepădăm de ea." |
 | 1861 | "Bucoavnă 'adică Începătoare învățătură pentru cei ce voesc a învăța carte moldovenească. Sau tipărit în tipografia Casii Arhierești în Chișinău, anul 1861" |

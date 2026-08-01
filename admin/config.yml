@@ -1,9 +1,14 @@
+# The GitHub backend authenticates through an OAuth server (Netlify or a
+# dedicated proxy). Never put a personal access token in this public file.
 backend:
   name: github
-  branch: main # Change this if your branch isn't `main`
+  repo: sdudnic/sdudnic.github.io
+  branch: master
 
-media_folder: "images/uploads" # Folder where images will be stored
-public_folder: "/images/uploads" # Public path for uploaded images
+site_url: "https://dudnic.com"
+locale: "ro"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
   - name: "blog"
@@ -12,6 +17,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }

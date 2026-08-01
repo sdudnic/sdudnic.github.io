@@ -5,10 +5,6 @@
   {%- include head.html -%}
 
   <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="jrjJcN5I"></script>
-    
-
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
@@ -18,9 +14,8 @@
     </main>
 
     {%- include footer.html -%}
-	
-<script src="/js/jquery.min.js"></script>
-{% include comments.html element=".post-content" github_account="sdudnic/sdudnic.github.io" require_cookie_consent="true" %}
+
+    {% include comments.html github_account="sdudnic/sdudnic.github.io" %}
 
   </body>
 

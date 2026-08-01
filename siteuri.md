@@ -1,6 +1,7 @@
 ---
 layout: page
 title: resurse moldoveniste
+nav_title: Resurse
 permalink: /res-md
 ---
 

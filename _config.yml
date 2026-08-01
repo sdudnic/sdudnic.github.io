@@ -18,15 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: bodega lu serge
+title: Serge Dudnic
 lang: ro
 timezone: Europe/Paris
 description: > # this means to ignore newlines until "show_excerpts:"
-  Deoarece nimeni in afara de noi nu va putea face ceva pentru noi, 
-  anume noi, Moldovenii, trebuie sa luam treburile în mâni, 
-  sa nu lasam sa decida pentru noi fratii mai mari...
+  Site personal despre autor, proiecte, cauze naționale și dialog internațional.
 
-show_excerpts: true
+show_excerpts: false
 excerpt_separator: <!--more-->
 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -37,15 +35,12 @@ url: "https://dudnic.com" # the base hostname & protocol for your site, e.g. htt
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
 
 header_pages:
+  - articole.md
   - moldoveneasca.md
   - siteuri.md
   - cv.md
-
-paginate: 8
-paginate_path: "/page:num/"
 
 
 minima:

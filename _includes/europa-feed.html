@@ -61,10 +61,10 @@
         {%- assign item_summary = item[summary_key] -%}
       {%- endif -%}
       <article class="rss-item">
-        <p class="rss-item__meta"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d.%m.%Y' }}</time> · {{ item.source }}</p>
-        <h2><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item_title }}</a></h2>
-        <p class="rss-item__summary">{{ item_summary }}</p>
-        <p class="rss-item__source"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ source_label }}</a></p>
+        <p class="rss-item__meta"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d.%m.%Y' }}</time> · {{ item.source | escape }}</p>
+        <h2><a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">{{ item_title | escape }}</a></h2>
+        <p class="rss-item__summary">{{ item_summary | escape }}</p>
+        <p class="rss-item__source"><a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">{{ source_label }}</a></p>
       </article>
     {%- endfor -%}
   </div>

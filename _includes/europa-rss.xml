@@ -1,21 +1,57 @@
 {%- assign locale = include.locale | default: 'mo' -%}
 {%- assign title_key = locale | append: '_title' -%}
 {%- assign summary_key = locale | append: '_summary' -%}
+{%- assign automatic_feed = site.data.europa_auto -%}
+{%- assign automatic_feed_active = false -%}
+{%- if automatic_feed -%}
+  {%- assign localized_automatic_feed = automatic_feed[locale] -%}
+  {%- if localized_automatic_feed and localized_automatic_feed.size >= 10 -%}
+    {%- assign feed_items = localized_automatic_feed -%}
+    {%- assign automatic_feed_active = true -%}
+  {%- endif -%}
+{%- endif -%}
+{%- unless automatic_feed_active -%}
+  {%- assign feed_items = site.data.europa -%}
+{%- endunless -%}
+{%- if locale == 'en' -%}
+  {%- assign rss_title = "Moldova and the EU — Europa" -%}
+  {%- assign rss_description = "Recent notes about Moldova and European integration." -%}
+  {%- assign channel_link = '/en/european-standards/' -%}
+{%- elsif locale == 'fr' -%}
+  {%- assign rss_title = "La Moldova et l’UE — Europa" -%}
+  {%- assign rss_description = "Notes récentes sur la Moldova et l’intégration européenne." -%}
+  {%- assign channel_link = '/fr/standards-europeens/' -%}
+{%- elsif locale == 'ru' -%}
+  {%- assign rss_title = "Молдова и ЕС — Европа" -%}
+  {%- assign rss_description = "Свежие заметки о Молдове и европейской интеграции." -%}
+  {%- assign channel_link = '/ru/evropejskie-standarty/' -%}
+{%- else -%}
+  {%- assign rss_title = "Moldova și UE — Europa" -%}
+  {%- assign rss_description = "Note recente despre Moldova și integrarea europeană." -%}
+  {%- assign channel_link = '/standarde-europene/' -%}
+{%- endif -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Moldova and the EU — Europa</title>
-    <link>{{ site.url }}/standarde-europene/</link>
-    <description>Recent notes about Moldova and European integration.</description>
+    <title>{{ rss_title | xml_escape }}</title>
+    <link>{{ site.url }}{{ channel_link }}</link>
+    <description>{{ rss_description | xml_escape }}</description>
     <language>{{ locale }}</language>
     <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
-    {%- for item in site.data.europa %}
+    {%- for item in feed_items %}
+      {%- if automatic_feed_active -%}
+        {%- assign item_title = item.title -%}
+        {%- assign item_summary = item.summary -%}
+      {%- else -%}
+        {%- assign item_title = item[title_key] -%}
+        {%- assign item_summary = item[summary_key] -%}
+      {%- endif %}
     <item>
-      <title>{{ item[title_key] | xml_escape }}</title>
+      <title>{{ item_title | xml_escape }}</title>
       <link>{{ item.url }}</link>
       <guid isPermaLink="true">{{ item.url }}</guid>
       <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
-      <description>{{ item[summary_key] | xml_escape }}</description>
+      <description>{{ item_summary | xml_escape }}</description>
       <source url="{{ item.url }}">{{ item.source | xml_escape }}</source>
     </item>
     {%- endfor %}

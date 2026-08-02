@@ -1,0 +1,23 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+p, ul, ol, table, pre, dl {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.markdown-body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10pt;
+}

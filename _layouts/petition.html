@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="petition-page">
+  <header class="petition-hero" aria-labelledby="petition-title">
+    <div class="petition-hero__copy">
+      <p class="eyebrow petition-hero__eyebrow">Arhiva oficială · grupul de inițiativă</p>
+      <h1 id="petition-title">{{ page.title | default: "Pentru Istoria Moldovei" }}</h1>
+      <p class="petition-hero__lead">{{ page.description }}</p>
+    </div>
+    <div class="petition-hero__mark" aria-label="Dosar public al petiției">
+      <span class="petition-hero__mark-number">2019</span>
+      <span class="petition-hero__mark-label">documentare<br>și dialog public</span>
+    </div>
+  </header>
+
+  <div class="petition-body">
+    <aside class="petition-sidebar" aria-label="Navigare în dosarul petiției">
+      <div class="petition-sidebar__card">
+        <p class="petition-sidebar__label">Acces rapid</p>
+        <nav class="petition-sidebar__links">
+          <a href="#noutăți">Noutăți</a>
+          <a href="{{ '/istoria/md.html' | relative_url }}">Studiul detaliat</a>
+          <a href="{{ '/istoria/egalitate-md.html' | relative_url }}">Adresarea către Consiliu</a>
+          <a href="{{ '/istoria/rezumat.html' | relative_url }}">Rezumat</a>
+        </nav>
+      </div>
+      <div class="petition-sidebar__note">
+        <p>Pagina păstrează arhiva oficială a proiectului: texte, documente, imagini și actualizări.</p>
+        <a href="{{ '/' | relative_url }}">← Înapoi la Dudnic.com</a>
+        <a href="https://github.com/sdudnic/istoria">Codul și arhiva pe GitHub ↗</a>
+        <a href="https://github.com/sdudnic/istoria/discussions">Discuții și contribuții ↗</a>
+        <a href="https://t.me/istoria_md">Canalul Telegram ↗</a>
+      </div>
+    </aside>
+
+    <main class="petition-content" id="petition-content">
+      {{ content }}
+    </main>
+  </div>
+</div>

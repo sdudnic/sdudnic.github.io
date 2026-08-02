@@ -1,0 +1,99 @@
+DECIZIE PRIVIND ÎNCETAREA EXAMINĂRII CERERII 
+
+Formulată în temeiul prevederilor art. 23 alin.5) din Legea cu privire la Avocatul Poporului nr. 52 din 03.04.2014 
+
+
+I. Petiționar(ă): xxxxx, domiciliat mun.Chișinău bd.Ștefan cel Mare și Sfânt nr.180 of.405, MD-2004, e-mail: yyy
+
+Reclamat(ă): Consiliul pentru Egalitate 
+
+Obiectul cererii: xxxx invocă presupuse acțiuni de tergiversare și abuz administrativ din partea Consiliului pentru Egalitate în examinarea unei sesizări depuse de acesta încă din anul 2019 prin care reclamă pretinse aspecte discriminatorii, de natură etnică, legate de denumirea obiectului școlar „Istoria Românilor”. 
+
+II. Admisibilitatea obiectului plângerii: Cererea corespunde cerințelor art. 20 din Legea cu privire la Avocatul Poporului nr. 52 din 03.04.2014. 
+
+III. Susținerile părților: 
+
+3.1. Susținerile Petiționarului: 
+Petiționarul a sesizat Ombudsmanul la 31 decembrie 2024 indicând că de 5 ani Consiliul de Egalitate refuză să confirme/infirme existența discriminării etnice din învățâmântul național, manifestată prin denumirea obiectului școlar „Istoria Românilor”. Cererea a fost acceptată prin prisma verificării faptului tergiversării examinării unei plângeri. 
+
+La 17 februarie, petiținarul, deja în numele grupului de inițiativă Istoria Moldovei, a solicitat informații suplimentare referitoare la etapa de examinare a cauzei și termenul în care va fi emisă o decizie pe caz. Prin răspunsul nr.03-918/24 din 24.02.2025 petiționarului i-a fost expediat răspuns la solicitarea din 17.02.2025. 
+
+La 07.03.2025 și 17.04.2025 xxxx a depus o altă solicitare cu privire la furnizarea informațiilor către Oficiul Avocatului Poporului (stadiul examinării, numărul petiției etc) iar prin răspunsul din 02.04.2025 petiționarului i-au fost expediate răspunsuri la întrebările formulate. În acest context, petiționarul a fost informat despre poziția Consiliului de Egalitate pe caz. Totodată s-a explicat că deoarece problematica vizează în mod direct sfera drepturilor copilului, inclusiv principiul egalității și al accesului nediscriminatoriu la învățământ, Direcția Drepturile Copilului din cadrul Oficiului Avocatului Poporului, sub coordonarea Avocatului Poporului pentru drepturile copilului, deține competența specifică de a analiza presupusele încălcări de drepturi și eventualele efecte negative asupra copiilor și de a propune soluții pentru remedierea situației. În acest context, petiționarul a fost informat despre remiterea cazului spre examinarea Direcției sus-menționate, în vederea stabilirii existenței sau lipsei unor posibile încălcări ale dreptului la educație. 
+
+La 20.05.2025 petiționarul depune o nouă solicitare de informații iar prin răspunsul din 28.05.2025 nr.03.-918/24-950 i-au fost oferite explicații detaliate versus solicitările expuse. 
+
+La 09.06.2025 petiționarul depune o altă solicitare prin care explică natura procedurilor administrative aplicabile cazului și solicită finalizarea examinării petiției nr.03-918/2024. Deoarece prin răspunsul Ombudsmanului din 28.05.2025 nr.03-918/24-950 petiționarului i-au fost oferite răspunsuri și explicații vis a vis de aplicabilitatea normelor Codului Administrativ, alte răspunsuri repetitive nu s-au furnizat. 
+
+La 12.06.2025 petiționarul cu titlu de informare a expediat în adresa Oficiului Avocatului Poporului o opinie a fostului judecător la Curtea Constituțională Alexandru Tănase. 
+
+ 
+3.2. Acțiunile Avocatului Poporului și susținerile Reclamatului: 
+
+Pentru a decide modalitatea de intervenție pe caz și a stabili dacă se atestă vreo încălcare a drepturilor fundamentale ale omului, la 29 ianuarie Ombudsmanul a expediat în adresa Consiliului de Egalitate un Demers prin care s-a solicitat furnizarea mai multor informații: Dacă domnul xxxx s-a adresat oficial Consiliului pentru Egalitate cu o plângere privind presupusa discriminare generată de denumirea obiectului școlar „Istoria Românilor” (menționată ca fiind depusă în 2019); Dacă plângerea a fost sau este examinată în cadrul procedurilor interne ale Consiliului pentru Egalitate și, în caz afirmativ, care este stadiul actual al procesului de examinare (dacă a fost emisă o decizie, dacă se află în curs de investigare etc.); În cazul în care procedura de examinare nu a fost finalizată, care sunt motivele pentru care se înregistrează o eventuală întârziere sau tergiversare și ce acțiuni urmează să întreprindă Consiliul pentru Egalitate pentru finalizarea cauzei?; Dacă au fost întreprinse demersuri/corespondențe către petiționar (domnul xxxx) referitoare la cauza sus-menționată. 
+
+Prin răspunsul Consiliului de Egalitate din 21.02.2025 recepționat la 25.02.2025 s-a informat Ombudsmanul despre faptul că dosarul rămâne în examinare din cauza complexității aspectelor semnalate și a dificultății de a ajunge la un consens în cadrul deliberărilor. Consiliul a mai subliniat că problematica necesită o analiză detaliată și au fost întreprinse mai multe acțiuni, printre care solicitarea unor opinii juridice externe. Totodată, Consiliul a subliniat că, având în vedere faptul că denumirea obiectului „Istoria Românilor” ar putea leza dreptul la educație al copiilor, V-a remite plângerea spre examinare prin prisma prevederilor Legii nr. 52/2014 privind Avocatul Poporului (Ombudsmanul), întrucât problematica semnalată ține nemijlocit de dreptul copiilor la un proces educațional nediscriminatoriu. 
+
+La data de 02.04.2025 în baza unei Note Informative, Ombudsmanul a decis transmiterea cazului dlui xxxx către Direcția Drepturile Copilului pentru continuarea examinării potrivit cadrului legal în vigoare. 
+
+La data de 15.05.2025 Consiliul pentru Egalitate a emis un Aviz Consultativ în cauza nr.150/20 la sesizarea prin care se reclama faptul că denumirea disciplinei “Istoria Românilor” are un caracter discriminator în raport cu alte grupuri etnice și încalcă dreptul la educație al copiilor care nu sunt etnici români. În pct. 4.17 și 4.18 din Aviz, Consiliul conchide că denumirea disciplinei “Istoria Românilor” reprezintă discriminare directă în raport cu alte grupuri etnice și se recomandă Ministerului Educației revizuirea denumirii. 
+
+La data de 06.06.2025 Avocatul Poporului pentru Drepturile Copilului a dispus încetarea examinării cererii petiționarului concluzionând că nu se constată încălcarea dreptului la educație al copiilor reprezentând minoritățile etnice prin denumirea disciplinei școlare “limba și literatura română” și „istoria românilor și universală” 
+
+ 
+IV. Dreptul național și internațional relevant: 
+
+Standardele internaționale 
+1. Declarația Universală a Drepturilor Omului (DUDO), 1948: 
+Art. 1 și 2: Consacră egalitatea și dreptul fiecărei persoane de a se bucura de drepturile și libertățile fundamentale fără discriminare pe criterii de rasă, naționalitate, limbă, origine etnică sau alte caracteristici. 
+Art. 8: Recunoaște dreptul oricărei persoane de a se adresa instituțiilor competente pentru repararea încălcării drepturilor fundamentale. 
+Art. 26: Recunoaște dreptul la educație și subliniază importanța respectării diversității culturale și naționale în procesul educațional. 
+2. Pactul Internațional privind Drepturile Civile și Politice (PIDCP), 1966: 
+Art. 2(3): Obligația statului de a asigura un remediu efectiv pentru orice persoană ale cărei drepturi au fost încălcate, inclusiv prin examinarea petițiilor într-un termen rezonabil. 
+Art. 19: Dreptul la libertatea de opinie și de exprimare, care include dreptul de a formula cereri și plângeri către autoritățile publice. 
+3. Convenția Europeană a Drepturilor Omului (CEDO), 1950: 
+Art. 14: Interzice discriminarea în exercitarea drepturilor garantate de convenție, inclusiv în domeniul educației. 
+4. Convenția UNESCO împotriva Discriminării în Domeniul Educației, 1960: 
+Art. 1: Discriminarea în educație include orice diferență, excludere sau preferință bazată pe rasă, origine etnică sau alte criterii care ar compromite egalitatea de șanse în educație. 
+Art. 5: Educația trebuie să promoveze înțelegerea, toleranța și prietenia între grupuri etnice și națiuni. 
+5. Convenția ONU cu privire la drepturile copilului 
+ 
+Standardele naționale: 
+1. Constituția Republicii Moldova: 
+Art. 16: Consacră egalitatea tuturor cetățenilor în fața legii, fără discriminare pe criterii de origine națională, rasă, limbă sau alte caracteristici. 
+Art. 35: Garanția dreptului la educație, asigurând accesul egal la instruire indiferent de apartenența etnică sau lingvistică. 
+2. Legea nr. 121 din 25.05.2012 privind asigurarea egalității: 
+Legea interzice orice formă de discriminare directă sau indirectă, inclusiv în domeniul educației, bazată pe origine etnică, naționalitate, limbă sau alte criterii. 
+3. Codul Educației al Republicii Moldova, Nr. 152 din 17.07.2014: 
+Educația este organizată pe baza principiilor echității, nondiscriminării și respectării diversității.
+
+
+V. Concluziile Avocatului Poporului: 
+ 
+1. Cu referire la presupusele acțiuni iligale de tergiversare și abuz administrativ din partea Consiliului pentru Egalitate în examinarea unei sesizări depuse de petiționar în anul 2019, prin care se reclamă pretinse aspecte discriminatorii, de natură etnică, legate de denumirea obiectului școlar „Istoria Românilor” _ Ombudsmanul a întrerins acțiuni în vederea obținerii poziției Consiliului de Egalitate pe marginea cazului și motivelor de tergiversare. Consiliul și-a motivat răspunsul prin complexitatea circumstanțelor cazului iar petiționarul a fost informat despre răspunsul Consiliului. 
+
+Totodată, solicitările petiționarului din 2019 au fost satisfăcute prin Avizul Consultativ al Consiliului pentru Egalitate în cauza nr.150/20 din 15.05.2025 prin care Consiliul a decis că denumirea disciplinei “Istoria Românilor” reprezintă discriminare directă în raport cu alte grupuri etnice și se recomandă Ministerului Educației revizuirea denumirii. 
+Per consecință, pe acest segment problema a fost soluționată și nu mai pot fi invocate careva pretinse violări de drepturi iar Ombudsmanul a epuizat toate căile de intervenție.
+2. Cu referire la discriminarea etnică din învățâmântul național, manifestată prin denumirea obiectului școlar „Istoria Românilor”, pe acest segment deja s-a expus Consiliul pentru Egalitate. 
+3. Poziția Oficiului Avocatului Poporului a fost expusă la data de 06.06.2025 de către Avocatul Poporului pentru Drepturile Copilului care a dispus încetarea examinării cererii petiționarului concluzionând că nu se constată încălcarea dreptului la educație al copiilor reprezentând minoritățile etnice prin denumirea disciplinei școlare “limba și literatura română” și „istoria românilor și universală”. 
+
+
+VI. Decizia Avocatului Poporului: 
+
+1. Reieșind din cele expuse supra, temei pentru intervenția în continuare a Avocatului Poporului lipsește și examinarea cererii petiționarului încetează. 
+
+2. Decizia privind încetarea examinării cererii nu poate fi atacată (art.23 alin.5 din Legea nr.52 din 03.04.20214). 
+ 
+
+Cu respect, 
+Ceslav PANICO, 
+
+Avocatul Poporului (Ombudsmanul) 
+Oficiul Avocatului Poporului 
+
+str. Calea Ieșilor 11/3 
+mun. Chișinău, MD-2069 
+Republica Moldova 
+
+ombudsman.md 
+ombudsman@ombudsman.md 
++373 22 234 800

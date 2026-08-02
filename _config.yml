@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Dudnic.com
-lang: ro
+title: MOLDOVA
+lang: mo
 timezone: Europe/Paris
 description: > # this means to ignore newlines until "show_excerpts:"
   Inițiativă civică de documentare și dialog despre Moldova, istorie, identitate,
@@ -43,6 +43,7 @@ header_pages:
   - istoria/index.md
   - articole.md
   - initiative.md
+  - standarde-europene.md
   - moldoveneasca.md
   - siteuri.md
   - cv.md

@@ -2,25 +2,36 @@
   <div class="wrapper site-header__inner">
     <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
 
-    <nav class="site-nav" aria-label="Navigare principală">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-      <label for="nav-trigger">
-        <span class="menu-icon" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </span>
-        <span class="sr-only">Deschide meniul</span>
-      </label>
+    <div class="site-header__tools">
+      <nav class="site-nav" aria-label="Navigare principală">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span class="sr-only">Deschide meniul</span>
+        </label>
 
-      <div class="trigger">
-        <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Acasă</a>
-        {%- for path in site.header_pages -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-            {%- assign nav_label = my_page.nav_title | default: my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ nav_label | escape }}</a>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
-    </nav>
+        <div class="trigger">
+          <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Acasă</a>
+          {%- for path in site.header_pages -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+              {%- assign nav_label = my_page.nav_title | default: my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ nav_label | escape }}</a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </nav>
+
+      {%- assign current_lang = page.lang | default: site.lang -%}
+      <nav class="language-switcher" aria-label="Limbi">
+        <span class="sr-only">Alege limba</span>
+        <a href="{{ '/' | relative_url }}" title="Limba moldovenească"{% if current_lang == 'mo' %} aria-current="page"{% endif %}>MO</a>
+        <a href="{{ '/en/' | relative_url }}" title="English"{% if current_lang == 'en' %} aria-current="page"{% endif %}>EN</a>
+        <a href="{{ '/fr/' | relative_url }}" title="Français"{% if current_lang == 'fr' %} aria-current="page"{% endif %}>FR</a>
+        <a href="{{ '/ru/' | relative_url }}" title="Русский"{% if current_lang == 'ru' %} aria-current="page"{% endif %}>RU</a>
+      </nav>
+    </div>
   </div>
 </header>

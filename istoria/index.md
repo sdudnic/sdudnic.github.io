@@ -22,6 +22,8 @@ nav_title: Istoria Moldovei
 
 Petiția pentru Istoria Moldovei își dorește să aducă in R. Moldova o educație națională inclusivă, fără ideologii naționaliste subiective. 
 
+> **Stadiu (verificat la 02.08.2026):** în desfășurare. Arhiva publică are noutăți până la 11.06.2025, documentează adresări și răspunsuri, iar petiția rămâne nerezolvată.
+
 Găsiți aici:  
 - [descrierea **detaliată** a petiției](md.md) - pentru specialiști, cu detalii legislative din practica internațională; traducerea sa [în limba rusă](ru.md), 
 - [varianta **scurtă** a petiției](https://www.petitieonline.com/history-md) - pentru publicul larg și semnarea online (tradusă în [Deutsch](https://www.petitionen.com/history-md), [English](https://www.petitions.net/history-md), [Español](https://www.peticiones.net/history-md), [Français](https://www.petitionenligne.com/history-md), [Italiano](https://www.petizioni.com/history-md), [русский](https://ru.petitions.net/history-md))

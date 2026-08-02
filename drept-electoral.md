@@ -2,11 +2,12 @@
 layout: default
 title: Dreptul electoral al moldovenilor
 permalink: /drept-electoral/
+lang: mo
 ---
 
 <article class="article-index dossier-page">
-  <p class="eyebrow">Dosar civic</p>
-  <h1>Dreptul electoral al moldovenilor</h1>
+  <p class="eyebrow">Inițiativă civică</p>
+  <h1>Abuzul electoral al PAS și „UE 2028”</h1>
   <p class="page-lead">Informarea alegătorilor, responsabilitatea promisiunilor publice și dreptul moldovenilor de a decide în cunoștință de cauză.</p>
 
   <div class="dossier-prose">
@@ -25,6 +26,6 @@ permalink: /drept-electoral/
       <li>Ce se întâmplă dacă termenul nu este atins și cine răspunde public?</li>
     </ul>
 
-    <p class="source-note">Dosarul este o analiză editorială a Dudnic.com. Documentele oficiale și datele actualizate au prioritate față de sloganuri, iar concluziile rămân deschise verificării publice.</p>
+    <p class="source-note">Dosarul este o analiză editorială a platformei MOLDOVA. Documentele oficiale și datele actualizate au prioritate față de sloganuri, iar concluziile rămân deschise verificării publice.</p>
   </div>
 </article>

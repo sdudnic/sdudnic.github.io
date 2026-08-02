@@ -3,59 +3,73 @@ layout: default
 title: Acasă
 ---
 
-<div class="personal-home">
-  <section class="profile-hero" aria-labelledby="author-title">
-    <p class="eyebrow">Despre autor</p>
-    <h1 id="author-title">Serge Dudnic</h1>
-    <p class="profile-hero__lead">Inginer software și autor independent, preocupat de tehnologie, documentare și inițiativă civică.</p>
+<div class="civic-home">
+  <section class="civic-hero" aria-labelledby="site-title">
+    <p class="eyebrow">Inițiativă civică</p>
+    <h1 id="site-title">Dudnic.com</h1>
+    <p class="civic-hero__lead">Documentare, analiză și dialog despre Republica Moldova — istorie, identitate, limbă, instituții și interes public.</p>
+    <div class="hero-actions" aria-label="Acces rapid">
+      <a class="button-link" href="{{ '/initiative/' | relative_url }}">Vezi inițiativele</a>
+      <a class="text-link" href="{{ '/articole/' | relative_url }}">Răsfoiește articolele</a>
+    </div>
   </section>
 
-  <section class="profile-section" id="proiecte" aria-labelledby="projects-title">
+  <section class="profile-section intro-section" id="despre-platforma" aria-labelledby="about-title">
     <div class="section-heading">
-      <p class="eyebrow">Activitate</p>
-      <h2 id="projects-title">Proiecte</h2>
+      <p class="eyebrow">Despre platformă</p>
+      <h2 id="about-title">Un spațiu pentru documentare și dezbatere</h2>
     </div>
-
-    <div class="profile-grid">
-      <article class="profile-card">
-        <h3>Proiecte la care am participat</h3>
-        <ul class="plain-list">
-          <li>Dezvoltarea și întreținerea de aplicații software.</li>
-          <li>Proiecte web, platforme digitale și integrarea serviciilor.</li>
-          <li>Inițiative de documentare și publicare online.</li>
-        </ul>
-      </article>
-
-      <article class="profile-card">
-        <h3>Proiecte la care particip</h3>
-        <ul class="plain-list">
-          <li>Dezvoltarea și actualizarea acestui site personal.</li>
-          <li>Publicarea de texte și resurse despre Moldova.</li>
-          <li>Inițiative civice legate de identitate și interesul public.</li>
-        </ul>
-      </article>
-    </div>
+    <p>Site-ul adună texte, surse și observații despre felul în care sunt discutate Moldova, trecutul ei și instituțiile sale. Autorul este prezentat prin temele și contribuțiile publice ale platformei, nu printr-un profil biografic detaliat.</p>
+    <p>Materialele combină documentarea cu opinia editorială. Sursele, citatele și afirmațiile verificabile trebuie citite în contextul lor, iar opiniile sunt asumate ca puncte de vedere pentru dezbatere publică.</p>
   </section>
 
-  <section class="profile-section" id="cauze-nationale" aria-labelledby="national-causes-title">
+  <section class="profile-section" id="directii" aria-labelledby="directions-title">
     <div class="section-heading">
-      <p class="eyebrow">Poziționare</p>
-      <h2 id="national-causes-title">Cauze naționale</h2>
-      <p>Susțin clar:</p>
+      <p class="eyebrow">Direcții de interes public</p>
+      <h2 id="directions-title">Teme urmărite</h2>
     </div>
 
-    <ul class="principle-list">
-      <li>identitatea și demnitatea moldovenească;</li>
-      <li>memoria, istoria și cultura Moldovei;</li>
-      <li>dreptul la propria identitate și la propria denumire;</li>
-      <li>suveranitatea și interesul public.</li>
-    </ul>
+    <div class="principle-grid">
+      <article class="principle-card">
+        <h3>Statul de drept</h3>
+        <p>Instituții responsabile, reguli aplicate uniform și dreptul cetățenilor de a cere explicații publice.</p>
+      </article>
+      <article class="principle-card">
+        <h3>Limba și identitatea statului moldovenesc</h3>
+        <p>Respect pentru denumirea limbii moldovenești, pentru memoria colectivă și pentru pluralitatea identităților trăite în Moldova.</p>
+      </article>
+      <article class="principle-card">
+        <h3>Istorie și memorie</h3>
+        <p>Documentarea surselor și discuția deschisă despre istoria Moldovei, inclusiv despre felul în care este predată și prezentată public.</p>
+      </article>
+      <article class="principle-card">
+        <h3>Drepturi civice și electorale</h3>
+        <p>Informarea alegătorilor, responsabilitatea promisiunilor publice și dreptul moldovenilor de a decide în cunoștință de cauză.</p>
+      </article>
+    </div>
   </section>
 
-  <section class="profile-section collaboration" id="colaborare-internationala" aria-labelledby="international-title">
-    <p class="eyebrow">Dialog</p>
-    <h2 id="international-title">Colaborare internațională</h2>
-    <p>Particip la schimburi de idei, experiență și informații cu organizații și comunități internaționale. Colaborarea urmărește comunicarea, documentarea și prezentarea perspectivei moldovenești, fără detalii instituționale.</p>
+  <section class="profile-section" id="initiative" aria-labelledby="initiative-title">
+    <div class="section-heading">
+      <p class="eyebrow">Dosare tematice</p>
+      <h2 id="initiative-title">Inițiative civice</h2>
+      <p>Pagini de documentare și analiză, reunite în jurul unor întrebări de interes public.</p>
+    </div>
+
+    <div class="initiative-grid">
+      <article class="initiative-card">
+        <p class="card-label">Istorie și educație</p>
+        <h3><a href="{{ '/istoria-romanilor/' | relative_url }}">Istoria românilor</a></h3>
+        <p>Un dosar despre denumirea, conținutul și locul istoriei românilor în spațiul educațional și public al Republicii Moldova, cu surse și perspective pentru dezbatere.</p>
+        <a class="card-link" href="{{ '/istoria-romanilor/' | relative_url }}">Deschide dosarul →</a>
+      </article>
+      <article class="initiative-card">
+        <p class="card-label">Participare și alegeri</p>
+        <h3><a href="{{ '/drept-electoral/' | relative_url }}">Dreptul electoral al moldovenilor</a></h3>
+        <p>Un dosar despre informarea alegătorilor, promisiunile electorale și diferența dintre o țintă politică și o obligație verificabilă.</p>
+        <a class="card-link" href="{{ '/drept-electoral/' | relative_url }}">Deschide dosarul →</a>
+      </article>
+    </div>
   </section>
 
 </div>

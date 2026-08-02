@@ -18,11 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Serge Dudnic
+title: Dudnic.com
 lang: ro
 timezone: Europe/Paris
 description: > # this means to ignore newlines until "show_excerpts:"
-  Site personal despre autor, proiecte, cauze naționale și dialog internațional.
+  Inițiativă civică de documentare și dialog despre Moldova, istorie, identitate,
+  limbă, instituții și interes public.
 
 show_excerpts: false
 excerpt_separator: <!--more-->
@@ -38,6 +39,7 @@ plugins:
 
 header_pages:
   - articole.md
+  - initiative.md
   - moldoveneasca.md
   - siteuri.md
   - cv.md
@@ -45,12 +47,6 @@ header_pages:
 
 minima:
   date_format: "%d/%m/%y"
-
-  social_links:
-    twitter: sdudnic
-    github: sdudnic
-    facebook: serge.dudnic
-    
 
 # Exclude from processing.
 # The following items will not be processed, by default.

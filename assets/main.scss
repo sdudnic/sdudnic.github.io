@@ -84,11 +84,22 @@ a:hover {
 
 .site-title,
 .site-title:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: var(--ink);
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   text-decoration: none;
+}
+
+.site-title__crest {
+  display: block;
+  width: 28px;
+  height: 31px;
+  flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -150,13 +161,28 @@ a:hover {
   border-bottom: 1px solid var(--line);
 }
 
-.civic-hero h1 {
+.civic-hero h1.civic-hero__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.32em;
   margin: 0 0 1rem;
   color: var(--ink);
   font-size: clamp(2.8rem, 8vw, 5.25rem);
   font-weight: 700;
   letter-spacing: -0.08em;
   line-height: 0.98;
+}
+
+.civic-hero__brand img {
+  display: block;
+  width: 0.92em;
+  height: 1.02em;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.civic-hero__brand span {
+  display: block;
 }
 
 .civic-hero__lead {

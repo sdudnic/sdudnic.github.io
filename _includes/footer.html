@@ -2,8 +2,7 @@
   <div class="wrapper footer-inner">
     {%- assign current_lang = page.lang | default: site.lang -%}
     <div class="footer-meta">
-      <p>{{ site.title | escape }} · {%- if current_lang == 'en' -%}civic initiative{%- elsif current_lang == 'fr' -%}initiative civique{%- elsif current_lang == 'ru' -%}гражданская инициатива{%- else -%}inițiativă civică{%- endif -%}</p>
-      <p class="footer-author">Sergiu Dudnic · {%- if current_lang == 'en' -%}civic activist and patriot{%- elsif current_lang == 'fr' -%}activiste civique et patriote{%- elsif current_lang == 'ru' -%}гражданский активист и патриот{%- else -%}activist civic și patriot{%- endif -%}</p>
+      <p>{{ site.title | escape }}</p>
     </div>
     <nav class="footer-links" aria-label="Legături secundare">
       <a href="{{ '/istoria/' | relative_url }}">{%- if current_lang == 'en' -%}Petition for the History of Moldova{%- elsif current_lang == 'fr' -%}Pétition pour l’histoire de la Moldova{%- elsif current_lang == 'ru' -%}Петиция за историю Молдовы{%- else -%}Petiția pentru Istoria Moldovei{%- endif -%}</a>

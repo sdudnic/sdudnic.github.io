@@ -22,8 +22,8 @@ title: dudnic.com
 lang: mo
 timezone: Europe/Paris
 description: > # this means to ignore newlines until "show_excerpts:"
-  Inițiativă civică de documentare și dialog despre Moldova, istorie, identitate,
-  limbă, instituții și interes public.
+  Documentare și dialog despre Moldova, istorie, identitate, limbă,
+  instituții și interes public.
 
 show_excerpts: false
 excerpt_separator: <!--more-->
@@ -43,7 +43,6 @@ header_pages:
   - standarde-europene.md
   - articole.md
   - initiative.md
-  - referinte-resurse.md
 
 
 minima:

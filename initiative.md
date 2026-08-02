@@ -11,6 +11,13 @@ permalink: /initiative/
   <p class="page-lead">Dosare de documentare și analiză despre identitate, memorie, drepturi și responsabilitate publică în Republica Moldova.</p>
 
   <div class="dossier-grid">
+    <article class="dossier-card dossier-card--featured">
+      <p class="card-label">Petiție și arhivă oficială</p>
+      <h2><a href="{{ '/istoria/' | relative_url }}">Pentru Istoria Moldovei</a></h2>
+      <p>Pagina oficială păstrează textele, documentele, imaginile și noutățile proiectului pentru o educație națională inclusivă în Republica Moldova.</p>
+      <a class="card-link" href="{{ '/istoria/' | relative_url }}">Deschide pagina oficială →</a>
+    </article>
+
     <article class="dossier-card">
       <p class="card-label">Istorie și educație</p>
       <h2><a href="{{ '/istoria-romanilor/' | relative_url }}">Istoria românilor</a></h2>

@@ -36,8 +36,11 @@ url: "https://dudnic.com" # the base hostname & protocol for your site, e.g. htt
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
 
 header_pages:
+  - istoria/index.md
   - articole.md
   - initiative.md
   - moldoveneasca.md
@@ -47,6 +50,12 @@ header_pages:
 
 minima:
   date_format: "%d/%m/%y"
+
+defaults:
+  - scope:
+      path: "istoria"
+    values:
+      layout: petition-document
 
 # Exclude from processing.
 # The following items will not be processed, by default.

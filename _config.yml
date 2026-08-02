@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MOLDOVA
+title: dudnic.com
 lang: mo
 timezone: Europe/Paris
 description: > # this means to ignore newlines until "show_excerpts:"

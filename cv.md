@@ -5,9 +5,11 @@ nav_title: Despre
 permalink: /despre/
 ---
 
-# Despre platformă
+# Despre autor
 
-MOLDOVA este o inițiativă civică de documentare, analiză și dialog despre Republica Moldova.
+Sergiu Dudnic este activist civic și patriot. Pe dudnic.com publică documentare, analiză și opinii despre Republica Moldova.
+
+În registru ironic, se descrie uneori și ca „agentul Kremlinului, al Casei Albe, al Élysée-ului și al templierilor” — o formulă satirică despre independența punctului de vedere și refuzul etichetelor simpliste.
 
 Contribuțiile publicate aici urmăresc, în termeni generali, câteva direcții de interes public:
 
@@ -16,4 +18,4 @@ Contribuțiile publicate aici urmăresc, în termeni generali, câteva direcții
 * memoria, istoria și cultura Moldovei;
 * dreptul moldovenilor la informare și participare civică.
 
-Platforma nu publică un profil biografic detaliat al autorului. Accentul este pus pe documente, surse, argumente și dialogul pe care acestea îl pot genera.
+Accentul rămâne pus pe documente, surse, argumente și dialogul pe care acestea îl pot genera.

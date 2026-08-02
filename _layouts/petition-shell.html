@@ -1,0 +1,27 @@
+---
+---
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'mo' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/istoria/assets/css/style.css' | relative_url }}">
+    {%- include custom-head.html -%}
+  </head>
+  <body class="petition-site">
+    <a class="sr-only petition-skip-link" href="#petition-main">Sari la conținut</a>
+
+    <main id="petition-main" class="petition-site__main" aria-label="Petiția Pentru Istoria Moldovei">
+      {{ content }}
+    </main>
+
+    <footer class="petition-site-footer">
+      <div class="wrapper petition-site-footer__inner">
+        <p>Arhiva oficială a inițiativei civice „Pentru Istoria Moldovei”</p>
+        <a href="{{ '/' | relative_url }}" aria-label="Înapoi la pagina principală dudnic.com">← Pagina principală · dudnic.com</a>
+      </div>
+    </footer>
+  </body>
+</html>

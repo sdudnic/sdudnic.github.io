@@ -40,13 +40,10 @@ plugins:
   - jekyll-relative-links
 
 header_pages:
-  - istoria/index.md
+  - standarde-europene.md
   - articole.md
   - initiative.md
-  - standarde-europene.md
-  - moldoveneasca.md
-  - siteuri.md
-  - cv.md
+  - referinte-resurse.md
 
 
 minima:

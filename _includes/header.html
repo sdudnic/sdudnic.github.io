@@ -16,7 +16,7 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Acasă</a>
+          <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Moldova</a>
           {%- for path in site.header_pages -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}

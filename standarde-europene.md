@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Moldova și standardele europene
-nav_title: Standarde europene
+nav_title: Europa
 permalink: /standarde-europene/
 lang: mo
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Articole
-nav_title: Articole
+nav_title: Blog
 permalink: /articole/
 ---
 

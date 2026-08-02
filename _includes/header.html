@@ -1,6 +1,9 @@
 <header class="site-header" role="banner">
   <div class="wrapper site-header__inner">
-    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}" aria-label="MOLDOVA">
+      <img class="site-title__crest" src="{{ '/assets/stema-moldovei.svg' | relative_url }}" alt="" width="28" height="31">
+      <span>{{ site.title | escape }}</span>
+    </a>
 
     <div class="site-header__tools">
       <nav class="site-nav" aria-label="Navigare principală">

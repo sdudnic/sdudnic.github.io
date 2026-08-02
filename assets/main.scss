@@ -75,6 +75,13 @@ a:hover {
   min-height: 64px;
 }
 
+.site-header__tools {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-left: auto;
+}
+
 .site-title,
 .site-title:visited {
   color: var(--ink);
@@ -86,8 +93,31 @@ a:hover {
 
 .site-nav {
   float: none;
-  margin-left: auto;
+  margin-left: 0;
   line-height: 1;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.language-switcher a,
+.language-switcher a:visited {
+  padding: 0.25rem 0.3rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.language-switcher a:hover,
+.language-switcher a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
 }
 
 .site-nav .page-link {
@@ -927,6 +957,10 @@ a:hover {
 @media screen and (max-width: 700px) {
   .site-header__inner {
     min-height: 58px;
+  }
+
+  .site-header__tools {
+    gap: 0.55rem;
   }
 
   .site-nav {

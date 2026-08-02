@@ -1,6 +1,7 @@
 <footer class="site-footer h-card">
   <div class="wrapper footer-inner">
-    <p>{{ site.title | escape }} · inițiativă civică</p>
+    {%- assign current_lang = page.lang | default: site.lang -%}
+    <p>{{ site.title | escape }} · {%- if current_lang == 'en' -%}civic initiative{%- elsif current_lang == 'fr' -%}initiative civique{%- elsif current_lang == 'ru' -%}гражданская инициатива{%- else -%}inițiativă civică{%- endif -%}</p>
     <a href="{{ 'feed.xml' | relative_url }}">Flux RSS</a>
   </div>
 </footer>

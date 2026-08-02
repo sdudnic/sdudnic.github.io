@@ -7,7 +7,7 @@ permalink: /despre/
 
 # Despre platformă
 
-Dudnic.com este o inițiativă civică de documentare, analiză și dialog despre Republica Moldova.
+MOLDOVA este o inițiativă civică de documentare, analiză și dialog despre Republica Moldova.
 
 Contribuțiile publicate aici urmăresc, în termeni generali, câteva direcții de interes public:
 

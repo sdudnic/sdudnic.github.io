@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /europa/feed.xml
+---
+{% include europa-rss.xml locale="mo" %}

@@ -1,0 +1,23 @@
+{%- assign locale = include.locale | default: 'mo' -%}
+{%- assign title_key = locale | append: '_title' -%}
+{%- assign summary_key = locale | append: '_summary' -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Moldova and the EU — Europa</title>
+    <link>{{ site.url }}/standarde-europene/</link>
+    <description>Recent notes about Moldova and European integration.</description>
+    <language>{{ locale }}</language>
+    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    {%- for item in site.data.europa %}
+    <item>
+      <title>{{ item[title_key] | xml_escape }}</title>
+      <link>{{ item.url }}</link>
+      <guid isPermaLink="true">{{ item.url }}</guid>
+      <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+      <description>{{ item[summary_key] | xml_escape }}</description>
+      <source url="{{ item.url }}">{{ item.source | xml_escape }}</source>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>

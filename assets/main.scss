@@ -509,6 +509,71 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.europa-feed-page {
+  max-width: 900px;
+}
+
+.feed-tools {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.feed-tools a {
+  font-weight: 700;
+}
+
+.rss-feed {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.rss-item {
+  padding: 1.35rem 0 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.rss-item__meta,
+.rss-item__source {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.rss-item__meta {
+  margin: 0 0 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rss-item h2 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.rss-item h2 a {
+  text-decoration: none;
+}
+
+.rss-item h2 a:hover {
+  text-decoration: underline;
+}
+
+.rss-item__summary {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--muted);
+}
+
+.rss-item__source {
+  margin: 0.75rem 0 0;
+}
+
+.rss-item__source a {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .page-heading,
 .post-title {
   color: var(--ink);

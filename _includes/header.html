@@ -6,6 +6,16 @@
     </a>
 
     <div class="site-header__tools">
+      {%- assign current_lang = page.lang | default: site.lang -%}
+      {%- if current_lang == 'en' -%}
+        {%- assign europa_url = '/en/european-standards/' -%}
+      {%- elsif current_lang == 'fr' -%}
+        {%- assign europa_url = '/fr/standards-europeens/' -%}
+      {%- elsif current_lang == 'ru' -%}
+        {%- assign europa_url = '/ru/evropejskie-standarty/' -%}
+      {%- else -%}
+        {%- assign europa_url = '/standarde-europene/' -%}
+      {%- endif -%}
       <nav class="site-nav" aria-label="Navigare principală">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -17,17 +27,19 @@
 
         <div class="trigger">
           <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Moldova</a>
+          <a class="page-link" href="{{ europa_url | relative_url }}"{% if page.url == europa_url %} aria-current="page"{% endif %}>Europa</a>
           {%- for path in site.header_pages -%}
+            {%- if path != 'standarde-europene.md' -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
               {%- assign nav_label = my_page.nav_title | default: my_page.title -%}
               <a class="page-link" href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ nav_label | escape }}</a>
             {%- endif -%}
+            {%- endif -%}
           {%- endfor -%}
         </div>
       </nav>
 
-      {%- assign current_lang = page.lang | default: site.lang -%}
       <nav class="language-switcher" aria-label="Limbi">
         <span class="sr-only">Alege limba</span>
         <a href="{{ '/' | relative_url }}" title="Limba moldovenească"{% if current_lang == 'mo' %} aria-current="page"{% endif %}>MO</a>

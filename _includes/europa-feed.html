@@ -1,0 +1,51 @@
+{%- assign current_lang = page.lang | default: site.lang | default: 'mo' -%}
+{%- if current_lang == 'en' -%}
+  {%- assign feed_heading = "Moldova and the EU: European integration news" -%}
+  {%- assign feed_lead = "A concise, non-repetitive selection of recent notes from external sources about Moldova’s European path, reforms and practical integration." -%}
+  {%- assign feed_note = "Updated 2 August 2026 · 13 notes · newest first. External sources open in a new tab." -%}
+  {%- assign feed_rss_label = "Subscribe to this feed (RSS)" -%}
+  {%- assign source_label = "Open the external source ↗" -%}
+  {%- assign feed_rss_url = '/en/european-standards/feed.xml' -%}
+{%- elsif current_lang == 'fr' -%}
+  {%- assign feed_heading = "La Moldova et l’UE : actualités de l’intégration européenne" -%}
+  {%- assign feed_lead = "Une sélection concise et sans répétitions de notes récentes issues de sources externes sur le parcours européen, les réformes et l’intégration concrète de la Moldova." -%}
+  {%- assign feed_note = "Mise à jour le 2 août 2026 · 13 notes · de la plus récente à la plus ancienne. Les sources externes s’ouvrent dans un nouvel onglet." -%}
+  {%- assign feed_rss_label = "S’abonner à ce flux (RSS)" -%}
+  {%- assign source_label = "Ouvrir la source externe ↗" -%}
+  {%- assign feed_rss_url = '/fr/standards-europeens/feed.xml' -%}
+{%- elsif current_lang == 'ru' -%}
+  {%- assign feed_heading = "Молдова и ЕС: новости европейской интеграции" -%}
+  {%- assign feed_lead = "Краткая подборка неповторяющихся свежих заметок из внешних источников о европейском пути Молдовы, реформах и практической интеграции." -%}
+  {%- assign feed_note = "Обновлено 2 августа 2026 года · 13 заметок · сначала новые. Внешние источники открываются в новой вкладке." -%}
+  {%- assign feed_rss_label = "Подписаться на этот поток (RSS)" -%}
+  {%- assign source_label = "Открыть внешний источник ↗" -%}
+  {%- assign feed_rss_url = '/ru/evropejskie-standarty/feed.xml' -%}
+{%- else -%}
+  {%- assign feed_heading = "Moldova și UE: noutăți despre integrarea europeană" -%}
+  {%- assign feed_lead = "O selecție scurtă și fără repetări de note recente din surse externe despre parcursul european al Moldovei, reforme și integrarea practică." -%}
+  {%- assign feed_note = "Actualizat la 2 august 2026 · 13 note · cea mai nouă mai sus. Sursele externe se deschid într-un tab nou." -%}
+  {%- assign feed_rss_label = "Abonează-te la acest flux (RSS)" -%}
+  {%- assign source_label = "Deschide sursa externă ↗" -%}
+  {%- assign feed_rss_url = '/europa/feed.xml' -%}
+{%- endif -%}
+
+<article class="article-index europa-feed-page">
+  <p class="eyebrow">Europa</p>
+  <h1>{{ feed_heading }}</h1>
+  <p class="page-lead">{{ feed_lead }}</p>
+  <p class="source-note">{{ feed_note }}</p>
+  <p class="feed-tools"><a href="{{ feed_rss_url | relative_url }}">{{ feed_rss_label }}</a></p>
+
+  <div class="rss-feed" aria-label="{{ feed_heading | escape }}">
+    {%- for item in site.data.europa -%}
+      {%- assign title_key = current_lang | append: '_title' -%}
+      {%- assign summary_key = current_lang | append: '_summary' -%}
+      <article class="rss-item">
+        <p class="rss-item__meta"><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%d.%m.%Y' }}</time> · {{ item.source }}</p>
+        <h2><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item[title_key] }}</a></h2>
+        <p class="rss-item__summary">{{ item[summary_key] }}</p>
+        <p class="rss-item__source"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ source_label }}</a></p>
+      </article>
+    {%- endfor -%}
+  </div>
+</article>

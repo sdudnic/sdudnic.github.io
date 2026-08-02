@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /fr/standards-europeens/feed.xml
+---
+{% include europa-rss.xml locale="fr" %}

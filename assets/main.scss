@@ -257,6 +257,31 @@ a:hover {
   border-bottom: 1px solid var(--line);
 }
 
+.patriotic-message {
+  padding: clamp(1.6rem, 4vw, 3rem);
+  border: 1px solid var(--line-strong);
+  border-left: 4px solid #af0000;
+  background: #fffaf5;
+}
+
+.patriotic-message h2 {
+  max-width: 24ch;
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font-size: clamp(1.65rem, 3.5vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+
+.patriotic-message p:not(.eyebrow) {
+  max-width: 72ch;
+}
+
+.patriotic-message p:last-child {
+  margin-bottom: 0;
+}
+
 .intro-section p {
   max-width: 72ch;
   color: var(--muted);

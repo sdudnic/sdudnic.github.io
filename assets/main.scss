@@ -576,9 +576,9 @@ a:hover {
 }
 
 .footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: start;
   gap: 1rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -590,7 +590,20 @@ a:hover {
   margin: 0;
 }
 
-.footer-inner a {
+.footer-author {
+  margin-top: 0.35rem !important;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem 1rem;
+}
+
+.footer-links a {
   color: var(--ink);
   font-weight: 600;
 }
@@ -1108,9 +1121,13 @@ a:hover {
     display: block;
   }
 
-  .footer-inner a {
+  .footer-links {
+    justify-content: flex-start;
+    margin-top: 0.75rem;
+  }
+
+  .footer-links a {
     display: inline-block;
-    margin-top: 0.35rem;
   }
 
   .petition-hero {

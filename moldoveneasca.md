@@ -3,12 +3,130 @@ layout: post
 title: Referințe istorice ale glotonimului "moldovenească"
 nav_title: Referințe
 tags: [moldoveneasca, limba, glotonim, moldovean, moldovenească, denumirea limbii, limba moldovenească, istorie, surse istorice]
+description: Catalog documentar cu referințe istorice despre denumirea limbii moldovenești, de la primele mențiuni până în prezent.
 permalink: /moldoveneasca/
 ---
 
 În articolul de față sunt prezentate sursele istorice care pomenesc glotonimul "moldovenească" referitor la limba vorbita de moldoveni.
 
 Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
+
+<section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-title">
+  <header class="moldoveneasca-catalog__intro">
+    <p class="eyebrow">Catalog documentar</p>
+    <h2 id="catalog-title">Referințe istorice, într-o colecție deschisă</h2>
+    <p>
+      Tabelul de mai jos este punctul de pornire. Poți căuta după an, autor, titlu,
+      citat sau sursă și poți filtra rapid documentele care au legături externe.
+    </p>
+  </header>
+
+  <div class="moldoveneasca-catalog__stats" aria-label="Statistici despre catalog">
+    <div><strong data-record-count>—</strong><span>referințe în catalog</span></div>
+    <div><strong data-linked-count>—</strong><span>cu legături către surse</span></div>
+    <div><strong data-year-range>—</strong><span>interval acoperit</span></div>
+  </div>
+
+  <div class="moldoveneasca-catalog__controls" role="search" aria-label="Caută și filtrează referințele">
+    <label class="moldoveneasca-field moldoveneasca-field--wide">
+      <span>Caută în tabel</span>
+      <input type="search" data-catalog-search placeholder="Ex.: Cantemir, lingua moldavica, 1714…" autocomplete="off">
+    </label>
+    <label class="moldoveneasca-field">
+      <span>Perioada</span>
+      <select data-catalog-period>
+        <option value="all">Toate perioadele</option>
+        <option value="before-1600">Până la 1600</option>
+        <option value="1600-1799">1600–1799</option>
+        <option value="1800-1899">1800–1899</option>
+        <option value="1900-1999">1900–1999</option>
+        <option value="2000-now">2000–prezent</option>
+      </select>
+    </label>
+    <label class="moldoveneasca-check">
+      <input type="checkbox" data-catalog-linked>
+      <span>Doar referințe cu sursă online</span>
+    </label>
+    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-catalog-reset>Resetează</button>
+  </div>
+
+  <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
+
+  <section class="moldoveneasca-auth" data-auth-panel aria-labelledby="auth-title">
+    <div>
+      <p class="eyebrow" id="auth-title">Contribuții</p>
+      <p data-auth-message>Vizualizarea și filtrarea sunt deschise tuturor. Autentificarea GitHub va permite contribuții doar conturilor cu rol de editor.</p>
+    </div>
+    <div class="moldoveneasca-auth__actions">
+      <span class="moldoveneasca-role" data-role-badge>viewer</span>
+      <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
+      <button type="button" class="moldoveneasca-button" data-login>Autentificare cu GitHub</button>
+      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-logout hidden>Ieșire</button>
+    </div>
+  </section>
+
+  <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
+    <div class="moldoveneasca-editor__heading">
+      <div>
+        <p class="eyebrow">Editor</p>
+        <h3 id="editor-title" data-form-title>Adaugă o referință</h3>
+      </div>
+      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-cancel-edit>Anulează</button>
+    </div>
+    <form data-reference-form>
+      <div class="moldoveneasca-form-grid">
+        <label class="moldoveneasca-field">
+          <span>Anul sau intervalul</span>
+          <input name="year_label" required placeholder="Ex.: 1714 sau 1800–1804">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Titlul / documentul</span>
+          <input name="title" required placeholder="Titlul lucrării sau al documentului">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Autorul</span>
+          <input name="author" placeholder="Autor, instituție sau emitent">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Tipul sursei</span>
+          <input name="source_type" placeholder="Carte, act, gramatică, presă…">
+        </label>
+        <label class="moldoveneasca-field moldoveneasca-field--full">
+          <span>Descriere / context</span>
+          <textarea name="description" rows="3" placeholder="Ce menționează documentul și în ce context?"></textarea>
+        </label>
+        <label class="moldoveneasca-field moldoveneasca-field--full">
+          <span>Citat relevant</span>
+          <textarea name="quote" rows="3" placeholder="Citatul original sau traducerea, cu indicarea limbii sursei"></textarea>
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Locul / instituția</span>
+          <input name="location" placeholder="Iași, Chișinău, bibliotecă…">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Legătura către sursă</span>
+          <input type="url" name="source_url" placeholder="https://…">
+        </label>
+        <label class="moldoveneasca-field" data-admin-only hidden>
+          <span>Statut</span>
+          <select name="status">
+            <option value="pending">În așteptarea verificării</option>
+            <option value="published">Publicată</option>
+            <option value="rejected">Respinsă</option>
+            <option value="archived">Arhivată</option>
+          </select>
+        </label>
+      </div>
+      <div class="moldoveneasca-form__footer">
+        <p class="moldoveneasca-catalog__result" data-form-status aria-live="polite"></p>
+        <button type="submit" class="moldoveneasca-button">Salvează referința</button>
+      </div>
+    </form>
+  </section>
+</section>
+
+<script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}"></script>
 
 Sursele sunt afișate în ordine cronologică:
 

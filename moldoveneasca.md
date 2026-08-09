@@ -104,7 +104,7 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-2"></script>
 
 Referințele sunt afișate în ordine cronologică; apasă pe antetul primei coloane pentru a inversa sortarea:
 

@@ -22,8 +22,6 @@ permalink: /moldoveneasca/
     <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
   </div>
 
-  <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
-
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
     <div class="moldoveneasca-editor__heading">
       <div>
@@ -101,7 +99,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-5"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-6"></script>
 
 | **Perioada / an** | **Secol** | **Denumirea lucrării** | **Citat** | **Limba** | **Autorul** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

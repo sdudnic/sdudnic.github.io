@@ -7,7 +7,7 @@
   const tbody = table?.querySelector('tbody');
   const searchInput = root.querySelector('[data-catalog-search]');
   const resetButton = root.querySelector('[data-catalog-reset]');
-  const result = root.querySelector('[data-catalog-result]');
+  const result = document.querySelector('[data-catalog-result]');
   const authMessage = document.querySelector('[data-auth-message]');
   const authUser = document.querySelector('[data-auth-user]');
   const roleBadge = document.querySelector('[data-role-badge]');
@@ -20,8 +20,8 @@
   const formStatus = root.querySelector('[data-form-status]');
   const cancelEditButton = root.querySelector('[data-cancel-edit]');
   const adminOnlyField = root.querySelector('[data-admin-only]');
-  const recordCount = root.querySelector('[data-record-count]');
-  const filteredCount = root.querySelector('[data-filtered-count]');
+  const recordCount = document.querySelector('[data-record-count]');
+  const filteredCount = document.querySelector('[data-filtered-count]');
   const pagination = document.querySelector('[data-catalog-pagination]');
   const previousPageButton = document.querySelector('[data-page-previous]');
   const nextPageButton = document.querySelector('[data-page-next]');

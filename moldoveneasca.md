@@ -303,13 +303,18 @@ permalink: /moldoveneasca/
 | 2014 | Limba vorbită în raioanele Moldovei (Recensămînt 2014), [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200083134157) |
 | 2018 | Abecedar, Limba Moldovenească, Odessa [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/289035209150787/?type=3&__xts__%5B0%5D=68.ARBNCcJ91rts9RvHwIX5q3XPFe-d24_u5d-76RdmAk3_8sIh-GbT3Ok7SOxOzj14M8d1QYfRNmYW_WvsyqfBCCcpcT8yNWcJ9cnRRB4NQMG2lRrr0PqcPjxdpfpIdkZeVnaT2FS3Y42b16WdubM9SBDdYfWCOeWgrLJmBYoDZw0brXNti-4C4P2aU4wdDaOGSVmewmE3z7EJ0FAFYPqlCTozs5CDV5a0L877UB5InEceXrkrB67xtgVvGJfilqIvQD_4h_nOXjvLFN3qzhQfmqArz0MgVEbp_Rp-DXJgTJ2wxEj2fxzK3lDDnomKIcNRtJEfrw9kKqStv8bIldtZLhE&__tn__=-R) |
 
-
-
-<nav class="moldoveneasca-pagination" data-catalog-pagination hidden aria-label="Paginarea referințelor">
-  <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-previous>Înapoi</button>
-  <span data-page-status aria-live="polite">Pagina 1 din 1</span>
-  <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-next>Înainte</button>
-</nav>
+<div class="moldoveneasca-catalog__status" data-catalog-status>
+  <div class="moldoveneasca-catalog__status-summary">
+    <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
+    <span><strong data-record-count>—</strong> elemente în total</span>
+    <span><strong data-filtered-count>—</strong> elemente filtrate</span>
+  </div>
+  <nav class="moldoveneasca-pagination" data-catalog-pagination hidden aria-label="Paginarea referințelor">
+    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-previous>Înapoi</button>
+    <span data-page-status aria-live="polite">Pagina 1 din 1</span>
+    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-next>Înainte</button>
+  </nav>
+</div>
 
 Doua chestii sa fie luate în considerare. Vom porni de la premiza ca 
 1) limba moldovenească sau româna este aceeași limba. Unica ce diferă este denumirea dată acestei limbi unice de către populația diferită.

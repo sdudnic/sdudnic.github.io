@@ -21,8 +21,7 @@
   const cancelEditButton = root.querySelector('[data-cancel-edit]');
   const adminOnlyField = root.querySelector('[data-admin-only]');
   const recordCount = root.querySelector('[data-record-count]');
-  const linkedCount = root.querySelector('[data-linked-count]');
-  const yearRange = root.querySelector('[data-year-range]');
+  const filteredCount = root.querySelector('[data-filtered-count]');
   const pagination = document.querySelector('[data-catalog-pagination]');
   const previousPageButton = document.querySelector('[data-page-previous]');
   const nextPageButton = document.querySelector('[data-page-next]');
@@ -586,11 +585,7 @@
 
   const updateStats = () => {
     const rows = currentRows();
-    const years = rows.map((row) => Number(row.dataset.catalogYear)).filter((year) => Number.isFinite(year));
-    const linked = rows.filter((row) => row.dataset.catalogLinked === 'true').length;
     if (recordCount) recordCount.textContent = String(rows.length);
-    if (linkedCount) linkedCount.textContent = String(linked);
-    if (yearRange) yearRange.textContent = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
   };
 
   const filterRows = () => {
@@ -607,7 +602,8 @@
       ));
       return matchesQuery && matchesColumns;
     });
-    const totalPages = updatePagination(matchedRows.length);
+    updatePagination(matchedRows.length);
+    if (filteredCount) filteredCount.textContent = String(matchedRows.length);
     const firstVisible = (currentPage - 1) * pageSize;
     const lastVisible = firstVisible + pageSize;
     const matchedSet = new Set(matchedRows);
@@ -621,8 +617,8 @@
     if (resetButton) resetButton.hidden = !query && !hasActiveColumnFilter;
     if (result) {
       result.textContent = matchedRows.length
-        ? `Se afișează ${visibleStart}–${visibleEnd} din ${matchedRows.length} referințe${totalPages > 1 ? ` · pagina ${currentPage}/${totalPages}` : ''}.`
-        : 'Nu există referințe care să corespundă filtrării.';
+        ? `Afișate ${visibleStart}–${visibleEnd}`
+        : 'Niciun rezultat';
     }
   };
 

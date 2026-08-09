@@ -36,6 +36,7 @@
     /Nicolae Milescu\s*-\s*"Descrierea Moldovei"/i,
     /Cartea românească de învățătură.*Cantemir/i,
     /Elementa linguae Moldo-Wallachicae/i,
+    /Elementa linguae Daco-Romanae.*Aron Vodă/i,
     /Dictionar grecesc-slavon-moldovenesc/i,
     /Codicele Moldovei/i,
     /Gramatica românească/i,
@@ -71,6 +72,7 @@
     [/D\.?\s*Cantemir/i, 'Dimitrie Cantemir'],
     [/Nicolae Milescu/i, 'Nicolae Milescu'],
     [/Grigore Ureche/i, 'Grigore Ureche'],
+    [/Gr\.\s*Ureche/i, 'Grigore Ureche'],
     [/Miron Costin/i, 'Miron Costin'],
     [/Radu Greceanu/i, 'Radu Greceanu'],
     [/Ion Neculce|Ioan Neculce/i, 'Ioan Neculce'],
@@ -149,6 +151,7 @@
     const explicit = text.match(/Autorul:\s*([^,;.]+)/i);
     if (explicit) return explicit[1].trim();
     if (/Lexiconul Moldo-Valah|Istoria bisericească/i.test(text) && /Grigore Ureche/i.test(text)) return 'Grigore Ureche (atribuire neverificată)';
+    if (/Elementa linguae Daco-Romanae.*Aron Vodă/i.test(text)) return 'Aron Vodă (atribuire neverificată)';
     if (/Lexiconul moldovenesc/i.test(text) && /Miron Costin/i.test(text)) return 'Miron Costin (atribuire neverificată)';
     if (/Alfabetul slavo-moldovenesc|Săptămâna/i.test(text) && /Varlaam/i.test(text)) return 'Varlaam (atribuire neverificată)';
     if (/Letopisețul Cantacuzinesc/i.test(text) && /Neculce/i.test(text)) return 'Ioan Neculce (atribuire neverificată)';
@@ -169,6 +172,7 @@
     if (/tălmăcit.*limba rus|de pe cea rus|rusească.*moldov|russască.*moldov/i.test(text)) return 'rusă → moldovenească';
     if (/din slavonă|limba slavon|slovenesc|ispisoc sârbesc|sârbesc/i.test(text)) return 'slavonă → moldovenească';
     if (/grecesc-slavon-moldovenesc-latin/i.test(text)) return 'greacă / slavonă / moldovenească / latină';
+    if (/Angelo Rocca/i.test(text)) return 'latină';
     if (/Breve vocabulario italiano|italian|Metastasio/i.test(text)) return 'italiană → moldovenească';
     if (/Acta Tomiciana|Lingua Moldavorum|lingua moldav|Descriptio|Elementa linguae|Alphabetum|Dictionarium Valachico|Vocabula cum|Thesaurus polono|Dissertatio|Opera historica|Chronologia|Bibliotheca Münteriana/i.test(text)) return 'latină';
     if (/Nicolas Pfluger|Wittemberg|germană/i.test(text)) return 'germană / moldovenească';

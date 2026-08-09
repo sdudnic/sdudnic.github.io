@@ -22,14 +22,7 @@ permalink: /moldoveneasca/
     <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
   </div>
 
-  <div class="moldoveneasca-catalog__meta">
-    <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
-    <p class="moldoveneasca-catalog__summary">
-      <span><strong data-record-count>—</strong> referințe</span>
-      <span><strong data-linked-count>—</strong> cu sursă online</span>
-      <span>ani: <strong data-year-range>—</strong></span>
-    </p>
-  </div>
+  <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
 
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
     <div class="moldoveneasca-editor__heading">
@@ -109,8 +102,6 @@ permalink: /moldoveneasca/
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
 <script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-4"></script>
-
-Referințele sunt afișate în ordine cronologică; apasă pe antetul primei coloane pentru a inversa sortarea:
 
 | **Perioada / an** | **Secol** | **Denumirea lucrării** | **Citat** | **Limba** | **Autorul** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

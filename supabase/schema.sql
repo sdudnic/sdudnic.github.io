@@ -34,6 +34,7 @@ create table if not exists public.language_references (
   year_start integer,
   year_end integer,
   title text not null,
+  language text,
   author text,
   description text,
   quote text,
@@ -51,6 +52,9 @@ create table if not exists public.language_references (
     source_url is null or source_url ~* '^https?://'
   )
 );
+
+alter table public.language_references
+  add column if not exists language text;
 
 create table if not exists public.reference_revisions (
   id uuid primary key default gen_random_uuid(),
@@ -239,4 +243,4 @@ create policy reference_revisions_select_owner_or_admin
   );
 
 -- După ce te autentifici prima dată cu GitHub, promovează contul proprietar:
--- update public.profiles set role = 'admin' where github_login = 'sdudnic';
+-- update public.profiles set role = 'admin' where github_login = 'NUME_GITHUB_ADMIN';

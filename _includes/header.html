@@ -47,6 +47,16 @@
         <a href="{{ '/fr/' | relative_url }}" title="Français"{% if current_lang == 'fr' %} aria-current="page"{% endif %}>FR</a>
         <a href="{{ '/ru/' | relative_url }}" title="Русский"{% if current_lang == 'ru' %} aria-current="page"{% endif %}>РУ</a>
       </nav>
+
+      {%- if page.url == '/moldoveneasca/' -%}
+      <div class="site-account" data-catalog-account aria-label="Contul catalogului">
+        <span class="sr-only" data-auth-message role="status">Vizualizarea este deschisă tuturor.</span>
+        <span class="site-account__user" data-auth-user hidden></span>
+        <span class="site-account__role" data-role-badge hidden>viewer</span>
+        <button type="button" class="site-account__button" data-login>Autentificare</button>
+        <button type="button" class="site-account__button site-account__button--quiet" data-logout hidden>Ieșire</button>
+      </div>
+      {%- endif -%}
     </div>
   </div>
 </header>

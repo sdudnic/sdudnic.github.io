@@ -14,56 +14,30 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 <section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-title">
   <header class="moldoveneasca-catalog__intro">
     <p class="eyebrow">Catalog documentar</p>
-    <h2 id="catalog-title">Referințe istorice, într-o colecție deschisă</h2>
+    <h2 id="catalog-title">Referințe istorice ale denumirii „moldovenească”</h2>
     <p>
-      Tabelul de mai jos este punctul de pornire. Poți căuta după an, autor, titlu,
-      citat sau sursă și poți filtra rapid documentele care au legături externe.
+      Tabelul este colecția principală. Caută într-un singur loc după an, lucrare,
+      citat, limbă, autor sau sursă; pentru a contribui, autentifică-te cu GitHub.
     </p>
   </header>
 
-  <div class="moldoveneasca-catalog__stats" aria-label="Statistici despre catalog">
-    <div><strong data-record-count>—</strong><span>referințe în catalog</span></div>
-    <div><strong data-linked-count>—</strong><span>cu legături către surse</span></div>
-    <div><strong data-year-range>—</strong><span>interval acoperit</span></div>
+  <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate coloanele catalogului">
+    <label class="moldoveneasca-search">
+      <span class="sr-only">Caută în toate coloanele</span>
+      <input type="search" data-catalog-search placeholder="Caută după an, lucrare, citat, limbă, autor sau sursă…" autocomplete="off">
+    </label>
+    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-catalog-reset hidden>Resetează</button>
+    <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
   </div>
 
-  <div class="moldoveneasca-catalog__controls" role="search" aria-label="Caută și filtrează referințele">
-    <label class="moldoveneasca-field moldoveneasca-field--wide">
-      <span>Caută în tabel</span>
-      <input type="search" data-catalog-search placeholder="Ex.: Cantemir, lingua moldavica, 1714…" autocomplete="off">
-    </label>
-    <label class="moldoveneasca-field">
-      <span>Perioada</span>
-      <select data-catalog-period>
-        <option value="all">Toate perioadele</option>
-        <option value="before-1600">Până la 1600</option>
-        <option value="1600-1799">1600–1799</option>
-        <option value="1800-1899">1800–1899</option>
-        <option value="1900-1999">1900–1999</option>
-        <option value="2000-now">2000–prezent</option>
-      </select>
-    </label>
-    <label class="moldoveneasca-check">
-      <input type="checkbox" data-catalog-linked>
-      <span>Doar referințe cu sursă online</span>
-    </label>
-    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-catalog-reset>Resetează</button>
+  <div class="moldoveneasca-catalog__meta">
+    <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
+    <p class="moldoveneasca-catalog__summary">
+      <span><strong data-record-count>—</strong> referințe</span>
+      <span><strong data-linked-count>—</strong> cu sursă online</span>
+      <span>ani: <strong data-year-range>—</strong></span>
+    </p>
   </div>
-
-  <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
-
-  <section class="moldoveneasca-auth" data-auth-panel aria-labelledby="auth-title">
-    <div>
-      <p class="eyebrow" id="auth-title">Contribuții</p>
-      <p data-auth-message>Vizualizarea și filtrarea sunt deschise tuturor. Autentificarea GitHub va permite contribuții doar conturilor cu rol de editor.</p>
-    </div>
-    <div class="moldoveneasca-auth__actions">
-      <span class="moldoveneasca-role" data-role-badge>viewer</span>
-      <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
-      <button type="button" class="moldoveneasca-button" data-login>Autentificare cu GitHub</button>
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-logout hidden>Ieșire</button>
-    </div>
-  </section>
 
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
     <div class="moldoveneasca-editor__heading">
@@ -82,6 +56,10 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
         <label class="moldoveneasca-field">
           <span>Titlul / documentul</span>
           <input name="title" required placeholder="Titlul lucrării sau al documentului">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Limba</span>
+          <input name="language" placeholder="Limba citatului sau a documentului">
         </label>
         <label class="moldoveneasca-field">
           <span>Autorul</span>
@@ -128,10 +106,10 @@ Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
 <script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}"></script>
 
-Sursele sunt afișate în ordine cronologică:
+Referințele sunt afișate în ordine cronologică; apasă pe antetul primei coloane pentru a inversa sortarea:
 
-| **Anul** | **Sursa** |
-|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Perioada / an** | **Secol** | **Denumirea lucrării** | **Citatul care menționează „moldovenească”** | **Limba** | **Autorul** | **Sursa** |
+|-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
 | ~1481-1504 | Petru Clănău, vel spătar sub Ștefan Vodă iscălește un "act doveditor de limba ce se vorbea sub Ștefan Voda Cel Mare în Moldova": "pohtii al scripti(scri) pe Moldovenie [...] dupi latinie, si scriptulam cu mâna mea în târg în Vaslui", [(sursa)](https://books.google.com/books?id=SIpaAAAAcAAJ&pg=PA151#v=onepage) |
 | 1524 | "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R), [direct](https://books.google.com/books?id=At9MAAAAcAAJ&pg=PA61&sa=X&ved=2ahUKEwiPmdm8_tbqAhXCz4UKHRUXAtU4UBC7BTACegQIARAU#v=onepage&q&f=false) |
 | 1532 | "Despre o traducere moldovenească a Evangheliei în acea epocă (1532) avem informaţii precise… Învăţatul german Nicolas Pfluger la 11.03.1532 scria: "Un oarecare doctor (om învăţat) din Moldova… a venit la Wittemberg, vrînd să se îngrijească de tipărirea celor patru evanghelii şi a (epistolelor) lui Pavel în limba moldovenească, polonă şi germană… Se afla deci atunci în Moldova o traducere moldovenească a "evangheliei" şi a "epistolelor” (care fac parte din Apostol), subliniază P. Panaitescu (1965). |
@@ -331,6 +309,12 @@ Sursele sunt afișate în ordine cronologică:
 | 2018 | Abecedar, Limba Moldovenească, Odessa [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/289035209150787/?type=3&__xts__%5B0%5D=68.ARBNCcJ91rts9RvHwIX5q3XPFe-d24_u5d-76RdmAk3_8sIh-GbT3Ok7SOxOzj14M8d1QYfRNmYW_WvsyqfBCCcpcT8yNWcJ9cnRRB4NQMG2lRrr0PqcPjxdpfpIdkZeVnaT2FS3Y42b16WdubM9SBDdYfWCOeWgrLJmBYoDZw0brXNti-4C4P2aU4wdDaOGSVmewmE3z7EJ0FAFYPqlCTozs5CDV5a0L877UB5InEceXrkrB67xtgVvGJfilqIvQD_4h_nOXjvLFN3qzhQfmqArz0MgVEbp_Rp-DXJgTJ2wxEj2fxzK3lDDnomKIcNRtJEfrw9kKqStv8bIldtZLhE&__tn__=-R) |
 
 
+
+<nav class="moldoveneasca-pagination" data-catalog-pagination hidden aria-label="Paginarea referințelor">
+  <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-previous>Înapoi</button>
+  <span data-page-status aria-live="polite">Pagina 1 din 1</span>
+  <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-next>Înainte</button>
+</nav>
 
 Doua chestii sa fie luate în considerare. Vom porni de la premiza ca 
 1) limba moldovenească sau româna este aceeași limba. Unica ce diferă este denumirea dată acestei limbi unice de către populația diferită.

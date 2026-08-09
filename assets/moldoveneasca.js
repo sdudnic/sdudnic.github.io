@@ -6,14 +6,13 @@
   const table = document.querySelector('.post-content table') || document.querySelector('table');
   const tbody = table?.querySelector('tbody');
   const searchInput = root.querySelector('[data-catalog-search]');
-  const periodSelect = root.querySelector('[data-catalog-period]');
-  const linkedCheckbox = root.querySelector('[data-catalog-linked]');
   const resetButton = root.querySelector('[data-catalog-reset]');
   const result = root.querySelector('[data-catalog-result]');
-  const authMessage = root.querySelector('[data-auth-message]');
-  const roleBadge = root.querySelector('[data-role-badge]');
-  const loginButton = root.querySelector('[data-login]');
-  const logoutButton = root.querySelector('[data-logout]');
+  const authMessage = document.querySelector('[data-auth-message]');
+  const authUser = document.querySelector('[data-auth-user]');
+  const roleBadge = document.querySelector('[data-role-badge]');
+  const loginButton = document.querySelector('[data-login]');
+  const logoutButton = document.querySelector('[data-logout]');
   const openFormButton = root.querySelector('[data-open-form]');
   const editorPanel = root.querySelector('[data-reference-editor]');
   const editorForm = root.querySelector('[data-reference-form]');
@@ -24,6 +23,10 @@
   const recordCount = root.querySelector('[data-record-count]');
   const linkedCount = root.querySelector('[data-linked-count]');
   const yearRange = root.querySelector('[data-year-range]');
+  const pagination = document.querySelector('[data-catalog-pagination]');
+  const previousPageButton = document.querySelector('[data-page-previous]');
+  const nextPageButton = document.querySelector('[data-page-next]');
+  const pageStatus = document.querySelector('[data-page-status]');
 
   if (!table || !tbody) return;
   table.classList.add('moldoveneasca-table');
@@ -33,6 +36,11 @@
   let currentRole = 'viewer';
   let editingId = null;
   let remoteRecords = [];
+  let sortAscending = true;
+  let sortButton = null;
+  let rowSequence = 0;
+  const pageSize = 50;
+  let currentPage = 1;
 
   const normalize = (value) => (value || '')
     .toLocaleLowerCase('ro-MD')
@@ -60,130 +68,207 @@
     return end && end !== start ? `${start}–${end}` : String(start);
   };
 
+  const toRoman = (number) => {
+    const values = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'], [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'], [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+    let resultText = '';
+    let rest = number;
+    values.forEach(([value, symbol]) => {
+      while (rest >= value) {
+        resultText += symbol;
+        rest -= value;
+      }
+    });
+    return resultText;
+  };
+
+  const centuryLabel = (record) => {
+    const year = parseYearStart(record);
+    if (!year) return '—';
+    return `secolul ${toRoman(Math.floor((year - 1) / 100) + 1)}`;
+  };
+
+  const extractCellText = (cell) => {
+    if (!cell) return '';
+    const clone = cell.cloneNode(true);
+    clone.querySelectorAll('a').forEach((link) => link.remove());
+    return clone.textContent.replace(/\s+/g, ' ').trim();
+  };
+
+  const extractQuote = (value) => {
+    const text = String(value || '').replace(/\s+/g, ' ').trim();
+    const candidates = [];
+    for (const match of text.matchAll(/«([^»]{8,})»/g)) candidates.push(match[1]);
+    for (const match of text.matchAll(/“([^”]{8,})”/g)) candidates.push(match[1]);
+    for (const match of text.matchAll(/"([^"\n]{8,})"/g)) candidates.push(match[1]);
+    const preferred = candidates.find((candidate) => /moldov|moldav|lingua|limba/i.test(candidate));
+    if (preferred) return preferred.trim();
+    const labelled = text.match(/Citatul:\s*(.{8,240}?)(?:,\s*Contextul:|$)/i);
+    return labelled ? labelled[1].replace(/^['"«“]|['"»”]$/g, '').trim() : null;
+  };
+
+  const extractAuthor = (value) => {
+    const text = String(value || '').replace(/\s+/g, ' ').trim();
+    const explicit = text.match(/Autorul:\s*([^,;.]+)/i);
+    if (explicit) return explicit[1].trim();
+    const leading = text.match(/^([^,;]{2,80}),\s*(?:["«“]|Citatul:|Letopisețul|Mărturisirea)/i);
+    return leading ? leading[1].trim() : null;
+  };
+
+  const extractTitle = (value) => {
+    const text = String(value || '').replace(/\s+/g, ' ').trim();
+    const contextTitle = text.match(/(?:în|in)\s+["«“]([^"»”]{3,140})["»”]/i);
+    if (contextTitle) return contextTitle[1].trim();
+    const quotedTitle = text.match(/^["«“]([^"»”]{3,140})["»”]/);
+    if (quotedTitle) return quotedTitle[1].trim();
+    const namedTitle = text.match(/,\s*["«“]([^"»”]{3,140})["»”]/);
+    return namedTitle ? namedTitle[1].trim() : null;
+  };
+
+  const recordFromStaticRow = (row) => {
+    const yearLabel = row.cells[0]?.textContent.trim() || '';
+    const sourceText = extractCellText(row.cells[1]);
+    const sourceUrl = row.cells[1]?.querySelector('a[href]')?.href || null;
+    const title = extractTitle(sourceText) || sourceText;
+    return {
+      year_label: yearLabel,
+      year_start: parseYears(yearLabel)[0] || null,
+      year_end: parseYears(yearLabel)[1] || parseYears(yearLabel)[0] || null,
+      title,
+      quote: extractQuote(sourceText),
+      language: null,
+      author: extractAuthor(sourceText),
+      source_url: sourceUrl,
+      source_type: null,
+      location: null,
+      description: null,
+      status: 'published',
+      owner_id: null
+    };
+  };
+
+  const displayFields = (record) => {
+    const raw = record?.title || '';
+    const imported = record?.source_type === 'Import din tabelul existent';
+    return {
+      year: yearRangeLabel(record),
+      century: centuryLabel(record),
+      title: imported ? (extractTitle(raw) || raw) : (raw || '—'),
+      quote: record?.quote || (imported ? extractQuote(raw) : null),
+      language: record?.language || '—',
+      author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
+    };
+  };
+
+  const ensureTableHeader = () => {
+    const thead = table.tHead || table.querySelector('thead');
+    const headRow = thead?.rows[0] || table.querySelector('thead tr');
+    if (!thead || !headRow) return;
+    headRow.replaceChildren();
+    const headings = [
+      ['year', 'Perioadă / an'],
+      ['century', 'Secol'],
+      ['title', 'Denumirea lucrării'],
+      ['quote', 'Citatul care menționează „moldovenească”'],
+      ['language', 'Limba'],
+      ['author', 'Autorul'],
+      ['source', 'Sursa']
+    ];
+    headings.forEach(([key, label]) => {
+      const th = document.createElement('th');
+      th.scope = 'col';
+      if (key === 'year') {
+        sortButton = document.createElement('button');
+        sortButton.type = 'button';
+        sortButton.className = 'moldoveneasca-table__sort';
+        sortButton.dataset.sortYear = 'true';
+        sortButton.addEventListener('click', () => {
+          sortAscending = !sortAscending;
+          currentPage = 1;
+          sortRowsChronologically();
+          filterRows();
+        });
+        th.appendChild(sortButton);
+      } else {
+        th.textContent = label;
+      }
+      headRow.appendChild(th);
+    });
+
+    thead.querySelector('.moldoveneasca-table__filters')?.remove();
+    const filterRow = document.createElement('tr');
+    filterRow.className = 'moldoveneasca-table__filters';
+    const filters = [
+      ['year', 'An'],
+      ['century', 'Toate secolele'],
+      ['title', 'Filtru'],
+      ['quote', 'Filtru'],
+      ['language', 'Filtru'],
+      ['author', 'Filtru'],
+      ['source', 'Filtru']
+    ];
+    filters.forEach(([key, placeholder]) => {
+      const th = document.createElement('th');
+      th.scope = 'col';
+      const control = key === 'century' ? document.createElement('select') : document.createElement('input');
+      control.dataset.columnFilter = key;
+      control.setAttribute('aria-label', `Filtru pentru ${key}`);
+      if (key === 'century') {
+        const option = document.createElement('option');
+        option.value = '';
+        option.textContent = placeholder;
+        control.appendChild(option);
+      } else {
+        control.type = 'search';
+        control.placeholder = placeholder;
+        control.autocomplete = 'off';
+      }
+      control.addEventListener('input', () => {
+        currentPage = 1;
+        filterRows();
+      });
+      control.addEventListener('change', () => {
+        currentPage = 1;
+        filterRows();
+      });
+      th.appendChild(control);
+      filterRow.appendChild(th);
+    });
+    thead.appendChild(filterRow);
+  };
+
   const currentRows = () => Array.from(tbody.rows);
 
-  const setRowMetadata = (row) => {
-    row.dataset.catalogYear = String(parseYears(row.cells[0]?.textContent)[0] || '');
-    row.dataset.catalogLinked = row.querySelector('a[href]') ? 'true' : 'false';
-  };
-
-  currentRows().forEach(setRowMetadata);
-  const staticRows = currentRows();
-
-  const getPeriodRange = (value) => {
-    switch (value) {
-      case 'before-1600': return { min: -Infinity, max: 1599 };
-      case '1600-1799': return { min: 1600, max: 1799 };
-      case '1800-1899': return { min: 1800, max: 1899 };
-      case '1900-1999': return { min: 1900, max: 1999 };
-      case '2000-now': return { min: 2000, max: Infinity };
-      default: return { min: -Infinity, max: Infinity };
-    }
-  };
-
-  const updateStats = () => {
-    const rows = currentRows();
-    const years = rows
-      .map((row) => Number(row.dataset.catalogYear))
-      .filter((year) => Number.isFinite(year));
-    const linked = rows.filter((row) => row.dataset.catalogLinked === 'true').length;
-
-    if (recordCount) recordCount.textContent = String(rows.length);
-    if (linkedCount) linkedCount.textContent = String(linked);
-    if (yearRange) {
-      yearRange.textContent = years.length
-        ? `${Math.min(...years)}–${Math.max(...years)}`
-        : '—';
-    }
-  };
-
-  const filterRows = () => {
-    const query = normalize(searchInput?.value);
-    const period = getPeriodRange(periodSelect?.value);
-    const onlyLinked = Boolean(linkedCheckbox?.checked);
-    let visible = 0;
-
-    currentRows().forEach((row) => {
-      const year = Number(row.dataset.catalogYear);
-      const matchesQuery = !query || normalize(row.textContent).includes(query);
-      const matchesPeriod = !Number.isFinite(year) || (year >= period.min && year <= period.max);
-      const matchesLink = !onlyLinked || row.dataset.catalogLinked === 'true';
-      const matches = matchesQuery && matchesPeriod && matchesLink;
-      row.hidden = !matches;
-      if (matches) visible += 1;
-    });
-
-    if (result) {
-      result.textContent = `Se afișează ${visible} din ${currentRows().length} referințe.`;
-    }
-  };
-
-  const sortRowsChronologically = () => {
-    const rows = currentRows();
-    rows.sort((a, b) => {
-      const yearA = Number(a.dataset.catalogYear) || Number.POSITIVE_INFINITY;
-      const yearB = Number(b.dataset.catalogYear) || Number.POSITIVE_INFINITY;
-      return yearA - yearB;
-    });
-    rows.forEach((row) => tbody.appendChild(row));
-  };
-
-  const setStatus = (message, tone = '') => {
-    if (!formStatus) return;
-    formStatus.textContent = message;
-    formStatus.dataset.tone = tone;
-  };
-
-  const setRole = (role) => {
-    currentRole = ['viewer', 'editor', 'admin'].includes(role) ? role : 'viewer';
-    if (roleBadge) {
-      roleBadge.textContent = currentRole;
-      roleBadge.dataset.role = currentRole;
-    }
-    if (openFormButton) openFormButton.hidden = !['editor', 'admin'].includes(currentRole) || !currentUser;
-    if (adminOnlyField) adminOnlyField.hidden = currentRole !== 'admin';
-  };
-
-  const closeEditor = () => {
-    editingId = null;
-    if (editorForm) editorForm.reset();
-    if (formTitle) formTitle.textContent = 'Adaugă o referință';
-    setStatus('');
-    if (editorPanel) editorPanel.hidden = true;
-  };
-
-  const setField = (name, value) => {
-    const field = editorForm?.elements.namedItem(name);
-    if (field) field.value = value || '';
-  };
-
-  const openEditor = (record = null) => {
-    if (!editorPanel || !editorForm) return;
-    if (!currentUser || !['editor', 'admin'].includes(currentRole)) {
-      setStatus('Contul nu are drepturi de editare.', 'error');
-      return;
-    }
-
-    editingId = record?.id || null;
-    if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
-    setField('year_label', record?.year_label);
-    setField('title', record?.title);
-    setField('author', record?.author);
-    setField('source_type', record?.source_type);
-    setField('description', record?.description);
-    setField('quote', record?.quote);
-    setField('location', record?.location);
-    setField('source_url', record?.source_url);
-    setField('status', record?.status || 'pending');
-    setStatus('');
-    editorPanel.hidden = false;
-    editorPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const setRowMetadata = (row, record) => {
+    const fields = displayFields(record);
+    row.catalogFields = {
+      year: normalize([record?.year_label, fields.year].filter(Boolean).join(' ')),
+      century: normalize(fields.century),
+      title: normalize(fields.title),
+      quote: normalize(fields.quote),
+      language: normalize(fields.language),
+      author: normalize(fields.author),
+      source: normalize(record?.source_url)
+    };
+    row.dataset.catalogYear = String(parseYearStart(record) || '');
+    row.dataset.catalogLinked = record?.source_url ? 'true' : 'false';
+    row.dataset.catalogSearch = normalize([
+      record?.year_label,
+      fields.year,
+      fields.century,
+      fields.title,
+      fields.quote,
+      fields.language,
+      fields.author,
+      record?.source_url,
+      record?.description
+    ].filter(Boolean).join(' '));
+    row.dataset.catalogIndex = row.dataset.catalogIndex || String(rowSequence++);
   };
 
   const textCell = (value, className = '') => {
     const cell = document.createElement('td');
     if (className) cell.className = className;
-    cell.textContent = value || '';
+    cell.textContent = value || '—';
     return cell;
   };
 
@@ -195,38 +280,36 @@
     parent.appendChild(element);
   };
 
-  const createRemoteRow = (record) => {
+  const createCatalogRow = (record) => {
+    const fields = displayFields(record);
     const row = document.createElement('tr');
-    row.dataset.remoteReference = record.id;
-    row.appendChild(textCell(yearRangeLabel(record), 'moldoveneasca-table__year'));
+    if (record.id) row.dataset.remoteReference = record.id;
+    row.appendChild(textCell(fields.year, 'moldoveneasca-table__year'));
+    row.appendChild(textCell(fields.century, 'moldoveneasca-table__century'));
+    row.appendChild(textCell(fields.title, 'moldoveneasca-table__title'));
+
+    const quoteCell = textCell(fields.quote, 'moldoveneasca-table__quote');
+    if (fields.quote && fields.quote !== '—') quoteCell.textContent = `„${fields.quote}”`;
+    row.appendChild(quoteCell);
+    row.appendChild(textCell(fields.language, 'moldoveneasca-table__language'));
+    row.appendChild(textCell(fields.author, 'moldoveneasca-table__author'));
 
     const sourceCell = document.createElement('td');
-    const title = document.createElement('strong');
-    title.textContent = record.title || 'Referință fără titlu';
-    sourceCell.appendChild(title);
-    appendTextBlock(sourceCell, 'span', record.author, 'moldoveneasca-table__author');
-    appendTextBlock(sourceCell, 'p', record.description);
-    appendTextBlock(sourceCell, 'blockquote', record.quote, 'moldoveneasca-table__quote');
-
-    if (record.source_type || record.location) {
-      const meta = document.createElement('span');
-      meta.className = 'moldoveneasca-table__meta';
-      meta.textContent = [record.source_type, record.location].filter(Boolean).join(' · ');
-      sourceCell.appendChild(meta);
-    }
-
+    sourceCell.className = 'moldoveneasca-table__source';
     if (record.source_url) {
       const link = document.createElement('a');
       link.href = record.source_url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      link.textContent = 'Deschide sursa';
+      link.textContent = 'Sursa';
       link.className = 'moldoveneasca-table__source-link';
       sourceCell.appendChild(link);
+    } else {
+      sourceCell.textContent = '—';
     }
 
     const canEdit = currentRole === 'admin' || (currentRole === 'editor' && currentUser?.id === record.owner_id);
-    if (canEdit) {
+    if (canEdit && record.id) {
       const actions = document.createElement('div');
       actions.className = 'moldoveneasca-table__actions';
       const editButton = document.createElement('button');
@@ -253,10 +336,160 @@
       badge.textContent = record.status === 'pending' ? 'În verificare' : record.status;
       sourceCell.appendChild(badge);
     }
-
     row.appendChild(sourceCell);
-    setRowMetadata(row);
+    setRowMetadata(row, record);
     return row;
+  };
+
+  ensureTableHeader();
+  const staticRows = currentRows().map((row) => {
+    const converted = createCatalogRow(recordFromStaticRow(row));
+    row.replaceWith(converted);
+    return converted;
+  });
+
+  const getSortedRows = () => currentRows().sort((a, b) => {
+    const yearA = Number(a.dataset.catalogYear) || Number.POSITIVE_INFINITY;
+    const yearB = Number(b.dataset.catalogYear) || Number.POSITIVE_INFINITY;
+    if (yearA === yearB) return Number(a.dataset.catalogIndex) - Number(b.dataset.catalogIndex);
+    return (yearA - yearB) * (sortAscending ? 1 : -1);
+  });
+
+  const sortRowsChronologically = () => {
+    getSortedRows().forEach((row) => tbody.appendChild(row));
+    if (sortButton) {
+      sortButton.textContent = `Perioadă / an ${sortAscending ? '↑' : '↓'}`;
+      sortButton.setAttribute('aria-label', sortAscending ? 'Sortează anii descrescător' : 'Sortează anii crescător');
+      const yearHeader = sortButton.closest('th');
+      if (yearHeader) yearHeader.setAttribute('aria-sort', sortAscending ? 'ascending' : 'descending');
+    }
+  };
+
+  const updateCenturyOptions = () => {
+    const select = table.querySelector('[data-column-filter="century"]');
+    if (!select) return;
+    const previous = select.value;
+    const centuryLabels = [...new Set(currentRows()
+      .map((row) => row.catalogFields?.century)
+      .filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, 'ro'));
+    select.replaceChildren();
+    const allOption = document.createElement('option');
+    allOption.value = '';
+    allOption.textContent = 'Toate secolele';
+    select.appendChild(allOption);
+    centuryLabels.forEach((value) => {
+      const option = document.createElement('option');
+      option.value = value;
+      option.textContent = value;
+      select.appendChild(option);
+    });
+    select.value = centuryLabels.includes(previous) ? previous : '';
+  };
+
+  const updatePagination = (matchedCount) => {
+    const totalPages = Math.max(1, Math.ceil(matchedCount / pageSize));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (pagination) pagination.hidden = totalPages <= 1;
+    if (previousPageButton) previousPageButton.disabled = currentPage <= 1;
+    if (nextPageButton) nextPageButton.disabled = currentPage >= totalPages;
+    if (pageStatus) pageStatus.textContent = `Pagina ${currentPage} din ${totalPages}`;
+    return totalPages;
+  };
+
+  const updateStats = () => {
+    const rows = currentRows();
+    const years = rows.map((row) => Number(row.dataset.catalogYear)).filter((year) => Number.isFinite(year));
+    const linked = rows.filter((row) => row.dataset.catalogLinked === 'true').length;
+    if (recordCount) recordCount.textContent = String(rows.length);
+    if (linkedCount) linkedCount.textContent = String(linked);
+    if (yearRange) yearRange.textContent = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
+  };
+
+  const filterRows = () => {
+    const query = normalize(searchInput?.value);
+    updateCenturyOptions();
+    const filters = {};
+    table.querySelectorAll('[data-column-filter]').forEach((control) => {
+      filters[control.dataset.columnFilter] = normalize(control.value);
+    });
+    const matchedRows = currentRows().filter((row) => {
+      const matchesQuery = !query || row.dataset.catalogSearch.includes(query);
+      const matchesColumns = Object.entries(filters).every(([key, value]) => (
+        !value || row.catalogFields?.[key]?.includes(value)
+      ));
+      return matchesQuery && matchesColumns;
+    });
+    const totalPages = updatePagination(matchedRows.length);
+    const firstVisible = (currentPage - 1) * pageSize;
+    const lastVisible = firstVisible + pageSize;
+    const matchedSet = new Set(matchedRows);
+    currentRows().forEach((row) => {
+      const matchIndex = matchedRows.indexOf(row);
+      row.hidden = !matchedSet.has(row) || matchIndex < firstVisible || matchIndex >= lastVisible;
+    });
+    const visibleStart = matchedRows.length ? firstVisible + 1 : 0;
+    const visibleEnd = Math.min(lastVisible, matchedRows.length);
+    const hasActiveColumnFilter = Object.values(filters).some(Boolean);
+    if (resetButton) resetButton.hidden = !query && !hasActiveColumnFilter;
+    if (result) {
+      result.textContent = matchedRows.length
+        ? `Se afișează ${visibleStart}–${visibleEnd} din ${matchedRows.length} referințe${totalPages > 1 ? ` · pagina ${currentPage}/${totalPages}` : ''}.`
+        : 'Nu există referințe care să corespundă filtrării.';
+    }
+  };
+
+  const setStatus = (message, tone = '') => {
+    if (!formStatus) return;
+    formStatus.textContent = message;
+    formStatus.dataset.tone = tone;
+  };
+
+  const setRole = (role) => {
+    currentRole = ['viewer', 'editor', 'admin'].includes(role) ? role : 'viewer';
+    if (roleBadge) {
+      roleBadge.textContent = currentRole;
+      roleBadge.dataset.role = currentRole;
+      roleBadge.hidden = !currentUser;
+    }
+    if (openFormButton) openFormButton.hidden = !['editor', 'admin'].includes(currentRole) || !currentUser;
+    if (adminOnlyField) adminOnlyField.hidden = currentRole !== 'admin';
+  };
+
+  const closeEditor = () => {
+    editingId = null;
+    if (editorForm) editorForm.reset();
+    if (formTitle) formTitle.textContent = 'Adaugă o referință';
+    setStatus('');
+    if (editorPanel) editorPanel.hidden = true;
+  };
+
+  const setField = (name, value) => {
+    const field = editorForm?.elements.namedItem(name);
+    if (field) field.value = value || '';
+  };
+
+  const openEditor = (record = null) => {
+    if (!editorPanel || !editorForm) return;
+    if (!currentUser || !['editor', 'admin'].includes(currentRole)) {
+      setStatus('Contul nu are drepturi de editare.', 'error');
+      return;
+    }
+    editingId = record?.id || null;
+    if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
+    setField('year_label', record?.year_label);
+    setField('title', record?.title);
+    setField('language', record?.language);
+    setField('author', record?.author);
+    setField('source_type', record?.source_type);
+    setField('description', record?.description);
+    setField('quote', record?.quote);
+    setField('location', record?.location);
+    setField('source_url', record?.source_url);
+    setField('status', record?.status || 'pending');
+    setStatus('');
+    editorPanel.hidden = false;
+    editorPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const renderRemoteRows = () => {
@@ -268,7 +501,8 @@
         if (!tbody.contains(row)) tbody.appendChild(row);
       });
     }
-    remoteRecords.forEach((record) => tbody.appendChild(createRemoteRow(record)));
+    remoteRecords.forEach((record) => tbody.appendChild(createCatalogRow(record)));
+    currentPage = 1;
     sortRowsChronologically();
     updateStats();
     filterRows();
@@ -291,7 +525,7 @@
     if (!supabaseClient) return;
     const { data, error } = await supabaseClient
       .from('language_references')
-      .select('id, year_label, year_start, year_end, title, author, description, quote, source_type, location, source_url, status, owner_id')
+      .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, status, owner_id')
       .order('year_start', { ascending: true });
     if (error) throw error;
     remoteRecords = data || [];
@@ -302,10 +536,16 @@
     currentUser = user || null;
     if (!currentUser) {
       setRole('viewer');
-      if (roleBadge) roleBadge.textContent = 'viewer';
-      if (loginButton) loginButton.hidden = false;
+      if (authUser) {
+        authUser.textContent = '';
+        authUser.hidden = true;
+      }
+      if (loginButton) {
+        loginButton.hidden = false;
+        loginButton.disabled = false;
+      }
       if (logoutButton) logoutButton.hidden = true;
-      if (authMessage) authMessage.textContent = 'Vizualizarea și filtrarea sunt deschise tuturor. Autentifică-te cu GitHub pentru a folosi funcțiile de editor.';
+      if (authMessage) authMessage.textContent = 'Vizualizarea este deschisă tuturor. Autentifică-te cu GitHub pentru a contribui.';
       if (editorPanel) editorPanel.hidden = true;
       renderRemoteRows();
       return;
@@ -322,11 +562,11 @@
     if (loginButton) loginButton.hidden = true;
     if (logoutButton) logoutButton.hidden = false;
     const displayName = profile?.display_name || profile?.github_login || currentUser.user_metadata?.user_name || currentUser.email || 'contul tău';
-    if (authMessage) {
-      authMessage.textContent = currentRole === 'viewer'
-        ? `${displayName} este autentificat(ă) cu rolul viewer. Un administrator poate acorda rolul editor.`
-        : `${displayName} este autentificat(ă) cu rolul ${currentRole}.`;
+    if (authUser) {
+      authUser.textContent = displayName;
+      authUser.hidden = false;
     }
+    if (authMessage) authMessage.textContent = `${displayName} este autentificat(ă) cu rolul ${currentRole}.`;
     renderRemoteRows();
   };
 
@@ -358,6 +598,7 @@
       year_start: years[0] || null,
       year_end: years[1] || years[0] || null,
       title: String(data.get('title') || '').trim(),
+      language: String(data.get('language') || '').trim() || null,
       author: String(data.get('author') || '').trim() || null,
       source_type: String(data.get('source_type') || '').trim() || null,
       description: String(data.get('description') || '').trim() || null,
@@ -375,10 +616,9 @@
       setStatus('Autentifică-te cu un cont cu rol de editor.', 'error');
       return;
     }
-
     const payload = formPayload();
     if (!payload.year_label || !payload.title) {
-      setStatus('Completează anul și titlul documentului.', 'error');
+      setStatus('Completează anul și denumirea lucrării.', 'error');
       return;
     }
 
@@ -398,8 +638,6 @@
       setStatus(`Nu s-a putut salva referința: ${response.error.message}`, 'error');
       return;
     }
-
-    setStatus('Referința a fost salvată.');
     closeEditor();
     await loadRemoteRecords();
   };
@@ -415,13 +653,25 @@
     await loadRemoteRecords();
   };
 
-  searchInput?.addEventListener('input', filterRows);
-  periodSelect?.addEventListener('change', filterRows);
-  linkedCheckbox?.addEventListener('change', filterRows);
+  searchInput?.addEventListener('input', () => {
+    currentPage = 1;
+    filterRows();
+  });
   resetButton?.addEventListener('click', () => {
     if (searchInput) searchInput.value = '';
-    if (periodSelect) periodSelect.value = 'all';
-    if (linkedCheckbox) linkedCheckbox.checked = false;
+    table.querySelectorAll('[data-column-filter]').forEach((control) => {
+      control.value = '';
+    });
+    currentPage = 1;
+    filterRows();
+    searchInput?.focus();
+  });
+  previousPageButton?.addEventListener('click', () => {
+    currentPage = Math.max(1, currentPage - 1);
+    filterRows();
+  });
+  nextPageButton?.addEventListener('click', () => {
+    currentPage += 1;
     filterRows();
   });
   loginButton?.addEventListener('click', signIn);
@@ -430,13 +680,14 @@
   cancelEditButton?.addEventListener('click', closeEditor);
   editorForm?.addEventListener('submit', saveRecord);
 
+  sortRowsChronologically();
   updateStats();
   filterRows();
   setRole('viewer');
 
   if (!config.supabaseUrl || !config.supabaseAnonKey) {
     if (loginButton) loginButton.disabled = true;
-    if (authMessage) authMessage.textContent = 'Catalogul public și filtrele funcționează acum fără cont. Autentificarea GitHub va fi activată după conectarea proiectului Supabase gratuit.';
+    if (authMessage) authMessage.textContent = 'Catalogul public și căutarea funcționează fără cont; autentificarea GitHub nu este încă configurată.';
     return;
   }
 
@@ -454,7 +705,7 @@
       });
     } catch (error) {
       if (loginButton) loginButton.disabled = true;
-      if (authMessage) authMessage.textContent = `Catalogul public funcționează, dar autentificarea nu este disponibilă încă: ${error.message}`;
+      if (authMessage) authMessage.textContent = `Catalogul public funcționează, dar autentificarea nu este disponibilă: ${error.message}`;
     }
   })();
 })();

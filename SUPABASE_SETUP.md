@@ -42,8 +42,11 @@ SQL Editor:
 ```sql
 update public.profiles
 set role = 'admin'
-where github_login = 'sdudnic';
+where github_login = 'NUME_GITHUB_ADMIN';
 ```
+
+În proiectul configurat acum, contul proprietar are identificatorul GitHub
+`sdudnic` (numele afișat poate fi diferit).
 
 Pentru un colaborator:
 
@@ -55,15 +58,13 @@ where github_login = 'NUME_GITHUB';
 
 Conturile noi rămân `viewer` până când administratorul le promovează.
 
-## Cum funcționează prima versiune
+## Cum funcționează versiunea actuală
 
-- catalogul istoric existent rămâne vizibil și filtrabil fără cont;
-- referințele noi sunt salvate în Supabase și apar în tabel după autentificare;
+- cele 197 de referințe istorice existente sunt importate în Supabase;
+- tabelul public poate fi căutat într-un singur câmp după toate coloanele;
+- referințele noi și editările folosesc câmpuri separate pentru perioadă, secol,
+  lucrare, citat, limbă, autor și sursă;
 - editorul poate modifica doar referințele al căror proprietar este;
 - editorul nu poate șterge și nu poate schimba statutul unei referințe;
 - administratorul poate modifica, publica, arhiva sau șterge orice referință;
 - modificările sunt păstrate în `reference_revisions` pentru verificare.
-
-Importul și normalizarea celor aproximativ 180 de înregistrări existente în
-baza Supabase poate fi făcut într-o etapă următoare, fără să pierdem pagina
-statică actuală.

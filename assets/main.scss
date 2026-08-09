@@ -2278,3 +2278,52 @@ body.moldoveneasca-detail-open {
     gap: 0.25rem;
   }
 }
+
+// Keep the grid plain: zebra rows, unadorned text, and ordinary links.
+.post-content .moldoveneasca-table th,
+.post-content .moldoveneasca-table td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.moldoveneasca-table tbody tr:nth-child(odd) {
+  background: var(--surface);
+}
+
+.moldoveneasca-table tbody tr:nth-child(even) {
+  background: var(--subtle);
+}
+
+.moldoveneasca-table tbody td {
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.moldoveneasca-table tbody td > * {
+  margin: 0;
+  padding: 0;
+}
+
+.moldoveneasca-table__year,
+.moldoveneasca-table__century {
+  font-weight: 400;
+}
+
+.moldoveneasca-table__quote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.moldoveneasca-table__source-link {
+  font-weight: inherit;
+}
+
+.moldoveneasca-table td p {
+  margin: 0;
+}

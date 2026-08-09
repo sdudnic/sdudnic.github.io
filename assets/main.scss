@@ -1959,3 +1959,22 @@ a:hover {
     min-width: 1120px;
   }
 }
+
+// Keep the catalogue text consistent; compactness comes from spacing, not tiny type.
+.moldoveneasca-catalog__toolbar,
+.moldoveneasca-catalog__toolbar *,
+.moldoveneasca-catalog__meta,
+.moldoveneasca-catalog__meta *,
+.moldoveneasca-table,
+.moldoveneasca-table *,
+.moldoveneasca-pagination,
+.moldoveneasca-pagination *,
+.moldoveneasca-editor form,
+.moldoveneasca-editor form * {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.moldoveneasca-table__quote em {
+  font-style: italic;
+}

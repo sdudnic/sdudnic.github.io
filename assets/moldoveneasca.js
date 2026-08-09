@@ -243,6 +243,7 @@
     row.catalogFields = {
       year: normalize([record?.year_label, fields.year].filter(Boolean).join(' ')),
       century: normalize(fields.century),
+      centuryLabel: fields.century,
       title: normalize(fields.title),
       quote: normalize(fields.quote),
       language: normalize(fields.language),
@@ -272,12 +273,20 @@
     return cell;
   };
 
-  const appendTextBlock = (parent, tag, value, className = '') => {
-    if (!value) return;
-    const element = document.createElement(tag);
-    if (className) element.className = className;
-    element.textContent = value;
-    parent.appendChild(element);
+  const quoteIndicatorPattern = /(limba\s+moldoveneasc\p{L}*|lingua\s+moldav\p{L}*|moldoveneasc\p{L}*|moldav\p{L}*|moldeuška|молдов\p{L}*)/giu;
+
+  const appendQuoteText = (parent, value) => {
+    const text = String(value || '');
+    quoteIndicatorPattern.lastIndex = 0;
+    let cursor = 0;
+    for (const match of text.matchAll(quoteIndicatorPattern)) {
+      if (match.index > cursor) parent.appendChild(document.createTextNode(text.slice(cursor, match.index)));
+      const indicator = document.createElement('em');
+      indicator.textContent = match[0];
+      parent.appendChild(indicator);
+      cursor = match.index + match[0].length;
+    }
+    if (cursor < text.length) parent.appendChild(document.createTextNode(text.slice(cursor)));
   };
 
   const createCatalogRow = (record) => {
@@ -288,8 +297,15 @@
     row.appendChild(textCell(fields.century, 'moldoveneasca-table__century'));
     row.appendChild(textCell(fields.title, 'moldoveneasca-table__title'));
 
-    const quoteCell = textCell(fields.quote, 'moldoveneasca-table__quote');
-    if (fields.quote && fields.quote !== '—') quoteCell.textContent = `„${fields.quote}”`;
+    const quoteCell = document.createElement('td');
+    quoteCell.className = 'moldoveneasca-table__quote';
+    if (fields.quote && fields.quote !== '—') {
+      quoteCell.appendChild(document.createTextNode('„'));
+      appendQuoteText(quoteCell, fields.quote);
+      quoteCell.appendChild(document.createTextNode('”'));
+    } else {
+      quoteCell.textContent = '—';
+    }
     row.appendChild(quoteCell);
     row.appendChild(textCell(fields.language, 'moldoveneasca-table__language'));
     row.appendChild(textCell(fields.author, 'moldoveneasca-table__author'));
@@ -369,22 +385,22 @@
     const select = table.querySelector('[data-column-filter="century"]');
     if (!select) return;
     const previous = select.value;
-    const centuryLabels = [...new Set(currentRows()
-      .map((row) => row.catalogFields?.century)
-      .filter(Boolean))]
-      .sort((a, b) => a.localeCompare(b, 'ro'));
+    const centuryLabels = new Map(currentRows()
+      .map((row) => [row.catalogFields?.century, row.catalogFields?.centuryLabel])
+      .filter(([value]) => value));
+    const centuryValues = [...centuryLabels.keys()].sort((a, b) => a.localeCompare(b, 'ro'));
     select.replaceChildren();
     const allOption = document.createElement('option');
     allOption.value = '';
     allOption.textContent = 'Toate secolele';
     select.appendChild(allOption);
-    centuryLabels.forEach((value) => {
+    centuryValues.forEach((value) => {
       const option = document.createElement('option');
       option.value = value;
-      option.textContent = value;
+      option.textContent = centuryLabels.get(value);
       select.appendChild(option);
     });
-    select.value = centuryLabels.includes(previous) ? previous : '';
+    select.value = centuryValues.includes(previous) ? previous : '';
   };
 
   const updatePagination = (matchedCount) => {

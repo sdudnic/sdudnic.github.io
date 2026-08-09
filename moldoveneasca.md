@@ -101,7 +101,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-4"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-5"></script>
 
 | **Perioada / an** | **Secol** | **Denumirea lucrării** | **Citat** | **Limba** | **Autorul** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

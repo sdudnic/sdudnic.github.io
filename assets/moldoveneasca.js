@@ -123,12 +123,15 @@
 
   const extractTitle = (value) => {
     const text = String(value || '').replace(/\s+/g, ' ').trim();
-    const contextTitle = text.match(/(?:în|in)\s+["«“]([^"»”]{3,140})["»”]/i);
-    if (contextTitle) return contextTitle[1].trim();
-    const quotedTitle = text.match(/^["«“]([^"»”]{3,140})["»”]/);
-    if (quotedTitle) return quotedTitle[1].trim();
-    const namedTitle = text.match(/,\s*["«“]([^"»”]{3,140})["»”]/);
-    return namedTitle ? namedTitle[1].trim() : null;
+    const marker = /^\s*\*\?\s*/.test(text) ? '*? ' : '';
+    const cleanText = text.replace(/^\s*\*\?\s*/, '');
+    const withMarker = (match) => match ? `${marker}${match[1].trim()}` : null;
+    const contextTitle = cleanText.match(/(?:în|in)\s+["«“]([^"»”]{3,140})["»”]/i);
+    if (contextTitle) return withMarker(contextTitle);
+    const quotedTitle = cleanText.match(/^["«“]([^"»”]{3,140})["»”]/);
+    if (quotedTitle) return withMarker(quotedTitle);
+    const namedTitle = cleanText.match(/,\s*["«“]([^"»”]{3,140})["»”]/);
+    return withMarker(namedTitle);
   };
 
   const sourceUrls = (record) => {
@@ -192,12 +195,12 @@
     if (!thead || !headRow) return;
     headRow.replaceChildren();
     const headings = [
-      ['year', 'Perioadă / an'],
+      ['year', 'An'],
       ['century', 'Secol'],
-      ['title', 'Denumirea lucrării'],
+      ['title', 'Denumirea'],
       ['quote', 'Citat'],
       ['language', 'Limba'],
-      ['author', 'Autorul'],
+      ['author', 'Autor'],
       ['source', 'Sursa'],
       ['actions', '']
     ];
@@ -377,10 +380,10 @@
       detailContent.appendChild(item);
     };
 
-    addDetailField('Perioadă / an', fields.year);
+    addDetailField('An', fields.year);
     addDetailField('Secol', fields.century);
     addDetailField('Limba', fields.language);
-    addDetailField('Autorul', fields.author);
+    addDetailField('Autor', fields.author);
     addDetailField('Tipul sursei', record?.source_type);
     addDetailField('Locul / instituția', record?.location);
     addDetailField('Citat', fields.quote, (content, value) => {
@@ -554,7 +557,7 @@
   const sortRowsChronologically = () => {
     getSortedRows().forEach((row) => tbody.appendChild(row));
     if (sortButton) {
-      sortButton.textContent = `Perioadă / an ${sortAscending ? '↑' : '↓'}`;
+      sortButton.textContent = `An ${sortAscending ? '↑' : '↓'}`;
       sortButton.setAttribute('aria-label', sortAscending ? 'Sortează anii descrescător' : 'Sortează anii crescător');
       const yearHeader = sortButton.closest('th');
       if (yearHeader) yearHeader.setAttribute('aria-sort', sortAscending ? 'ascending' : 'descending');

@@ -2286,6 +2286,7 @@ body.moldoveneasca-detail-open {
   padding: 0;
   border: 0;
   background: transparent;
+  font-size: inherit;
 }
 
 .moldoveneasca-table tbody tr:nth-child(odd) {
@@ -2299,6 +2300,11 @@ body.moldoveneasca-detail-open {
 .moldoveneasca-table tbody td {
   color: var(--ink);
   font-weight: 400;
+}
+
+.moldoveneasca-table tbody td:nth-child(1),
+.moldoveneasca-table tbody td:nth-child(2) {
+  color: var(--ink);
 }
 
 .moldoveneasca-table tbody td > * {

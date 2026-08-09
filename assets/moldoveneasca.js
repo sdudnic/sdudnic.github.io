@@ -273,6 +273,20 @@
 
   const currentRows = () => Array.from(tbody.rows);
 
+  const updateActionsColumnVisibility = () => {
+    const actionColumns = table.querySelectorAll('.moldoveneasca-table__actions-heading, .moldoveneasca-table__actions-cell');
+    actionColumns.forEach((cell) => {
+      cell.hidden = false;
+    });
+    const hasVisibleAction = [...table.querySelectorAll('.moldoveneasca-table__actions-cell')].some((cell) => {
+      const row = cell.closest('tr');
+      return !row?.hidden && cell.querySelector('button:not([hidden])');
+    });
+    actionColumns.forEach((cell) => {
+      cell.hidden = !hasVisibleAction;
+    });
+  };
+
   const setRowMetadata = (row, record) => {
     const fields = displayFields(record);
     const rowYear = parseYearStart(record);
@@ -444,14 +458,17 @@
     if (titleText === '—') {
       titleCell.appendChild(document.createTextNode(titleText));
     } else {
-      const titleButton = document.createElement('button');
-      titleButton.type = 'button';
-      titleButton.className = 'moldoveneasca-table__detail-trigger';
-      titleButton.textContent = titleText;
-      titleButton.title = titleText;
-      titleButton.setAttribute('aria-label', `Deschide detaliile pentru ${titleText}`);
-      titleButton.addEventListener('click', () => openDetail(record, titleButton));
-      titleCell.appendChild(titleButton);
+      const titleLink = document.createElement('a');
+      titleLink.href = '#reference-detail';
+      titleLink.className = 'moldoveneasca-table__detail-link';
+      titleLink.textContent = titleText;
+      titleLink.title = titleText;
+      titleLink.setAttribute('aria-label', `Deschide detaliile pentru ${titleText}`);
+      titleLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        openDetail(record, titleLink);
+      });
+      titleCell.appendChild(titleLink);
     }
     row.appendChild(titleCell);
 
@@ -622,6 +639,7 @@
         ? `Afișate ${visibleStart}–${visibleEnd}`
         : 'Niciun rezultat';
     }
+    updateActionsColumnVisibility();
   };
 
   const applySearch = () => {

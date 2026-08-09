@@ -2074,25 +2074,14 @@ a:hover {
   white-space: nowrap;
 }
 
-.moldoveneasca-table__detail-trigger {
+.moldoveneasca-table__detail-link {
   display: block;
   width: 100%;
   overflow: hidden;
-  padding: 0;
-  border: 0;
-  background: transparent;
   color: inherit;
-  cursor: pointer;
-  font: inherit;
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.moldoveneasca-table__detail-trigger:hover,
-.moldoveneasca-table__detail-trigger:focus-visible {
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
 }
 
 .moldoveneasca-table__source-links {
@@ -2286,7 +2275,13 @@ body.moldoveneasca-detail-open {
   padding: 0;
   border: 0;
   background: transparent;
-  font-size: inherit;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.post-content .moldoveneasca-table {
+  margin-top: 0.25rem;
+  line-height: 1.3;
 }
 
 .moldoveneasca-table tbody tr:nth-child(odd) {
@@ -2310,6 +2305,17 @@ body.moldoveneasca-detail-open {
 .moldoveneasca-table tbody td > * {
   margin: 0;
   padding: 0;
+}
+
+.moldoveneasca-table tbody tr {
+  height: 2rem;
+}
+
+.moldoveneasca-table .moldoveneasca-table__filters input,
+.moldoveneasca-table .moldoveneasca-table__filters select {
+  padding: 0.18rem 0.28rem;
+  font-size: 0.72rem;
+  line-height: 1.2;
 }
 
 .moldoveneasca-table__year,

@@ -86,7 +86,7 @@ permalink: /moldoveneasca/
   </section>
 
   <div class="moldoveneasca-detail-backdrop" data-reference-detail-backdrop hidden></div>
-  <aside class="moldoveneasca-detail" data-reference-detail hidden role="dialog" aria-labelledby="detail-title" aria-modal="true">
+  <aside id="reference-detail" class="moldoveneasca-detail" data-reference-detail hidden role="dialog" aria-labelledby="detail-title" aria-modal="true">
     <div class="moldoveneasca-detail__heading">
       <div>
         <p class="eyebrow">Detalii referință</p>
@@ -99,7 +99,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-7"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-8"></script>
 
 | **Perioada / an** | **Secol** | **Denumirea lucrării** | **Citat** | **Limba** | **Autorul** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

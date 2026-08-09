@@ -274,17 +274,19 @@
 
   const setRowMetadata = (row, record) => {
     const fields = displayFields(record);
+    const rowYear = parseYearStart(record);
     row.catalogFields = {
       year: normalize([record?.year_label, fields.year].filter(Boolean).join(' ')),
       century: normalize(fields.century),
       centuryLabel: fields.century,
+      centuryNumber: rowYear ? Math.floor((rowYear - 1) / 100) + 1 : Number.POSITIVE_INFINITY,
       title: normalize(fields.title),
       quote: normalize(fields.quote),
       language: normalize(fields.language),
       author: normalize(fields.author),
       source: normalize(sourceUrls(record).join(' '))
     };
-    row.dataset.catalogYear = String(parseYearStart(record) || '');
+    row.dataset.catalogYear = String(rowYear || '');
     row.dataset.catalogLinked = sourceUrls(record).length ? 'true' : 'false';
     row.dataset.catalogSearch = normalize([
       record?.year_label,
@@ -545,10 +547,19 @@
     const select = table.querySelector('[data-column-filter="century"]');
     if (!select) return;
     const previous = select.value;
-    const centuryLabels = new Map(currentRows()
-      .map((row) => [row.catalogFields?.century, row.catalogFields?.centuryLabel])
+    const centuryOptions = new Map(currentRows()
+      .map((row) => [
+        row.catalogFields?.century,
+        {
+          label: row.catalogFields?.centuryLabel,
+          number: row.catalogFields?.centuryNumber ?? Number.POSITIVE_INFINITY
+        }
+      ])
       .filter(([value]) => value));
-    const centuryValues = [...centuryLabels.keys()].sort((a, b) => a.localeCompare(b, 'ro'));
+    const centuryValues = [...centuryOptions.keys()].sort((a, b) => {
+      const order = centuryOptions.get(a).number - centuryOptions.get(b).number;
+      return order || a.localeCompare(b, 'ro');
+    });
     select.replaceChildren();
     const allOption = document.createElement('option');
     allOption.value = '';
@@ -557,7 +568,7 @@
     centuryValues.forEach((value) => {
       const option = document.createElement('option');
       option.value = value;
-      option.textContent = centuryLabels.get(value);
+      option.textContent = centuryOptions.get(value).label;
       select.appendChild(option);
     });
     select.value = centuryValues.includes(previous) ? previous : '';

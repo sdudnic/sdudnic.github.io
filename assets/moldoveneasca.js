@@ -46,6 +46,8 @@
   const pageSize = 50;
   let currentPage = 1;
   let lastDetailTrigger = null;
+  let searchDebounceTimer = null;
+  const searchDebounceMs = 220;
 
   const normalize = (value) => (value || '')
     .toLocaleLowerCase('ro-MD')
@@ -622,6 +624,18 @@
     }
   };
 
+  const applySearch = () => {
+    if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = null;
+    currentPage = 1;
+    filterRows();
+  };
+
+  const scheduleSearch = () => {
+    if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = window.setTimeout(applySearch, searchDebounceMs);
+  };
+
   const setStatus = (message, tone = '') => {
     if (!formStatus) return;
     formStatus.textContent = message;
@@ -836,11 +850,16 @@
     await loadRemoteRecords();
   };
 
-  searchInput?.addEventListener('input', () => {
-    currentPage = 1;
-    filterRows();
+  searchInput?.addEventListener('input', scheduleSearch);
+  searchInput?.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      applySearch();
+    }
   });
   resetButton?.addEventListener('click', () => {
+    if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = null;
     if (searchInput) searchInput.value = '';
     table.querySelectorAll('[data-column-filter]').forEach((control) => {
       control.value = '';

@@ -16,7 +16,7 @@ permalink: /moldoveneasca/
   <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate coloanele catalogului">
     <label class="moldoveneasca-search">
       <span class="sr-only">Caută în toate coloanele</span>
-      <input type="search" data-catalog-search placeholder="Caută după an, lucrare, citat, limbă, autor sau sursă…" autocomplete="off">
+      <input type="search" data-catalog-search placeholder="Caută după an, lucrare, citat, limbă, autor sau sursă…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
     </label>
     <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-catalog-reset hidden>Resetează</button>
     <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
@@ -99,7 +99,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-6"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-7"></script>
 
 | **Perioada / an** | **Secol** | **Denumirea lucrării** | **Citat** | **Limba** | **Autorul** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

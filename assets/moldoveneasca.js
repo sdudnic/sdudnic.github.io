@@ -27,6 +27,11 @@
   const previousPageButton = document.querySelector('[data-page-previous]');
   const nextPageButton = document.querySelector('[data-page-next]');
   const pageStatus = document.querySelector('[data-page-status]');
+  const detailPanel = root.querySelector('[data-reference-detail]');
+  const detailBackdrop = root.querySelector('[data-reference-detail-backdrop]');
+  const detailTitle = root.querySelector('[data-detail-title]');
+  const detailContent = root.querySelector('[data-detail-content]');
+  const closeDetailButton = root.querySelector('[data-close-detail]');
 
   if (!table || !tbody) return;
   table.classList.add('moldoveneasca-table');
@@ -41,6 +46,7 @@
   let rowSequence = 0;
   const pageSize = 50;
   let currentPage = 1;
+  let lastDetailTrigger = null;
 
   const normalize = (value) => (value || '')
     .toLocaleLowerCase('ro-MD')
@@ -124,10 +130,29 @@
     return namedTitle ? namedTitle[1].trim() : null;
   };
 
+  const sourceUrls = (record) => {
+    const urls = [];
+    const addValue = (value) => {
+      if (Array.isArray(value)) {
+        value.forEach(addValue);
+        return;
+      }
+      const matches = String(value || '').match(/https?:\/\/[^\s<>"']+/gi) || [];
+      matches.forEach((url) => {
+        const cleaned = url.replace(/[),.;!?]+$/g, '');
+        if (cleaned && !urls.includes(cleaned)) urls.push(cleaned);
+      });
+    };
+    addValue(record?.source_urls);
+    addValue(record?.source_url);
+    addValue(record?.description);
+    return urls;
+  };
+
   const recordFromStaticRow = (row) => {
     const yearLabel = row.cells[0]?.textContent.trim() || '';
     const sourceText = extractCellText(row.cells[1]);
-    const sourceUrl = row.cells[1]?.querySelector('a[href]')?.href || null;
+    const urls = [...(row.cells[1]?.querySelectorAll('a[href]') || [])].map((link) => link.href);
     const title = extractTitle(sourceText) || sourceText;
     return {
       year_label: yearLabel,
@@ -137,7 +162,8 @@
       quote: extractQuote(sourceText),
       language: null,
       author: extractAuthor(sourceText),
-      source_url: sourceUrl,
+      source_url: urls[0] || null,
+      source_urls: urls,
       source_type: null,
       location: null,
       description: null,
@@ -168,10 +194,11 @@
       ['year', 'Perioadă / an'],
       ['century', 'Secol'],
       ['title', 'Denumirea lucrării'],
-      ['quote', 'Citatul care menționează „moldovenească”'],
+      ['quote', 'Citat'],
       ['language', 'Limba'],
       ['author', 'Autorul'],
-      ['source', 'Sursa']
+      ['source', 'Sursa'],
+      ['actions', '']
     ];
     headings.forEach(([key, label]) => {
       const th = document.createElement('th');
@@ -188,6 +215,9 @@
           filterRows();
         });
         th.appendChild(sortButton);
+      } else if (key === 'actions') {
+        th.className = 'moldoveneasca-table__actions-heading';
+        th.setAttribute('aria-label', 'Acțiuni');
       } else {
         th.textContent = label;
       }
@@ -233,6 +263,10 @@
       th.appendChild(control);
       filterRow.appendChild(th);
     });
+    const actionsFilter = document.createElement('th');
+    actionsFilter.className = 'moldoveneasca-table__actions-heading';
+    actionsFilter.setAttribute('aria-label', 'Acțiuni');
+    filterRow.appendChild(actionsFilter);
     thead.appendChild(filterRow);
   };
 
@@ -248,10 +282,10 @@
       quote: normalize(fields.quote),
       language: normalize(fields.language),
       author: normalize(fields.author),
-      source: normalize(record?.source_url)
+      source: normalize(sourceUrls(record).join(' '))
     };
     row.dataset.catalogYear = String(parseYearStart(record) || '');
-    row.dataset.catalogLinked = record?.source_url ? 'true' : 'false';
+    row.dataset.catalogLinked = sourceUrls(record).length ? 'true' : 'false';
     row.dataset.catalogSearch = normalize([
       record?.year_label,
       fields.year,
@@ -260,7 +294,7 @@
       fields.quote,
       fields.language,
       fields.author,
-      record?.source_url,
+      sourceUrls(record).join(' '),
       record?.description
     ].filter(Boolean).join(' '));
     row.dataset.catalogIndex = row.dataset.catalogIndex || String(rowSequence++);
@@ -269,7 +303,12 @@
   const textCell = (value, className = '') => {
     const cell = document.createElement('td');
     if (className) cell.className = className;
-    cell.textContent = value || '—';
+    const text = value || '—';
+    const content = document.createElement('span');
+    content.className = 'moldoveneasca-table__truncate';
+    content.textContent = text;
+    if (text !== '—') content.title = text;
+    cell.appendChild(content);
     return cell;
   };
 
@@ -289,20 +328,140 @@
     if (cursor < text.length) parent.appendChild(document.createTextNode(text.slice(cursor)));
   };
 
+  const closeDetail = () => {
+    if (detailPanel) {
+      detailPanel.classList.remove('is-open');
+      detailPanel.hidden = true;
+    }
+    if (detailBackdrop) detailBackdrop.hidden = true;
+    document.body.classList.remove('moldoveneasca-detail-open');
+    if (lastDetailTrigger?.isConnected) lastDetailTrigger.focus();
+    lastDetailTrigger = null;
+  };
+
+  const openDetail = (record, trigger) => {
+    if (!detailPanel || !detailContent) return;
+    const fields = displayFields(record);
+    const urls = sourceUrls(record);
+    detailContent.replaceChildren();
+    if (detailTitle) detailTitle.textContent = fields.title;
+
+    const addDetailField = (label, value, render = null) => {
+      if (!value || value === '—') return;
+      const item = document.createElement('div');
+      item.className = 'moldoveneasca-detail__item';
+      const heading = document.createElement('dt');
+      heading.textContent = label;
+      const content = document.createElement('dd');
+      if (render) render(content, value);
+      else content.textContent = value;
+      item.appendChild(heading);
+      item.appendChild(content);
+      detailContent.appendChild(item);
+    };
+
+    addDetailField('Perioadă / an', fields.year);
+    addDetailField('Secol', fields.century);
+    addDetailField('Limba', fields.language);
+    addDetailField('Autorul', fields.author);
+    addDetailField('Tipul sursei', record?.source_type);
+    addDetailField('Locul / instituția', record?.location);
+    addDetailField('Citat', fields.quote, (content, value) => {
+      content.appendChild(document.createTextNode('„'));
+      appendQuoteText(content, value);
+      content.appendChild(document.createTextNode('”'));
+    });
+    addDetailField('Context / descriere', record?.description);
+    if (urls.length) {
+      addDetailField('Surse', urls.join('\n'), (content) => {
+        content.className = 'moldoveneasca-detail__sources';
+        urls.forEach((url, index) => {
+          const link = document.createElement('a');
+          link.href = url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = urls.length === 1 ? 'sursa' : String(index + 1);
+          link.title = url;
+          content.appendChild(link);
+          if (index < urls.length - 1) content.appendChild(document.createTextNode(', '));
+        });
+      });
+    }
+
+    lastDetailTrigger = trigger || null;
+    detailPanel.hidden = false;
+    if (detailBackdrop) detailBackdrop.hidden = false;
+    detailPanel.classList.add('is-open');
+    document.body.classList.add('moldoveneasca-detail-open');
+    closeDetailButton?.focus();
+  };
+
+  const createIconSvg = (kind) => {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('width', '16');
+    svg.setAttribute('height', '16');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('stroke-width', '1.8');
+    svg.setAttribute('stroke-linecap', 'round');
+    svg.setAttribute('stroke-linejoin', 'round');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('d', kind === 'edit'
+      ? 'M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM14.06 4.94l3.75 3.75'
+      : 'M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3');
+    svg.appendChild(path);
+    return svg;
+  };
+
+  const createIconButton = (label, kind, onClick, modifier = '') => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `moldoveneasca-icon-button${modifier ? ` ${modifier}` : ''}`;
+    button.setAttribute('aria-label', label);
+    button.title = label;
+    button.dataset.tooltip = label;
+    button.appendChild(createIconSvg(kind));
+    button.addEventListener('click', onClick);
+    return button;
+  };
+
   const createCatalogRow = (record) => {
     const fields = displayFields(record);
     const row = document.createElement('tr');
     if (record.id) row.dataset.remoteReference = record.id;
     row.appendChild(textCell(fields.year, 'moldoveneasca-table__year'));
     row.appendChild(textCell(fields.century, 'moldoveneasca-table__century'));
-    row.appendChild(textCell(fields.title, 'moldoveneasca-table__title'));
+
+    const titleCell = document.createElement('td');
+    titleCell.className = 'moldoveneasca-table__title';
+    const titleText = fields.title || '—';
+    if (titleText === '—') {
+      titleCell.appendChild(document.createTextNode(titleText));
+    } else {
+      const titleButton = document.createElement('button');
+      titleButton.type = 'button';
+      titleButton.className = 'moldoveneasca-table__detail-trigger';
+      titleButton.textContent = titleText;
+      titleButton.title = titleText;
+      titleButton.setAttribute('aria-label', `Deschide detaliile pentru ${titleText}`);
+      titleButton.addEventListener('click', () => openDetail(record, titleButton));
+      titleCell.appendChild(titleButton);
+    }
+    row.appendChild(titleCell);
 
     const quoteCell = document.createElement('td');
     quoteCell.className = 'moldoveneasca-table__quote';
     if (fields.quote && fields.quote !== '—') {
-      quoteCell.appendChild(document.createTextNode('„'));
-      appendQuoteText(quoteCell, fields.quote);
-      quoteCell.appendChild(document.createTextNode('”'));
+      const quoteText = document.createElement('span');
+      quoteText.className = 'moldoveneasca-table__truncate';
+      quoteText.title = fields.quote;
+      quoteText.appendChild(document.createTextNode('„'));
+      appendQuoteText(quoteText, fields.quote);
+      quoteText.appendChild(document.createTextNode('”'));
+      quoteCell.appendChild(quoteText);
     } else {
       quoteCell.textContent = '—';
     }
@@ -312,38 +471,38 @@
 
     const sourceCell = document.createElement('td');
     sourceCell.className = 'moldoveneasca-table__source';
-    if (record.source_url) {
-      const link = document.createElement('a');
-      link.href = record.source_url;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = 'Sursa';
-      link.className = 'moldoveneasca-table__source-link';
-      sourceCell.appendChild(link);
+    const urls = sourceUrls(record);
+    if (urls.length) {
+      const sourceLinks = document.createElement('span');
+      sourceLinks.className = 'moldoveneasca-table__source-links';
+      urls.forEach((url, index) => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = urls.length === 1 ? 'sursa' : String(index + 1);
+        link.title = url;
+        link.className = 'moldoveneasca-table__source-link';
+        sourceLinks.appendChild(link);
+        if (index < urls.length - 1) sourceLinks.appendChild(document.createTextNode(', '));
+      });
+      sourceCell.appendChild(sourceLinks);
     } else {
       sourceCell.textContent = '—';
     }
 
+    const actionsCell = document.createElement('td');
+    actionsCell.className = 'moldoveneasca-table__actions-cell';
     const canEdit = currentRole === 'admin' || (currentRole === 'editor' && currentUser?.id === record.owner_id);
     if (canEdit && record.id) {
       const actions = document.createElement('div');
       actions.className = 'moldoveneasca-table__actions';
-      const editButton = document.createElement('button');
-      editButton.type = 'button';
-      editButton.className = 'moldoveneasca-button moldoveneasca-button--quiet';
-      editButton.textContent = 'Editează';
-      editButton.addEventListener('click', () => openEditor(record));
-      actions.appendChild(editButton);
+      actions.appendChild(createIconButton('Editează referința', 'edit', () => openEditor(record)));
 
       if (currentRole === 'admin') {
-        const deleteButton = document.createElement('button');
-        deleteButton.type = 'button';
-        deleteButton.className = 'moldoveneasca-button moldoveneasca-button--danger';
-        deleteButton.textContent = 'Șterge';
-        deleteButton.addEventListener('click', () => deleteRecord(record));
-        actions.appendChild(deleteButton);
+        actions.appendChild(createIconButton('Șterge referința', 'delete', () => deleteRecord(record), 'moldoveneasca-icon-button--danger'));
       }
-      sourceCell.appendChild(actions);
+      actionsCell.appendChild(actions);
     }
 
     if (record.status && record.status !== 'published') {
@@ -353,6 +512,7 @@
       sourceCell.appendChild(badge);
     }
     row.appendChild(sourceCell);
+    row.appendChild(actionsCell);
     setRowMetadata(row, record);
     return row;
   };
@@ -694,6 +854,11 @@
   logoutButton?.addEventListener('click', signOut);
   openFormButton?.addEventListener('click', () => openEditor());
   cancelEditButton?.addEventListener('click', closeEditor);
+  closeDetailButton?.addEventListener('click', closeDetail);
+  detailBackdrop?.addEventListener('click', closeDetail);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && detailPanel && !detailPanel.hidden) closeDetail();
+  });
   editorForm?.addEventListener('submit', saveRecord);
 
   sortRowsChronologically();

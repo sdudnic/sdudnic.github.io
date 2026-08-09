@@ -1,25 +1,17 @@
 --- 
 layout: post
-title: Referințe istorice ale glotonimului "moldovenească"
+title: Referințe istorice ale glotonimului „moldovenească”
 nav_title: Referințe
 tags: [moldoveneasca, limba, glotonim, moldovean, moldovenească, denumirea limbii, limba moldovenească, istorie, surse istorice]
 description: Catalog documentar cu referințe istorice despre denumirea limbii moldovenești, de la primele mențiuni până în prezent.
 permalink: /moldoveneasca/
 ---
 
-În articolul de față sunt prezentate sursele istorice care pomenesc glotonimul "moldovenească" referitor la limba vorbita de moldoveni.
-
-Dacă ai alte surse de adăugat, comentează și completăm colecția! ;)
-
-<section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-title">
-  <header class="moldoveneasca-catalog__intro">
-    <p class="eyebrow">Catalog documentar</p>
-    <h2 id="catalog-title">Referințe istorice ale denumirii „moldovenească”</h2>
-    <p>
-      Tabelul este colecția principală. Caută într-un singur loc după an, lucrare,
-      citat, limbă, autor sau sursă; pentru a contribui, autentifică-te cu GitHub.
-    </p>
-  </header>
+<section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-description">
+  <p id="catalog-description" class="moldoveneasca-catalog__intro">
+    Baza de date reunește documente și referințe istorice care menționează denumirea
+    „moldovenească” a limbii, de la cele mai vechi atestări până astăzi.
+  </p>
 
   <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate coloanele catalogului">
     <label class="moldoveneasca-search">

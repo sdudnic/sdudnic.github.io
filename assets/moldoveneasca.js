@@ -119,6 +119,7 @@
   };
 
   const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav(?:icae|ica|icus|icum|orum|isch\p{L}*)|moldauisch\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
+  const languageLabelPattern = /(?:\blimba\b|\blingua\b|\blanguage\b|\bsprache\b|язык|młëtwa)/iu;
 
   const cleanImportedText = (value) => String(value || '')
     .replace(/^\s*\*\?\s*/, '')
@@ -139,13 +140,15 @@
     for (const match of text.matchAll(/"([^"\n]{5,})"/g)) candidates.push(match[1]);
     const labelled = text.match(/Citatul:\s*(.{5,320}?)(?:,\s*Contextul:|$)/i);
     if (labelled) candidates.push(labelled[1]);
-    const preferred = candidates
-      .map(cleanQuote)
-      .find((candidate) => languageNamePattern.test(candidate));
-    if (preferred) return preferred;
-    return languageNamePattern.test(text) && /\b(?:limba|lingua|language|sprache|язык|młëtwa)\b/i.test(text)
-      ? cleanQuote(text)
-      : null;
+    const cleanedCandidates = candidates.map(cleanQuote).filter(Boolean);
+    const explicitlyNamed = cleanedCandidates.filter((candidate) => {
+      const termIndex = candidate.search(languageNamePattern);
+      const labelIndex = candidate.search(languageLabelPattern);
+      return termIndex >= 0 && labelIndex >= 0 && Math.abs(termIndex - labelIndex) <= 80;
+    });
+    if (explicitlyNamed.length) return explicitlyNamed.sort((a, b) => b.length - a.length)[0];
+    const named = cleanedCandidates.filter((candidate) => languageNamePattern.test(candidate));
+    return named.length ? named.sort((a, b) => b.length - a.length)[0] : null;
   };
 
   const extractAuthor = (value) => {
@@ -161,7 +164,8 @@
     const beforeComment = text.split(/\b(?:Citatul|Contextul|Sursa(?: suplimentară)?\s*\d*)\s*:/i)[0].trim();
     const quotedTitles = [...beforeComment.matchAll(/["«“]([^"»”]{3,180})["»”]/g)]
       .map((match) => match[1].trim())
-      .filter((candidate) => !languageNamePattern.test(candidate));
+      .filter((candidate) => !languageNamePattern.test(candidate))
+      .filter((candidate) => !/^(?:evanghel(?:ia|iei)|epistole(?:le|lor)|scria|sursa)$/i.test(candidate));
     const contextualTitle = beforeComment.match(/(?:lucrare(?:a)?\s+intitulată|lucrarea(?:\s+sa)?|opera|cartea|volumul|documentul|în\s+)[\s:]*["«“]([^"»”]{3,180})["»”]/i);
     if (contextualTitle && !languageNamePattern.test(contextualTitle[1])) return contextualTitle[1].trim();
     if (quotedTitles.length) return quotedTitles[0];

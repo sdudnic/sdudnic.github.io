@@ -2339,3 +2339,42 @@ body.moldoveneasca-detail-open {
 .moldoveneasca-table td p {
   margin: 0;
 }
+
+// Keep the catalogue footer attached to the last grid row.
+.post-content .moldoveneasca-table {
+  margin-bottom: 0;
+}
+
+.moldoveneasca-catalog__status {
+  margin-top: 0;
+  padding: 0.45rem 0;
+}
+
+// Use one compact type size throughout the catalogue; hierarchy comes from layout.
+.moldoveneasca-catalog,
+.moldoveneasca-catalog * {
+  font-size: 0.875rem !important;
+}
+
+.moldoveneasca-table__sort {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.2rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.moldoveneasca-table__sort:hover,
+.moldoveneasca-table__sort:focus-visible {
+  border-color: transparent;
+  background: transparent;
+  text-decoration: none;
+}
+
+.moldoveneasca-table__sort svg {
+  width: 14px;
+  height: 14px;
+}

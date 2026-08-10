@@ -18,8 +18,8 @@ permalink: /moldoveneasca/
       <span class="sr-only">Caută în toate coloanele</span>
       <input type="search" data-catalog-search placeholder="Caută după an, lucrare, citat, limbă, autor sau sursă…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
     </label>
-    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-catalog-reset hidden>Resetează</button>
-    <button type="button" class="moldoveneasca-button" data-open-form hidden>Adaugă referință</button>
+    <button type="button" class="moldoveneasca-icon-button" data-catalog-reset hidden aria-label="Resetează căutarea" title="Resetează căutarea"><span aria-hidden="true">↺</span></button>
+    <button type="button" class="moldoveneasca-icon-button" data-open-form hidden aria-label="Adaugă referință" title="Adaugă referință"><span aria-hidden="true">＋</span></button>
   </div>
 
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
@@ -28,7 +28,7 @@ permalink: /moldoveneasca/
         <p class="eyebrow">Editor</p>
         <h3 id="editor-title" data-form-title>Adaugă o referință</h3>
       </div>
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-cancel-edit>Anulează</button>
+      <button type="button" class="moldoveneasca-icon-button" data-cancel-edit aria-label="Anulează editarea" title="Anulează editarea"><span aria-hidden="true">×</span></button>
     </div>
     <form data-reference-form>
       <div class="moldoveneasca-form-grid">
@@ -80,7 +80,7 @@ permalink: /moldoveneasca/
       </div>
       <div class="moldoveneasca-form__footer">
         <p class="moldoveneasca-catalog__result" data-form-status aria-live="polite"></p>
-        <button type="submit" class="moldoveneasca-button">Salvează referința</button>
+        <button type="submit" class="moldoveneasca-icon-button" aria-label="Salvează referința" title="Salvează referința"><span aria-hidden="true">✓</span></button>
       </div>
     </form>
   </section>
@@ -99,7 +99,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260809-9"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260810-1"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
@@ -308,9 +308,9 @@ permalink: /moldoveneasca/
     <span><strong data-filtered-count>—</strong> elemente filtrate</span>
   </div>
   <nav class="moldoveneasca-pagination" data-catalog-pagination hidden aria-label="Paginarea referințelor">
-    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-previous>Înapoi</button>
+    <button type="button" class="moldoveneasca-icon-button" data-page-previous aria-label="Pagina anterioară" title="Pagina anterioară"><span aria-hidden="true">←</span></button>
     <span data-page-status aria-live="polite">Pagina 1 din 1</span>
-    <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-page-next>Înainte</button>
+    <button type="button" class="moldoveneasca-icon-button" data-page-next aria-label="Pagina următoare" title="Pagina următoare"><span aria-hidden="true">→</span></button>
   </nav>
 </div>
 

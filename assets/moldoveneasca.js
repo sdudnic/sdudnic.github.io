@@ -208,10 +208,15 @@
       const th = document.createElement('th');
       th.scope = 'col';
       if (key === 'year') {
+        th.appendChild(document.createTextNode(label));
         sortButton = document.createElement('button');
         sortButton.type = 'button';
-        sortButton.className = 'moldoveneasca-table__sort';
+        sortButton.className = 'moldoveneasca-table__sort moldoveneasca-icon-button';
         sortButton.dataset.sortYear = 'true';
+        sortButton.dataset.tooltip = 'Sortează anii';
+        sortButton.title = 'Sortează anii';
+        sortButton.setAttribute('aria-label', 'Sortează anii');
+        sortButton.appendChild(createIconSvg('sort-up'));
         sortButton.addEventListener('click', () => {
           sortAscending = !sortAscending;
           currentPage = 1;
@@ -429,9 +434,19 @@
     svg.setAttribute('stroke-linecap', 'round');
     svg.setAttribute('stroke-linejoin', 'round');
     const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', kind === 'edit'
-      ? 'M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM14.06 4.94l3.75 3.75'
-      : 'M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3');
+    const paths = {
+      edit: 'M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM14.06 4.94l3.75 3.75',
+      delete: 'M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3',
+      reset: 'M20 11a8 8 0 1 0 2 5M20 5v6h-6',
+      add: 'M12 5v14M5 12h14',
+      previous: 'M19 12H5M12 19l-7-7 7-7',
+      next: 'M5 12h14M12 5l7 7-7 7',
+      cancel: 'M6 6l12 12M18 6L6 18',
+      save: 'M5 12l4 4L19 6',
+      'sort-up': 'M7 14l5-5 5 5',
+      'sort-down': 'M7 10l5 5 5-5'
+    };
+    path.setAttribute('d', paths[kind] || paths.cancel);
     svg.appendChild(path);
     return svg;
   };
@@ -446,6 +461,26 @@
     button.appendChild(createIconSvg(kind));
     button.addEventListener('click', onClick);
     return button;
+  };
+
+  const configureIconButton = (button, label, kind) => {
+    if (!button) return;
+    button.classList.remove('moldoveneasca-button', 'moldoveneasca-button--quiet');
+    button.classList.add('moldoveneasca-icon-button');
+    button.replaceChildren(createIconSvg(kind));
+    button.setAttribute('aria-label', label);
+    button.title = label;
+    button.dataset.tooltip = label;
+  };
+
+  const configureCatalogButtons = () => {
+    configureIconButton(resetButton, 'Resetează căutarea', 'reset');
+    configureIconButton(openFormButton, 'Adaugă referință', 'add');
+    configureIconButton(cancelEditButton, 'Anulează editarea', 'cancel');
+    configureIconButton(editorForm?.querySelector('button[type="submit"]'), 'Salvează referința', 'save');
+    configureIconButton(previousPageButton, 'Pagina anterioară', 'previous');
+    configureIconButton(nextPageButton, 'Pagina următoare', 'next');
+    configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
   };
 
   const createCatalogRow = (record) => {
@@ -540,6 +575,7 @@
     return row;
   };
 
+  configureCatalogButtons();
   ensureTableHeader();
   const staticRows = currentRows().map((row) => {
     const converted = createCatalogRow(recordFromStaticRow(row));
@@ -557,8 +593,11 @@
   const sortRowsChronologically = () => {
     getSortedRows().forEach((row) => tbody.appendChild(row));
     if (sortButton) {
-      sortButton.textContent = `An ${sortAscending ? '↑' : '↓'}`;
-      sortButton.setAttribute('aria-label', sortAscending ? 'Sortează anii descrescător' : 'Sortează anii crescător');
+      const sortLabel = sortAscending ? 'Sortează anii descrescător' : 'Sortează anii crescător';
+      sortButton.replaceChildren(createIconSvg(sortAscending ? 'sort-up' : 'sort-down'));
+      sortButton.setAttribute('aria-label', sortLabel);
+      sortButton.title = sortLabel;
+      sortButton.dataset.tooltip = sortLabel;
       const yearHeader = sortButton.closest('th');
       if (yearHeader) yearHeader.setAttribute('aria-sort', sortAscending ? 'ascending' : 'descending');
     }

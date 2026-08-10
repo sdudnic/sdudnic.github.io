@@ -6,6 +6,7 @@
   const table = document.querySelector('.post-content table') || document.querySelector('table');
   const tbody = table?.querySelector('tbody');
   const searchInput = root.querySelector('[data-catalog-search]');
+  const centurySelect = root.querySelector('[data-catalog-century]');
   const resetButton = root.querySelector('[data-catalog-reset]');
   const result = document.querySelector('[data-catalog-result]');
   const authMessage = document.querySelector('[data-auth-message]');
@@ -22,6 +23,7 @@
   const adminOnlyField = root.querySelector('[data-admin-only]');
   const recordCount = document.querySelector('[data-record-count]');
   const filteredCount = document.querySelector('[data-filtered-count]');
+  const statusBar = document.querySelector('[data-catalog-status]');
   const pagination = document.querySelector('[data-catalog-pagination]');
   const previousPageButton = document.querySelector('[data-page-previous]');
   const nextPageButton = document.querySelector('[data-page-next]');
@@ -37,6 +39,17 @@
 
   if (!table || !tbody) return;
   table.classList.add('moldoveneasca-table');
+
+  const wrapPublicGrid = () => {
+    if (!statusBar || !table.parentElement || statusBar.parentElement !== table.parentElement) return;
+    const frame = document.createElement('div');
+    frame.className = 'moldoveneasca-grid-frame';
+    table.parentElement.insertBefore(frame, table);
+    frame.appendChild(table);
+    frame.appendChild(statusBar);
+  };
+
+  wrapPublicGrid();
 
   let supabaseClient = null;
   let currentUser = null;
@@ -105,16 +118,34 @@
     return clone.textContent.replace(/\s+/g, ' ').trim();
   };
 
+  const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav(?:icae|ica|icus|icum|orum|isch\p{L}*)|moldauisch\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
+
+  const cleanImportedText = (value) => String(value || '')
+    .replace(/^\s*\*\?\s*/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const cleanQuote = (value) => String(value || '')
+    .replace(/^\s*["«“']+|["»”']+\s*$/g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/,\s*(?:Contextul|Sursa(?: suplimentară)?\s*\d*):.*$/i, '')
+    .trim();
+
   const extractQuote = (value) => {
-    const text = String(value || '').replace(/\s+/g, ' ').trim();
+    const text = cleanImportedText(value);
     const candidates = [];
-    for (const match of text.matchAll(/«([^»]{8,})»/g)) candidates.push(match[1]);
-    for (const match of text.matchAll(/“([^”]{8,})”/g)) candidates.push(match[1]);
-    for (const match of text.matchAll(/"([^"\n]{8,})"/g)) candidates.push(match[1]);
-    const preferred = candidates.find((candidate) => /moldov|moldav|lingua|limba/i.test(candidate));
-    if (preferred) return preferred.trim();
-    const labelled = text.match(/Citatul:\s*(.{8,240}?)(?:,\s*Contextul:|$)/i);
-    return labelled ? labelled[1].replace(/^['"«“]|['"»”]$/g, '').trim() : null;
+    for (const match of text.matchAll(/«([^»]{5,})»/g)) candidates.push(match[1]);
+    for (const match of text.matchAll(/“([^”]{5,})”/g)) candidates.push(match[1]);
+    for (const match of text.matchAll(/"([^"\n]{5,})"/g)) candidates.push(match[1]);
+    const labelled = text.match(/Citatul:\s*(.{5,320}?)(?:,\s*Contextul:|$)/i);
+    if (labelled) candidates.push(labelled[1]);
+    const preferred = candidates
+      .map(cleanQuote)
+      .find((candidate) => languageNamePattern.test(candidate));
+    if (preferred) return preferred;
+    return languageNamePattern.test(text) && /\b(?:limba|lingua|language|sprache|язык|młëtwa)\b/i.test(text)
+      ? cleanQuote(text)
+      : null;
   };
 
   const extractAuthor = (value) => {
@@ -126,16 +157,59 @@
   };
 
   const extractTitle = (value) => {
-    const text = String(value || '').replace(/\s+/g, ' ').trim();
-    const marker = /^\s*\*\?\s*/.test(text) ? '*? ' : '';
-    const cleanText = text.replace(/^\s*\*\?\s*/, '');
-    const withMarker = (match) => match ? `${marker}${match[1].trim()}` : null;
-    const contextTitle = cleanText.match(/(?:în|in)\s+["«“]([^"»”]{3,140})["»”]/i);
-    if (contextTitle) return withMarker(contextTitle);
-    const quotedTitle = cleanText.match(/^["«“]([^"»”]{3,140})["»”]/);
-    if (quotedTitle) return withMarker(quotedTitle);
-    const namedTitle = cleanText.match(/,\s*["«“]([^"»”]{3,140})["»”]/);
-    return withMarker(namedTitle);
+    const text = cleanImportedText(value);
+    const beforeComment = text.split(/\b(?:Citatul|Contextul|Sursa(?: suplimentară)?\s*\d*)\s*:/i)[0].trim();
+    const quotedTitles = [...beforeComment.matchAll(/["«“]([^"»”]{3,180})["»”]/g)]
+      .map((match) => match[1].trim())
+      .filter((candidate) => !languageNamePattern.test(candidate));
+    const contextualTitle = beforeComment.match(/(?:lucrare(?:a)?\s+intitulată|lucrarea(?:\s+sa)?|opera|cartea|volumul|documentul|în\s+)[\s:]*["«“]([^"»”]{3,180})["»”]/i);
+    if (contextualTitle && !languageNamePattern.test(contextualTitle[1])) return contextualTitle[1].trim();
+    if (quotedTitles.length) return quotedTitles[0];
+
+    const namedTitle = beforeComment.match(/(?:lucrarea|opera|cartea|volumul|documentul|scrisoarea|gramatica|reglementul)\s+(?:sa\s+)?([^,.;:]{3,160})/i);
+    if (namedTitle && !/^limb(?:a|ii)\b/i.test(namedTitle[1])) return namedTitle[1].trim().replace(/["»”]+$/, '');
+
+    const dashTitle = beforeComment.match(/(?:lexicon|catastif|mărturisire|primul lexicon)[^–—-]*[–—-]\s*([^,.;:(]{3,140})/i);
+    if (dashTitle) return dashTitle[1].trim();
+
+    const knownTitle = beforeComment.match(/\b(Descriptio Moldaviae|Letopisețul Țării Moldovei|De neamul moldovenilor|Historiarum sui libri|Comentarium wariarum artium|Dictionarium Valachico-Latinum|Alphabetum Moldavorum|Chronologia|Breve vocabulario italiano-muldavo|Lingua moldavorum)\b/i);
+    return knownTitle ? knownTitle[1].trim() : null;
+  };
+
+  const languageCodeFor = (value) => {
+    const text = String(value || '').trim();
+    if (!text) return 'xx';
+    if (/^[a-z]{2}$/i.test(text)) return text.toLowerCase();
+    if (/moldov|moldav|moldauisch|moldovin|moldeu|молдов|молдав/i.test(text)) return 'md';
+    if (/rus|russ|росс|рус|язык\s*рус/i.test(text)) return 'ru';
+    if (/latin|latină|latina/i.test(text)) return 'la';
+    if (/german|deutsch|немец/i.test(text)) return 'de';
+    if (/fran|francez|français/i.test(text)) return 'fr';
+    if (/italian|italiano/i.test(text)) return 'it';
+    if (/grec|greacă|greaca|grecesc|елин|греч/i.test(text)) return 'el';
+    if (/slavon|sloven|славян/i.test(text)) return 'cu';
+    if (/polon|polsk|польск/i.test(text)) return 'pl';
+    if (/ucraine|ukrain|украин/i.test(text)) return 'uk';
+    if (/englez|english|англ/i.test(text)) return 'en';
+    if (/bulgar|българ|болгар/i.test(text)) return 'bg';
+    if (/sârb|sar[bă]|srpsk|серб/i.test(text)) return 'sr';
+    if (/turc|turkish|турец/i.test(text)) return 'tr';
+    if (/arab|араб/i.test(text)) return 'ar';
+    if (/ebra|hebrew|евре/i.test(text)) return 'he';
+    if (/maghiar|hungar|ungar|венгр/i.test(text)) return 'hu';
+    if (/spaniol|spanish|испан/i.test(text)) return 'es';
+    if (/portug|portugu/i.test(text)) return 'pt';
+    return 'xx';
+  };
+
+  const languageCode = (value) => {
+    const text = String(value || '').trim();
+    if (!text) return 'xx';
+    return text.split(/(\s*(?:→|->|\/|,|;)\s*)/)
+      .map((part) => /^\s*(?:→|->|\/|,|;)\s*$/.test(part) ? part.trim() : languageCodeFor(part))
+      .join(' ')
+      .replace(/\s+(→|->|\/|,)\s+/g, ' $1 ')
+      .trim();
   };
 
   const sourceUrls = (record) => {
@@ -172,9 +246,9 @@
       author: extractAuthor(sourceText),
       source_url: urls[0] || null,
       source_urls: urls,
-      source_type: null,
+      source_type: 'Import din tabelul existent',
       location: null,
-      description: null,
+      description: sourceText,
       status: 'published',
       owner_id: null
     };
@@ -183,12 +257,15 @@
   const displayFields = (record) => {
     const raw = record?.title || '';
     const imported = record?.source_type === 'Import din tabelul existent';
+    const title = imported ? (extractTitle(raw) || '—') : (raw || '—');
+    const quote = extractQuote(record?.quote) || (imported ? extractQuote(raw) : null);
     return {
       year: yearRangeLabel(record),
       century: centuryLabel(record),
-      title: imported ? (extractTitle(raw) || raw) : (raw || '—'),
-      quote: record?.quote || (imported ? extractQuote(raw) : null),
-      language: record?.language || '—',
+      title,
+      quote,
+      language: languageCode(record?.language),
+      languageFull: record?.language || 'necunoscută',
       author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
     };
   };
@@ -238,49 +315,6 @@
     });
 
     thead.querySelector('.moldoveneasca-table__filters')?.remove();
-    const filterRow = document.createElement('tr');
-    filterRow.className = 'moldoveneasca-table__filters';
-    const filters = [
-      ['year', 'An'],
-      ['century', 'Toate secolele'],
-      ['title', 'Filtru'],
-      ['quote', 'Filtru'],
-      ['language', 'Filtru'],
-      ['author', 'Filtru'],
-      ['source', 'Filtru']
-    ];
-    filters.forEach(([key, placeholder]) => {
-      const th = document.createElement('th');
-      th.scope = 'col';
-      const control = key === 'century' ? document.createElement('select') : document.createElement('input');
-      control.dataset.columnFilter = key;
-      control.setAttribute('aria-label', `Filtru pentru ${key}`);
-      if (key === 'century') {
-        const option = document.createElement('option');
-        option.value = '';
-        option.textContent = placeholder;
-        control.appendChild(option);
-      } else {
-        control.type = 'search';
-        control.placeholder = placeholder;
-        control.autocomplete = 'off';
-      }
-      control.addEventListener('input', () => {
-        currentPage = 1;
-        filterRows();
-      });
-      control.addEventListener('change', () => {
-        currentPage = 1;
-        filterRows();
-      });
-      th.appendChild(control);
-      filterRow.appendChild(th);
-    });
-    const actionsFilter = document.createElement('th');
-    actionsFilter.className = 'moldoveneasca-table__actions-heading';
-    actionsFilter.setAttribute('aria-label', 'Acțiuni');
-    filterRow.appendChild(actionsFilter);
-    thead.appendChild(filterRow);
   };
 
   const currentRows = () => Array.from(tbody.rows);
@@ -322,6 +356,8 @@
       fields.title,
       fields.quote,
       fields.language,
+      fields.languageFull,
+      record?.language,
       fields.author,
       sourceUrls(record).join(' '),
       record?.description
@@ -391,7 +427,8 @@
 
     addDetailField('An', fields.year);
     addDetailField('Secol', fields.century);
-    addDetailField('Limba', fields.language);
+    addDetailField('Limba', fields.languageFull);
+    addDetailField('Cod', fields.language);
     addDetailField('Autor', fields.author);
     addDetailField('Tipul sursei', record?.source_type);
     addDetailField('Locul / instituția', record?.location);
@@ -401,6 +438,9 @@
       content.appendChild(document.createTextNode('”'));
     });
     addDetailField('Context / descriere', record?.description);
+    if (record?.source_type === 'Import din tabelul existent' && record?.title) {
+      addDetailField('Notă din import', cleanImportedText(record.title));
+    }
     if (urls.length) {
       addDetailField('Surse', urls.join('\n'), (content) => {
         content.className = 'moldoveneasca-detail__sources';
@@ -612,9 +652,8 @@
   };
 
   const updateCenturyOptions = () => {
-    const select = table.querySelector('[data-column-filter="century"]');
-    if (!select) return;
-    const previous = select.value;
+    if (!centurySelect) return;
+    const previous = centurySelect.value;
     const centuryOptions = new Map(currentRows()
       .map((row) => [
         row.catalogFields?.century,
@@ -628,18 +667,18 @@
       const order = centuryOptions.get(a).number - centuryOptions.get(b).number;
       return order || a.localeCompare(b, 'ro');
     });
-    select.replaceChildren();
+    centurySelect.replaceChildren();
     const allOption = document.createElement('option');
     allOption.value = '';
     allOption.textContent = 'Toate secolele';
-    select.appendChild(allOption);
+    centurySelect.appendChild(allOption);
     centuryValues.forEach((value) => {
       const option = document.createElement('option');
       option.value = value;
       option.textContent = centuryOptions.get(value).label;
-      select.appendChild(option);
+      centurySelect.appendChild(option);
     });
-    select.value = centuryValues.includes(previous) ? previous : '';
+    centurySelect.value = centuryValues.includes(previous) ? previous : '';
   };
 
   const updatePagination = (matchedCount) => {
@@ -660,16 +699,11 @@
   const filterRows = () => {
     const query = normalize(searchInput?.value);
     updateCenturyOptions();
-    const filters = {};
-    table.querySelectorAll('[data-column-filter]').forEach((control) => {
-      filters[control.dataset.columnFilter] = normalize(control.value);
-    });
+    const century = normalize(centurySelect?.value);
     const matchedRows = currentRows().filter((row) => {
       const matchesQuery = !query || row.dataset.catalogSearch.includes(query);
-      const matchesColumns = Object.entries(filters).every(([key, value]) => (
-        !value || row.catalogFields?.[key]?.includes(value)
-      ));
-      return matchesQuery && matchesColumns;
+      const matchesCentury = !century || row.catalogFields?.century === century;
+      return matchesQuery && matchesCentury;
     });
     updatePagination(matchedRows.length);
     if (filteredCount) filteredCount.textContent = String(matchedRows.length);
@@ -682,8 +716,7 @@
     });
     const visibleStart = matchedRows.length ? firstVisible + 1 : 0;
     const visibleEnd = Math.min(lastVisible, matchedRows.length);
-    const hasActiveColumnFilter = Object.values(filters).some(Boolean);
-    if (resetButton) resetButton.hidden = !query && !hasActiveColumnFilter;
+    if (resetButton) resetButton.hidden = !query && !century;
     if (result) {
       result.textContent = matchedRows.length
         ? `Afișate ${visibleStart}–${visibleEnd}`
@@ -944,9 +977,7 @@
     if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
     searchDebounceTimer = null;
     if (searchInput) searchInput.value = '';
-    table.querySelectorAll('[data-column-filter]').forEach((control) => {
-      control.value = '';
-    });
+    if (centurySelect) centurySelect.value = '';
     currentPage = 1;
     filterRows();
     searchInput?.focus();

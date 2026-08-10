@@ -1687,32 +1687,6 @@ a:hover {
   }
 }
 
-.moldoveneasca-table__filters th {
-  padding: 0.3rem 0.35rem;
-  background: var(--surface);
-}
-
-.moldoveneasca-table__filters input,
-.moldoveneasca-table__filters select {
-  width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-  padding: 0.34rem 0.4rem;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--surface);
-  color: var(--muted);
-  font: inherit;
-  font-size: 0.72rem;
-  font-weight: 400;
-}
-
-.moldoveneasca-table__filters input:focus,
-.moldoveneasca-table__filters select:focus {
-  outline: 1px solid var(--ink);
-  outline-offset: 1px;
-}
-
 .moldoveneasca-pagination {
   display: flex;
   align-items: center;
@@ -2321,13 +2295,6 @@ body.moldoveneasca-detail-open {
   height: 2rem;
 }
 
-.moldoveneasca-table .moldoveneasca-table__filters input,
-.moldoveneasca-table .moldoveneasca-table__filters select {
-  padding: 0.18rem 0.28rem;
-  font-size: 0.72rem;
-  line-height: 1.2;
-}
-
 .moldoveneasca-table__year,
 .moldoveneasca-table__century {
   font-weight: 400;
@@ -2408,4 +2375,89 @@ body.moldoveneasca-page * {
 
 .moldoveneasca-icon-button[hidden] {
   display: none !important;
+}
+
+// Minimal catalogue controls: one search field and one compact century filter.
+.moldoveneasca-catalog__toolbar {
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0.25rem;
+  padding: 0;
+  border: 0;
+}
+
+.moldoveneasca-search {
+  min-width: 0;
+}
+
+.moldoveneasca-century-filter {
+  display: block;
+  flex: 0 0 10rem;
+}
+
+.moldoveneasca-search input,
+.moldoveneasca-century-filter select,
+.moldoveneasca-catalog input,
+.moldoveneasca-catalog select,
+.moldoveneasca-catalog textarea {
+  box-sizing: border-box;
+  min-height: 2rem;
+  padding: 0.3rem 0.45rem !important;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.moldoveneasca-century-filter select {
+  width: 100%;
+}
+
+.moldoveneasca-search input:focus,
+.moldoveneasca-century-filter select:focus {
+  outline: 1px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.moldoveneasca-table__filters {
+  display: none;
+}
+
+.moldoveneasca-grid-frame {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: auto;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table,
+.moldoveneasca-grid-frame > .moldoveneasca-catalog__status {
+  width: 100%;
+  min-width: 1180px;
+  box-sizing: border-box;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table {
+  margin-top: 0.25rem;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-catalog__status {
+  margin: 0;
+  padding: 0.35rem 0;
+  border: 0;
+}
+
+@media screen and (max-width: 620px) {
+  .moldoveneasca-catalog__toolbar {
+    flex-wrap: wrap;
+  }
+
+  .moldoveneasca-search {
+    flex: 1 1 100%;
+  }
+
+  .moldoveneasca-century-filter {
+    flex: 1 1 auto;
+  }
 }

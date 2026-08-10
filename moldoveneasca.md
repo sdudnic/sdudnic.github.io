@@ -16,7 +16,13 @@ permalink: /moldoveneasca/
   <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate coloanele catalogului">
     <label class="moldoveneasca-search">
       <span class="sr-only">Caută în toate coloanele</span>
-      <input type="search" data-catalog-search placeholder="Caută după an, lucrare, citat, limbă, autor sau sursă…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
+      <input type="search" data-catalog-search placeholder="Caută în catalog…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
+    </label>
+    <label class="moldoveneasca-century-filter">
+      <span class="sr-only">Filtrează după secol</span>
+      <select data-catalog-century aria-label="Filtrează după secol">
+        <option value="">Toate secolele</option>
+      </select>
     </label>
     <button type="button" class="moldoveneasca-icon-button" data-catalog-reset hidden aria-label="Resetează căutarea" title="Resetează căutarea"><span aria-hidden="true">↺</span></button>
     <button type="button" class="moldoveneasca-icon-button" data-open-form hidden aria-label="Adaugă referință" title="Adaugă referință"><span aria-hidden="true">＋</span></button>
@@ -99,7 +105,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260810-3"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260810-4"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

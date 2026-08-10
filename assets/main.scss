@@ -2352,7 +2352,13 @@ body.moldoveneasca-detail-open {
 
 // Use one compact type size throughout the catalogue; hierarchy comes from layout.
 .moldoveneasca-catalog,
-.moldoveneasca-catalog * {
+.moldoveneasca-catalog *,
+.post-content .moldoveneasca-table,
+.post-content .moldoveneasca-table *,
+.moldoveneasca-catalog__status,
+.moldoveneasca-catalog__status *,
+.moldoveneasca-pagination,
+.moldoveneasca-pagination * {
   font-size: 0.875rem !important;
 }
 

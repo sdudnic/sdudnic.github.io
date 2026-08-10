@@ -973,6 +973,10 @@
       applySearch();
     }
   });
+  centurySelect?.addEventListener('change', () => {
+    currentPage = 1;
+    filterRows();
+  });
   resetButton?.addEventListener('click', () => {
     if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
     searchDebounceTimer = null;

@@ -111,45 +111,27 @@ permalink: /moldoveneasca/
 | 1591 | Lingua moldavorum, la J.-A.Thuanus, Histoires..., Franța, Французский историк Jacques Thuanus (Thou) уточняет в своей Historia…: «vulg nominant Ioan, nec absurde, et lingua moldavorum convenientur» = обычно неблагозвучно называют Иоан, но, с другой стороны, в соответствии с языком молдован. ‒ Apud Евгений Паскарь. Неизвестная Молдова, XV ‒ XVI вв. |
 | 1591 | În compartimentul „Nomina popularum, qui illirica loquuntar lingua ordine alphabetico dispozita” din lucrarea sa „Comentarium wariarum artium” (Roma, 1591) italianul Angelo Rocca menţionează alături de limbile boemiană, carintiană (slovenă), dalmată, ungară, macedoniană şi moldaui (moldovenească) - «Nomina populorum qui illirica locuuntur lingua, ordine alphabetico dispozita: … carintii…, dalmatae…, istri…, moldaui…» (Angello Rocca. Commentario variarum artium. Appendix Bibliotecae Vaticanae. Roma, 1591. Pag.338) |
 | 1591| Contele Jacques-Auguste de Thou într-un volum din operă sa "Historiarum sui libri" comentează pronunţarea numelui "Ioan": "vulg nominant Ioan, nec absurde, el lingua moldavorum convenientur" (de obicei numesc neplăcut Ioan, dar, pe de altă parte corespunde limbii moldovenesti) |
-| 1591 | Autorul: Johann Thomas Freigius, Citatul: "Lingua Moldavorum, in qua literas hactenus consignarunt.", Contextul: Într-un raport al lui Johann Thomas Freigius, unul dintre primii istorici străini care a studiat istoria Moldovei, el face referire la limba vorbită în această regiune ca fiind "Lingua Moldavorum". |
 | 1585 | Scrisoarea lui Despot Vodă către Patriarhul Ecumenic Ieremia al II-lea. În această scrisoare, Despot Vodă, domnitorul Moldovei, se referă explicit la limba moldovenească. El îi cere Patriarhului să trimită preoți care să predice în limba moldovenească, pentru a fi înțeleși de populație. |
 | 1595 | "Dictionarium Valachico-Latinum" de Georgius Murner, publicat in 1595, care cuprinde cuvinte din limba moldoveneasca (denumita "lingua Moldavica") |
-| 1602 | Autorul: Primož Trubar, Citatul: "Tùdij je bila po primoru mnogo moldeuška młëtwa, a po sèveru pa sve do Póleneških gor, ktera jenako dosti sa slovènsko govori.", Contextul: Într-o lucrare intitulată "Katekizmus", Primož Trubar, un lider al reformei protestante în Slovenia, a folosit termenul "moldeuška młëtwa" pentru a se referi la limba vorbită în Moldova. |
 | 1628 | Lingua moldavorum, în Catalogus recenset linguas..., I. Alschtedt. Germania |
 | 1635 | "Despre limba noastră moldovenească" de Gr. Ureche |
-| 1641 | "Elementa linguae Daco-Romanae sive Valachicae" de Aron Vodă (1641) - "Limba moldovenească se numește și valahică" |
 | 1642-1647 | Grigore Ureche, Letopisețul Țării Moldovei, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200816467417) "Şi au făcut unire de suflet cu fraţii lor cei moldoveni şi cu ţara Moldovei şi au învăţat limba moldovenească." |
 | 1643 | "Cazania lui Varlaam", prima carte tiparita la Iasi, Moldova, în 1643, care contine gramatica limbii moldovenesti si este mentionata sub aceasta denumire, Cazania este un text religios scris în limba slavonă și moldovenească, care a fost utilizat în principal pentru a predica în biserici. În introducere, autorul descrie textul ca fiind scris în "limba moldovenească". |
-| 1643 | "Lexiconul Moldo-Valah" de Grigore Ureche, publicat in 1643, care contine cuvinte si expresii din limba moldoveneasca. |
-| 1645 | Autorul: Radu Greceanu, Citatul: "Astfel învățău limba moldovenească și a trecut la mânăstire.", Contextul: În "Viața lui Neagoe Basarab", Radu Greceanu, un cronicar și istoric român, se referă la limba vorbită în Moldova ca fiind "limba moldovenească". |
-| 1645 | "Lexiconul moldovenesc" (1645) - primul dicționar în limba moldovenească, compilat de către preotul Miron Costin. În introducere, Costin descrie limba ca fiind "moldovenească". |
-| 1646 | "Gramatica limbei moldovenesti" de Vasile Lupu, publicata in 1646, care descrie structura si regulile gramaticale ale limbii moldovenesti. |
 | 1647 | Grigore Ureche, "Letopisețul Țării Moldovei" (1647): "Aceasta povestirea o slobozi în grai moldovenească" |
-| 1647 | "Istoria bisericească a Moldovei" de Grigore Ureche, scrisă în secolul al XVII-lea și publicată postum în 1647: "Noi moldovenii, care vorbim moldovenește și nicidecum românește..." |
-| 1653 | Autorul: Dimitrie Cantemir, Citatul: "Cea mai întâlnită limbă în țările românești este limba moldovenească.", Contextul: În "Descriptio Moldaviae", Dimitrie Cantemir, un prinț, cronicar și filosof român, face referire la limba vorbită în Moldova ca fiind "limba moldovenească" |
-| 1672 | "Alfabetul slavo-moldovenesc", carte publicata in 1672 de Mitropolitul Varlaam, in care este descrisa gramatica si ortografia limbii moldovenesti si este denumita explicit "limba moldoveneasca" |
 | 1672 | Ion Neculce, "Letopisețul Țării Moldovei" (1672-1682): "De aceia s-au dus domnii la mânăstirea Putna și au înființat acolo o școală de carte în grai moldovenească, să se învețe și slugile lui Dumnezeu la carte" |
-| 1673 | Letopisețul Cantacuzinesc - scris între anii 1673-1674 de călugărul Ioan Neculce, unde se afirmă: "Aceste scrisori sunt scrise cu limba moldovenească ce e una cu slava" |
 | 1675 | Miron Costin, "De neamul moldovenilor" (1675): "De aceia aduc la cunoștință că dânsul a făcut și o carte din limba moldovenească" |
 | 1677 | "Despre limba moldovenească sau rumînească" de Miron Costin |
 | 1678 | "Vocabula cum interpretatione latina in Lingua Moldavica" de Jan Mężykowksi, publicata in 1678, care include cuvinte din limba moldoveneasca. |
-| 1683 | "Săptămâna" (1683) - o colecție de texte religioase și morale scrise în limba moldovenească de către mitropolitul Varlaam. În introducere, autorul se referă la limba folosită în cartea sa drept "limba moldovenească". |
 | 1687 | Miron Costin - "De neamul moldovenilor" (cca. 1687) - cronicarul moldovean menționează în text expresia "limba moldovenească", fără a face referire la limba "română". |
-| 1689 | Autorul: Șerban Cantacuzino, Citatul: "Dialectus Moldo-Walachicus, vel Moldavicus.", Contextul: Într-un raport trimis de Șerban Cantacuzino, un voievod al Țării Românești, el se referă la limba vorbită în Moldova ca fiind "Dialectus Moldo-Walachicus, vel Moldavicus". |
 | 1689 | Nicolae Milescu Spătarul, Mărturisirea de credință a lui Nicolae Milescu Spătarul (1689): "Or, fiind că eu şi cumnata mea, născuţi în Moldova, ne învăţasem să scriem şi să citim în limba moldovenească, care este mult aproape de cea slavonă, mi-a fost mai lesne să învăţ şi să mă însuşesc scrisul şi cititul rusesc." |
-| 1690 | Autorul: Miron Costin, Citatul: "De unde sa tragem aceasta noima de români sau de moldoveni, nume dintr-un cu totul alt loc si neadaptate cu limba moldoveneasca?", Contextul: În "Letopisețul Țării Moldovei", Miron Costin, un istoric și cronicar moldovean, se referă la limba vorbită în Moldova ca fiind "limba moldovenească". |
-| 1693 | "Carte de învățătură la români" de Dimitrie Cantemir, publicata in 1693, care include un capitol intitulat "Despre limba moldoveneasca sau româneasca". |
 | 1697 | Alphabetum Moldavorum... la Edward Bernard, Catalogi librorum... Oxania (Anglia) |
 | 1697 | "Chronologia" lui Miron Costin (1697): "Și acum încep eu să povestesc despre limba moldovenească și despre scrisul nostru moldovenesc, precum și despre cât de diferită este limba noastră de limba ungurească, poloneză, germană și turcească și de limba valahă sau românească, precum și de toate celelalte limbi ale lumii." (diferita) |
 | 1699 | Enciplopedistul german Schurzfleischius Conrad Samuel in cartea "Opera historica politica", editată la 1699, utilizează glotonimul "lingua moldavorum" |
-| 1699 | Nicolae Milescu - "Descrierea Moldovei" (cca. 1699) Nicolae Milescu, un cărturar și diplomat moldovean, utilizează termenul "limba moldovenească" pentru a se referi la limba vorbita în Moldova, fără a menționa limba "română". |
 | 1699 | Martinus Szent-Ivany - "Dissertatio Paralipomenica Rerum Memorabilium Hungariae". Martinus Szent-Ivany a fost un cărturar și istoric al secolului al XVII-lea, care a scris despre istoria Ungariei și a regiunilor învecinate, inclusiv Moldova. În această lucrare, el menționează "Lingua Moldavorum" în contextul descrierii limbii vorbite de moldoveni. |
 | 1700-1712 | Nicolae Costin, Letopisețul țării Moldovei de la zidirea lumii până la 1601, ediție cu o introducere de Ioan șt.Petre, București, 1942, p.463. |
 | 1710 | Scrisoarea lui Dimitrie Cantemir către Academia de Științe din Berlin - 1710 Dimitrie Cantemir, domnitor al Moldovei și un intelectual de mare anvergură, a trimis în 1710 o scrisoare către Academia de Științe din Berlin în care vorbește despre limba moldovenească. |
 | 1714 | Dimitrie Cantemir, Descriptio Moldaviae (1714): "Lingua moldavica eadem est, quae et valachica, quae cum daco-rum linguae propinqua sit, ab eisdem etiam ab aliisq. Slavorum linguis nonnihil differt." |
 | 1714 | Dimitrie Cantemir, "Descrierea Moldovei" (1714): "Am scris acest mic tratat, întocmai în limba moldovenească, în care am încercat a cunoaște istoria și istoricile acestei țări", "Deoarece limba moldovenească este asemănătoare cu cea a Țării Românești, mulți îi confundă pe cei doi popoare și susțin că vorbesc aceeași limbă, dar se înșală, deoarece există unele diferențe între cele două limbi". |
-| 1714 | "Elementa linguae Moldo-Wallachicae" de Dimitrie Cantemir (1714) - "Limba moldovenească este o limbă slavonă într-un fel, iar într-alt fel este o limbă latină" |
-| 1714 | "Cartea românească de învățătură" a lui Dimitrie Cantemir (1714) - "Cu toate acestea, noi moldovenii, deși suntem mai mulți decât toți aceștia la un loc, nu suntem în stare să învățăm nici măcar limba noastră moldovenească și le ținem mai mult pe a lor, fără să băgăm de seamă cât ne răpesc din banii și din strălucirea țării noastre". |
 | 1716 | Moldava lingua, linguae moldavicae, vocabula moldavorum, moldavorum lingua, moldavis lingua, vocabula moldavis, moldavicussermo, moldavus sermonem, moldavorum litterae, moldavica lingua, moldavorum historicus la D.Cantemir. Descriptio Moldaviae, Berlin |
 | 1717 | "лимба молдовеняскэ" la D.Cantemir. Хроникул... P. 363 (Petersburg) |
 | 1719 | Misionarul Fra Silvestro Amelio alcătuieşte la Roma "Breve vocabulario italiano-muldavo" [sursa](http://dspace.bcu-iasi.ro/handle/123456789/5580) Итальянский миссионер Сильвестро Амелио составил в Риме Vocabulario italiano-moldavo. |
@@ -168,10 +150,7 @@ permalink: /moldoveneasca/
 | 1770 | "Gramatica mold[ovenească] : a Parintelui Macarie" pregătită pentru tipar de preotul Macarie, cu cheltuiala vistiernicului Ioan Cantacuzino [Bibi. Acad. R.P.R., cota 102] |
 | 1773 | LEG. COND. = Învăţătură a însuşi stăpânitoarei măriri Ecaterinii II cătră orânduita epitropie preste alcătuirea arătării a unii noao Legiuitoare condică. Tălmăcită pre limba moldovenească şi tipărită... de Toma II logofet, la anii de la Hristos 1773. [Iaşi]. |
 | 1771 | "moldauischen Sprache" în D.Cantemir Descriptio Moldaviae. Berlin |
-| 1774 | "Codicele Moldovei" din 1774 - "Art. 9. Pe tot acest pământ moldovenesc, vorbește și scrie poporul moldovenesc în limba sa moldovenească, care are și scriere cu litere slavonești" (juridic). |
 | 1777 | "Histoire de la Moldavie et de la Valachie: avec une dissertation sur l'état actuel de ces deux provinces", Jean-Louis Carra, Société typographique des Deux-Ponts, Jassy [page 7](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA7#v=onepage&q&f=false) "[Ovidius] avoit composé plusieurs poëmes en langue Moldave", [page 218](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA218#v=onepage&q&f=false) "langue Valaque et Moldave" |
-| 1780 | "Gramatica Moldo-Valahica" (1780) - o gramatică a limbii moldovenești scrisă de către preotul Dimitrie Țichindeal. În introducere, autorul descrie limba pe care o studiază ca fiind "moldovenească". |
-| 1780 | "Gramatica românească" de Ion Budai-Deleanu (1780) - "Această gramatică este pentru limba moldovenească sau românească, cum o spun unii, și se adresează tuturor oamenilor, fără deosebire" |
 | 1783 | [Metastasio], Ahileu la ostrovul Șirului. [Comedie tradusă - probabil de Al. Beldiman - în Moldova] „din limba grecească pe limba moldovinească”. [Manuscris din 1783, Bibi. Acad. R.P.R., cota 1818]. |
 | 1785 | Mihai Strilbiţki, Curioznică şi în scurt arătare celor ce iubesc a cerca vrednice învăţături din Fiziognomie. Tălmăcită di pe limba nemţască în cea rusască, cum şi pe limba această moldovenească. S-au tălmăcit şi s-au tipărit în tipografie cea politicească de popa... Iaşi, 1785, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209173133248) |
 | 1787 | "Moldauische Sprache" la Goethe, "Călătorie în Italia", 13 ianuarie 1787 «Am fost la Propaganda. Acolo în prezenţa a trei cardihali şi a unui mare auditoriu… apărură, pe rînd, ca treizeci de seminarişti, recitind poezii scurte, fiecare după limba lui maternă (seiner Landessprache): turcă, moldovenească (moldauisch), elenă, persană, arabă, armeană…» (tradus in rusa: "А вот нынешняя пьеса совершенно другого рода! В День Богоявления, на праздник Спасения души, провозглашенный для язычников, мы посетили Дворец пропаганды веры (Palazzo di Propaganda Fide в Риме). Там в присутствии трёх кардиналов и большой аудитории была произнесена только лишь одна речь, как раз повествуя то место святого писания, когда Святая Мария встретила трех волхвов в пещере или еще где? Затем читались вслух несколько латинских стихов со схожим сюжетом и далее тридцатью учениками семинарии были изложены краткие стихотворения на определенных языках: …Турецком (Türkisch), Молдавском (Moldauisch), … Персидском (Persisch), Арабском (Arabisch), Греческом (Griechisch)...") - I. W. Goethe. Călătorie în Italia.|
@@ -195,18 +174,15 @@ permalink: /moldoveneasca/
 | 1806 | Fr. Th. Mărie de Baculard d’Amaud, Adelson și Salvini. Poveste englezască sau jalnică tîmplare. Tălmăcită de pe acea franțuzască pe limba moldovenească de Fotis Calafati. [Manuscris din 1806, Bibi. Acad. R.P.R., cota 558] |
 | 1808 | Florian, Galatia. Tragodie păstorescă a domnului... tălmăcită de pe limba grecească pe limba moldovinească de Constantin Stamate. Ieși. [Manuscris, Bibi. Acad. R.P.R., cota 3502]. |
 | 1810 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna:  - "De pe särbie pe limba moldoveneascä am tälmäcit la anul 1810, Sept. 21, cliucer Paväl Debrici"  - "De pe sirbie pe limba moldoveneascá am tálmácit la anul 1810, Noemvrie 25. Cliucer Pavel Debrit." |
-| 1811 | "Lexiconul slavo-român" al lui Petru Maior (1811): "Mulți încep să folosească pentru limba noastră denumirea de 'română', fără a înțelege însă că prin aceasta nu numai că se crează o confuzie cu limba dacoromână, ci se ajunge până la urmă și la o ruinare a propriului limbaj moldovenesc." |
 | 1813 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna: "Din limba sirbasca pe limba moldoveneascá s’au tálmácit de Ion Stamate, biv vel pitar, la 1813, Iulie 12, In Iasi." |
 | 1814 | "de pe Sărbie pre limba Moldovineasca am lălmăcit la anul 1814 Iulie în 29", Cliucer Pavăl Debrid [sursa](https://books.google.com/books?id=CMNJAAAAMAAJ&q=%22limba+moldovineasca%22&dq=%22limba+moldovineasca%22&hl=en&sa=X&ved=2ahUKEwjNt8_Z6sPqAhUoxoUKHQsJCZcQ6AEwAXoECAEQAg) |
 | 1815 | Slujba, la pomenirea Sfîntului slăvitului mare glăsuitoriului, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405210223133143) |
 | 1815 | Abatele Prévost, Istorie cavalieriului de Grie şi a iubitii sale Manon Lesco, care tălmăcindu-să de pe limba franţuzască în limba moldovenească prin osteniala şi osârdie dreptiei dumisale banului Aleco Beldiman, s-au prescris acum de mine, în anul 1815... Costachi Borş. [Manuscris, Biblioteca Academiei Române, cota 193] |
-| 1815 | "Constituția Imperială a lui Alexandru I din 1815" - "Art. 9. În toate documentele oficiale din guberniile aflate în subordinea direcției administrației publice din Basarabia, limba moldovenească se va folosi fără nicio împiedicare". |
 | 1818 | Rückert, Cristian-Albert. învățătură pentru facerea pâinii// Iași, 1818, via: Bibliografia românească veche (BRV), vol. III. 1809–1830. București: Atelierele Grafice Socec & Co., Soc. Anonimă, 1912, p. 240-241 ("ai poruncit nu numai a să tălmaci în limba moldovenească a patriei noastre"), [sursa FB](https://www.facebook.com/groups/greatmoldova/permalink/753883825394108) |
 | 1818 | Ioan Beldiman, Istorie a celor mai gingaşe amoruri a Parisului. Din ce grecească s-au tălmăcit în limba moldovenească, prin osteneala şi osârdie dreptii sale... S-au prescris de mine iscălitul la 1818, Costachi Borş. [Manuscris, Biblioteca Academiei Române, cota 126] |
-| 1818 | "Историческое описание Молдавии" (Istoricul Moldovei) - o carte scrisă de I. L. Pușchin în 1818, unde se afirmă: "Limba moldovenească este o limbă slavonă înrudită cu vechea limbă rusească" |
+| 1818 | "Устав образования Бессарабской области" (29 aprilie 1818): "Дела в Совете производятся на Российском и Молдавском языках... Гражданские дела... на одном языке Молдавском" [sursa](https://www.hrono.ru/dokum/moldav1818.html) |
 | 1819 | Cartea liturgică "Mineiul de obște", Mitropolitul Chișinăului și Hotinului, Gavriil Bănulescu-Bodoni [sursa](https://razboiulpentrutrecut.wordpress.com/2013/07/17/care-era-limba-bastinasilor-din-moldova-de-est-marturii-din-titlurile-tipariturilor-din-sec-xviii-xx/) |
 | 1819 | "Scurtă russască gramatică, cu tălmăcire în limba moldovenească pentru ucenicii Seminarei Chișinăului și ale altor scoale den Basarabia, cu adăogirea cuvintelor și a dialogurilor, ce se întrebuințază mai adesăori în limba rusască și moldovenească" Chișinău, Tipografia mitropoliei Chișinăului, 1819 [sursa](https://tiparituriromanesti.wordpress.com/2011/10/28/scurta-rusasca-gramatica-cu-talmacire-in-limba-moldoveneasca-chisinau-1819/) |
-| 1816 | Grigore III Ghica, "Istoria românilor" (1816): "În timpul acestui război (n.r. - Războiul Ruso-Turc din 1806-1812), în Moldova s-a înființat o societate literară, care a publicat lucrări în limba moldovenească" |
 | 1820 | Le Constitutionnel, 12 novembre 1820 (n° 317), p. 2 [sursa](https://www.retronews.fr/journal/le-constitutionnel/12-novembre-1820/22/378501/2?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=0) |
 | 1821 | Le Drapeau blanc, 8 avril 1821 (n° 98), p. 4 [sursa](https://www.retronews.fr/journal/le-drapeau-blanc/8-avril-1821/727/1827325/4?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=1) |
 | 1821 | Journal du commerce, 9 avril 1821 (n° 443), p. 2 [sursa](https://www.retronews.fr/journal/journal-du-commerce/9-avril-1821/1135/3436589/2?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=2) |
@@ -221,7 +197,6 @@ permalink: /moldoveneasca/
 | 1824 | Chesar Becearia, Pentru greșele și pedepsi, politicește prăvite. De pe limba grecească vulgare în moldove[nească tăl]măcită de banul Vasilie Vîmav. [Manuscris din 1824, Bibi. Acad. R.P.R., cota 185] |
 | 1824 | La langue moldave la d’Hauterive. Tableau de Moldavie. Paris |
 | 1825 | Condillac, Loghica sau întăile tălmăciri meșteșugului de a să socoti cineva bine. Scrisi de... și acum întăieși dată de pe grecească pe limba moldovenească tălmăcită de banul Vasile Vîmav [Manuscris din 1825, Bibi. Acad. R.P.R., cota 425] |
-| 1825 | "Dicționarul limbii moldovenești" (1825) - un dicționar în limba rusă-moldovenească compilat de către preotul Mihail Maksimovici. În titlu și în prefață, autorul utilizează denumirea "limba moldovenească". |
 | 1827 | "Instrucțiea Bisericilor mai gios însemnate. S-au tipărit la preasfîntut Sinod la anul 1820. Iară de pre cea slavenească s-au tălmăcit pe limba moldovenească, și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1827" |
 | 1828 | Gazette nationale ou le Moniteur universel, 22 mai 1828 (n° 143), p. 1 [sursa](https://www.retronews.fr/journal/gazette-nationale-ou-le-moniteur-universel/22-mai-1828/149/2236841/1?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=4) |
 | 1828 | "Așezâmîntul pentru ocîrmuirea Oblastiei dinpreună statul lui, tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie din Chișinău, 1828, Aprilie 27 zile" |
@@ -230,11 +205,11 @@ permalink: /moldoveneasca/
 | 1828 | Journal du commerce, 22 mai 1828 (n° 3063), p. 1 |
 | 1828 | Gazette de France, 23 mai 1828 (n° 140), p. 1 |
 | 1831 | "Bibliotheca Münteriana, sive catalogus librorum", quos reliquit F. Münter. Divendentur auctione publ. Hafniæ ... die I. Martii, [sursa](https://books.google.com/books?id=GbpfAAAAcAAJ&dq=moldavice&pg=PA255#v=onepage&q=moldavice&f=false) |
-| 1832 | "Moldauische Sprasche" la F.Schneidawind, Nurnberg |
 | 1832 | "Reglementul Organic al Moldovei", art.187 "comitetul de sănătate va alcătui în limba moldoveneasca și în alte și va publicui fără întârziere regulile" [sursa](https://dokumen.tips/law/regulamentele-organice-ale-valahiei-si-moldovei-din-1831-1832-originale-furate-din-arhivele-noastre-.html?page=1) |
-| 1834 | "Limba moldovenească și limba valahă", Bessarabien - Bemerkungen und Bedanken, J. G. Zucker, Frankfurt |
+| 1832 | F. I. A. Schneidawind, "Taschenbibliothek der Reisen, von I. H. Jäck, 85-stes Bändchen" (Nürnberg): "die Moldauische Sprache" [sursa](https://bcub.ro/lib2life/Moldau%20und%20Wallachei_Kogalniceanu_Mihail_Bukarest_1895.pdf) |
 | 1834 | Journal des débats politiques et littéraires, 1 octobre 1834, p. 1 |
 | 1834 | Gazette de France, 2 octobre 1834, p. 2 |
+| 1834 | J. H. Zucker, "Bessarabien. Bemerkungen und Gedanken bei Gelegenheit eines mehrjährigen Aufenthaltes in diesem Lande"; capitolul "Moldauische Sprache und wallachische ..." [sursa](https://www.finna.fi/Record/abo.kortkat_201139) |
 | 1836 | VEISA, I. = [Dr. Tollhausen], Instrucţie în scurt de prinţipurile ighienismului sau a sistemii morizoniane şi de întrebuinţarea doftoriei universale de veghetaluri. Aduse în limba moldovenească de pe acele franţuzeşti... tălmăcite [de căminarul C. Veisa] de pe însuşi cartea dumisale Morizon, ce au ieşit în limba germană. Iaşi, Tipografia S[fintei] Mitropolii, [1836] |
 | 1837 | Journal des débats politiques et littéraires, 16 décembre 1837, p. 2 |
 | 1838 | Journal des débats politiques et littéraires, 8 décembre 1838, p. 2 |
@@ -247,7 +222,6 @@ permalink: /moldoveneasca/
 | 1841 | "Spicuitorul moldo-romîn". Jurnal scientific, literar și industrial, rediguit de o soțietate de literați. Iașii, Institutul Albinei |
 | 1841 | "Datoriile călugărilor a unora cătră alții, în viața lor cea de obșce. S-au tipărit ruseșce la Sanct Petersburg în tipografia Preasfîntului Sinod la 1816 în luna August, iară de pre cea rusască s-au tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1841 în luna lui August" |
 | 1844 | Theoretisch-praktische Grammatik der dacoromanischen, das ist, der moldauischen oder wallachischen Sprache, Theoktist Blazewicz [sursa 1](https://www.facebook.com/EramAvodlom/posts/283374073050234?__xts__%5B0%5D=68.ARAphL7m4CT_cy4isu_jBLPkwJJfcjPeFWPtKHJ4AkHZG4lM9E5_rAc2PF7VS5tkjKcG2Asj1Wul_VLAfrOSZqBuzQj51jOC-SN0_DoBInHWfKebOrRPyTi1O0IT4GezOzoDTPicmCSzPgD1qZuW6hCy0fBuW0EBgYxLYllqa_76r0bYgik3D5_NdbXC4dpLfFUBL6-8yR9-MefUgY2eUCRJJTVu9dHMVjjwPAXJojVCt5lmEbCTAPmsBdG8AFETKJBky6RlBZKToW9-Odct2hnB2SfQZhBwm7uUrC5iwPlJ0eo__3lXIabqyVUtMXH99D07FTe9c-XGCDPQCzlxgW0&__tn__=-R) |
-| 1844 | "Relații de călătorie în Țările Române" de Johann Georg Kohl, publicată în 1844: "În Moldova se vorbește limba moldovenească și nu românească, deși cele două limbi sunt asemănătoare". |
 | 1848 | Iași, în 12 Marite, traducere in franceza sistematica ca "langue moldave", a sintagmelor "limba nationala" ou limba romaneasca, [Documente privitóre la istoria românilor, Volume 6, 1895](https://www.google.com/books/edition/Documente_privit%C3%B3re_la_istoria_rom%C3%A2nil/MQVSAQAAMAAJ?hl=en&gbpv=0&kptab=getbook) |
 | 1849 | Le Constitutionnel, 29 mai 1849 (n° 149), p. 2 |
 | 1849 | Le Constitutionnel, 30 mai 1849 (n° 150), p. 1, 2 |
@@ -298,7 +272,7 @@ permalink: /moldoveneasca/
 | 1989 | Parlamentul R.Moldova, legea Nr. 3464 din 31.08.1989 cu privire la statutul limbii de stat a RSS Moldovenești: "În scopul lichidării deformărilor survenite în construcția lingvistică din RSS Moldovenească, al luării sub protecția statului a limbii moldovenești - una dintre premizele fundamentale ale existenței națiunii moldovenești în cadrul formației sale național-statale suverane[...] hotărăște a completa Constituția [...] RSSM cu Art.701: "Limba de stat a RSSM este limba moldovenească. Limba de stat este folosită în viața politică, economică, socială și culturală și funcționează pe baza grafiei latine" |
 | 1994 | "Constituția Republicii Moldova", art.13(1) "Limba de stat a Republicii Moldova este limba moldovenească, funcționînd pe baza grafiei latine", [sursa](https://ro.wikisource.org/wiki/Constitu%C8%9Bia_Republicii_Moldova) |
 | 2000 | Analele Acedemei Române, Editura Academiei Române, diverși autori [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199516467547/?type=3), [sursa 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199513134214/?type=3), [sursa 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199563134209/?type=3) |
-| 2014 | Limba vorbită în raioanele Moldovei (Recensămînt 2014), [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200083134157) |
+| 2014 | "Recensământul Populației și Locuințelor 2014 — limba vorbită": "Populația vorbește în limba moldovenească — 54,6%"; Biroul Național de Statistică al Republicii Moldova [sursa](https://statistica.gov.md/public/files/Recensamint/Recensamint_pop_2014/Rezultate/Infografic_RPL2014_2.pdf) |
 | 2018 | Abecedar, Limba Moldovenească, Odessa [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/289035209150787/?type=3&__xts__%5B0%5D=68.ARBNCcJ91rts9RvHwIX5q3XPFe-d24_u5d-76RdmAk3_8sIh-GbT3Ok7SOxOzj14M8d1QYfRNmYW_WvsyqfBCCcpcT8yNWcJ9cnRRB4NQMG2lRrr0PqcPjxdpfpIdkZeVnaT2FS3Y42b16WdubM9SBDdYfWCOeWgrLJmBYoDZw0brXNti-4C4P2aU4wdDaOGSVmewmE3z7EJ0FAFYPqlCTozs5CDV5a0L877UB5InEceXrkrB67xtgVvGJfilqIvQD_4h_nOXjvLFN3qzhQfmqArz0MgVEbp_Rp-DXJgTJ2wxEj2fxzK3lDDnomKIcNRtJEfrw9kKqStv8bIldtZLhE&__tn__=-R) |
 
 <div class="moldoveneasca-catalog__status" data-catalog-status>
@@ -313,6 +287,26 @@ permalink: /moldoveneasca/
     <button type="button" class="moldoveneasca-icon-button" data-page-next aria-label="Pagina următoare" title="Pagina următoare"><span aria-hidden="true">→</span></button>
   </nav>
 </div>
+
+<section class="moldoveneasca-unverified" data-unverified-section hidden aria-labelledby="unverified-title">
+  <h2 id="unverified-title">Referințe neverificate</h2>
+  <p>Aceste intrări au fost retrase din lista publică până la confirmarea denumirii exacte, a autorului, a anului și a sursei. Secțiunea este vizibilă numai administratorului.</p>
+  <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
+    <thead>
+      <tr>
+        <th scope="col">An</th>
+        <th scope="col">Secol</th>
+        <th scope="col">Denumirea</th>
+        <th scope="col">Citat</th>
+        <th scope="col">Limba</th>
+        <th scope="col">Autor</th>
+        <th scope="col">Sursa</th>
+        <th scope="col" aria-label="Acțiuni"></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
 
 Doua chestii sa fie luate în considerare. Vom porni de la premiza ca 
 1) limba moldovenească sau româna este aceeași limba. Unica ce diferă este denumirea dată acestei limbi unice de către populația diferită.

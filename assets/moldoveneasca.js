@@ -26,6 +26,9 @@
   const previousPageButton = document.querySelector('[data-page-previous]');
   const nextPageButton = document.querySelector('[data-page-next]');
   const pageStatus = document.querySelector('[data-page-status]');
+  const unverifiedSection = document.querySelector('[data-unverified-section]');
+  const unverifiedTable = document.querySelector('[data-unverified-table]');
+  const unverifiedTbody = unverifiedTable?.querySelector('tbody');
   const detailPanel = root.querySelector('[data-reference-detail]');
   const detailBackdrop = root.querySelector('[data-reference-detail-backdrop]');
   const detailTitle = root.querySelector('[data-detail-title]');
@@ -40,6 +43,7 @@
   let currentRole = 'viewer';
   let editingId = null;
   let remoteRecords = [];
+  let unverifiedRecords = [];
   let sortAscending = true;
   let sortButton = null;
   let rowSequence = 0;
@@ -570,7 +574,7 @@
     if (record.status && record.status !== 'published') {
       const badge = document.createElement('span');
       badge.className = 'moldoveneasca-status';
-      badge.textContent = record.status === 'pending' ? 'În verificare' : record.status;
+      badge.textContent = record.status === 'pending' ? 'În verificare' : 'Neverificată';
       sourceCell.appendChild(badge);
     }
     row.appendChild(sourceCell);
@@ -715,6 +719,8 @@
     }
     if (openFormButton) openFormButton.hidden = !['editor', 'admin'].includes(currentRole) || !currentUser;
     if (adminOnlyField) adminOnlyField.hidden = currentRole !== 'admin';
+    if (unverifiedSection) unverifiedSection.hidden = currentRole !== 'admin' || !currentUser;
+    renderUnverifiedRows();
   };
 
   const closeEditor = () => {
@@ -769,6 +775,16 @@
     filterRows();
   };
 
+  const renderUnverifiedRows = () => {
+    if (!unverifiedTbody) return;
+    unverifiedTbody.replaceChildren();
+    if (!currentUser || currentRole !== 'admin') return;
+    unverifiedRecords
+      .slice()
+      .sort((a, b) => (parseYearStart(a) || Number.POSITIVE_INFINITY) - (parseYearStart(b) || Number.POSITIVE_INFINITY))
+      .forEach((record) => unverifiedTbody.appendChild(createCatalogRow(record)));
+  };
+
   const loadSupabaseScript = () => new Promise((resolve, reject) => {
     if (window.supabase?.createClient) {
       resolve(window.supabase);
@@ -789,8 +805,11 @@
       .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, status, owner_id')
       .order('year_start', { ascending: true });
     if (error) throw error;
-    remoteRecords = data || [];
+    const records = data || [];
+    remoteRecords = records.filter((record) => record.status === 'published');
+    unverifiedRecords = records.filter((record) => record.status !== 'published');
     renderRemoteRows();
+    renderUnverifiedRows();
   };
 
   const loadProfile = async (user) => {

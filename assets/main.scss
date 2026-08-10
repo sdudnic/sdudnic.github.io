@@ -2453,6 +2453,15 @@ body.moldoveneasca-page * {
   min-width: 0 !important;
 }
 
+.moldoveneasca-catalog__intro {
+  width: 100%;
+  max-width: none;
+}
+
+.moldoveneasca-table__detail-link {
+  font-weight: 700;
+}
+
 @media screen and (max-width: 620px) {
   .moldoveneasca-catalog__toolbar {
     flex-wrap: wrap;

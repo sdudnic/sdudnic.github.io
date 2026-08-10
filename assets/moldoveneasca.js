@@ -409,7 +409,7 @@
     const fields = displayFields(record);
     const urls = sourceUrls(record);
     detailContent.replaceChildren();
-    if (detailTitle) detailTitle.textContent = fields.title;
+    if (detailTitle) detailTitle.textContent = fields.title === '—' ? 'Detalii referință' : fields.title;
 
     const addDetailField = (label, value, render = null) => {
       if (!value || value === '—') return;
@@ -541,21 +541,19 @@
     const titleCell = document.createElement('td');
     titleCell.className = 'moldoveneasca-table__title';
     const titleText = fields.title || '—';
-    if (titleText === '—') {
-      titleCell.appendChild(document.createTextNode(titleText));
-    } else {
-      const titleLink = document.createElement('a');
-      titleLink.href = '#reference-detail';
-      titleLink.className = 'moldoveneasca-table__detail-link';
-      titleLink.textContent = titleText;
-      titleLink.title = titleText;
-      titleLink.setAttribute('aria-label', `Deschide detaliile pentru ${titleText}`);
-      titleLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        openDetail(record, titleLink);
-      });
-      titleCell.appendChild(titleLink);
-    }
+    const titleLink = document.createElement('a');
+    titleLink.href = '#reference-detail';
+    titleLink.className = 'moldoveneasca-table__detail-link';
+    titleLink.textContent = titleText;
+    titleLink.title = titleText === '—' ? `Deschide detaliile referinței din ${fields.year}` : titleText;
+    titleLink.setAttribute('aria-label', titleText === '—'
+      ? `Deschide detaliile referinței din ${fields.year}`
+      : `Deschide detaliile pentru ${titleText}`);
+    titleLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      openDetail(record, titleLink);
+    });
+    titleCell.appendChild(titleLink);
     row.appendChild(titleCell);
 
     const quoteCell = document.createElement('td');

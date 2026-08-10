@@ -138,6 +138,8 @@
     for (const match of text.matchAll(/«([^»]{5,})»/g)) candidates.push(match[1]);
     for (const match of text.matchAll(/“([^”]{5,})”/g)) candidates.push(match[1]);
     for (const match of text.matchAll(/"([^"\n]{5,})"/g)) candidates.push(match[1]);
+    const narrated = text.match(/(?:scria|scrie|afirm[aă]|declara|menționeaz[aă])\s*:\s*[«“"]?([\s\S]{5,})[»”"][\s\S]*(?:subliniaz[aă]|menționeaz[aă]|precizeaz[aă]|arat[aă])/i);
+    if (narrated) candidates.unshift(narrated[1]);
     const labelled = text.match(/Citatul:\s*(.{5,320}?)(?:,\s*Contextul:|$)/i);
     if (labelled) candidates.push(labelled[1]);
     const cleanedCandidates = candidates.map(cleanQuote).filter(Boolean);
@@ -165,7 +167,7 @@
     const quotedTitles = [...beforeComment.matchAll(/["«“]([^"»”]{3,180})["»”]/g)]
       .map((match) => match[1].trim())
       .filter((candidate) => !languageNamePattern.test(candidate))
-      .filter((candidate) => !/^(?:evanghel(?:ia|iei)|epistole(?:le|lor)|scria|sursa)$/i.test(candidate));
+      .filter((candidate) => !/\b(?:evanghel(?:ia|iei|ie)|epistole(?:le|lor)|scria|sursa)\b/i.test(candidate));
     const contextualTitle = beforeComment.match(/(?:lucrare(?:a)?\s+intitulată|lucrarea(?:\s+sa)?|opera|cartea|volumul|documentul|în\s+)[\s:]*["«“]([^"»”]{3,180})["»”]/i);
     if (contextualTitle && !languageNamePattern.test(contextualTitle[1])) return contextualTitle[1].trim();
     if (quotedTitles.length) return quotedTitles[0];
@@ -469,7 +471,7 @@
     addDetailField('Limba', fields.languageFull);
     addDetailField('Cod', fields.language);
     addDetailField('Autor', fields.author);
-    addDetailField('Tipul sursei', record?.source_type === 'Import din tabelul existent' ? null : record?.source_type);
+    addDetailField('Proveniență', record?.source_type);
     addDetailField('Locul / instituția', record?.location);
     addDetailField('Citat', fields.quote, (content, value) => {
       content.appendChild(document.createTextNode('„'));
@@ -818,7 +820,7 @@
     setField('title', imported ? (fields.title === '—' ? null : fields.title) : record?.title);
     setField('language', record?.language);
     setField('author', record?.author);
-    setField('source_type', imported ? null : record?.source_type);
+    setField('source_type', record?.source_type);
     setField('description', recordComments(record));
     setField('quote', fields.quote);
     setField('location', record?.location);

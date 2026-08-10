@@ -60,12 +60,12 @@ permalink: /moldoveneasca/
           <input name="source_type" placeholder="Carte, act, gramatică, presă…">
         </label>
         <label class="moldoveneasca-field moldoveneasca-field--full">
-          <span>Descriere / context</span>
-          <textarea name="description" rows="3" placeholder="Ce menționează documentul și în ce context?"></textarea>
+          <span>Comentarii</span>
+          <textarea name="description" rows="3" placeholder="Explicații, note și context despre referință."></textarea>
         </label>
         <label class="moldoveneasca-field moldoveneasca-field--full">
-          <span>Citat relevant</span>
-          <textarea name="quote" rows="3" placeholder="Citatul original sau traducerea, cu indicarea limbii sursei"></textarea>
+          <span>Citat</span>
+          <textarea name="quote" rows="3" placeholder="Doar pasajul citat în care este menționată limba."></textarea>
         </label>
         <label class="moldoveneasca-field">
           <span>Locul / instituția</span>
@@ -106,7 +106,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260810-6"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260810-7"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

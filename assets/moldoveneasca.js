@@ -270,6 +270,40 @@
     };
   };
 
+  const removeImportedQuote = (value, quote) => {
+    let text = cleanImportedText(value);
+    if (!text || !quote) return text;
+    const variants = [
+      `«${quote}»`,
+      `“${quote}”`,
+      `„${quote}”`,
+      `"${quote}"`,
+      `'${quote}'`,
+      quote
+    ];
+    const variant = variants.find((candidate) => text.includes(candidate));
+    if (variant) text = text.replace(variant, ' ');
+    return text
+      .replace(/\s*\(\s*sursa(?:\s+suplimentară)?\s*\d*\s*\)\s*/gi, ' ')
+      .replace(/\s+/g, ' ')
+      .replace(/^\s*[,;:–—-]\s*/, '')
+      .replace(/\s*[,;:–—-]\s*$/, '')
+      .trim();
+  };
+
+  const recordComments = (record) => {
+    const comments = [];
+    const description = cleanImportedText(record?.description);
+    const raw = cleanImportedText(record?.title);
+    const imported = record?.source_type === 'Import din tabelul existent';
+    if (description && (!imported || description !== raw)) comments.push(description);
+    if (imported && raw) {
+      const residual = removeImportedQuote(raw, extractQuote(record?.quote) || extractQuote(raw));
+      if (residual && !comments.includes(residual)) comments.push(residual);
+    }
+    return comments.join('\n\n') || null;
+  };
+
   const ensureTableHeader = () => {
     const thead = table.tHead || table.querySelector('thead');
     const headRow = thead?.rows[0] || table.querySelector('thead tr');
@@ -345,7 +379,8 @@
       quote: normalize(fields.quote),
       language: normalize(fields.language),
       author: normalize(fields.author),
-      source: normalize(sourceUrls(record).join(' '))
+      source: normalize(sourceUrls(record).join(' ')),
+      comments: normalize(recordComments(record))
     };
     row.dataset.catalogYear = String(rowYear || '');
     row.dataset.catalogLinked = sourceUrls(record).length ? 'true' : 'false';
@@ -360,7 +395,7 @@
       record?.language,
       fields.author,
       sourceUrls(record).join(' '),
-      record?.description
+      recordComments(record)
     ].filter(Boolean).join(' '));
     row.dataset.catalogIndex = row.dataset.catalogIndex || String(rowSequence++);
   };
@@ -430,17 +465,14 @@
     addDetailField('Limba', fields.languageFull);
     addDetailField('Cod', fields.language);
     addDetailField('Autor', fields.author);
-    addDetailField('Tipul sursei', record?.source_type);
+    addDetailField('Tipul sursei', record?.source_type === 'Import din tabelul existent' ? null : record?.source_type);
     addDetailField('Locul / instituția', record?.location);
     addDetailField('Citat', fields.quote, (content, value) => {
       content.appendChild(document.createTextNode('„'));
       appendQuoteText(content, value);
       content.appendChild(document.createTextNode('”'));
     });
-    addDetailField('Context / descriere', record?.description);
-    if (record?.source_type === 'Import din tabelul existent' && record?.title) {
-      addDetailField('Notă din import', cleanImportedText(record.title));
-    }
+    addDetailField('Comentarii', recordComments(record));
     if (urls.length) {
       addDetailField('Surse', urls.join('\n'), (content) => {
         content.className = 'moldoveneasca-detail__sources';
@@ -774,16 +806,19 @@
       return;
     }
     editingId = record?.id || null;
+    const imported = record?.source_type === 'Import din tabelul existent';
+    const fields = displayFields(record);
+    const urls = sourceUrls(record);
     if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
     setField('year_label', record?.year_label);
-    setField('title', record?.title);
+    setField('title', imported ? (fields.title === '—' ? null : fields.title) : record?.title);
     setField('language', record?.language);
     setField('author', record?.author);
-    setField('source_type', record?.source_type);
-    setField('description', record?.description);
-    setField('quote', record?.quote);
+    setField('source_type', imported ? null : record?.source_type);
+    setField('description', recordComments(record));
+    setField('quote', fields.quote);
     setField('location', record?.location);
-    setField('source_url', record?.source_url);
+    setField('source_url', record?.source_url || urls[0]);
     setField('status', record?.status || 'pending');
     setStatus('');
     editorPanel.hidden = false;

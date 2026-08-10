@@ -2428,13 +2428,13 @@ body.moldoveneasca-page * {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  overflow-x: auto;
+  overflow: visible;
 }
 
 .moldoveneasca-grid-frame > .moldoveneasca-table,
 .moldoveneasca-grid-frame > .moldoveneasca-catalog__status {
-  width: 100%;
-  min-width: 1180px;
+  width: 100% !important;
+  min-width: 0 !important;
   box-sizing: border-box;
 }
 
@@ -2446,6 +2446,11 @@ body.moldoveneasca-page * {
   margin: 0;
   padding: 0.35rem 0;
   border: 0;
+}
+
+.post-content .moldoveneasca-table {
+  width: 100% !important;
+  min-width: 0 !important;
 }
 
 @media screen and (max-width: 620px) {

@@ -10,6 +10,9 @@
   --subtle: #f7f7f8;
   --line: #e5e5e5;
   --line-strong: #cfcfcf;
+  --site-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --site-font-size: 16px;
+  --site-line-height: 1.65;
 }
 
 html {
@@ -20,9 +23,16 @@ body {
   min-width: 0;
   background: var(--surface);
   color: var(--ink);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
+  font-family: var(--site-font);
+  font-size: var(--site-font-size);
+  line-height: var(--site-line-height);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--site-font);
 }
 
 a,
@@ -2350,16 +2360,18 @@ body.moldoveneasca-detail-open {
   padding: 0.45rem 0;
 }
 
-// Use one compact type size throughout the catalogue; hierarchy comes from layout.
-.moldoveneasca-catalog,
-.moldoveneasca-catalog *,
-.post-content .moldoveneasca-table,
-.post-content .moldoveneasca-table *,
-.moldoveneasca-catalog__status,
-.moldoveneasca-catalog__status *,
-.moldoveneasca-pagination,
-.moldoveneasca-pagination * {
-  font-size: 0.875rem !important;
+// The catalogue uses one centralized type rule across the whole page.
+body.moldoveneasca-page {
+  --catalog-font-family: var(--site-font);
+  --catalog-font-size: 0.875rem;
+  --catalog-line-height: 1.4;
+}
+
+body.moldoveneasca-page,
+body.moldoveneasca-page * {
+  font-family: var(--catalog-font-family) !important;
+  font-size: var(--catalog-font-size) !important;
+  line-height: var(--catalog-line-height) !important;
 }
 
 .moldoveneasca-table__sort {

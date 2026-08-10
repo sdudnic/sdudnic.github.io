@@ -72,9 +72,12 @@
       });
 
       const refresh = document.createElement('button');
-      refresh.className = 'comments__refresh';
+      refresh.className = 'comments__refresh moldoveneasca-icon-button';
       refresh.type = 'button';
-      refresh.textContent = 'Actualizează comentariile';
+      refresh.textContent = '↻';
+      refresh.setAttribute('aria-label', 'Actualizează comentariile');
+      refresh.title = 'Actualizează comentariile';
+      refresh.dataset.tooltip = 'Actualizează comentariile';
       refresh.addEventListener('click', () => load(true));
       list.append(refresh);
     };

@@ -443,6 +443,8 @@
       next: 'M5 12h14M12 5l7 7-7 7',
       cancel: 'M6 6l12 12M18 6L6 18',
       save: 'M5 12l4 4L19 6',
+      login: 'M10 17l5-5-5-5M15 12H3M21 3v18',
+      logout: 'M14 17l5-5-5-5M19 12H7M3 3v18',
       'sort-up': 'M7 14l5-5 5 5',
       'sort-down': 'M7 10l5 5 5-5'
     };
@@ -481,6 +483,8 @@
     configureIconButton(previousPageButton, 'Pagina anterioară', 'previous');
     configureIconButton(nextPageButton, 'Pagina următoare', 'next');
     configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
+    configureIconButton(loginButton, 'Autentificare cu GitHub', 'login');
+    configureIconButton(logoutButton, 'Ieșire din cont', 'logout');
   };
 
   const createCatalogRow = (record) => {

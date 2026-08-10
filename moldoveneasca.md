@@ -8,6 +8,7 @@ permalink: /moldoveneasca/
 ---
 
 <section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-description">
+  <h1 class="moldoveneasca-catalog__title">Referințe istorice ale glotonimului „moldovenească”</h1>
   <p id="catalog-description" class="moldoveneasca-catalog__intro">
     Baza de date reunește documente și referințe istorice care menționează denumirea
     „moldovenească” a limbii, de la cele mai vechi atestări până astăzi.

@@ -2078,7 +2078,7 @@ a:hover {
 .moldoveneasca-table__source-link {
   display: inline;
   margin: 0;
-  font-weight: 700;
+  font-weight: inherit;
 }
 
 .moldoveneasca-table__actions-heading,
@@ -2458,8 +2458,15 @@ body.moldoveneasca-page * {
   max-width: none;
 }
 
-.moldoveneasca-table__detail-link {
+.moldoveneasca-catalog__title {
+  margin: 0 0 0.35rem;
+  font-size: inherit;
   font-weight: 700;
+  line-height: inherit;
+}
+
+.moldoveneasca-table__detail-link {
+  font-weight: inherit;
 }
 
 @media screen and (max-width: 620px) {

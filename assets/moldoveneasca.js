@@ -118,7 +118,7 @@
     return clone.textContent.replace(/\s+/g, ' ').trim();
   };
 
-  const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav(?:icae|ica|icus|icum|orum|isch\p{L}*)|moldau\p{L}*|moldauisch\p{L}*|moldov\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
+  const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav\p{L}*|moldau\p{L}*|moldauisch\p{L}*|moldov\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
   const languageLabelPattern = /(?:\blimb\p{L}*\b|\blingua\p{L}*\b|\blanguage\p{L}*\b|\bsprache\p{L}*\b|sprach\p{L}*|\blangue\p{L}*\b|\blengua\p{L}*\b|\bjęzyk\p{L}*\b|\bjezyk\p{L}*\b|\bjazyk\p{L}*\b|\byazyk\p{L}*\b|\bjezik\p{L}*\b|\bidioma\p{L}*\b|\bidiom\p{L}*\b|\bvaloda\p{L}*\b|\bkalba\p{L}*\b|\bkeel\p{L}*\b|\bspråk\p{L}*\b|язык\p{L}*|мова\p{L}*|моў\p{L}*|młëtwa|gjuha|tung\p{L}*)/iu;
 
   const cleanImportedText = (value) => String(value || '')

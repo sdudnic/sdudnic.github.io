@@ -25,9 +25,13 @@
   const filteredCount = document.querySelector('[data-filtered-count]');
   const statusBar = document.querySelector('[data-catalog-status]');
   const pagination = document.querySelector('[data-catalog-pagination]');
+  const firstPageButton = document.querySelector('[data-page-first]');
   const previousPageButton = document.querySelector('[data-page-previous]');
   const nextPageButton = document.querySelector('[data-page-next]');
+  const lastPageButton = document.querySelector('[data-page-last]');
   const pageStatus = document.querySelector('[data-page-status]');
+  const currentPageValue = document.querySelector('[data-page-current]');
+  const totalPagesValue = document.querySelector('[data-page-total]');
   const unverifiedSection = document.querySelector('[data-unverified-section]');
   const unverifiedTable = document.querySelector('[data-unverified-table]');
   const unverifiedTbody = unverifiedTable?.querySelector('tbody');
@@ -62,6 +66,7 @@
   let rowSequence = 0;
   const pageSize = 50;
   let currentPage = 1;
+  let catalogTotalPages = 1;
   let lastDetailTrigger = null;
   let searchDebounceTimer = null;
   const searchDebounceMs = 220;
@@ -563,6 +568,8 @@
       add: 'M12 5v14M5 12h14',
       previous: 'M19 12H5M12 19l-7-7 7-7',
       next: 'M5 12h14M12 5l7 7-7 7',
+      first: 'M11 5L4 12l7 7M20 5l-7 7 7 7',
+      last: 'M4 5l7 7-7 7M13 5l7 7-7 7',
       cancel: 'M6 6l12 12M18 6L6 18',
       save: 'M5 12l4 4L19 6',
       login: 'M10 17l5-5-5-5M15 12H3M21 3v18',
@@ -602,8 +609,10 @@
     configureIconButton(openFormButton, 'Adaugă referință', 'add');
     configureIconButton(cancelEditButton, 'Anulează editarea', 'cancel');
     configureIconButton(editorForm?.querySelector('button[type="submit"]'), 'Salvează referința', 'save');
+    configureIconButton(firstPageButton, 'Prima pagină', 'first');
     configureIconButton(previousPageButton, 'Pagina anterioară', 'previous');
     configureIconButton(nextPageButton, 'Pagina următoare', 'next');
+    configureIconButton(lastPageButton, 'Ultima pagină', 'last');
     configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
     configureIconButton(loginButton, 'Autentificare cu GitHub', 'login');
     configureIconButton(logoutButton, 'Ieșire din cont', 'logout');
@@ -763,11 +772,16 @@
 
   const updatePagination = (matchedCount) => {
     const totalPages = Math.max(1, Math.ceil(matchedCount / pageSize));
+    catalogTotalPages = totalPages;
     if (currentPage > totalPages) currentPage = totalPages;
     if (pagination) pagination.hidden = totalPages <= 1;
+    if (firstPageButton) firstPageButton.disabled = currentPage <= 1;
     if (previousPageButton) previousPageButton.disabled = currentPage <= 1;
     if (nextPageButton) nextPageButton.disabled = currentPage >= totalPages;
-    if (pageStatus) pageStatus.textContent = `Pagina ${currentPage} din ${totalPages}`;
+    if (lastPageButton) lastPageButton.disabled = currentPage >= totalPages;
+    if (currentPageValue) currentPageValue.textContent = String(currentPage);
+    if (totalPagesValue) totalPagesValue.textContent = String(totalPages);
+    if (pageStatus) pageStatus.setAttribute('aria-label', `Pagina ${currentPage} din ${totalPages}`);
     return totalPages;
   };
 
@@ -1078,7 +1092,15 @@
     filterRows();
   });
   nextPageButton?.addEventListener('click', () => {
-    currentPage += 1;
+    currentPage = Math.min(catalogTotalPages, currentPage + 1);
+    filterRows();
+  });
+  firstPageButton?.addEventListener('click', () => {
+    currentPage = 1;
+    filterRows();
+  });
+  lastPageButton?.addEventListener('click', () => {
+    currentPage = catalogTotalPages;
     filterRows();
   });
   loginButton?.addEventListener('click', signIn);

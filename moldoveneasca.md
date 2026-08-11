@@ -106,7 +106,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260811-11"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260811-12"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
@@ -289,9 +289,11 @@ permalink: /moldoveneasca/
     <span><strong data-filtered-count>—</strong> elemente filtrate</span>
   </div>
   <nav class="moldoveneasca-pagination" data-catalog-pagination hidden aria-label="Paginarea referințelor">
+    <button type="button" class="moldoveneasca-icon-button" data-page-first aria-label="Prima pagină" title="Prima pagină"><span aria-hidden="true"></span></button>
     <button type="button" class="moldoveneasca-icon-button" data-page-previous aria-label="Pagina anterioară" title="Pagina anterioară"><span aria-hidden="true">←</span></button>
-    <span data-page-status aria-live="polite">Pagina 1 din 1</span>
+    <span class="moldoveneasca-pagination__status" data-page-status aria-live="polite" aria-label="Pagina 1 din 1"><strong data-page-current>1</strong><span aria-hidden="true"> din </span><span data-page-total>1</span></span>
     <button type="button" class="moldoveneasca-icon-button" data-page-next aria-label="Pagina următoare" title="Pagina următoare"><span aria-hidden="true">→</span></button>
+    <button type="button" class="moldoveneasca-icon-button" data-page-last aria-label="Ultima pagină" title="Ultima pagină"><span aria-hidden="true"></span></button>
   </nav>
 </div>
 

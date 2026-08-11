@@ -1691,19 +1691,32 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 0.25rem;
   margin: 0.8rem 0 1.6rem;
   color: var(--muted);
   font-size: 0.8rem;
 }
 
-.moldoveneasca-pagination .moldoveneasca-button {
-  min-height: 32px;
-  padding: 0.38rem 0.62rem;
-  font-size: 0.76rem;
+.moldoveneasca-pagination__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 4.2rem;
+  justify-content: center;
 }
 
-.moldoveneasca-pagination .moldoveneasca-button:disabled {
+.moldoveneasca-pagination__status strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.moldoveneasca-pagination .moldoveneasca-icon-button {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+}
+
+.moldoveneasca-pagination .moldoveneasca-icon-button:disabled {
   cursor: default;
   opacity: 0.45;
 }

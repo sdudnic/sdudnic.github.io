@@ -218,6 +218,39 @@
       .trim();
   };
 
+  const languageNamesByCode = Object.freeze({
+    md: 'moldovenească',
+    ru: 'rusă',
+    la: 'latină',
+    de: 'germană',
+    fr: 'franceză',
+    it: 'italiană',
+    el: 'greacă',
+    cu: 'slavonă',
+    pl: 'poloneză',
+    uk: 'ucraineană',
+    en: 'engleză',
+    bg: 'bulgară',
+    sr: 'sârbă',
+    tr: 'turcă',
+    ar: 'arabă',
+    he: 'ebraică',
+    hu: 'maghiară',
+    es: 'spaniolă',
+    pt: 'portugheză',
+    xx: 'necunoscută'
+  });
+
+  const languageTooltip = (codeValue, fullValue) => {
+    const code = String(codeValue || '').trim();
+    if (!code || code === '—') return '';
+    const mapped = code.replace(/\b(?:md|ru|la|de|fr|it|el|cu|pl|uk|en|bg|sr|tr|ar|he|hu|es|pt|xx)\b/gi,
+      (token) => languageNamesByCode[token.toLowerCase()] || token);
+    if (mapped !== code) return mapped;
+    const full = String(fullValue || '').trim();
+    return full && full !== '—' ? full : code;
+  };
+
   const sourceUrls = (record) => {
     const urls = [];
     const addValue = (value) => {
@@ -406,14 +439,14 @@
     row.dataset.catalogIndex = row.dataset.catalogIndex || String(rowSequence++);
   };
 
-  const textCell = (value, className = '') => {
+  const textCell = (value, className = '', title = '') => {
     const cell = document.createElement('td');
     if (className) cell.className = className;
     const text = value || '—';
     const content = document.createElement('span');
     content.className = 'moldoveneasca-table__truncate';
     content.textContent = text;
-    if (text !== '—') content.title = text;
+    if (text !== '—') content.title = title || text;
     cell.appendChild(content);
     return cell;
   };
@@ -615,7 +648,11 @@
       quoteCell.textContent = '—';
     }
     row.appendChild(quoteCell);
-    row.appendChild(textCell(fields.language, 'moldoveneasca-table__language'));
+    row.appendChild(textCell(
+      fields.language,
+      'moldoveneasca-table__language',
+      languageTooltip(fields.language, fields.languageFull)
+    ));
     row.appendChild(textCell(fields.author, 'moldoveneasca-table__author'));
 
     const sourceCell = document.createElement('td');

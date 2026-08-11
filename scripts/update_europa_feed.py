@@ -24,10 +24,86 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "_data" / "europa_auto.yml"
 USER_AGENT = "dudnic.com Europa feed updater/1.0 (+https://dudnic.com)"
-MIN_ITEMS = 10
+# A smaller safety floor lets the feed publish a short, genuinely distinct
+# list instead of keeping an older snapshot full of repeated stories.
+MIN_ITEMS = 5
 MAX_ITEMS = 20
+# Keep only titles that are at least 75% different from titles already
+# selected for the same language. This prevents the feed from repeating the
+# same event from several news outlets with slightly different wording.
+MIN_TITLE_DIFFERENCE = 0.75
+MAX_TITLE_SIMILARITY = 1 - MIN_TITLE_DIFFERENCE
 MAX_AGE = timedelta(days=365)
 FETCH_TIMEOUT = 15
+
+# These words identify the common feed context rather than the event itself.
+# Removing them before comparing titles avoids treating every Moldova–EU
+# headline as the same story merely because it mentions the feed topic.
+TITLE_CONTEXT_TERMS = {
+    "a", "al", "ale", "an", "and", "are", "as", "au", "avec", "ce", "cu",
+    "de", "des", "despre", "din", "do", "du", "e", "en", "et", "eu", "europe",
+    "european", "europeana", "europene", "for", "from", "in", "la", "le", "les",
+    "moldav", "moldava", "moldavie", "moldova", "moldovei", "moldovean",
+    "moldovenesc", "of", "on", "pe", "pour", "republica", "republicii", "s",
+    "sa", "si", "the", "to", "ue", "un", "une", "uniunea", "union", "with",
+    "și", "şi", "iar", "întru", "ес", "европа", "европейский", "евросоюз",
+    "молдова", "молдов",
+}
+
+# Normalize inflected forms before comparing titles. This catches the same
+# event when one outlet writes “clusterul” and another writes “cluster”, or
+# “deschise” and “deschiderea”.
+TITLE_TERM_ALIASES = {
+    "deschis": "deschide",
+    "deschise": "deschide",
+    "deschiderea": "deschide",
+    "deschiderii": "deschide",
+    "opened": "open",
+    "opens": "open",
+    "opening": "open",
+    "ouvre": "ouvrir",
+    "ouvert": "ouvrir",
+    "ouverte": "ouvrir",
+    "открыла": "открыть",
+    "открыл": "открыть",
+    "открыли": "открыть",
+    "открыт": "открыть",
+    "открывает": "открыть",
+    "negocieri": "negociere",
+    "negocierile": "negociere",
+    "negocierilor": "negociere",
+    "negotiations": "negotiation",
+    "negociations": "negociation",
+    "переговоры": "переговор",
+    "переговоров": "переговор",
+    "clusterul": "cluster",
+    "clusterului": "cluster",
+    "clustere": "cluster",
+    "кластеру": "кластер",
+    "кластером": "кластер",
+    "кластера": "кластер",
+    "capitole": "capitol",
+    "capitolelor": "capitol",
+    "capitolele": "capitol",
+    "chapters": "chapter",
+    "primul": "prim",
+    "primului": "prim",
+    "first": "first",
+    "первый": "перв",
+    "externe": "extern",
+    "external": "extern",
+    "exterieures": "exterieur",
+    "exterieure": "exterieur",
+    "внешние": "внеш",
+    "внешней": "внеш",
+    "внешних": "внеш",
+    "внешнюю": "внеш",
+    "aderarii": "aderare",
+    "accession": "accession",
+    "adhesion": "adhesion",
+    "вступление": "вступ",
+    "вступления": "вступ",
+}
 
 LOCALE_SETTINGS = {
     "mo": {"hl": "ro-MD", "gl": "MD", "ceid": "MD:ro", "queries": [
@@ -666,6 +742,14 @@ def contains_any(value: str, terms: tuple[str, ...]) -> bool:
     )
 
 
+def title_terms(value: str) -> set[str]:
+    return {
+        TITLE_TERM_ALIASES.get(token, token)
+        for token in normalize(value).split()
+        if len(token) >= 3 and token not in TITLE_CONTEXT_TERMS
+    }
+
+
 def relevant(title: str, summary: str) -> bool:
     haystack = normalize(f"{title} {summary}")
     # Use stems here because Romanian, French and Russian headlines inflect
@@ -717,10 +801,18 @@ def is_completed_fact(title: str, summary: str, source: str) -> bool:
 
 
 def too_similar(candidate: str, previous: list[str]) -> bool:
-    return any(
-        difflib.SequenceMatcher(None, candidate, existing).ratio() >= 0.86
-        for existing in previous
-    )
+    candidate_terms = title_terms(candidate)
+    for existing in previous:
+        existing_terms = title_terms(existing)
+        if candidate_terms and existing_terms:
+            shared = len(candidate_terms & existing_terms)
+            shorter = min(len(candidate_terms), len(existing_terms))
+            if shared / shorter > MAX_TITLE_SIMILARITY:
+                return True
+            continue
+        if difflib.SequenceMatcher(None, candidate, existing).ratio() > MAX_TITLE_SIMILARITY:
+            return True
+    return False
 
 
 def source_name(item: ET.Element, link: str) -> str:
@@ -736,7 +828,6 @@ def collect(locale: str) -> list[dict[str, str]]:
     now = datetime.now(timezone.utc)
     entries: list[dict[str, str | datetime]] = []
     seen: set[str] = set()
-    seen_titles: list[str] = []
 
     feed_urls = [google_news_url(query, settings) for query in settings["queries"]]
     roots: list[tuple[str, ET.Element]] = []
@@ -769,10 +860,12 @@ def collect(locale: str) -> list[dict[str, str]]:
             if not relevant(title, summary) or not is_completed_fact(title, summary, source):
                 continue
             key = normalize(title)
-            if not key or key in seen or too_similar(key, seen_titles):
+            # Keep all exact-title candidates here. Fuzzy title filtering is
+            # intentionally applied only after sorting, when we choose the
+            # final cross-source list for publication.
+            if not key or key in seen:
                 continue
             seen.add(key)
-            seen_titles.append(key)
 
             entries.append({
                 "date": published.strftime("%Y-%m-%d"),

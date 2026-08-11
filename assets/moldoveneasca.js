@@ -108,7 +108,7 @@
   const centuryLabel = (record) => {
     const year = parseYearStart(record);
     if (!year) return '—';
-    return `secolul ${toRoman(Math.floor((year - 1) / 100) + 1)}`;
+    return toRoman(Math.floor((year - 1) / 100) + 1);
   };
 
   const extractCellText = (cell) => {
@@ -118,8 +118,8 @@
     return clone.textContent.replace(/\s+/g, ' ').trim();
   };
 
-  const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav(?:icae|ica|icus|icum|orum|isch\p{L}*)|moldauisch\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
-  const languageLabelPattern = /(?:\blimba\b|\blingua\b|\blanguage\b|\bsprache\b|язык|młëtwa)/iu;
+  const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav(?:icae|ica|icus|icum|orum|isch\p{L}*)|moldau\p{L}*|moldauisch\p{L}*|moldov\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
+  const languageLabelPattern = /(?:\blimb\p{L}*\b|\blingua\p{L}*\b|\blanguage\p{L}*\b|\bsprache\p{L}*\b|sprach\p{L}*|\blangue\p{L}*\b|\blengua\p{L}*\b|\bjęzyk\p{L}*\b|\bjezyk\p{L}*\b|\bjazyk\p{L}*\b|\byazyk\p{L}*\b|\bjezik\p{L}*\b|\bidioma\p{L}*\b|\bidiom\p{L}*\b|\bvaloda\p{L}*\b|\bkalba\p{L}*\b|\bkeel\p{L}*\b|\bspråk\p{L}*\b|язык\p{L}*|мова\p{L}*|моў\p{L}*|młëtwa|gjuha|tung\p{L}*)/iu;
 
   const cleanImportedText = (value) => String(value || '')
     .replace(/^\s*\*\?\s*/, '')
@@ -142,6 +142,7 @@
     if (narrated) candidates.unshift(narrated[1]);
     const labelled = text.match(/Citatul:\s*(.{5,320}?)(?:,\s*Contextul:|$)/i);
     if (labelled) candidates.push(labelled[1]);
+    if (text.length <= 320 && languageNamePattern.test(text) && languageLabelPattern.test(text)) candidates.push(text);
     const cleanedCandidates = candidates.map(cleanQuote).filter(Boolean);
     const explicitlyNamed = cleanedCandidates.filter((candidate) => {
       const termIndex = candidate.search(languageNamePattern);
@@ -149,8 +150,7 @@
       return termIndex >= 0 && labelIndex >= 0 && Math.abs(termIndex - labelIndex) <= 80;
     });
     if (explicitlyNamed.length) return explicitlyNamed.sort((a, b) => b.length - a.length)[0];
-    const named = cleanedCandidates.filter((candidate) => languageNamePattern.test(candidate));
-    return named.length ? named.sort((a, b) => b.length - a.length)[0] : null;
+    return null;
   };
 
   const extractAuthor = (value) => {
@@ -418,7 +418,14 @@
     return cell;
   };
 
-  const quoteIndicatorPattern = /(limba\s+moldoveneasc\p{L}*|lingua\s+moldav\p{L}*|moldoveneasc\p{L}*|moldav\p{L}*|moldeuška|молдов\p{L}*)/giu;
+  const quoteIndicatorPattern = /(moldoveneas\p{L}*|moldovineas\p{L}*|moldovenesc\p{L}*|moldav\p{L}*|moldau\p{L}*|moldovin\p{L}*|moldeuška|молдавск\p{L}*|молдовен\p{L}*)/giu;
+
+  const hasLanguageAndGlotonym = (value) => {
+    const text = String(value || '');
+    const languageIndex = text.search(languageLabelPattern);
+    const nameIndex = text.search(languageNamePattern);
+    return languageIndex >= 0 && nameIndex >= 0 && Math.abs(languageIndex - nameIndex) <= 80;
+  };
 
   const appendQuoteText = (parent, value) => {
     const text = String(value || '');
@@ -487,7 +494,7 @@
           link.href = url;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
-          link.textContent = urls.length === 1 ? 'sursa' : String(index + 1);
+          link.textContent = `[${index + 1}]`;
           link.title = url;
           content.appendChild(link);
           if (index < urls.length - 1) content.appendChild(document.createTextNode(', '));
@@ -622,7 +629,7 @@
         link.href = url;
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
-        link.textContent = urls.length === 1 ? 'sursa' : String(index + 1);
+        link.textContent = `[${index + 1}]`;
         link.title = url;
         link.className = 'moldoveneasca-table__source-link';
         sourceLinks.appendChild(link);
@@ -971,6 +978,10 @@
     const payload = formPayload();
     if (!payload.year_label || !payload.title) {
       setStatus('Completează anul și denumirea lucrării.', 'error');
+      return;
+    }
+    if (!payload.quote || !hasLanguageAndGlotonym(payload.quote)) {
+      setStatus('Citatul trebuie să conțină explicit un termen pentru limbă și glotonimul moldav/moldovenesc.', 'error');
       return;
     }
 

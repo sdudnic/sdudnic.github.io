@@ -1,8 +1,8 @@
 name: Update Europa news feed
 
 on:
-  schedule:
-    - cron: "17 */2 * * *"
+  # Refresh the feed locally before publishing, or launch this workflow
+  # manually when an online refresh is actually needed.
   workflow_dispatch:
 
 permissions:

@@ -2471,12 +2471,55 @@ body.moldoveneasca-page * {
   max-width: none;
 }
 
+.moldoveneasca-page .post-title {
+  display: none;
+}
+
 .moldoveneasca-catalog__title {
   margin: 0 0 0.35rem;
   font-size: inherit;
   font-weight: 700;
   line-height: inherit;
 }
+
+.moldoveneasca-ethnicity {
+  margin-top: 1rem;
+}
+
+.moldoveneasca-ethnicity__title {
+  margin: 0 0 0.35rem;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.moldoveneasca-ethnicity__intro {
+  margin: 0 0 0.45rem;
+}
+
+.post-content .moldoveneasca-table--ethnicity {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.moldoveneasca-table--ethnicity th:nth-child(1),
+.moldoveneasca-table--ethnicity td:nth-child(1) { width: 11%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(2),
+.moldoveneasca-table--ethnicity td:nth-child(2) { width: 9%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(3),
+.moldoveneasca-table--ethnicity td:nth-child(3) { width: 25%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(4),
+.moldoveneasca-table--ethnicity td:nth-child(4) { width: 35%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(5),
+.moldoveneasca-table--ethnicity td:nth-child(5) { width: 14%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(6),
+.moldoveneasca-table--ethnicity td:nth-child(6) { width: 6%; }
 
 .moldoveneasca-table__detail-link {
   font-weight: inherit;

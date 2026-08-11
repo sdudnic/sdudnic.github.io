@@ -322,18 +322,109 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
 2) când vorbim de limba, nu subânțelegem dialecte, sau graiuri. Este vorba exclusiv de denumirea limbii - treptei superioara a clasificării lingvistice.
 2') vom nota ca în dependenta de punctul de vedere, clasificarea *limbii* moldovenești drept *grai* al limbii valahe(române) nu are mai mult sens sau argumentabilitate decât clasificarea dialectului *valah* al limbii *moldovenești*. Totul depinde de atitudinea fata de referințele istorice luate ca baza la asa reflecții, și angajarea politica a experților ce discuta aceste chestiuni.
 
-## Etnie, natiune, popor: moldoveni, moldovean
-Locuitorii obişnuiţi ai Moldovei şi Valahiei, până la unificare acestora, aveau o coştiinţă identitară separată, după cum atestă contele F. v. Karaczay în lucrarea sa etnografică Die Moldau, Wallachey, Bessarabien und Bukowina. Neueste Darstellung dieser Länder, nebst Kupfern, verschiedene Trachten derselben vorstellend (Wien 1818): "Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni», precum cei din Valahia, susţinând că n-ar fi urmaşii romanilor şi că ar fi locuit provincia înainte de venirea acestora".
-
-* 1352—1564; Молдавско-польская летопись; "Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь" [(sursa)](http://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952)
-* 1765; "Observations historiques et géographiques, sur les peuples barbares...", Charles de Peyssonnel ([Langue] Moldave, Nation Moldave, Histoire de Moldavie) [sursa](https://books.google.com/books?id=7LpNbuX0mLIC&lpg=PA22&ots=Owzh40YUFT&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&pg=PA22#v=snippet&q=nation%20moldave&f=false)
-* 1818; F. v. Karaczay în lucrarea sa etnografică Die Moldau, Wallachey, Bessarabien und Bukowina. Neueste Darstellung dieser Länder, nebst Kupfern, verschiedene Trachten derselben vorstellend (Wien 1818): "Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni», precum cei din Valahia, susţinând că n-ar fi urmaşii romanilor şi că ar fi locuit provincia înainte de venirea acestora";
-* 1841; T. Codrescu, Mică gramatică franţeză, pentru învăţătura tinerimei moldo-române. Dupre Noël şi Şapsal. Publicată... de T. Codrescu. Partea I. Ieşi, Institutul Albinei
-* Население Бессарабской губернии по переписи 1897 г. [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3&__xts__%5B0%5D=68.ARABAVG_gMQ0mBiWXr4U81-X7cP3sR24BeH8o3n2FAZCX3uKtWpTVpaO6S_2r7qrpkCYaoRYbwSHfAFQktvMYor7uxETr5lWmDhj9rLFp_aacWTB0VvLbWrofsg15gwvC6Bf_lmthqGSReByHgVQOEqHXZLJx0cU2v9g6lVXlbNvOrBt-FZ3PotQp3vs-sLrknyCh9DO7F5TAlHQGLn7bU6m-kutWJ_nXdWapZRMHrTtz_S6_XR-tpYA2jTv8WTILUV6B0wpaPwCSWq7EqceL5iHUCtPNH9rwHZxXqfMP0aiuYoawtP9iwpOetKQKKuEk34jkgKMLZIfeY4Q2dcZFUQ&__tn__=-R)
-* 1845; Gh. Asachi, Lupta moldovenilor cu cavalerii crucieri la anul 1423. Iași, 1845
-* 1898; Al. Gîdei, Studiu asupra cronicarilor moldoveni din punct de vedere al limbei, metodei și cugetărei... Cu o prefață de V. A. Urechia. București
-* 1901; Principele Dimitrie Cantemir, Hronicul vechimei romano-moldo-vlahilor, publicat sub auspiciile Academiei Romîne... de Gr. C. Tocilescu. (Cu un portret și două facsimile), București, Inst. de arte grafice Carol Gobl, 1901.
-* 1908; I. Bogdan, Documentul rîzenilor din 1484 și organizarea armatei moldovene în sec. XV. București, Carol Gobl, 1908. (Extras din Analele Academiei Române. Seria Il-a. Tom. XXX. Memoriile Secțiunii istorice)
-* 1925; N. A. Bogdan, Din trecutul comerțului moldovenesc și mai ales al celui ieșan. Productele solului, porturi, târguri și iarmaroace... documente, memorii și note culese și comentate de... Tipărite din inițiativa și cu o prefață a d-lui N. V. Ștefăniu... cu 89 ilustrații. Iași, Institutul modem de arte grafice N. V. Ștefăniu & D. Staierman, [1925]
-* 1926; Gh. Cardaș, Cântece poporane moldovenești. Editura Librăriei diec., Arad, 1926. (Cu un glosar). (Biblioteca Semănătorul, nr.-le 157-159)
-* ... [in completare]
+<section class="moldoveneasca-ethnicity" aria-labelledby="ethnicity-title">
+  <h2 id="ethnicity-title" class="moldoveneasca-ethnicity__title">Etnie, națiune, popor: moldoveni, moldovean</h2>
+  <p class="moldoveneasca-ethnicity__intro">Catalogul reunește mențiuni istorice despre moldoveni și denumiri etnice asociate Moldovei.</p>
+  <table class="moldoveneasca-table moldoveneasca-table--ethnicity" aria-describedby="ethnicity-title">
+    <thead>
+      <tr>
+        <th scope="col">An</th>
+        <th scope="col">Secol</th>
+        <th scope="col">Denumirea</th>
+        <th scope="col">Citat</th>
+        <th scope="col">Autor</th>
+        <th scope="col">Sursa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1352–1564">1352–1564</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XIV–XVI">XIV–XVI</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Молдавско-польская летопись">Молдавско-польская летопись</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь">„Сигизмунд-Август… молдавским… из молдавского рода… молдаване”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Necunoscut">necunoscut</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="http://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1765">1765</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XVIII">XVIII</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Observations historiques et géographiques, sur les peuples barbares…">Observations historiques et géographiques…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Langue Moldave, Nation Moldave, Histoire de Moldavie">„Langue Moldave, Nation Moldave, Histoire de Moldavie”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Charles de Peyssonnel">Charles de Peyssonnel</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://books.google.com/books?id=7LpNbuX0mLIC&amp;lpg=PA22&amp;ots=Owzh40YUFT&amp;dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&amp;pg=PA22#v=snippet&amp;q=nation%20moldave&amp;f=false" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1818">1818</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Die Moldau, Wallachey, Bessarabien und Bukowina. Neueste Darstellung dieser Länder…">Die Moldau, Wallachey, Bessarabien und Bukowina…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni», precum cei din Valahia, susţinând că n-ar fi urmaşii romanilor şi că ar fi locuit provincia înainte de venirea acestora">„Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni»…”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="F. v. Karaczay">F. v. Karaczay</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1841">1841</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Mică gramatică franţeză, pentru învăţătura tinerimei moldo-române">Mică gramatică franţeză…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="tinerimei moldo-române">„tinerimei moldo-române”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="T. Codrescu">T. Codrescu</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1897">1897</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии по переписи 1897 г.">Население Бессарабской губернии…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии">„Население Бессарабской губернии”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Necunoscut">necunoscut</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1845">1845</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Lupta moldovenilor cu cavalerii crucieri la anul 1423">Lupta moldovenilor cu cavalerii crucieri…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="moldovenilor">„moldovenilor”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Gh. Asachi">Gh. Asachi</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1898">1898</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Studiu asupra cronicarilor moldoveni din punct de vedere al limbei, metodei și cugetărei…">Studiu asupra cronicarilor moldoveni…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="cronicarilor moldoveni">„cronicarilor moldoveni”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Al. Gîdei">Al. Gîdei</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1901">1901</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Hronicul vechimei romano-moldo-vlahilor">Hronicul vechimei romano-moldo-vlahilor</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="romano-moldo-vlahilor">„romano-moldo-vlahilor”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Dimitrie Cantemir; ed. Gr. C. Tocilescu">Dimitrie Cantemir; ed. Gr. C. Tocilescu</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1908">1908</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Documentul rîzenilor din 1484 și organizarea armatei moldovene în sec. XV">Documentul rîzenilor din 1484…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="armatei moldovene">„armatei moldovene”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="I. Bogdan">I. Bogdan</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1925">1925</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Din trecutul comerțului moldovenesc și mai ales al celui ieșan">Din trecutul comerțului moldovenesc…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="comerțului moldovenesc">„comerțului moldovenesc”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="N. A. Bogdan">N. A. Bogdan</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1926">1926</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">Cântece poporane moldovenești</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">„Cântece poporane moldovenești”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Gh. Cardaș">Gh. Cardaș</span></td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

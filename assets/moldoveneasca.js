@@ -518,23 +518,30 @@
   };
 
   const recordFromStaticRow = (row) => {
+    const structured = row.cells.length >= 7;
     const yearLabel = row.cells[0]?.textContent.trim() || '';
-    const sourceText = extractCellText(row.cells[1]);
-    const urls = [...(row.cells[1]?.querySelectorAll('a[href]') || [])].map((link) => link.href);
-    const title = extractTitle(sourceText) || sourceText;
+    const sourceCell = structured ? row.cells[6] : row.cells[1];
+    const sourceText = extractCellText(structured ? row : row.cells[1]);
+    const urls = [...(sourceCell?.querySelectorAll('a[href]') || [])].map((link) => link.href);
+    const title = structured
+      ? extractCellText(row.cells[2])
+      : (extractTitle(sourceText) || sourceText);
+    const quote = structured
+      ? cleanQuote(extractCellText(row.cells[3]))
+      : extractQuote(sourceText);
     return {
       year_label: yearLabel,
       year_start: parseYears(yearLabel)[0] || null,
       year_end: parseYears(yearLabel)[1] || parseYears(yearLabel)[0] || null,
       title,
-      quote: extractQuote(sourceText),
-      language: null,
-      author: extractAuthor(sourceText),
+      quote: quote || null,
+      language: structured ? (extractCellText(row.cells[4]) || null) : null,
+      author: structured ? (extractCellText(row.cells[5]) || 'necunoscut') : extractAuthor(sourceText),
       source_url: urls[0] || null,
       source_urls: urls,
-      source_type: 'Import din tabelul existent',
+      source_type: structured ? 'Tabel static structurat' : 'Import din tabelul existent',
       location: null,
-      description: sourceText,
+      description: structured ? null : sourceText,
       image_url: null,
       status: 'published',
       owner_id: null
@@ -542,7 +549,8 @@
   };
 
   const recordFromEthnicityStaticRow = (row) => {
-    const sourceCell = row.cells[5];
+    const structured = row.cells.length >= 7;
+    const sourceCell = row.cells[structured ? 6 : 5];
     const sourceUrlsFromRow = [...(sourceCell?.querySelectorAll('a[href]') || [])].map((link) => link.href);
     return {
       year_label: row.cells[0]?.textContent.trim() || '',
@@ -550,13 +558,13 @@
       year_end: parseYears(row.cells[0]?.textContent)[1] || parseYears(row.cells[0]?.textContent)[0] || null,
       title: extractCellText(row.cells[2]),
       quote: extractCellText(row.cells[3]),
-      language: null,
-      author: extractCellText(row.cells[4]),
+      language: structured ? (extractCellText(row.cells[4]) || null) : null,
+      author: extractCellText(row.cells[structured ? 5 : 4]),
       source_url: sourceUrlsFromRow[0] || null,
       source_urls: sourceUrlsFromRow,
-      source_type: 'Import din tabelul existent',
+      source_type: structured ? 'Tabel static structurat' : 'Import din tabelul existent',
       location: null,
-      description: [
+      description: structured ? null : [
         extractCellText(row.cells[2]),
         extractCellText(row.cells[3])
       ].filter(Boolean).join(' — '),
@@ -939,7 +947,7 @@
     configureIconButton(selectionClearButton, 'Deselectează referințele selectate', 'cancel');
   };
 
-  const createCatalogRow = (record) => {
+  const createCatalogRow = (record, options = {}) => {
     const fields = displayFields(record);
     const row = document.createElement('tr');
     if (record.id) {
@@ -1044,7 +1052,7 @@
       actionsCell.appendChild(actions);
     }
 
-    if (record.status && record.status !== 'published') {
+    if (options.showStatusBadge !== false && record.status && record.status !== 'published') {
       const badge = document.createElement('span');
       badge.className = 'moldoveneasca-status';
       badge.textContent = record.status === 'pending' ? 'În verificare' : 'Neverificată';
@@ -1358,7 +1366,7 @@
     unverifiedRecords
       .slice()
       .sort((a, b) => (parseYearStart(a) || Number.POSITIVE_INFINITY) - (parseYearStart(b) || Number.POSITIVE_INFINITY))
-      .forEach((record) => unverifiedTbody.appendChild(createCatalogRow(record)));
+      .forEach((record) => unverifiedTbody.appendChild(createCatalogRow(record, { showStatusBadge: false })));
     updateSelectionUi();
   };
 
@@ -1490,7 +1498,8 @@
       payload.source_type,
       payload.description
     ].filter(Boolean).join(' '));
-    if (!payload.quote || !quoteHasGlotonym || (!hasLanguageAndGlotonym(payload.quote) && !workHasLanguageEvidence)) {
+    const ethnicityOnly = payload.catalog_type === 'ethnicity';
+    if (!payload.quote || !quoteHasGlotonym || (!ethnicityOnly && !hasLanguageAndGlotonym(payload.quote) && !workHasLanguageEvidence)) {
       setStatus('Citatul trebuie să conțină glotonimul; pentru grafii vechi este suficient ca lucrarea sau comentariile să documenteze explicit denumirea limbii.', 'error');
       return;
     }

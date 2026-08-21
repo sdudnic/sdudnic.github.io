@@ -133,7 +133,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-9"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260822-3"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
@@ -178,7 +178,7 @@ permalink: /moldoveneasca/
 | 1750 | Moldaviae principatus delineante principe Demetrio Cantemirio, Jean-Baptiste Bourguignon d’Anville, [sursa 1](https://www.facebook.com/groups/greatmoldova/permalink/674118456703979/) |
 | 1762 | "Dictionarului grecesc-slavon-moldovenesc-latin" al lui Nicolae Milescu-Spatarul |
 | 1764 | "Histoire universelle depuis le commencement du Monde, jusqu'à present", à Amsterdam et a Leipzig, [sursa](https://gallica.bnf.fr/ark:/12148/bpt6k9779807w/f541.image) |
-| 1765 | "Observations historiques et géographiques, sur les peuples barbares...", Charles de Peyssonnel ([Langue] Moldave, Nation Moldave, Histoire de Moldavie) [sursa](https://books.google.com/books?id=7LpNbuX0mLIC&lpg=PA22&ots=Owzh40YUFT&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&pg=PA22#v=snippet&q=nation%20moldave&f=false) |
+| 1765 | XVIII | Observations historiques et géographiques, sur les peuples barbares qui ont habité les bords du Danube & du Pont-Euxin | La Langue Latine, dont la Valaque & la Moldave font des idiomes | fr | Charles de Peyssonnel | [sursa](https://books.google.fr/books?id=7LpNbuX0mLIC&lpg=PA22&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&hl=fr&pg=PR41#v=snippet&q=moldave&f=false) |
 | 1766 | Domnitorul Moldovei Grigore Ghica semnează o gramotă cu privire la şcoli: Chişinăul era inclus în lista celor 23 de localităţi, în care urma să se deschidă şcoli, în care să fie «cîte un dacăl de limbă moldovenească» (A.Eşanu. Şcoala domnească la Chişinău… 1993). Господарь Молдавии Гр.Гика подписывает грамоту о школах. Кишинёв был включён в список 23 населённых пунктов, в которых должны были открываться школы, и в «каждой должен быть учитель молдавского языка» (А.Ешану. Шкоала домняскэ ла Кишинэу… 1993 г.). |
 | 1769 | Despre citirea evalgheliei in limba moldoveneasca [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220206465478/?type=3), [sursa 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219729798859/?type=3), [sursa 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219716465527/?type=3), [sursa 4](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219703132195/?type=3) |
 | 1770 | "Gramatica mold[ovenească] : a Parintelui Macarie" pregătită pentru tipar de preotul Macarie, cu cheltuiala vistiernicului Ioan Cantacuzino [Bibi. Acad. R.P.R., cota 102] |
@@ -390,10 +390,11 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1765">1765</span></td>
         <td><span class="moldoveneasca-table__truncate" title="XVIII">XVIII</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Observations historiques et géographiques, sur les peuples barbares…">Observations historiques et géographiques…</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Langue Moldave, Nation Moldave, Histoire de Moldavie">„Langue Moldave, Nation Moldave, Histoire de Moldavie”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Observations historiques et géographiques, sur les peuples barbares qui ont habité les bords du Danube &amp; du Pont-Euxin">Observations historiques et géographiques…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Nation Moldave">„Nation Moldave”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="fr">fr</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Charles de Peyssonnel">Charles de Peyssonnel</span></td>
-        <td><span class="moldoveneasca-table__source-links"><a href="https://books.google.com/books?id=7LpNbuX0mLIC&amp;lpg=PA22&amp;ots=Owzh40YUFT&amp;dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&amp;pg=PA22#v=snippet&amp;q=nation%20moldave&amp;f=false" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://books.google.fr/books?id=7LpNbuX0mLIC&amp;lpg=PA22&amp;dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&amp;hl=fr&amp;pg=PR41#v=snippet&amp;q=moldave&amp;f=false" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1818">1818</span></td>

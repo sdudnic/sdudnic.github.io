@@ -75,9 +75,23 @@ permalink: /moldoveneasca/
           <span>Legătura către sursă</span>
           <input type="url" name="source_url" placeholder="https://…">
         </label>
-        <label class="moldoveneasca-field">
+        <label class="moldoveneasca-field moldoveneasca-field--full moldoveneasca-image-field">
           <span>Imagine scanată</span>
-          <input type="text" name="image_url" placeholder="URL direct sau imagine codificată" autocomplete="off">
+          <span class="moldoveneasca-image-input">
+            <input type="text" name="image_url" data-image-input placeholder="URL direct sau lipește o captură cu Ctrl+V" autocomplete="off" aria-describedby="image-help">
+            <button type="button" class="moldoveneasca-icon-button" data-image-pick aria-label="Încarcă imaginea paginii citate" title="Încarcă imaginea paginii citate"><span aria-hidden="true"></span></button>
+            <input class="moldoveneasca-image-file" type="file" data-image-file accept="image/*" tabindex="-1" aria-hidden="true">
+          </span>
+          <small id="image-help" class="moldoveneasca-field-hint">Lipește cu Ctrl+V captura paginii unde apare citatul; pentru un PDF păstrează doar pagina citată și, ideal, subliniază cu roșu glotonimul.</small>
+          <span class="moldoveneasca-image-preview" data-image-preview hidden></span>
+          <span class="moldoveneasca-image-markup" data-image-markup hidden>
+            <small class="moldoveneasca-field-hint" data-image-markup-status>Trasează cu mouse-ul sau degetul o linie roșie sub glotonim.</small>
+            <canvas class="moldoveneasca-image-canvas" data-image-canvas aria-label="Captura paginii cu marcajul roșu"></canvas>
+            <span class="moldoveneasca-image-tools">
+              <button type="button" class="moldoveneasca-icon-button" data-image-undo aria-label="Anulează ultima subliniere" title="Anulează ultima subliniere"><span aria-hidden="true">↶</span></button>
+              <button type="button" class="moldoveneasca-icon-button" data-image-clear aria-label="Elimină sublinierile adăugate" title="Elimină sublinierile adăugate"><span aria-hidden="true">×</span></button>
+            </span>
+          </span>
         </label>
         <label class="moldoveneasca-field" data-admin-only hidden>
           <span>Statut</span>
@@ -111,7 +125,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-2"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-3"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

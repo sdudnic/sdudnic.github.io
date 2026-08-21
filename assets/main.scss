@@ -1349,6 +1349,92 @@ a:hover {
   resize: vertical;
 }
 
+.moldoveneasca-image-field {
+  grid-column: 1 / -1;
+}
+
+.moldoveneasca-image-input {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.moldoveneasca-image-input input {
+  min-width: 0;
+}
+
+.moldoveneasca-image-input .moldoveneasca-icon-button {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0;
+}
+
+.moldoveneasca-image-input .moldoveneasca-icon-button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.moldoveneasca-image-file {
+  display: none;
+}
+
+.moldoveneasca-field-hint {
+  display: block;
+  margin: 0;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 400;
+}
+
+.moldoveneasca-image-preview {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.35rem;
+}
+
+.moldoveneasca-image-preview img {
+  display: block;
+  max-width: min(100%, 44rem);
+  max-height: 28rem;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid var(--line);
+}
+
+.moldoveneasca-image-markup {
+  display: grid;
+  gap: 0.35rem;
+  max-width: min(100%, 44rem);
+  margin-top: 0.35rem;
+}
+
+.moldoveneasca-image-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 28rem;
+  object-fit: contain;
+  object-position: top left;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.moldoveneasca-image-tools {
+  display: flex;
+  gap: 0.35rem;
+  justify-content: flex-end;
+}
+
+.moldoveneasca-image-tools .moldoveneasca-icon-button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+}
+
 .moldoveneasca-check {
   display: inline-flex;
   align-items: center;

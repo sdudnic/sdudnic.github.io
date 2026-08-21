@@ -19,6 +19,17 @@
   const openFormButton = root.querySelector('[data-open-form]');
   const editorPanel = root.querySelector('[data-reference-editor]');
   const editorForm = root.querySelector('[data-reference-form]');
+  const imageInput = editorForm?.elements.namedItem('image_url');
+  const imagePickButton = root.querySelector('[data-image-pick]');
+  const imageFileInput = root.querySelector('[data-image-file]');
+  const imagePreview = root.querySelector('[data-image-preview]');
+  const imageHint = root.querySelector('#image-help');
+  const imageMarkup = root.querySelector('[data-image-markup]');
+  const imageMarkupStatus = root.querySelector('[data-image-markup-status]');
+  const imageCanvas = root.querySelector('[data-image-canvas]');
+  const imageUndoButton = root.querySelector('[data-image-undo]');
+  const imageClearButton = root.querySelector('[data-image-clear]');
+  const yearInput = editorForm?.elements.namedItem('year_label');
   const formTitle = root.querySelector('[data-form-title]');
   const formStatus = root.querySelector('[data-form-status]');
   const cancelEditButton = root.querySelector('[data-cancel-edit]');
@@ -289,6 +300,209 @@
       return url.protocol === 'https:' ? url.href : '';
     } catch {
       return '';
+    }
+  };
+
+  const imageMaxEdge = 1600;
+  const imageJpegQuality = 0.82;
+  let imageSourceDataUrl = '';
+  let imageHasExternalRed = false;
+  let imageStrokes = [];
+  let activeImageStroke = null;
+
+  const detectRedAnnotations = (context, width, height) => {
+    const pixels = context.getImageData(0, 0, width, height).data;
+    let redPixels = 0;
+    for (let index = 0; index < pixels.length; index += 4) {
+      const red = pixels[index];
+      const green = pixels[index + 1];
+      const blue = pixels[index + 2];
+      if (red >= 150 && red > green * 1.45 && red > blue * 1.45 && green <= 140) redPixels += 1;
+    }
+    return redPixels >= Math.max(24, width * height * 0.00015);
+  };
+
+  const readImageFile = (file) => new Promise((resolve, reject) => {
+    if (!file || !String(file.type || '').startsWith('image/')) {
+      reject(new Error('Alege o imagine.'));
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result || ''));
+    reader.onerror = () => reject(new Error('Imaginea nu a putut fi citită.'));
+    reader.readAsDataURL(file);
+  });
+
+  const resizeImageData = (dataUrl) => new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => {
+      const longestEdge = Math.max(image.naturalWidth || image.width, image.naturalHeight || image.height);
+      const scale = longestEdge > imageMaxEdge ? imageMaxEdge / longestEdge : 1;
+      const width = Math.max(1, Math.round((image.naturalWidth || image.width) * scale));
+      const height = Math.max(1, Math.round((image.naturalHeight || image.height) * scale));
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const context = canvas.getContext('2d', { alpha: false });
+      if (!context) {
+        reject(new Error('Browserul nu poate pregăti imaginea.'));
+        return;
+      }
+      context.fillStyle = '#ffffff';
+      context.fillRect(0, 0, width, height);
+      context.drawImage(image, 0, 0, width, height);
+      resolve({
+        dataUrl: canvas.toDataURL('image/jpeg', imageJpegQuality),
+        width,
+        height,
+        originalWidth: image.naturalWidth || image.width,
+        originalHeight: image.naturalHeight || image.height,
+        hasRedAnnotations: detectRedAnnotations(context, width, height)
+      });
+    };
+    image.onerror = () => reject(new Error('Imaginea nu a putut fi pregătită.'));
+    image.src = dataUrl;
+  });
+
+  const loadImageData = (dataUrl) => new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error('Imaginea nu a putut fi pregătită.'));
+    image.src = dataUrl;
+  });
+
+  const drawRedStroke = (context, points, width) => {
+    if (!points?.length) return;
+    context.save();
+    context.strokeStyle = '#c62828';
+    context.fillStyle = '#c62828';
+    context.lineWidth = Math.max(3, Math.round(width / 250));
+    context.lineCap = 'round';
+    context.lineJoin = 'round';
+    if (points.length === 1) {
+      context.beginPath();
+      context.arc(points[0].x, points[0].y, context.lineWidth / 2, 0, Math.PI * 2);
+      context.fill();
+    } else {
+      context.beginPath();
+      context.moveTo(points[0].x, points[0].y);
+      points.slice(1).forEach((point) => context.lineTo(point.x, point.y));
+      context.stroke();
+    }
+    context.restore();
+  };
+
+  const drawRedStrokeSegment = (context, from, to, width) => {
+    if (!from || !to) return;
+    context.save();
+    context.strokeStyle = '#c62828';
+    context.lineWidth = Math.max(3, Math.round(width / 250));
+    context.lineCap = 'round';
+    context.lineJoin = 'round';
+    context.beginPath();
+    context.moveTo(from.x, from.y);
+    context.lineTo(to.x, to.y);
+    context.stroke();
+    context.restore();
+  };
+
+  const paintImageMarkup = async () => {
+    if (!imageCanvas || !imageSourceDataUrl) return;
+    const image = await loadImageData(imageSourceDataUrl);
+    const width = image.naturalWidth || image.width;
+    const height = image.naturalHeight || image.height;
+    imageCanvas.width = width;
+    imageCanvas.height = height;
+    const context = imageCanvas.getContext('2d', { alpha: false });
+    if (!context) return;
+    context.fillStyle = '#ffffff';
+    context.fillRect(0, 0, width, height);
+    context.drawImage(image, 0, 0, width, height);
+
+    if (!imageHasExternalRed) {
+      const year = String(yearInput?.value || '').trim();
+      const yearSize = Math.max(24, Math.round(width * 0.035));
+      if (year) {
+        context.font = `700 ${yearSize}px sans-serif`;
+        const yearWidth = context.measureText(year).width;
+        context.fillStyle = 'rgba(255, 255, 255, 0.76)';
+        context.fillRect(12, 12, yearWidth + 20, yearSize + 18);
+        context.fillStyle = '#c62828';
+        context.fillText(year, 22, yearSize + 18);
+      }
+      const watermarkSize = Math.max(12, Math.round(width * 0.012));
+      const watermark = 'dudnic.com/moldoveneasca';
+      context.font = `400 ${watermarkSize}px sans-serif`;
+      const watermarkWidth = context.measureText(watermark).width;
+      context.fillStyle = 'rgba(255, 255, 255, 0.68)';
+      context.fillRect(width - watermarkWidth - 18, height - watermarkSize - 14, watermarkWidth + 12, watermarkSize + 8);
+      context.fillStyle = 'rgba(70, 70, 70, 0.72)';
+      context.fillText(watermark, width - watermarkWidth - 12, height - 10);
+      imageStrokes.forEach((stroke) => drawRedStroke(context, stroke, width));
+    }
+
+    if (imageMarkupStatus) {
+      imageMarkupStatus.textContent = imageHasExternalRed
+        ? 'Scanul are deja adnotări roșii; îl păstrăm exact așa și nu adăugăm marcaje dudnic.com.'
+        : 'Trasează cu mouse-ul sau degetul o linie roșie sub glotonim; anul și marca discretă dudnic.com se adaugă automat.';
+    }
+    if (imageUndoButton) imageUndoButton.hidden = imageHasExternalRed;
+    if (imageClearButton) imageClearButton.hidden = imageHasExternalRed;
+    imageInput.value = imageCanvas.toDataURL('image/jpeg', 0.88);
+    renderImagePreview();
+  };
+
+  const resetImageMarkup = () => {
+    imageSourceDataUrl = '';
+    imageHasExternalRed = false;
+    imageStrokes = [];
+    activeImageStroke = null;
+    if (imageMarkup) imageMarkup.hidden = true;
+    if (imageCanvas) {
+      const context = imageCanvas.getContext('2d');
+      context?.clearRect(0, 0, imageCanvas.width, imageCanvas.height);
+    }
+  };
+
+  const renderImagePreview = () => {
+    if (!imagePreview || !imageInput) return;
+    const value = String(imageInput.value || '').trim();
+    const url = imageUrl({ image_url: value });
+    imagePreview.replaceChildren();
+    if (!url) {
+      imagePreview.hidden = true;
+      return;
+    }
+    const preview = document.createElement('img');
+    preview.src = url;
+    preview.alt = 'Previzualizarea paginii cu citatul';
+    preview.loading = 'lazy';
+    imagePreview.appendChild(preview);
+    imagePreview.hidden = false;
+  };
+
+  const setImageFromFile = async (file) => {
+    if (!imageInput || !file) return;
+    try {
+      if (imageHint) imageHint.textContent = 'Se pregătește captura…';
+      const source = await readImageFile(file);
+      const prepared = await resizeImageData(source);
+      imageSourceDataUrl = prepared.dataUrl;
+      imageHasExternalRed = prepared.hasRedAnnotations;
+      imageStrokes = [];
+      if (imageMarkup) imageMarkup.hidden = false;
+      await paintImageMarkup();
+      if (imageHint) {
+        const resized = prepared.width !== prepared.originalWidth || prepared.height !== prepared.originalHeight;
+        const compacted = resized ? ' Imaginea mare a fost compactată automat.' : '';
+        imageHint.textContent = imageHasExternalRed
+          ? `Captură pregătită (${prepared.width}×${prepared.height}px). Au fost păstrate marcajele roșii existente; nu se adaugă altele.`
+          : `Captură pregătită (${prepared.width}×${prepared.height}px).${compacted}`;
+      }
+    } catch (error) {
+      if (imageHint) imageHint.textContent = error.message || 'Imaginea nu a putut fi pregătită.';
+    } finally {
+      if (imageFileInput) imageFileInput.value = '';
     }
   };
 
@@ -609,8 +823,10 @@
       last: 'M4 5l7 7-7 7M13 5l7 7-7 7',
       cancel: 'M6 6l12 12M18 6L6 18',
       save: 'M5 12l4 4L19 6',
+      undo: 'M9 14L4 9l5-5M4 9h10a6 6 0 0 1 6 6v1',
       login: 'M10 17l5-5-5-5M15 12H3M21 3v18',
       logout: 'M14 17l5-5-5-5M19 12H7M3 3v18',
+      image: 'M4 5h16v14H4zM7 15l3-3 2 2 2-2 3 3M8.5 9.5h.01',
       'sort-up': 'M7 14l5-5 5 5',
       'sort-down': 'M7 10l5 5 5-5'
     };
@@ -652,6 +868,9 @@
     configureIconButton(lastPageButton, 'Ultima pagină', 'last');
     configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
     configureIconButton(logoutButton, 'Ieșire din cont', 'logout');
+    configureIconButton(imagePickButton, 'Încarcă imaginea paginii citate', 'image');
+    configureIconButton(imageUndoButton, 'Anulează ultima subliniere', 'undo');
+    configureIconButton(imageClearButton, 'Elimină sublinierile adăugate', 'cancel');
   };
 
   const createCatalogRow = (record) => {
@@ -889,6 +1108,9 @@
   const closeEditor = () => {
     editingId = null;
     if (editorForm) editorForm.reset();
+    resetImageMarkup();
+    renderImagePreview();
+    if (imageHint) imageHint.textContent = 'Lipește cu Ctrl+V captura paginii unde apare citatul; pentru un PDF păstrează doar pagina citată și, ideal, subliniază cu roșu glotonimul.';
     if (formTitle) formTitle.textContent = 'Adaugă o referință';
     setStatus('');
     if (editorPanel) editorPanel.hidden = true;
@@ -905,6 +1127,7 @@
       setStatus('Contul nu are drepturi de editare.', 'error');
       return;
     }
+    resetImageMarkup();
     editingId = record?.id || null;
     const imported = record?.source_type === 'Import din tabelul existent';
     const fields = displayFields(record);
@@ -920,6 +1143,7 @@
     setField('location', record?.location);
     setField('source_url', record?.source_url || urls[0]);
     setField('image_url', record?.image_url);
+    renderImagePreview();
     setField('status', record?.status || 'pending');
     setStatus('');
     editorPanel.hidden = false;
@@ -1147,6 +1371,70 @@
   openFormButton?.addEventListener('click', () => openEditor());
   cancelEditButton?.addEventListener('click', closeEditor);
   closeDetailButton?.addEventListener('click', closeDetail);
+  imageInput?.addEventListener('input', renderImagePreview);
+  imageInput?.addEventListener('paste', (event) => {
+    const item = [...(event.clipboardData?.items || [])].find((entry) => entry.type.startsWith('image/'));
+    if (!item) return;
+    const file = item.getAsFile();
+    if (!file) return;
+    event.preventDefault();
+    setImageFromFile(file);
+  });
+  imagePickButton?.addEventListener('click', () => imageFileInput?.click());
+  imageFileInput?.addEventListener('change', () => setImageFromFile(imageFileInput.files?.[0]));
+  const imageCanvasPoint = (event) => {
+    if (!imageCanvas) return null;
+    const bounds = imageCanvas.getBoundingClientRect();
+    if (!bounds.width || !bounds.height) return null;
+    return {
+      x: (event.clientX - bounds.left) * (imageCanvas.width / bounds.width),
+      y: (event.clientY - bounds.top) * (imageCanvas.height / bounds.height)
+    };
+  };
+  imageCanvas?.addEventListener('pointerdown', (event) => {
+    if (imageHasExternalRed || !imageSourceDataUrl) return;
+    const point = imageCanvasPoint(event);
+    if (!point) return;
+    event.preventDefault();
+    activeImageStroke = [point];
+    imageStrokes.push(activeImageStroke);
+    const context = imageCanvas.getContext('2d');
+    if (context) drawRedStroke(context, activeImageStroke, imageCanvas.width);
+    imageCanvas.setPointerCapture?.(event.pointerId);
+  });
+  imageCanvas?.addEventListener('pointermove', (event) => {
+    if (!activeImageStroke) return;
+    const point = imageCanvasPoint(event);
+    const previous = activeImageStroke.at(-1);
+    if (!point || !previous) return;
+    activeImageStroke.push(point);
+    const context = imageCanvas.getContext('2d');
+    if (context) drawRedStrokeSegment(context, previous, point, imageCanvas.width);
+  });
+  const finishImageStroke = (event) => {
+    if (!activeImageStroke) return;
+    activeImageStroke = null;
+    imageCanvas?.releasePointerCapture?.(event.pointerId);
+    if (imageCanvas && imageInput) {
+      imageInput.value = imageCanvas.toDataURL('image/jpeg', 0.88);
+      renderImagePreview();
+    }
+  };
+  imageCanvas?.addEventListener('pointerup', finishImageStroke);
+  imageCanvas?.addEventListener('pointercancel', finishImageStroke);
+  imageUndoButton?.addEventListener('click', async () => {
+    if (imageHasExternalRed || !imageStrokes.length) return;
+    imageStrokes.pop();
+    await paintImageMarkup();
+  });
+  imageClearButton?.addEventListener('click', async () => {
+    if (imageHasExternalRed || !imageStrokes.length) return;
+    imageStrokes = [];
+    await paintImageMarkup();
+  });
+  yearInput?.addEventListener('input', () => {
+    if (!imageHasExternalRed && imageSourceDataUrl) paintImageMarkup();
+  });
   detailBackdrop?.addEventListener('click', closeDetail);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && detailPanel && !detailPanel.hidden) closeDetail();

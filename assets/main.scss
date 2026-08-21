@@ -2560,6 +2560,73 @@ body.moldoveneasca-page * {
   border: 0;
 }
 
+.moldoveneasca-grid-frame > .moldoveneasca-selection-toolbar {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.moldoveneasca-selection-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0.2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.moldoveneasca-selection-toolbar[hidden] {
+  display: none;
+}
+
+.moldoveneasca-selection-toolbar__select,
+.moldoveneasca-selection-toolbar__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.moldoveneasca-selection-toolbar input[type='checkbox'],
+.moldoveneasca-table__selection-cell input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: currentColor;
+}
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__selection-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__selection-cell {
+  width: 3% !important;
+  text-align: center;
+}
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__year-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__year { width: 8% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__century-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__century { width: 8% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__title-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__title { width: 18% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__quote-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__quote { width: 27% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__language-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__language { width: 10% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__author-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__author { width: 13% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__source-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__source { width: 8% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__actions-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__actions-cell { width: 8% !important; }
+
 .post-content .moldoveneasca-table {
   width: 100% !important;
   min-width: 0 !important;

@@ -45,6 +45,11 @@
   const pageStatus = document.querySelector('[data-page-status]');
   const currentPageValue = document.querySelector('[data-page-current]');
   const totalPagesValue = document.querySelector('[data-page-total]');
+  const selectionToolbar = document.querySelector('[data-selection-toolbar]');
+  const selectionCount = document.querySelector('[data-selection-count]');
+  const selectionAll = document.querySelector('[data-selection-all]');
+  const selectionDeleteButton = document.querySelector('[data-selection-delete]');
+  const selectionClearButton = document.querySelector('[data-selection-clear]');
   const unverifiedSection = document.querySelector('[data-unverified-section]');
   const unverifiedTable = document.querySelector('[data-unverified-table]');
   const unverifiedTbody = unverifiedTable?.querySelector('tbody');
@@ -64,6 +69,7 @@
     frame.className = 'moldoveneasca-grid-frame';
     table.parentElement.insertBefore(frame, table);
     frame.appendChild(table);
+    if (selectionToolbar) frame.appendChild(selectionToolbar);
     frame.appendChild(statusBar);
   };
 
@@ -84,6 +90,7 @@
   let lastDetailTrigger = null;
   let searchDebounceTimer = null;
   const searchDebounceMs = 220;
+  const selectedReferenceIds = new Set();
 
   const normalize = (value) => (value || '')
     .toLocaleLowerCase('ro-MD')
@@ -586,6 +593,7 @@
     if (!thead || !headRow) return;
     headRow.replaceChildren();
     const headings = [
+      ['selection', ''],
       ['year', 'An'],
       ['century', 'Secol'],
       ['title', 'Denumirea'],
@@ -598,7 +606,13 @@
     headings.forEach(([key, label]) => {
       const th = document.createElement('th');
       th.scope = 'col';
-      if (key === 'year') {
+      if (key === 'selection') {
+        th.className = 'moldoveneasca-table__selection-heading';
+        th.dataset.selectionHeading = 'true';
+        th.hidden = currentRole !== 'admin';
+        th.setAttribute('aria-label', 'Selectare');
+      } else if (key === 'year') {
+        th.className = 'moldoveneasca-table__year-heading';
         th.appendChild(document.createTextNode(label));
         sortButton = document.createElement('button');
         sortButton.type = 'button';
@@ -619,6 +633,7 @@
         th.className = 'moldoveneasca-table__actions-heading';
         th.setAttribute('aria-label', 'Acțiuni');
       } else {
+        th.className = `moldoveneasca-table__${key}-heading`;
         th.textContent = label;
       }
       headRow.appendChild(th);
@@ -630,14 +645,19 @@
   const currentRows = () => Array.from(tbody.rows);
 
   const updateActionsColumnVisibility = () => {
-    const actionColumns = table.querySelectorAll('.moldoveneasca-table__actions-heading, .moldoveneasca-table__actions-cell');
+    const actionTables = [table, unverifiedTable].filter(Boolean);
+    const actionColumns = actionTables.flatMap((catalogTable) => [
+      ...catalogTable.querySelectorAll('.moldoveneasca-table__actions-heading, .moldoveneasca-table__actions-cell')
+    ]);
     actionColumns.forEach((cell) => {
       cell.hidden = false;
     });
-    const hasVisibleAction = [...table.querySelectorAll('.moldoveneasca-table__actions-cell')].some((cell) => {
+    const hasVisibleAction = actionTables.some((catalogTable) => [
+      ...catalogTable.querySelectorAll('.moldoveneasca-table__actions-cell')
+    ].some((cell) => {
       const row = cell.closest('tr');
       return !row?.hidden && cell.querySelector('button:not([hidden])');
-    });
+    }));
     actionColumns.forEach((cell) => {
       cell.hidden = !hasVisibleAction;
     });
@@ -871,12 +891,36 @@
     configureIconButton(imagePickButton, 'Încarcă imaginea paginii citate', 'image');
     configureIconButton(imageUndoButton, 'Anulează ultima subliniere', 'undo');
     configureIconButton(imageClearButton, 'Elimină sublinierile adăugate', 'cancel');
+    configureIconButton(selectionDeleteButton, 'Șterge referințele selectate', 'delete');
+    configureIconButton(selectionClearButton, 'Deselectează referințele selectate', 'cancel');
   };
 
   const createCatalogRow = (record) => {
     const fields = displayFields(record);
     const row = document.createElement('tr');
-    if (record.id) row.dataset.remoteReference = record.id;
+    if (record.id) {
+      row.dataset.remoteReference = record.id;
+      row.dataset.referenceId = record.id;
+    }
+    const selectionCell = document.createElement('td');
+    selectionCell.className = 'moldoveneasca-table__selection-cell';
+    selectionCell.dataset.selectionCell = 'true';
+    selectionCell.hidden = currentRole !== 'admin';
+    if (record.id) {
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.className = 'moldoveneasca-reference-select';
+      checkbox.dataset.referenceSelect = record.id;
+      checkbox.checked = selectedReferenceIds.has(record.id);
+      checkbox.setAttribute('aria-label', `Selectează referința ${fields.title === '—' ? fields.year : fields.title}`);
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) selectedReferenceIds.add(record.id);
+        else selectedReferenceIds.delete(record.id);
+        updateSelectionUi();
+      });
+      selectionCell.appendChild(checkbox);
+    }
+    row.appendChild(selectionCell);
     row.appendChild(textCell(fields.year, 'moldoveneasca-table__year'));
     row.appendChild(textCell(fields.century, 'moldoveneasca-table__century'));
 
@@ -948,10 +992,6 @@
       const actions = document.createElement('div');
       actions.className = 'moldoveneasca-table__actions';
       actions.appendChild(createIconButton('Editează referința', 'edit', () => openEditor(record)));
-
-      if (currentRole === 'admin') {
-        actions.appendChild(createIconButton('Șterge referința', 'delete', () => deleteRecord(record), 'moldoveneasca-icon-button--danger'));
-      }
       actionsCell.appendChild(actions);
     }
 
@@ -1045,6 +1085,56 @@
     if (recordCount) recordCount.textContent = String(rows.length);
   };
 
+  const selectionRows = () => [
+    ...table.querySelectorAll('tbody tr[data-remote-reference]'),
+    ...(unverifiedTable ? [...unverifiedTable.querySelectorAll('tbody tr[data-remote-reference]')] : [])
+  ];
+
+  const visibleSelectionRows = () => selectionRows().filter((row) => (
+    !row.hidden && row.querySelector('[data-reference-select]')
+  ));
+
+  const updateSelectionUi = () => {
+    const isAdmin = Boolean(currentUser && currentRole === 'admin');
+    const catalogTables = [table, unverifiedTable].filter(Boolean);
+
+    if (!isAdmin) selectedReferenceIds.clear();
+    catalogTables.forEach((catalogTable) => {
+      catalogTable.querySelectorAll('[data-selection-heading], [data-selection-cell]').forEach((cell) => {
+        cell.hidden = !isAdmin;
+      });
+      catalogTable.querySelectorAll('[data-reference-select]').forEach((checkbox) => {
+        checkbox.hidden = !isAdmin;
+        if (!isAdmin) checkbox.checked = false;
+      });
+    });
+
+    const selectedCount = selectedReferenceIds.size;
+    if (selectionToolbar) selectionToolbar.hidden = !isAdmin;
+    if (selectionCount) selectionCount.textContent = `Selectate: ${selectedCount}`;
+    if (selectionDeleteButton) selectionDeleteButton.disabled = !isAdmin || selectedCount === 0;
+
+    const visibleIds = visibleSelectionRows().map((row) => row.dataset.referenceId);
+    const selectedVisibleCount = visibleIds.filter((id) => selectedReferenceIds.has(id)).length;
+    if (selectionAll) {
+      selectionAll.disabled = !isAdmin || visibleIds.length === 0;
+      selectionAll.checked = isAdmin && visibleIds.length > 0 && selectedVisibleCount === visibleIds.length;
+      selectionAll.indeterminate = isAdmin && selectedVisibleCount > 0 && selectedVisibleCount < visibleIds.length;
+    }
+  };
+
+  const setVisibleSelection = (checked) => {
+    visibleSelectionRows().forEach((row) => {
+      const id = row.dataset.referenceId;
+      const checkbox = row.querySelector('[data-reference-select]');
+      if (!id || !checkbox) return;
+      checkbox.checked = checked;
+      if (checked) selectedReferenceIds.add(id);
+      else selectedReferenceIds.delete(id);
+    });
+    updateSelectionUi();
+  };
+
   const filterRows = () => {
     const query = normalize(searchInput?.value);
     updateCenturyOptions();
@@ -1072,6 +1162,7 @@
         : 'Niciun rezultat';
     }
     updateActionsColumnVisibility();
+    updateSelectionUi();
   };
 
   const applySearch = () => {
@@ -1103,6 +1194,7 @@
     if (adminOnlyField) adminOnlyField.hidden = currentRole !== 'admin';
     if (unverifiedSection) unverifiedSection.hidden = currentRole !== 'admin' || !currentUser;
     renderUnverifiedRows();
+    updateSelectionUi();
   };
 
   const closeEditor = () => {
@@ -1167,13 +1259,20 @@
   };
 
   const renderUnverifiedRows = () => {
-    if (!unverifiedTbody) return;
+    if (!unverifiedTbody) {
+      updateSelectionUi();
+      return;
+    }
     unverifiedTbody.replaceChildren();
-    if (!currentUser || currentRole !== 'admin') return;
+    if (!currentUser || currentRole !== 'admin') {
+      updateSelectionUi();
+      return;
+    }
     unverifiedRecords
       .slice()
       .sort((a, b) => (parseYearStart(a) || Number.POSITIVE_INFINITY) - (parseYearStart(b) || Number.POSITIVE_INFINITY))
       .forEach((record) => unverifiedTbody.appendChild(createCatalogRow(record)));
+    updateSelectionUi();
   };
 
   const loadSupabaseScript = () => new Promise((resolve, reject) => {
@@ -1318,17 +1417,29 @@
     await loadRemoteRecords();
   };
 
-  const deleteRecord = async (record) => {
+  const deleteSelectedRecords = async () => {
     if (currentRole !== 'admin' || !supabaseClient) return;
-    if (!window.confirm(`Ștergi referința „${record.title}”?`)) return;
-    const { error } = await supabaseClient.from('language_references').delete().eq('id', record.id);
+    const ids = [...selectedReferenceIds];
+    if (!ids.length) return;
+    const label = ids.length === 1 ? 'referința selectată' : 'referințele selectate';
+    if (!window.confirm(`Ștergi ${label} (${ids.length})?`)) return;
+    if (selectionDeleteButton) selectionDeleteButton.disabled = true;
+    const { error } = await supabaseClient.from('language_references').delete().in('id', ids);
     if (error) {
-      if (authMessage) authMessage.textContent = `Referința nu a putut fi ștearsă: ${error.message}`;
+      if (authMessage) authMessage.textContent = `Referințele nu au putut fi șterse: ${error.message}`;
+      updateSelectionUi();
       return;
     }
+    selectedReferenceIds.clear();
     await loadRemoteRecords();
   };
 
+  selectionAll?.addEventListener('change', () => setVisibleSelection(selectionAll.checked));
+  selectionClearButton?.addEventListener('click', () => {
+    selectedReferenceIds.clear();
+    updateSelectionUi();
+  });
+  selectionDeleteButton?.addEventListener('click', deleteSelectedRecords);
   searchInput?.addEventListener('input', scheduleSearch);
   searchInput?.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {

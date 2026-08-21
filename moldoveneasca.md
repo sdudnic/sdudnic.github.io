@@ -125,7 +125,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-3"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-4"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
@@ -301,6 +301,17 @@ permalink: /moldoveneasca/
 | 2014 | "Recensământul Populației și Locuințelor 2014 — limba vorbită": "Populația vorbește în limba moldovenească — 54,6%"; Biroul Național de Statistică al Republicii Moldova [sursa](https://statistica.gov.md/public/files/Recensamint/Recensamint_pop_2014/Rezultate/Infografic_RPL2014_2.pdf) |
 | 2018 | Abecedar, Limba Moldovenească, Odessa [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/289035209150787/?type=3&__xts__%5B0%5D=68.ARBNCcJ91rts9RvHwIX5q3XPFe-d24_u5d-76RdmAk3_8sIh-GbT3Ok7SOxOzj14M8d1QYfRNmYW_WvsyqfBCCcpcT8yNWcJ9cnRRB4NQMG2lRrr0PqcPjxdpfpIdkZeVnaT2FS3Y42b16WdubM9SBDdYfWCOeWgrLJmBYoDZw0brXNti-4C4P2aU4wdDaOGSVmewmE3z7EJ0FAFYPqlCTozs5CDV5a0L877UB5InEceXrkrB67xtgVvGJfilqIvQD_4h_nOXjvLFN3qzhQfmqArz0MgVEbp_Rp-DXJgTJ2wxEj2fxzK3lDDnomKIcNRtJEfrw9kKqStv8bIldtZLhE&__tn__=-R) |
 
+<div class="moldoveneasca-selection-toolbar" data-selection-toolbar hidden aria-label="Acțiuni pentru referințele selectate">
+  <label class="moldoveneasca-selection-toolbar__select">
+    <input type="checkbox" data-selection-all aria-label="Selectează referințele afișate" title="Selectează referințele afișate">
+    <span data-selection-count>Selectate: 0</span>
+  </label>
+  <div class="moldoveneasca-selection-toolbar__actions">
+    <button type="button" class="moldoveneasca-icon-button moldoveneasca-icon-button--danger" data-selection-delete disabled aria-label="Șterge referințele selectate" title="Șterge referințele selectate" data-tooltip="Șterge referințele selectate"><span aria-hidden="true"></span></button>
+    <button type="button" class="moldoveneasca-icon-button" data-selection-clear aria-label="Deselectează referințele selectate" title="Deselectează referințele selectate" data-tooltip="Deselectează referințele selectate"><span aria-hidden="true"></span></button>
+  </div>
+</div>
+
 <div class="moldoveneasca-catalog__status" data-catalog-status>
   <div class="moldoveneasca-catalog__status-summary">
     <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
@@ -322,14 +333,15 @@ permalink: /moldoveneasca/
   <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
     <thead>
       <tr>
-        <th scope="col">An</th>
-        <th scope="col">Secol</th>
-        <th scope="col">Denumirea</th>
-        <th scope="col">Citat</th>
-        <th scope="col">Limba</th>
-        <th scope="col">Autor</th>
-        <th scope="col">Sursa</th>
-        <th scope="col" aria-label="Acțiuni"></th>
+        <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
+        <th scope="col" class="moldoveneasca-table__year-heading">An</th>
+        <th scope="col" class="moldoveneasca-table__century-heading">Secol</th>
+        <th scope="col" class="moldoveneasca-table__title-heading">Denumirea</th>
+        <th scope="col" class="moldoveneasca-table__quote-heading">Citat</th>
+        <th scope="col" class="moldoveneasca-table__language-heading">Limba</th>
+        <th scope="col" class="moldoveneasca-table__author-heading">Autor</th>
+        <th scope="col" class="moldoveneasca-table__source-heading">Sursa</th>
+        <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>
       </tr>
     </thead>
     <tbody></tbody>

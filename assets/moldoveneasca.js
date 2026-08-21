@@ -216,7 +216,7 @@
     const text = String(value || '').trim();
     if (!text) return 'xx';
     if (/^[a-z]{2}$/i.test(text)) return text.toLowerCase();
-    if (/moldov|moldav|moldauisch|moldovin|moldeu|молдов|молдав/i.test(text)) return 'md';
+    if (/moldov|moldav|moldauisch|moldovin|moldeu|rom[aâ]n|romanian|rum[aâ]n|valah|valaque|молдов|молдав/i.test(text)) return 'md';
     if (/rus|russ|росс|рус|язык\s*рус/i.test(text)) return 'ru';
     if (/latin|latină|latina/i.test(text)) return 'la';
     if (/german|deutsch|немец/i.test(text)) return 'de';

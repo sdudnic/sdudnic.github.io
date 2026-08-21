@@ -68,8 +68,8 @@
     const frame = document.createElement('div');
     frame.className = 'moldoveneasca-grid-frame';
     table.parentElement.insertBefore(frame, table);
-    frame.appendChild(table);
     if (selectionToolbar) frame.appendChild(selectionToolbar);
+    frame.appendChild(table);
     frame.appendChild(statusBar);
   };
 
@@ -717,6 +717,8 @@
     return languageIndex >= 0 && nameIndex >= 0 && Math.abs(languageIndex - nameIndex) <= 80;
   };
 
+  const hasGlotonym = (value) => languageNamePattern.test(String(value || ''));
+
   const appendQuoteText = (parent, value) => {
     const text = String(value || '');
     quoteIndicatorPattern.lastIndex = 0;
@@ -991,7 +993,12 @@
     if (canEdit && record.id) {
       const actions = document.createElement('div');
       actions.className = 'moldoveneasca-table__actions';
-      actions.appendChild(createIconButton('Editează referința', 'edit', () => openEditor(record)));
+      actions.appendChild(createIconButton(
+        'Editează referința',
+        'edit',
+        () => openEditor(record),
+        'moldoveneasca-table__edit-button'
+      ));
       actionsCell.appendChild(actions);
     }
 
@@ -1392,8 +1399,14 @@
       setStatus('Completează anul și denumirea lucrării.', 'error');
       return;
     }
-    if (!payload.quote || !hasLanguageAndGlotonym(payload.quote)) {
-      setStatus('Citatul trebuie să conțină glotonimul și un termen de limbă sau denumirea explicită a unei lucrări lingvistice.', 'error');
+    const quoteHasGlotonym = hasGlotonym(payload.quote);
+    const workHasLanguageEvidence = hasLanguageAndGlotonym([
+      payload.title,
+      payload.source_type,
+      payload.description
+    ].filter(Boolean).join(' '));
+    if (!payload.quote || !quoteHasGlotonym || (!hasLanguageAndGlotonym(payload.quote) && !workHasLanguageEvidence)) {
+      setStatus('Citatul trebuie să conțină glotonimul; pentru grafii vechi este suficient ca lucrarea sau comentariile să documenteze explicit denumirea limbii.', 'error');
       return;
     }
 

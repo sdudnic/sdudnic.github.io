@@ -337,7 +337,7 @@ permalink: /moldoveneasca/
 
 <section class="moldoveneasca-unverified" data-unverified-section hidden aria-labelledby="unverified-title">
   <h2 id="unverified-title"><strong>Referințe neverificate</strong></h2>
-  <p>Aceste intrări au fost retrase din lista publică până la confirmarea denumirii exacte, a autorului, a anului și a sursei. Secțiunea este vizibilă numai administratorului.</p>
+  <p>Aceste intrări sunt păstrate separat până la verificarea bibliografică a ediției, autorului, anului, paginii și sursei. O intrare poate fi deja clasificată la <strong>limbă</strong>; verificarea nu schimbă această clasificare. Secțiunea este vizibilă numai administratorului.</p>
   <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
     <thead>
       <tr>

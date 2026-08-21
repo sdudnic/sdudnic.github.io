@@ -14,10 +14,10 @@ permalink: /moldoveneasca/
     „moldovenească” a limbii, de la cele mai vechi atestări până astăzi.
   </p>
 
-  <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate coloanele catalogului">
+  <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate cataloagele și coloanele">
     <label class="moldoveneasca-search">
-      <span class="sr-only">Caută în toate coloanele</span>
-      <input type="search" data-catalog-search placeholder="Caută în catalog…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
+      <span class="sr-only">Caută în toate cataloagele și coloanele</span>
+      <input type="search" data-catalog-search placeholder="Caută în toate cataloagele…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
     </label>
     <label class="moldoveneasca-century-filter">
       <span class="sr-only">Filtrează după secol</span>
@@ -133,7 +133,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260822-3"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260822-4"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
@@ -336,7 +336,7 @@ permalink: /moldoveneasca/
 </div>
 
 <section class="moldoveneasca-unverified" data-unverified-section hidden aria-labelledby="unverified-title">
-  <h2 id="unverified-title">Referințe neverificate</h2>
+  <h2 id="unverified-title"><strong>Referințe neverificate</strong></h2>
   <p>Aceste intrări au fost retrase din lista publică până la confirmarea denumirii exacte, a autorului, a anului și a sursei. Secțiunea este vizibilă numai administratorului.</p>
   <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
     <thead>

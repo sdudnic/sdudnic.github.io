@@ -2464,7 +2464,11 @@ body.moldoveneasca-detail-open {
 }
 
 .moldoveneasca-unverified h2 {
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+
+.moldoveneasca-unverified h2 strong {
+  font-weight: 700 !important;
 }
 
 .moldoveneasca-catalog__status {

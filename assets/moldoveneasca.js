@@ -238,11 +238,44 @@
     return 'xx';
   };
 
-  const languageCode = (value) => {
+  const languageDominancePattern = /(?:limba|language|langue|lingua|sprache|язык|мова)\s+(?:predomin(?:ă|a)|principal(?:ă|a)|majoritar(?:ă|a)|dominant(?:ă|a))\s*[:\-]?\s*([^.;,\n]+)/iu;
+
+  const dominantLanguageCode = (record) => {
+    const evidence = [record?.description, record?.quote, record?.title]
+      .filter(Boolean)
+      .join(' ');
+    const match = evidence.match(languageDominancePattern);
+    return match ? languageCodeFor(match[1]) : null;
+  };
+
+  const languageCode = (value, record = null) => {
     const text = String(value || '').trim();
     if (!text) return 'xx';
-    return text.split(/(\s*(?:→|->|\/|,|;)\s*)/)
-      .map((part) => /^\s*(?:→|->|\/|,|;)\s*$/.test(part) ? part.trim() : languageCodeFor(part))
+    const parts = text.split(/(\s*(?:→|->|\/|,|;)\s*)/)
+      .map((part) => /^\s*(?:→|->|\/|,|;)\s*$/.test(part)
+        ? { separator: part.trim() }
+        : { code: languageCodeFor(part) });
+    const identified = parts.filter((part) => !part.separator && part.code !== 'xx');
+    const hasMoldoveneasca = identified.some((part) => part.code === 'md');
+    const explicitDirection = parts.some((part) => part.separator && /→|->/.test(part.separator));
+    const dominant = dominantLanguageCode(record);
+    const priority = dominant && identified.some((part) => part.code === dominant)
+      ? dominant
+      : 'md';
+
+    // Dacă sunt identificate mai multe limbi, iar printre ele este md,
+    // moldoveneasca este prima implicit. O dovadă explicită de predominanță
+    // schimbă prioritatea; săgeata păstrează ordinea sursă → țintă.
+    if (identified.length > 1 && hasMoldoveneasca && (!explicitDirection || dominant)) {
+      const orderedCodes = [priority, ...identified.map((part) => part.code)
+        .filter((code) => code !== priority)];
+      let codeIndex = 0;
+      parts.forEach((part) => {
+        if (!part.separator && part.code !== 'xx') part.code = orderedCodes[codeIndex++];
+      });
+    }
+
+    return parts.map((part) => part.separator || part.code)
       .join(' ')
       .replace(/\s+(→|->|\/|,)\s+/g, ' $1 ')
       .trim();
@@ -588,7 +621,7 @@
       century: centuryLabel(record),
       title,
       quote,
-      language: languageCode(record?.language),
+      language: languageCode(record?.language, record),
       languageFull: record?.language || 'necunoscută',
       author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
     };
@@ -693,6 +726,17 @@
   };
 
   const currentRows = () => Array.from(tbody.rows);
+  const ethnicityRows = () => (ethnicityTbody ? Array.from(ethnicityTbody.rows) : []);
+  const unverifiedRows = () => (unverifiedTbody ? Array.from(unverifiedTbody.rows) : []);
+  const searchableRows = () => [
+    ...currentRows(),
+    ...ethnicityRows(),
+    ...(unverifiedSection && !unverifiedSection.hidden ? unverifiedRows() : [])
+  ];
+  const rowMatchesFilter = (row, query, century) => (
+    (!query || row.dataset.catalogSearch.includes(query))
+    && (!century || row.catalogFields?.century === century)
+  );
 
   const updateActionsColumnVisibility = () => {
     const actionTables = [table, unverifiedTable, ethnicityTable].filter(Boolean);
@@ -1114,7 +1158,7 @@
   const updateCenturyOptions = () => {
     if (!centurySelect) return;
     const previous = centurySelect.value;
-    const centuryOptions = new Map(currentRows()
+    const centuryOptions = new Map(searchableRows()
       .map((row) => [
         row.catalogFields?.century,
         {
@@ -1157,8 +1201,7 @@
   };
 
   const updateStats = () => {
-    const rows = currentRows();
-    if (recordCount) recordCount.textContent = String(rows.length);
+    if (recordCount) recordCount.textContent = String(searchableRows().length);
   };
 
   const selectionRows = () => [
@@ -1216,27 +1259,45 @@
     const query = normalize(searchInput?.value);
     updateCenturyOptions();
     const century = normalize(centurySelect?.value);
-    const matchedRows = currentRows().filter((row) => {
-      const matchesQuery = !query || row.dataset.catalogSearch.includes(query);
-      const matchesCentury = !century || row.catalogFields?.century === century;
-      return matchesQuery && matchesCentury;
-    });
+    const languageCatalogRows = currentRows();
+    const ethnicityCatalogRows = ethnicityRows();
+    const unverifiedCatalogRows = unverifiedSection && !unverifiedSection.hidden ? unverifiedRows() : [];
+    const matchedRows = languageCatalogRows.filter((row) => rowMatchesFilter(row, query, century));
+    const matchedEthnicityRows = ethnicityCatalogRows.filter((row) => rowMatchesFilter(row, query, century));
+    const matchedUnverifiedRows = unverifiedCatalogRows.filter((row) => rowMatchesFilter(row, query, century));
+    const matchedAllRows = [...matchedRows, ...matchedEthnicityRows, ...matchedUnverifiedRows];
+    if (recordCount) recordCount.textContent = String(languageCatalogRows.length + ethnicityCatalogRows.length + unverifiedCatalogRows.length);
     updatePagination(matchedRows.length);
-    if (filteredCount) filteredCount.textContent = String(matchedRows.length);
+    if (filteredCount) filteredCount.textContent = String(matchedAllRows.length);
     const firstVisible = (currentPage - 1) * pageSize;
     const lastVisible = firstVisible + pageSize;
     const matchedSet = new Set(matchedRows);
-    currentRows().forEach((row) => {
+    languageCatalogRows.forEach((row) => {
       const matchIndex = matchedRows.indexOf(row);
       row.hidden = !matchedSet.has(row) || matchIndex < firstVisible || matchIndex >= lastVisible;
+    });
+    ethnicityCatalogRows.forEach((row) => {
+      row.hidden = !matchedEthnicityRows.includes(row);
+    });
+    unverifiedCatalogRows.forEach((row) => {
+      row.hidden = !matchedUnverifiedRows.includes(row);
     });
     const visibleStart = matchedRows.length ? firstVisible + 1 : 0;
     const visibleEnd = Math.min(lastVisible, matchedRows.length);
     if (resetButton) resetButton.hidden = !query && !century;
     if (result) {
-      result.textContent = matchedRows.length
-        ? `Afișate ${visibleStart}–${visibleEnd}`
-        : 'Niciun rezultat';
+      if (query || century) {
+        const parts = [
+          `Limbă: ${matchedRows.length ? `${visibleStart}–${visibleEnd}` : '0'}`,
+          `Etnie: ${matchedEthnicityRows.length}`
+        ];
+        if (unverifiedSection && !unverifiedSection.hidden) parts.push(`Neverificate: ${matchedUnverifiedRows.length}`);
+        result.textContent = parts.join(' · ');
+      } else {
+        result.textContent = matchedRows.length
+          ? `Afișate ${visibleStart}–${visibleEnd}`
+          : 'Niciun rezultat';
+      }
     }
     updateActionsColumnVisibility();
     updateSelectionUi();
@@ -1349,6 +1410,7 @@
     }
     ethnicityRecords.forEach((record) => ethnicityTbody.appendChild(createCatalogRow(record)));
     sortRowsChronologicallyIn(ethnicityTbody);
+    filterRows();
     updateActionsColumnVisibility();
     updateSelectionUi();
   };
@@ -1367,6 +1429,7 @@
       .slice()
       .sort((a, b) => (parseYearStart(a) || Number.POSITIVE_INFINITY) - (parseYearStart(b) || Number.POSITIVE_INFINITY))
       .forEach((record) => unverifiedTbody.appendChild(createCatalogRow(record, { showStatusBadge: false })));
+    filterRows();
     updateSelectionUi();
   };
 
@@ -1460,18 +1523,20 @@
     const data = new FormData(editorForm);
     const yearLabel = String(data.get('year_label') || '').trim();
     const years = parseYears(yearLabel);
+    const languageValue = String(data.get('language') || '').trim();
+    const descriptionValue = String(data.get('description') || '').trim();
     const payload = {
       year_label: yearLabel,
       year_start: years[0] || null,
       year_end: years[1] || years[0] || null,
       title: String(data.get('title') || '').trim(),
-      language: String(data.get('language') || '').trim() || null,
+      language: languageValue ? languageCode(languageValue, { description: descriptionValue }) : null,
       author: String(data.get('author') || '').trim() || null,
       source_type: String(data.get('source_type') || '').trim() || null,
       catalog_type: catalogTypeValues.has(String(data.get('catalog_type') || '').trim())
         ? String(data.get('catalog_type')).trim()
         : 'language',
-      description: String(data.get('description') || '').trim() || null,
+      description: descriptionValue || null,
       quote: String(data.get('quote') || '').trim() || null,
       location: String(data.get('location') || '').trim() || null,
       source_url: String(data.get('source_url') || '').trim() || null,

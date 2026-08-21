@@ -1173,9 +1173,8 @@
 
   const recordIdentity = (record) => normalize([
     record?.year_label,
-    record?.title,
     record?.quote,
-    record?.source_url
+    record?.source_url || record?.title
   ].filter(Boolean).join('|'));
 
   const getSortedRows = () => currentRows().sort((a, b) => {

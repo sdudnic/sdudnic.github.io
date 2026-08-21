@@ -53,6 +53,8 @@
   const unverifiedSection = document.querySelector('[data-unverified-section]');
   const unverifiedTable = document.querySelector('[data-unverified-table]');
   const unverifiedTbody = unverifiedTable?.querySelector('tbody');
+  const ethnicityTable = document.querySelector('[data-ethnicity-table]');
+  const ethnicityTbody = ethnicityTable?.querySelector('tbody');
   const detailPanel = root.querySelector('[data-reference-detail]');
   const detailBackdrop = root.querySelector('[data-reference-detail-backdrop]');
   const detailTitle = root.querySelector('[data-detail-title]');
@@ -80,6 +82,7 @@
   let currentRole = 'viewer';
   let editingId = null;
   let remoteRecords = [];
+  let ethnicityRecords = [];
   let unverifiedRecords = [];
   let sortAscending = true;
   let sortButton = null;
@@ -91,6 +94,7 @@
   let searchDebounceTimer = null;
   const searchDebounceMs = 220;
   const selectedReferenceIds = new Set();
+  const catalogTypeValues = new Set(['language', 'ethnicity', 'both']);
 
   const normalize = (value) => (value || '')
     .toLocaleLowerCase('ro-MD')
@@ -153,7 +157,7 @@
     .trim();
 
   const cleanQuote = (value) => String(value || '')
-    .replace(/^\s*["«“']+|["»”']+\s*$/g, '')
+    .replace(/^\s*["„«“']+|["»”']+\s*$/g, '')
     .replace(/\s+/g, ' ')
     .replace(/,\s*(?:Contextul|Sursa(?: suplimentară)?\s*\d*):.*$/i, '')
     .trim();
@@ -537,11 +541,40 @@
     };
   };
 
+  const recordFromEthnicityStaticRow = (row) => {
+    const sourceCell = row.cells[5];
+    const sourceUrlsFromRow = [...(sourceCell?.querySelectorAll('a[href]') || [])].map((link) => link.href);
+    return {
+      year_label: row.cells[0]?.textContent.trim() || '',
+      year_start: parseYears(row.cells[0]?.textContent)[0] || null,
+      year_end: parseYears(row.cells[0]?.textContent)[1] || parseYears(row.cells[0]?.textContent)[0] || null,
+      title: extractCellText(row.cells[2]),
+      quote: extractCellText(row.cells[3]),
+      language: null,
+      author: extractCellText(row.cells[4]),
+      source_url: sourceUrlsFromRow[0] || null,
+      source_urls: sourceUrlsFromRow,
+      source_type: 'Import din tabelul existent',
+      location: null,
+      description: [
+        extractCellText(row.cells[2]),
+        extractCellText(row.cells[3])
+      ].filter(Boolean).join(' — '),
+      image_url: null,
+      catalog_type: 'ethnicity',
+      status: 'published',
+      owner_id: null
+    };
+  };
+
   const displayFields = (record) => {
     const raw = record?.title || '';
     const imported = record?.source_type === 'Import din tabelul existent';
     const title = imported ? (extractTitle(raw) || '—') : (raw || '—');
-    const quote = extractQuote(record?.quote) || (imported ? extractQuote(raw) : null);
+    const directQuote = cleanQuote(record?.quote);
+    const quote = imported
+      ? (extractQuote(record?.quote) || extractQuote(raw) || directQuote || null)
+      : (directQuote || null);
     return {
       year: yearRangeLabel(record),
       century: centuryLabel(record),
@@ -551,6 +584,15 @@
       languageFull: record?.language || 'necunoscută',
       author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
     };
+  };
+
+  const recordCatalogType = (record) => catalogTypeValues.has(record?.catalog_type)
+    ? record.catalog_type
+    : 'language';
+
+  const catalogIncludes = (record, catalog) => {
+    const type = recordCatalogType(record);
+    return type === catalog || type === 'both';
   };
 
   const removeImportedQuote = (value, quote) => {
@@ -645,7 +687,7 @@
   const currentRows = () => Array.from(tbody.rows);
 
   const updateActionsColumnVisibility = () => {
-    const actionTables = [table, unverifiedTable].filter(Boolean);
+    const actionTables = [table, unverifiedTable, ethnicityTable].filter(Boolean);
     const actionColumns = actionTables.flatMap((catalogTable) => [
       ...catalogTable.querySelectorAll('.moldoveneasca-table__actions-heading, .moldoveneasca-table__actions-cell')
     ]);
@@ -1021,6 +1063,13 @@
     row.replaceWith(converted);
     return converted;
   });
+  const ethnicityStaticRows = ethnicityTbody
+    ? Array.from(ethnicityTbody.rows).map((row) => {
+      const converted = createCatalogRow(recordFromEthnicityStaticRow(row));
+      row.replaceWith(converted);
+      return converted;
+    })
+    : [];
 
   const getSortedRows = () => currentRows().sort((a, b) => {
     const yearA = Number(a.dataset.catalogYear) || Number.POSITIVE_INFINITY;
@@ -1028,6 +1077,18 @@
     if (yearA === yearB) return Number(a.dataset.catalogIndex) - Number(b.dataset.catalogIndex);
     return (yearA - yearB) * (sortAscending ? 1 : -1);
   });
+
+  const sortRowsChronologicallyIn = (targetTbody) => {
+    if (!targetTbody) return;
+    [...targetTbody.rows]
+      .sort((a, b) => {
+        const yearA = Number(a.dataset.catalogYear) || Number.POSITIVE_INFINITY;
+        const yearB = Number(b.dataset.catalogYear) || Number.POSITIVE_INFINITY;
+        if (yearA === yearB) return Number(a.dataset.catalogIndex) - Number(b.dataset.catalogIndex);
+        return yearA - yearB;
+      })
+      .forEach((row) => targetTbody.appendChild(row));
+  };
 
   const sortRowsChronologically = () => {
     getSortedRows().forEach((row) => tbody.appendChild(row));
@@ -1094,7 +1155,8 @@
 
   const selectionRows = () => [
     ...table.querySelectorAll('tbody tr[data-remote-reference]'),
-    ...(unverifiedTable ? [...unverifiedTable.querySelectorAll('tbody tr[data-remote-reference]')] : [])
+    ...(unverifiedTable ? [...unverifiedTable.querySelectorAll('tbody tr[data-remote-reference]')] : []),
+    ...(ethnicityTable ? [...ethnicityTable.querySelectorAll('tbody tr[data-remote-reference]')] : [])
   ];
 
   const visibleSelectionRows = () => selectionRows().filter((row) => (
@@ -1103,7 +1165,7 @@
 
   const updateSelectionUi = () => {
     const isAdmin = Boolean(currentUser && currentRole === 'admin');
-    const catalogTables = [table, unverifiedTable].filter(Boolean);
+    const catalogTables = [table, unverifiedTable, ethnicityTable].filter(Boolean);
 
     if (!isAdmin) selectedReferenceIds.clear();
     catalogTables.forEach((catalogTable) => {
@@ -1237,6 +1299,7 @@
     setField('language', record?.language);
     setField('author', record?.author);
     setField('source_type', record?.source_type);
+    setField('catalog_type', recordCatalogType(record));
     setField('description', recordComments(record));
     setField('quote', fields.quote);
     setField('location', record?.location);
@@ -1251,18 +1314,35 @@
 
   const renderRemoteRows = () => {
     table.querySelectorAll('tr[data-remote-reference]').forEach((row) => row.remove());
-    if (remoteRecords.length) {
+    const languageRecords = remoteRecords.filter((record) => catalogIncludes(record, 'language'));
+    if (languageRecords.length) {
       staticRows.forEach((row) => row.remove());
     } else {
       staticRows.forEach((row) => {
         if (!tbody.contains(row)) tbody.appendChild(row);
       });
     }
-    remoteRecords.forEach((record) => tbody.appendChild(createCatalogRow(record)));
+    languageRecords.forEach((record) => tbody.appendChild(createCatalogRow(record)));
     currentPage = 1;
     sortRowsChronologically();
     updateStats();
     filterRows();
+  };
+
+  const renderEthnicityRows = () => {
+    if (!ethnicityTbody) return;
+    ethnicityTbody.querySelectorAll('tr[data-remote-reference]').forEach((row) => row.remove());
+    if (ethnicityRecords.length) {
+      ethnicityStaticRows.forEach((row) => row.remove());
+    } else {
+      ethnicityStaticRows.forEach((row) => {
+        if (!ethnicityTbody.contains(row)) ethnicityTbody.appendChild(row);
+      });
+    }
+    ethnicityRecords.forEach((record) => ethnicityTbody.appendChild(createCatalogRow(record)));
+    sortRowsChronologicallyIn(ethnicityTbody);
+    updateActionsColumnVisibility();
+    updateSelectionUi();
   };
 
   const renderUnverifiedRows = () => {
@@ -1299,13 +1379,15 @@
     if (!supabaseClient) return;
     const { data, error } = await supabaseClient
       .from('language_references')
-      .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, image_url, status, owner_id')
+      .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, image_url, catalog_type, status, owner_id')
       .order('year_start', { ascending: true });
     if (error) throw error;
     const records = data || [];
     remoteRecords = records.filter((record) => record.status === 'published');
+    ethnicityRecords = remoteRecords.filter((record) => catalogIncludes(record, 'ethnicity'));
     unverifiedRecords = records.filter((record) => record.status !== 'published');
     renderRemoteRows();
+    renderEthnicityRows();
     renderUnverifiedRows();
   };
 
@@ -1378,6 +1460,9 @@
       language: String(data.get('language') || '').trim() || null,
       author: String(data.get('author') || '').trim() || null,
       source_type: String(data.get('source_type') || '').trim() || null,
+      catalog_type: catalogTypeValues.has(String(data.get('catalog_type') || '').trim())
+        ? String(data.get('catalog_type')).trim()
+        : 'language',
       description: String(data.get('description') || '').trim() || null,
       quote: String(data.get('quote') || '').trim() || null,
       location: String(data.get('location') || '').trim() || null,

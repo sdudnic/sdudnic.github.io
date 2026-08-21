@@ -50,6 +50,7 @@ create table if not exists public.language_references (
   location text,
   source_url text,
   image_url text,
+  catalog_type text not null default 'language',
   status public.reference_status not null default 'pending',
   owner_id uuid not null references public.profiles(id) on delete restrict,
   created_at timestamptz not null default timezone('utc', now()),
@@ -64,6 +65,9 @@ create table if not exists public.language_references (
     image_url is null
     or image_url ~* '^https://'
     or image_url ~* '^data:image/(avif|gif|jpeg|jpg|png|webp);base64,[A-Za-z0-9+/=]+$'
+  ),
+  constraint language_references_catalog_type check (
+    catalog_type in ('language', 'ethnicity', 'both')
   )
 );
 
@@ -72,6 +76,19 @@ alter table public.language_references
 
 alter table public.language_references
   add column if not exists image_url text;
+
+alter table public.language_references
+  add column if not exists catalog_type text not null default 'language';
+
+do $$
+begin
+  alter table public.language_references
+    drop constraint if exists language_references_catalog_type;
+  alter table public.language_references
+    add constraint language_references_catalog_type
+    check (catalog_type in ('language', 'ethnicity', 'both'));
+end
+$$;
 
 do $$
 begin
@@ -102,6 +119,9 @@ create index if not exists language_references_owner_idx
 
 create index if not exists language_references_status_idx
   on public.language_references (status);
+
+create index if not exists language_references_catalog_type_idx
+  on public.language_references (catalog_type, status, year_start);
 
 create index if not exists profiles_email_idx
   on public.profiles (email);

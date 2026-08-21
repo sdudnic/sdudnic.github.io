@@ -59,6 +59,14 @@ permalink: /moldoveneasca/
           <span>Tipul sursei</span>
           <input name="source_type" placeholder="Carte, act, gramatică, presă…">
         </label>
+        <label class="moldoveneasca-field">
+          <span>Catalog</span>
+          <select name="catalog_type">
+            <option value="language">Denumirea limbii</option>
+            <option value="ethnicity">Etnie, națiune, popor</option>
+            <option value="both">Ambele cataloage</option>
+          </select>
+        </label>
         <label class="moldoveneasca-field moldoveneasca-field--full">
           <span>Comentarii</span>
           <textarea name="description" rows="3" placeholder="Explicații, note și context despre referință."></textarea>
@@ -125,7 +133,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-8"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-9"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
@@ -356,15 +364,18 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
 <section class="moldoveneasca-ethnicity" aria-labelledby="ethnicity-title">
   <h2 id="ethnicity-title" class="moldoveneasca-ethnicity__title">Etnie, națiune, popor: moldoveni, moldovean</h2>
   <p class="moldoveneasca-ethnicity__intro">Catalogul reunește mențiuni istorice despre moldoveni și denumiri etnice asociate Moldovei.</p>
-  <table class="moldoveneasca-table moldoveneasca-table--ethnicity" aria-describedby="ethnicity-title">
+  <table class="moldoveneasca-table moldoveneasca-table--ethnicity" data-ethnicity-table aria-describedby="ethnicity-title">
     <thead>
       <tr>
+        <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
         <th scope="col">An</th>
         <th scope="col">Secol</th>
         <th scope="col">Denumirea</th>
         <th scope="col">Citat</th>
+        <th scope="col">Limba</th>
         <th scope="col">Autor</th>
         <th scope="col">Sursa</th>
+        <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>
       </tr>
     </thead>
     <tbody>

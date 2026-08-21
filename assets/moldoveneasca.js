@@ -1105,7 +1105,7 @@
       });
       catalogTable.querySelectorAll('[data-reference-select]').forEach((checkbox) => {
         checkbox.hidden = !isAdmin;
-        if (!isAdmin) checkbox.checked = false;
+        checkbox.checked = isAdmin && selectedReferenceIds.has(checkbox.dataset.referenceSelect);
       });
     });
 

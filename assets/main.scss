@@ -2222,6 +2222,19 @@ body.moldoveneasca-detail-open {
   line-height: 1;
 }
 
+.moldoveneasca-detail__image {
+  margin: 0 0 1rem;
+}
+
+.moldoveneasca-detail__image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top left;
+}
+
 .moldoveneasca-detail__content {
   display: grid;
   gap: 1rem;

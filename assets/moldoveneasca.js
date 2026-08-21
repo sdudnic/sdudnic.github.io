@@ -38,6 +38,7 @@
   const detailPanel = root.querySelector('[data-reference-detail]');
   const detailBackdrop = root.querySelector('[data-reference-detail-backdrop]');
   const detailTitle = root.querySelector('[data-detail-title]');
+  const detailImage = root.querySelector('[data-detail-image]');
   const detailContent = root.querySelector('[data-detail-content]');
   const closeDetailButton = root.querySelector('[data-close-detail]');
 
@@ -275,6 +276,20 @@
     return urls;
   };
 
+  const imageUrl = (record) => {
+    const value = String(record?.image_url || '').trim();
+    if (!value) return '';
+    if (/^data:image\/(avif|gif|jpe?g|png|webp);base64,[a-z0-9+/=]+$/i.test(value.replace(/\s+/g, ''))) {
+      return value.replace(/\s+/g, '');
+    }
+    try {
+      const url = new URL(value, window.location.href);
+      return url.protocol === 'https:' ? url.href : '';
+    } catch {
+      return '';
+    }
+  };
+
   const recordFromStaticRow = (row) => {
     const yearLabel = row.cells[0]?.textContent.trim() || '';
     const sourceText = extractCellText(row.cells[1]);
@@ -293,6 +308,7 @@
       source_type: 'Import din tabelul existent',
       location: null,
       description: sourceText,
+      image_url: null,
       status: 'published',
       owner_id: null
     };
@@ -496,6 +512,25 @@
     const urls = sourceUrls(record);
     detailContent.replaceChildren();
     if (detailTitle) detailTitle.textContent = fields.title === '—' ? 'Detalii referință' : fields.title;
+    if (detailImage) {
+      detailImage.replaceChildren();
+      const url = imageUrl(record);
+      if (url) {
+        const image = document.createElement('img');
+        image.src = url;
+        image.alt = fields.title === '—' ? 'Imaginea referinței' : fields.title;
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.addEventListener('error', () => {
+          detailImage.replaceChildren();
+          detailImage.hidden = true;
+        }, { once: true });
+        detailImage.appendChild(image);
+        detailImage.hidden = false;
+      } else {
+        detailImage.hidden = true;
+      }
+    }
 
     const addDetailField = (label, value, render = null) => {
       if (!value || value === '—') return;
@@ -883,6 +918,7 @@
     setField('quote', fields.quote);
     setField('location', record?.location);
     setField('source_url', record?.source_url || urls[0]);
+    setField('image_url', record?.image_url);
     setField('status', record?.status || 'pending');
     setStatus('');
     editorPanel.hidden = false;
@@ -932,7 +968,7 @@
     if (!supabaseClient) return;
     const { data, error } = await supabaseClient
       .from('language_references')
-      .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, status, owner_id')
+      .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, image_url, status, owner_id')
       .order('year_start', { ascending: true });
     if (error) throw error;
     const records = data || [];
@@ -1014,7 +1050,8 @@
       description: String(data.get('description') || '').trim() || null,
       quote: String(data.get('quote') || '').trim() || null,
       location: String(data.get('location') || '').trim() || null,
-      source_url: String(data.get('source_url') || '').trim() || null
+      source_url: String(data.get('source_url') || '').trim() || null,
+      image_url: String(data.get('image_url') || '').trim() || null
     };
     if (currentRole === 'admin') payload.status = String(data.get('status') || 'pending');
     return payload;

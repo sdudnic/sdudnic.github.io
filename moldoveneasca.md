@@ -75,6 +75,10 @@ permalink: /moldoveneasca/
           <span>Legătura către sursă</span>
           <input type="url" name="source_url" placeholder="https://…">
         </label>
+        <label class="moldoveneasca-field">
+          <span>Imagine scanată</span>
+          <input type="text" name="image_url" placeholder="URL direct sau imagine codificată" autocomplete="off">
+        </label>
         <label class="moldoveneasca-field" data-admin-only hidden>
           <span>Statut</span>
           <select name="status">
@@ -101,12 +105,13 @@ permalink: /moldoveneasca/
       </div>
       <button type="button" class="moldoveneasca-detail__close" data-close-detail aria-label="Închide detaliile" title="Închide detaliile">×</button>
     </div>
+    <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
     <dl class="moldoveneasca-detail__content" data-detail-content></dl>
   </aside>
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260811-12"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260821-1"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

@@ -41,6 +41,7 @@ create table if not exists public.language_references (
   source_type text,
   location text,
   source_url text,
+  image_url text,
   status public.reference_status not null default 'pending',
   owner_id uuid not null references public.profiles(id) on delete restrict,
   created_at timestamptz not null default timezone('utc', now()),
@@ -50,11 +51,32 @@ create table if not exists public.language_references (
   ),
   constraint language_references_source_url check (
     source_url is null or source_url ~* '^https?://'
+  ),
+  constraint language_references_image_url check (
+    image_url is null
+    or image_url ~* '^https://'
+    or image_url ~* '^data:image/(avif|gif|jpeg|jpg|png|webp);base64,[A-Za-z0-9+/=]+$'
   )
 );
 
 alter table public.language_references
   add column if not exists language text;
+
+alter table public.language_references
+  add column if not exists image_url text;
+
+do $$
+begin
+  alter table public.language_references
+    drop constraint if exists language_references_image_url;
+  alter table public.language_references
+    add constraint language_references_image_url check (
+      image_url is null
+      or image_url ~* '^https://'
+      or image_url ~* '^data:image/(avif|gif|jpeg|jpg|png|webp);base64,[A-Za-z0-9+/=]+$'
+    );
+end
+$$;
 
 create table if not exists public.reference_revisions (
   id uuid primary key default gen_random_uuid(),

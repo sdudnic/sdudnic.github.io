@@ -64,6 +64,9 @@ Conturile noi rămân `viewer` până când administratorul le promovează.
 - tabelul public poate fi căutat într-un singur câmp după toate coloanele;
 - referințele noi și editările folosesc câmpuri separate pentru perioadă, secol,
   lucrare, citat, limbă, autor și sursă;
+- o imagine scanată poate fi atașată printr-un URL HTTPS direct sau ca imagine
+  codificată; nu este tratată ca sursă și apare numai în detaliile referinței,
+  păstrând lizibilitatea și fiind redusă doar la lățimea blade-ului dacă este necesar;
 - editorul poate modifica doar referințele al căror proprietar este;
 - editorul nu poate șterge și nu poate schimba statutul unei referințe;
 - administratorul poate modifica, publica, arhiva sau șterge orice referință;

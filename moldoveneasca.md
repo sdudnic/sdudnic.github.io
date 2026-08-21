@@ -73,7 +73,8 @@ permalink: /moldoveneasca/
         </label>
         <label class="moldoveneasca-field moldoveneasca-field--full">
           <span>Citat</span>
-          <textarea name="quote" rows="3" placeholder="Doar pasajul citat în care este menționată limba."></textarea>
+          <textarea name="quote" rows="3" placeholder="Doar pasajul citat în care este menționată limba." aria-describedby="quote-help"></textarea>
+          <small id="quote-help" class="moldoveneasca-field-hint" data-catalog-quote-hint>Catalogul limbii: citatul trebuie să conțină un termen pentru limbă și glotonimul.</small>
         </label>
         <label class="moldoveneasca-field">
           <span>Locul / instituția</span>
@@ -133,7 +134,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260822-5"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260822-6"></script>
 
 | **An** | **Secol** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

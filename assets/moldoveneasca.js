@@ -61,6 +61,9 @@
   const detailImage = root.querySelector('[data-detail-image]');
   const detailContent = root.querySelector('[data-detail-content]');
   const closeDetailButton = root.querySelector('[data-close-detail]');
+  const quoteHint = root.querySelector('[data-catalog-quote-hint]');
+  const catalogTypeField = editorForm?.elements.namedItem('catalog_type');
+  const quoteField = editorForm?.elements.namedItem('quote');
 
   if (!table || !tbody) return;
   table.classList.add('moldoveneasca-table');
@@ -150,6 +153,8 @@
 
   const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav\p{L}*|moldau\p{L}*|moldauisch\p{L}*|moldov\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
   const languageLabelPattern = /(?:\blimb\p{L}*\b|лимб\p{L}*|линд\p{L}*|\blingua\p{L}*\b|\blanguage\p{L}*\b|\bsprache\p{L}*\b|sprach\p{L}*|\blangue\p{L}*\b|\blengua\p{L}*\b|\bjęzyk\p{L}*\b|\bjezyk\p{L}*\b|\bjazyk\p{L}*\b|\byazyk\p{L}*\b|\bjezik\p{L}*\b|\bidioma\p{L}*\b|\bidiom\p{L}*\b|\bvaloda\p{L}*\b|\bkalba\p{L}*\b|\bkeel\p{L}*\b|\bnyelv\p{L}*\b|\bspråk\p{L}*\b|язык\p{L}*|мова\p{L}*|моў\p{L}*|młëtwa|gjuha|tung\p{L}*|\bdicționar\p{L}*\b|\bdicţionar\p{L}*\b|\bcuvîntelnic\p{L}*\b|\bcuvintelnic\p{L}*\b|\bdictionary\p{L}*\b|словар\p{L}*|\bgramatic\p{L}*\b|\bgrammatik\p{L}*\b|граматик\p{L}*|грамматик\p{L}*)/iu;
+  const ethnicityLabelPattern = /(?:\betni\p{L}*\b|\bnați\p{L}*\b|\bnati\p{L}*\b|\bpopor\p{L}*\b|\bneam\p{L}*\b|\bpopulați\p{L}*\b|\bpopulati\p{L}*\b|\blocuitor\p{L}*\b|\bnation\p{L}*\b|\bpeuple\p{L}*\b|\bpeople\b|\bpopolo\p{L}*\b|\bpueblo\p{L}*\b|\bpovo\b|\bnazione\p{L}*\b|\bgente\b|\bgens\b|\bnatio\p{L}*\b|\bpopulus\b|\bpopul\p{L}*\b|\bvolk\p{L}*\b|\bbevölkerung\p{L}*\b|\bnarod\p{L}*\b|\bnaród\p{L}*\b|\blud\p{L}*\b|\bmieszkańc\p{L}*\b|\bнарод\p{L}*|\bнаці\p{L}*|\bетнос\p{L}*|\bнаселен\p{L}*|\bмолдаван\p{L}*|\bмолдован\p{L}*)/iu;
+  const ethnonymPattern = /(?:\bmoldoven(?:i|ii|ilor|ului|e)\b|\bmoldovean(?:i|ii|ului|ilor)?\b|\bmoldav(?:i|ii|ilor|es|ian(?:s|e)?|ians?)\b|\bmoldauer\p{L}*\b|\bmołdawian\p{L}*\b|\bmoldovan\p{L}*\b|\bмолдаван\p{L}*\b|\bмолдован\p{L}*\b|\bмолдавц\p{L}*\b|\bмолдавян\p{L}*\b)/iu;
 
   const cleanImportedText = (value) => String(value || '')
     .replace(/^\s*\*\?\s*/, '')
@@ -811,6 +816,48 @@
     return languageIndex >= 0 && nameIndex >= 0 && Math.abs(languageIndex - nameIndex) <= 80;
   };
 
+  const hasEthnicityAndGlotonym = (value) => {
+    const text = String(value || '');
+    const nameIndex = text.search(languageNamePattern);
+    const labelIndex = text.search(ethnicityLabelPattern);
+    return nameIndex >= 0 && labelIndex >= 0 && Math.abs(nameIndex - labelIndex) <= 100;
+  };
+
+  const hasEthnicityEvidence = (value) => {
+    const text = String(value || '');
+    return hasEthnicityAndGlotonym(text) || ethnonymPattern.test(text);
+  };
+
+  const quoteRequirement = (catalogType) => {
+    if (catalogType === 'ethnicity') {
+      return {
+        placeholder: 'Doar pasajul cu moldoveni, națiune, popor sau alt termen etnic.',
+        hint: 'Catalogul etnic: citatul trebuie să documenteze moldovenii, națiunea, poporul sau alt termen etnic.',
+        error: 'Pentru catalogul etnic, citatul sau comentariile trebuie să documenteze moldovenii, națiunea, poporul ori un alt termen etnic.'
+      };
+    }
+    if (catalogType === 'both') {
+      return {
+        placeholder: 'Citatul trebuie să documenteze limba și etnia, dacă apar amândouă.',
+        hint: 'Ambele cataloage: citatul și comentariile trebuie să documenteze separat denumirea limbii și referința etnică.',
+        error: 'Pentru ambele cataloage, citatul sau comentariile trebuie să documenteze atât denumirea limbii, cât și referința etnică.'
+      };
+    }
+    return {
+      placeholder: 'Doar pasajul cu termenul pentru limbă și glotonimul.',
+      hint: 'Catalogul limbii: citatul trebuie să conțină un termen pentru limbă și glotonimul; pentru dicționare sau gramatici, dovada poate fi în denumire ori comentarii.',
+      error: 'Pentru catalogul limbii, citatul trebuie să conțină un termen pentru limbă și glotonimul; la lucrări lingvistice explicite, dovada poate fi în denumire sau comentarii.'
+    };
+  };
+
+  const updateQuoteRequirement = () => {
+    const selectedType = String(catalogTypeField?.value || 'language');
+    const catalogType = catalogTypeValues.has(selectedType) ? selectedType : 'language';
+    const requirement = quoteRequirement(catalogType);
+    if (quoteField) quoteField.placeholder = requirement.placeholder;
+    if (quoteHint) quoteHint.textContent = requirement.hint;
+  };
+
   const hasGlotonym = (value) => languageNamePattern.test(String(value || ''));
 
   const appendQuoteText = (parent, value) => {
@@ -1338,6 +1385,7 @@
   const closeEditor = () => {
     editingId = null;
     if (editorForm) editorForm.reset();
+    updateQuoteRequirement();
     resetImageMarkup();
     renderImagePreview();
     if (imageHint) imageHint.textContent = 'Lipește cu Ctrl+V captura paginii unde apare citatul; pentru un PDF păstrează doar pagina citată și, ideal, subliniază cu roșu glotonimul.';
@@ -1369,6 +1417,7 @@
     setField('author', record?.author);
     setField('source_type', record?.source_type);
     setField('catalog_type', recordCatalogType(record));
+    updateQuoteRequirement();
     setField('description', recordComments(record));
     setField('quote', fields.quote);
     setField('location', record?.location);
@@ -1558,14 +1607,24 @@
       return;
     }
     const quoteHasGlotonym = hasGlotonym(payload.quote);
-    const workHasLanguageEvidence = hasLanguageAndGlotonym([
+    const contextText = [
       payload.title,
       payload.source_type,
       payload.description
-    ].filter(Boolean).join(' '));
-    const ethnicityOnly = payload.catalog_type === 'ethnicity';
-    if (!payload.quote || !quoteHasGlotonym || (!ethnicityOnly && !hasLanguageAndGlotonym(payload.quote) && !workHasLanguageEvidence)) {
-      setStatus('Citatul trebuie să conțină glotonimul; pentru grafii vechi este suficient ca lucrarea sau comentariile să documenteze explicit denumirea limbii.', 'error');
+    ].filter(Boolean).join(' ');
+    const languageEvidence = hasLanguageAndGlotonym(payload.quote) || hasLanguageAndGlotonym(contextText);
+    const ethnicityEvidence = hasEthnicityEvidence(payload.quote) || hasEthnicityEvidence(contextText);
+    const languageCatalog = payload.catalog_type === 'language';
+    const ethnicityCatalog = payload.catalog_type === 'ethnicity';
+    const validQuote = payload.catalog_type === 'both'
+      ? languageEvidence && ethnicityEvidence
+      : languageCatalog
+        ? languageEvidence
+        : ethnicityCatalog
+          ? ethnicityEvidence
+          : false;
+    if (!payload.quote || !quoteHasGlotonym || !validQuote) {
+      setStatus(quoteRequirement(payload.catalog_type).error, 'error');
       return;
     }
 
@@ -1653,6 +1712,7 @@
   logoutButton?.addEventListener('click', signOut);
   openFormButton?.addEventListener('click', () => openEditor());
   cancelEditButton?.addEventListener('click', closeEditor);
+  catalogTypeField?.addEventListener('change', updateQuoteRequirement);
   closeDetailButton?.addEventListener('click', closeDetail);
   imageInput?.addEventListener('input', renderImagePreview);
   imageInput?.addEventListener('paste', (event) => {
@@ -1724,6 +1784,7 @@
   });
   editorForm?.addEventListener('submit', saveRecord);
 
+  updateQuoteRequirement();
   sortRowsChronologically();
   updateStats();
   filterRows();

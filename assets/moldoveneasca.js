@@ -595,7 +595,7 @@
       year_start: parseYears(row.cells[0]?.textContent)[0] || null,
       year_end: parseYears(row.cells[0]?.textContent)[1] || parseYears(row.cells[0]?.textContent)[0] || null,
       title: extractCellText(row.cells[2]),
-      quote: extractCellText(row.cells[3]),
+      quote: cleanQuote(extractCellText(row.cells[3])),
       language: structured ? (extractCellText(row.cells[4]) || null) : null,
       author: extractCellText(row.cells[structured ? 5 : 4]),
       source_url: sourceUrlsFromRow[0] || null,

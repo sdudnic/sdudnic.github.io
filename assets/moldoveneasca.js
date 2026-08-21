@@ -1162,13 +1162,21 @@
     row.replaceWith(converted);
     return converted;
   });
-  const ethnicityStaticRows = ethnicityTbody
+  const ethnicityStaticEntries = ethnicityTbody
     ? Array.from(ethnicityTbody.rows).map((row) => {
-      const converted = createCatalogRow(recordFromEthnicityStaticRow(row));
+      const record = recordFromEthnicityStaticRow(row);
+      const converted = createCatalogRow(record);
       row.replaceWith(converted);
-      return converted;
+      return { row: converted, record };
     })
     : [];
+
+  const recordIdentity = (record) => normalize([
+    record?.year_label,
+    record?.title,
+    record?.quote,
+    record?.source_url
+  ].filter(Boolean).join('|'));
 
   const getSortedRows = () => currentRows().sort((a, b) => {
     const yearA = Number(a.dataset.catalogYear) || Number.POSITIVE_INFINITY;
@@ -1450,13 +1458,14 @@
   const renderEthnicityRows = () => {
     if (!ethnicityTbody) return;
     ethnicityTbody.querySelectorAll('tr[data-remote-reference]').forEach((row) => row.remove());
-    if (ethnicityRecords.length) {
-      ethnicityStaticRows.forEach((row) => row.remove());
-    } else {
-      ethnicityStaticRows.forEach((row) => {
-        if (!ethnicityTbody.contains(row)) ethnicityTbody.appendChild(row);
-      });
-    }
+    const remoteIdentities = new Set(ethnicityRecords.map(recordIdentity));
+    ethnicityStaticEntries.forEach(({ row, record }) => {
+      if (remoteIdentities.has(recordIdentity(record))) {
+        row.remove();
+      } else if (!ethnicityTbody.contains(row)) {
+        ethnicityTbody.appendChild(row);
+      }
+    });
     ethnicityRecords.forEach((record) => ethnicityTbody.appendChild(createCatalogRow(record)));
     sortRowsChronologicallyIn(ethnicityTbody);
     filterRows();

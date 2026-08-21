@@ -12,7 +12,9 @@
   const authMessage = document.querySelector('[data-auth-message]');
   const authUser = document.querySelector('[data-auth-user]');
   const roleBadge = document.querySelector('[data-role-badge]');
-  const loginButton = document.querySelector('[data-login]');
+  const googleLoginButton = document.querySelector('[data-login-google]');
+  const githubLoginButton = document.querySelector('[data-login-github]');
+  const loginButtons = [googleLoginButton, githubLoginButton].filter(Boolean);
   const logoutButton = document.querySelector('[data-logout]');
   const openFormButton = root.querySelector('[data-open-form]');
   const editorPanel = root.querySelector('[data-reference-editor]');
@@ -125,7 +127,7 @@
   };
 
   const languageNamePattern = /(?:moldoveneas(?:că|ca)|moldovineas(?:că|ca)|moldoveneșt(?:e|i)|moldovenesc|moldav\p{L}*|moldau\p{L}*|moldauisch\p{L}*|moldov\p{L}*|moldeuška|молдавск\p{L}*|молдовен(?:яск\p{L}*)?)/iu;
-  const languageLabelPattern = /(?:\blimb\p{L}*\b|\blingua\p{L}*\b|\blanguage\p{L}*\b|\bsprache\p{L}*\b|sprach\p{L}*|\blangue\p{L}*\b|\blengua\p{L}*\b|\bjęzyk\p{L}*\b|\bjezyk\p{L}*\b|\bjazyk\p{L}*\b|\byazyk\p{L}*\b|\bjezik\p{L}*\b|\bidioma\p{L}*\b|\bidiom\p{L}*\b|\bvaloda\p{L}*\b|\bkalba\p{L}*\b|\bkeel\p{L}*\b|\bspråk\p{L}*\b|язык\p{L}*|мова\p{L}*|моў\p{L}*|młëtwa|gjuha|tung\p{L}*)/iu;
+  const languageLabelPattern = /(?:\blimb\p{L}*\b|лимб\p{L}*|линд\p{L}*|\blingua\p{L}*\b|\blanguage\p{L}*\b|\bsprache\p{L}*\b|sprach\p{L}*|\blangue\p{L}*\b|\blengua\p{L}*\b|\bjęzyk\p{L}*\b|\bjezyk\p{L}*\b|\bjazyk\p{L}*\b|\byazyk\p{L}*\b|\bjezik\p{L}*\b|\bidioma\p{L}*\b|\bidiom\p{L}*\b|\bvaloda\p{L}*\b|\bkalba\p{L}*\b|\bkeel\p{L}*\b|\bspråk\p{L}*\b|язык\p{L}*|мова\p{L}*|моў\p{L}*|młëtwa|gjuha|tung\p{L}*|\bdicționar\p{L}*\b|\bdicţionar\p{L}*\b|\bcuvîntelnic\p{L}*\b|\bcuvintelnic\p{L}*\b|\bdictionary\p{L}*\b|словар\p{L}*|\bgramatic\p{L}*\b|\bgrammatik\p{L}*\b|граматик\p{L}*|грамматик\p{L}*)/iu;
 
   const cleanImportedText = (value) => String(value || '')
     .replace(/^\s*\*\?\s*/, '')
@@ -649,7 +651,6 @@
     configureIconButton(nextPageButton, 'Pagina următoare', 'next');
     configureIconButton(lastPageButton, 'Ultima pagină', 'last');
     configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
-    configureIconButton(loginButton, 'Autentificare cu GitHub', 'login');
     configureIconButton(logoutButton, 'Ieșire din cont', 'logout');
   };
 
@@ -986,12 +987,12 @@
         authUser.textContent = '';
         authUser.hidden = true;
       }
-      if (loginButton) {
-        loginButton.hidden = false;
-        loginButton.disabled = false;
-      }
+      loginButtons.forEach((button) => {
+        button.hidden = false;
+        button.disabled = false;
+      });
       if (logoutButton) logoutButton.hidden = true;
-      if (authMessage) authMessage.textContent = 'Vizualizarea este deschisă tuturor. Autentifică-te cu GitHub pentru a contribui.';
+      if (authMessage) authMessage.textContent = 'Vizualizarea este deschisă tuturor. Autentifică-te cu Google sau GitHub pentru a contribui.';
       if (editorPanel) editorPanel.hidden = true;
       renderRemoteRows();
       return;
@@ -999,15 +1000,15 @@
 
     const { data: profile, error } = await supabaseClient
       .from('profiles')
-      .select('role, github_login, display_name')
+      .select('role, github_login, email, display_name')
       .eq('id', currentUser.id)
       .maybeSingle();
     if (error) throw error;
 
     setRole(profile?.role || 'viewer');
-    if (loginButton) loginButton.hidden = true;
+    loginButtons.forEach((button) => { button.hidden = true; });
     if (logoutButton) logoutButton.hidden = false;
-    const displayName = profile?.display_name || profile?.github_login || currentUser.user_metadata?.user_name || currentUser.email || 'contul tău';
+    const displayName = profile?.display_name || profile?.github_login || profile?.email || currentUser.user_metadata?.user_name || currentUser.email || 'contul tău';
     if (authUser) {
       authUser.textContent = displayName;
       authUser.hidden = false;
@@ -1016,15 +1017,15 @@
     renderRemoteRows();
   };
 
-  const signIn = async () => {
+  const signIn = async (provider) => {
     if (!supabaseClient) return;
-    loginButton.disabled = true;
+    loginButtons.forEach((button) => { button.disabled = true; });
     const { error } = await supabaseClient.auth.signInWithOAuth({
-      provider: 'github',
+      provider,
       options: { redirectTo: config.redirectTo || window.location.href }
     });
     if (error) {
-      loginButton.disabled = false;
+      loginButtons.forEach((button) => { button.disabled = false; });
       if (authMessage) authMessage.textContent = `Autentificarea nu a reușit: ${error.message}`;
     }
   };
@@ -1069,7 +1070,7 @@
       return;
     }
     if (!payload.quote || !hasLanguageAndGlotonym(payload.quote)) {
-      setStatus('Citatul trebuie să conțină explicit un termen pentru limbă și glotonimul moldav/moldovenesc.', 'error');
+      setStatus('Citatul trebuie să conțină glotonimul și un termen de limbă sau denumirea explicită a unei lucrări lingvistice.', 'error');
       return;
     }
 
@@ -1140,7 +1141,8 @@
     currentPage = catalogTotalPages;
     filterRows();
   });
-  loginButton?.addEventListener('click', signIn);
+  googleLoginButton?.addEventListener('click', () => signIn('google'));
+  githubLoginButton?.addEventListener('click', () => signIn('github'));
   logoutButton?.addEventListener('click', signOut);
   openFormButton?.addEventListener('click', () => openEditor());
   cancelEditButton?.addEventListener('click', closeEditor);
@@ -1157,8 +1159,8 @@
   setRole('viewer');
 
   if (!config.supabaseUrl || !config.supabaseAnonKey) {
-    if (loginButton) loginButton.disabled = true;
-    if (authMessage) authMessage.textContent = 'Catalogul public și căutarea funcționează fără cont; autentificarea GitHub nu este încă configurată.';
+    loginButtons.forEach((button) => { button.disabled = true; });
+    if (authMessage) authMessage.textContent = 'Catalogul public și căutarea funcționează fără cont; autentificarea Google/GitHub nu este încă configurată.';
     return;
   }
 
@@ -1175,7 +1177,7 @@
         });
       });
     } catch (error) {
-      if (loginButton) loginButton.disabled = true;
+      loginButtons.forEach((button) => { button.disabled = true; });
       if (authMessage) authMessage.textContent = `Catalogul public funcționează, dar autentificarea nu este disponibilă: ${error.message}`;
     }
   })();

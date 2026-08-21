@@ -1,12 +1,13 @@
 # Catalogul moldovenească — configurare gratuită
 
 Această variantă păstrează site-ul pe GitHub Pages și folosește planul gratuit
-Supabase pentru autentificare GitHub și referințele adăugate din interfață.
+Supabase pentru autentificare Google/GitHub și referințele adăugate din interfață.
 
 ## 1. Creează proiectul Supabase
 
 1. Creează un proiect nou pe [supabase.com](https://supabase.com/).
 2. Deschide **SQL Editor** și rulează integral [`supabase/schema.sql`](supabase/schema.sql).
+   Dacă proiectul Supabase există deja, rulează și migrarea [`supabase/migrations/20260821_add_google_auth_profile.sql`](supabase/migrations/20260821_add_google_auth_profile.sql).
 3. Deschide **Project Settings → API** și copiază **Project URL** și cheia publică **anon**.
 4. Completează valorile în [`assets/moldoveneasca-config.js`](assets/moldoveneasca-config.js):
 
@@ -21,7 +22,7 @@ Supabase pentru autentificare GitHub și referințele adăugate din interfață.
 Cheia `anon` este destinată aplicației din browser. Nu pune niciodată cheia
 `service_role` în repository sau în codul paginii.
 
-## 2. Activează autentificarea GitHub
+## 2. Activează autentificarea Google și GitHub
 
 1. În GitHub creează o **OAuth App**.
 2. Folosește ca **Authorization callback URL**:
@@ -30,7 +31,17 @@ Cheia `anon` este destinată aplicației din browser. Nu pune niciodată cheia
 
 3. În Supabase deschide **Authentication → Sign In / Providers → GitHub** și
    introdu Client ID și Client Secret.
-4. În **Authentication → URL Configuration** adaugă:
+
+Pentru Google:
+
+1. În [Google Cloud Console](https://console.cloud.google.com/) creează un client OAuth de tip **Web application**.
+2. La **Authorized redirect URIs** adaugă:
+
+   `https://PROJECT-REF.supabase.co/auth/v1/callback`
+
+3. În Supabase deschide **Authentication → Sign In / Providers → Google**, activează providerul și introdu Client ID și Client Secret.
+
+În **Authentication → URL Configuration** adaugă:
 
    `https://dudnic.com/moldoveneasca/`
 
@@ -48,6 +59,14 @@ where github_login = 'NUME_GITHUB_ADMIN';
 În proiectul configurat acum, contul proprietar are identificatorul GitHub
 `sdudnic` (numele afișat poate fi diferit).
 
+Pentru un administrator autentificat cu Google:
+
+```sql
+update public.profiles
+set role = 'admin'
+where email = 'administrator@gmail.com';
+```
+
 Pentru un colaborator:
 
 ```sql
@@ -56,7 +75,11 @@ set role = 'editor'
 where github_login = 'NUME_GITHUB';
 ```
 
-Conturile noi rămân `viewer` până când administratorul le promovează.
+Conturile Google noi primesc automat rolul `editor`, deci nu trebuie promovate
+manual. Referințele adăugate de ele rămân `pending`: administratorul le poate
+verifica și publica, iar colaboratorul nu poate schimba statutul, șterge sau
+modifica referințele altor utilizatori. Conturile GitHub noi rămân `viewer` până
+când administratorul le promovează.
 
 ## Cum funcționează versiunea actuală
 

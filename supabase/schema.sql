@@ -22,11 +22,19 @@ $$;
 create table if not exists public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   github_login text unique,
+  auth_provider text,
+  email text,
   display_name text,
   role public.app_role not null default 'viewer',
   created_at timestamptz not null default timezone('utc', now()),
   updated_at timestamptz not null default timezone('utc', now())
 );
+
+alter table public.profiles
+  add column if not exists auth_provider text;
+
+alter table public.profiles
+  add column if not exists email text;
 
 create table if not exists public.language_references (
   id uuid primary key default gen_random_uuid(),
@@ -95,6 +103,9 @@ create index if not exists language_references_owner_idx
 create index if not exists language_references_status_idx
   on public.language_references (status);
 
+create index if not exists profiles_email_idx
+  on public.profiles (email);
+
 create or replace function public.current_user_role()
 returns public.app_role
 language sql
@@ -115,15 +126,26 @@ security definer
 set search_path = public
 as $$
 begin
-  insert into public.profiles (id, github_login, display_name)
+  insert into public.profiles (id, github_login, auth_provider, email, display_name, role)
   values (
     new.id,
-    coalesce(new.raw_user_meta_data ->> 'user_name', new.raw_user_meta_data ->> 'preferred_username'),
-    coalesce(new.raw_user_meta_data ->> 'full_name', new.raw_user_meta_data ->> 'name', new.email)
+    case when coalesce(new.raw_app_meta_data ->> 'provider', '') = 'github'
+      then coalesce(new.raw_user_meta_data ->> 'user_name', new.raw_user_meta_data ->> 'preferred_username')
+      else null
+    end,
+    coalesce(new.raw_app_meta_data ->> 'provider', 'email'),
+    new.email,
+    coalesce(new.raw_user_meta_data ->> 'full_name', new.raw_user_meta_data ->> 'name', new.email),
+    case when coalesce(new.raw_app_meta_data ->> 'provider', '') = 'google'
+      then 'editor'::public.app_role
+      else 'viewer'::public.app_role
+    end
   )
   on conflict (id) do update set
-    github_login = excluded.github_login,
-    display_name = excluded.display_name,
+    github_login = coalesce(excluded.github_login, public.profiles.github_login),
+    auth_provider = coalesce(excluded.auth_provider, public.profiles.auth_provider),
+    email = coalesce(excluded.email, public.profiles.email),
+    display_name = coalesce(excluded.display_name, public.profiles.display_name),
     updated_at = timezone('utc', now());
   return new;
 end;
@@ -266,3 +288,6 @@ create policy reference_revisions_select_owner_or_admin
 
 -- După ce te autentifici prima dată cu GitHub, promovează contul proprietar:
 -- update public.profiles set role = 'admin' where github_login = 'NUME_GITHUB_ADMIN';
+
+-- Conturile Google noi primesc automat rolul editor. Referințele lor rămân pending
+-- până când administratorul le verifică și le publică.

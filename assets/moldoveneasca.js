@@ -107,13 +107,57 @@
   const parseYears = (value) => [...String(value || '').matchAll(/\b(1[0-9]{3}|20[0-9]{2})\b/g)]
     .map((match) => Number(match[1]));
 
-  const parseYearStart = (record) => {
+  /*
+   * Catalogul păstrează uneori atât anul actului original, cât și anul
+   * tălmăcirii/ediției (de exemplu „1554 / 1820”). Coloana „An” trebuie să
+   * indice un singur an: anul lucrării/citatului afișat. Pentru fișele cu o
+   * dovadă explicită în descriere folosim anul ediției sau al tălmăcirii;
+   * descrierile păstrează în continuare data actului original.
+   */
+  const citationYearOverrides = Object.freeze({
+    '058e0fb6-1ef0-4e41-bdd3-5e2207e92fe0': 1820,
+    '572e897f-7042-4510-bb40-4564a5947cf7': 1810,
+    '016b4d74-ca50-4d03-802d-47a7563acbb7': 1775,
+    '94234e75-050b-4d53-b979-778cf3df9bdb': 1802,
+    '83a76571-2095-4e4f-b459-31e40ec5006b': 1804,
+    'b45a3fec-fc2e-404c-be6c-903bf754e68f': 1804,
+    'da562b66-67a8-470d-b1d1-c082b3875a5d': 1816,
+    'e48bd7a9-c9e9-4842-9d13-f81edc2962a0': 1809,
+    'f3c9e6f9-9f18-402f-9dbb-13a1edcd96a8': 1798,
+    '5e10ac0b-94cf-4b96-8ee8-495a114f4846': 1801,
+    'ccca3cda-3082-4cbf-85a6-2d7190b615bf': 1594,
+    '20ad75bc-aa59-4cfc-b27e-873cecb7ce81': 1604,
+    'c01a03b9-9724-401e-b282-c54b05d09454': 1635,
+    'eb338f2d-b104-464e-8803-bec15fa71317': 1677,
+    '3f124243-ceb5-4e74-9603-cd6c37a8c2c2': 1769,
+    'f63c25a7-7793-428b-8e33-76b29949ec14': 1716,
+    'f624a61a-f1e6-4a5c-92b2-4a8901738a86': 1716,
+    'dd841c09-ea35-490e-95ef-c43ceb0e5294': 1748,
+    '91441da9-c0dc-4933-b46c-87a1010a12d1': 1760,
+    '2c216320-ee1a-4489-9b25-97f378b34541': 1906
+  });
+
+  const citationYear = (record) => {
+    const override = citationYearOverrides[String(record?.id || '')];
+    if (Number.isFinite(override)) return override;
+
+    const label = String(record?.year_label || '');
+    const editionYear = label.match(/edi[țt]ia\s+(1[0-9]{3}|20[0-9]{2})/iu);
+    if (editionYear) return Number(editionYear[1]);
+
+    // Când anul original și anul tălmăcirii sunt despărțite prin „/”,
+    // ultimul an este cel al lucrării citate în catalog.
+    const years = parseYears(label);
+    if (years.length > 1 && /\//.test(label)) return years[years.length - 1];
+    if (years.length) return years[0];
     if (Number.isFinite(Number(record?.year_start))) return Number(record.year_start);
-    return parseYears(record?.year_label)[0] || null;
+    return null;
   };
 
+  const parseYearStart = (record) => citationYear(record);
+
   const publicationYearLabel = (record) => {
-    const year = parseYearStart(record);
+    const year = citationYear(record);
     return year ? String(year) : '—';
   };
 
@@ -276,6 +320,54 @@
       .join(' ')
       .replace(/\s+(→|->|\/|,)\s+/g, ' $1 ')
       .trim();
+  };
+
+  /*
+   * „Limba” din catalog înseamnă limba textului citat, nu limba din care a
+   * fost tradusă lucrarea. De aceea formule precum „cu → md” sau „el → md”
+   * se afișează aici ca „md”: mențiunea limbii sârbești/grecești/franceze
+   * descrie originalul, iar citatul păstrat în fișă este moldovenesc.
+   * Excepțiile bilingve sunt stabilite după textul citat, nu după titlu.
+   */
+  const citationLanguageOverrides = Object.freeze({
+    '76fcaa85-b240-4184-a46e-90407633a25f': 'md',
+    '1f1f4cee-ade1-4b3c-9b20-a712645535dc': 'md',
+    'ba08af66-6d94-4131-a0f5-e20a709fdbc7': 'md',
+    'a711f812-cadc-447a-9d60-ea03546f00b5': 'fr',
+    '332ecb6c-c1e2-47e1-a335-2b17e1b5a415': 'ru',
+    '5bb58598-d8d5-45a1-94f1-baee4ff2bdfe': 'md',
+    '5ddc2246-b478-434c-88a8-1c484b57931b': 'md',
+    '05611316-3c46-436f-a390-a80719fa3d5e': 'md',
+    '84693642-b6be-43e1-9d5a-e4171435a30a': 'ru',
+    'd510ccd5-3487-4508-826e-4ff92348d8bf': 'md',
+    'b66d4c60-acfa-4c7e-9974-16b2b6f33b27': 'md',
+    '108208f3-945a-4dbe-96e5-60b675f76ee5': 'md',
+    '34a66e11-3a51-416f-b417-dd1d8b6fb8e8': 'md',
+    '377eff5d-9db4-4d07-8fc6-e8c5fb0006ce': 'ru',
+    '09e7b256-ab81-4d34-bbaf-600cc094826d': 'md / ru',
+    '51f9df80-e604-4377-8636-b7b320e995bd': 'md / ru'
+  });
+
+  const citationLanguageCode = (record) => {
+    const id = String(record?.id || '');
+    if (citationLanguageOverrides[id]) return citationLanguageOverrides[id];
+
+    const raw = String(record?.language || '').trim();
+    const normalized = languageCode(raw, record);
+    // Orice traseu de traducere care se încheie în moldovenească are un
+    // citat moldovenesc; limba sursă rămâne descrisă în titlu/observații.
+    if (/(?:→|->)\s*md$/i.test(normalized)) return 'md';
+    return normalized;
+  };
+
+  const normalizeCitationRecord = (record) => {
+    const year = citationYear(record);
+    const language = citationLanguageCode(record);
+    return {
+      ...record,
+      ...(year ? { year_label: String(year), year_start: year, year_end: year } : {}),
+      ...(language && language !== 'xx' ? { language } : {})
+    };
   };
 
   const languageNamesByCode = Object.freeze({
@@ -613,14 +705,14 @@
     const quote = imported
       ? (extractQuote(record?.quote) || extractQuote(raw) || directQuote || null)
       : (directQuote || null);
-    const language = languageCode(record?.language, record);
+    const language = citationLanguageCode(record);
     return {
       year: publicationYearLabel(record),
       century: centuryLabel(record),
       title,
       quote,
       language,
-      languageFull: languageTooltip(language, record?.language) || 'necunoscută',
+      languageFull: languageTooltip(language, language) || 'necunoscută',
       author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
     };
   };
@@ -679,7 +771,7 @@
       ['century', 'Sec.'],
       ['title', 'Denumirea'],
       ['quote', 'Citat'],
-      ['language', 'Limba'],
+      ['language', 'Limba citatului'],
       ['author', 'Autor'],
       ['source', 'Sursa'],
       ['actions', '']
@@ -920,8 +1012,8 @@
 
     addDetailField('An', fields.year);
     addDetailField('Sec.', fields.century);
-    addDetailField('Limba (în clar)', fields.languageFull);
-    addDetailField('Cod limbă', fields.language);
+    addDetailField('Limba citatului (în clar)', fields.languageFull);
+    addDetailField('Cod limbă citat', fields.language);
     addDetailField('Autor', fields.author);
     addDetailField('Proveniență', record?.source_type);
     addDetailField('Locul / instituția', record?.location);
@@ -1413,7 +1505,7 @@
     if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
     setField('year_label', record ? publicationYearLabel(record) : '');
     setField('title', imported ? (fields.title === '—' ? null : fields.title) : record?.title);
-    setField('language', record?.language);
+    setField('language', record ? citationLanguageCode(record) : '');
     setField('author', record?.author);
     setField('source_type', record?.source_type);
     setField('catalog_type', recordCatalogType(record));
@@ -1503,7 +1595,7 @@
       .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, image_url, catalog_type, status, owner_id')
       .order('year_start', { ascending: true });
     if (error) throw error;
-    const records = data || [];
+    const records = (data || []).map(normalizeCitationRecord);
     remoteRecords = records.filter((record) => record.status === 'published');
     ethnicityRecords = remoteRecords.filter((record) => catalogIncludes(record, 'ethnicity'));
     unverifiedRecords = records.filter((record) => record.status !== 'published');
@@ -1580,7 +1672,9 @@
       year_start: years[0] || null,
       year_end: years[1] || years[0] || null,
       title: String(data.get('title') || '').trim(),
-      language: languageValue ? languageCode(languageValue, { description: descriptionValue }) : null,
+      language: languageValue
+        ? citationLanguageCode({ language: languageCode(languageValue, { description: descriptionValue }) })
+        : null,
       author: String(data.get('author') || '').trim() || null,
       source_type: String(data.get('source_type') || '').trim() || null,
       catalog_type: catalogTypeValues.has(String(data.get('catalog_type') || '').trim())

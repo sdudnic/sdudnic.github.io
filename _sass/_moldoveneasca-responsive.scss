@@ -1,0 +1,376 @@
+.moldoveneasca-catalog__status {
+  margin-top: 0;
+  padding: 0.45rem 0;
+}
+
+.moldoveneasca-catalog__loading {
+  margin: 0.8rem 0;
+  color: var(--muted);
+}
+
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page .post-content > table:first-of-type,
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-catalog-status],
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-ethnicity-table],
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-ethnicity-status],
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-unverified-status] {
+  display: none !important;
+}
+
+// The catalogue uses one centralized type rule across the whole page.
+body.moldoveneasca-page {
+  --catalog-font-family: var(--site-font);
+  --catalog-font-size: 0.875rem;
+  --catalog-line-height: 1.4;
+}
+
+body.moldoveneasca-page,
+body.moldoveneasca-page * {
+  font-family: var(--catalog-font-family) !important;
+  font-size: var(--catalog-font-size) !important;
+  line-height: var(--catalog-line-height) !important;
+}
+
+.moldoveneasca-table__sort {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.2rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.moldoveneasca-table__sort:hover,
+.moldoveneasca-table__sort:focus-visible {
+  border-color: transparent;
+  background: transparent;
+  text-decoration: none;
+}
+
+.moldoveneasca-table__sort svg {
+  width: 14px;
+  height: 14px;
+}
+
+.moldoveneasca-icon-button[hidden] {
+  display: none !important;
+}
+
+// Minimal catalogue controls: one search field and one compact century filter.
+.moldoveneasca-catalog__toolbar {
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0.25rem;
+  padding: 0;
+  border: 0;
+}
+
+.moldoveneasca-search {
+  min-width: 0;
+}
+
+.moldoveneasca-century-filter {
+  display: block;
+  flex: 0 0 10rem;
+}
+
+.moldoveneasca-search input,
+.moldoveneasca-century-filter select,
+.moldoveneasca-catalog input,
+.moldoveneasca-catalog select,
+.moldoveneasca-catalog textarea {
+  box-sizing: border-box;
+  min-height: 2rem;
+  padding: 0.3rem 0.45rem !important;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.moldoveneasca-century-filter select {
+  width: 100%;
+}
+
+.moldoveneasca-search input:focus,
+.moldoveneasca-century-filter select:focus {
+  outline: 1px solid var(--ink);
+  outline-offset: 1px;
+}
+
+.moldoveneasca-table__filters {
+  display: none;
+}
+
+.moldoveneasca-grid-frame {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow: visible;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table,
+.moldoveneasca-grid-frame > .moldoveneasca-catalog__status {
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table {
+  margin-top: 0.25rem;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-catalog__status {
+  margin: 0;
+  padding: 0.35rem 0;
+  border: 0;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-selection-toolbar {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-pagination {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.moldoveneasca-selection-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0.2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.moldoveneasca-selection-toolbar[hidden] {
+  display: none;
+}
+
+.moldoveneasca-selection-toolbar__select,
+.moldoveneasca-selection-toolbar__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.moldoveneasca-selection-toolbar input[type='checkbox'],
+.moldoveneasca-table__selection-cell input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: currentColor;
+}
+
+.moldoveneasca-table__selection-cell {
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.moldoveneasca-table__selection-cell input[type='checkbox'] {
+  display: block;
+  margin: 0 auto;
+}
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__selection-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__selection-cell {
+  box-sizing: border-box;
+  width: 3rem !important;
+  min-width: 3rem;
+  max-width: 3rem;
+  padding-right: 0.35rem;
+  padding-left: 0.35rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__year-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__year { width: 8% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__title-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__title { width: 18% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__quote-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__quote { width: 27% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__language-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__language { width: 10% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__author-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__author { width: 13% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__source-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__source { width: 8% !important; }
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__actions-heading,
+.post-content .moldoveneasca-table td.moldoveneasca-table__actions-cell { width: 8% !important; }
+
+.post-content .moldoveneasca-table {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.moldoveneasca-catalog__intro {
+  width: 100%;
+  max-width: none;
+}
+
+.moldoveneasca-page .post-title {
+  display: none;
+}
+
+.moldoveneasca-catalog__title {
+  margin: 0 0 0.35rem;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.moldoveneasca-ethnicity {
+  margin-top: 1rem;
+}
+
+.moldoveneasca-ethnicity__title {
+  margin: 0 0 0.35rem;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.moldoveneasca-ethnicity__intro {
+  margin: 0 0 0.45rem;
+}
+
+.post-content .moldoveneasca-table--ethnicity {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.moldoveneasca-table--ethnicity th:nth-child(1),
+.moldoveneasca-table--ethnicity td:nth-child(1) { width: 4%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(2),
+.moldoveneasca-table--ethnicity td:nth-child(2) { width: 8%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(3),
+.moldoveneasca-table--ethnicity td:nth-child(3) { width: 20%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(4),
+.moldoveneasca-table--ethnicity td:nth-child(4) { width: 30%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(5),
+.moldoveneasca-table--ethnicity td:nth-child(5) { width: 12%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(6),
+.moldoveneasca-table--ethnicity td:nth-child(6) { width: 14%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(7),
+.moldoveneasca-table--ethnicity td:nth-child(7) { width: 8%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(8),
+.moldoveneasca-table--ethnicity td:nth-child(8) { width: 4%; }
+
+.moldoveneasca-table__detail-link {
+  font-weight: inherit;
+}
+
+@media screen and (max-width: 620px) {
+  .moldoveneasca-catalog__toolbar {
+    flex-wrap: wrap;
+  }
+
+  .moldoveneasca-search {
+    flex: 1 1 100%;
+  }
+
+  .moldoveneasca-century-filter {
+    flex: 1 1 auto;
+  }
+}
+
+// Keep the catalogue as a plain table on narrow screens. The table may scroll
+// horizontally, while its columns stay wide enough to keep text readable.
+@media screen and (max-width: 620px) {
+  .moldoveneasca-grid-frame {
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table {
+    width: 58rem !important;
+    min-width: 58rem !important;
+    max-width: none !important;
+    table-layout: fixed;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td {
+    box-sizing: border-box;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__selection-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__selection-cell {
+    width: 2.75rem !important;
+    min-width: 2.75rem !important;
+    max-width: 2.75rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__year-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
+    width: 7rem !important;
+    min-width: 7rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__title-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__title {
+    width: 12rem !important;
+    min-width: 12rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__quote-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__quote {
+    width: 15rem !important;
+    min-width: 15rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__language-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__language {
+    width: 8rem !important;
+    min-width: 8rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__author-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__author {
+    width: 6.5rem !important;
+    min-width: 6.5rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__source-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__source {
+    width: 4.5rem !important;
+    min-width: 4.5rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__actions-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__actions-cell {
+    width: 3rem !important;
+    min-width: 3rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
+    white-space: nowrap;
+  }
+}

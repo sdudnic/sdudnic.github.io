@@ -40,8 +40,9 @@ permalink: /moldoveneasca/
     <form data-reference-form>
       <div class="moldoveneasca-form-grid">
         <label class="moldoveneasca-field">
-          <span>Anul publicării citatului</span>
-          <input name="year_label" required inputmode="numeric" minlength="4" maxlength="4" pattern="(?:1[0-9]{3}|20[0-9]{2})" placeholder="Ex.: 1714" title="Introdu un singur an, cel al publicării citatului">
+          <span>Anul / secolul publicării citatului</span>
+          <input name="year_label" required inputmode="text" minlength="1" maxlength="30" pattern="(?:1[0-9]{3}|20[0-9]{2}|(?:sec(?:ol)?\.?\s*)?(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI)(?:\s*[–—-]\s*(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI))?)" placeholder="Ex.: 1714 sau XVII" title="Introdu anul exact al publicării; dacă nu este cunoscut, introdu doar secolul">
+          <small class="moldoveneasca-field-hint">Dacă anul exact nu este cunoscut, trece doar secolul; datarea presupusă se explică la „Comentarii”.</small>
         </label>
         <label class="moldoveneasca-field">
           <span>Titlul / documentul</span>
@@ -126,15 +127,21 @@ permalink: /moldoveneasca/
         <p class="eyebrow">Detalii referință</p>
         <h3 id="detail-title" data-detail-title></h3>
       </div>
-      <button type="button" class="moldoveneasca-detail__close" data-close-detail aria-label="Închide detaliile" title="Închide detaliile">×</button>
+      <div class="moldoveneasca-detail__actions">
+        <button type="button" class="moldoveneasca-icon-button" data-edit-detail hidden aria-label="Modifică referința" title="Modifică referința"><span aria-hidden="true"></span></button>
+        <button type="button" class="moldoveneasca-detail__close" data-close-detail aria-label="Închide detaliile" title="Închide detaliile">×</button>
+      </div>
     </div>
-    <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
-    <dl class="moldoveneasca-detail__content" data-detail-content></dl>
+    <div data-detail-view>
+      <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
+      <dl class="moldoveneasca-detail__content" data-detail-content></dl>
+    </div>
+    <div class="moldoveneasca-detail__editor" data-detail-editor-host hidden></div>
   </aside>
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-12"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-16"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>
@@ -362,13 +369,20 @@ permalink: /moldoveneasca/
     </thead>
     <tbody></tbody>
   </table>
-  <nav class="moldoveneasca-pagination" data-unverified-pagination hidden aria-label="Paginarea referințelor neverificate">
-    <button type="button" class="moldoveneasca-icon-button" data-unverified-page-first aria-label="Prima pagină a referințelor neverificate" title="Prima pagină"><span aria-hidden="true"></span></button>
-    <button type="button" class="moldoveneasca-icon-button" data-unverified-page-previous aria-label="Pagina anterioară a referințelor neverificate" title="Pagina anterioară"><span aria-hidden="true">←</span></button>
-    <span class="moldoveneasca-pagination__status" data-unverified-page-status aria-live="polite" aria-label="Pagina 1 din 1"><strong data-unverified-page-current>1</strong><span aria-hidden="true"> din </span><span data-unverified-page-total>1</span></span>
-    <button type="button" class="moldoveneasca-icon-button" data-unverified-page-next aria-label="Pagina următoare a referințelor neverificate" title="Pagina următoare"><span aria-hidden="true">→</span></button>
-    <button type="button" class="moldoveneasca-icon-button" data-unverified-page-last aria-label="Ultima pagină a referințelor neverificate" title="Ultima pagină"><span aria-hidden="true"></span></button>
-  </nav>
+  <div class="moldoveneasca-catalog__status" data-unverified-status>
+    <div class="moldoveneasca-catalog__status-summary">
+      <p class="moldoveneasca-catalog__result" data-unverified-result aria-live="polite"></p>
+      <span><strong data-unverified-record-count>—</strong> elemente în total</span>
+      <span><strong data-unverified-filtered-count>—</strong> elemente filtrate</span>
+    </div>
+    <nav class="moldoveneasca-pagination" data-unverified-pagination aria-label="Paginarea referințelor neverificate">
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-first aria-label="Prima pagină a referințelor neverificate" title="Prima pagină"><span aria-hidden="true"></span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-previous aria-label="Pagina anterioară a referințelor neverificate" title="Pagina anterioară"><span aria-hidden="true">←</span></button>
+      <span class="moldoveneasca-pagination__status" data-unverified-page-status aria-live="polite" aria-label="Pagina 1 din 1"><strong data-unverified-page-current>1</strong><span aria-hidden="true"> din </span><span data-unverified-page-total>1</span></span>
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-next aria-label="Pagina următoare a referințelor neverificate" title="Pagina următoare"><span aria-hidden="true">→</span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-last aria-label="Ultima pagină a referințelor neverificate" title="Ultima pagină"><span aria-hidden="true"></span></button>
+    </nav>
+  </div>
 </section>
 
 Doua chestii sa fie luate în considerare. Vom porni de la premiza ca 
@@ -473,11 +487,18 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
     </tbody>
   </table>
-  <nav class="moldoveneasca-pagination" data-ethnicity-pagination hidden aria-label="Paginarea referințelor despre etnie">
-    <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-first aria-label="Prima pagină a referințelor despre etnie" title="Prima pagină"><span aria-hidden="true"></span></button>
-    <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-previous aria-label="Pagina anterioară a referințelor despre etnie" title="Pagina anterioară"><span aria-hidden="true">←</span></button>
-    <span class="moldoveneasca-pagination__status" data-ethnicity-page-status aria-live="polite" aria-label="Pagina 1 din 1"><strong data-ethnicity-page-current>1</strong><span aria-hidden="true"> din </span><span data-ethnicity-page-total>1</span></span>
-    <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-next aria-label="Pagina următoare a referințelor despre etnie" title="Pagina următoare"><span aria-hidden="true">→</span></button>
-    <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-last aria-label="Ultima pagină a referințelor despre etnie" title="Ultima pagină"><span aria-hidden="true"></span></button>
-  </nav>
+  <div class="moldoveneasca-catalog__status" data-ethnicity-status>
+    <div class="moldoveneasca-catalog__status-summary">
+      <p class="moldoveneasca-catalog__result" data-ethnicity-result aria-live="polite"></p>
+      <span><strong data-ethnicity-record-count>—</strong> elemente în total</span>
+      <span><strong data-ethnicity-filtered-count>—</strong> elemente filtrate</span>
+    </div>
+    <nav class="moldoveneasca-pagination" data-ethnicity-pagination aria-label="Paginarea referințelor despre etnie">
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-first aria-label="Prima pagină a referințelor despre etnie" title="Prima pagină"><span aria-hidden="true"></span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-previous aria-label="Pagina anterioară a referințelor despre etnie" title="Pagina anterioară"><span aria-hidden="true">←</span></button>
+      <span class="moldoveneasca-pagination__status" data-ethnicity-page-status aria-live="polite" aria-label="Pagina 1 din 1"><strong data-ethnicity-page-current>1</strong><span aria-hidden="true"> din </span><span data-ethnicity-page-total>1</span></span>
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-next aria-label="Pagina următoare a referințelor despre etnie" title="Pagina următoare"><span aria-hidden="true">→</span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-last aria-label="Ultima pagină a referințelor despre etnie" title="Ultima pagină"><span aria-hidden="true"></span></button>
+    </nav>
+  </div>
 </section>

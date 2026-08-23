@@ -974,7 +974,7 @@
       ['century', 'Sec.'],
       ['title', 'Denumirea'],
       ['quote', 'Citat'],
-      ['language', 'Limba citatului'],
+      ['language', 'Limba'],
       ['author', 'Autor'],
       ['source', 'Sursa'],
       ['actions', '']

@@ -134,7 +134,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-9"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-10"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>
@@ -144,7 +144,7 @@ permalink: /moldoveneasca/
   }
 </script>
 
-| **An** | **Sec.** | **Denumirea** | **Citat** | **Limba citatului** | **Autor** | **Sursa** |
+| **An** | **Sec.** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
 | ~1481-1504 | Petru Clănău, vel spătar sub Ștefan Vodă iscălește un "act doveditor de limba ce se vorbea sub Ștefan Voda Cel Mare în Moldova": "pohtii al scripti(scri) pe Moldovenie [...] dupi latinie, si scriptulam cu mâna mea în târg în Vaslui", [(sursa)](https://books.google.com/books?id=SIpaAAAAcAAJ&pg=PA151#v=onepage) |
 | 1524 | "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R), [direct](https://books.google.com/books?id=At9MAAAAcAAJ&pg=PA61&sa=X&ved=2ahUKEwiPmdm8_tbqAhXCz4UKHRUXAtU4UBC7BTACegQIARAU#v=onepage&q&f=false) |
@@ -355,7 +355,7 @@ permalink: /moldoveneasca/
         <th scope="col" class="moldoveneasca-table__century-heading">Sec.</th>
         <th scope="col" class="moldoveneasca-table__title-heading">Denumirea</th>
         <th scope="col" class="moldoveneasca-table__quote-heading">Citat</th>
-        <th scope="col" class="moldoveneasca-table__language-heading">Limba citatului</th>
+        <th scope="col" class="moldoveneasca-table__language-heading">Limba</th>
         <th scope="col" class="moldoveneasca-table__author-heading">Autor</th>
         <th scope="col" class="moldoveneasca-table__source-heading">Sursa</th>
         <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>
@@ -388,7 +388,7 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
         <th scope="col">Sec.</th>
         <th scope="col">Denumirea</th>
         <th scope="col">Citat</th>
-        <th scope="col">Limba citatului</th>
+        <th scope="col">Limba</th>
         <th scope="col">Autor</th>
         <th scope="col">Sursa</th>
         <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>

@@ -1215,8 +1215,8 @@
 
     addDetailField('An', fields.year);
     addDetailField('Sec.', fields.century);
-    addDetailField('Limba citatului (în clar)', fields.languageFull);
-    addDetailField('Cod limbă citat', fields.language);
+    addDetailField('Limba', fields.languageFull);
+    addDetailField('Cod', fields.language);
     addDetailField('Autor', fields.author);
     addDetailField('Proveniență', record?.source_type);
     addDetailField('Locul / instituția', record?.location);

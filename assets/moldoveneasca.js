@@ -58,14 +58,9 @@
   const detailPanel = root.querySelector('[data-reference-detail]');
   const detailBackdrop = root.querySelector('[data-reference-detail-backdrop]');
   const detailTitle = root.querySelector('[data-detail-title]');
-  const detailBody = root.querySelector('[data-detail-body]');
   const detailImage = root.querySelector('[data-detail-image]');
   const detailContent = root.querySelector('[data-detail-content]');
   const closeDetailButton = root.querySelector('[data-close-detail]');
-  const detailNavigation = root.querySelector('[data-detail-navigation]');
-  const detailPreviousButton = root.querySelector('[data-detail-previous]');
-  const detailNextButton = root.querySelector('[data-detail-next]');
-  const detailPosition = root.querySelector('[data-detail-position]');
   const quoteHint = root.querySelector('[data-catalog-quote-hint]');
   const catalogTypeField = editorForm?.elements.namedItem('catalog_type');
   const quoteField = editorForm?.elements.namedItem('quote');
@@ -99,8 +94,6 @@
   let currentPage = 1;
   let catalogTotalPages = 1;
   let lastDetailTrigger = null;
-  let detailNavigationRows = [];
-  let detailNavigationIndex = -1;
   let searchDebounceTimer = null;
   const searchDebounceMs = 220;
   const selectedReferenceIds = new Set();
@@ -891,45 +884,10 @@
     document.body.classList.remove('moldoveneasca-detail-open');
     if (lastDetailTrigger?.isConnected) lastDetailTrigger.focus();
     lastDetailTrigger = null;
-    detailNavigationRows = [];
-    detailNavigationIndex = -1;
   };
 
-  const detailRowsForTrigger = (trigger) => {
-    const sourceTable = trigger?.closest('table');
-    const sourceTbody = sourceTable?.tBodies?.[0];
-    if (!sourceTbody) return [];
-    const query = normalize(searchInput?.value);
-    const century = normalize(centurySelect?.value);
-    return [...sourceTbody.rows].filter((row) => (
-      row.catalogRecord && rowMatchesFilter(row, query, century)
-    ));
-  };
-
-  const updateDetailNavigation = () => {
-    const total = detailNavigationRows.length;
-    const hasNavigation = total > 1 && detailNavigationIndex >= 0;
-    if (detailNavigation) detailNavigation.hidden = !hasNavigation;
-    if (detailPreviousButton) {
-      detailPreviousButton.disabled = !hasNavigation || detailNavigationIndex <= 0;
-      detailPreviousButton.setAttribute('aria-label', detailPreviousButton.disabled
-        ? 'Nu există o referință precedentă'
-        : 'Deschide referința precedentă');
-    }
-    if (detailNextButton) {
-      detailNextButton.disabled = !hasNavigation || detailNavigationIndex >= total - 1;
-      detailNextButton.setAttribute('aria-label', detailNextButton.disabled
-        ? 'Nu există o referință următoare'
-        : 'Deschide referința următoare');
-    }
-    if (detailPosition) detailPosition.textContent = hasNavigation
-      ? `${detailNavigationIndex + 1} din ${total}`
-      : '';
-  };
-
-  const openDetail = (record, trigger, options = {}) => {
+  const openDetail = (record, trigger) => {
     if (!detailPanel || !detailContent) return;
-    const wasClosed = detailPanel.hidden;
     const fields = displayFields(record);
     const urls = sourceUrls(record);
     detailContent.replaceChildren();
@@ -997,30 +955,12 @@
       });
     }
 
-    if (trigger) {
-      if (wasClosed) lastDetailTrigger = trigger;
-      detailNavigationRows = detailRowsForTrigger(trigger);
-      detailNavigationIndex = detailNavigationRows.findIndex((row) => row === trigger.closest('tr'));
-    } else if (Number.isInteger(options.navigationIndex)) {
-      detailNavigationIndex = options.navigationIndex;
-    }
-    updateDetailNavigation();
+    lastDetailTrigger = trigger || null;
     detailPanel.hidden = false;
     if (detailBackdrop) detailBackdrop.hidden = false;
     detailPanel.classList.add('is-open');
     document.body.classList.add('moldoveneasca-detail-open');
-    if (detailBody) detailBody.scrollTop = 0;
-    if (wasClosed && options.focusClose !== false) closeDetailButton?.focus();
-  };
-
-  const navigateDetail = (direction) => {
-    const targetIndex = detailNavigationIndex + direction;
-    if (targetIndex < 0 || targetIndex >= detailNavigationRows.length) return;
-    const targetRow = detailNavigationRows[targetIndex];
-    const targetRecord = targetRow?.catalogRecord;
-    if (!targetRecord) return;
-    openDetail(targetRecord, null, { focusClose: false, navigationIndex: targetIndex });
-    (direction < 0 ? detailPreviousButton : detailNextButton)?.focus();
+    closeDetailButton?.focus();
   };
 
   const createIconSvg = (kind) => {
@@ -1102,7 +1042,6 @@
   const createCatalogRow = (record, options = {}) => {
     const fields = displayFields(record);
     const row = document.createElement('tr');
-    row.catalogRecord = record;
     if (record.id) {
       row.dataset.remoteReference = record.id;
       row.dataset.referenceId = record.id;
@@ -1126,12 +1065,8 @@
       selectionCell.appendChild(checkbox);
     }
     row.appendChild(selectionCell);
-    const yearCell = textCell(fields.year, 'moldoveneasca-table__year');
-    yearCell.setAttribute('aria-label', `An: ${fields.year}`);
-    row.appendChild(yearCell);
-    const centuryCell = textCell(fields.century, 'moldoveneasca-table__century');
-    centuryCell.setAttribute('aria-label', `Secol: ${fields.century}`);
-    row.appendChild(centuryCell);
+    row.appendChild(textCell(fields.year, 'moldoveneasca-table__year'));
+    row.appendChild(textCell(fields.century, 'moldoveneasca-table__century'));
 
     const titleCell = document.createElement('td');
     titleCell.className = 'moldoveneasca-table__title';
@@ -1788,8 +1723,6 @@
   cancelEditButton?.addEventListener('click', closeEditor);
   catalogTypeField?.addEventListener('change', updateQuoteRequirement);
   closeDetailButton?.addEventListener('click', closeDetail);
-  detailPreviousButton?.addEventListener('click', () => navigateDetail(-1));
-  detailNextButton?.addEventListener('click', () => navigateDetail(1));
   imageInput?.addEventListener('input', renderImagePreview);
   imageInput?.addEventListener('paste', (event) => {
     const item = [...(event.clipboardData?.items || [])].find((entry) => entry.type.startsWith('image/'));
@@ -1857,14 +1790,6 @@
   detailBackdrop?.addEventListener('click', closeDetail);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && detailPanel && !detailPanel.hidden) closeDetail();
-    if (!detailPanel || detailPanel.hidden) return;
-    if (event.key === 'ArrowLeft') {
-      event.preventDefault();
-      navigateDetail(-1);
-    } else if (event.key === 'ArrowRight') {
-      event.preventDefault();
-      navigateDetail(1);
-    }
   });
   editorForm?.addEventListener('submit', saveRecord);
 

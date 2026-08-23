@@ -128,21 +128,8 @@ permalink: /moldoveneasca/
       </div>
       <button type="button" class="moldoveneasca-detail__close" data-close-detail aria-label="Închide detaliile" title="Închide detaliile">×</button>
     </div>
-    <div class="moldoveneasca-detail__body" data-detail-body>
-      <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
-      <dl class="moldoveneasca-detail__content" data-detail-content></dl>
-    </div>
-    <nav class="moldoveneasca-detail__navigation" data-detail-navigation hidden aria-label="Navigare între referințe">
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet moldoveneasca-detail__nav-button" data-detail-previous disabled>
-        <span aria-hidden="true">←</span>
-        <span>Precedenta</span>
-      </button>
-      <span class="moldoveneasca-detail__position" data-detail-position aria-live="polite"></span>
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet moldoveneasca-detail__nav-button" data-detail-next disabled>
-        <span>Următoarea</span>
-        <span aria-hidden="true">→</span>
-      </button>
-    </nav>
+    <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
+    <dl class="moldoveneasca-detail__content" data-detail-content></dl>
   </aside>
 </section>
 

@@ -10,9 +10,6 @@
   --subtle: #f7f7f8;
   --line: #e5e5e5;
   --line-strong: #cfcfcf;
-  --catalog-link: #49697d;
-  --catalog-link-hover: #244c64;
-  --catalog-link-underline: #a7bac5;
   --site-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --site-font-size: 16px;
   --site-line-height: 1.65;
@@ -2294,18 +2291,12 @@ body.moldoveneasca-detail-open {
   right: 0;
   bottom: 0;
   z-index: 40;
-  display: flex;
-  flex-direction: column;
   width: min(42rem, calc(100vw - 1rem));
-  overflow: hidden;
-  padding: 0;
+  overflow-y: auto;
+  padding: 1.5rem clamp(1rem, 4vw, 2.5rem);
   border-left: 1px solid var(--line);
   background: var(--surface);
   box-shadow: -12px 0 32px rgba(0, 0, 0, 0.12);
-}
-
-.moldoveneasca-detail[hidden] {
-  display: none;
 }
 
 .moldoveneasca-detail__heading {
@@ -2313,10 +2304,7 @@ body.moldoveneasca-detail-open {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  flex: 0 0 auto;
-  margin: 0;
-  padding: 1.25rem clamp(1rem, 4vw, 2.5rem);
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.5rem;
 }
 
 .moldoveneasca-detail__heading h3 {
@@ -2327,9 +2315,8 @@ body.moldoveneasca-detail-open {
 }
 
 .moldoveneasca-detail__close {
-  width: 2.75rem;
-  min-width: 2.75rem;
-  height: 2.75rem;
+  width: 2rem;
+  height: 2rem;
   padding: 0;
   border: 1px solid var(--line-strong);
   border-radius: 50%;
@@ -2337,16 +2324,8 @@ body.moldoveneasca-detail-open {
   color: var(--ink);
   cursor: pointer;
   font: inherit;
-  font-size: 1.35rem !important;
+  font-size: 1.35rem;
   line-height: 1;
-}
-
-.moldoveneasca-detail__body {
-  min-height: 0;
-  flex: 1 1 auto;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: 1.25rem clamp(1rem, 4vw, 2.5rem);
 }
 
 .moldoveneasca-detail__image {
@@ -2396,6 +2375,7 @@ body.moldoveneasca-detail-open {
 @media screen and (max-width: 620px) {
   .moldoveneasca-detail {
     width: 100vw;
+    padding: 1rem;
   }
 
   .moldoveneasca-detail__item {
@@ -2767,356 +2747,5 @@ body.moldoveneasca-page * {
 
   .moldoveneasca-century-filter {
     flex: 1 1 auto;
-  }
-}
-
-// On narrow screens the catalogue reads better as a stack of compact records
-// than as a desktop table squeezed into the viewport.
-@media screen and (max-width: 620px) {
-  .post-content .moldoveneasca-table tbody tr[hidden] {
-    display: none !important;
-  }
-
-  .post-content .moldoveneasca-table {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    table-layout: auto !important;
-    border-collapse: separate !important;
-    border-spacing: 0 0.55rem !important;
-  }
-
-  .post-content .moldoveneasca-table thead {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .post-content .moldoveneasca-table tbody {
-    display: grid;
-    gap: 0.55rem;
-  }
-
-  .post-content .moldoveneasca-table tbody tr {
-    display: grid !important;
-    grid-template-columns: max-content max-content minmax(0, 1fr);
-    justify-content: start;
-    gap: 0.35rem 0.75rem;
-    height: auto !important;
-    min-width: 0;
-    padding: 0.75rem 0.85rem;
-    border: 1px solid var(--line);
-    border-radius: 0.5rem;
-    background: var(--surface) !important;
-    box-shadow: 0 1px 2px rgba(25, 25, 25, 0.04);
-  }
-
-  .post-content .moldoveneasca-table tbody td {
-    display: block !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    padding: 0 !important;
-    overflow: visible !important;
-    vertical-align: top;
-    white-space: normal;
-  }
-
-  .post-content .moldoveneasca-table tbody td[hidden],
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__selection-cell[hidden],
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__actions-cell[hidden] {
-    display: none !important;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__year {
-    grid-column: 1;
-    grid-row: 1;
-    color: var(--ink);
-    font-weight: 700;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__century {
-    grid-column: 2;
-    grid-row: 1;
-    width: max-content !important;
-    justify-self: start;
-    color: var(--muted);
-    font-weight: 700;
-    text-align: right;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__century::before {
-    content: 'Sec.\00a0';
-    font-weight: 400;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__title,
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__quote,
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__author,
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__source {
-    grid-column: 1 / -1;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__title {
-    margin-top: 0.15rem;
-    font-weight: 700;
-  }
-
-  .post-content .moldoveneasca-table__detail-link,
-  .post-content .moldoveneasca-table__truncate,
-  .post-content .moldoveneasca-table__source-links {
-    display: block;
-    width: auto;
-    max-width: none;
-    overflow: visible;
-    overflow-wrap: anywhere;
-    text-overflow: clip;
-    white-space: normal !important;
-  }
-
-  .post-content .moldoveneasca-table__detail-link {
-    min-height: 2.75rem;
-    padding: 0.35rem 0;
-    font-size: 1rem !important;
-    line-height: 1.35 !important;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__quote {
-    margin-top: 0.2rem;
-    padding-top: 0.55rem !important;
-    border-top: 1px solid var(--line);
-    color: var(--muted);
-    line-height: 1.45 !important;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__quote .moldoveneasca-table__truncate {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__quote::before {
-    display: block;
-    margin-bottom: 0.2rem;
-    color: var(--muted);
-    content: 'Citat';
-    font-size: 0.72rem !important;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__language::before,
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__author::before,
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__source::before {
-    margin-right: 0.35rem;
-    color: var(--muted);
-    font-weight: 700;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__language {
-    grid-column: 1;
-    margin-top: 0.2rem;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__language::before {
-    content: 'Limbă: ';
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__author {
-    margin-top: 0.15rem;
-    color: var(--muted);
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__author::before {
-    content: 'Autor: ';
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__source {
-    margin-top: 0.1rem;
-    color: var(--muted);
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__source::before {
-    content: 'Sursă: ';
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__actions-cell {
-    grid-column: 3;
-    grid-row: auto;
-    align-self: center;
-    justify-self: end;
-  }
-
-  .post-content .moldoveneasca-table tbody td.moldoveneasca-table__selection-cell {
-    grid-column: 3;
-    grid-row: 1;
-    align-self: center;
-    justify-self: end;
-  }
-
-  .post-content .moldoveneasca-table__source-link {
-    display: inline;
-    margin: 0 0.25rem 0 0;
-  }
-}
-
-// Give catalogue links a quiet visual cue even before hover.
-body.moldoveneasca-page .moldoveneasca-table a,
-body.moldoveneasca-page .moldoveneasca-detail a {
-  color: var(--catalog-link);
-  text-decoration-line: underline;
-  text-decoration-color: var(--catalog-link-underline);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
-}
-
-body.moldoveneasca-page .moldoveneasca-table a:hover,
-body.moldoveneasca-page .moldoveneasca-table a:focus-visible,
-body.moldoveneasca-page .moldoveneasca-detail a:hover,
-body.moldoveneasca-page .moldoveneasca-detail a:focus-visible {
-  color: var(--catalog-link-hover);
-  text-decoration-color: currentColor;
-}
-
-// Keep the detail dialog readable and make adjacent references reachable.
-.moldoveneasca-detail__heading > div {
-  min-width: 0;
-  flex: 1 1 auto;
-}
-
-.moldoveneasca-detail__heading h3 {
-  overflow-wrap: anywhere;
-}
-
-.moldoveneasca-detail__navigation {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  align-items: center;
-  gap: 0.75rem;
-  flex: 0 0 auto;
-  margin: 0;
-  padding: 0.75rem clamp(1rem, 4vw, 2.5rem);
-  border-top: 1px solid var(--line);
-  background: var(--surface);
-}
-
-.moldoveneasca-detail__navigation[hidden] {
-  display: none;
-}
-
-.moldoveneasca-detail__nav-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  min-width: 0;
-  min-height: 2.75rem;
-  padding: 0.45rem 0.65rem;
-  white-space: nowrap;
-}
-
-.moldoveneasca-detail__navigation .moldoveneasca-detail__nav-button:first-child {
-  justify-self: stretch;
-}
-
-.moldoveneasca-detail__navigation .moldoveneasca-detail__nav-button:last-child {
-  justify-self: stretch;
-}
-
-.moldoveneasca-detail__position {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-variant-numeric: tabular-nums;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.moldoveneasca-detail__content,
-.moldoveneasca-detail__item,
-.moldoveneasca-detail__item > * {
-  min-width: 0;
-}
-
-.moldoveneasca-detail__item dt,
-.moldoveneasca-detail__item dd {
-  overflow-wrap: anywhere;
-}
-
-@media screen and (max-width: 620px) {
-  .moldoveneasca-detail {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: none;
-    overflow-x: hidden;
-    padding: 0;
-    border-left: 0;
-    box-shadow: none;
-  }
-
-  .moldoveneasca-detail__heading {
-    gap: 0.65rem;
-    margin: 0;
-    padding: calc(0.75rem + env(safe-area-inset-top)) 1rem 0.75rem;
-  }
-
-  .moldoveneasca-detail__body {
-    padding: 1rem;
-  }
-
-  .moldoveneasca-detail__navigation {
-    gap: 0.35rem;
-    margin: 0;
-    padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
-  }
-
-  .moldoveneasca-detail__nav-button {
-    padding: 0.45rem 0.5rem;
-  }
-
-  .moldoveneasca-detail__image {
-    display: flex;
-    max-width: 100%;
-    max-height: 46vh;
-    align-items: flex-start;
-    justify-content: center;
-    overflow: auto;
-  }
-
-  .moldoveneasca-detail__image img {
-    width: auto;
-    max-width: 100%;
-    max-height: 46vh;
-    height: auto;
-  }
-
-  .moldoveneasca-detail__content {
-    gap: 0.8rem;
-  }
-
-  .moldoveneasca-detail__item {
-    gap: 0.25rem;
-    padding-bottom: 0.7rem;
-  }
-
-  .moldoveneasca-detail__item dt {
-    color: var(--muted);
-    font-size: 0.78rem !important;
-    font-weight: 700;
-  }
-
-  .moldoveneasca-detail__item dd {
-    line-height: 1.5 !important;
   }
 }

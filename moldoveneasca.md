@@ -11,7 +11,9 @@ permalink: /moldoveneasca/
   <h1 class="moldoveneasca-catalog__title">Referințe istorice ale glotonimului „moldovenească”</h1>
   <p id="catalog-description" class="moldoveneasca-catalog__intro">
     Baza de date reunește documente și referințe istorice care menționează denumirea
-    „moldovenească” a limbii, de la cele mai vechi atestări până astăzi.
+    „moldovenească” a limbii, de la cele mai vechi atestări până astăzi. Anul este al
+    ediției sau al manuscrisului care conține citatul; data documentului ori a operei
+    menționate în citat se păstrează la „Comentarii”.
   </p>
 
   <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate cataloagele și coloanele">
@@ -42,11 +44,12 @@ permalink: /moldoveneasca/
         <label class="moldoveneasca-field">
           <span>Anul / secolul publicării citatului</span>
           <input name="year_label" required inputmode="text" minlength="1" maxlength="30" pattern="(?:1[0-9]{3}|20[0-9]{2}|(?:sec(?:ol)?\.?\s*)?(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI)(?:\s*[–—-]\s*(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI))?)" placeholder="Ex.: 1714 sau XVII" title="Introdu anul exact al publicării; dacă nu este cunoscut, introdu doar secolul">
-          <small class="moldoveneasca-field-hint">Dacă anul exact nu este cunoscut, trece doar secolul; datarea presupusă se explică la „Comentarii”.</small>
+          <small class="moldoveneasca-field-hint">Dacă anul exact al citatului nu este cunoscut, trece doar secolul; datarea presupusă se explică la „Comentarii”.</small>
         </label>
         <label class="moldoveneasca-field">
-          <span>Titlul / documentul</span>
-          <input name="title" required placeholder="Titlul lucrării sau al documentului">
+          <span>Denumirea operei / documentului</span>
+          <input name="title" required placeholder="Doar titlul operei sau al documentului" aria-describedby="title-help">
+          <small id="title-help" class="moldoveneasca-field-hint">Scrie numai denumirea; ediția, capitolul, data, traducătorul și alte precizări merg la „Comentarii”.</small>
         </label>
         <label class="moldoveneasca-field">
           <span>Limba citatului</span>
@@ -141,7 +144,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-17"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-18"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>

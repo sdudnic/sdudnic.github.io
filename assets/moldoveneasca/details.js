@@ -62,7 +62,7 @@
       detailContent.appendChild(item);
     };
 
-    addDetailField('An', fields.yearDetail);
+    addDetailField('Anul citatului', fields.yearDetail);
     addDetailField('Limba', fields.languageDetail);
     addDetailField('Autor', fields.author);
     addDetailField('Proveniență', record?.source_type);

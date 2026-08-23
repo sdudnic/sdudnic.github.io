@@ -66,30 +66,11 @@
   };
 
   /*
-   * Catalogul păstrează uneori atât anul actului original, cât și anul
-   * tălmăcirii/ediției (de exemplu „1554 / 1820”). Coloana „An” trebuie să
-   * indice un singur an: anul lucrării/citatului afișat. Pentru fișele cu o
-   * dovadă explicită în descriere folosim anul ediției sau al tălmăcirii;
-   * descrierile păstrează în continuare data actului original.
+   * „An” este anul textului care conține citatul: ediția, numărul de ziar,
+   * manuscrisul sau nota de traducere. Anii documentelor/operelor menționate
+   * în acel text rămân în comentarii și nu devin anul referinței.
    */
-  const citationYearOverrides = Object.freeze({
-    '058e0fb6-1ef0-4e41-bdd3-5e2207e92fe0': 1820,
-    '572e897f-7042-4510-bb40-4564a5947cf7': 1810,
-    '016b4d74-ca50-4d03-802d-47a7563acbb7': 1775,
-    '94234e75-050b-4d53-b979-778cf3df9bdb': 1802,
-    '83a76571-2095-4e4f-b459-31e40ec5006b': 1804,
-    'b45a3fec-fc2e-404c-be6c-903bf754e68f': 1804,
-    'da562b66-67a8-470d-b1d1-c082b3875a5d': 1816,
-    'e48bd7a9-c9e9-4842-9d13-f81edc2962a0': 1809,
-    'f3c9e6f9-9f18-402f-9dbb-13a1edcd96a8': 1798,
-    '5e10ac0b-94cf-4b96-8ee8-495a114f4846': 1801,
-    '3f124243-ceb5-4e74-9603-cd6c37a8c2c2': 1769
-  });
-
   const citationYear = (record) => {
-    const override = citationYearOverrides[String(record?.id || '')];
-    if (Number.isFinite(override)) return override;
-
     const label = String(record?.year_label || '');
     const editionYear = label.match(/edi[țt]ia\s+(1[0-9]{3}|20[0-9]{2})/iu);
     if (editionYear) return Number(editionYear[1]);
@@ -107,9 +88,6 @@
   };
 
   const citationYearIsExact = (record) => {
-    const override = citationYearOverrides[String(record?.id || '')];
-    if (Number.isFinite(override)) return true;
-
     const label = String(record?.year_label || '').trim();
     if (label.match(/edi[țt]ia\s+(1[0-9]{3}|20[0-9]{2})/iu)) return true;
     if (parseCenturyRange(label) || hasUncertainYearMarker(label)) return false;

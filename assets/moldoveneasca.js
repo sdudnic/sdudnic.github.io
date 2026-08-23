@@ -112,7 +112,7 @@
   let sortAscending = true;
   let sortButton = null;
   let rowSequence = 0;
-  const pageSize = 50;
+  const pageSize = 20;
   let currentPage = 1;
   let catalogTotalPages = 1;
   let lastDetailTrigger = null;

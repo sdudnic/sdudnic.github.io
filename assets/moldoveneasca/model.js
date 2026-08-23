@@ -59,6 +59,12 @@
 
   const hasUncertainYearMarker = (value) => /[?~]|\b(?:aprox(?:imativ)?|circa|cca\.?|în jurul)\b/iu.test(String(value || ''));
 
+  const presumedYearsFromDescription = (value) => {
+    const text = String(value || '');
+    const marker = text.match(/Datare presupus(?:ă|a)[^:]*:\s*([\s\S]*?)(?:\n\s*\n|$)/iu);
+    return parseYears(marker ? marker[1] : '');
+  };
+
   /*
    * Catalogul păstrează uneori atât anul actului original, cât și anul
    * tălmăcirii/ediției (de exemplu „1554 / 1820”). Coloana „An” trebuie să
@@ -116,7 +122,33 @@
     return start !== null && (end === null || start === end);
   };
 
-  const parseYearStart = (record) => citationYear(record);
+  /*
+   * Cheia cronologică nu pretinde că este anul publicării. Pentru intervale
+   * incerte folosim limita superioară Y; pentru o singură presupunere folosim
+   * acel an; iar pentru o fișă care are numai secolul folosim anul 50 al lui.
+   */
+  const sortYearFromValues = (yearLabel, description = '') => {
+    const label = String(yearLabel || '').trim();
+    const century = parseCenturyRange(label);
+    const years = parseYears(label);
+    const presumedYears = presumedYearsFromDescription(description);
+    if (presumedYears.length > 1) return presumedYears[presumedYears.length - 1];
+    if (presumedYears.length === 1) return presumedYears[0];
+    if (century) return century.start + 49;
+    if (years.length > 1) return years[years.length - 1];
+    if (years.length === 1 && hasUncertainYearMarker(label)) return years[0];
+    return years[0] || null;
+  };
+
+  const sortYear = (record) => {
+    if (citationYearIsExact(record)) return citationYear(record);
+    const inferred = sortYearFromValues(record?.year_label, record?.description);
+    if (inferred !== null) return inferred;
+    const storedStart = numericYear(record?.year_start);
+    return storedStart !== null ? storedStart : citationYear(record);
+  };
+
+  const parseYearStart = (record) => sortYear(record);
 
   const publicationYearLabel = (record) => {
     const year = citationYear(record);
@@ -139,19 +171,13 @@
   const centuryLabel = (record) => {
     const directCentury = parseCenturyRange(record?.year_label);
     if (directCentury) return directCentury.label;
-    const year = parseYearStart(record);
+    const year = citationYear(record);
     if (!year) return '—';
     if (citationYearIsExact(record)) return toRoman(Math.floor((year - 1) / 100) + 1);
 
     const bounds = yearBoundsFromLabel(record?.year_label);
-    const storedStart = numericYear(record?.year_start);
-    const storedEnd = numericYear(record?.year_end);
-    const start = storedStart !== null
-      ? storedStart
-      : bounds[0] || year;
-    const end = storedEnd !== null
-      ? storedEnd
-      : bounds[1] || start;
+    const start = bounds[0] || year;
+    const end = bounds[1] || start;
     const startCentury = Math.floor((start - 1) / 100) + 1;
     const endCentury = Math.floor((end - 1) / 100) + 1;
     return startCentury === endCentury

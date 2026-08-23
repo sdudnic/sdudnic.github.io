@@ -15,7 +15,8 @@
     const quote = structured
       ? cleanQuote(extractCellText(row.cells[2 + offset]))
       : extractQuote(sourceText);
-    const [yearStart, yearEnd] = yearBoundsFromLabel(yearLabel);
+    const [yearStartBound, yearEnd] = yearBoundsFromLabel(yearLabel);
+    const yearStart = sortYearFromValues(yearLabel) || yearStartBound;
     return {
       year_label: yearLabel,
       year_start: yearStart,
@@ -49,7 +50,8 @@
     const sourceCell = row.cells[sourceIndex];
     const sourceUrlsFromRow = [...(sourceCell?.querySelectorAll('a[href]') || [])].map((link) => link.href);
     const yearLabel = row.cells[0]?.textContent.trim() || '';
-    const [yearStart, yearEnd] = yearBoundsFromLabel(yearLabel);
+    const [yearStartBound, yearEnd] = yearBoundsFromLabel(yearLabel);
+    const yearStart = sortYearFromValues(yearLabel) || yearStartBound;
     return {
       year_label: yearLabel,
       year_start: yearStart,

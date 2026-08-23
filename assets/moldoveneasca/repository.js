@@ -150,9 +150,10 @@
   const formPayload = () => {
     const data = new FormData(editorForm);
     const yearLabel = String(data.get('year_label') || '').trim();
-    const [yearStart, yearEnd] = yearBoundsFromLabel(yearLabel);
     const languageValue = String(data.get('language') || '').trim();
     const descriptionValue = String(data.get('description') || '').trim();
+    const [yearStartBound, yearEnd] = yearBoundsFromLabel(yearLabel);
+    const yearStart = sortYearFromValues(yearLabel, descriptionValue) || yearStartBound;
     const payload = {
       year_label: yearLabel,
       year_start: yearStart,

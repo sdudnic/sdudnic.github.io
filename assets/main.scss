@@ -2476,6 +2476,17 @@ body.moldoveneasca-detail-open {
   padding: 0.45rem 0;
 }
 
+.moldoveneasca-catalog__loading {
+  margin: 0.8rem 0;
+  color: var(--muted);
+}
+
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page .post-content > table:first-of-type,
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-catalog-status],
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-ethnicity-table] {
+  display: none !important;
+}
+
 // The catalogue uses one centralized type rule across the whole page.
 body.moldoveneasca-page {
   --catalog-font-family: var(--site-font);

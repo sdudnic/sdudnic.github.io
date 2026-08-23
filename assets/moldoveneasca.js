@@ -37,6 +37,7 @@
   const recordCount = document.querySelector('[data-record-count]');
   const filteredCount = document.querySelector('[data-filtered-count]');
   const statusBar = document.querySelector('[data-catalog-status]');
+  const loadingIndicator = document.querySelector('[data-catalog-loading]');
   const pagination = document.querySelector('[data-catalog-pagination]');
   const firstPageButton = document.querySelector('[data-page-first]');
   const previousPageButton = document.querySelector('[data-page-previous]');
@@ -68,6 +69,22 @@
   if (!table || !tbody) return;
   table.classList.add('moldoveneasca-table');
 
+  let isCatalogLoading = Boolean(config.supabaseUrl && config.supabaseAnonKey);
+
+  const setCatalogLoading = (loading) => {
+    isCatalogLoading = loading;
+    if (loadingIndicator) loadingIndicator.hidden = !loading;
+    table.hidden = loading;
+    if (statusBar) statusBar.hidden = loading;
+    if (loading) {
+      document.documentElement.dataset.moldoveneascaCatalogPending = 'true';
+    } else {
+      document.documentElement.removeAttribute('data-moldoveneasca-catalog-pending');
+    }
+  };
+
+  setCatalogLoading(isCatalogLoading);
+
   const wrapPublicGrid = () => {
     if (!statusBar || !table.parentElement || statusBar.parentElement !== table.parentElement) return;
     const frame = document.createElement('div');
@@ -87,6 +104,11 @@
   let remoteRecords = [];
   let ethnicityRecords = [];
   let unverifiedRecords = [];
+  let remoteCatalogLoaded = false;
+  let remoteDataMode = 'fallback';
+  let catalogTotalRecords = 0;
+  let isRemotePageLoading = false;
+  let remoteLoadToken = 0;
   let sortAscending = true;
   let sortButton = null;
   let rowSequence = 0;
@@ -1297,7 +1319,12 @@
   const updateCenturyOptions = () => {
     if (!centurySelect) return;
     const previous = centurySelect.value;
-    const centuryOptions = new Map(searchableRows()
+    const centuryRows = [
+      ...searchableRows(),
+      ...staticRows,
+      ...ethnicityStaticEntries.map(({ row }) => row)
+    ];
+    const centuryOptions = new Map(centuryRows
       .map((row) => [
         row.catalogFields?.century,
         {
@@ -1324,15 +1351,15 @@
     centurySelect.value = centuryValues.includes(previous) ? previous : '';
   };
 
-  const updatePagination = (matchedCount) => {
-    const totalPages = Math.max(1, Math.ceil(matchedCount / pageSize));
+  const updatePagination = (matchedCount, totalCount = matchedCount) => {
+    const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
     catalogTotalPages = totalPages;
     if (currentPage > totalPages) currentPage = totalPages;
     if (pagination) pagination.hidden = totalPages <= 1;
-    if (firstPageButton) firstPageButton.disabled = currentPage <= 1;
-    if (previousPageButton) previousPageButton.disabled = currentPage <= 1;
-    if (nextPageButton) nextPageButton.disabled = currentPage >= totalPages;
-    if (lastPageButton) lastPageButton.disabled = currentPage >= totalPages;
+    if (firstPageButton) firstPageButton.disabled = isRemotePageLoading || currentPage <= 1;
+    if (previousPageButton) previousPageButton.disabled = isRemotePageLoading || currentPage <= 1;
+    if (nextPageButton) nextPageButton.disabled = isRemotePageLoading || currentPage >= totalPages;
+    if (lastPageButton) lastPageButton.disabled = isRemotePageLoading || currentPage >= totalPages;
     if (currentPageValue) currentPageValue.textContent = String(currentPage);
     if (totalPagesValue) totalPagesValue.textContent = String(totalPages);
     if (pageStatus) pageStatus.setAttribute('aria-label', `Pagina ${currentPage} din ${totalPages}`);
@@ -1369,7 +1396,7 @@
     });
 
     const selectedCount = selectedReferenceIds.size;
-    if (selectionToolbar) selectionToolbar.hidden = !isAdmin;
+    if (selectionToolbar) selectionToolbar.hidden = isCatalogLoading || !isAdmin;
     if (selectionCount) selectionCount.textContent = `Selectate: ${selectedCount}`;
     if (selectionDeleteButton) selectionDeleteButton.disabled = !isAdmin || selectedCount === 0;
 
@@ -1398,6 +1425,7 @@
     const query = normalize(searchInput?.value);
     updateCenturyOptions();
     const century = normalize(centurySelect?.value);
+    const isServerPage = remoteDataMode === 'page' && remoteCatalogLoaded && !query && !century;
     const languageCatalogRows = currentRows();
     const ethnicityCatalogRows = ethnicityRows();
     const unverifiedCatalogRows = unverifiedSection && !unverifiedSection.hidden ? unverifiedRows() : [];
@@ -1405,15 +1433,17 @@
     const matchedEthnicityRows = ethnicityCatalogRows.filter((row) => rowMatchesFilter(row, query, century));
     const matchedUnverifiedRows = unverifiedCatalogRows.filter((row) => rowMatchesFilter(row, query, century));
     const matchedAllRows = [...matchedRows, ...matchedEthnicityRows, ...matchedUnverifiedRows];
-    if (recordCount) recordCount.textContent = String(languageCatalogRows.length + ethnicityCatalogRows.length + unverifiedCatalogRows.length);
-    updatePagination(matchedRows.length);
-    if (filteredCount) filteredCount.textContent = String(matchedAllRows.length);
-    const firstVisible = (currentPage - 1) * pageSize;
+    const totalLanguageRows = isServerPage ? catalogTotalRecords : languageCatalogRows.length;
+    const totalCatalogRows = totalLanguageRows + ethnicityCatalogRows.length + unverifiedCatalogRows.length;
+    if (recordCount) recordCount.textContent = String(totalCatalogRows);
+    updatePagination(matchedRows.length, isServerPage ? catalogTotalRecords : matchedRows.length);
+    if (filteredCount) filteredCount.textContent = String(isServerPage ? totalCatalogRows : matchedAllRows.length);
+    const firstVisible = isServerPage ? 0 : (currentPage - 1) * pageSize;
     const lastVisible = firstVisible + pageSize;
     const matchedSet = new Set(matchedRows);
     languageCatalogRows.forEach((row) => {
       const matchIndex = matchedRows.indexOf(row);
-      row.hidden = !matchedSet.has(row) || matchIndex < firstVisible || matchIndex >= lastVisible;
+      row.hidden = !matchedSet.has(row) || (!isServerPage && (matchIndex < firstVisible || matchIndex >= lastVisible));
     });
     ethnicityCatalogRows.forEach((row) => {
       row.hidden = !matchedEthnicityRows.includes(row);
@@ -1421,8 +1451,12 @@
     unverifiedCatalogRows.forEach((row) => {
       row.hidden = !matchedUnverifiedRows.includes(row);
     });
-    const visibleStart = matchedRows.length ? firstVisible + 1 : 0;
-    const visibleEnd = Math.min(lastVisible, matchedRows.length);
+    const visibleStart = matchedRows.length
+      ? (isServerPage ? ((currentPage - 1) * pageSize) + 1 : firstVisible + 1)
+      : 0;
+    const visibleEnd = isServerPage
+      ? ((currentPage - 1) * pageSize) + matchedRows.length
+      : Math.min(lastVisible, matchedRows.length);
     if (resetButton) resetButton.hidden = !query && !century;
     if (result) {
       if (query || century) {
@@ -1442,16 +1476,29 @@
     updateSelectionUi();
   };
 
-  const applySearch = () => {
+  const applySearch = async () => {
     if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
     searchDebounceTimer = null;
     currentPage = 1;
+    const hasFilter = Boolean(normalize(searchInput?.value) || normalize(centurySelect?.value));
+    if (supabaseClient) {
+      try {
+        await loadRemoteRecords({ page: 1, allRecords: hasFilter });
+      } catch (error) {
+        if (result) result.textContent = `Filtrarea nu a putut fi încărcată: ${error.message}`;
+      }
+      return;
+    }
     filterRows();
   };
 
   const scheduleSearch = () => {
     if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
-    searchDebounceTimer = window.setTimeout(applySearch, searchDebounceMs);
+    searchDebounceTimer = window.setTimeout(() => {
+      applySearch().catch((error) => {
+        if (result) result.textContent = `Filtrarea nu a putut fi încărcată: ${error.message}`;
+      });
+    }, searchDebounceMs);
   };
 
   const setStatus = (message, tone = '') => {
@@ -1525,7 +1572,7 @@
   const renderRemoteRows = () => {
     table.querySelectorAll('tr[data-remote-reference]').forEach((row) => row.remove());
     const languageRecords = remoteRecords.filter((record) => catalogIncludes(record, 'language'));
-    if (languageRecords.length) {
+    if (remoteCatalogLoaded) {
       staticRows.forEach((row) => row.remove());
     } else {
       staticRows.forEach((row) => {
@@ -1533,7 +1580,6 @@
       });
     }
     languageRecords.forEach((record) => tbody.appendChild(createCatalogRow(record)));
-    currentPage = 1;
     sortRowsChronologically();
     updateStats();
     filterRows();
@@ -1588,20 +1634,81 @@
     document.head.appendChild(script);
   });
 
-  const loadRemoteRecords = async () => {
+  const remoteSelectFields = 'id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, image_url, catalog_type, status, owner_id';
+
+  const loadRemoteRecords = async ({ page = currentPage, allRecords = remoteDataMode === 'all' } = {}) => {
     if (!supabaseClient) return;
-    const { data, error } = await supabaseClient
-      .from('language_references')
-      .select('id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, image_url, catalog_type, status, owner_id')
-      .order('year_start', { ascending: true });
-    if (error) throw error;
-    const records = (data || []).map(normalizeCitationRecord);
-    remoteRecords = records.filter((record) => record.status === 'published');
-    ethnicityRecords = remoteRecords.filter((record) => catalogIncludes(record, 'ethnicity'));
-    unverifiedRecords = records.filter((record) => record.status !== 'published');
-    renderRemoteRows();
-    renderEthnicityRows();
-    renderUnverifiedRows();
+    const safePage = Math.max(1, Number(page) || 1);
+    const targetMode = allRecords ? 'all' : 'page';
+    const previousPage = currentPage;
+    const previousMode = remoteDataMode;
+    const requestToken = ++remoteLoadToken;
+    currentPage = targetMode === 'all' ? 1 : safePage;
+    remoteDataMode = targetMode;
+    isRemotePageLoading = true;
+    if (result) result.textContent = 'Se încarcă referințele…';
+    updatePagination(catalogTotalRecords || remoteRecords.length);
+
+    try {
+      let languageQuery = supabaseClient
+        .from('language_references')
+        .select(remoteSelectFields, { count: 'exact' })
+        .eq('status', 'published')
+        .or('catalog_type.eq.language,catalog_type.eq.both,catalog_type.is.null')
+        .order('year_start', { ascending: true });
+      if (!allRecords) {
+        const from = (safePage - 1) * pageSize;
+        languageQuery = languageQuery.range(from, from + pageSize - 1);
+      }
+
+      const ethnicityQuery = supabaseClient
+        .from('language_references')
+        .select(remoteSelectFields)
+        .eq('status', 'published')
+        .or('catalog_type.eq.ethnicity,catalog_type.eq.both')
+        .order('year_start', { ascending: true });
+      const requests = [languageQuery, ethnicityQuery];
+      if (currentRole === 'admin') {
+        requests.push(supabaseClient
+          .from('language_references')
+          .select(remoteSelectFields)
+          .neq('status', 'published')
+          .order('year_start', { ascending: true }));
+      }
+
+      const [languageResponse, ethnicityResponse, unverifiedResponse] = await Promise.all(requests);
+      if (requestToken !== remoteLoadToken) return;
+      if (languageResponse.error) throw languageResponse.error;
+      if (ethnicityResponse.error) throw ethnicityResponse.error;
+      if (unverifiedResponse?.error) throw unverifiedResponse.error;
+
+      const records = (languageResponse.data || []).map(normalizeCitationRecord);
+      remoteRecords = records.filter((record) => catalogIncludes(record, 'language'));
+      catalogTotalRecords = Number.isFinite(languageResponse.count)
+        ? languageResponse.count
+        : remoteRecords.length;
+      ethnicityRecords = (ethnicityResponse.data || [])
+        .map(normalizeCitationRecord)
+        .filter((record) => catalogIncludes(record, 'ethnicity'));
+      unverifiedRecords = unverifiedResponse
+        ? (unverifiedResponse.data || []).map(normalizeCitationRecord)
+        : [];
+      remoteCatalogLoaded = true;
+      renderRemoteRows();
+      renderEthnicityRows();
+      renderUnverifiedRows();
+    } catch (error) {
+      if (requestToken === remoteLoadToken) {
+        currentPage = previousPage;
+        remoteDataMode = previousMode;
+      }
+      throw error;
+    } finally {
+      if (requestToken === remoteLoadToken) {
+        isRemotePageLoading = false;
+        filterRows();
+      }
+    }
   };
 
   const loadProfile = async (user) => {
@@ -1760,6 +1867,23 @@
     await loadRemoteRecords();
   };
 
+  const goToPage = async (page) => {
+    if (isRemotePageLoading) return;
+    const targetPage = Math.max(1, Math.min(catalogTotalPages, Number(page) || 1));
+    const hasFilter = Boolean(normalize(searchInput?.value) || normalize(centurySelect?.value));
+    const isServerPage = remoteDataMode === 'page' && remoteCatalogLoaded && !hasFilter;
+    if (isServerPage && supabaseClient) {
+      try {
+        await loadRemoteRecords({ page: targetPage, allRecords: false });
+      } catch (error) {
+        if (result) result.textContent = `Pagina nu a putut fi încărcată: ${error.message}`;
+      }
+      return;
+    }
+    currentPage = targetPage;
+    filterRows();
+  };
+
   selectionAll?.addEventListener('change', () => setVisibleSelection(selectionAll.checked));
   selectionClearButton?.addEventListener('click', () => {
     selectedReferenceIds.clear();
@@ -1770,37 +1894,37 @@
   searchInput?.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
       event.preventDefault();
-      applySearch();
+      applySearch().catch((error) => {
+        if (result) result.textContent = `Filtrarea nu a putut fi încărcată: ${error.message}`;
+      });
     }
   });
   centurySelect?.addEventListener('change', () => {
-    currentPage = 1;
-    filterRows();
+    applySearch().catch((error) => {
+      if (result) result.textContent = `Filtrarea nu a putut fi încărcată: ${error.message}`;
+    });
   });
   resetButton?.addEventListener('click', () => {
     if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
     searchDebounceTimer = null;
     if (searchInput) searchInput.value = '';
     if (centurySelect) centurySelect.value = '';
-    currentPage = 1;
-    filterRows();
+    applySearch().catch((error) => {
+      if (result) result.textContent = `Filtrarea nu a putut fi încărcată: ${error.message}`;
+    });
     searchInput?.focus();
   });
   previousPageButton?.addEventListener('click', () => {
-    currentPage = Math.max(1, currentPage - 1);
-    filterRows();
+    goToPage(currentPage - 1);
   });
   nextPageButton?.addEventListener('click', () => {
-    currentPage = Math.min(catalogTotalPages, currentPage + 1);
-    filterRows();
+    goToPage(currentPage + 1);
   });
   firstPageButton?.addEventListener('click', () => {
-    currentPage = 1;
-    filterRows();
+    goToPage(1);
   });
   lastPageButton?.addEventListener('click', () => {
-    currentPage = catalogTotalPages;
-    filterRows();
+    goToPage(catalogTotalPages);
   });
   googleLoginButton?.addEventListener('click', () => signIn('google'));
   githubLoginButton?.addEventListener('click', () => signIn('github'));
@@ -1886,6 +2010,8 @@
   setRole('viewer');
 
   if (!config.supabaseUrl || !config.supabaseAnonKey) {
+    setCatalogLoading(false);
+    updateSelectionUi();
     loginButtons.forEach((button) => { button.disabled = true; });
     if (authMessage) authMessage.textContent = 'Catalogul public și căutarea funcționează fără cont; autentificarea Google/GitHub nu este încă configurată.';
     return;
@@ -1897,14 +2023,20 @@
       supabaseClient = supabase.createClient(config.supabaseUrl, config.supabaseAnonKey);
       const { data: sessionData } = await supabaseClient.auth.getSession();
       await loadProfile(sessionData?.session?.user || null);
-      await loadRemoteRecords();
+      const initialHasFilter = Boolean(normalize(searchInput?.value) || normalize(centurySelect?.value));
+      await loadRemoteRecords({ page: 1, allRecords: initialHasFilter });
+      setCatalogLoading(false);
+      updateSelectionUi();
       supabaseClient.auth.onAuthStateChange((_event, session) => {
         loadProfile(session?.user || null).catch((error) => {
           if (authMessage) authMessage.textContent = `Profilul nu a putut fi încărcat: ${error.message}`;
         });
       });
     } catch (error) {
+      setCatalogLoading(false);
+      updateSelectionUi();
       loginButtons.forEach((button) => { button.disabled = true; });
+      if (result) result.textContent = 'Sursa live nu răspunde; se afișează copia locală.';
       if (authMessage) authMessage.textContent = `Catalogul public funcționează, dar autentificarea nu este disponibilă: ${error.message}`;
     }
   })();

@@ -134,7 +134,15 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-5"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-6"></script>
+
+<p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
+<script>
+  if (window.MOLDOVENEASCA_CONFIG?.supabaseUrl && window.MOLDOVENEASCA_CONFIG?.supabaseAnonKey) {
+    document.documentElement.dataset.moldoveneascaCatalogPending = 'true';
+    document.querySelector('[data-catalog-loading]')?.removeAttribute('hidden');
+  }
+</script>
 
 | **An** | **Sec.** | **Denumirea** | **Citat** | **Limba citatului** | **Autor** | **Sursa** |
 |-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|

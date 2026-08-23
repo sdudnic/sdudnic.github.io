@@ -357,11 +357,26 @@
     return null;
   };
 
+  const citationYearIsExact = (record) => {
+    const override = citationYearOverrides[String(record?.id || '')];
+    if (Number.isFinite(override)) return true;
+
+    const label = String(record?.year_label || '').trim();
+    if (label.match(/edi[țt]ia\s+(1[0-9]{3}|20[0-9]{2})/iu)) return true;
+    const years = parseYears(label);
+    if (years.length > 1) return /\//.test(label);
+    if (years.length === 1) return true;
+
+    const start = Number(record?.year_start);
+    const end = Number(record?.year_end);
+    return Number.isFinite(start) && (!Number.isFinite(end) || start === end);
+  };
+
   const parseYearStart = (record) => citationYear(record);
 
   const publicationYearLabel = (record) => {
     const year = citationYear(record);
-    return year ? String(year) : '—';
+    return year && citationYearIsExact(record) ? String(year) : '—';
   };
 
   const toRoman = (number) => {
@@ -565,10 +580,11 @@
 
   const normalizeCitationRecord = (record) => {
     const year = citationYear(record);
+    const exactYear = citationYearIsExact(record);
     const language = citationLanguageCode(record);
     return {
       ...record,
-      ...(year ? { year_label: String(year), year_start: year, year_end: year } : {}),
+      ...(year && exactYear ? { year_label: String(year), year_start: year, year_end: year } : {}),
       ...(language && language !== 'xx' ? { language } : {})
     };
   };
@@ -843,16 +859,21 @@
   };
 
   const recordFromStaticRow = (row) => {
-    const structured = row.cells.length >= 7;
+    const secondCell = extractCellText(row.cells[1]);
+    const legacyCentury = row.cells.length >= 7
+      || (row.cells.length === 6 && /^[IVXLCDM]+(?:\s*[–—-]\s*[IVXLCDM]+)?$/i.test(secondCell));
+    const structured = legacyCentury ? row.cells.length >= 7 : row.cells.length >= 6;
+    const offset = legacyCentury ? 1 : 0;
+    const sourceIndex = structured ? 5 + offset : 1;
     const yearLabel = row.cells[0]?.textContent.trim() || '';
-    const sourceCell = structured ? row.cells[6] : row.cells[1];
+    const sourceCell = row.cells[sourceIndex];
     const sourceText = extractCellText(structured ? row : row.cells[1]);
     const urls = [...(sourceCell?.querySelectorAll('a[href]') || [])].map((link) => link.href);
     const title = structured
-      ? extractCellText(row.cells[2])
+      ? extractCellText(row.cells[1 + offset])
       : (extractTitle(sourceText) || sourceText);
     const quote = structured
-      ? cleanQuote(extractCellText(row.cells[3]))
+      ? cleanQuote(extractCellText(row.cells[2 + offset]))
       : extractQuote(sourceText);
     return {
       year_label: yearLabel,
@@ -860,8 +881,8 @@
       year_end: parseYears(yearLabel)[1] || parseYears(yearLabel)[0] || null,
       title,
       quote: quote || null,
-      language: structured ? (extractCellText(row.cells[4]) || null) : null,
-      author: structured ? (extractCellText(row.cells[5]) || 'necunoscut') : extractAuthor(sourceText),
+      language: structured ? (extractCellText(row.cells[3 + offset]) || null) : null,
+      author: structured ? (extractCellText(row.cells[4 + offset]) || 'necunoscut') : extractAuthor(sourceText),
       source_url: urls[0] || null,
       source_urls: urls,
       source_type: structured ? 'Tabel static structurat' : 'Import din tabelul existent',
@@ -874,24 +895,33 @@
   };
 
   const recordFromEthnicityStaticRow = (row) => {
-    const structured = row.cells.length >= 7;
-    const sourceCell = row.cells[structured ? 6 : 5];
+    const secondCell = extractCellText(row.cells[1]);
+    const legacyCentury = row.cells.length >= 7
+      || (row.cells.length === 6 && /^[IVXLCDM]+(?:\s*[–—-]\s*[IVXLCDM]+)?$/i.test(secondCell));
+    const structured = legacyCentury ? row.cells.length >= 7 : row.cells.length >= 5;
+    const offset = legacyCentury ? 1 : 0;
+    const titleIndex = 1 + offset;
+    const quoteIndex = 2 + offset;
+    const languageIndex = 3 + offset;
+    const authorIndex = row.cells.length >= 6 + offset ? 4 + offset : -1;
+    const sourceIndex = structured ? row.cells.length - 1 : 5;
+    const sourceCell = row.cells[sourceIndex];
     const sourceUrlsFromRow = [...(sourceCell?.querySelectorAll('a[href]') || [])].map((link) => link.href);
     return {
       year_label: row.cells[0]?.textContent.trim() || '',
       year_start: parseYears(row.cells[0]?.textContent)[0] || null,
       year_end: parseYears(row.cells[0]?.textContent)[1] || parseYears(row.cells[0]?.textContent)[0] || null,
-      title: extractCellText(row.cells[2]),
-      quote: cleanQuote(extractCellText(row.cells[3])),
-      language: structured ? (extractCellText(row.cells[4]) || null) : null,
-      author: extractCellText(row.cells[structured ? 5 : 4]),
+      title: structured ? extractCellText(row.cells[titleIndex]) : extractCellText(row.cells[2]),
+      quote: structured ? cleanQuote(extractCellText(row.cells[quoteIndex])) : cleanQuote(extractCellText(row.cells[3])),
+      language: structured ? (extractCellText(row.cells[languageIndex]) || null) : null,
+      author: structured && authorIndex >= 0 ? (extractCellText(row.cells[authorIndex]) || 'necunoscut') : 'necunoscut',
       source_url: sourceUrlsFromRow[0] || null,
       source_urls: sourceUrlsFromRow,
       source_type: structured ? 'Tabel static structurat' : 'Import din tabelul existent',
       location: null,
       description: structured ? null : [
-        extractCellText(row.cells[2]),
-        extractCellText(row.cells[3])
+        extractCellText(row.cells[titleIndex]),
+        extractCellText(row.cells[quoteIndex])
       ].filter(Boolean).join(' — '),
       image_url: null,
       catalog_type: 'ethnicity',
@@ -909,13 +939,25 @@
       ? (extractQuote(record?.quote) || extractQuote(raw) || directQuote || null)
       : (directQuote || null);
     const language = citationLanguageCode(record);
+    const year = publicationYearLabel(record);
+    const century = centuryLabel(record);
+    const languageFull = languageTooltip(language, language) || 'necunoscută';
+    const yearDisplay = year !== '—'
+      ? year
+      : century !== '—' ? `sec. ${century}` : '—';
+    const yearDetail = year !== '—' && century !== '—'
+      ? `${year} - sec. ${century}`
+      : yearDisplay;
     return {
-      year: publicationYearLabel(record),
-      century: centuryLabel(record),
+      year,
+      yearDisplay,
+      yearDetail,
+      century,
       title,
       quote,
       language,
-      languageFull: languageTooltip(language, language) || 'necunoscută',
+      languageFull,
+      languageDetail: [languageFull, language].filter(Boolean).join(' - '),
       author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
     };
   };
@@ -971,7 +1013,6 @@
     const headings = [
       ['selection', ''],
       ['year', 'An'],
-      ['century', 'Sec.'],
       ['title', 'Denumirea'],
       ['quote', 'Citat'],
       ['language', 'Limba'],
@@ -1054,7 +1095,7 @@
     const fields = displayFields(record);
     const rowYear = parseYearStart(record);
     row.catalogFields = {
-      year: normalize([record?.year_label, fields.year].filter(Boolean).join(' ')),
+      year: normalize([record?.year_label, fields.yearDisplay].filter(Boolean).join(' ')),
       century: normalize(fields.century),
       centuryLabel: fields.century,
       centuryNumber: rowYear ? Math.floor((rowYear - 1) / 100) + 1 : Number.POSITIVE_INFINITY,
@@ -1069,7 +1110,7 @@
     row.dataset.catalogLinked = sourceUrls(record).length ? 'true' : 'false';
     row.dataset.catalogSearch = normalize([
       record?.year_label,
-      fields.year,
+      fields.yearDisplay,
       fields.century,
       fields.title,
       fields.quote,
@@ -1213,10 +1254,8 @@
       detailContent.appendChild(item);
     };
 
-    addDetailField('An', fields.year);
-    addDetailField('Sec.', fields.century);
-    addDetailField('Limba', fields.languageFull);
-    addDetailField('Cod', fields.language);
+    addDetailField('An', fields.yearDetail);
+    addDetailField('Limba', fields.languageDetail);
     addDetailField('Autor', fields.author);
     addDetailField('Proveniență', record?.source_type);
     addDetailField('Locul / instituția', record?.location);
@@ -1343,7 +1382,7 @@
       checkbox.className = 'moldoveneasca-reference-select';
       checkbox.dataset.referenceSelect = record.id;
       checkbox.checked = selectedReferenceIds.has(record.id);
-      checkbox.setAttribute('aria-label', `Selectează referința ${fields.title === '—' ? fields.year : fields.title}`);
+      checkbox.setAttribute('aria-label', `Selectează referința ${fields.title === '—' ? fields.yearDisplay : fields.title}`);
       checkbox.addEventListener('change', () => {
         if (checkbox.checked) selectedReferenceIds.add(record.id);
         else selectedReferenceIds.delete(record.id);
@@ -1352,8 +1391,7 @@
       selectionCell.appendChild(checkbox);
     }
     row.appendChild(selectionCell);
-    row.appendChild(textCell(fields.year, 'moldoveneasca-table__year'));
-    row.appendChild(textCell(fields.century, 'moldoveneasca-table__century'));
+    row.appendChild(textCell(fields.yearDisplay, 'moldoveneasca-table__year'));
 
     const titleCell = document.createElement('td');
     titleCell.className = 'moldoveneasca-table__title';
@@ -1362,9 +1400,9 @@
     titleLink.href = '#reference-detail';
     titleLink.className = 'moldoveneasca-table__detail-link';
     titleLink.textContent = titleText;
-    titleLink.title = titleText === '—' ? `Deschide detaliile referinței din ${fields.year}` : titleText;
+    titleLink.title = titleText === '—' ? `Deschide detaliile referinței din ${fields.yearDisplay}` : titleText;
     titleLink.setAttribute('aria-label', titleText === '—'
-      ? `Deschide detaliile referinței din ${fields.year}`
+      ? `Deschide detaliile referinței din ${fields.yearDisplay}`
       : `Deschide detaliile pentru ${titleText}`);
     titleLink.addEventListener('click', (event) => {
       event.preventDefault();
@@ -1714,7 +1752,9 @@
     const fields = displayFields(record);
     const urls = sourceUrls(record);
     if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
-    setField('year_label', record ? publicationYearLabel(record) : '');
+    setField('year_label', record
+      ? (citationYearIsExact(record) ? publicationYearLabel(record) : String(record.year_label || ''))
+      : '');
     setField('title', imported ? (fields.title === '—' ? null : fields.title) : record?.title);
     setField('language', record ? citationLanguageCode(record) : '');
     setField('author', record?.author);

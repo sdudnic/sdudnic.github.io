@@ -2015,8 +2015,7 @@ a:hover {
   text-underline-offset: 0.2em;
 }
 
-.moldoveneasca-table__year,
-.moldoveneasca-table__century {
+.moldoveneasca-table__year {
   display: table-cell;
   color: var(--ink);
   font-variant-numeric: tabular-nums;
@@ -2427,8 +2426,7 @@ body.moldoveneasca-detail-open {
   height: 2rem;
 }
 
-.moldoveneasca-table__year,
-.moldoveneasca-table__century {
+.moldoveneasca-table__year {
   font-weight: 400;
 }
 
@@ -2669,9 +2667,6 @@ body.moldoveneasca-page * {
 .post-content .moldoveneasca-table th.moldoveneasca-table__year-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__year { width: 8% !important; }
 
-.post-content .moldoveneasca-table th.moldoveneasca-table__century-heading,
-.post-content .moldoveneasca-table td.moldoveneasca-table__century { width: 4.5% !important; }
-
 .post-content .moldoveneasca-table th.moldoveneasca-table__title-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__title { width: 18% !important; }
 
@@ -2733,22 +2728,28 @@ body.moldoveneasca-page * {
 }
 
 .moldoveneasca-table--ethnicity th:nth-child(1),
-.moldoveneasca-table--ethnicity td:nth-child(1) { width: 11%; }
+.moldoveneasca-table--ethnicity td:nth-child(1) { width: 4%; }
 
 .moldoveneasca-table--ethnicity th:nth-child(2),
-.moldoveneasca-table--ethnicity td:nth-child(2) { width: 9%; }
+.moldoveneasca-table--ethnicity td:nth-child(2) { width: 8%; }
 
 .moldoveneasca-table--ethnicity th:nth-child(3),
-.moldoveneasca-table--ethnicity td:nth-child(3) { width: 25%; }
+.moldoveneasca-table--ethnicity td:nth-child(3) { width: 20%; }
 
 .moldoveneasca-table--ethnicity th:nth-child(4),
-.moldoveneasca-table--ethnicity td:nth-child(4) { width: 35%; }
+.moldoveneasca-table--ethnicity td:nth-child(4) { width: 30%; }
 
 .moldoveneasca-table--ethnicity th:nth-child(5),
-.moldoveneasca-table--ethnicity td:nth-child(5) { width: 14%; }
+.moldoveneasca-table--ethnicity td:nth-child(5) { width: 12%; }
 
 .moldoveneasca-table--ethnicity th:nth-child(6),
-.moldoveneasca-table--ethnicity td:nth-child(6) { width: 6%; }
+.moldoveneasca-table--ethnicity td:nth-child(6) { width: 14%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(7),
+.moldoveneasca-table--ethnicity td:nth-child(7) { width: 8%; }
+
+.moldoveneasca-table--ethnicity th:nth-child(8),
+.moldoveneasca-table--ethnicity td:nth-child(8) { width: 4%; }
 
 .moldoveneasca-table__detail-link {
   font-weight: inherit;
@@ -2804,12 +2805,6 @@ body.moldoveneasca-page * {
     min-width: 7rem !important;
   }
 
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__century-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__century {
-    width: 4.5rem !important;
-    min-width: 4.5rem !important;
-  }
-
   .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__title-heading,
   .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__title {
     width: 12rem !important;
@@ -2846,8 +2841,7 @@ body.moldoveneasca-page * {
     min-width: 3rem !important;
   }
 
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__century {
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
     white-space: nowrap;
   }
 }

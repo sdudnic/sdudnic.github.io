@@ -134,7 +134,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-11"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-12"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>
@@ -144,8 +144,8 @@ permalink: /moldoveneasca/
   }
 </script>
 
-| **An** | **Sec.** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
-|-------------------|-----------|------------------------|--------------------------------------------------|-----------|------------|-----------|
+| **An** | **Denumirea** | **Citat** | **Limba** | **Autor** | **Sursa** |
+|-------------------|------------------------|--------------------------------------------------|-----------|------------|-----------|
 | ~1481-1504 | Petru Clănău, vel spătar sub Ștefan Vodă iscălește un "act doveditor de limba ce se vorbea sub Ștefan Voda Cel Mare în Moldova": "pohtii al scripti(scri) pe Moldovenie [...] dupi latinie, si scriptulam cu mâna mea în târg în Vaslui", [(sursa)](https://books.google.com/books?id=SIpaAAAAcAAJ&pg=PA151#v=onepage) |
 | 1524 | "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R), [direct](https://books.google.com/books?id=At9MAAAAcAAJ&pg=PA61&sa=X&ved=2ahUKEwiPmdm8_tbqAhXCz4UKHRUXAtU4UBC7BTACegQIARAU#v=onepage&q&f=false) |
 | 1532 | "Despre o traducere moldovenească a Evangheliei în acea epocă (1532) avem informaţii precise… Învăţatul german Nicolas Pfluger la 11.03.1532 scria: "Un oarecare doctor (om învăţat) din Moldova… a venit la Wittemberg, vrînd să se îngrijească de tipărirea celor patru evanghelii şi a (epistolelor) lui Pavel în limba moldovenească, polonă şi germană… Se afla deci atunci în Moldova o traducere moldovenească a "evangheliei" şi a "epistolelor” (care fac parte din Apostol), subliniază P. Panaitescu (1965). |
@@ -352,7 +352,6 @@ permalink: /moldoveneasca/
       <tr>
         <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
         <th scope="col" class="moldoveneasca-table__year-heading">An</th>
-        <th scope="col" class="moldoveneasca-table__century-heading">Sec.</th>
         <th scope="col" class="moldoveneasca-table__title-heading">Denumirea</th>
         <th scope="col" class="moldoveneasca-table__quote-heading">Citat</th>
         <th scope="col" class="moldoveneasca-table__language-heading">Limba</th>
@@ -385,7 +384,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       <tr>
         <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
         <th scope="col">An</th>
-        <th scope="col">Sec.</th>
         <th scope="col">Denumirea</th>
         <th scope="col">Citat</th>
         <th scope="col">Limba</th>
@@ -397,7 +395,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
     <tbody>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1352–1564">1352–1564</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XIV–XVI">XIV–XVI</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Молдавско-польская летопись">Молдавско-польская летопись</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь">„Сигизмунд-Август… молдавским… из молдавского рода… молдаване”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Necunoscut">necunoscut</span></td>
@@ -405,7 +402,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1765">1765</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XVIII">XVIII</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Observations historiques et géographiques, sur les peuples barbares qui ont habité les bords du Danube &amp; du Pont-Euxin">Observations historiques et géographiques…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Nation Moldave">„Nation Moldave”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="fr">fr</span></td>
@@ -414,7 +410,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1818">1818</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Die Moldau, Wallachey, Bessarabien und Bukowina. Neueste Darstellung dieser Länder…">Die Moldau, Wallachey, Bessarabien und Bukowina…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni», precum cei din Valahia, susţinând că n-ar fi urmaşii romanilor şi că ar fi locuit provincia înainte de venirea acestora">„Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni»…”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="F. v. Karaczay">F. v. Karaczay</span></td>
@@ -422,7 +417,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1841">1841</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Mică gramatică franţeză, pentru învăţătura tinerimei moldo-române">Mică gramatică franţeză…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="tinerimei moldo-române">„tinerimei moldo-române”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="T. Codrescu">T. Codrescu</span></td>
@@ -430,7 +424,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1897">1897</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии по переписи 1897 г.">Население Бессарабской губернии…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии">„Население Бессарабской губернии”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Necunoscut">necunoscut</span></td>
@@ -438,7 +431,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1845">1845</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Lupta moldovenilor cu cavalerii crucieri la anul 1423">Lupta moldovenilor cu cavalerii crucieri…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="moldovenilor">„moldovenilor”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Gh. Asachi">Gh. Asachi</span></td>
@@ -446,7 +438,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1898">1898</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XIX">XIX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Studiu asupra cronicarilor moldoveni din punct de vedere al limbei, metodei și cugetărei…">Studiu asupra cronicarilor moldoveni…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="cronicarilor moldoveni">„cronicarilor moldoveni”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Al. Gîdei">Al. Gîdei</span></td>
@@ -454,7 +445,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1901">1901</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Hronicul vechimei romano-moldo-vlahilor">Hronicul vechimei romano-moldo-vlahilor</span></td>
         <td><span class="moldoveneasca-table__truncate" title="romano-moldo-vlahilor">„romano-moldo-vlahilor”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Dimitrie Cantemir; ed. Gr. C. Tocilescu">Dimitrie Cantemir; ed. Gr. C. Tocilescu</span></td>
@@ -462,7 +452,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1908">1908</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Documentul rîzenilor din 1484 și organizarea armatei moldovene în sec. XV">Documentul rîzenilor din 1484…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="armatei moldovene">„armatei moldovene”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="I. Bogdan">I. Bogdan</span></td>
@@ -470,7 +459,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1925">1925</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Din trecutul comerțului moldovenesc și mai ales al celui ieșan">Din trecutul comerțului moldovenesc…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="comerțului moldovenesc">„comerțului moldovenesc”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="N. A. Bogdan">N. A. Bogdan</span></td>
@@ -478,7 +466,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1926">1926</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="XX">XX</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">Cântece poporane moldovenești</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">„Cântece poporane moldovenești”</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Gh. Cardaș">Gh. Cardaș</span></td>

@@ -2483,7 +2483,9 @@ body.moldoveneasca-detail-open {
 
 html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page .post-content > table:first-of-type,
 html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-catalog-status],
-html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-ethnicity-table] {
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-ethnicity-table],
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-ethnicity-pagination],
+html[data-moldoveneasca-catalog-pending] body.moldoveneasca-page [data-unverified-pagination] {
   display: none !important;
 }
 
@@ -2758,5 +2760,89 @@ body.moldoveneasca-page * {
 
   .moldoveneasca-century-filter {
     flex: 1 1 auto;
+  }
+}
+
+// Keep the catalogue as a plain table on narrow screens. The table may scroll
+// horizontally, while its columns stay wide enough to keep text readable.
+@media screen and (max-width: 620px) {
+  .moldoveneasca-grid-frame {
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table {
+    width: 58rem !important;
+    min-width: 58rem !important;
+    max-width: none !important;
+    table-layout: fixed;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td {
+    box-sizing: border-box;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__selection-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__selection-cell {
+    width: 2.75rem !important;
+    min-width: 2.75rem !important;
+    max-width: 2.75rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__year-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
+    width: 7rem !important;
+    min-width: 7rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__century-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__century {
+    width: 4.5rem !important;
+    min-width: 4.5rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__title-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__title {
+    width: 12rem !important;
+    min-width: 12rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__quote-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__quote {
+    width: 15rem !important;
+    min-width: 15rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__language-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__language {
+    width: 8rem !important;
+    min-width: 8rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__author-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__author {
+    width: 6.5rem !important;
+    min-width: 6.5rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__source-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__source {
+    width: 4.5rem !important;
+    min-width: 4.5rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__actions-heading,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__actions-cell {
+    width: 3rem !important;
+    min-width: 3rem !important;
+  }
+
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year,
+  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__century {
+    white-space: nowrap;
   }
 }

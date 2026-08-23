@@ -46,6 +46,22 @@
   const pageStatus = document.querySelector('[data-page-status]');
   const currentPageValue = document.querySelector('[data-page-current]');
   const totalPagesValue = document.querySelector('[data-page-total]');
+  const ethnicityPagination = document.querySelector('[data-ethnicity-pagination]');
+  const ethnicityFirstPageButton = document.querySelector('[data-ethnicity-page-first]');
+  const ethnicityPreviousPageButton = document.querySelector('[data-ethnicity-page-previous]');
+  const ethnicityNextPageButton = document.querySelector('[data-ethnicity-page-next]');
+  const ethnicityLastPageButton = document.querySelector('[data-ethnicity-page-last]');
+  const ethnicityPageStatus = document.querySelector('[data-ethnicity-page-status]');
+  const ethnicityCurrentPageValue = document.querySelector('[data-ethnicity-page-current]');
+  const ethnicityTotalPagesValue = document.querySelector('[data-ethnicity-page-total]');
+  const unverifiedPagination = document.querySelector('[data-unverified-pagination]');
+  const unverifiedFirstPageButton = document.querySelector('[data-unverified-page-first]');
+  const unverifiedPreviousPageButton = document.querySelector('[data-unverified-page-previous]');
+  const unverifiedNextPageButton = document.querySelector('[data-unverified-page-next]');
+  const unverifiedLastPageButton = document.querySelector('[data-unverified-page-last]');
+  const unverifiedPageStatus = document.querySelector('[data-unverified-page-status]');
+  const unverifiedCurrentPageValue = document.querySelector('[data-unverified-page-current]');
+  const unverifiedTotalPagesValue = document.querySelector('[data-unverified-page-total]');
   const selectionToolbar = document.querySelector('[data-selection-toolbar]');
   const selectionCount = document.querySelector('[data-selection-count]');
   const selectionAll = document.querySelector('[data-selection-all]');
@@ -109,6 +125,10 @@
   let catalogTotalRecords = 0;
   let isRemotePageLoading = false;
   let remoteLoadToken = 0;
+  let ethnicityCurrentPage = 1;
+  let ethnicityTotalPages = 1;
+  let unverifiedCurrentPage = 1;
+  let unverifiedTotalPages = 1;
   let sortAscending = true;
   let sortButton = null;
   let rowSequence = 0;
@@ -1366,6 +1386,29 @@
     return totalPages;
   };
 
+  const updateSecondaryPagination = ({
+    pagination: paginationElement,
+    firstButton,
+    previousButton,
+    nextButton,
+    lastButton,
+    pageStatus: pageStatusElement,
+    currentValue,
+    totalValue
+  }, page, matchedCount) => {
+    const totalPages = Math.max(1, Math.ceil(matchedCount / pageSize));
+    const safePage = Math.min(Math.max(1, page), totalPages);
+    if (paginationElement) paginationElement.hidden = totalPages <= 1;
+    if (firstButton) firstButton.disabled = safePage <= 1;
+    if (previousButton) previousButton.disabled = safePage <= 1;
+    if (nextButton) nextButton.disabled = safePage >= totalPages;
+    if (lastButton) lastButton.disabled = safePage >= totalPages;
+    if (currentValue) currentValue.textContent = String(safePage);
+    if (totalValue) totalValue.textContent = String(totalPages);
+    if (pageStatusElement) pageStatusElement.setAttribute('aria-label', `Pagina ${safePage} din ${totalPages}`);
+    return { page: safePage, totalPages };
+  };
+
   const updateStats = () => {
     if (recordCount) recordCount.textContent = String(searchableRows().length);
   };
@@ -1445,11 +1488,41 @@
       const matchIndex = matchedRows.indexOf(row);
       row.hidden = !matchedSet.has(row) || (!isServerPage && (matchIndex < firstVisible || matchIndex >= lastVisible));
     });
+    const ethnicityPage = updateSecondaryPagination({
+      pagination: ethnicityPagination,
+      firstButton: ethnicityFirstPageButton,
+      previousButton: ethnicityPreviousPageButton,
+      nextButton: ethnicityNextPageButton,
+      lastButton: ethnicityLastPageButton,
+      pageStatus: ethnicityPageStatus,
+      currentValue: ethnicityCurrentPageValue,
+      totalValue: ethnicityTotalPagesValue
+    }, ethnicityCurrentPage, matchedEthnicityRows.length);
+    ethnicityCurrentPage = ethnicityPage.page;
+    ethnicityTotalPages = ethnicityPage.totalPages;
+    const ethnicityFirstVisible = (ethnicityCurrentPage - 1) * pageSize;
+    const ethnicityLastVisible = ethnicityFirstVisible + pageSize;
     ethnicityCatalogRows.forEach((row) => {
-      row.hidden = !matchedEthnicityRows.includes(row);
+      const matchIndex = matchedEthnicityRows.indexOf(row);
+      row.hidden = matchIndex < 0 || matchIndex < ethnicityFirstVisible || matchIndex >= ethnicityLastVisible;
     });
+    const unverifiedPage = updateSecondaryPagination({
+      pagination: unverifiedPagination,
+      firstButton: unverifiedFirstPageButton,
+      previousButton: unverifiedPreviousPageButton,
+      nextButton: unverifiedNextPageButton,
+      lastButton: unverifiedLastPageButton,
+      pageStatus: unverifiedPageStatus,
+      currentValue: unverifiedCurrentPageValue,
+      totalValue: unverifiedTotalPagesValue
+    }, unverifiedCurrentPage, matchedUnverifiedRows.length);
+    unverifiedCurrentPage = unverifiedPage.page;
+    unverifiedTotalPages = unverifiedPage.totalPages;
+    const unverifiedFirstVisible = (unverifiedCurrentPage - 1) * pageSize;
+    const unverifiedLastVisible = unverifiedFirstVisible + pageSize;
     unverifiedCatalogRows.forEach((row) => {
-      row.hidden = !matchedUnverifiedRows.includes(row);
+      const matchIndex = matchedUnverifiedRows.indexOf(row);
+      row.hidden = matchIndex < 0 || matchIndex < unverifiedFirstVisible || matchIndex >= unverifiedLastVisible;
     });
     const visibleStart = matchedRows.length
       ? (isServerPage ? ((currentPage - 1) * pageSize) + 1 : firstVisible + 1)
@@ -1480,6 +1553,8 @@
     if (searchDebounceTimer) window.clearTimeout(searchDebounceTimer);
     searchDebounceTimer = null;
     currentPage = 1;
+    ethnicityCurrentPage = 1;
+    unverifiedCurrentPage = 1;
     const hasFilter = Boolean(normalize(searchInput?.value) || normalize(centurySelect?.value));
     if (supabaseClient) {
       try {
@@ -1925,6 +2000,38 @@
   });
   lastPageButton?.addEventListener('click', () => {
     goToPage(catalogTotalPages);
+  });
+  ethnicityPreviousPageButton?.addEventListener('click', () => {
+    ethnicityCurrentPage = Math.max(1, ethnicityCurrentPage - 1);
+    filterRows();
+  });
+  ethnicityNextPageButton?.addEventListener('click', () => {
+    ethnicityCurrentPage = Math.min(ethnicityTotalPages, ethnicityCurrentPage + 1);
+    filterRows();
+  });
+  ethnicityFirstPageButton?.addEventListener('click', () => {
+    ethnicityCurrentPage = 1;
+    filterRows();
+  });
+  ethnicityLastPageButton?.addEventListener('click', () => {
+    ethnicityCurrentPage = ethnicityTotalPages;
+    filterRows();
+  });
+  unverifiedPreviousPageButton?.addEventListener('click', () => {
+    unverifiedCurrentPage = Math.max(1, unverifiedCurrentPage - 1);
+    filterRows();
+  });
+  unverifiedNextPageButton?.addEventListener('click', () => {
+    unverifiedCurrentPage = Math.min(unverifiedTotalPages, unverifiedCurrentPage + 1);
+    filterRows();
+  });
+  unverifiedFirstPageButton?.addEventListener('click', () => {
+    unverifiedCurrentPage = 1;
+    filterRows();
+  });
+  unverifiedLastPageButton?.addEventListener('click', () => {
+    unverifiedCurrentPage = unverifiedTotalPages;
+    filterRows();
   });
   googleLoginButton?.addEventListener('click', () => signIn('google'));
   githubLoginButton?.addEventListener('click', () => signIn('github'));

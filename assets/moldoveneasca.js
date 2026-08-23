@@ -321,9 +321,9 @@
     if (!code || code === '—') return '';
     const mapped = code.replace(/\b(?:md|ru|la|de|fr|it|el|cu|pl|uk|en|bg|sr|tr|ar|he|hu|es|pt|xx)\b/gi,
       (token) => languageNamesByCode[token.toLowerCase()] || token);
-    if (mapped !== code) return mapped;
     const full = String(fullValue || '').trim();
-    return full && full !== '—' ? full : code;
+    if (mapped !== code && mapped !== 'necunoscută') return mapped;
+    return full && full !== '—' && full !== code ? full : mapped;
   };
 
   const sourceUrls = (record) => {
@@ -628,13 +628,14 @@
     const quote = imported
       ? (extractQuote(record?.quote) || extractQuote(raw) || directQuote || null)
       : (directQuote || null);
+    const language = languageCode(record?.language, record);
     return {
       year: yearRangeLabel(record),
       century: centuryLabel(record),
       title,
       quote,
-      language: languageCode(record?.language, record),
-      languageFull: record?.language || 'necunoscută',
+      language,
+      languageFull: languageTooltip(language, record?.language) || 'necunoscută',
       author: record?.author || (imported ? extractAuthor(raw) : null) || '—'
     };
   };
@@ -969,8 +970,8 @@
 
     addDetailField('An', fields.year);
     addDetailField('Secol', fields.century);
-    addDetailField('Limba', fields.languageFull);
-    addDetailField('Cod', fields.language);
+    addDetailField('Limba (în clar)', fields.languageFull);
+    addDetailField('Cod limbă', fields.language);
     addDetailField('Autor', fields.author);
     addDetailField('Proveniență', record?.source_type);
     addDetailField('Locul / instituția', record?.location);

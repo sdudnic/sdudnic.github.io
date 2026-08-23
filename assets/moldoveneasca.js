@@ -126,9 +126,7 @@
   let isRemotePageLoading = false;
   let remoteLoadToken = 0;
   let ethnicityCurrentPage = 1;
-  let ethnicityTotalPages = 1;
   let unverifiedCurrentPage = 1;
-  let unverifiedTotalPages = 1;
   let sortAscending = true;
   let sortButton = null;
   let rowSequence = 0;
@@ -140,6 +138,169 @@
   const searchDebounceMs = 220;
   const selectedReferenceIds = new Set();
   const catalogTypeValues = new Set(['language', 'ethnicity', 'both']);
+
+  class ReferenceGrid {
+    constructor({
+      table,
+      tbody,
+      pagination,
+      firstButton,
+      previousButton,
+      nextButton,
+      lastButton,
+      pageStatus,
+      currentValue,
+      totalValue,
+      pageSize: size,
+      getPage,
+      setPage
+    }) {
+      this.table = table;
+      this.tbody = tbody;
+      this.pagination = pagination;
+      this.firstButton = firstButton;
+      this.previousButton = previousButton;
+      this.nextButton = nextButton;
+      this.lastButton = lastButton;
+      this.pageStatus = pageStatus;
+      this.currentValue = currentValue;
+      this.totalValue = totalValue;
+      this.pageSize = size;
+      this.getPage = getPage;
+      this.setPage = setPage;
+      this.frame = this.ensureFrame();
+      this.page = 1;
+      this.totalPages = 1;
+      this.totalRows = 0;
+      this.loading = false;
+      this.onPageChange = null;
+      [
+        [this.firstButton, () => 1],
+        [this.previousButton, () => this.page - 1],
+        [this.nextButton, () => this.page + 1],
+        [this.lastButton, () => this.totalPages]
+      ].forEach(([button, getTarget]) => {
+        button?.addEventListener('click', () => this.requestPage(getTarget()));
+      });
+    }
+
+    ensureFrame() {
+      if (!this.table?.parentElement) return null;
+      const existingFrame = this.table.closest('.moldoveneasca-grid-frame');
+      if (existingFrame) return existingFrame;
+      const parent = this.table.parentElement;
+      const frame = document.createElement('div');
+      frame.className = 'moldoveneasca-grid-frame';
+      parent.insertBefore(frame, this.table);
+      frame.appendChild(this.table);
+      if (this.pagination?.parentElement === parent) frame.appendChild(this.pagination);
+      return frame;
+    }
+
+    requestPage(page) {
+      if (this.loading) return;
+      const targetPage = Math.min(Math.max(1, Number(page) || 1), this.totalPages);
+      if (typeof this.onPageChange === 'function') {
+        this.onPageChange(targetPage);
+      } else {
+        this.setPage(targetPage);
+        this.page = targetPage;
+        this.renderControls();
+      }
+    }
+
+    renderControls() {
+      const page = Math.min(Math.max(1, Number(this.getPage()) || 1), this.totalPages);
+      this.setPage(page);
+      this.page = page;
+      if (this.pagination) this.pagination.hidden = this.totalPages <= 1;
+      if (this.firstButton) this.firstButton.disabled = this.loading || page <= 1;
+      if (this.previousButton) this.previousButton.disabled = this.loading || page <= 1;
+      if (this.nextButton) this.nextButton.disabled = this.loading || page >= this.totalPages;
+      if (this.lastButton) this.lastButton.disabled = this.loading || page >= this.totalPages;
+      if (this.currentValue) this.currentValue.textContent = String(page);
+      if (this.totalValue) this.totalValue.textContent = String(this.totalPages);
+      if (this.pageStatus) this.pageStatus.setAttribute('aria-label', `Pagina ${page} din ${this.totalPages}`);
+    }
+
+    updateControls(totalRows = this.totalRows, loading = this.loading) {
+      this.totalRows = Math.max(0, Number(totalRows) || 0);
+      this.loading = loading;
+      this.totalPages = Math.max(1, Math.ceil(this.totalRows / this.pageSize));
+      this.renderControls();
+      return this.totalPages;
+    }
+
+    update(rows, { matchedRows = rows, totalRows = matchedRows.length, serverPaged = false, loading = this.loading } = {}) {
+      this.totalRows = Math.max(0, Number(totalRows) || 0);
+      this.totalPages = Math.max(1, Math.ceil(this.totalRows / this.pageSize));
+      this.loading = loading;
+      const page = Math.min(Math.max(1, Number(this.getPage()) || 1), this.totalPages);
+      this.setPage(page);
+      this.page = page;
+      const matchedSet = new Set(matchedRows);
+      const firstVisible = serverPaged ? 0 : (page - 1) * this.pageSize;
+      const lastVisible = firstVisible + this.pageSize;
+      rows.forEach((row) => {
+        const matchIndex = matchedRows.indexOf(row);
+        row.hidden = !matchedSet.has(row) || (!serverPaged && (matchIndex < firstVisible || matchIndex >= lastVisible));
+      });
+      this.renderControls();
+      const visibleCount = serverPaged ? matchedRows.length : Math.max(0, Math.min(this.pageSize, matchedRows.length - firstVisible));
+      return {
+        page,
+        totalPages: this.totalPages,
+        visibleStart: matchedRows.length ? (serverPaged ? ((page - 1) * this.pageSize) + 1 : firstVisible + 1) : 0,
+        visibleEnd: matchedRows.length ? (serverPaged ? ((page - 1) * this.pageSize) + visibleCount : firstVisible + visibleCount) : 0
+      };
+    }
+  }
+
+  const languageGrid = new ReferenceGrid({
+    table,
+    tbody,
+    pagination,
+    firstButton: firstPageButton,
+    previousButton: previousPageButton,
+    nextButton: nextPageButton,
+    lastButton: lastPageButton,
+    pageStatus,
+    currentValue: currentPageValue,
+    totalValue: totalPagesValue,
+    pageSize,
+    getPage: () => currentPage,
+    setPage: (page) => { currentPage = page; }
+  });
+  const ethnicityGrid = new ReferenceGrid({
+    table: ethnicityTable,
+    tbody: ethnicityTbody,
+    pagination: ethnicityPagination,
+    firstButton: ethnicityFirstPageButton,
+    previousButton: ethnicityPreviousPageButton,
+    nextButton: ethnicityNextPageButton,
+    lastButton: ethnicityLastPageButton,
+    pageStatus: ethnicityPageStatus,
+    currentValue: ethnicityCurrentPageValue,
+    totalValue: ethnicityTotalPagesValue,
+    pageSize,
+    getPage: () => ethnicityCurrentPage,
+    setPage: (page) => { ethnicityCurrentPage = page; }
+  });
+  const unverifiedGrid = new ReferenceGrid({
+    table: unverifiedTable,
+    tbody: unverifiedTbody,
+    pagination: unverifiedPagination,
+    firstButton: unverifiedFirstPageButton,
+    previousButton: unverifiedPreviousPageButton,
+    nextButton: unverifiedNextPageButton,
+    lastButton: unverifiedLastPageButton,
+    pageStatus: unverifiedPageStatus,
+    currentValue: unverifiedCurrentPageValue,
+    totalValue: unverifiedTotalPagesValue,
+    pageSize,
+    getPage: () => unverifiedCurrentPage,
+    setPage: (page) => { unverifiedCurrentPage = page; }
+  });
 
   const normalize = (value) => (value || '')
     .toLocaleLowerCase('ro-MD')
@@ -1372,41 +1533,8 @@
   };
 
   const updatePagination = (matchedCount, totalCount = matchedCount) => {
-    const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
-    catalogTotalPages = totalPages;
-    if (currentPage > totalPages) currentPage = totalPages;
-    if (pagination) pagination.hidden = totalPages <= 1;
-    if (firstPageButton) firstPageButton.disabled = isRemotePageLoading || currentPage <= 1;
-    if (previousPageButton) previousPageButton.disabled = isRemotePageLoading || currentPage <= 1;
-    if (nextPageButton) nextPageButton.disabled = isRemotePageLoading || currentPage >= totalPages;
-    if (lastPageButton) lastPageButton.disabled = isRemotePageLoading || currentPage >= totalPages;
-    if (currentPageValue) currentPageValue.textContent = String(currentPage);
-    if (totalPagesValue) totalPagesValue.textContent = String(totalPages);
-    if (pageStatus) pageStatus.setAttribute('aria-label', `Pagina ${currentPage} din ${totalPages}`);
-    return totalPages;
-  };
-
-  const updateSecondaryPagination = ({
-    pagination: paginationElement,
-    firstButton,
-    previousButton,
-    nextButton,
-    lastButton,
-    pageStatus: pageStatusElement,
-    currentValue,
-    totalValue
-  }, page, matchedCount) => {
-    const totalPages = Math.max(1, Math.ceil(matchedCount / pageSize));
-    const safePage = Math.min(Math.max(1, page), totalPages);
-    if (paginationElement) paginationElement.hidden = totalPages <= 1;
-    if (firstButton) firstButton.disabled = safePage <= 1;
-    if (previousButton) previousButton.disabled = safePage <= 1;
-    if (nextButton) nextButton.disabled = safePage >= totalPages;
-    if (lastButton) lastButton.disabled = safePage >= totalPages;
-    if (currentValue) currentValue.textContent = String(safePage);
-    if (totalValue) totalValue.textContent = String(totalPages);
-    if (pageStatusElement) pageStatusElement.setAttribute('aria-label', `Pagina ${safePage} din ${totalPages}`);
-    return { page: safePage, totalPages };
+    catalogTotalPages = languageGrid.updateControls(totalCount, isRemotePageLoading);
+    return catalogTotalPages;
   };
 
   const updateStats = () => {
@@ -1479,57 +1607,18 @@
     const totalLanguageRows = isServerPage ? catalogTotalRecords : languageCatalogRows.length;
     const totalCatalogRows = totalLanguageRows + ethnicityCatalogRows.length + unverifiedCatalogRows.length;
     if (recordCount) recordCount.textContent = String(totalCatalogRows);
-    updatePagination(matchedRows.length, isServerPage ? catalogTotalRecords : matchedRows.length);
     if (filteredCount) filteredCount.textContent = String(isServerPage ? totalCatalogRows : matchedAllRows.length);
-    const firstVisible = isServerPage ? 0 : (currentPage - 1) * pageSize;
-    const lastVisible = firstVisible + pageSize;
-    const matchedSet = new Set(matchedRows);
-    languageCatalogRows.forEach((row) => {
-      const matchIndex = matchedRows.indexOf(row);
-      row.hidden = !matchedSet.has(row) || (!isServerPage && (matchIndex < firstVisible || matchIndex >= lastVisible));
+    const languagePage = languageGrid.update(languageCatalogRows, {
+      matchedRows,
+      totalRows: isServerPage ? catalogTotalRecords : matchedRows.length,
+      serverPaged: isServerPage,
+      loading: isRemotePageLoading
     });
-    const ethnicityPage = updateSecondaryPagination({
-      pagination: ethnicityPagination,
-      firstButton: ethnicityFirstPageButton,
-      previousButton: ethnicityPreviousPageButton,
-      nextButton: ethnicityNextPageButton,
-      lastButton: ethnicityLastPageButton,
-      pageStatus: ethnicityPageStatus,
-      currentValue: ethnicityCurrentPageValue,
-      totalValue: ethnicityTotalPagesValue
-    }, ethnicityCurrentPage, matchedEthnicityRows.length);
-    ethnicityCurrentPage = ethnicityPage.page;
-    ethnicityTotalPages = ethnicityPage.totalPages;
-    const ethnicityFirstVisible = (ethnicityCurrentPage - 1) * pageSize;
-    const ethnicityLastVisible = ethnicityFirstVisible + pageSize;
-    ethnicityCatalogRows.forEach((row) => {
-      const matchIndex = matchedEthnicityRows.indexOf(row);
-      row.hidden = matchIndex < 0 || matchIndex < ethnicityFirstVisible || matchIndex >= ethnicityLastVisible;
-    });
-    const unverifiedPage = updateSecondaryPagination({
-      pagination: unverifiedPagination,
-      firstButton: unverifiedFirstPageButton,
-      previousButton: unverifiedPreviousPageButton,
-      nextButton: unverifiedNextPageButton,
-      lastButton: unverifiedLastPageButton,
-      pageStatus: unverifiedPageStatus,
-      currentValue: unverifiedCurrentPageValue,
-      totalValue: unverifiedTotalPagesValue
-    }, unverifiedCurrentPage, matchedUnverifiedRows.length);
-    unverifiedCurrentPage = unverifiedPage.page;
-    unverifiedTotalPages = unverifiedPage.totalPages;
-    const unverifiedFirstVisible = (unverifiedCurrentPage - 1) * pageSize;
-    const unverifiedLastVisible = unverifiedFirstVisible + pageSize;
-    unverifiedCatalogRows.forEach((row) => {
-      const matchIndex = matchedUnverifiedRows.indexOf(row);
-      row.hidden = matchIndex < 0 || matchIndex < unverifiedFirstVisible || matchIndex >= unverifiedLastVisible;
-    });
-    const visibleStart = matchedRows.length
-      ? (isServerPage ? ((currentPage - 1) * pageSize) + 1 : firstVisible + 1)
-      : 0;
-    const visibleEnd = isServerPage
-      ? ((currentPage - 1) * pageSize) + matchedRows.length
-      : Math.min(lastVisible, matchedRows.length);
+    catalogTotalPages = languagePage.totalPages;
+    ethnicityGrid.update(ethnicityCatalogRows, { matchedRows: matchedEthnicityRows });
+    unverifiedGrid.update(unverifiedCatalogRows, { matchedRows: matchedUnverifiedRows });
+    const visibleStart = languagePage.visibleStart;
+    const visibleEnd = languagePage.visibleEnd;
     if (resetButton) resetButton.hidden = !query && !century;
     if (result) {
       if (query || century) {
@@ -1959,6 +2048,16 @@
     filterRows();
   };
 
+  languageGrid.onPageChange = goToPage;
+  ethnicityGrid.onPageChange = (page) => {
+    ethnicityCurrentPage = page;
+    filterRows();
+  };
+  unverifiedGrid.onPageChange = (page) => {
+    unverifiedCurrentPage = page;
+    filterRows();
+  };
+
   selectionAll?.addEventListener('change', () => setVisibleSelection(selectionAll.checked));
   selectionClearButton?.addEventListener('click', () => {
     selectedReferenceIds.clear();
@@ -1988,50 +2087,6 @@
       if (result) result.textContent = `Filtrarea nu a putut fi încărcată: ${error.message}`;
     });
     searchInput?.focus();
-  });
-  previousPageButton?.addEventListener('click', () => {
-    goToPage(currentPage - 1);
-  });
-  nextPageButton?.addEventListener('click', () => {
-    goToPage(currentPage + 1);
-  });
-  firstPageButton?.addEventListener('click', () => {
-    goToPage(1);
-  });
-  lastPageButton?.addEventListener('click', () => {
-    goToPage(catalogTotalPages);
-  });
-  ethnicityPreviousPageButton?.addEventListener('click', () => {
-    ethnicityCurrentPage = Math.max(1, ethnicityCurrentPage - 1);
-    filterRows();
-  });
-  ethnicityNextPageButton?.addEventListener('click', () => {
-    ethnicityCurrentPage = Math.min(ethnicityTotalPages, ethnicityCurrentPage + 1);
-    filterRows();
-  });
-  ethnicityFirstPageButton?.addEventListener('click', () => {
-    ethnicityCurrentPage = 1;
-    filterRows();
-  });
-  ethnicityLastPageButton?.addEventListener('click', () => {
-    ethnicityCurrentPage = ethnicityTotalPages;
-    filterRows();
-  });
-  unverifiedPreviousPageButton?.addEventListener('click', () => {
-    unverifiedCurrentPage = Math.max(1, unverifiedCurrentPage - 1);
-    filterRows();
-  });
-  unverifiedNextPageButton?.addEventListener('click', () => {
-    unverifiedCurrentPage = Math.min(unverifiedTotalPages, unverifiedCurrentPage + 1);
-    filterRows();
-  });
-  unverifiedFirstPageButton?.addEventListener('click', () => {
-    unverifiedCurrentPage = 1;
-    filterRows();
-  });
-  unverifiedLastPageButton?.addEventListener('click', () => {
-    unverifiedCurrentPage = unverifiedTotalPages;
-    filterRows();
   });
   googleLoginButton?.addEventListener('click', () => signIn('google'));
   githubLoginButton?.addEventListener('click', () => signIn('github'));

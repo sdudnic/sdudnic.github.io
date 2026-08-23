@@ -112,17 +112,9 @@
     return parseYears(record?.year_label)[0] || null;
   };
 
-  const parseYearEnd = (record) => {
-    if (Number.isFinite(Number(record?.year_end))) return Number(record.year_end);
-    const years = parseYears(record?.year_label);
-    return years[1] || years[0] || null;
-  };
-
-  const yearRangeLabel = (record) => {
-    const start = parseYearStart(record);
-    const end = parseYearEnd(record);
-    if (!start) return '—';
-    return end && end !== start ? `${start}–${end}` : String(start);
+  const publicationYearLabel = (record) => {
+    const year = parseYearStart(record);
+    return year ? String(year) : '—';
   };
 
   const toRoman = (number) => {
@@ -623,7 +615,7 @@
       : (directQuote || null);
     const language = languageCode(record?.language, record);
     return {
-      year: yearRangeLabel(record),
+      year: publicationYearLabel(record),
       century: centuryLabel(record),
       title,
       quote,
@@ -684,7 +676,7 @@
     const headings = [
       ['selection', ''],
       ['year', 'An'],
-      ['century', 'Secol'],
+      ['century', 'Sec.'],
       ['title', 'Denumirea'],
       ['quote', 'Citat'],
       ['language', 'Limba'],
@@ -927,7 +919,7 @@
     };
 
     addDetailField('An', fields.year);
-    addDetailField('Secol', fields.century);
+    addDetailField('Sec.', fields.century);
     addDetailField('Limba (în clar)', fields.languageFull);
     addDetailField('Cod limbă', fields.language);
     addDetailField('Autor', fields.author);
@@ -1419,7 +1411,7 @@
     const fields = displayFields(record);
     const urls = sourceUrls(record);
     if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
-    setField('year_label', record?.year_label);
+    setField('year_label', record ? publicationYearLabel(record) : '');
     setField('title', imported ? (fields.title === '—' ? null : fields.title) : record?.title);
     setField('language', record?.language);
     setField('author', record?.author);
@@ -1611,8 +1603,8 @@
       return;
     }
     const payload = formPayload();
-    if (!payload.year_label || !payload.title) {
-      setStatus('Completează anul și denumirea lucrării.', 'error');
+    if (!/^(?:1[0-9]{3}|20[0-9]{2})$/.test(payload.year_label) || !payload.title) {
+      setStatus('Completează anul publicării citatului cu un singur an și denumirea lucrării.', 'error');
       return;
     }
     const quoteHasGlotonym = hasGlotonym(payload.quote);

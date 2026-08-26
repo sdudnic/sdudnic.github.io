@@ -17,6 +17,28 @@ lang: mo
     </div>
   </section>
 
+  {% assign latest_news = site.posts | first %}
+  {% if latest_news %}
+  <section class="profile-section news-section" id="noutati" aria-labelledby="news-title">
+    <div class="section-heading">
+      <p class="eyebrow">Noutăți</p>
+      <h2 id="news-title">Ultima noutate</h2>
+      <p>Demersuri și informații noi despre inițiativele platformei.</p>
+    </div>
+
+    <article class="initiative-card initiative-card--featured news-card">
+      {% assign news_image = latest_news.image | default: '/assets/stema-moldovei.svg' %}
+      <figure class="news-card__media">
+        <img src="{{ news_image | relative_url }}" alt="{{ latest_news.image_alt | default: latest_news.title | escape }}">
+      </figure>
+      <p class="card-label"><time datetime="{{ latest_news.date | date_to_xmlschema }}">{{ latest_news.date | date: "%d/%m/%Y" }}</time> · CEDO</p>
+      <h3><a href="{{ latest_news.url | relative_url }}">{{ latest_news.title | escape }}</a></h3>
+      <p>{{ latest_news.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
+      <a class="card-link" href="{{ latest_news.url | relative_url }}">Citește noutatea →</a>
+    </article>
+  </section>
+  {% endif %}
+
   <section class="profile-section patriotic-message" id="mesaj-pentru-moldova" aria-labelledby="mesaj-title">
     <p class="eyebrow">Mesaj pentru Moldova</p>
     <h2 id="mesaj-title">O țară cu rădăcini și cu viitor</h2>

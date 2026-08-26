@@ -26,6 +26,7 @@
         </label>
 
         <div class="trigger">
+          <a class="page-link" href="{{ '/moldoveneasca/' | relative_url }}" title="Despre limba moldovenească"{% if page.url == '/moldoveneasca/' %} aria-current="page"{% endif %}>Catalogul LM</a>
           <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Moldova</a>
           <a class="page-link" href="{{ europa_url | relative_url }}"{% if page.url == europa_url %} aria-current="page"{% endif %}>Europa</a>
           {%- for path in site.header_pages -%}

@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Articole
-nav_title: Blog
+title: Noutăți
+nav_title: Noutăți
 permalink: /articole/
 ---
 
 <section class="article-index" aria-labelledby="articles-title">
-  <p class="eyebrow">Arhivă</p>
-  <h1 id="articles-title">Articole și note</h1>
-  <p class="page-lead">O selecție de texte despre Moldova, identitate, istorie și societate.</p>
+  <p class="eyebrow">Noutăți</p>
+  <h1 id="articles-title">Noutăți și articole</h1>
+  <p class="page-lead">Știri, demersuri și texte despre Moldova, identitate, istorie și societate.</p>
 
   <ol class="article-list">
     {% for post in site.posts %}

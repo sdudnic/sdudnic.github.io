@@ -1,8 +1,10 @@
 name: Update Europa news feed
 
 on:
-  # Refresh the feed locally before publishing, or launch this workflow
-  # manually when an online refresh is actually needed.
+  # Refresh the snapshot every day; manual runs remain available for testing
+  # or an immediate refresh after an important EU-related event.
+  schedule:
+    - cron: "17 5 * * *"
   workflow_dispatch:
 
 permissions:

@@ -60,9 +60,9 @@ Consiliul pentru Egalitate a emis un aviz consultativ prin care recunoaște că 
 
 ---
 
-### Solicitare către Parlamentul Republicii Moldova privind ineficiența Consiliului pentru Egalitate
+### Sesizare către Parlament și partidele politice privind „Istoria românilor”
 `12.02.2025`
-Grupul de Inițiativă „Pentru Istoria Moldovei” a trimis o scrisoare deschisă către Comisia pentru Drepturile Omului și Relații Interetnice a Parlamentului Republicii Moldova, solicitând intervenția urgentă în cazul ineficienței Consiliului pentru Egalitate. Petiția noastră, depusă în 2019, rămâne nerezolvată, iar promisiunile președintelui Consiliului, domnul Ian Feldman, nu au fost respectate. Scrisoarea evidențiază probleme grave precum tărăgănarea deciziilor, lipsa de transparență și excluderea petițiilor nesoluționate din rapoartele anuale. Solicităm reformarea sau desființarea Consiliului și inițierea unor măsuri legislative pentru prevenirea obstrucționării justiției.
+Grupul de Inițiativă „Pentru Istoria Moldovei” a publicat sesizarea adresată Parlamentului și partidelor politice cu privire la denumirea disciplinei „Istoria Românilor” și la lipsa unei intervenții instituționale efective. Petiția depusă în 2019 rămâne nerezolvată, iar documentele arată că deputații au fost informați și solicitați să acționeze fără ca problema să fie deblocată. Din această succesiune, în opinia grupului, se înțelege că nu au fost întreprinse măsuri concrete, deși Parlamentul are destui deputați și instrumente pentru a mișca un deget: să ceară explicații, să pună subiectul în discuție și să propună modificări legislative. [Vezi noutatea și documentele conexe]({{ '/noutati-sesizare-parlament-partide-istoria-romanilor/' | relative_url }}).
 
 <iframe src="./assets/2025_02_12-catre-parlament.pdf#toolbar=0" width="100%" height="300"></iframe>
 

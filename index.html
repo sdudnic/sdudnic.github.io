@@ -17,25 +17,30 @@ lang: mo
     </div>
   </section>
 
-  {% assign latest_news = site.posts | first %}
-  {% if latest_news %}
+  {% assign news_posts = site.posts | slice: 0, 2 %}
+  {% if news_posts.size > 0 %}
   <section class="profile-section news-section" id="noutati" aria-labelledby="news-title">
     <div class="section-heading">
       <p class="eyebrow">Noutăți</p>
-      <h2 id="news-title">Ultima noutate</h2>
+      <h2 id="news-title">Noutăți recente</h2>
       <p>Demersuri și informații noi despre inițiativele platformei.</p>
     </div>
 
-    <article class="initiative-card initiative-card--featured news-card">
-      {% assign news_image = latest_news.image | default: '/assets/stema-moldovei.svg' %}
-      <figure class="news-card__media">
-        <img src="{{ news_image | relative_url }}" alt="{{ latest_news.image_alt | default: latest_news.title | escape }}">
-      </figure>
-      <p class="card-label"><time datetime="{{ latest_news.date | date_to_xmlschema }}">{{ latest_news.date | date: "%d/%m/%Y" }}</time> · CEDO</p>
-      <h3><a href="{{ latest_news.url | relative_url }}">{{ latest_news.title | escape }}</a></h3>
-      <p>{{ latest_news.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
-      <a class="card-link" href="{{ latest_news.url | relative_url }}">Citește noutatea →</a>
-    </article>
+    <div class="news-grid">
+      {% for post in news_posts %}
+      <article class="initiative-card news-card">
+        {% if post.image %}
+        <figure class="news-card__media">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}">
+        </figure>
+        {% endif %}
+        <p class="card-label"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>{% if post.news_label %} · {{ post.news_label | escape }}{% endif %}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
+        <a class="card-link" href="{{ post.url | relative_url }}">Citește noutatea →</a>
+      </article>
+      {% endfor %}
+    </div>
   </section>
   {% endif %}
 

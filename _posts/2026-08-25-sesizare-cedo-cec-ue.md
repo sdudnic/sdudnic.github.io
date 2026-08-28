@@ -3,17 +3,14 @@ layout: post
 title: Am trimis la CEDO o sesizare privind CEC și „UE 2028”
 date: 2026-08-25
 lang: mo
-image: /assets/stema-moldovei.svg
-image_alt: Stema Moldovei
 tags: [noutăți, CEDO, CEC, drepturi electorale, Uniunea Europeană]
 published: true
+news_label: CEDO
 ---
 
 Am transmis Curții Europene a Drepturilor Omului (CEDO) o sesizare referitoare la modul în care Comisia Electorală Centrală (CEC) a tratat chestiunea mesajului „UE 2028” și informarea alegătorilor despre acest obiectiv politic.
 
 <!--more-->
-
-![Stema Moldovei](/assets/stema-moldovei.svg)
 
 Demersul pornește de la necesitatea ca alegătorii să primească informații clare, verificabile și echilibrate despre diferența dintre o țintă politică și un rezultat garantat în procesul de apropiere de Uniunea Europeană.
 

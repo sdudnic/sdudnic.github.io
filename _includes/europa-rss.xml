@@ -2,10 +2,15 @@
 {%- assign title_key = locale | append: '_title' -%}
 {%- assign summary_key = locale | append: '_summary' -%}
 {%- assign automatic_feed = site.data.europa_auto -%}
+{%- assign feed_updated_at = site.time -%}
+{%- if automatic_feed and automatic_feed.updated_at -%}
+  {%- assign feed_updated_at = automatic_feed.updated_at -%}
+{%- endif -%}
 {%- assign automatic_feed_active = false -%}
 {%- if automatic_feed -%}
   {%- assign localized_automatic_feed = automatic_feed[locale] -%}
-  {%- if localized_automatic_feed and localized_automatic_feed.size >= 10 -%}
+{%- comment -%}Keep this in sync with MIN_ITEMS in scripts/update_europa_feed.py.{%- endcomment -%}
+{%- if localized_automatic_feed and localized_automatic_feed.size >= 5 -%}
     {%- assign feed_items = localized_automatic_feed -%}
     {%- assign automatic_feed_active = true -%}
   {%- endif -%}
@@ -37,7 +42,7 @@
     <link>{{ site.url }}{{ channel_link }}</link>
     <description>{{ rss_description | xml_escape }}</description>
     <language>{{ locale }}</language>
-    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>{{ feed_updated_at | date_to_rfc822 }}</lastBuildDate>
     {%- for item in feed_items %}
       {%- if automatic_feed_active -%}
         {%- assign item_title = item.title -%}

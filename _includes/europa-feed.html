@@ -30,7 +30,8 @@
 {%- assign automatic_feed_active = false -%}
 {%- if automatic_feed -%}
   {%- assign localized_automatic_feed = automatic_feed[current_lang] -%}
-  {%- if localized_automatic_feed and localized_automatic_feed.size >= 10 -%}
+{%- comment -%}Keep this in sync with MIN_ITEMS in scripts/update_europa_feed.py.{%- endcomment -%}
+{%- if localized_automatic_feed and localized_automatic_feed.size >= 5 -%}
     {%- assign feed_items = localized_automatic_feed -%}
     {%- assign automatic_feed_active = true -%}
   {%- endif -%}
@@ -42,7 +43,7 @@
 <article class="article-index europa-feed-page">
   <p class="eyebrow">Europa</p>
   <h1>{{ feed_heading }}</h1>
-  {%- if last_sync -%}
+  {%- if last_sync and automatic_feed_active -%}
     <p class="source-note">{{ feed_sync_label }}: <time datetime="{{ last_sync }}">{{ last_sync | date: "%d.%m.%Y, %H:%M UTC" }}</time></p>
   {%- endif -%}
   <p class="feed-tools"><a href="{{ feed_rss_url | relative_url }}">{{ feed_rss_label }}</a></p>

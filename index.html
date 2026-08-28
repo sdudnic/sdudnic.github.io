@@ -19,11 +19,7 @@ lang: mo
 
   {% assign news_posts = site.posts | slice: 0, 2 %}
   {% if news_posts.size > 0 %}
-  <section class="profile-section news-section" id="noutati" aria-labelledby="news-title">
-    <div class="section-heading">
-      <h2 id="news-title">Noutăți</h2>
-    </div>
-
+  <section class="profile-section news-section" id="noutati" aria-label="Noutăți">
     <div class="news-grid">
       {% for post in news_posts %}
       <article class="initiative-card news-card">
@@ -32,8 +28,11 @@ lang: mo
           <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}">
         </figure>
         {% endif %}
-        <p class="card-label"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time></p>
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <div class="news-card__heading">
+          <time class="news-card__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+          <span class="news-card__separator" aria-hidden="true"> · </span>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        </div>
         <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 240, "" }} <a class="news-card__more" href="{{ post.url | relative_url }}" aria-label="Deschide noutatea: {{ post.title | escape }}">...</a></p>
       </article>
       {% endfor %}

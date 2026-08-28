@@ -96,6 +96,10 @@
   font-size: 0.9rem;
 }
 
+.news-card__more {
+  white-space: nowrap;
+}
+
 .collaboration {
   padding-right: clamp(1rem, 5vw, 3rem);
   padding-left: clamp(1rem, 5vw, 3rem);

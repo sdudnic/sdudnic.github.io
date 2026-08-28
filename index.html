@@ -36,8 +36,7 @@ lang: mo
         {% endif %}
         <p class="card-label"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>{% if post.news_label %} · {{ post.news_label | escape }}{% endif %}</p>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-        <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 240 }}</p>
-        <a class="card-link" href="{{ post.url | relative_url }}">Citește noutatea →</a>
+        <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 240, "" }} <a class="news-card__more" href="{{ post.url | relative_url }}" aria-label="Deschide noutatea: {{ post.title | escape }}">...</a></p>
       </article>
       {% endfor %}
     </div>

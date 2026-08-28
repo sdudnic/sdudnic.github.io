@@ -76,7 +76,10 @@
 }
 
 .news-card {
-  padding: 1.15rem;
+  padding: 0 1rem 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .news-card h3 {

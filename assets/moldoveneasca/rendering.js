@@ -38,7 +38,7 @@
       return;
     }
     unverifiedTbody.replaceChildren();
-    if (!currentUser || currentRole !== 'admin') {
+    if (!currentUser) {
       updateSelectionUi();
       return;
     }

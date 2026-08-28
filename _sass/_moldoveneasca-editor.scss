@@ -131,6 +131,20 @@
   display: none;
 }
 
+.moldoveneasca-image-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+}
+
+.moldoveneasca-image-actions .moldoveneasca-button {
+  min-height: 36px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.78rem;
+}
+
 .moldoveneasca-field-hint {
   display: block;
   margin: 0;

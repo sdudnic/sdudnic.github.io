@@ -4,6 +4,17 @@
     formStatus.dataset.tone = tone;
   };
 
+  const isPrimaryAdmin = () => String(currentUser?.email || '').trim().toLowerCase() === 'sdudnic@gmail.com';
+
+  const canEditRecord = (record = null) => {
+    if (!currentUser) return false;
+    if (isPrimaryAdmin() || currentRole === 'admin') return true;
+    return Boolean(record?.id && (
+      (record.owner_id === currentUser.id && record.status === 'pending')
+      || record.status === 'published'
+    ));
+  };
+
   const setRole = (role) => {
     currentRole = ['viewer', 'editor', 'admin'].includes(role) ? role : 'viewer';
     if (roleBadge) {
@@ -11,11 +22,11 @@
       roleBadge.dataset.role = currentRole;
       roleBadge.hidden = !currentUser;
     }
-    if (openFormButton) openFormButton.hidden = !['editor', 'admin'].includes(currentRole) || !currentUser;
-    if (adminOnlyField) adminOnlyField.hidden = currentRole !== 'admin';
-    if (unverifiedSection) unverifiedSection.hidden = currentRole !== 'admin' || !currentUser;
+    if (openFormButton) openFormButton.hidden = !currentUser;
+    if (adminOnlyField) adminOnlyField.hidden = !isPrimaryAdmin();
+    if (unverifiedSection) unverifiedSection.hidden = !currentUser;
     if (editDetailButton) {
-      editDetailButton.hidden = !(currentUser && currentRole === 'admin' && currentDetailRecord?.id);
+      editDetailButton.hidden = !canEditRecord(currentDetailRecord);
     }
     renderUnverifiedRows();
     updateSelectionUi();
@@ -47,7 +58,7 @@
       if (detailEditorHost) detailEditorHost.hidden = true;
       if (detailView) detailView.hidden = !returnToDetail;
       if (editDetailButton) {
-        editDetailButton.hidden = !(returnToDetail && currentUser && currentRole === 'admin' && currentDetailRecord?.id);
+        editDetailButton.hidden = !(returnToDetail && canEditRecord(currentDetailRecord));
       }
       if (returnToDetail && detailTitle && currentDetailRecord) {
         const fields = displayFields(currentDetailRecord);
@@ -64,9 +75,7 @@
 
   const openEditor = async (record = null, { inDetail = false } = {}) => {
     if (!editorPanel || !editorForm) return;
-    const canEdit = inDetail
-      ? currentUser && currentRole === 'admin'
-      : currentUser && ['editor', 'admin'].includes(currentRole);
+    const canEdit = canEditRecord(record);
     if (!canEdit) {
       setStatus('Contul nu are drepturi de editare.', 'error');
       return;

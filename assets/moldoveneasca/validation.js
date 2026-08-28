@@ -47,6 +47,16 @@
     const requirement = quoteRequirement(catalogType);
     if (quoteField) quoteField.placeholder = requirement.placeholder;
     if (quoteHint) quoteHint.textContent = requirement.hint;
+    const sourceRequired = catalogType === 'ethnicity' || catalogType === 'both';
+    if (sourceUrlField) {
+      sourceUrlField.required = sourceRequired;
+      sourceUrlField.setAttribute('aria-required', String(sourceRequired));
+    }
+    if (sourceUrlHint) {
+      sourceUrlHint.textContent = sourceRequired
+        ? 'Obligatorie: fiecare referință etnică trebuie să aibă o legătură verificabilă către sursă.'
+        : 'Recomandată pentru toate referințele; obligatorie pentru catalogul etnic și pentru cele afișate în ambele cataloage.';
+    }
   };
 
   const hasGlotonym = (value) => languageNamePattern.test(String(value || ''));

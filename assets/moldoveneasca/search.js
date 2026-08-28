@@ -9,7 +9,7 @@
   ));
 
   const updateSelectionUi = () => {
-    const isAdmin = Boolean(currentUser && currentRole === 'admin');
+    const isAdmin = Boolean(currentUser && String(currentUser.email || '').trim().toLowerCase() === 'sdudnic@gmail.com');
     const catalogTables = [table, unverifiedTable, ethnicityTable].filter(Boolean);
 
     if (!isAdmin) selectedReferenceIds.clear();

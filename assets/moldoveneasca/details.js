@@ -92,7 +92,13 @@
     if (detailView) detailView.hidden = false;
     if (detailEditorHost) detailEditorHost.hidden = true;
     if (editDetailButton) {
-      editDetailButton.hidden = !(currentUser && currentRole === 'admin' && record?.id);
+      const isPrimaryAdmin = String(currentUser?.email || '').trim().toLowerCase() === 'sdudnic@gmail.com';
+      editDetailButton.hidden = !(currentUser && record?.id && (
+        isPrimaryAdmin
+        || currentRole === 'admin'
+        || (record.owner_id === currentUser.id && record.status === 'pending')
+        || record.status === 'published'
+      ));
     }
     lastDetailTrigger = trigger || null;
     detailPanel.hidden = false;

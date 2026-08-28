@@ -9,5 +9,6 @@
 window.MOLDOVENEASCA_CONFIG = Object.freeze({
   supabaseUrl: "https://ptggghmvctqidhaplyev.supabase.co",
   supabaseAnonKey: "sb_publishable_pgpRZzWpdacaa1OTgLo2bQ_YFYqjx9i",
+  mcpApiUrl: "https://moldoveneasca-mcp.dudnic-moldoveneasca-mcp.workers.dev",
   redirectTo: "https://dudnic.com/moldoveneasca/"
 });

@@ -22,6 +22,8 @@
   const imageInput = editorForm?.elements.namedItem('image_url');
   const imagePickButton = root.querySelector('[data-image-pick]');
   const imageFileInput = root.querySelector('[data-image-file]');
+  const imageAutoUnderlineButton = root.querySelector('[data-image-auto-underline]');
+  const imageOcrStatus = root.querySelector('[data-image-ocr-status]');
   const imagePreview = root.querySelector('[data-image-preview]');
   const imageHint = root.querySelector('#image-help');
   const imageMarkup = root.querySelector('[data-image-markup]');
@@ -92,6 +94,9 @@
   const quoteHint = root.querySelector('[data-catalog-quote-hint]');
   const catalogTypeField = editorForm?.elements.namedItem('catalog_type');
   const quoteField = editorForm?.elements.namedItem('quote');
+  const languageField = editorForm?.elements.namedItem('language');
+  const sourceUrlField = editorForm?.elements.namedItem('source_url');
+  const sourceUrlHint = root.querySelector('[data-source-url-hint]');
 
   if (!table || !tbody) return;
   table.classList.add('moldoveneasca-table');

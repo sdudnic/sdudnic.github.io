@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Referințe istorice ale glotonimului „moldovenească”
-nav_title: Referințe
+nav_title: Catalogul LM
 tags: [moldoveneasca, limba, glotonim, moldovean, moldovenească, denumirea limbii, limba moldovenească, istorie, surse istorice]
 description: Catalog documentar cu referințe istorice despre denumirea limbii moldovenești, de la primele mențiuni până în prezent.
 permalink: /moldoveneasca/
@@ -13,7 +13,10 @@ permalink: /moldoveneasca/
     Baza de date reunește documente și referințe istorice care menționează denumirea
     „moldovenească” a limbii, de la cele mai vechi atestări până astăzi. Anul este al
     ediției sau al manuscrisului care conține citatul; data documentului ori a operei
-    menționate în citat se păstrează la „Comentarii”.
+    menționate în citat se păstrează la „Comentarii”. Semnul <strong>!</strong> înaintea
+    denumirii marchează o referință de importanță deosebită: sursa tratează explicit
+    limba și compară denumirea „moldovenească” cu „română”, „valahă”, „munteană” ori
+    consemnează preferința localnicilor pentru una dintre aceste denumiri.
   </p>
 
   <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Caută în toate cataloagele și coloanele">
@@ -29,6 +32,20 @@ permalink: /moldoveneasca/
     </label>
     <button type="button" class="moldoveneasca-icon-button" data-catalog-reset hidden aria-label="Resetează căutarea" title="Resetează căutarea"><span aria-hidden="true">↺</span></button>
     <button type="button" class="moldoveneasca-icon-button" data-open-form hidden aria-label="Adaugă referință" title="Adaugă referință"><span aria-hidden="true">＋</span></button>
+  </div>
+
+  <div class="moldoveneasca-auth" aria-live="polite">
+    <div>
+      <p class="eyebrow">Contribuții și verificare</p>
+      <p data-auth-message>Vizualizarea este deschisă tuturor. Autentifică-te pentru a adăuga referințe sau a propune modificări.</p>
+      <span class="moldoveneasca-role" data-role-badge hidden></span>
+      <span data-auth-user hidden></span>
+    </div>
+    <div class="moldoveneasca-auth__actions">
+      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-login-google>Intră cu Google</button>
+      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-login-github>Intră cu GitHub</button>
+      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-logout hidden>Ieși din cont</button>
+    </div>
   </div>
 
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
@@ -86,7 +103,8 @@ permalink: /moldoveneasca/
         </label>
         <label class="moldoveneasca-field">
           <span>Legătura către sursă</span>
-          <input type="url" name="source_url" placeholder="https://…">
+          <input type="url" name="source_url" placeholder="https://…" aria-describedby="source-url-help">
+          <small id="source-url-help" class="moldoveneasca-field-hint" data-source-url-hint>Obligatorie pentru referințele din catalogul etnic și pentru cele afișate în ambele cataloage.</small>
         </label>
         <label class="moldoveneasca-field moldoveneasca-field--full moldoveneasca-image-field">
           <span>Imagine scanată</span>
@@ -95,7 +113,11 @@ permalink: /moldoveneasca/
             <button type="button" class="moldoveneasca-icon-button" data-image-pick aria-label="Încarcă imaginea paginii citate" title="Încarcă imaginea paginii citate"><span aria-hidden="true"></span></button>
             <input class="moldoveneasca-image-file" type="file" data-image-file accept="image/*" tabindex="-1" aria-hidden="true">
           </span>
-          <small id="image-help" class="moldoveneasca-field-hint">Lipește cu Ctrl+V captura paginii unde apare citatul; pentru un PDF păstrează doar pagina citată și, ideal, subliniază cu roșu glotonimul.</small>
+          <span class="moldoveneasca-image-actions">
+            <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-image-auto-underline disabled>Subliniază automat din OCR</button>
+            <small class="moldoveneasca-field-hint" data-image-ocr-status aria-live="polite"></small>
+          </span>
+          <small id="image-help" class="moldoveneasca-field-hint">Lipește cu Ctrl+V captura paginii unde apare citatul. Capturile sunt compactate automat la cel mult 2400 px pe latura lungă și aproximativ 1,5 MB, pentru încărcare rapidă fără pierderea lizibilității. OCR-ul rulează în browser și subliniază doar dacă găsește exact glotonimul din citat; verifică imaginea înainte de publicare.</small>
           <span class="moldoveneasca-image-preview" data-image-preview hidden></span>
           <span class="moldoveneasca-image-markup" data-image-markup hidden>
             <small class="moldoveneasca-field-hint" data-image-markup-status>Trasează cu mouse-ul sau degetul o linie roșie sub glotonim.</small>
@@ -144,7 +166,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260823-18"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260829-image-limit"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>
@@ -356,7 +378,7 @@ permalink: /moldoveneasca/
 
 <section class="moldoveneasca-unverified" data-unverified-section hidden aria-labelledby="unverified-title">
   <h2 id="unverified-title"><strong>Referințe neverificate</strong></h2>
-  <p>Aceste intrări sunt păstrate separat până la verificarea bibliografică a ediției, autorului, anului, paginii și sursei. O intrare poate fi deja clasificată la <strong>limbă</strong>; verificarea nu schimbă această clasificare. Secțiunea este vizibilă numai administratorului.</p>
+  <p>Aceste intrări sunt păstrate separat până la verificarea bibliografică a ediției, autorului, anului, paginii și sursei. O intrare poate fi deja clasificată la <strong>limbă</strong>; verificarea nu schimbă această clasificare. Contribuitorii văd propriile propuneri, administratorii văd lista de lucru, iar confirmarea sau infirmarea îi aparține numai proprietarului catalogului.</p>
   <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
     <thead>
       <tr>
@@ -414,8 +436,9 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
         <td><span class="moldoveneasca-table__truncate" title="1352–1564">1352–1564</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Молдавско-польская летопись">Молдавско-польская летопись</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь">„Сигизмунд-Август… молдавским… из молдавского рода… молдаване”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Necunoscut">necunoscut</span></td>
-        <td><span class="moldoveneasca-table__source-links"><a href="http://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+        <td><span class="moldoveneasca-table__truncate" title="ru">ru</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Autor neindicat în sursă (cronică anonimă)">autor neindicat în sursă (cronică anonimă)</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1765">1765</span></td>
@@ -429,64 +452,73 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
         <td><span class="moldoveneasca-table__truncate" title="1818">1818</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Die Moldau, Wallachey, Bessarabien und Bukowina. Neueste Darstellung dieser Länder…">Die Moldau, Wallachey, Bessarabien und Bukowina…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni», precum cei din Valahia, susţinând că n-ar fi urmaşii romanilor şi că ar fi locuit provincia înainte de venirea acestora">„Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni»…”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="F. v. Karaczay">F. v. Karaczay</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="de">de</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Fedor von Karacsay">Fedor von Karacsay</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://polona2.pl/item/beytrage-zur-europaischen-landerkunde-die-moldau-wallachey-bessarabien-und-bukowina,MTMyNzUwMTk0/" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1841">1841</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Mică gramatică franţeză, pentru învăţătura tinerimei moldo-române">Mică gramatică franţeză…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="tinerimei moldo-române">„tinerimei moldo-române”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="T. Codrescu">T. Codrescu</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Teodor Codrescu; după François Noël și Charles-Pierre Chapsal">Teodor Codrescu; după Noël și Chapsal</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=c&amp;limit=40&amp;page=1560" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1897">1897</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии по переписи 1897 г.">Население Бессарабской губернии…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии">„Население Бессарабской губернии”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Necunoscut">necunoscut</span></td>
-        <td><span class="moldoveneasca-table__source-links"><a href="https://www.facebook.com/EramAvodlom/photos/a.117777099609933/292151165505858/?type=3" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+        <td><span class="moldoveneasca-table__truncate" title="ru">ru</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Comitetul Central de Statistică al Ministerului de Interne al Rusiei; red. N. A. Troițki">Comitetul Central de Statistică al Ministerului de Interne al Rusiei; red. N. A. Troițki</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://rusneb.ru/catalog/000199_000009_003956062/" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1845">1845</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Lupta moldovenilor cu cavalerii crucieri la anul 1423">Lupta moldovenilor cu cavalerii crucieri…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="moldovenilor">„moldovenilor”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Gh. Asachi">Gh. Asachi</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Gheorghe Asachi">Gheorghe Asachi</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=a&amp;limit=20&amp;page=1200" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1898">1898</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Studiu asupra cronicarilor moldoveni din punct de vedere al limbei, metodei și cugetărei…">Studiu asupra cronicarilor moldoveni…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="cronicarilor moldoveni">„cronicarilor moldoveni”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Al. Gîdei">Al. Gîdei</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Alexandru V. Gîdei">Alexandru V. Gîdei</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=g&amp;limit=20&amp;page=820" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1901">1901</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Hronicul vechimei romano-moldo-vlahilor">Hronicul vechimei romano-moldo-vlahilor</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Hronicul vechimei a Romano-Moldo-Vlahilor">Hronicul vechimei a Romano-Moldo-Vlahilor</span></td>
         <td><span class="moldoveneasca-table__truncate" title="romano-moldo-vlahilor">„romano-moldo-vlahilor”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Dimitrie Cantemir; ed. Gr. C. Tocilescu">Dimitrie Cantemir; ed. Gr. C. Tocilescu</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Dimitrie Cantemir; ed. Grigore G. Tocilescu">Dimitrie Cantemir; ed. Grigore G. Tocilescu</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://books.google.com/books/about/Hronicul_vechimei_a_Romano_Moldo_Vlahilo.html?id=zpVzxQEACAAJ" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1908">1908</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Documentul rîzenilor din 1484 și organizarea armatei moldovene în sec. XV">Documentul rîzenilor din 1484…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Documentul Răzenilor din 1484 şi organizarea armatei moldovene în secolul XV">Documentul Răzenilor din 1484…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="armatei moldovene">„armatei moldovene”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="I. Bogdan">I. Bogdan</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Ioan Bogdan">Ioan Bogdan</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=b&amp;limit=10&amp;page=1070" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1925">1925</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Din trecutul comerțului moldovenesc și mai ales al celui ieșan">Din trecutul comerțului moldovenesc…</span></td>
         <td><span class="moldoveneasca-table__truncate" title="comerțului moldovenesc">„comerțului moldovenesc”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="N. A. Bogdan">N. A. Bogdan</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="N. A. Bogdan; prefață N. V. Ștefăniu">N. A. Bogdan; prefață N. V. Ștefăniu</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://dspace.bcu-iasi.ro/handle/123456789/34/browse?etal=-1&amp;offset=3744&amp;order=ASC&amp;rpp=20&amp;sort_by=1&amp;type=title" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1926">1926</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">Cântece poporane moldovenești</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">„Cântece poporane moldovenești”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
         <td><span class="moldoveneasca-table__truncate" title="Gh. Cardaș">Gh. Cardaș</span></td>
-        <td>—</td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://digital.bibliotecaarad.ro/files/original/837f8f5554d1442938b7af6af950ce7c8faa95c3.pdf" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
     </tbody>
   </table>

@@ -65,7 +65,16 @@
     if (currentDetailRecord) openEditor(currentDetailRecord, { inDetail: true });
   });
   closeDetailButton?.addEventListener('click', closeDetail);
-  imageInput?.addEventListener('input', renderImagePreview);
+  imageInput?.addEventListener('input', () => {
+    renderImagePreview();
+    if (!imageSourceDataUrl) imageOcrButtonState();
+  });
+  quoteField?.addEventListener('input', () => {
+    if (!imageAutoAnnotated) return;
+    imageAutoAnnotated = false;
+    if (imageOcrStatus) imageOcrStatus.textContent = 'Citatul s-a schimbat; verifică sau regenerează sublinierea OCR.';
+    paintImageMarkup();
+  });
   editorForm?.addEventListener('paste', (event) => {
     const item = [...(event.clipboardData?.items || [])].find((entry) => entry.type.startsWith('image/'));
     if (!item) return;
@@ -76,6 +85,7 @@
   });
   imagePickButton?.addEventListener('click', () => imageFileInput?.click());
   imageFileInput?.addEventListener('change', () => setImageFromFile(imageFileInput.files?.[0]));
+  imageAutoUnderlineButton?.addEventListener('click', () => autoUnderlineImage());
   const imageCanvasPoint = (event) => {
     if (!imageCanvas) return null;
     const bounds = imageCanvas.getBoundingClientRect();
@@ -90,6 +100,7 @@
     const point = imageCanvasPoint(event);
     if (!point) return;
     event.preventDefault();
+    imageAutoAnnotated = false;
     activeImageStroke = [point];
     imageStrokes.push(activeImageStroke);
     const context = imageCanvas.getContext('2d');
@@ -110,7 +121,8 @@
     activeImageStroke = null;
     imageCanvas?.releasePointerCapture?.(event.pointerId);
     if (imageCanvas && imageInput) {
-      imageInput.value = imageCanvas.toDataURL('image/jpeg', 0.88);
+      const encoded = encodeCanvasWithinLimit(imageCanvas, imageCanvas.width, imageCanvas.height);
+      imageInput.value = encoded.dataUrl;
       renderImagePreview();
     }
   };
@@ -118,11 +130,13 @@
   imageCanvas?.addEventListener('pointercancel', finishImageStroke);
   imageUndoButton?.addEventListener('click', async () => {
     if (imageHasExternalRed || !imageStrokes.length) return;
+    imageAutoAnnotated = false;
     imageStrokes.pop();
     await paintImageMarkup();
   });
   imageClearButton?.addEventListener('click', async () => {
     if (imageHasExternalRed || !imageStrokes.length) return;
+    imageAutoAnnotated = false;
     imageStrokes = [];
     await paintImageMarkup();
   });

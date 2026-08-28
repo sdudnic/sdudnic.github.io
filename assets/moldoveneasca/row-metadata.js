@@ -19,7 +19,7 @@
       if (key === 'selection') {
         th.className = 'moldoveneasca-table__selection-heading';
         th.dataset.selectionHeading = 'true';
-        th.hidden = currentRole !== 'admin';
+        th.hidden = String(currentUser?.email || '').trim().toLowerCase() !== 'sdudnic@gmail.com';
         th.setAttribute('aria-label', 'Selectare');
       } else if (key === 'year') {
         th.className = 'moldoveneasca-table__year-heading';

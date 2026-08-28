@@ -8,7 +8,8 @@
     const selectionCell = document.createElement('td');
     selectionCell.className = 'moldoveneasca-table__selection-cell';
     selectionCell.dataset.selectionCell = 'true';
-    selectionCell.hidden = currentRole !== 'admin';
+    const isPrimaryOwner = String(currentUser?.email || '').trim().toLowerCase() === 'sdudnic@gmail.com';
+    selectionCell.hidden = !isPrimaryOwner;
     if (record.id) {
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
@@ -89,16 +90,33 @@
 
     const actionsCell = document.createElement('td');
     actionsCell.className = 'moldoveneasca-table__actions-cell';
-    const canEdit = currentRole === 'admin' || (currentRole === 'editor' && currentUser?.id === record.owner_id);
-    if (canEdit && record.id) {
+    const isPrimaryAdmin = String(currentUser?.email || '').trim().toLowerCase() === 'sdudnic@gmail.com';
+    const canEdit = Boolean(currentUser && (
+      isPrimaryAdmin
+      || currentRole === 'admin'
+      || (currentUser.id === record.owner_id && record.status === 'pending')
+      || record.status === 'published'
+    ));
+    const canSuggestDeletion = Boolean(currentUser && record.id && !isPrimaryAdmin && record.status === 'published');
+    if ((canEdit || canSuggestDeletion) && record.id) {
       const actions = document.createElement('div');
       actions.className = 'moldoveneasca-table__actions';
-      actions.appendChild(createIconButton(
-        'Editează referința',
-        'edit',
-        () => openEditor(record),
-        'moldoveneasca-table__edit-button'
-      ));
+      if (canEdit) {
+        actions.appendChild(createIconButton(
+          'Editează referința',
+          'edit',
+          () => openEditor(record),
+          'moldoveneasca-table__edit-button'
+        ));
+      }
+      if (canSuggestDeletion) {
+        actions.appendChild(createIconButton(
+          'Sugerează ștergerea referinței',
+          'delete',
+          () => requestRecordDeletion(record),
+          'moldoveneasca-table__delete-button moldoveneasca-icon-button--danger'
+        ));
+      }
       actionsCell.appendChild(actions);
     }
 

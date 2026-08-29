@@ -7,7 +7,7 @@ Supabase pentru autentificare Google/GitHub și referințele adăugate din inter
 
 1. Creează un proiect nou pe [supabase.com](https://supabase.com/).
 2. Deschide **SQL Editor** și rulează integral [`supabase/schema.sql`](supabase/schema.sql).
-   Dacă proiectul Supabase există deja, rulează și migrarea [`supabase/migrations/20260821_add_google_auth_profile.sql`](supabase/migrations/20260821_add_google_auth_profile.sql).
+   Dacă proiectul Supabase există deja, rulează migrarea [`supabase/migrations/20260824_moderation_workflow.sql`](supabase/migrations/20260824_moderation_workflow.sql) peste schema existentă.
 3. Deschide **Project Settings → API** și copiază **Project URL** și cheia publică **anon**.
 4. Completează valorile în [`assets/moldoveneasca-config.js`](assets/moldoveneasca-config.js):
 
@@ -76,14 +76,16 @@ where github_login = 'NUME_GITHUB';
 ```
 
 Conturile Google noi primesc automat rolul `editor`, deci nu trebuie promovate
-manual. Referințele adăugate de ele rămân `pending`: administratorul le poate
-verifica și publica, iar colaboratorul nu poate schimba statutul, șterge sau
-modifica referințele altor utilizatori. Conturile GitHub noi rămân `viewer` până
-când administratorul le promovează.
+manual. Referințele adăugate de ele rămân `pending`: proprietarul catalogului le poate
+confirma sau infirma. Administratorii pot adăuga și edita, însă nu pot schimba
+statutul și nu pot șterge. Utilizatorii non-admin pot propune editări sau
+ștergeri, iar interfața îi informează: „Editarea voastră este trimisă
+premoderare”. Numai `sdudnic@gmail.com` poate valida, infirma, arhiva, restaura
+sau șterge.
 
 ## Cum funcționează versiunea actuală
 
-- cele 197 de referințe istorice existente sunt importate în Supabase;
+- catalogul public conține în prezent 209 referințe publicate în Supabase;
 - tabelul public poate fi căutat într-un singur câmp după toate coloanele;
 - referințele noi și editările folosesc câmpuri separate pentru perioadă, secol,
   lucrare, citat, limbă, autor și sursă;
@@ -92,5 +94,6 @@ când administratorul le promovează.
   păstrând lizibilitatea și fiind redusă doar la lățimea blade-ului dacă este necesar;
 - editorul poate modifica doar referințele al căror proprietar este;
 - editorul nu poate șterge și nu poate schimba statutul unei referințe;
-- administratorul poate modifica, publica, arhiva sau șterge orice referință;
+- administratorul poate modifica orice referință, dar numai proprietarul
+  catalogului poate publica, arhiva, restaura sau șterge;
 - modificările sunt păstrate în `reference_revisions` pentru verificare.

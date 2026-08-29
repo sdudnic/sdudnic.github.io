@@ -1,0 +1,22 @@
+{
+  "name": "@dudnic/moldoveneasca-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP și API REST pentru catalogul referințelor limbii moldovenești.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server.mjs --http",
+    "mcp": "node --env-file=.env server.mjs --stdio",
+    "auth:login": "node --env-file=.env auth-github.mjs",
+    "auth:github": "node --env-file=.env auth-github.mjs",
+    "auth:password": "node --env-file=.env auth-login.mjs",
+    "auth:logout": "node --env-file=.env auth-github.mjs --logout",
+    "check": "node --check catalog-core.mjs && node --check catalog.mjs && node --check auth.mjs && node --check auth-session.mjs && node --check auth-login.mjs && node --check auth-github.mjs && node --check protocol.mjs && node --check server.mjs && node --check worker/index.mjs",
+    "deploy": "npx wrangler@latest deploy --config wrangler.jsonc",
+    "dry-run": "npx wrangler@latest deploy --dry-run --config wrangler.jsonc",
+    "test": "node --test test/*.test.mjs"
+  }
+}

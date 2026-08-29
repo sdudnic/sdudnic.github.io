@@ -4,3 +4,13 @@ _site
 .jekyll-metadata
 vendor
 .drive-import-checklist.json
+
+# MCP/Cloudflare local state and secrets
+mcp/.env
+mcp/.moldoveneasca-session.json
+mcp/.dev.vars
+mcp/.wrangler/
+mcp/node_modules/
+
+# Configurația locală Codex poate conține căi și setări ale stației de lucru.
+.codex/config.toml

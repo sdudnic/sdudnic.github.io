@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "moldoveneasca-mcp",
+  "main": "worker/index.mjs",
+  "compatibility_date": "2026-08-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
+  "vars": {
+    "MOLDOVENEASCA_PRIMARY_ADMIN_EMAIL": "sdudnic@gmail.com",
+    "MOLDOVENEASCA_REQUIRE_MCP_AUTH": "true"
+  }
+}

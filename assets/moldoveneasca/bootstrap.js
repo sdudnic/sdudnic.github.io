@@ -9,7 +9,7 @@
   const centurySelect = root.querySelector('[data-catalog-century]');
   const resetButton = root.querySelector('[data-catalog-reset]');
   const result = document.querySelector('[data-catalog-result]');
-  const authMessages = [...document.querySelectorAll('[data-auth-message], [data-catalog-auth-message]')];
+  const authMessages = [...document.querySelectorAll('[data-auth-message]')];
   const setAuthMessage = (message) => {
     authMessages.forEach((element) => { element.textContent = message; });
   };

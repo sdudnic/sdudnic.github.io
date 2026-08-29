@@ -22,14 +22,6 @@
   {%- assign rss_title = "Moldova and the EU — Europa" -%}
   {%- assign rss_description = "Recent notes about Moldova and European integration." -%}
   {%- assign channel_link = '/en/european-standards/' -%}
-{%- elsif locale == 'fr' -%}
-  {%- assign rss_title = "La Moldova et l’UE — Europa" -%}
-  {%- assign rss_description = "Notes récentes sur la Moldova et l’intégration européenne." -%}
-  {%- assign channel_link = '/fr/standards-europeens/' -%}
-{%- elsif locale == 'ru' -%}
-  {%- assign rss_title = "Молдова и ЕС — Европа" -%}
-  {%- assign rss_description = "Свежие заметки о Молдове и европейской интеграции." -%}
-  {%- assign channel_link = '/ru/evropejskie-standarty/' -%}
 {%- else -%}
   {%- assign rss_title = "Moldova și UE — Europa" -%}
   {%- assign rss_description = "Note recente despre Moldova și integrarea europeană." -%}

@@ -29,3 +29,14 @@ Aici sunt referentiate mai multe pagini si site-uri internet, cu tematica moldov
 * <a href="https://www.facebook.com/groups/istoria.md" target="_blank">istoria.md</a>
 * <a href="https://www.facebook.com/groups/moldova360" target="_blank">Moldova 360</a>
 * <a href="https://www.facebook.com/moldovamare.org" target="_blank">moldovamare.org</a>
+
+
+### canale Telegram
+* <a href="https://t.me/moldavica" target="_blank" rel="noopener noreferrer">Moldavica — documente de arhivă</a> — documente istorice referitoare la Moldova și limba moldovenească.
+
+<figure class="resource-qr">
+  <a href="https://t.me/moldavica" target="_blank" rel="noopener noreferrer">
+    <img src="{{ '/assets/moldavica-telegram.png' | relative_url }}" alt="Cod QR către canalul Telegram Moldavica, @MOLDAVICA" width="300" height="348" loading="lazy">
+  </a>
+  <figcaption>Scanează codul QR sau deschide <a href="https://t.me/moldavica" target="_blank" rel="noopener noreferrer">canalul Moldavica pe Telegram</a>.</figcaption>
+</figure>

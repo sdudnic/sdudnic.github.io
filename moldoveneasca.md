@@ -37,15 +37,9 @@ permalink: /moldoveneasca/
   <div class="moldoveneasca-auth" aria-live="polite">
     <div>
       <p class="eyebrow">Contribuții și verificare</p>
-      <p data-auth-message>Vizualizarea este deschisă tuturor. Autentifică-te pentru a adăuga referințe sau a propune modificări.</p>
-      <span class="moldoveneasca-role" data-role-badge hidden></span>
-      <span data-auth-user hidden></span>
+      <p data-catalog-auth-message>Vizualizarea este deschisă tuturor. Autentifică-te pentru a adăuga referințe sau a propune modificări.</p>
     </div>
-    <div class="moldoveneasca-auth__actions">
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-login-google>Intră cu Google</button>
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-login-github>Intră cu GitHub</button>
-      <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-logout hidden>Ieși din cont</button>
-    </div>
+    <small>Autentificarea și ieșirea din cont sunt disponibile în bara de sus.</small>
   </div>
 
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">

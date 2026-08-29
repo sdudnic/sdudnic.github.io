@@ -159,7 +159,7 @@
     setCatalogLoading(false);
     updateSelectionUi();
     loginButtons.forEach((button) => { button.disabled = true; });
-    if (authMessage) authMessage.textContent = 'Catalogul public și căutarea funcționează fără cont; autentificarea Google/GitHub nu este încă configurată.';
+    setAuthMessage('Catalogul public și căutarea funcționează fără cont; autentificarea Google/GitHub nu este încă configurată.');
     return;
   }
 
@@ -174,7 +174,7 @@
       updateSelectionUi();
       supabaseClient.auth.onAuthStateChange((_event, session) => {
         loadProfile(session?.user || null).catch((error) => {
-          if (authMessage) authMessage.textContent = `Profilul nu a putut fi încărcat: ${error.message}`;
+          setAuthMessage(`Profilul nu a putut fi încărcat: ${error.message}`);
         });
       });
     } catch (error) {
@@ -182,7 +182,7 @@
       updateSelectionUi();
       loginButtons.forEach((button) => { button.disabled = true; });
       if (result) result.textContent = 'Sursa live nu răspunde; se afișează copia locală.';
-      if (authMessage) authMessage.textContent = `Catalogul public funcționează, dar autentificarea nu este disponibilă: ${error.message}`;
+      setAuthMessage(`Catalogul public funcționează, dar autentificarea nu este disponibilă: ${error.message}`);
     }
   })();
 })();

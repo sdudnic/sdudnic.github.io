@@ -34,14 +34,6 @@ permalink: /moldoveneasca/
     <button type="button" class="moldoveneasca-icon-button" data-open-form hidden aria-label="Adaugă referință" title="Adaugă referință"><span aria-hidden="true">＋</span></button>
   </div>
 
-  <div class="moldoveneasca-auth" aria-live="polite">
-    <div>
-      <p class="eyebrow">Contribuții și verificare</p>
-      <p data-catalog-auth-message>Vizualizarea este deschisă tuturor. Autentifică-te pentru a adăuga referințe sau a propune modificări.</p>
-    </div>
-    <small>Autentificarea și ieșirea din cont sunt disponibile în bara de sus.</small>
-  </div>
-
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
     <div class="moldoveneasca-editor__heading">
       <div>

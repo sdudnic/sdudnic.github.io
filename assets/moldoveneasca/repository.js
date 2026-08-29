@@ -130,7 +130,7 @@
         button.disabled = false;
       });
       if (logoutButton) logoutButton.hidden = true;
-      if (authMessage) authMessage.textContent = 'Vizualizarea este deschisă tuturor. Autentifică-te cu Google sau GitHub pentru a contribui.';
+      setAuthMessage('Vizualizarea este deschisă tuturor. Autentifică-te cu Google sau GitHub pentru a contribui.');
       if (editorPanel) editorPanel.hidden = true;
       renderRemoteRows();
       return;
@@ -151,7 +151,7 @@
       authUser.textContent = displayName;
       authUser.hidden = false;
     }
-    if (authMessage) authMessage.textContent = `${displayName} este autentificat(ă) cu rolul ${currentRole}.`;
+    setAuthMessage(`${displayName} este autentificat(ă) cu rolul ${currentRole}.`);
     renderRemoteRows();
   };
 
@@ -164,14 +164,14 @@
     });
     if (error) {
       loginButtons.forEach((button) => { button.disabled = false; });
-      if (authMessage) authMessage.textContent = `Autentificarea nu a reușit: ${error.message}`;
+      setAuthMessage(`Autentificarea nu a reușit: ${error.message}`);
     }
   };
 
   const signOut = async () => {
     if (!supabaseClient) return;
     const { error } = await supabaseClient.auth.signOut();
-    if (error && authMessage) authMessage.textContent = `Ieșirea nu a reușit: ${error.message}`;
+    if (error) setAuthMessage(`Ieșirea nu a reușit: ${error.message}`);
   };
 
   const formPayload = () => {
@@ -310,7 +310,7 @@
     }
     if (response.request) {
       closeEditor();
-      if (authMessage) authMessage.textContent = response.message || 'Editarea voastră este trimisă premoderare și rămâne în lista de neverificate.';
+      setAuthMessage(response.message || 'Editarea voastră este trimisă premoderare și rămâne în lista de neverificate.');
       await loadRemoteRecords();
       return;
     }
@@ -318,11 +318,9 @@
     if (response.data?.id) recordImageCache.set(String(response.data.id), response.data.image_url || null);
     if (savedInDetail) currentDetailRecord = response.data;
     closeEditor();
-    if (authMessage) {
-      authMessage.textContent = String(currentUser?.email || '').toLowerCase() === 'sdudnic@gmail.com'
+    setAuthMessage(String(currentUser?.email || '').toLowerCase() === 'sdudnic@gmail.com'
         ? 'Referința a fost salvată de proprietarul catalogului.'
-        : 'Editarea voastră este trimisă premoderare și rămâne în lista de neverificate.';
-    }
+        : 'Editarea voastră este trimisă premoderare și rămâne în lista de neverificate.');
     if (savedInDetail && response.data) openDetail(response.data, lastDetailTrigger);
     await loadRemoteRecords();
   };
@@ -345,7 +343,7 @@
       ({ error } = await supabaseClient.from('language_references').delete().in('id', ids));
     }
     if (error) {
-      if (authMessage) authMessage.textContent = `Referințele nu au putut fi șterse: ${error.message}`;
+      setAuthMessage(`Referințele nu au putut fi șterse: ${error.message}`);
       updateSelectionUi();
       return;
     }
@@ -361,7 +359,7 @@
     try {
       if (mcpApiUrl) {
         const result = await mcpRequest(`/api/references/${encodeURIComponent(record.id)}`, { method: 'DELETE', body: { reason } });
-        if (authMessage) authMessage.textContent = result?.data?.message || 'Sugestia de ștergere a fost trimisă premoderării.';
+        setAuthMessage(result?.data?.message || 'Sugestia de ștergere a fost trimisă premoderării.');
       } else {
         const { data: snapshot, error: snapshotError } = await supabaseClient
           .from('language_references')
@@ -379,11 +377,11 @@
           status: 'pending'
         });
         if (error) throw error;
-        if (authMessage) authMessage.textContent = 'Sugestia de ștergere a fost trimisă premoderării. Editarea voastră este trimisă premoderare.';
+        setAuthMessage('Sugestia de ștergere a fost trimisă premoderării. Editarea voastră este trimisă premoderare.');
       }
       await loadRemoteRecords();
     } catch (error) {
-      if (authMessage) authMessage.textContent = `Sugestia nu a putut fi trimisă: ${error.message}`;
+      setAuthMessage(`Sugestia nu a putut fi trimisă: ${error.message}`);
     }
   };
 

@@ -9,7 +9,10 @@
   const centurySelect = root.querySelector('[data-catalog-century]');
   const resetButton = root.querySelector('[data-catalog-reset]');
   const result = document.querySelector('[data-catalog-result]');
-  const authMessage = document.querySelector('[data-auth-message]');
+  const authMessages = [...document.querySelectorAll('[data-auth-message], [data-catalog-auth-message]')];
+  const setAuthMessage = (message) => {
+    authMessages.forEach((element) => { element.textContent = message; });
+  };
   const authUser = document.querySelector('[data-auth-user]');
   const roleBadge = document.querySelector('[data-role-badge]');
   const googleLoginButton = document.querySelector('[data-login-google]');

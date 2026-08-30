@@ -1,15 +1,39 @@
+{%- assign current_lang = page.lang | default: site.lang | default: 'mo' -%}
+{%- if current_lang == 'en' -%}
+  {%- assign history_url = '/en/history/' -%}
+  {%- assign electoral_url = '/en/electoral-rights/' -%}
+  {%- assign about_url = '/en/about/' -%}
+  {%- assign references_url = '/en/references-resources/' -%}
+  {%- assign history_label = 'Petition for the History of Moldova' -%}
+  {%- assign electoral_label = 'Electoral rights' -%}
+  {%- assign about_label = 'About the author' -%}
+  {%- assign references_label = 'References and resources' -%}
+  {%- assign rss_label = 'RSS feed' -%}
+  {%- assign footer_aria_label = 'Secondary links' -%}
+{%- else -%}
+  {%- assign history_url = '/istoria/' -%}
+  {%- assign electoral_url = '/drept-electoral/' -%}
+  {%- assign about_url = '/despre/' -%}
+  {%- assign references_url = '/referinte-resurse/' -%}
+  {%- assign history_label = 'Petiția pentru Istoria Moldovei' -%}
+  {%- assign electoral_label = 'Drepturi electorale' -%}
+  {%- assign about_label = 'Despre autor' -%}
+  {%- assign references_label = 'Referințe și resurse' -%}
+  {%- assign rss_label = 'Flux RSS' -%}
+  {%- assign footer_aria_label = 'Legături secundare' -%}
+{%- endif -%}
+
 <footer class="site-footer h-card">
   <div class="wrapper footer-inner">
-    {%- assign current_lang = page.lang | default: site.lang -%}
     <div class="footer-meta">
       <p>{{ site.title | escape }}</p>
     </div>
-    <nav class="footer-links" aria-label="Legături secundare">
-      <a href="{{ '/istoria/' | relative_url }}">{%- if current_lang == 'en' -%}Petition for the History of Moldova{%- elsif current_lang == 'fr' -%}Pétition pour l’histoire de la Moldova{%- elsif current_lang == 'ru' -%}Петиция за историю Молдовы{%- else -%}Petiția pentru Istoria Moldovei{%- endif -%}</a>
-      <a href="{{ '/drept-electoral/' | relative_url }}">{%- if current_lang == 'en' -%}Electoral rights{%- elsif current_lang == 'fr' -%}Droits électoraux{%- elsif current_lang == 'ru' -%}Избирательные права{%- else -%}Drepturi electorale{%- endif -%}</a>
-      <a href="{{ '/despre/' | relative_url }}">{%- if current_lang == 'en' -%}About the author{%- elsif current_lang == 'fr' -%}À propos de l’auteur{%- elsif current_lang == 'ru' -%}Об авторе{%- else -%}Despre autor{%- endif -%}</a>
-      <a href="{{ '/referinte-resurse/' | relative_url }}">{%- if current_lang == 'en' -%}References and resources{%- elsif current_lang == 'fr' -%}Références et ressources{%- elsif current_lang == 'ru' -%}Справки и ресурсы{%- else -%}Referințe și resurse{%- endif -%}</a>
-      <a href="{{ 'feed.xml' | relative_url }}">Flux RSS</a>
+    <nav class="footer-links" aria-label="{{ footer_aria_label }}">
+      <a href="{{ history_url | relative_url }}">{{ history_label }}</a>
+      <a href="{{ electoral_url | relative_url }}">{{ electoral_label }}</a>
+      <a href="{{ about_url | relative_url }}">{{ about_label }}</a>
+      <a href="{{ references_url | relative_url }}">{{ references_label }}</a>
+      <a href="{{ 'feed.xml' | relative_url }}">{{ rss_label }}</a>
     </nav>
   </div>
 </footer>

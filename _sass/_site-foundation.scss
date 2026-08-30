@@ -119,6 +119,10 @@ a:hover {
   flex: 0 0 auto;
 }
 
+.language-switcher__details {
+  display: inline-block;
+}
+
 .language-switcher__toggle {
   display: inline-flex;
   align-items: center;
@@ -145,7 +149,7 @@ a:hover {
 }
 
 .language-switcher__toggle:hover,
-.language-switcher[open] .language-switcher__toggle {
+.language-switcher__details[open] .language-switcher__toggle {
   color: var(--muted);
 }
 
@@ -169,7 +173,7 @@ a:hover {
   transition: transform 120ms ease;
 }
 
-.language-switcher[open] .language-switcher__chevron {
+.language-switcher__details[open] .language-switcher__chevron {
   margin-top: 0.15rem;
   transform: rotate(225deg);
 }

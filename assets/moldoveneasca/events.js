@@ -64,6 +64,8 @@
   editDetailButton?.addEventListener('click', () => {
     if (currentDetailRecord) openEditor(currentDetailRecord, { inDetail: true });
   });
+  detailPreviousButton?.addEventListener('click', () => navigateDetail(-1));
+  detailNextButton?.addEventListener('click', () => navigateDetail(1));
   closeDetailButton?.addEventListener('click', closeDetail);
   imageInput?.addEventListener('input', () => {
     renderImagePreview();

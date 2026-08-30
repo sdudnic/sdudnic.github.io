@@ -146,6 +146,10 @@ permalink: /moldoveneasca/
       </div>
     </div>
     <div data-detail-view>
+      <nav class="moldoveneasca-detail__navigation" data-detail-navigation aria-label="Navigarea referințelor">
+        <button type="button" class="moldoveneasca-icon-button" data-detail-previous aria-label="referința precedentă" title="referința precedentă" data-tooltip="referința precedentă"><span aria-hidden="true">&lt;</span></button>
+        <button type="button" class="moldoveneasca-icon-button" data-detail-next aria-label="următoarea referință" title="următoarea referință" data-tooltip="următoarea referință"><span aria-hidden="true">&gt;</span></button>
+      </nav>
       <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
       <dl class="moldoveneasca-detail__content" data-detail-content></dl>
     </div>
@@ -154,7 +158,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260830-catalog-ui"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260830-detail-navigation"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>

@@ -1,3 +1,38 @@
+  let detailSourceTable = null;
+
+  const detailNavigationEntries = () => {
+    if (!detailSourceTable) return [];
+    return [...detailSourceTable.querySelectorAll('tbody tr')]
+      .map((row) => ({ row, record: row.catalogRecord }))
+      .filter(({ record }) => record);
+  };
+
+  const sameDetailRecord = (left, right) => left === right
+    || Boolean(left?.id && right?.id && left.id === right.id);
+
+  const detailNavigationPosition = () => {
+    const entries = detailNavigationEntries();
+    return {
+      entries,
+      index: entries.findIndex(({ record }) => sameDetailRecord(record, currentDetailRecord))
+    };
+  };
+
+  const updateDetailNavigation = () => {
+    const { entries, index } = detailNavigationPosition();
+    const hasCurrentRecord = index >= 0;
+    if (detailPreviousButton) detailPreviousButton.disabled = !hasCurrentRecord || index <= 0;
+    if (detailNextButton) detailNextButton.disabled = !hasCurrentRecord || index >= entries.length - 1;
+  };
+
+  const navigateDetail = (offset) => {
+    const { entries, index } = detailNavigationPosition();
+    const target = entries[index + offset];
+    if (!target) return;
+    const trigger = target.row.querySelector('.moldoveneasca-table__detail-link');
+    openDetail(target.record, trigger);
+  };
+
   const closeDetail = () => {
     if (editorInDetail) closeEditor({ returnToDetail: false });
     if (detailPanel) {
@@ -9,6 +44,7 @@
     if (lastDetailTrigger?.isConnected) lastDetailTrigger.focus();
     lastDetailTrigger = null;
     currentDetailRecord = null;
+    detailSourceTable = null;
   };
 
   const renderDetailImage = (record) => {
@@ -36,6 +72,8 @@
   const openDetail = (record, trigger) => {
     if (!detailPanel || !detailContent) return;
     if (editorInDetail) closeEditor({ returnToDetail: false });
+    const sourceTable = trigger?.closest?.('table');
+    if (sourceTable) detailSourceTable = sourceTable;
     currentDetailRecord = record || null;
     const fields = displayFields(record);
     const urls = sourceUrls(record);
@@ -105,6 +143,7 @@
     if (detailBackdrop) detailBackdrop.hidden = false;
     detailPanel.classList.add('is-open');
     document.body.classList.add('moldoveneasca-detail-open');
+    updateDetailNavigation();
     closeDetailButton?.focus();
   };
 

@@ -113,6 +113,14 @@ fiecare lot ca pe o operație idempotentă:
 5. confirmă intrările verificate cu `review_moldoveneasca_reference`;
 6. rulează din nou statisticile și verificarea de duplicate după lot.
 
+Pentru o referință publicată care se dovedește a avea citatul numai într-o
+metadată, într-un comentariu sau într-o sursă ulterioară, proprietarul catalogului
+o mută înapoi la `pending` prin `edit_moldoveneasca_reference`, cu
+`changes: { status: "pending" }` și motivul reverificării. Anul trebuie corectat
+la anul sursei care conține citatul; dacă acel an nu este identificat, se păstrează
+`year_label: "necunoscut"` și intervale nule. Nu se publică citatul ulterior ca
+și cum ar proveni din manuscrisul sau opera descrisă.
+
 ### Captura paginii și sublinierea glotonimului
 
 Pentru referințele noi, agentul atașează `image_url` numai dacă are captura

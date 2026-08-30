@@ -49,7 +49,9 @@ function gatewayFor({ email, role }) {
       }]);
     }
     if (parsed.pathname === '/rest/v1/language_references' && options.method === 'DELETE') return jsonResponse(null);
-    if (parsed.pathname === '/rest/v1/language_references' && options.method === 'PATCH') return jsonResponse([{ ...reference, status: 'published' }]);
+    if (parsed.pathname === '/rest/v1/language_references' && options.method === 'PATCH') {
+      return jsonResponse([{ ...reference, ...(JSON.parse(options.body || '{}')) }]);
+    }
     return jsonResponse({ error: 'unexpected test request' }, 500);
   };
   return { gateway: new SupabaseGateway({ url: 'https://supabase.test', key: 'anon', fetchImpl }), calls };
@@ -88,6 +90,28 @@ test('listUnverified returns only pending references', async () => {
   const result = await gateway.listUnverified(auth);
   assert.equal(result.length, 1);
   assert.match(calls.at(-1).search, /status=eq\.pending/);
+});
+
+test('proprietarul poate muta o referință publicată în lista de neverificate', async () => {
+  const { gateway, calls } = gatewayFor({ email: 'sdudnic@gmail.com', role: 'admin' });
+  const auth = await gateway.authenticate('owner-token');
+  const result = await gateway.updateReference(auth, reference.id, {
+    status: 'pending'
+  }, 'Citatul trebuie verificat în sursa primară.');
+  assert.equal(result.reference.status, 'pending');
+  assert.equal(calls.at(-1).body.status, 'pending');
+});
+
+test('un contributor nu poate propune schimbarea statutului unei referințe publicate', async () => {
+  const { gateway, calls } = gatewayFor({ email: 'contributor@example.com', role: 'viewer' });
+  const auth = await gateway.authenticate('contributor-token');
+  const result = await gateway.updateReference(auth, reference.id, {
+    status: 'pending',
+    title: 'Titlu corectat'
+  }, 'Necesită reverificare.');
+  assert.equal(result.request.request_type, 'edit');
+  assert.equal('status' in result.request.proposed_changes, false);
+  assert.equal(calls.at(-1).path, '/rest/v1/reference_moderation_requests');
 });
 
 test('respinge o referință etnică fără sursă verificabilă', async () => {

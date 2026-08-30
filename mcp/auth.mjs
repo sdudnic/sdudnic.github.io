@@ -26,8 +26,11 @@ const MUTABLE_FIELDS = [
   'location',
   'source_url',
   'image_url',
-  'catalog_type'
+  'catalog_type',
+  'status'
 ];
+
+const STATUS_VALUES = new Set(['pending', 'published', 'rejected', 'archived']);
 
 export class ServiceError extends Error {
   constructor(message, { status = 400, code = 'service_error', details = null } = {}) {
@@ -93,6 +96,9 @@ export function normalizeReferenceInput(input = {}) {
   }
   if (payload.catalog_type && !['language', 'ethnicity', 'both'].includes(payload.catalog_type)) {
     throw new ServiceError('catalog_type trebuie să fie language, ethnicity sau both.', { code: 'invalid_input' });
+  }
+  if (payload.status !== undefined && !STATUS_VALUES.has(payload.status)) {
+    throw new ServiceError('status trebuie să fie pending, published, rejected sau archived.', { code: 'invalid_input' });
   }
   if (payload.source_url && !/^https?:\/\//i.test(payload.source_url)) {
     throw new ServiceError('source_url trebuie să înceapă cu http:// sau https://.', { code: 'invalid_input' });
@@ -264,6 +270,9 @@ export class SupabaseGateway {
         });
         return { reference: publicReference(Array.isArray(rows) ? rows[0] : rows), moderated: true, message: moderationMessage('edit') };
       }
+      // Contributors may propose metadata changes for a published entry, but
+      // only the primary owner can move a record between moderation statuses.
+      delete payload.status;
       const request = await this.createModerationRequest(context, {
         referenceId: id,
         requestType: 'edit',

@@ -1,6 +1,7 @@
   const createCatalogRow = (record, options = {}) => {
     const fields = displayFields(record);
     const row = document.createElement('tr');
+    row.catalogRecord = record;
     if (record.id) {
       row.dataset.remoteReference = record.id;
       row.dataset.referenceId = record.id;

@@ -96,6 +96,8 @@
   const detailEditorHost = root.querySelector('[data-detail-editor-host]');
   const editDetailButton = root.querySelector('[data-edit-detail]');
   const closeDetailButton = root.querySelector('[data-close-detail]');
+  const detailPreviousButton = root.querySelector('[data-detail-previous]');
+  const detailNextButton = root.querySelector('[data-detail-next]');
   const quoteHint = root.querySelector('[data-catalog-quote-hint]');
   const catalogTypeField = editorForm?.elements.namedItem('catalog_type');
   const quoteField = editorForm?.elements.namedItem('quote');

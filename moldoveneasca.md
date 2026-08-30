@@ -11,9 +11,11 @@ permalink: /moldoveneasca/
   <h1 class="moldoveneasca-catalog__title">Referințe istorice ale glotonimului „moldovenească”</h1>
   <p id="catalog-description" class="moldoveneasca-catalog__intro">
     Baza de date reunește documente și referințe istorice care menționează denumirea
-    „moldovenească” a limbii, de la cele mai vechi atestări până astăzi. Anul este al
-    ediției sau al manuscrisului care conține citatul; data documentului ori a operei
-    menționate în citat se păstrează la „Comentarii”. Semnul <strong>!</strong> înaintea
+    „moldovenească” a limbii, de la cele mai vechi atestări până astăzi. Anul este anul
+    sursei care conține efectiv citatul verificat; data manuscrisului, a documentului
+    sau a operei menționate de un comentator se păstrează la „Comentarii”. Dacă citatul
+    apare numai într-o metadată, într-un comentariu sau într-o citare ulterioară, fișa
+    rămâne „Neverificată” până la verificarea sursei originale. Semnul <strong>!</strong> înaintea
     denumirii marchează o referință de importanță deosebită: sursa tratează explicit
     limba și compară denumirea „moldovenească” cu „română”, „valahă”, „munteană” ori
     consemnează preferința localnicilor pentru una dintre aceste denumiri.

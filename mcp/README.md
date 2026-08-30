@@ -51,6 +51,12 @@ limită; URL-urile HTTPS externe nu sunt încărcate în baza de date.
 - numai adresa `sdudnic@gmail.com` poate publica, respinge, arhiva, restaura sau șterge;
 - mesajul standard pentru contribuțiile nevalidate este: „Editarea voastră este trimisă premoderare”.
 
+O referință publicată poate fi readusă de proprietarul catalogului în statutul
+`pending` printr-o editare MCP cu `status: "pending"`. Se aplică această măsură
+când glotonimul este găsit doar în comentariu, metadată sau într-o citare
+ulterioară; anul trebuie să fie al sursei care conține citatul, iar pentru o
+sursă nedatată se folosește `year_label: "necunoscut"` cu intervale nule.
+
 Regulile sunt dublate în codul serviciului și în RLS/funcția `public.review_reference_request` din Supabase. Interfața nu este considerată o barieră de securitate.
 
 ## Instalare și rulare locală
@@ -85,10 +91,24 @@ Pentru deconectare locală: `npm run auth:logout`.
 Dacă preferi să gestionezi singur JWT-ul, poți completa `MOLDOVENEASCA_SUPABASE_ACCESS_TOKEN` în `.env`;
 acesta are prioritate față de sesiunea locală.
 
-Înainte de contribuții, rulează în Supabase SQL Editor:
+### Migrații Supabase
 
-1. `supabase/schema.sql` pentru instalarea completă; sau
-2. `supabase/migrations/20260824_moderation_workflow.sql` peste schema existentă.
+Pentru o bază nouă, rulează integral `supabase/schema.sql`. Pentru o bază
+existentă, rulează în SQL Editor, în ordine, toate fișierele din
+`supabase/migrations/`:
+
+1. `20260821_add_catalog_type.sql`
+2. `20260821_add_google_auth_profile.sql`
+3. `20260821_add_reference_image_url.sql`
+4. `20260824_moderation_workflow.sql`
+5. `20260829_limit_reference_image_size.sql`
+6. `20260829_require_ethnicity_source.sql`
+
+Migrația de moderare este necesară pentru propuneri și revizuiri. Cele două
+migrații din 29 august adaugă limita pentru capturile `data:` și cer sursă
+verificabilă pentru intrările `ethnicity`/`both`. Fișierele folosesc operații
+idempotente acolo unde este posibil; rulează-le numai după ce ai verificat
+proiectul Supabase țintă.
 
 Verifică apoi că profilul `sdudnic@gmail.com` există și are rolul `admin`. Migrarea îl promovează automat după ce contul există.
 
@@ -130,7 +150,5 @@ npm run deploy
 ```
 
 Secretele Worker-ului sunt gestionate separat prin `wrangler secret put` și nu
-se păstrează în repository. Înainte ca primul utilizator să contribuie, rulează
-[supabase/migrations/20260824_moderation_workflow.sql](../supabase/migrations/20260824_moderation_workflow.sql)
-în Supabase SQL Editor peste schema existentă. Fără această migrare, citirea
-publică funcționează, dar propunerile de editare/ștergere nu pot fi înregistrate.
+se păstrează în repository. Fără migrația de moderare, citirea publică
+funcționează, dar propunerile de editare/ștergere nu pot fi înregistrate.

@@ -82,7 +82,7 @@ const TOOL_DEFINITIONS = [
   },
   {
     name: 'edit_moldoveneasca_reference',
-    description: 'Editează o referință. Utilizatorii non-admin nu modifică direct referințele publicate: propunerea merge la premoderare.',
+    description: 'Editează o referință. Utilizatorii non-admin nu modifică direct referințele publicate: propunerea merge la premoderare. Proprietarul catalogului poate seta explicit statutul, inclusiv pending pentru o reverificare.',
     inputSchema: {
       type: 'object',
       additionalProperties: false,

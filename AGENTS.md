@@ -34,6 +34,22 @@ sursa să spună doar că moldovenii folosesc aceeași limbă, să enumere Moldo
 Valachi–Moldavi este eligibilă numai dacă în același pasaj limba este numită și
 moldovenească; altfel rămâne neverificată și nu se publică.
 
+Anul referinței este anul ediției, publicării sau redactării sursei care conține
+efectiv citatul verificat. Nu se folosește anul unui manuscris, al unei opere sau
+al unui eveniment menționat de un comentator atunci când citatul provine dintr-o
+fișă ulterioară. Dacă anul sursei citatului nu este indicat, se folosește
+`year_label: "necunoscut"` cu intervale nule, nu anul dedus al obiectului
+descris.
+
+Dacă glotonimul apare numai într-un comentariu, într-o fișă de catalog, într-o
+metadată, într-un index sau într-o citare/reproducere ulterioară făcută de alt
+autor ori actor, referința nu se confirmă drept dovadă primară. Ea se marchează
+cel puțin `pending` / „neverificată” și nu se publică drept citat al sursei
+originale până când nu este găsită și verificată pagina ori ediția care conține
+pasajul propriu-zis. Această regulă se aplică și atunci când comentariul repetă
+un citat autentic, dar sursa prezentată în fișă este ulterioară sau nu permite
+separarea citatului de comentariu.
+
 La căutarea în cataloage, biblioteci, OCR și texte scanate, agentul verifică,
 între altele, combinații precum `langue molda`, `limba molda` și `yazyk molda`,
 precum și căutarea separată după `molda`, `moldav` și `moldov` (inclusiv după

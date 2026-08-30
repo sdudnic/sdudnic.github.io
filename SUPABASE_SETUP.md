@@ -7,7 +7,11 @@ Supabase pentru autentificare Google/GitHub și referințele adăugate din inter
 
 1. Creează un proiect nou pe [supabase.com](https://supabase.com/).
 2. Deschide **SQL Editor** și rulează integral [`supabase/schema.sql`](supabase/schema.sql).
-   Dacă proiectul Supabase există deja, rulează migrarea [`supabase/migrations/20260824_moderation_workflow.sql`](supabase/migrations/20260824_moderation_workflow.sql) peste schema existentă.
+   Dacă proiectul Supabase există deja, rulează în ordine toate migrațiile din
+   [`supabase/migrations/`](supabase/migrations/): `20260821_add_catalog_type.sql`,
+   `20260821_add_google_auth_profile.sql`, `20260821_add_reference_image_url.sql`,
+   `20260824_moderation_workflow.sql`, `20260829_limit_reference_image_size.sql` și
+   `20260829_require_ethnicity_source.sql`.
 3. Deschide **Project Settings → API** și copiază **Project URL** și cheia publică **anon**.
 4. Completează valorile în [`assets/moldoveneasca-config.js`](assets/moldoveneasca-config.js):
 
@@ -85,13 +89,13 @@ sau șterge.
 
 ## Cum funcționează versiunea actuală
 
-- catalogul public conține în prezent 209 referințe publicate în Supabase;
+- catalogul public își expune numărul actual prin endpointul `/api/stats`;
 - tabelul public poate fi căutat într-un singur câmp după toate coloanele;
 - referințele noi și editările folosesc câmpuri separate pentru perioadă, secol,
   lucrare, citat, limbă, autor și sursă;
 - o imagine scanată poate fi atașată printr-un URL HTTPS direct sau ca imagine
-  codificată; nu este tratată ca sursă și apare numai în detaliile referinței,
-  păstrând lizibilitatea și fiind redusă doar la lățimea blade-ului dacă este necesar;
+  codificată; capturile `data:` sunt limitate la aproximativ 1,5 MB și nu sunt
+  tratate ca sursă, apărând numai în detaliile referinței;
 - editorul poate modifica doar referințele al căror proprietar este;
 - editorul nu poate șterge și nu poate schimba statutul unei referințe;
 - administratorul poate modifica orice referință, dar numai proprietarul

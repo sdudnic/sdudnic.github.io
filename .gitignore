@@ -14,3 +14,11 @@ mcp/node_modules/
 
 # Configurația locală Codex poate conține căi și setări ale stației de lucru.
 .codex/config.toml
+
+# Prevent accidental commits of local credentials and key material.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json

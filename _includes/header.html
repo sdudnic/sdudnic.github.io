@@ -77,15 +77,14 @@
 
     <div class="site-header__tools">
       <nav class="site-nav" aria-label="{{ nav_aria_label }}">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
+        <button type="button" class="nav-toggle" aria-controls="site-nav-menu" aria-expanded="false" aria-label="{{ menu_label }}">
           <span class="menu-icon" aria-hidden="true">
             <span></span><span></span><span></span>
           </span>
           <span class="sr-only">{{ menu_label }}</span>
-        </label>
+        </button>
 
-        <div class="trigger">
+        <div id="site-nav-menu" class="trigger">
           <a class="page-link" href="{{ catalog_url | relative_url }}" title="{{ catalog_title }}"{% if page.url == catalog_url %} aria-current="page"{% endif %}>{{ catalog_label }}</a>
           <a class="page-link" href="{{ home_url | relative_url }}"{% if page.url == home_url %} aria-current="page"{% endif %}>{{ home_label }}</a>
           <a class="page-link" href="{{ europa_url | relative_url }}"{% if page.url == europa_url %} aria-current="page"{% endif %}>{{ europa_label }}</a>
@@ -96,8 +95,8 @@
 
       <nav class="language-switcher" aria-label="{{ language_aria_label }}">
         <span class="sr-only">{{ language_prompt }}</span>
-        <a href="{{ mo_url | relative_url }}" title="Moldovenească"{% if current_lang == 'mo' %} aria-current="page"{% endif %}>MO</a>
-        <a href="{{ en_url | relative_url }}" title="English"{% if current_lang == 'en' %} aria-current="page"{% endif %}>EN</a>
+        <a href="{{ mo_url | relative_url }}" aria-label="Moldovenească" title="Moldovenească"{% if current_lang == 'mo' %} aria-current="page"{% endif %}>MO</a>
+        <a href="{{ en_url | relative_url }}" aria-label="English" title="English"{% if current_lang == 'en' %} aria-current="page"{% endif %}>EN</a>
       </nav>
 
       {%- if page.url == '/moldoveneasca/' or page.url == '/en/moldovan-language/' -%}

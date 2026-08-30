@@ -120,10 +120,31 @@
 
   setCatalogLoading(isCatalogLoading);
 
+  const ensureTableAccessibility = (catalogTable, label) => {
+    if (!catalogTable) return;
+    let caption = catalogTable.querySelector('caption');
+    if (!caption) {
+      caption = document.createElement('caption');
+      caption.className = 'sr-only';
+      catalogTable.insertBefore(caption, catalogTable.firstChild);
+    }
+    if (!caption.textContent.trim()) caption.textContent = label;
+    catalogTable.querySelectorAll('thead th').forEach((header) => {
+      if (!header.hasAttribute('scope')) header.setAttribute('scope', 'col');
+    });
+  };
+
+  ensureTableAccessibility(table, 'Referințe istorice despre limba moldovenească');
+  ensureTableAccessibility(unverifiedTable, 'Referințe neverificate despre limba moldovenească');
+  ensureTableAccessibility(ethnicityTable, 'Referințe despre etnie, națiune și popor');
+
   const wrapPublicGrid = () => {
     if (!statusBar || !table.parentElement || statusBar.parentElement !== table.parentElement) return;
     const frame = document.createElement('div');
     frame.className = 'moldoveneasca-grid-frame';
+    frame.setAttribute('role', 'region');
+    frame.setAttribute('aria-label', 'Tabelul catalogului; derulați orizontal pe ecrane mici');
+    frame.setAttribute('tabindex', '0');
     table.parentElement.insertBefore(frame, table);
     if (selectionToolbar) frame.appendChild(selectionToolbar);
     frame.appendChild(table);

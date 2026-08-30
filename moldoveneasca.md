@@ -366,6 +366,7 @@ permalink: /moldoveneasca/
   <h2 id="unverified-title"><strong>Referințe neverificate</strong></h2>
   <p>Aceste intrări sunt păstrate separat până la verificarea bibliografică a ediției, autorului, anului, paginii și sursei. O intrare poate fi deja clasificată la <strong>limbă</strong>; verificarea nu schimbă această clasificare. Contribuitorii văd propriile propuneri, administratorii văd lista de lucru, iar confirmarea sau infirmarea îi aparține numai proprietarului catalogului.</p>
   <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
+    <caption class="sr-only">Referințe neverificate despre limba moldovenească</caption>
     <thead>
       <tr>
         <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
@@ -405,6 +406,7 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
   <h2 id="ethnicity-title" class="moldoveneasca-ethnicity__title">Etnie, națiune, popor: moldoveni, moldovean</h2>
   <p class="moldoveneasca-ethnicity__intro">Catalogul reunește mențiuni istorice despre moldoveni și denumiri etnice asociate Moldovei.</p>
   <table class="moldoveneasca-table moldoveneasca-table--ethnicity" data-ethnicity-table aria-describedby="ethnicity-title">
+    <caption class="sr-only">Referințe despre etnie, națiune și popor</caption>
     <thead>
       <tr>
         <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>

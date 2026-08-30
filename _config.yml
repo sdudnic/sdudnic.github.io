@@ -31,6 +31,10 @@ excerpt_separator: <!--more-->
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dudnic.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Google Analytics 4 Measurement ID, for example: G-XXXXXXXXXX.
+# Leave empty to keep analytics disabled until the property is configured.
+google_analytics: "G-F4JS63YJ7Z"
+
 
 # Build settings
 theme: minima

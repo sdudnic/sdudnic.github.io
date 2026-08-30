@@ -447,12 +447,12 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
         <td><span class="moldoveneasca-table__source-links"><a href="https://polona2.pl/item/beytrage-zur-europaischen-landerkunde-die-moldau-wallachey-bessarabien-und-bukowina,MTMyNzUwMTk0/" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
-        <td><span class="moldoveneasca-table__truncate" title="1841">1841</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Mică gramatică franţeză, pentru învăţătura tinerimei moldo-române">Mică gramatică franţeză…</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="tinerimei moldo-române">„tinerimei moldo-române”</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
-        <td><span class="moldoveneasca-table__truncate" title="Teodor Codrescu; după François Noël și Charles-Pierre Chapsal">Teodor Codrescu; după Noël și Chapsal</span></td>
-        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=c&amp;limit=40&amp;page=1560" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+        <td><span class="moldoveneasca-table__truncate" title="1840">1840</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Abrégé de la grammaire française à l’usage de la jeunesse moldave">Abrégé de la grammaire française…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="À l’usage de la jeunesse moldave">„À l’usage de la jeunesse moldave”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="fr">fr</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Noël, François; Chapsal, Charles-Pierre; Codrescu, Theodor">Noël, Chapsal și Codrescu</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://dspace.bcu-iasi.ro/handle/123456789/785" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
       </tr>
       <tr>
         <td><span class="moldoveneasca-table__truncate" title="1897">1897</span></td>

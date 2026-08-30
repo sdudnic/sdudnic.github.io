@@ -1,0 +1,521 @@
+---
+layout: post
+title: Historical references to the Moldovan glottonym
+nav_title: Language references
+lang: en
+description: Documentary catalog of historical references to the name of the Moldovan language.
+permalink: /en/moldovan-language/
+---
+
+<section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-description">
+  <h1 class="moldoveneasca-catalog__title">Historical references to the Moldovan glottonym</h1>
+  <p id="catalog-description" class="moldoveneasca-catalog__intro">
+    This catalog gathers historical documents and references that mention the name
+    of the Moldovan language, from the earliest attestations to the present. The year
+    is the year of the edition or manuscript containing the quotation; dates mentioned
+    in the quotation remain in “Comments”. A <strong>!</strong> before a title marks a
+    particularly important reference: the source explicitly discusses the language,
+    compares its name with other names or records local naming preferences.
+  </p>
+
+  <div class="moldoveneasca-catalog__toolbar" role="search" aria-label="Search all catalogs and columns">
+    <label class="moldoveneasca-search">
+      <span class="sr-only">Search all catalogs and columns</span>
+      <input type="search" data-catalog-search placeholder="Search all catalogs…" autocomplete="off" enterkeyhint="search" aria-keyshortcuts="Enter">
+    </label>
+    <label class="moldoveneasca-century-filter">
+      <span class="sr-only">Filter by century</span>
+      <select data-catalog-century aria-label="Filter by century">
+        <option value="">All centuries</option>
+      </select>
+    </label>
+    <button type="button" class="moldoveneasca-icon-button" data-catalog-reset hidden aria-label="Reset search" title="Reset search"><span aria-hidden="true">↺</span></button>
+    <button type="button" class="moldoveneasca-icon-button" data-open-form hidden aria-label="Add reference" title="Add reference"><span aria-hidden="true">＋</span></button>
+  </div>
+
+  <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
+    <div class="moldoveneasca-editor__heading">
+      <div>
+        <p class="eyebrow">Editor</p>
+        <h3 id="editor-title" data-form-title>Add a reference</h3>
+      </div>
+      <button type="button" class="moldoveneasca-icon-button" data-cancel-edit aria-label="Cancel editing" title="Cancel editing"><span aria-hidden="true">×</span></button>
+    </div>
+    <form data-reference-form>
+      <div class="moldoveneasca-form-grid">
+        <label class="moldoveneasca-field">
+          <span>Year / century of the quotation’s publication</span>
+          <input name="year_label" required inputmode="text" minlength="1" maxlength="30" pattern="(?:1[0-9]{3}|20[0-9]{2}|(?:sec(?:ol)?\.?\s*)?(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI)(?:\s*[–—-]\s*(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI))?)" placeholder="Ex.: 1714 sau XVII" title="Introdu anul exact al publicării; dacă nu este cunoscut, introdu doar secolul">
+          <small class="moldoveneasca-field-hint">If the exact year is unknown, enter only the century; explain an estimated date in “Comments”.</small>
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Title of the work / document</span>
+          <input name="title" required placeholder="Title of the work or document only" aria-describedby="title-help">
+          <small id="title-help" class="moldoveneasca-field-hint">Enter only the title; edition, chapter, date, translator and other details belong in “Comments”.</small>
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Language of the quotation</span>
+          <input name="language" placeholder="Language code or name">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Author</span>
+          <input name="author" placeholder="Author, institution or issuer">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Source type</span>
+          <input name="source_type" placeholder="Book, act, grammar, press…">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Catalog</span>
+          <select name="catalog_type">
+            <option value="language">Language name</option>
+            <option value="ethnicity">Ethnicity, nation, people</option>
+            <option value="both">Both catalogs</option>
+          </select>
+        </label>
+        <label class="moldoveneasca-field moldoveneasca-field--full">
+          <span>Comments</span>
+          <textarea name="description" rows="3" placeholder="Explanations, notes and context."></textarea>
+        </label>
+        <label class="moldoveneasca-field moldoveneasca-field--full">
+          <span>Quotation</span>
+          <textarea name="quote" rows="3" placeholder="The quoted passage that names the language." aria-describedby="quote-help"></textarea>
+          <small id="quote-help" class="moldoveneasca-field-hint" data-catalog-quote-hint>Language catalog: the quotation must contain a word for language and the glottonym.</small>
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Place / institution</span>
+          <input name="location" placeholder="Iași, Chișinău, library…">
+        </label>
+        <label class="moldoveneasca-field">
+          <span>Source link</span>
+          <input type="url" name="source_url" placeholder="https://…" aria-describedby="source-url-help">
+          <small id="source-url-help" class="moldoveneasca-field-hint" data-source-url-hint>Required for ethnicity references and references shown in both catalogs.</small>
+        </label>
+        <label class="moldoveneasca-field moldoveneasca-field--full moldoveneasca-image-field">
+          <span>Scanned image</span>
+          <span class="moldoveneasca-image-input">
+            <input type="text" name="image_url" data-image-input placeholder="URL direct sau lipește o captură cu Ctrl+V" autocomplete="off" aria-describedby="image-help">
+            <button type="button" class="moldoveneasca-icon-button" data-image-pick aria-label="Upload the quoted page image" title="Upload the quoted page image"><span aria-hidden="true"></span></button>
+            <input class="moldoveneasca-image-file" type="file" data-image-file accept="image/*" tabindex="-1" aria-hidden="true">
+          </span>
+          <span class="moldoveneasca-image-actions">
+            <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-image-auto-underline disabled>Underline automatically with OCR</button>
+            <small class="moldoveneasca-field-hint" data-image-ocr-status aria-live="polite"></small>
+          </span>
+          <small id="image-help" class="moldoveneasca-field-hint">Paste a capture of the page containing the quotation. Captures are compacted to at most 2400 px on the long side and approximately 1.5 MB. OCR underlines the glottonym only when it finds an exact match; check the image before publishing.</small>
+          <span class="moldoveneasca-image-preview" data-image-preview hidden></span>
+          <span class="moldoveneasca-image-markup" data-image-markup hidden>
+            <small class="moldoveneasca-field-hint" data-image-markup-status>Trasează cu mouse-ul sau degetul o linie roșie sub glotonim.</small>
+            <canvas class="moldoveneasca-image-canvas" data-image-canvas aria-label="Captura paginii cu marcajul roșu"></canvas>
+            <span class="moldoveneasca-image-tools">
+              <button type="button" class="moldoveneasca-icon-button" data-image-undo aria-label="Undo the last underline" title="Undo the last underline"><span aria-hidden="true">↶</span></button>
+              <button type="button" class="moldoveneasca-icon-button" data-image-clear aria-label="Remove added underlines" title="Remove added underlines"><span aria-hidden="true">×</span></button>
+            </span>
+          </span>
+        </label>
+        <label class="moldoveneasca-field" data-admin-only hidden>
+          <span>Status</span>
+          <select name="status">
+            <option value="pending">Pending review</option>
+            <option value="published">Published</option>
+            <option value="rejected">Rejected</option>
+            <option value="archived">Archived</option>
+          </select>
+        </label>
+      </div>
+      <div class="moldoveneasca-form__footer">
+        <p class="moldoveneasca-catalog__result" data-form-status aria-live="polite"></p>
+        <button type="submit" class="moldoveneasca-icon-button" aria-label="Save reference" title="Save reference"><span aria-hidden="true">✓</span></button>
+      </div>
+    </form>
+  </section>
+
+  <div class="moldoveneasca-detail-backdrop" data-reference-detail-backdrop hidden></div>
+  <aside id="reference-detail" class="moldoveneasca-detail" data-reference-detail hidden role="dialog" aria-labelledby="detail-title" aria-modal="true">
+    <div class="moldoveneasca-detail__heading">
+      <div>
+        <p class="eyebrow">Reference details</p>
+        <h3 id="detail-title" data-detail-title></h3>
+      </div>
+      <div class="moldoveneasca-detail__actions">
+        <button type="button" class="moldoveneasca-icon-button" data-edit-detail hidden aria-label="Modifică referința" title="Modifică referința"><span aria-hidden="true"></span></button>
+        <button type="button" class="moldoveneasca-detail__close" data-close-detail aria-label="Închide detaliile" title="Închide detaliile">×</button>
+      </div>
+    </div>
+    <div data-detail-view>
+      <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
+      <dl class="moldoveneasca-detail__content" data-detail-content></dl>
+    </div>
+    <div class="moldoveneasca-detail__editor" data-detail-editor-host hidden></div>
+  </aside>
+</section>
+
+<script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260829-image-limit"></script>
+
+<p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Loading references…</p>
+<script>
+  if (window.MOLDOVENEASCA_CONFIG?.supabaseUrl && window.MOLDOVENEASCA_CONFIG?.supabaseAnonKey) {
+    document.documentElement.dataset.moldoveneascaCatalogPending = 'true';
+    document.querySelector('[data-catalog-loading]')?.removeAttribute('hidden');
+  }
+</script>
+
+| **Year** | **Title** | **Quotation** | **Language** | **Author** | **Source** |
+|-------------------|------------------------|--------------------------------------------------|-----------|------------|-----------|
+| ~1481-1504 | Petru Clănău, vel spătar sub Ștefan Vodă iscălește un "act doveditor de limba ce se vorbea sub Ștefan Voda Cel Mare în Moldova": "pohtii al scripti(scri) pe Moldovenie [...] dupi latinie, si scriptulam cu mâna mea în târg în Vaslui", [(sursa)](https://books.google.com/books?id=SIpaAAAAcAAJ&pg=PA151#v=onepage) |
+| 1524 | "Acta Tomiciana: epistole, legationes, responsa, actiones, res geste Sigismundi I Regis Poloniae", Volume 7, pag. 61 [tradus](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/322626489124992/?type=3&__xts__%5B0%5D=68.ARDQchCfh_nuwANgPuGIASSGBzLOOzufuMvRP7ZL2WC6PLP7VJeLCH4tWPM7u8viP3eeDfbDl5fmVo0JQP1Mj7It7n46Q9V_2twBk5glnRlVf9tilTvZJE6MgvqLDtD9Xk0xO88mwKkn9NK6W37Ps3ytzy5o-TWufy1kQuaWIyy_YLp6plxkACWEqXx0iv5qhLxvhBE61Ly5GNq5m-GeYr7YvgRP5t_Ai01fr6kvyMA6oZaFRThTdxcrOqdSS37ZP5cPlTmnf2vIydCEntohC7f9ClHLXs5oj0y7m1sDdLwKRnXll_hRNqtlqGEqoAkwKLQYGR_JQcSkOnCYKZwtifM&__tn__=-R), [direct](https://books.google.com/books?id=At9MAAAAcAAJ&pg=PA61&sa=X&ved=2ahUKEwiPmdm8_tbqAhXCz4UKHRUXAtU4UBC7BTACegQIARAU#v=onepage&q&f=false) |
+| 1532 | "Despre o traducere moldovenească a Evangheliei în acea epocă (1532) avem informaţii precise… Învăţatul german Nicolas Pfluger la 11.03.1532 scria: "Un oarecare doctor (om învăţat) din Moldova… a venit la Wittemberg, vrînd să se îngrijească de tipărirea celor patru evanghelii şi a (epistolelor) lui Pavel în limba moldovenească, polonă şi germană… Se afla deci atunci în Moldova o traducere moldovenească a "evangheliei" şi a "epistolelor” (care fac parte din Apostol), subliniază P. Panaitescu (1965). |
+| 1582 | «Afară de traducerea moldovenească a Evangheliei din 1532, cărţi religioase în limba ţării au circuit liber. În biblioteca lui Petru Şchiopul, adusă cu el în Tirol, se afla şi "Psaltirea lui David", tradusă din slavonă în limba moldovenească ‒ aus den slavonischen in die moldavische Sprasche gezogen (P.Panaitescu, 1965), datate în perioada 1582‒1591 |
+| 1588 | Primul lexicon moldovenesc – Catastiful mănăstirii Galata, Пётр Хромой, господарь Земли Молдавской, пишет первую страницу «катастих дела мэнэстире дела Галата сы штие де вешминтере бисеречей ши де аржинту, ши де ковоаре, ши де бань, ши декай, ши де кары, ши де добитокул, ши де тоате букателе кынду ау фост егумену Анастасие…» Далее следует около 500 слов (DIR. Veacul XVI. A. Moldova). |
+| 1591 | Lingua moldavorum, la J.-A.Thuanus, Histoires..., Franța, Французский историк Jacques Thuanus (Thou) уточняет в своей Historia…: «vulg nominant Ioan, nec absurde, et lingua moldavorum convenientur» = обычно неблагозвучно называют Иоан, но, с другой стороны, в соответствии с языком молдован. ‒ Apud Евгений Паскарь. Неизвестная Молдова, XV ‒ XVI вв. |
+| 1591 | În compartimentul „Nomina popularum, qui illirica loquuntar lingua ordine alphabetico dispozita” din lucrarea sa „Comentarium wariarum artium” (Roma, 1591) italianul Angelo Rocca menţionează alături de limbile boemiană, carintiană (slovenă), dalmată, ungară, macedoniană şi moldaui (moldovenească) - «Nomina populorum qui illirica locuuntur lingua, ordine alphabetico dispozita: … carintii…, dalmatae…, istri…, moldaui…» (Angello Rocca. Commentario variarum artium. Appendix Bibliotecae Vaticanae. Roma, 1591. Pag.338) |
+| 1591| Contele Jacques-Auguste de Thou într-un volum din operă sa "Historiarum sui libri" comentează pronunţarea numelui "Ioan": "vulg nominant Ioan, nec absurde, el lingua moldavorum convenientur" (de obicei numesc neplăcut Ioan, dar, pe de altă parte corespunde limbii moldovenesti) |
+| 1585 | Scrisoarea lui Despot Vodă către Patriarhul Ecumenic Ieremia al II-lea. În această scrisoare, Despot Vodă, domnitorul Moldovei, se referă explicit la limba moldovenească. El îi cere Patriarhului să trimită preoți care să predice în limba moldovenească, pentru a fi înțeleși de populație. |
+| 1595 | "Dictionarium Valachico-Latinum" de Georgius Murner, publicat in 1595, care cuprinde cuvinte din limba moldoveneasca (denumita "lingua Moldavica") |
+| 1628 | Lingua moldavorum, în Catalogus recenset linguas..., I. Alschtedt. Germania |
+| 1635 | "Despre limba noastră moldovenească" de Gr. Ureche |
+| 1642-1647 | Grigore Ureche, Letopisețul Țării Moldovei, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405200816467417) "Şi au făcut unire de suflet cu fraţii lor cei moldoveni şi cu ţara Moldovei şi au învăţat limba moldovenească." |
+| 1643 | "Cazania lui Varlaam", prima carte tiparita la Iasi, Moldova, în 1643, care contine gramatica limbii moldovenesti si este mentionata sub aceasta denumire, Cazania este un text religios scris în limba slavonă și moldovenească, care a fost utilizat în principal pentru a predica în biserici. În introducere, autorul descrie textul ca fiind scris în "limba moldovenească". |
+| 1647 | Grigore Ureche, "Letopisețul Țării Moldovei" (1647): "Aceasta povestirea o slobozi în grai moldovenească" |
+| 1672 | Ion Neculce, "Letopisețul Țării Moldovei" (1672-1682): "De aceia s-au dus domnii la mânăstirea Putna și au înființat acolo o școală de carte în grai moldovenească, să se învețe și slugile lui Dumnezeu la carte" |
+| 1675 | Miron Costin, "De neamul moldovenilor" (1675): "De aceia aduc la cunoștință că dânsul a făcut și o carte din limba moldovenească" |
+| 1677 | "Despre limba moldovenească sau rumînească" de Miron Costin |
+| 1678 | "Vocabula cum interpretatione latina in Lingua Moldavica" de Jan Mężykowksi, publicata in 1678, care include cuvinte din limba moldoveneasca. |
+| 1687 | Miron Costin - "De neamul moldovenilor" (cca. 1687) - cronicarul moldovean menționează în text expresia "limba moldovenească", fără a face referire la limba "română". |
+| 1689 | Nicolae Milescu Spătarul, Mărturisirea de credință a lui Nicolae Milescu Spătarul (1689): "Or, fiind că eu şi cumnata mea, născuţi în Moldova, ne învăţasem să scriem şi să citim în limba moldovenească, care este mult aproape de cea slavonă, mi-a fost mai lesne să învăţ şi să mă însuşesc scrisul şi cititul rusesc." |
+| 1697 | Alphabetum Moldavorum... la Edward Bernard, Catalogi librorum... Oxania (Anglia) |
+| 1697 | "Chronologia" lui Miron Costin (1697): "Și acum încep eu să povestesc despre limba moldovenească și despre scrisul nostru moldovenesc, precum și despre cât de diferită este limba noastră de limba ungurească, poloneză, germană și turcească și de limba valahă sau românească, precum și de toate celelalte limbi ale lumii." (diferita) |
+| 1699 | Enciplopedistul german Schurzfleischius Conrad Samuel in cartea "Opera historica politica", editată la 1699, utilizează glotonimul "lingua moldavorum" |
+| 1699 | Martinus Szent-Ivany - "Dissertatio Paralipomenica Rerum Memorabilium Hungariae". Martinus Szent-Ivany a fost un cărturar și istoric al secolului al XVII-lea, care a scris despre istoria Ungariei și a regiunilor învecinate, inclusiv Moldova. În această lucrare, el menționează "Lingua Moldavorum" în contextul descrierii limbii vorbite de moldoveni. |
+| 1700-1712 | Nicolae Costin, Letopisețul țării Moldovei de la zidirea lumii până la 1601, ediție cu o introducere de Ioan șt.Petre, București, 1942, p.463. |
+| 1710 | Scrisoarea lui Dimitrie Cantemir către Academia de Științe din Berlin - 1710 Dimitrie Cantemir, domnitor al Moldovei și un intelectual de mare anvergură, a trimis în 1710 o scrisoare către Academia de Științe din Berlin în care vorbește despre limba moldovenească. |
+| 1714 | Dimitrie Cantemir, Descriptio Moldaviae (1714): "Lingua moldavica eadem est, quae et valachica, quae cum daco-rum linguae propinqua sit, ab eisdem etiam ab aliisq. Slavorum linguis nonnihil differt." |
+| 1714 | Dimitrie Cantemir, "Descrierea Moldovei" (1714): "Am scris acest mic tratat, întocmai în limba moldovenească, în care am încercat a cunoaște istoria și istoricile acestei țări", "Deoarece limba moldovenească este asemănătoare cu cea a Țării Românești, mulți îi confundă pe cei doi popoare și susțin că vorbesc aceeași limbă, dar se înșală, deoarece există unele diferențe între cele două limbi". |
+| 1716 | Moldava lingua, linguae moldavicae, vocabula moldavorum, moldavorum lingua, moldavis lingua, vocabula moldavis, moldavicussermo, moldavus sermonem, moldavorum litterae, moldavica lingua, moldavorum historicus la D.Cantemir. Descriptio Moldaviae, Berlin |
+| 1717 | "лимба молдовеняскэ" la D.Cantemir. Хроникул... P. 363 (Petersburg) |
+| 1719 | Misionarul Fra Silvestro Amelio alcătuieşte la Roma "Breve vocabulario italiano-muldavo" [sursa](http://dspace.bcu-iasi.ro/handle/123456789/5580) Итальянский миссионер Сильвестро Амелио составил в Риме Vocabulario italiano-moldavo. |
+| 1734 | "молдавский язык" la Antioh Cantemir (Rusia) |
+| 1741 | "L’idiome moldave" în "Livre historique...", Franța |
+| 1737 | Principatus Moldaviae nova & accurata descriptio [Document cartographique] / Delineante Principe Demetrio Cantemirio / Dimitrie Cantemir, [sursa 1](https://www.facebook.com/EramAvodlom/posts/283281999726108?__xts__%5B0%5D=68.ARD84uxPxAHd37vhUvpTfIgbCNWLzsFbVcGxoTjjQnNWpanPkfVelp8JSL4l0bWosVZYlssFCXZN4GB4a8IZ6xnd-SQI504hmqIy8usCcDk6edUgb9v5msoGck4kuwog1R-wE2gyqDpXN-3oPyiSxtE_Ck78GrJ8me-CYu0uudgrYPCdjkx9bH06NPFzHtsShdGSSsbaOLLMgZNetZP7nagMRECQwYUMbg0hF9NL0dYaSo26OHoW_APuKdFPnt-Ilq55YAAufPd5vjZE0U3wmJG5smJ8J7nylTGE9Zhun3MnWltIVpVJoKVdI5q-AoietdpuTA41t8TczxkFMKp_LVY&__tn__=-R) |
+| 1745 | Idioma moldavorum la Onufrie, misionar (Lvov) |
+| 1745 | "Thesaurus polono-latinus" de Benedykt Chmielowski, publicat in 1745, care include cuvinte din limba moldoveneasca (denumita "lingua Moldavica"). |
+| ~1750 | Moldaviae principatus delineante principe Demetrio Cantemirio / [de la main de d'Anville], Anville, Jean-Baptiste Bourguignon d' (1697-1782). Cartographe Auteur : Cantemir, Dimitrie (1673-1723). [sursa 2](https://gallica.bnf.fr/ark:/12148/btv1b5962821v) |
+| 1750 | Moldaviae principatus delineante principe Demetrio Cantemirio, Jean-Baptiste Bourguignon d’Anville, [sursa 1](https://www.facebook.com/groups/greatmoldova/permalink/674118456703979/) |
+| 1762 | "Dictionarului grecesc-slavon-moldovenesc-latin" al lui Nicolae Milescu-Spatarul |
+| 1764 | "Histoire universelle depuis le commencement du Monde, jusqu'à present", à Amsterdam et a Leipzig, [sursa](https://gallica.bnf.fr/ark:/12148/bpt6k9779807w/f541.image) |
+| 1765 | XVIII | Observations historiques et géographiques, sur les peuples barbares qui ont habité les bords du Danube & du Pont-Euxin | La Langue Latine, dont la Valaque & la Moldave font des idiomes | fr | Charles de Peyssonnel | [sursa](https://books.google.fr/books?id=7LpNbuX0mLIC&lpg=PA22&dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&hl=fr&pg=PR41#v=snippet&q=moldave&f=false) |
+| 1766 | Domnitorul Moldovei Grigore Ghica semnează o gramotă cu privire la şcoli: Chişinăul era inclus în lista celor 23 de localităţi, în care urma să se deschidă şcoli, în care să fie «cîte un dacăl de limbă moldovenească» (A.Eşanu. Şcoala domnească la Chişinău… 1993). Господарь Молдавии Гр.Гика подписывает грамоту о школах. Кишинёв был включён в список 23 населённых пунктов, в которых должны были открываться школы, и в «каждой должен быть учитель молдавского языка» (А.Ешану. Шкоала домняскэ ла Кишинэу… 1993 г.). |
+| 1769 | Despre citirea evalgheliei in limba moldoveneasca [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220206465478/?type=3), [sursa 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219729798859/?type=3), [sursa 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219716465527/?type=3), [sursa 4](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405219703132195/?type=3) |
+| 1770 | "Gramatica mold[ovenească] : a Parintelui Macarie" pregătită pentru tipar de preotul Macarie, cu cheltuiala vistiernicului Ioan Cantacuzino [Bibi. Acad. R.P.R., cota 102] |
+| 1773 | LEG. COND. = Învăţătură a însuşi stăpânitoarei măriri Ecaterinii II cătră orânduita epitropie preste alcătuirea arătării a unii noao Legiuitoare condică. Tălmăcită pre limba moldovenească şi tipărită... de Toma II logofet, la anii de la Hristos 1773. [Iaşi]. |
+| 1771 | "moldauischen Sprache" în D.Cantemir Descriptio Moldaviae. Berlin |
+| 1777 | "Histoire de la Moldavie et de la Valachie: avec une dissertation sur l'état actuel de ces deux provinces", Jean-Louis Carra, Société typographique des Deux-Ponts, Jassy [page 7](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA7#v=onepage&q&f=false) "[Ovidius] avoit composé plusieurs poëmes en langue Moldave", [page 218](https://books.google.fr/books?id=5BvtvQEACAAJ&pg=PA218#v=onepage&q&f=false) "langue Valaque et Moldave" |
+| 1783 | [Metastasio], Ahileu la ostrovul Șirului. [Comedie tradusă - probabil de Al. Beldiman - în Moldova] „din limba grecească pe limba moldovinească”. [Manuscris din 1783, Bibi. Acad. R.P.R., cota 1818]. |
+| 1785 | Mihai Strilbiţki, Curioznică şi în scurt arătare celor ce iubesc a cerca vrednice învăţături din Fiziognomie. Tălmăcită di pe limba nemţască în cea rusască, cum şi pe limba această moldovenească. S-au tălmăcit şi s-au tipărit în tipografie cea politicească de popa... Iaşi, 1785, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209173133248) |
+| 1787 | "Moldauische Sprache" la Goethe, "Călătorie în Italia", 13 ianuarie 1787 «Am fost la Propaganda. Acolo în prezenţa a trei cardihali şi a unui mare auditoriu… apărură, pe rînd, ca treizeci de seminarişti, recitind poezii scurte, fiecare după limba lui maternă (seiner Landessprache): turcă, moldovenească (moldauisch), elenă, persană, arabă, armeană…» (tradus in rusa: "А вот нынешняя пьеса совершенно другого рода! В День Богоявления, на праздник Спасения души, провозглашенный для язычников, мы посетили Дворец пропаганды веры (Palazzo di Propaganda Fide в Риме). Там в присутствии трёх кардиналов и большой аудитории была произнесена только лишь одна речь, как раз повествуя то место святого писания, когда Святая Мария встретила трех волхвов в пещере или еще где? Затем читались вслух несколько латинских стихов со схожим сюжетом и далее тридцатью учениками семинарии были изложены краткие стихотворения на определенных языках: …Турецком (Türkisch), Молдавском (Moldauisch), … Персидском (Persisch), Арабском (Arabisch), Греческом (Griechisch)...") - I. W. Goethe. Călătorie în Italia.|
+| 1787 | GHERASIM, T. = Abatele Prau, Taina francmasonilor, care acum întăi s-au tălmăcit de pe limba franţozască pe limba moldovenească de chir Gherasim... la velet 1787, oct. 20.[Manuscris, Biblioteca Academiei Române, cota 451] |
+| 1789 | Toader Școleriu, Lecțione, adecă cuvîntare, scoase de la întîie parte a gramaticii... Pentru învățătura limbii moldovenești și rusești. Ieși, în Tipografie cea politicească |
+| 1789 | "În scurta adunare a numero după capetile ce s-au așezat, în doao limbi, întru folosul celor ce vor a învăța limba rusească și moldovenească" de protopoul Mihail Strilbițchi, Iași |
+| 1789 | Deale casii voarbe, rusesti si moldovenesti, [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405220966465402/?type=3) |
+| 1794 | Nils Nystrom, Mijlociri noauă aflate păntru stingerea focului. Tălmăcit din limba șvețască în nemțască și moldovenească. Liov, Tipariu lui Pilier. |
+| 1794 | Critil și Andronius. Acum întîi tipărită... de pre limba grecească pre limba noastră moldovenească... Iași, Sfînta Mitropolie, 1794  |
+| 1794 | "Leksikon slavenorossiyskiy" (Лексиконъ славено-россiйскiй) - o carte de lexicologie slavă, publicată în 1794, unde se afirmă: "Moldovenii sunt o națiune din Regatul Moldovei. Ei vorbesc o limbă moldovenească" |
+| 1795 | Amfilohie Hotiniul, De obște gheografiepe limba moldovenească. Scoasă de pe Gheografia lui Bufier... Acum întîi tipărită în zilele prealuminatului și preaînălțatului domnului nostru Alexandru Ioan Calimah voevod... în sfînta Mitropolie în Iași, 1795 [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405209616466537) |
+| 1795 | În prefaţa la cartea "Elemente aritmetice" (Iaşi, 1795), autorul, episcopul Amfilohie Hotiniul, scrie următoarele: "Văzînd noi bunătatea şi mărirea acestei cărţi, am silit din toată prostia ştiinţei mele de am tîlcuit-o şi am aşezat-o după al nostru obicei de numerare şi în limba moldovenească, fiind atîta de trebuincioasă în toate trebile vieţii noastre" |
+| 1795 | "Gramatică teologhicească, scoasă în limba moldovenească, de pe bogoslovia lui Platon, arhiepiscopul de Moscova și de pe alte cărți bisericești" [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405222779798554) |
+| 1796 | "Gramatica de la învătătura fizicii, scoasă de pre limba italienească pre limba moldovenească, întru care să cuprinde tot ceea ce omul voiește a ști și a învăța în cer și pre pământ din lucrurile cele mai cunoscute și mai trebuincioase. Anul 1796, april 10", Amfilohie Hotiniul [sursa](https://www.academia.edu/1313549/_Gramatica_de_la_%C3%AEnv%C4%83%C5%A3%C4%83tura_fizicii._Considera%C5%A3ii_asupra_terminologiei_astronomice) |
+| 1800 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna: "De pe sirbie pe limba moldoveneascä s’au talmacit la anul 1800, Ghenarie 12, de polcovnicul Paväl ot Mitropolie." |
+| 1801 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna: - "De pe sarbie pe limba moldoveneasca s’au talmacit, Duminica Avgust 18, tocmai in vremea sosirii la Galata a Märii Sale Alexandru Nicolaie Sutul Voevod, cand au venit domn in tara Moldovei, la anul 1801, de polcovnicul Paväl Debrit ot Mitropolie" - "De pe siirbie pe limba moldoveneasca s’au tälmacit la anul 1801, Iunie 20, de polcovnicul Pavel Debrit ot Mitropolie." |
+| 1803 | Domnul Moldovei Al.Moruzi emite un hrisov, prin care se dispunea deschiderea la Chişinău a unei şcoli «de limba elinească şi moldovenească». Se concretiza: «Voim ca dascălul limbii moldoveneşti să fie scriitoriu bun şi cîntăret, ca ucenicii să înveţe şi acestea». Codrescu T. Uricarul. Partea III, Iaşi, 1853, p.22-30. "...Pe lângă şcoala ce este în Iaşi încă alte 4 şcoale de limba elinească şi moldovenească, adecă la târgul Focşanii i (şi) Bârlad, i (şi) Galaţi i (şi) Chişinău..." |
+| 1804 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna: "De pe sarbie pe limba moldoveneasca am talmacit, la anul 1804, IVIai 23, polcovnicul Paval Debrit ot Mitropolie" |
+| 1804 | "Nouveau dictionnaire historique, ou Histoire abrégée de tous les hommes qui se sont fait un nom... depuis le commencement du monde jusqu'à nos jours", Chaudon, Delandine, Lyon [sursa](https://gallica.bnf.fr/ark:/12148/bpt6k63411547/f81.image) ("histoire... écrite en langue moldave") |
+| 1806 | Fr. G. Ducray Duminil, Alexii sau căsuța din codru. Acum întăi tălmăcită din limba franțuzească întru ce moldovenească de cel mai gios iscălit Aleco Beldeman. [Manuscris din 1806, Bibi. Acad. R.P.R., cota 1781] |
+| 1806 | Fr. Th. Mărie de Baculard d’Amaud, Adelson și Salvini. Poveste englezască sau jalnică tîmplare. Tălmăcită de pe acea franțuzască pe limba moldovenească de Fotis Calafati. [Manuscris din 1806, Bibi. Acad. R.P.R., cota 558] |
+| 1808 | Florian, Galatia. Tragodie păstorescă a domnului... tălmăcită de pe limba grecească pe limba moldovinească de Constantin Stamate. Ieși. [Manuscris, Bibi. Acad. R.P.R., cota 3502]. |
+| 1810 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna:  - "De pe särbie pe limba moldoveneascä am tälmäcit la anul 1810, Sept. 21, cliucer Paväl Debrici"  - "De pe sirbie pe limba moldoveneascá am tálmácit la anul 1810, Noemvrie 25. Cliucer Pavel Debrit." |
+| 1813 | De la sfarsitul sec 18 si inceputul sec 19 dateaza un numar mare de traduceri ale documentelor lui Stefan cel Mare, acestea fiind in limba slavona. In finalul acestora, traducatorul semna: "Din limba sirbasca pe limba moldoveneascá s’au tálmácit de Ion Stamate, biv vel pitar, la 1813, Iulie 12, In Iasi." |
+| 1814 | "de pe Sărbie pre limba Moldovineasca am lălmăcit la anul 1814 Iulie în 29", Cliucer Pavăl Debrid [sursa](https://books.google.com/books?id=CMNJAAAAMAAJ&q=%22limba+moldovineasca%22&dq=%22limba+moldovineasca%22&hl=en&sa=X&ved=2ahUKEwjNt8_Z6sPqAhUoxoUKHQsJCZcQ6AEwAXoECAEQAg) |
+| 1815 | Slujba, la pomenirea Sfîntului slăvitului mare glăsuitoriului, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405210223133143) |
+| 1815 | Abatele Prévost, Istorie cavalieriului de Grie şi a iubitii sale Manon Lesco, care tălmăcindu-să de pe limba franţuzască în limba moldovenească prin osteniala şi osârdie dreptiei dumisale banului Aleco Beldiman, s-au prescris acum de mine, în anul 1815... Costachi Borş. [Manuscris, Biblioteca Academiei Române, cota 193] |
+| 1818 | Rückert, Cristian-Albert. învățătură pentru facerea pâinii// Iași, 1818, via: Bibliografia românească veche (BRV), vol. III. 1809–1830. București: Atelierele Grafice Socec & Co., Soc. Anonimă, 1912, p. 240-241 ("ai poruncit nu numai a să tălmaci în limba moldovenească a patriei noastre"), [sursa FB](https://www.facebook.com/groups/greatmoldova/permalink/753883825394108) |
+| 1818 | Ioan Beldiman, Istorie a celor mai gingaşe amoruri a Parisului. Din ce grecească s-au tălmăcit în limba moldovenească, prin osteneala şi osârdie dreptii sale... S-au prescris de mine iscălitul la 1818, Costachi Borş. [Manuscris, Biblioteca Academiei Române, cota 126] |
+| 1818 | "Устав образования Бессарабской области" (29 aprilie 1818): "Дела в Совете производятся на Российском и Молдавском языках... Гражданские дела... на одном языке Молдавском" [sursa](https://www.hrono.ru/dokum/moldav1818.html) |
+| 1819 | Cartea liturgică "Mineiul de obște", Mitropolitul Chișinăului și Hotinului, Gavriil Bănulescu-Bodoni [sursa](https://razboiulpentrutrecut.wordpress.com/2013/07/17/care-era-limba-bastinasilor-din-moldova-de-est-marturii-din-titlurile-tipariturilor-din-sec-xviii-xx/) |
+| 1819 | "Scurtă russască gramatică, cu tălmăcire în limba moldovenească pentru ucenicii Seminarei Chișinăului și ale altor scoale den Basarabia, cu adăogirea cuvintelor și a dialogurilor, ce se întrebuințază mai adesăori în limba rusască și moldovenească" Chișinău, Tipografia mitropoliei Chișinăului, 1819 [sursa](https://tiparituriromanesti.wordpress.com/2011/10/28/scurta-rusasca-gramatica-cu-talmacire-in-limba-moldoveneasca-chisinau-1819/) |
+| 1820 | Le Constitutionnel, 12 novembre 1820 (n° 317), p. 2 [sursa](https://www.retronews.fr/journal/le-constitutionnel/12-novembre-1820/22/378501/2?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=0) |
+| 1821 | Le Drapeau blanc, 8 avril 1821 (n° 98), p. 4 [sursa](https://www.retronews.fr/journal/le-drapeau-blanc/8-avril-1821/727/1827325/4?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=1) |
+| 1821 | Journal du commerce, 9 avril 1821 (n° 443), p. 2 [sursa](https://www.retronews.fr/journal/journal-du-commerce/9-avril-1821/1135/3436589/2?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=2) |
+| 1821 | La France chrétienne (1821-1828), 12 avril 1821 (a. 1, n° 2), p. 9 [sursa](https://www.retronews.fr/journal/la-france-chretienne-1821-1828/12-avril-1821/739/2083369/9?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=3) |
+| 1821 | "Tipic bisericesc, adunat în scurt pentru cea mai lesne învățătură celor ce nu-l șciu și îndreptarea printr-însul ce cuprinde în sine acestea: care, după care, și cum se cuvine slujitorilor bisericești a ceti și a cînta… s-au tălmăcit moldovenește de pre cel slovenesc și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, anul 1821", "Tipicul", 1821 |
+| 1822 | "Bucoavnă, adică începătoare învățătură pentru cei ce voesc a învăța carte moldovenește. S-au tipărit în duhovniceasca tipografie a Basarabiei în Chișinău" |
+| 1822 | Învățătură Părintească, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405210506466448) |
+| 1822 | GRIGORIU, E. = S. Gessner, Erast. Povestire de o tragedie păstorească. Împărţită în două părţi şi tălmăcită din limba nemţească în limba grecească..., iar acum tălmăcită în limba moldovenească de cătră dumneaei sărdăreasa Zoiţa, din îndemnul soţului său... Costachi Grigoriu. [Iaşi], 1822, |
+| 1823 | VÂRNAV, F. = Rollin, Frumuseţile a istoriei româneşti sau Tabla întâmplărilor cari au înveşnicit pe romani. Acum întăieşi dată tălmăcită de pe limba franţuzască pe limba moldovenească prin serdariul Vasilie Vârnav. [Manuscris din 1823, Biblioteca Academiei Române, cota 175], |
+| 1824 | "Pentru ca copiia aceasta, scoasa de pe talmacirea in limba moldoveneasca a ispisocului sarbesc di la Stefan voevod, dupa posleduire, aflandu-sa intocmai cu aceiasi, s-au incredintat di catra aceasta giudecatorie, cu iscalitura unui cilen a presudstvii si punirea pecetii imparatesti. In Chisinau, anul 1824, luna mart, 24 de zile. Secretari Barbu, Sovietnic Paval Macarescu" |
+| 1824 | Viceregele rus Voronțov ordona că „învățătură în școlile lancasteriene (din Basarabia) se va face înainte de toate și preferențial în rusă și nu învață moldovenește decât elevii care doresc să deprindă această limbă pe lângă rusă” (Ion G. Pelivan, op. cit., p. 18-19) |
+| 1824 | Chesar Becearia, Pentru greșele și pedepsi, politicește prăvite. De pe limba grecească vulgare în moldove[nească tăl]măcită de banul Vasilie Vîmav. [Manuscris din 1824, Bibi. Acad. R.P.R., cota 185] |
+| 1824 | La langue moldave la d’Hauterive. Tableau de Moldavie. Paris |
+| 1825 | Condillac, Loghica sau întăile tălmăciri meșteșugului de a să socoti cineva bine. Scrisi de... și acum întăieși dată de pe grecească pe limba moldovenească tălmăcită de banul Vasile Vîmav [Manuscris din 1825, Bibi. Acad. R.P.R., cota 425] |
+| 1827 | "Instrucțiea Bisericilor mai gios însemnate. S-au tipărit la preasfîntut Sinod la anul 1820. Iară de pre cea slavenească s-au tălmăcit pe limba moldovenească, și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1827" |
+| 1828 | Gazette nationale ou le Moniteur universel, 22 mai 1828 (n° 143), p. 1 [sursa](https://www.retronews.fr/journal/gazette-nationale-ou-le-moniteur-universel/22-mai-1828/149/2236841/1?from=%2Fsearch%23allTerms%3D%2522langue%2520moldave%2522%26sort%3Ddate-asc%26publishedBounds%3Dfrom%26indexedBounds%3Dfrom%26page%3D1%26searchIn%3Dall%26total%3D40&index=4) |
+| 1828 | "Așezâmîntul pentru ocîrmuirea Oblastiei dinpreună statul lui, tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie din Chișinău, 1828, Aprilie 27 zile" |
+| 1828 | Le Constitutionnel, 22 mai 1828 (n° 143), p. 1 |
+| 1828 | La Quotidienne, 22 mai 1828 (n° 143), p. 2 |
+| 1828 | Journal du commerce, 22 mai 1828 (n° 3063), p. 1 |
+| 1828 | Gazette de France, 23 mai 1828 (n° 140), p. 1 |
+| 1831 | "Bibliotheca Münteriana, sive catalogus librorum", quos reliquit F. Münter. Divendentur auctione publ. Hafniæ ... die I. Martii, [sursa](https://books.google.com/books?id=GbpfAAAAcAAJ&dq=moldavice&pg=PA255#v=onepage&q=moldavice&f=false) |
+| 1832 | "Reglementul Organic al Moldovei", art.187 "comitetul de sănătate va alcătui în limba moldoveneasca și în alte și va publicui fără întârziere regulile" [sursa](https://dokumen.tips/law/regulamentele-organice-ale-valahiei-si-moldovei-din-1831-1832-originale-furate-din-arhivele-noastre-.html?page=1) |
+| 1832 | F. I. A. Schneidawind, "Taschenbibliothek der Reisen, von I. H. Jäck, 85-stes Bändchen" (Nürnberg): "die Moldauische Sprache" [sursa](https://bcub.ro/lib2life/Moldau%20und%20Wallachei_Kogalniceanu_Mihail_Bukarest_1895.pdf) |
+| 1834 | Journal des débats politiques et littéraires, 1 octobre 1834, p. 1 |
+| 1834 | Gazette de France, 2 octobre 1834, p. 2 |
+| 1834 | J. H. Zucker, "Bessarabien. Bemerkungen und Gedanken bei Gelegenheit eines mehrjährigen Aufenthaltes in diesem Lande"; capitolul "Moldauische Sprache und wallachische ..." [sursa](https://www.finna.fi/Record/abo.kortkat_201139) |
+| 1836 | VEISA, I. = [Dr. Tollhausen], Instrucţie în scurt de prinţipurile ighienismului sau a sistemii morizoniane şi de întrebuinţarea doftoriei universale de veghetaluri. Aduse în limba moldovenească de pe acele franţuzeşti... tălmăcite [de căminarul C. Veisa] de pe însuşi cartea dumisale Morizon, ce au ieşit în limba germană. Iaşi, Tipografia S[fintei] Mitropolii, [1836] |
+| 1837 | Journal des débats politiques et littéraires, 16 décembre 1837, p. 2 |
+| 1838 | Journal des débats politiques et littéraires, 8 décembre 1838, p. 2 |
+| 1838 | Gazette nationale ou le Moniteur universel, 9 décembre 1838 (n° 343), p. 2 |
+| 1838 | La Presse, 9 décembre 1838, p. 2 |
+| 1838 | Gazette de France, 10 décembre 1838, p. 4 |
+| 1840 | Le Constitutionnel, 12 octobre 1840 (n° 286), p. 2 |
+| 1840 | Gramatica și Hristomatia de limbă valaho-moldovenească a lui Iacob Hâncu |
+| 1840 | Verb-scrib-reguleta sau Gramatica moldov-românească. Prescrise de-al doilea. Din cărţile D[sale] d-[lui] Gheorghe Dimitriu, în Seminaria Socola. [Manuscris din jurul anului 1840, Biblioteca Academiei Române, cota 528] |
+| 1841 | "Spicuitorul moldo-romîn". Jurnal scientific, literar și industrial, rediguit de o soțietate de literați. Iașii, Institutul Albinei |
+| 1841 | "Datoriile călugărilor a unora cătră alții, în viața lor cea de obșce. S-au tipărit ruseșce la Sanct Petersburg în tipografia Preasfîntului Sinod la 1816 în luna August, iară de pre cea rusască s-au tălmăcit pe limba moldovenească și s-au tipărit în duhovniceasca tipografie a Bessarabiei în Chișinău, la anul 1841 în luna lui August" |
+| 1844 | Theoretisch-praktische Grammatik der dacoromanischen, das ist, der moldauischen oder wallachischen Sprache, Theoktist Blazewicz [sursa 1](https://www.facebook.com/EramAvodlom/posts/283374073050234?__xts__%5B0%5D=68.ARAphL7m4CT_cy4isu_jBLPkwJJfcjPeFWPtKHJ4AkHZG4lM9E5_rAc2PF7VS5tkjKcG2Asj1Wul_VLAfrOSZqBuzQj51jOC-SN0_DoBInHWfKebOrRPyTi1O0IT4GezOzoDTPicmCSzPgD1qZuW6hCy0fBuW0EBgYxLYllqa_76r0bYgik3D5_NdbXC4dpLfFUBL6-8yR9-MefUgY2eUCRJJTVu9dHMVjjwPAXJojVCt5lmEbCTAPmsBdG8AFETKJBky6RlBZKToW9-Odct2hnB2SfQZhBwm7uUrC5iwPlJ0eo__3lXIabqyVUtMXH99D07FTe9c-XGCDPQCzlxgW0&__tn__=-R) |
+| 1848 | Iași, în 12 Marite, traducere in franceza sistematica ca "langue moldave", a sintagmelor "limba nationala" ou limba romaneasca, [Documente privitóre la istoria românilor, Volume 6, 1895](https://www.google.com/books/edition/Documente_privit%C3%B3re_la_istoria_rom%C3%A2nil/MQVSAQAAMAAJ?hl=en&gbpv=0&kptab=getbook) |
+| 1849 | Le Constitutionnel, 29 mai 1849 (n° 149), p. 2 |
+| 1849 | Le Constitutionnel, 30 mai 1849 (n° 150), p. 1, 2 |
+| 1851 | Gazette nationale ou le Moniteur universel, 9 juin 1851 (n° 160), p. 3 |
+| 1851 | Gazette nationale ou le Moniteur universel, 21 septembre 1851 (n° 264), p. 4 |
+| 1851 | Le Constitutionnel, 21 septembre 1851 (n° 264), p. 3 |
+| 1851 | Journal du Cher, 23 septembre 1851 (A44, N114), p. 1 |
+| 1851 | "Fabule alcătuite în limba moldovinească", Ioan Sîrbu, Chișinău, tipografia lui Popov |
+| 1852 | "Die Propaganda, ihre Provinzen und ihr Recht"; Verlag der Dieterichschen Buchhandlung, [pag. 518](https://www.google.fr/books/edition/Die_Propaganda_ihre_Provinzen_und_ihr_Re/OcxoAAAAcAAJ?hl=en&gbpv=1&pg=PA518&printsec=frontcover) - Principato di Moldavia - Lingua Moldava; Principato du Vallachia - Lingua come nella Moldavia |
+| 1856 | La Presse, 8 juillet 1856, p. 1 |
+| 1861 | "Bucoavnă 'adică Începătoare învățătură pentru cei ce voesc a învăța carte moldovenească. Sau tipărit în tipografia Casii Arhierești în Chișinău, anul 1861" |
+| 1863 | "Bucoavnă adică începătoare învățătură pentru cei ce voesc a învăța carte Slavoneșce și Moldoveneșce. S-au tipărit în tipografia Casii Arhiereșci în Chișinău, 1863 anul" (retiparirea celei din 1861, cu text rusesc) |
+| 1865 | "Cursul primitiv de limbă moldovenească" de I. Doncev |
+| 1870 | "Romancero español" de Mihai Eminescu, Copii de pe natura: "Acest autor de caraghioslâcuri, moldoveneşte de mascarade", "Moretto c-a tradus-o de pe moldovenie pe spaniolie", "tălmăcită de pe moldovenie", [(sursa)](https://ro.wikisource.org/wiki/Romancero_espa%C3%B1ol) |
+| 1877 | Le Monde illustré, 31 mars 1877 (T40,A21,N1042), p. 6 |
+| 1879 | "Moldavian-Russian Grammar" de Toader Școleriu |
+| 1883 | La Croix, 1 janvier 1883, p. 15 |
+| 1888 | Elena Didia Odorica Sevastos, Cîntece moldovenești. Iași, Tipografia națională |
+| 1891 | "Istoria Moldovei" de Alexandru D. Xenopol, publicată în 1891: "În Moldova se vorbește limba moldovenească și nu românească, deși cele două limbi sunt foarte apropiate una de cealaltă" |
+| 1895 | La Croix, 17 octobre 1895 (n° 3823), p. 3 |
+| 1896 | Paris, 28 juillet 1896, p. 2 |
+| 1898 | "Dicționar scurt pentru convorbiri ruso-moldovenești" (1898) |
+| 1899 | "Dicționar în scurt pentru convorbiri ruso-moldovenești", 1899 [sursa](https://razboiulpentrutrecut.wordpress.com/2013/07/17/care-era-limba-bastinasilor-din-moldova-de-est-marturii-din-titlurile-tipariturilor-din-sec-xviii-xx/) |
+| 1906 | "Pilde și anecdoturi, tălmăcite pe limba moldovenească", 1906 |
+| 1906 | "Proverbe moldovenești" (1906) |
+| 1906 | La Petite Gironde, 18 avril 1906 (a. 36, n° 12343), p. 1 |
+| 1907 | Mercure de France, 15 novembre 1907 (a. 18, n° 250), p. 84 |
+| 1908 | Le Siècle, 16 avril 1908 (n° 26405), p. 2 |
+| 1908 | "Pilde și povețe, întâia carte moldovenească de citire", Chișinău, de Rejep |
+| 1909 | "Viețile sfinților pe limba moldovenească, întocmite pe temeiul cărților "Viețile sfinților" ale sf. Dimitrie al Rostovului, tălmăcite pe limba rusască și tipărite în tipografia sinodală din Moscova, cu depliniri, însemnări lămuritoare și cu chipurile sfinților", Cartea întîia. Ediția Sfatului Frățimii Nascerii lui Hristos din Eparhia Chișinăului. Adaos la jurnalul "Luminătorul". Chișinău, tipografia eparhială [sursa](https://razboiulpentrutrecut.wordpress.com/2013/07/17/care-era-limba-bastinasilor-din-moldova-de-est-marturii-din-titlurile-tipariturilor-din-sec-xviii-xx/) |
+| 1909 | Гурие [Гросу], Архимандрит. Букоавна молдовиняскэ / алкэт. де миссионерюул Епархиал Архимандритул Гурие. — Кишинэу : Тип. Епархиалэ, 1909 [sursa](http://www.moldavica.bnrm.md/biblielmo?e=d-01000-00---off-0carti--00-1----0-10-0---0---0direct-10---4-------0-1l--11-ro-50---20-about---00-3-1-00-0-0-11-1-0utfZz-8-00&cl=CL1.2&d=JC66.105&x=1) |
+| 1911 | "The Peoples of Europe about 900", From The Historical Atlas by William R. Shepherd, 1911 (aici Valahia este prezenta cu "rumani", iar Moldova - maghiari, care nu sunt incluși în "romance peoples") [sursa 1](https://www.facebook.com/EramAvodlom/posts/277755800278728) |
+| 1911 | "Agiutatorul moldovenilor în vremea învățăturei limbei russascâ. Cartea întîia pentru cetirea pe limba russască și moldovenească. Pentru moldoveni din Bassarabie, care sî sîlesc a învăța limba russască", Chișinău, 1911 [sursa](https://razboiulpentrutrecut.wordpress.com/2013/07/17/care-era-limba-bastinasilor-din-moldova-de-est-marturii-din-titlurile-tipariturilor-din-sec-xviii-xx/) |
+| 1912 | "Rusesc-moldovenesc și moldovenesc-rusesc cuvîntelenic. Au alcătuit fost învățători Gheorge Codreanu" |
+| 1912 | Mercure de France, 1 juillet 1912 (n° 361), p. 199 |
+| 1913 | La Libre Parole, 6 novembre 1913 (a. 22, n° 7869), p. 1 |
+| 1920 | Le Temps, 16 février 1920 (n° 21385), p. 2 |
+| 1920 | "Istoria Moldovei și a Țării Românești" de Nicolae Iorga, publicată în 1920: "În Moldova se vorbește limba moldovenească, iar în Țara Românească se vorbește limba românească. Deși cele două limbi sunt asemănătoare, există unele diferențe între ele". |
+| 1924 | La Dépêche de l'Aube, 7 septembre 1924 (a. 5, n° 1229), p. 1 |
+| 1924 | Journal des débats politiques et littéraires, 10 novembre 1924 (n° 313), p. 1 |
+| 1928 | "Viețile sfinților, în limba moldovenească", cu sprijinul lui Arhiepiscopul Gurie, Tipografia Eparhiala "Cartea Româneasca", Chișinău, 1928, [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/306606287393679/?type=3&__xts__%5B0%5D=68.ARBgBmMf8av2puQQYGGdxKGvupIH-2h-Vy6ayJVCsZoSu5XQwSCnpiAvUdYIwkD__rcw6B9TT1wvD8GarEuM7HPQZX_-812gGqGOSHMgZ9A_zcFZo-v0IwWCIjGqrSq5BiA-lp93ScNPLwndiCkbFYd-mbKSACDUet5Pj5qT9qGytq7L5DEddr2HM_wMRqKg3JELykCyFZSGngAa_F1kE0s8X7vFHVB-oHp4CVDI79K8r7vlQvjJiWwdiQVDYeLgbaN9Uo-ilQ6uQBRlhhay1rftSeQE3DiGHOywM51hi0LlqGNnraOjQ43t32X6u33r8PFGi-Vt6qq9bSWYUyskdrE&__tn__=-R) |
+| 1934 | L'Humanité, 30 mars 1934 (n° 12889), p. 4 |
+| 1934 | L'Humanité, 23 octobre 1934 (n° 13094), p. 4 |
+| 1935 | Din trecutul nostru: Revistă istorica dedicata memoriei mult regretatei Sofia Bezveconnaia.- Chisinau: Tipografia Uniunii Clericilor Ortodocsi din Basarabia, 1935.- An. 3, Nr. 17-20.- Febr. - Mai.- 147 p. / pag.40 - "parintii vorbeau moldoveneste", "fata rupea moldoveneste" [sursa](http://www.moldavica.bnrm.md/biblielmo?e=d-01000-00---off-0periodice--00-1----0-10-0---0---0direct-10-DC--4-------0-1l--11-ro-50---20-about-moldova--00-3-1-00-0-0-11-1-0utfZz-8-00&a=d&cl=search&d=JV7.41&fbclid=IwAR28sGhCql6WxFcyghlbVhfwcHZyhhHv_6Sj7pPlsV8oBZyhH6hV7Far2zg) |
+| 1951 | Paris-presse, L'Intransigeant, 12 décembre 1951 (E8), p. 4 |
+| 1982 | Le saint-siège et la Roumanie moderne. 1866-1914, Volume 1, Ion Dumitriu-Snagov, Roma, 1982, Università Gregoriana Editrice, [sursa 1](https://www.facebook.com/groups/greatmoldova/permalink/694346351347856/), [sursa 2](https://l.facebook.com/l.php?u=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D13E02jdTcaoC%26lpg%3DPA377%26ots%3DsdtwLDY6BG%26dq%3D%2522lingua%2Bmoldava%2522%26pg%3DPR5%26fbclid%3DIwAR1fp6by4PsKLYaHF_4ojLaK7m5dFFDhaJ2ICJJdiNm9eePnm7yvBQr8P68%23v%3Donepage%26q%3D%2522lingua%2520moldava%2522%26f%3Dfalse&h=AT1I1udyC4_CI05EOVWodanE1tkuTUss6tqY__T_Qxic_xm3ujp6arF1hGyS2uVGBBpLXkKn23r5gy7gfxcbFE5Yqwcf6UrfxwHPsYhnq9UynAbjjiD8Q2hyt4hzLeD8aysuuygR7jxkJs7ebfYJzG0FF62sPHCXb3FX9aYe18mCL9AHhw) |
+| 1989 | Limba moldovenească cum să o cunoaștem, [sursa 1](https://www.facebook.com/limbamoldoveneasca/posts/2405199266467572) |
+| 1989 | Parlamentul R.Moldova, legea Nr. 3464 din 31.08.1989 cu privire la statutul limbii de stat a RSS Moldovenești: "În scopul lichidării deformărilor survenite în construcția lingvistică din RSS Moldovenească, al luării sub protecția statului a limbii moldovenești - una dintre premizele fundamentale ale existenței națiunii moldovenești în cadrul formației sale național-statale suverane[...] hotărăște a completa Constituția [...] RSSM cu Art.701: "Limba de stat a RSSM este limba moldovenească. Limba de stat este folosită în viața politică, economică, socială și culturală și funcționează pe baza grafiei latine" |
+| 1994 | "Constituția Republicii Moldova", art.13(1) "Limba de stat a Republicii Moldova este limba moldovenească, funcționînd pe baza grafiei latine", [sursa](https://ro.wikisource.org/wiki/Constitu%C8%9Bia_Republicii_Moldova) |
+| 2000 | Analele Acedemei Române, Editura Academiei Române, diverși autori [sursa 1](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199516467547/?type=3), [sursa 2](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199513134214/?type=3), [sursa 3](https://www.facebook.com/limbamoldoveneasca/photos/a.2000934576894045/2405199563134209/?type=3) |
+| 2014 | "Recensământul Populației și Locuințelor 2014 — limba vorbită": "Populația vorbește în limba moldovenească — 54,6%"; Biroul Național de Statistică al Republicii Moldova [sursa](https://statistica.gov.md/public/files/Recensamint/Recensamint_pop_2014/Rezultate/Infografic_RPL2014_2.pdf) |
+| 2018 | Abecedar, Limba Moldovenească, Odessa [sursa 1](https://www.facebook.com/EramAvodlom/photos/a.117777099609933/289035209150787/?type=3&__xts__%5B0%5D=68.ARBNCcJ91rts9RvHwIX5q3XPFe-d24_u5d-76RdmAk3_8sIh-GbT3Ok7SOxOzj14M8d1QYfRNmYW_WvsyqfBCCcpcT8yNWcJ9cnRRB4NQMG2lRrr0PqcPjxdpfpIdkZeVnaT2FS3Y42b16WdubM9SBDdYfWCOeWgrLJmBYoDZw0brXNti-4C4P2aU4wdDaOGSVmewmE3z7EJ0FAFYPqlCTozs5CDV5a0L877UB5InEceXrkrB67xtgVvGJfilqIvQD_4h_nOXjvLFN3qzhQfmqArz0MgVEbp_Rp-DXJgTJ2wxEj2fxzK3lDDnomKIcNRtJEfrw9kKqStv8bIldtZLhE&__tn__=-R) |
+
+<div class="moldoveneasca-selection-toolbar" data-selection-toolbar hidden aria-label="Acțiuni pentru referințele selectate">
+  <label class="moldoveneasca-selection-toolbar__select">
+    <input type="checkbox" data-selection-all aria-label="Selectează referințele afișate" title="Selectează referințele afișate">
+    <span data-selection-count>Selectate: 0</span>
+  </label>
+  <div class="moldoveneasca-selection-toolbar__actions">
+    <button type="button" class="moldoveneasca-icon-button moldoveneasca-icon-button--danger" data-selection-delete disabled aria-label="Șterge referințele selectate" title="Șterge referințele selectate" data-tooltip="Șterge referințele selectate"><span aria-hidden="true"></span></button>
+    <button type="button" class="moldoveneasca-icon-button" data-selection-clear aria-label="Deselectează referințele selectate" title="Deselectează referințele selectate" data-tooltip="Deselectează referințele selectate"><span aria-hidden="true"></span></button>
+  </div>
+</div>
+
+<div class="moldoveneasca-catalog__status" data-catalog-status>
+  <div class="moldoveneasca-catalog__status-summary">
+     <p class="moldoveneasca-catalog__result" data-catalog-result aria-live="polite"></p>
+     <span><strong data-record-count>—</strong> total items</span>
+     <span><strong data-filtered-count>—</strong> filtered items</span>
+  </div>
+   <nav class="moldoveneasca-pagination" data-catalog-pagination hidden aria-label="Reference pagination">
+     <button type="button" class="moldoveneasca-icon-button" data-page-first aria-label="First page" title="First page"><span aria-hidden="true"></span></button>
+     <button type="button" class="moldoveneasca-icon-button" data-page-previous aria-label="Previous page" title="Previous page"><span aria-hidden="true">←</span></button>
+     <span class="moldoveneasca-pagination__status" data-page-status aria-live="polite" aria-label="Page 1 of 1"><strong data-page-current>1</strong><span aria-hidden="true"> of </span><span data-page-total>1</span></span>
+     <button type="button" class="moldoveneasca-icon-button" data-page-next aria-label="Next page" title="Next page"><span aria-hidden="true">→</span></button>
+     <button type="button" class="moldoveneasca-icon-button" data-page-last aria-label="Last page" title="Last page"><span aria-hidden="true"></span></button>
+  </nav>
+</div>
+
+<section class="moldoveneasca-unverified" data-unverified-section hidden aria-labelledby="unverified-title">
+  <h2 id="unverified-title"><strong>Unverified references</strong></h2>
+  <p>These entries remain separate until the edition, author, year, page and source are checked. An entry may already be classified in the <strong>language</strong> catalog; verification does not change that classification. Contributors see their own proposals, administrators see the work list, and only the catalog owner can approve or reject an entry.</p>
+  <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
+    <thead>
+      <tr>
+        <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
+        <th scope="col" class="moldoveneasca-table__year-heading">An</th>
+        <th scope="col" class="moldoveneasca-table__title-heading">Title</th>
+        <th scope="col" class="moldoveneasca-table__quote-heading">Quotation</th>
+        <th scope="col" class="moldoveneasca-table__language-heading">Language</th>
+        <th scope="col" class="moldoveneasca-table__author-heading">Author</th>
+        <th scope="col" class="moldoveneasca-table__source-heading">Source</th>
+        <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div class="moldoveneasca-catalog__status" data-unverified-status>
+    <div class="moldoveneasca-catalog__status-summary">
+      <p class="moldoveneasca-catalog__result" data-unverified-result aria-live="polite"></p>
+      <span><strong data-unverified-record-count>—</strong> total items</span>
+      <span><strong data-unverified-filtered-count>—</strong> filtered items</span>
+    </div>
+    <nav class="moldoveneasca-pagination" data-unverified-pagination aria-label="Unverified reference pagination">
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-first aria-label="First page" title="First page"><span aria-hidden="true"></span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-previous aria-label="Previous page" title="Previous page"><span aria-hidden="true">←</span></button>
+      <span class="moldoveneasca-pagination__status" data-unverified-page-status aria-live="polite" aria-label="Page 1 of 1"><strong data-unverified-page-current>1</strong><span aria-hidden="true"> of </span><span data-unverified-page-total>1</span></span>
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-next aria-label="Next page" title="Next page"><span aria-hidden="true">→</span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-unverified-page-last aria-label="Last page" title="Last page"><span aria-hidden="true"></span></button>
+    </nav>
+  </div>
+</section>
+
+Three points should be kept in mind. The catalog treats the Moldovan language and its historical names as one language whose naming varies across communities. “Language” here means the language-name level, not dialects or local speech varieties. Classifications and historical references are presented for public examination rather than as automatic conclusions.
+
+<section class="moldoveneasca-ethnicity" aria-labelledby="ethnicity-title">
+  <h2 id="ethnicity-title" class="moldoveneasca-ethnicity__title">Ethnicity, nation, people: Moldovans</h2>
+  <p class="moldoveneasca-ethnicity__intro">This catalog gathers historical mentions of Moldovans and ethnic names associated with Moldova.</p>
+  <table class="moldoveneasca-table moldoveneasca-table--ethnicity" data-ethnicity-table aria-describedby="ethnicity-title">
+    <thead>
+      <tr>
+        <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selection"></th>
+        <th scope="col">Year</th>
+        <th scope="col">Title</th>
+        <th scope="col">Quote</th>
+        <th scope="col">Language</th>
+        <th scope="col">Author</th>
+        <th scope="col">Source</th>
+        <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Actions"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1352–1564">1352–1564</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Молдавско-польская летопись">Молдавско-польская летопись</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Сигизмунд-Август, король польский, поставил молдавским воеводой Александра, тоже из молдавского рода, а Жолде, молдаване, поймав, отрезали нос и послали в монастырь">„Сигизмунд-Август… молдавским… из молдавского рода… молдаване”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="ru">ru</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Autor neindicat în sursă (cronică anonimă)">autor neindicat în sursă (cronică anonimă)</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://www.vostlit.info/Texts/rus3/Mold-Pol.let/text.phtml?id=952" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1765">1765</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Observations historiques et géographiques, sur les peuples barbares qui ont habité les bords du Danube &amp; du Pont-Euxin">Observations historiques et géographiques…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Nation Moldave">„Nation Moldave”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="fr">fr</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Charles de Peyssonnel">Charles de Peyssonnel</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://books.google.fr/books?id=7LpNbuX0mLIC&amp;lpg=PA22&amp;dq=%22trajan%2C%20pour%20faciliter%20la%20communication%20de%20cette%20province%22&amp;hl=fr&amp;pg=PR41#v=snippet&amp;q=moldave&amp;f=false" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1818">1818</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Die Moldau, Wallachey, Bessarabien und Bukowina. Neueste Darstellung dieser Länder…">Die Moldau, Wallachey, Bessarabien und Bukowina…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni», precum cei din Valahia, susţinând că n-ar fi urmaşii romanilor şi că ar fi locuit provincia înainte de venirea acestora">„Locuitorii ţării se numesc pe sine «moldoveni» şi nu «rumuni»…”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="de">de</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Fedor von Karacsay">Fedor von Karacsay</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://polona2.pl/item/beytrage-zur-europaischen-landerkunde-die-moldau-wallachey-bessarabien-und-bukowina,MTMyNzUwMTk0/" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1841">1841</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Mică gramatică franţeză, pentru învăţătura tinerimei moldo-române">Mică gramatică franţeză…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="tinerimei moldo-române">„tinerimei moldo-române”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Teodor Codrescu; după François Noël și Charles-Pierre Chapsal">Teodor Codrescu; după Noël și Chapsal</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=c&amp;limit=40&amp;page=1560" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1897">1897</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии по переписи 1897 г.">Население Бессарабской губернии…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Население Бессарабской губернии">„Население Бессарабской губернии”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="ru">ru</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Comitetul Central de Statistică al Ministerului de Interne al Rusiei; red. N. A. Troițki">Comitetul Central de Statistică al Ministerului de Interne al Rusiei; red. N. A. Troițki</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://rusneb.ru/catalog/000199_000009_003956062/" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1845">1845</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Lupta moldovenilor cu cavalerii crucieri la anul 1423">Lupta moldovenilor cu cavalerii crucieri…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="moldovenilor">„moldovenilor”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Gheorghe Asachi">Gheorghe Asachi</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=a&amp;limit=20&amp;page=1200" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1898">1898</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Studiu asupra cronicarilor moldoveni din punct de vedere al limbei, metodei și cugetărei…">Studiu asupra cronicarilor moldoveni…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="cronicarilor moldoveni">„cronicarilor moldoveni”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Alexandru V. Gîdei">Alexandru V. Gîdei</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=g&amp;limit=20&amp;page=820" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1901">1901</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Hronicul vechimei a Romano-Moldo-Vlahilor">Hronicul vechimei a Romano-Moldo-Vlahilor</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="romano-moldo-vlahilor">„romano-moldo-vlahilor”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Dimitrie Cantemir; ed. Grigore G. Tocilescu">Dimitrie Cantemir; ed. Grigore G. Tocilescu</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://books.google.com/books/about/Hronicul_vechimei_a_Romano_Moldo_Vlahilo.html?id=zpVzxQEACAAJ" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1908">1908</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Documentul Răzenilor din 1484 şi organizarea armatei moldovene în secolul XV">Documentul Răzenilor din 1484…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="armatei moldovene">„armatei moldovene”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Ioan Bogdan">Ioan Bogdan</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://old.biblacad.ro/bnr/brmautori.php?aut=b&amp;limit=10&amp;page=1070" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1925">1925</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Din trecutul comerțului moldovenesc și mai ales al celui ieșan">Din trecutul comerțului moldovenesc…</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="comerțului moldovenesc">„comerțului moldovenesc”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="N. A. Bogdan; prefață N. V. Ștefăniu">N. A. Bogdan; prefață N. V. Ștefăniu</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://dspace.bcu-iasi.ro/handle/123456789/34/browse?etal=-1&amp;offset=3744&amp;order=ASC&amp;rpp=20&amp;sort_by=1&amp;type=title" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+      <tr>
+        <td><span class="moldoveneasca-table__truncate" title="1926">1926</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">Cântece poporane moldovenești</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Cântece poporane moldovenești">„Cântece poporane moldovenești”</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="md">md</span></td>
+        <td><span class="moldoveneasca-table__truncate" title="Gh. Cardaș">Gh. Cardaș</span></td>
+        <td><span class="moldoveneasca-table__source-links"><a href="https://digital.bibliotecaarad.ro/files/original/837f8f5554d1442938b7af6af950ce7c8faa95c3.pdf" target="_blank" rel="noopener noreferrer" title="Sursa 1">[1]</a></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="moldoveneasca-catalog__status" data-ethnicity-status>
+    <div class="moldoveneasca-catalog__status-summary">
+      <p class="moldoveneasca-catalog__result" data-ethnicity-result aria-live="polite"></p>
+      <span><strong data-ethnicity-record-count>—</strong> total records</span>
+      <span><strong data-ethnicity-filtered-count>—</strong> filtered records</span>
+    </div>
+    <nav class="moldoveneasca-pagination" data-ethnicity-pagination aria-label="Ethnicity references pagination">
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-first aria-label="First ethnicity references page" title="First page"><span aria-hidden="true"></span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-previous aria-label="Previous page" title="Previous page"><span aria-hidden="true">←</span></button>
+      <span class="moldoveneasca-pagination__status" data-ethnicity-page-status aria-live="polite" aria-label="Page 1 of 1"><strong data-ethnicity-page-current>1</strong><span aria-hidden="true"> of </span><span data-ethnicity-page-total>1</span></span>
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-next aria-label="Next page" title="Next page"><span aria-hidden="true">→</span></button>
+      <button type="button" class="moldoveneasca-icon-button" data-ethnicity-page-last aria-label="Last page" title="Last page"><span aria-hidden="true"></span></button>
+    </nav>
+  </div>
+</section>

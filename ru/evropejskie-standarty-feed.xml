@@ -1,5 +1,0 @@
----
-layout: null
-permalink: /ru/evropejskie-standarty/feed.xml
----
-{% include europa-rss.xml locale="ru" %}

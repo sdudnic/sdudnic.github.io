@@ -1,62 +1,113 @@
+{%- assign current_lang = page.lang | default: site.lang | default: 'mo' -%}
+{%- if current_lang == 'en' -%}
+  {%- assign catalog_url = '/en/moldovan-language/' -%}
+  {%- assign home_url = '/en/' -%}
+  {%- assign europa_url = '/en/european-standards/' -%}
+  {%- assign articles_url = '/en/articles/' -%}
+  {%- assign initiatives_url = '/en/initiatives/' -%}
+  {%- assign catalog_label = 'Language references' -%}
+  {%- assign catalog_title = 'References about the Moldovan language' -%}
+  {%- assign home_label = 'Moldova' -%}
+  {%- assign europa_label = 'Europe' -%}
+  {%- assign articles_label = 'News' -%}
+  {%- assign initiatives_label = 'Initiatives' -%}
+  {%- assign nav_aria_label = 'Primary navigation' -%}
+  {%- assign menu_label = 'Open menu' -%}
+  {%- assign language_aria_label = 'Languages' -%}
+  {%- assign language_prompt = 'Choose language' -%}
+  {%- assign account_label = 'Catalog account' -%}
+  {%- assign public_view_label = 'Viewing is open to everyone.' -%}
+  {%- assign google_label = 'Sign in with Google' -%}
+  {%- assign github_label = 'Sign in with GitHub' -%}
+  {%- assign logout_label = 'Sign out' -%}
+{%- else -%}
+  {%- assign catalog_url = '/moldoveneasca/' -%}
+  {%- assign home_url = '/' -%}
+  {%- assign europa_url = '/standarde-europene/' -%}
+  {%- assign articles_url = '/articole/' -%}
+  {%- assign initiatives_url = '/initiative/' -%}
+  {%- assign catalog_label = 'Catalogul LM' -%}
+  {%- assign catalog_title = 'Despre limba moldovenească' -%}
+  {%- assign home_label = 'Moldova' -%}
+  {%- assign europa_label = 'Europa' -%}
+  {%- assign articles_label = 'Noutăți' -%}
+  {%- assign initiatives_label = 'Inițiative' -%}
+  {%- assign nav_aria_label = 'Navigare principală' -%}
+  {%- assign menu_label = 'Deschide meniul' -%}
+  {%- assign language_aria_label = 'Limbi' -%}
+  {%- assign language_prompt = 'Alege limba' -%}
+  {%- assign account_label = 'Contul catalogului' -%}
+  {%- assign public_view_label = 'Vizualizarea este deschisă tuturor.' -%}
+  {%- assign google_label = 'Autentificare cu Google' -%}
+  {%- assign github_label = 'Autentificare cu GitHub' -%}
+  {%- assign logout_label = 'Ieșire din cont' -%}
+{%- endif -%}
+
+{%- assign mo_url = '/' -%}
+{%- assign en_url = '/en/' -%}
+{%- case page.url -%}
+  {%- when '/' -%}{%- assign en_url = '/en/' -%}
+  {%- when '/en/' -%}{%- assign mo_url = '/' -%}
+  {%- when '/moldoveneasca/' -%}{%- assign en_url = '/en/moldovan-language/' -%}
+  {%- when '/en/moldovan-language/' -%}{%- assign mo_url = '/moldoveneasca/' -%}
+  {%- when '/standarde-europene/' -%}{%- assign en_url = '/en/european-standards/' -%}
+  {%- when '/en/european-standards/' -%}{%- assign mo_url = '/standarde-europene/' -%}
+  {%- when '/articole/' -%}{%- assign en_url = '/en/articles/' -%}
+  {%- when '/en/articles/' -%}{%- assign mo_url = '/articole/' -%}
+  {%- when '/initiative/' -%}{%- assign en_url = '/en/initiatives/' -%}
+  {%- when '/en/initiatives/' -%}{%- assign mo_url = '/initiative/' -%}
+  {%- when '/drept-electoral/' -%}{%- assign en_url = '/en/electoral-rights/' -%}
+  {%- when '/en/electoral-rights/' -%}{%- assign mo_url = '/drept-electoral/' -%}
+  {%- when '/referinte-resurse/' -%}{%- assign en_url = '/en/references-resources/' -%}
+  {%- when '/en/references-resources/' -%}{%- assign mo_url = '/referinte-resurse/' -%}
+  {%- when '/despre/' -%}{%- assign en_url = '/en/about/' -%}
+  {%- when '/en/about/' -%}{%- assign mo_url = '/despre/' -%}
+  {%- when '/istoria/' -%}{%- assign en_url = '/en/history/' -%}
+  {%- when '/en/history/' -%}{%- assign mo_url = '/istoria/' -%}
+  {%- when '/res-md' -%}{%- assign en_url = '/en/resources/' -%}
+  {%- when '/en/resources/' -%}{%- assign mo_url = '/res-md' -%}
+{%- endcase -%}
+
 <header class="site-header" role="banner">
   <div class="wrapper site-header__inner">
-    <a class="site-title" rel="author" href="{{ '/' | relative_url }}" aria-label="MOLDOVA">
+    <a class="site-title" rel="author" href="{{ home_url | relative_url }}" aria-label="MOLDOVA">
       <img class="site-title__crest" src="{{ '/assets/stema-moldovei.svg' | relative_url }}" alt="" width="28" height="31">
       <span>{{ site.title | escape }}</span>
     </a>
 
     <div class="site-header__tools">
-      {%- assign current_lang = page.lang | default: site.lang -%}
-      {%- if current_lang == 'en' -%}
-        {%- assign europa_url = '/en/european-standards/' -%}
-      {%- elsif current_lang == 'fr' -%}
-        {%- assign europa_url = '/fr/standards-europeens/' -%}
-      {%- elsif current_lang == 'ru' -%}
-        {%- assign europa_url = '/ru/evropejskie-standarty/' -%}
-      {%- else -%}
-        {%- assign europa_url = '/standarde-europene/' -%}
-      {%- endif -%}
-      <nav class="site-nav" aria-label="Navigare principală">
+      <nav class="site-nav" aria-label="{{ nav_aria_label }}">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon" aria-hidden="true">
             <span></span><span></span><span></span>
           </span>
-          <span class="sr-only">Deschide meniul</span>
+          <span class="sr-only">{{ menu_label }}</span>
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="{{ '/moldoveneasca/' | relative_url }}" title="Despre limba moldovenească"{% if page.url == '/moldoveneasca/' %} aria-current="page"{% endif %}>Catalogul LM</a>
-          <a class="page-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Moldova</a>
-          <a class="page-link" href="{{ europa_url | relative_url }}"{% if page.url == europa_url %} aria-current="page"{% endif %}>Europa</a>
-          {%- for path in site.header_pages -%}
-            {%- if path != 'standarde-europene.md' -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-              {%- assign nav_label = my_page.nav_title | default: my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}"{% if page.url == my_page.url %} aria-current="page"{% endif %}>{{ nav_label | escape }}</a>
-            {%- endif -%}
-            {%- endif -%}
-          {%- endfor -%}
+          <a class="page-link" href="{{ catalog_url | relative_url }}" title="{{ catalog_title }}"{% if page.url == catalog_url %} aria-current="page"{% endif %}>{{ catalog_label }}</a>
+          <a class="page-link" href="{{ home_url | relative_url }}"{% if page.url == home_url %} aria-current="page"{% endif %}>{{ home_label }}</a>
+          <a class="page-link" href="{{ europa_url | relative_url }}"{% if page.url == europa_url %} aria-current="page"{% endif %}>{{ europa_label }}</a>
+          <a class="page-link" href="{{ articles_url | relative_url }}"{% if page.url == articles_url %} aria-current="page"{% endif %}>{{ articles_label }}</a>
+          <a class="page-link" href="{{ initiatives_url | relative_url }}"{% if page.url == initiatives_url %} aria-current="page"{% endif %}>{{ initiatives_label }}</a>
         </div>
       </nav>
 
-      <nav class="language-switcher" aria-label="Limbi">
-        <span class="sr-only">Alege limba</span>
-        <a href="{{ '/' | relative_url }}" title="Moldovenească"{% if current_lang == 'mo' %} aria-current="page"{% endif %}>MO</a>
-        <a href="{{ '/en/' | relative_url }}" title="English"{% if current_lang == 'en' %} aria-current="page"{% endif %}>EN</a>
-        <a href="{{ '/fr/' | relative_url }}" title="Français"{% if current_lang == 'fr' %} aria-current="page"{% endif %}>FR</a>
-        <a href="{{ '/ru/' | relative_url }}" title="Русский"{% if current_lang == 'ru' %} aria-current="page"{% endif %}>РУ</a>
+      <nav class="language-switcher" aria-label="{{ language_aria_label }}">
+        <span class="sr-only">{{ language_prompt }}</span>
+        <a href="{{ mo_url | relative_url }}" title="Moldovenească"{% if current_lang == 'mo' %} aria-current="page"{% endif %}>MO</a>
+        <a href="{{ en_url | relative_url }}" title="English"{% if current_lang == 'en' %} aria-current="page"{% endif %}>EN</a>
       </nav>
 
-      {%- if page.url == '/moldoveneasca/' -%}
-      <div class="site-account" data-catalog-account aria-label="Contul catalogului">
-        <span class="sr-only" data-auth-message role="status">Vizualizarea este deschisă tuturor.</span>
+      {%- if page.url == '/moldoveneasca/' or page.url == '/en/moldovan-language/' -%}
+      <div class="site-account" data-catalog-account aria-label="{{ account_label }}">
+        <span class="sr-only" data-auth-message role="status">{{ public_view_label }}</span>
         <span class="site-account__user" data-auth-user hidden></span>
         <span class="site-account__role" data-role-badge hidden>viewer</span>
-        <button type="button" class="site-account__button" data-login-google aria-label="Autentificare cu Google" title="Autentificare cu Google">Google</button>
-        <button type="button" class="site-account__button" data-login-github aria-label="Autentificare cu GitHub" title="Autentificare cu GitHub">GitHub</button>
-        <button type="button" class="site-account__button site-account__button--quiet moldoveneasca-icon-button" data-logout hidden aria-label="Ieșire din cont" title="Ieșire din cont"><span aria-hidden="true">↩</span></button>
+        <button type="button" class="site-account__button" data-login-google aria-label="{{ google_label }}" title="{{ google_label }}">Google</button>
+        <button type="button" class="site-account__button" data-login-github aria-label="{{ github_label }}" title="{{ github_label }}">GitHub</button>
+        <button type="button" class="site-account__button site-account__button--quiet moldoveneasca-icon-button" data-logout hidden aria-label="{{ logout_label }}" title="{{ logout_label }}"><span aria-hidden="true">↩</span></button>
       </div>
       {%- endif -%}
     </div>

@@ -1,4 +1,4 @@
-"""Refresh the multilingual Europa news snapshot from public RSS search feeds.
+"""Refresh the Moldovan-language and English Europa news snapshot from public RSS search feeds.
 
 The site is hosted as static files, so this script runs in GitHub Actions once a
 day. It deliberately keeps the last valid snapshot when one of the language
@@ -119,29 +119,6 @@ LOCALE_SETTINGS = {
         "Moldova EU opened negotiations",
         "Moldova EU disbursed funding",
         "Moldova joined EU programme",
-    ]},
-    "fr": {"hl": "fr-FR", "gl": "FR", "ceid": "FR:fr", "queries": [
-        "Moldova UE signé",
-        "Moldova UE entrée en vigueur",
-        "Moldova UE ouvre négociations",
-        "Moldova UE versement financement",
-        "Moldova rejoint programme UE",
-        "Moldova EU signed",
-        "Moldova EU entered into force",
-        "Moldova EU opened negotiations",
-        "Moldova EU disbursed",
-        "Moldova Creative Europe rejoint",
-        "Moldova mécanisme protection civile UE",
-        "Moldova itinérance UE",
-        "Moldova plan croissance paiement UE",
-        "Moldova sanctions UE prolongées",
-    ]},
-    "ru": {"hl": "ru-RU", "gl": "MD", "ceid": "MD:ru", "queries": [
-        "Молдова ЕС подписан",
-        "Молдова ЕС вступил в силу",
-        "Молдова ЕС открыла переговоры",
-        "Молдова ЕС выплата финансирование",
-        "Молдова присоединилась программа ЕС",
     ]},
 }
 
@@ -551,8 +528,6 @@ FACT_TERMS = (
 FALLBACK_SUMMARY = {
     "mo": "Notă externă despre Moldova și apropierea de Uniunea Europeană.",
     "en": "External note about Moldova and its approach to the European Union.",
-    "fr": "Note externe sur la Moldova et son rapprochement avec l’Union européenne.",
-    "ru": "Внешняя заметка о Молдове и её сближении с Европейским союзом.",
 }
 
 CURATED_FACTS = [
@@ -564,10 +539,6 @@ CURATED_FACTS = [
         "mo_summary": "UE și Moldova au deschis negocierile pentru clusterul 6, care acoperă comerțul, relațiile externe, securitatea și apărarea.",
         "en_title": "Moldova opens negotiations on the External relations cluster",
         "en_summary": "The EU and Moldova opened negotiations on Cluster 6, covering trade, external relations, security and defence.",
-        "fr_title": "La Moldova ouvre les négociations sur le groupe Relations extérieures",
-        "fr_summary": "L’UE et la Moldova ont ouvert les négociations sur le groupe 6, consacré au commerce, aux relations extérieures, à la sécurité et à la défense.",
-        "ru_title": "Молдова открыла переговоры по кластеру Внешние отношения",
-        "ru_summary": "ЕС и Молдова открыли переговоры по шестому кластеру, охватывающему торговлю, внешние отношения, безопасность и оборону.",
     },
     {
         "date": "2026-06-22",
@@ -577,10 +548,6 @@ CURATED_FACTS = [
         "mo_summary": "Comisia Europeană consemnează deblocarea a aproximativ 504 milioane de euro din facilitatea UE pentru Moldova.",
         "en_title": "Moldova has unlocked approximately €504 million under the EU Growth Plan",
         "en_summary": "The European Commission records that Moldova has unlocked approximately €504 million under the EU facility.",
-        "fr_title": "La Moldova a débloqué environ 504 millions d’euros du plan de croissance de l’UE",
-        "fr_summary": "La Commission européenne indique que la Moldova a débloqué environ 504 millions d’euros au titre du dispositif de l’UE.",
-        "ru_title": "Молдова разблокировала около 504 млн евро по Плану роста ЕС",
-        "ru_summary": "Еврокомиссия сообщает, что Молдова разблокировала около 504 млн евро в рамках механизма ЕС.",
     },
     {
         "date": "2026-06-15",
@@ -590,10 +557,6 @@ CURATED_FACTS = [
         "mo_summary": "UE și Moldova au deschis primul cluster al negocierilor de aderare, dedicat fundamentelor procesului.",
         "en_title": "Moldova opens the first accession negotiation cluster, Fundamentals",
         "en_summary": "The EU and Moldova opened the first accession negotiation cluster, covering the fundamentals of the process.",
-        "fr_title": "La Moldova ouvre le premier groupe de négociations, Fondamentaux",
-        "fr_summary": "L’UE et la Moldova ont ouvert le premier groupe des négociations d’adhésion, consacré aux fondamentaux du processus.",
-        "ru_title": "Молдова открыла первый переговорный кластер Основы",
-        "ru_summary": "ЕС и Молдова открыли первый кластер переговоров о вступлении, посвящённый основам процесса.",
     },
     {
         "date": "2026-04-21",
@@ -603,10 +566,6 @@ CURATED_FACTS = [
         "mo_summary": "Consiliul UE a prelungit până la 29 aprilie 2027 măsurile restrictive împotriva acțiunilor de destabilizare a Moldovei.",
         "en_title": "The EU extended restrictive measures concerning Moldova until April 2027",
         "en_summary": "The Council of the EU extended restrictive measures concerning destabilising actions against Moldova until 29 April 2027.",
-        "fr_title": "L’UE a prolongé jusqu’en avril 2027 les mesures restrictives concernant la Moldova",
-        "fr_summary": "Le Conseil de l’UE a prolongé jusqu’au 29 avril 2027 les mesures restrictives visant les actions déstabilisant la Moldova.",
-        "ru_title": "ЕС продлил до апреля 2027 года ограничительные меры в отношении Молдовы",
-        "ru_summary": "Совет ЕС продлил до 29 апреля 2027 года ограничительные меры против действий, дестабилизирующих Молдову.",
     },
     {
         "date": "2026-03-17",
@@ -616,10 +575,6 @@ CURATED_FACTS = [
         "mo_summary": "Comisia Europeană a efectuat o plată suplimentară de 189 de milioane de euro după evaluarea rezultatelor de reformă.",
         "en_title": "The European Commission paid another €189 million to Moldova",
         "en_summary": "The European Commission made an additional €189 million payment after assessing completed reform results.",
-        "fr_title": "La Commission européenne a versé 189 millions d’euros supplémentaires à la Moldova",
-        "fr_summary": "La Commission européenne a effectué un versement supplémentaire de 189 millions d’euros après l’évaluation de résultats de réforme réalisés.",
-        "ru_title": "Еврокомиссия выплатила Молдове ещё 189 млн евро",
-        "ru_summary": "Еврокомиссия произвела дополнительную выплату в размере 189 млн евро после оценки выполненных результатов реформ.",
     },
     {
         "date": "2026-01-05",
@@ -629,10 +584,6 @@ CURATED_FACTS = [
         "mo_summary": "De la 1 ianuarie 2026, regimul european de roaming la tarife interne se aplică între Moldova și statele UE.",
         "en_title": "Roam Like at Home is fully operational in Moldova",
         "en_summary": "From 1 January 2026, the EU roaming regime at domestic prices applies between Moldova and EU member states.",
-        "fr_title": "Le régime Roam Like at Home est pleinement opérationnel en Moldova",
-        "fr_summary": "Depuis le 1er janvier 2026, le régime européen d’itinérance aux tarifs nationaux s’applique entre la Moldova et les États membres de l’UE.",
-        "ru_title": "Режим Roam Like at Home полностью действует в Молдове",
-        "ru_summary": "С 1 января 2026 года европейский роуминг по внутренним тарифам действует между Молдовой и государствами ЕС.",
     },
     {
         "date": "2026-01-05",
@@ -642,10 +593,6 @@ CURATED_FACTS = [
         "mo_summary": "Din 1 ianuarie 2026, organizațiile culturale din Moldova participă la programul UE în condiții egale cu partenerii europeni.",
         "en_title": "Moldova officially joined the Creative Europe programme",
         "en_summary": "From 1 January 2026, Moldovan cultural organisations participate in the EU programme on equal terms with European partners.",
-        "fr_title": "La Moldova a officiellement rejoint le programme Europe créative",
-        "fr_summary": "Depuis le 1er janvier 2026, les organisations culturelles moldaves participent au programme de l’UE sur un pied d’égalité avec leurs partenaires européens.",
-        "ru_title": "Молдова официально присоединилась к программе Креативная Европа",
-        "ru_summary": "С 1 января 2026 года молдавские культурные организации участвуют в программе ЕС на равных условиях с европейскими партнёрами.",
     },
     {
         "date": "2025-11-04",
@@ -655,10 +602,6 @@ CURATED_FACTS = [
         "mo_summary": "Comisia Europeană a consemnat finalizarea screeningului pentru Republica Moldova.",
         "en_title": "Moldova completed the screening process for EU accession",
         "en_summary": "The European Commission recorded that Moldova completed the screening process for accession.",
-        "fr_title": "La Moldova a achevé l’examen analytique en vue de l’adhésion à l’UE",
-        "fr_summary": "La Commission européenne a constaté que la Moldova a achevé l’examen analytique du processus d’adhésion.",
-        "ru_title": "Молдова завершила аналитический обзор для вступления в ЕС",
-        "ru_summary": "Еврокомиссия зафиксировала завершение Молдовой аналитического обзора процесса вступления.",
     },
     {
         "date": "2025-10-01",
@@ -668,10 +611,6 @@ CURATED_FACTS = [
         "mo_summary": "Zona de liber schimb aprofundată și cuprinzătoare revizuită a intrat în vigoare în octombrie 2025.",
         "en_title": "The revised EU–Moldova trade agreement entered into force",
         "en_summary": "The revised Deep and Comprehensive Free Trade Area entered into force in October 2025.",
-        "fr_title": "L’accord commercial révisé entre l’UE et la Moldova est entré en vigueur",
-        "fr_summary": "La zone de libre-échange approfondie et complète révisée est entrée en vigueur en octobre 2025.",
-        "ru_title": "Пересмотренное торговое соглашение ЕС–Молдова вступило в силу",
-        "ru_summary": "Пересмотренная углублённая и всеобъемлющая зона свободной торговли вступила в силу в октябре 2025 года.",
     },
     {
         "date": "2025-10-16",
@@ -681,10 +620,6 @@ CURATED_FACTS = [
         "mo_summary": "Comisia Europeană consemnează intrarea oficială a Moldovei în sistemele de plăți SEPA.",
         "en_title": "Moldova officially joined the SEPA payment schemes",
         "en_summary": "The European Commission records Moldova’s official entry into the SEPA payment schemes.",
-        "fr_title": "La Moldova a officiellement rejoint les systèmes de paiement SEPA",
-        "fr_summary": "La Commission européenne constate l’entrée officielle de la Moldova dans les systèmes de paiement SEPA.",
-        "ru_title": "Молдова официально присоединилась к платёжным схемам SEPA",
-        "ru_summary": "Еврокомиссия зафиксировала официальное присоединение Молдовы к платёжным схемам SEPA.",
     },
 ]
 
@@ -923,7 +858,7 @@ def write_snapshot(feeds: dict[str, list[dict[str, str]]]) -> None:
         "# Generated by scripts/update_europa_feed.py; do not edit by hand.",
         f"updated_at: {yaml_string(datetime.now(timezone.utc).isoformat())}",
     ]
-    for locale in ("mo", "en", "fr", "ru"):
+    for locale in ("mo", "en"):
         lines.append(f"{locale}:")
         for item in feeds[locale]:
             lines.append(f"  - date: {yaml_string(item['date'])}")
@@ -937,7 +872,7 @@ def write_snapshot(feeds: dict[str, list[dict[str, str]]]) -> None:
 
 def main() -> int:
     feeds: dict[str, list[dict[str, str]]] = {}
-    for locale in ("mo", "en", "fr", "ru"):
+    for locale in ("mo", "en"):
         feeds[locale] = collect(locale)
         print(f"[{locale}] collected {len(feeds[locale])} relevant notes")
         if len(feeds[locale]) < MIN_ITEMS:

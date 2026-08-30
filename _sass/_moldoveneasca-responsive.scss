@@ -1,4 +1,6 @@
 .moldoveneasca-catalog__status {
+  align-items: flex-start;
+  flex-direction: column;
   margin-top: 0;
   padding: 0.45rem 0;
 }
@@ -64,7 +66,9 @@ body.moldoveneasca-page * {
 
 // Minimal catalogue controls: one search field and one compact century filter.
 .moldoveneasca-catalog__toolbar {
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
   gap: 0.4rem;
   margin: 0.35rem 0 0.25rem;
   padding: 0;
@@ -72,12 +76,14 @@ body.moldoveneasca-page * {
 }
 
 .moldoveneasca-search {
+  display: block;
+  flex: 1 1 100%;
   min-width: 0;
 }
 
 .moldoveneasca-century-filter {
   display: block;
-  flex: 0 0 10rem;
+  flex: 1 1 auto;
 }
 
 .moldoveneasca-search input,
@@ -113,14 +119,28 @@ body.moldoveneasca-page * {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  overflow: visible;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
 }
 
-.moldoveneasca-grid-frame > .moldoveneasca-table,
 .moldoveneasca-grid-frame > .moldoveneasca-catalog__status {
   width: 100% !important;
   min-width: 0 !important;
   box-sizing: border-box;
+}
+
+// The general content stylesheet makes tables block-level scroll regions.
+// Once the catalogue wraps a table in its own frame, keep the table's native
+// layout and let the frame, rather than the table, own horizontal scrolling.
+.moldoveneasca-grid-frame > .moldoveneasca-table {
+  width: 58rem !important;
+  min-width: 58rem !important;
+  max-width: none !important;
+  display: table;
+  overflow: visible;
+  table-layout: fixed;
+  white-space: normal;
 }
 
 .moldoveneasca-grid-frame > .moldoveneasca-table {
@@ -186,6 +206,7 @@ body.moldoveneasca-page * {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 621px) {
 .post-content .moldoveneasca-table th.moldoveneasca-table__selection-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__selection-cell {
   box-sizing: border-box;
@@ -200,8 +221,8 @@ body.moldoveneasca-page * {
 
 .post-content .moldoveneasca-table th.moldoveneasca-table__year-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__year {
-  width: 1% !important;
-  min-width: 4.5rem;
+  width: 8% !important;
+  min-width: 0;
   white-space: nowrap;
 }
 
@@ -213,8 +234,8 @@ body.moldoveneasca-page * {
 
 .post-content .moldoveneasca-table th.moldoveneasca-table__language-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__language {
-  width: 1% !important;
-  min-width: 4.5rem;
+  width: 10% !important;
+  min-width: 0;
   text-align: center;
   white-space: nowrap;
 }
@@ -224,22 +245,111 @@ body.moldoveneasca-page * {
 
 .post-content .moldoveneasca-table th.moldoveneasca-table__source-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__source {
-  width: 1% !important;
-  min-width: 4.5rem;
+  width: 8% !important;
+  min-width: 0;
   text-align: center;
   white-space: nowrap;
 }
 
 .post-content .moldoveneasca-table th.moldoveneasca-table__actions-heading,
 .post-content .moldoveneasca-table td.moldoveneasca-table__actions-cell {
-  width: 1% !important;
+  box-sizing: border-box;
+  width: 8% !important;
   min-width: 3rem;
+  vertical-align: middle;
 }
 
 .post-content .moldoveneasca-table {
   width: 100% !important;
   min-width: 0 !important;
-  table-layout: auto;
+  table-layout: fixed;
+}
+}
+
+// Mobile is the default: the grid keeps readable column widths and scrolls
+// inside its frame instead of widening the document.
+.moldoveneasca-grid-frame > .moldoveneasca-table th,
+.moldoveneasca-grid-frame > .moldoveneasca-table td {
+  box-sizing: border-box;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__selection-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__selection-cell {
+  width: 2.75rem !important;
+  min-width: 2.75rem !important;
+  max-width: 2.75rem !important;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__year-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
+  width: 4.5rem !important;
+  min-width: 4.5rem !important;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__title-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__title {
+  width: 12rem !important;
+  min-width: 12rem !important;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__quote-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__quote {
+  width: 15rem !important;
+  min-width: 15rem !important;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__language-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__language {
+  width: 4.5rem !important;
+  min-width: 4.5rem !important;
+  text-align: center;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__author-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__author {
+  width: 6.5rem !important;
+  min-width: 6.5rem !important;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__source-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__source {
+  width: 4.5rem !important;
+  min-width: 4.5rem !important;
+  text-align: center;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__actions-heading,
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__actions-cell {
+  width: 3rem !important;
+  min-width: 3rem !important;
+}
+
+.moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
+  white-space: nowrap;
+}
+
+.post-content .moldoveneasca-table th.moldoveneasca-table__actions-heading[hidden],
+.post-content .moldoveneasca-table td.moldoveneasca-table__actions-cell[hidden] {
+  display: none !important;
+}
+
+.moldoveneasca-table__actions {
+  min-height: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.moldoveneasca-table__actions .moldoveneasca-icon-button {
+  flex: 0 0 2rem;
+}
+
+// Pagination controls sit at the frame edge. Their custom tooltip pseudo-
+// elements otherwise add invisible width to the page; title and aria-label
+// still provide the same description for these controls.
+.moldoveneasca-pagination .moldoveneasca-icon-button::after {
+  display: none;
 }
 
 .post-content .moldoveneasca-table th.moldoveneasca-table__language-heading,
@@ -321,95 +431,37 @@ body.moldoveneasca-page * {
   font-weight: inherit;
 }
 
-@media screen and (max-width: 620px) {
+// Desktop expands the controls and table into the available content width.
+// The mobile defaults above remain the source of truth for narrow screens.
+@media screen and (min-width: 621px) {
   .moldoveneasca-catalog__toolbar {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .moldoveneasca-search {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
   }
 
   .moldoveneasca-century-filter {
-    flex: 1 1 auto;
+    flex: 0 0 10rem;
   }
-}
 
-// Keep the catalogue as a plain table on narrow screens. The table may scroll
-// horizontally, while its columns stay wide enough to keep text readable.
-@media screen and (max-width: 620px) {
   .moldoveneasca-grid-frame {
-    overflow-x: auto;
-    overflow-y: visible;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
   }
 
   .moldoveneasca-grid-frame > .moldoveneasca-table {
-    width: 58rem !important;
-    min-width: 58rem !important;
+    width: 100% !important;
+    min-width: 0 !important;
     max-width: none !important;
     table-layout: fixed;
   }
+}
 
-  .moldoveneasca-grid-frame > .moldoveneasca-table th,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td {
-    box-sizing: border-box;
-    overflow-wrap: normal;
-    word-break: normal;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__selection-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__selection-cell {
-    width: 2.75rem !important;
-    min-width: 2.75rem !important;
-    max-width: 2.75rem !important;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__year-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
-    width: 4.5rem !important;
-    min-width: 4.5rem !important;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__title-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__title {
-    width: 12rem !important;
-    min-width: 12rem !important;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__quote-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__quote {
-    width: 15rem !important;
-    min-width: 15rem !important;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__language-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__language {
-    width: 4.5rem !important;
-    min-width: 4.5rem !important;
-    text-align: center;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__author-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__author {
-    width: 6.5rem !important;
-    min-width: 6.5rem !important;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__source-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__source {
-    width: 4.5rem !important;
-    min-width: 4.5rem !important;
-    text-align: center;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table th.moldoveneasca-table__actions-heading,
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__actions-cell {
-    width: 3rem !important;
-    min-width: 3rem !important;
-  }
-
-  .moldoveneasca-grid-frame > .moldoveneasca-table td.moldoveneasca-table__year {
-    white-space: nowrap;
+@media screen and (min-width: 761px) {
+  .moldoveneasca-catalog__status {
+    align-items: center;
+    flex-direction: row;
   }
 }

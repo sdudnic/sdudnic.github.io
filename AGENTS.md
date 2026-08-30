@@ -64,6 +64,25 @@ trecerea la rând nou înainte de a decide că o referință lipsește. Rezultat
 obținute numai prin fragmentele `molda`, `moldav` sau `moldov` se verifică
 manual în pagina originală, deoarece pot produce rezultate nerelevante.
 
+Pentru acoperire multilingvă, matricea minimă de descoperire include și
+echivalentele termenului „limbă” din limbile în care se găsesc frecvent surse:
+`Sprache` / `moldauische Sprache` și `moldavische Sprache` (germană),
+`nyelv` / `moldvai nyelv` și `moldovai nyelv` (maghiară), `język mołdawski`
+și `mołdawskiego języka` (polonă), `γλώσσα` / `μολδαβική γλώσσα` și
+`μολδαβικῇ γλώσσῃ` (greacă), `lingua moldava` și `lingua moldavica`
+(italiană și latină), `мова` / `молдовська мова`, `язык` / `молдавский
+язык` și echivalentele sud-slave, `Moldavca` / `Moldova dili` (turcă),
+`Moldovan language` și `Moldavian language` (engleză), precum și formele
+chinezești simplificate și tradiționale `摩尔多瓦语`, `摩尔多瓦的语言`,
+`摩爾多瓦語`, `摩爾多瓦的語言`, formele japoneze `モルドバ語`,
+`モルドバの言語`, `モルダヴィア語` și formele arabe
+`اللغة المولدوفية`, `لغة مولدوفية`, `اللغة المولدافية`, `لغة المولدافيين`.
+Se încearcă atât expresia completă, cât și combinația dintre termenul local
+pentru „limbă” și fragmentele `molda`, `moldav`, `moldov` ori transliterările
+lor. Această matrice este pentru descoperire, nu pentru validare: numai pagina
+primară verificată poate confirma o referință, iar o traducere modernă din
+catalog nu înlocuiește glotonimul din sursa istorică.
+
 ## Gestiunea referințelor
 
 Pentru orice operație asupra catalogului referințelor despre limba

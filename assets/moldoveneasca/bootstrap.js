@@ -15,6 +15,8 @@
   };
   const authUser = document.querySelector('[data-auth-user]');
   const roleBadge = document.querySelector('[data-role-badge]');
+  const authProfile = document.querySelector('[data-auth-profile]');
+  const authProviders = document.querySelector('[data-auth-providers]');
   const googleLoginButton = document.querySelector('[data-login-google]');
   const githubLoginButton = document.querySelector('[data-login-github]');
   const loginButtons = [googleLoginButton, githubLoginButton].filter(Boolean);

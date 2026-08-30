@@ -121,6 +121,8 @@
     currentUser = user || null;
     if (!currentUser) {
       setRole('viewer');
+      if (authProfile) authProfile.hidden = true;
+      if (authProviders) authProviders.hidden = false;
       if (authUser) {
         authUser.textContent = '';
         authUser.hidden = true;
@@ -143,6 +145,8 @@
       .maybeSingle();
     if (error) throw error;
 
+    if (authProfile) authProfile.hidden = false;
+    if (authProviders) authProviders.hidden = true;
     setRole(profile?.role || 'viewer');
     loginButtons.forEach((button) => { button.hidden = true; });
     if (logoutButton) logoutButton.hidden = false;

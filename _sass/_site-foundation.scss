@@ -83,7 +83,7 @@ a:hover {
 .site-header__tools {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 0.85rem;
   margin-left: auto;
 }
 
@@ -114,26 +114,101 @@ a:hover {
 }
 
 .language-switcher {
-  display: flex;
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.language-switcher__details {
+  display: inline-block;
+}
+
+.language-switcher__toggle {
+  display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-}
-
-.language-switcher a,
-.language-switcher a:visited {
-  padding: 0.25rem 0.3rem;
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-}
-
-.language-switcher a:hover,
-.language-switcher a[aria-current="page"] {
+  min-height: 2rem;
+  padding: 0.25rem 0.35rem;
+  border: 0;
+  background: transparent;
   color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.language-switcher__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.language-switcher__toggle::marker {
+  display: none;
+}
+
+.language-switcher__toggle:hover,
+.language-switcher__details[open] .language-switcher__toggle {
+  color: var(--muted);
+}
+
+.language-switcher__flag {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.language-switcher__label {
+  white-space: nowrap;
+}
+
+.language-switcher__chevron {
+  width: 0.36rem;
+  height: 0.36rem;
+  margin: -0.15rem 0 0 0.1rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 120ms ease;
+}
+
+.language-switcher__details[open] .language-switcher__chevron {
+  margin-top: 0.15rem;
+  transform: rotate(225deg);
+}
+
+.language-switcher__menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 30;
+  min-width: 10.5rem;
+  padding: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.language-switcher__menu a,
+.language-switcher__menu a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 4px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.language-switcher__menu a:hover,
+.language-switcher__menu a:focus-visible {
+  background: var(--subtle);
+  color: var(--muted);
 }
 
 .site-nav .page-link {

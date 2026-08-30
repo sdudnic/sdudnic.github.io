@@ -75,7 +75,6 @@
     configureIconButton(unverifiedLastPageButton, 'Ultima pagină', 'last');
     configureIconButton(editDetailButton, 'Modifică referința', 'edit');
     configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
-    configureIconButton(logoutButton, 'Ieșire din cont', 'logout');
     configureIconButton(imagePickButton, 'Încarcă imaginea paginii citate', 'image');
     configureIconButton(imageUndoButton, 'Anulează ultima subliniere', 'undo');
     configureIconButton(imageClearButton, 'Elimină sublinierile adăugate', 'cancel');

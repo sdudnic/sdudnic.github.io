@@ -24,7 +24,7 @@
     });
 
     const selectedCount = selectedReferenceIds.size;
-    if (selectionToolbar) selectionToolbar.hidden = isCatalogLoading || !isAdmin;
+    if (selectionToolbar) selectionToolbar.hidden = isCatalogLoading || !isAdmin || selectedCount === 0;
     if (selectionCount) selectionCount.textContent = `Selectate: ${selectedCount}`;
     if (selectionDeleteButton) selectionDeleteButton.disabled = !isAdmin || selectedCount === 0;
 

@@ -21,7 +21,7 @@
   {%- assign google_label = 'Sign in with Google' -%}
   {%- assign github_label = 'Sign in with GitHub' -%}
   {%- assign logout_label = 'Sign out' -%}
-  {%- assign current_language_flag = '🇬🇧' -%}
+  {%- assign current_language_flag = '/assets/flags/gb.svg' -%}
   {%- assign current_language_label = 'English' -%}
 {%- else -%}
   {%- assign catalog_url = '/moldoveneasca/' -%}
@@ -45,8 +45,8 @@
   {%- assign google_label = 'Autentificare cu Google' -%}
   {%- assign github_label = 'Autentificare cu GitHub' -%}
   {%- assign logout_label = 'Ieșire din cont' -%}
-  {%- assign current_language_flag = '🇲🇩' -%}
-  {%- assign current_language_label = 'moldovenească' -%}
+  {%- assign current_language_flag = '/assets/flags/md.svg' -%}
+  {%- assign current_language_label = 'Moldovenească' -%}
 {%- endif -%}
 
 {%- assign mo_url = '/' -%}
@@ -76,12 +76,12 @@
 
 {%- if current_lang == 'en' -%}
   {%- assign alternate_language_url = mo_url -%}
-  {%- assign alternate_language_flag = '🇲🇩' -%}
-  {%- assign alternate_language_label = 'moldovenească' -%}
+  {%- assign alternate_language_flag = '/assets/flags/md.svg' -%}
+  {%- assign alternate_language_label = 'Moldovenească' -%}
   {%- assign alternate_language_title = 'Open the Moldovan-language version' -%}
 {%- else -%}
   {%- assign alternate_language_url = en_url -%}
-  {%- assign alternate_language_flag = '🇬🇧' -%}
+  {%- assign alternate_language_flag = '/assets/flags/gb.svg' -%}
   {%- assign alternate_language_label = 'English' -%}
   {%- assign alternate_language_title = 'Open the English version' -%}
 {%- endif -%}
@@ -114,13 +114,13 @@
       <nav class="language-switcher" aria-label="{{ language_aria_label }}">
         <details class="language-switcher__details">
           <summary class="language-switcher__toggle" aria-label="{{ language_prompt }}: {{ current_language_label }}" title="{{ language_prompt }}">
-            <span class="language-switcher__flag" aria-hidden="true">{{ current_language_flag }}</span>
+            <img class="language-switcher__flag" src="{{ current_language_flag | relative_url }}" alt="" width="24" height="12" aria-hidden="true">
             <span class="language-switcher__label">{{ current_language_label }}</span>
             <span class="language-switcher__chevron" aria-hidden="true"></span>
           </summary>
           <div class="language-switcher__menu">
             <a href="{{ alternate_language_url | relative_url }}" title="{{ alternate_language_title }}">
-              <span class="language-switcher__flag" aria-hidden="true">{{ alternate_language_flag }}</span>
+              <img class="language-switcher__flag" src="{{ alternate_language_flag | relative_url }}" alt="" width="24" height="12" aria-hidden="true">
               <span>{{ alternate_language_label }}</span>
             </a>
           </div>

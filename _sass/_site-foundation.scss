@@ -154,9 +154,13 @@ a:hover {
 }
 
 .language-switcher__flag {
+  display: block;
   flex: 0 0 auto;
-  font-size: 1rem;
-  line-height: 1;
+  width: 1.5rem;
+  height: 0.75rem;
+  border: 1px solid rgba(23, 23, 23, 0.16);
+  border-radius: 1px;
+  object-fit: cover;
 }
 
 .language-switcher__label {

@@ -42,3 +42,34 @@
   if (mediaQuery.addEventListener) mediaQuery.addEventListener('change', closeOnWideScreen);
   else mediaQuery.addListener(closeOnWideScreen);
 })();
+
+(() => {
+  const languageDetails = [...document.querySelectorAll('.language-switcher__details')];
+
+  if (!languageDetails.length) return;
+
+  const closeLanguageSwitchers = (except = null) => {
+    languageDetails.forEach((details) => {
+      if (details !== except) details.removeAttribute('open');
+    });
+  };
+
+  languageDetails.forEach((details) => {
+    details.addEventListener('toggle', () => {
+      if (details.open) closeLanguageSwitchers(details);
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    languageDetails.forEach((details) => {
+      const switcher = details.closest('.language-switcher');
+      if (details.open && switcher && !switcher.contains(event.target)) {
+        details.removeAttribute('open');
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeLanguageSwitchers();
+  });
+})();

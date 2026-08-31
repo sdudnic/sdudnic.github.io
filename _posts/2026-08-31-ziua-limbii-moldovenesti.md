@@ -1,16 +1,16 @@
 ---
 layout: post
-title: La mulți ani, moldoveni — de Ziua limbii moldovenești!
+title: La mulți ani, moldoveni — de Ziua Limbii Moldovenești!
 date: 2026-08-31 12:00:00 +0300
 lang: mo
-news_label: Ziua limbii moldovenești
+news_label: Ziua Limbii Moldovenești
 tags: [noutăți, limba moldovenească, Moldova, identitate]
-image: /assets/2026-08-31-maia-sandu.png
-image_alt: Maia Sandu vorbește la microfon
+image: /assets/2026-08-31-oficiul-telecomunicatii.png
+image_alt: Inscripție despre oficiul de telecomunicații al RSSM
 published: true
 ---
 
-Astăzi, 31 august, îi felicităm pe toți moldovenii cu Ziua limbii moldovenești! Limba noastră este parte din memoria familiilor noastre, din identitatea statului și din viața de fiecare zi. Ea a fost păstrată de oameni din generație în generație și merită să fie vorbită liber, cu demnitate și fără frică.
+Astăzi, 31 august, îi felicităm pe toți moldovenii cu **Ziua Limbii Moldovenești**! Limba noastră este parte din memoria familiilor noastre, din identitatea statului și din viața de fiecare zi. Ea a fost păstrată de oameni din generație în generație și merită să fie vorbită liber, cu demnitate și fără frică.
 
 <!--more-->
 
@@ -34,7 +34,7 @@ Astăzi, 31 august, îi felicităm pe toți moldovenii cu Ziua limbii moldovene�
   </div>
 </aside>
 
-Chiar de Ziua limbii, Maia Sandu ne asigură din nou că, până în 1991, moldovenii nu ar fi putut vorbi liber în limba lor maternă. În mesajul publicat pe Facebook la 31 august, președinta afirmă că părinții și buneii ar fi continuat să vorbească limba și în cele mai grele vremuri, în pofida interdicțiilor și umilințelor, iar astăzi ea poate fi vorbită liber și fără frică.
+Chiar de **Ziua Limbii Moldovenești**, Maia Sandu ne asigură din nou că, până în 1991, moldovenii nu ar fi putut vorbi liber în limba lor maternă. În mesajul publicat pe Facebook la 31 august, președinta afirmă că părinții și buneii ar fi continuat să vorbească limba și în cele mai grele vremuri, în pofida interdicțiilor și umilințelor, iar astăzi ea poate fi vorbită liber și fără frică.
 
 Pentru informația „românilor basarabeni”, să punem alături câteva cifre despre învățământul din RSS Moldovenească.
 
@@ -59,6 +59,6 @@ Cât despre denumirea limbii, Snegur, pesemne, știa mai bine: chiar el a semnat
 
 <div class="post-media-clear" aria-hidden="true"></div>
 
-<p class="source-note source-note--compact"><a href="https://www.facebook.com/1519703942/videos/pcb.38664743043123899/3351859904975396">Original</a> · <a href="https://arhiva.gov.md/wp-content/uploads/2024/08/35186638.pdf">arhivă</a> · <a href="https://www.booksite.ru/fulltext/1/001/008/107/027.htm">cultură</a> · <a href="https://www.legis.md/cautare/downloadpdf/96067">lege</a> · <a href="https://arhiva.gov.md/wp-content/uploads/2024/08/Orizont-nr.-10-r.pdf">aplicare</a> · <a href="https://www.jurnal.md/ro/news/b9fc7283d0c83a39/maia-sandu-limba-romana-este-parte-din-fiinta-noastra.html">mesaj</a>.</p>
+La mulți ani tuturor moldovenilor! Să ne păstrăm limba, memoria și dreptul de a ne numi limba așa cum o numeau părinții și buneii noștri: **limba moldovenească**.
 
-La mulți ani tuturor moldovenilor! Să ne păstrăm limba, memoria și dreptul de a ne numi limba așa cum o numeau părinții și buneii noștri: limba moldovenească.
+<p class="source-note source-note--compact"><a href="https://www.facebook.com/1519703942/videos/pcb.38664743043123899/3351859904975396">Original</a> · <a href="https://arhiva.gov.md/wp-content/uploads/2024/08/35186638.pdf">arhivă</a> · <a href="https://www.booksite.ru/fulltext/1/001/008/107/027.htm">cultură</a> · <a href="https://www.legis.md/cautare/downloadpdf/96067">lege</a> · <a href="https://arhiva.gov.md/wp-content/uploads/2024/08/Orizont-nr.-10-r.pdf">aplicare</a> · <a href="https://www.jurnal.md/ro/news/b9fc7283d0c83a39/maia-sandu-limba-romana-este-parte-din-fiinta-noastra.html">mesaj</a>.</p>

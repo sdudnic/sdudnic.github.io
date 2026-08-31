@@ -14,44 +14,46 @@ Astăzi, 31 august, îi felicităm pe toți moldovenii cu Ziua limbii moldovene�
 
 <!--more-->
 
-Fotografiile documentare de mai jos sunt reproduse din materialul indicat de cititor:
+Chiar de Ziua limbii, Maia Sandu ne asigură din nou că, până în 1991, moldovenii nu ar fi putut vorbi liber în limba lor maternă. În mesajul publicat pe Facebook la 31 august, președinta afirmă că părinții și buneii ar fi continuat să vorbească limba și în cele mai grele vremuri, în pofida interdicțiilor și umilințelor, iar astăzi ea poate fi vorbită liber și fără frică.
 
-<div class="post-gallery" aria-label="Fotografii documentare">
+Pentru informația „românilor basarabeni”, să punem alături câteva cifre despre învățământul din RSS Moldovenească.
+
+La începutul anului de studii 1989–1990, documentele arhivistice indică **1 532 de școli** și **703 750 de elevi**:
+
+- **989 de școli** aveau limba moldovenească de instruire — 64,5% din total;
+- **415** aveau limba rusă de instruire — 27%;
+- **128** erau școli mixte, moldovenești-rusești — 8,4%;
+- în limba moldovenească învățau, în total, **422 484 de elevi** — 60% din numărul elevilor.
+
+Școlile mixte aveau și clase moldovenești. Împreună cu cele 989 de școli moldovenești, rezultă **1 117 din 1 532 de școli**, adică aproximativ **72,9%**. Așa se explică intervalul de 70–80%; cifra de 64,5% se referă strict la școlile exclusiv moldovenești. În localitățile rurale, materialul citat indică o pondere de până la **90%** a școlilor moldovenești.
+
+Ca termen de comparație, datele Biroului Național de Statistică pentru 2025/26 indică **1 173 de instituții** și aproximativ **334,6 mii de elevi**, iar 81,2% dintre elevi studiază în limba de stat. Procentele nu au același numitor — atunci erau numărate școlile, acum sunt numărați elevii — însă nici aceste date nu susțin povestea unei limbi absente din școală. Rețeaua de astăzi are cu **359 de instituții mai puține** decât în 1989–1990.
+
+Și încă un detaliu care merită ținut minte: legea RSS Moldovenești nr. 3462 din 31 august 1989 purta titlul „Cu privire la revenirea limbii moldovenești la grafia latină”. Articolul întâi prevedea: „A trece scrisul limbii moldovenești la grafia latină”. Hotărârea de aplicare prevedea trecerea la grafia latină a tuturor verigilor învățământului public, pregătirea profesorilor și tipărirea manualelor și materialelor didactice în limba moldovenească.
+
+Asemenea documente arată o limbă prezentă în școală și în instituții, aflată într-o reformă publică a scrisului și a educației — nu confirmă o interdicție generală de a o vorbi. Cât despre denumirea limbii, Snegur, pesemne, știa mai bine: chiar el a semnat legea din 31 august 1989.
+
+<div class="post-gallery" aria-label="Imagini documentare">
   <figure>
     <img src="{{ '/assets/2026-08-31-maia-sandu.png' | relative_url }}" alt="Maia Sandu vorbește la microfon">
-    <figcaption>Maia Sandu la microfon.</figcaption>
+    <figcaption>Maia Sandu</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/2026-08-31-oficiul-telecomunicatii.png' | relative_url }}" alt="Inscripție despre oficiul de telecomunicații al RSSM" loading="lazy">
-    <figcaption>Inscripție bilingvă despre oficiul de telecomunicații al RSSM.</figcaption>
+    <figcaption>Oficiul de telecomunicații al RSSM</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/2026-08-31-alexie-mateevici.png' | relative_url }}" alt="Placă memorială dedicată scriitorului Alexie Mateevici" loading="lazy">
-    <figcaption>Placă memorială dedicată scriitorului Alexie Mateevici.</figcaption>
+    <figcaption>Alexie Mateevici</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/2026-08-31-literatura-moldovei.png' | relative_url }}" alt="Enciclopedia Literatura și arta Moldovei" loading="lazy">
-    <figcaption>Enciclopedia „Literatura și arta Moldovei”.</figcaption>
+    <figcaption>„Literatura și arta Moldovei”</figcaption>
   </figure>
 </div>
 
-<p class="source-note">Sursa fotografiilor: <a href="https://www.facebook.com/1519703942/videos/pcb.38664743043123899/3351859904975396">postarea indicată pe Facebook</a>.</p>
+<p class="source-note source-note--compact">Foto: <a href="https://www.facebook.com/1519703942/videos/pcb.38664743043123899/3351859904975396">sursa originală</a>.</p>
 
-În această zi, merită să ne amintim și de afirmația repetată de Maia Sandu — că până în 1991 moldovenilor li se interzicea să vorbească în limba lor maternă.
-
-În traducere moldovenească, declarația este redată astfel:
-
-> „Părinții noștri și buneii împreună cu străbuneii continuau să vorbească în ea chiar și în cele mai grele vremuri, în pofida interdicțiilor și a umilirilor. Datorită lor, limba română s-a păstrat pe această palmă de pământ”, a declarat Sandu, menționând că numai astăzi se poate vorbi liber și fără frică.
-
-Pentru știrea românilor basarabeni, să amintim câteva cifre despre învățământul din RSS Moldovenească:
-
-- ponderea școlilor cu predare în limba moldovenească constituia 70–80%;
-- în anul de studii 1989–1990, în republică funcționau **1 532 de școli**, în care învățau peste **703 mii de elevi**;
-- dintre ele, **989 erau moldovenești**, 415 — rusești, iar **128 — mixte, moldovenești-rusești**;
-- în localitățile rurale, ponderea școlilor moldovenești ajungea la **90%**.
-
-Astăzi, în Moldova sunt **334,5 mii de elevi și 1 173 de școli**. În limba de stat învață 80% dintre copii — nu mai mult decât înainte, deși numărul școlilor este mai mic.
-
-Despre limba română — Snegur, pesemne, știe mai bine.
+<p class="source-note source-note--compact">Repere documentare: <a href="https://arhiva.gov.md/wp-content/uploads/2024/08/35186638.pdf">datele arhivistice</a> · <a href="https://www.legis.md/cautare/downloadpdf/96067">legea din 31 august 1989</a> · <a href="https://arhiva.gov.md/wp-content/uploads/2024/08/Orizont-nr.-10-r.pdf">hotărârea de aplicare</a> · <a href="https://www.jurnal.md/ro/news/b9fc7283d0c83a39/maia-sandu-limba-romana-este-parte-din-fiinta-noastra.html">mesajul Maiei Sandu</a>.</p>
 
 La mulți ani tuturor moldovenilor! Să ne păstrăm limba, memoria și dreptul de a ne numi limba așa cum o numeau părinții și buneii noștri: limba moldovenească.

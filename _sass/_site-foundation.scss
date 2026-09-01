@@ -175,21 +175,6 @@ a:hover {
   white-space: nowrap;
 }
 
-.language-switcher__chevron {
-  width: 0.36rem;
-  height: 0.36rem;
-  margin: -0.15rem 0 0 0.1rem;
-  border-right: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-  transform: rotate(45deg);
-  transition: transform 120ms ease;
-}
-
-.language-switcher__details[open] .language-switcher__chevron {
-  margin-top: 0.15rem;
-  transform: rotate(225deg);
-}
-
 .language-switcher__menu {
   position: absolute;
   top: calc(100% + 0.35rem);

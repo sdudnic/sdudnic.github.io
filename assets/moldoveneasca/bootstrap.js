@@ -14,6 +14,8 @@
     authMessages.forEach((element) => { element.textContent = message; });
   };
   const authUser = document.querySelector('[data-auth-user]');
+  const authAvatar = document.querySelector('[data-auth-avatar]');
+  const authDefaultIcon = document.querySelector('[data-auth-default-icon]');
   const roleBadge = document.querySelector('[data-role-badge]');
   const authProfile = document.querySelector('[data-auth-profile]');
   const authProviders = document.querySelector('[data-auth-providers]');

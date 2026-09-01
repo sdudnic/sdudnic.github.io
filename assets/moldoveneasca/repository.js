@@ -16,6 +16,37 @@
   const remoteSelectFields = 'id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, catalog_type, status, owner_id';
   const mcpApiUrl = String(config.mcpApiUrl || '').replace(/\/$/, '');
 
+  const setAuthAvatar = (user) => {
+    if (!authAvatar || !authDefaultIcon) return;
+
+    const metadata = user?.user_metadata || {};
+    const candidate = metadata.avatar_url || metadata.picture || '';
+    let avatarUrl = '';
+    try {
+      const parsedUrl = new URL(String(candidate), window.location.origin);
+      if (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') avatarUrl = parsedUrl.href;
+    } catch (_error) {
+      avatarUrl = '';
+    }
+
+    if (avatarUrl) {
+      authAvatar.src = avatarUrl;
+      authAvatar.hidden = false;
+      authDefaultIcon.hidden = true;
+      return;
+    }
+
+    authAvatar.removeAttribute('src');
+    authAvatar.hidden = true;
+    authDefaultIcon.hidden = false;
+  };
+
+  authAvatar?.addEventListener('error', () => {
+    authAvatar.removeAttribute('src');
+    authAvatar.hidden = true;
+    if (authDefaultIcon) authDefaultIcon.hidden = false;
+  });
+
   const mcpRequest = async (path, { method = 'GET', body: requestBody } = {}) => {
     if (!mcpApiUrl) return null;
     const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
@@ -119,6 +150,7 @@
 
   const loadProfile = async (user) => {
     currentUser = user || null;
+    setAuthAvatar(currentUser);
     if (!currentUser) {
       setRole('viewer');
       if (authProfile) authProfile.hidden = true;

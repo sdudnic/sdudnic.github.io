@@ -1,20 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 2" role="img" aria-labelledby="title desc">
-  <title id="title">Steagul Republicii Moldova</title>
-  <desc id="desc">Albastru, galben și roșu, cu stema în centru.</desc>
-  <path fill="#0046ae" d="M0 0h1.333333v2H0z"/>
-  <path fill="#ffd200" d="M1.333333 0h1.333334v2H1.333333z"/>
-  <path fill="#cc092f" d="M2.666667 0H4v2H2.666667z"/>
-  <g transform="translate(2 1) scale(.07)" stroke="#8c4b2d" stroke-width=".08" stroke-linejoin="round">
-    <path fill="#f7d117" d="M0-4.65c1.45 1.12 2.72 1.76 4.25 2.07L3.8 1.7C3.47 3.24 1.6 4.13 0 4.65-1.6 4.13-3.47 3.24-3.8 1.7l-.45-4.28C-2.72-2.89-1.45-3.53 0-4.65Z"/>
-    <path fill="#a52b2b" d="M0-4.85 1.05-2.5.2-1.8l-.2 1.45-.2-1.45-1.05-.7Z"/>
-    <path fill="#8c4b2d" d="M-.25-1.25h.5v4.95h-.5z"/>
-    <path fill="#a52b2b" d="M-3.8-2.45-5.1-1.5l1.04.45.65 1.1.68-1.18zM3.8-2.45l1.3.95-1.04.45-.65 1.1-.68-1.18z"/>
-    <path fill="#f7d117" d="M-4.2-3.2c-1.2.05-2.05.48-2.7 1.2l.6.42c.48-.4 1-.6 1.7-.65zm4.2 0c1.2.05 2.05.48 2.7 1.2l-.6.42c-.48-.4-1-.6-1.7-.65z"/>
-    <path fill="#0046ae" d="M-2.55-1.95h5.1v3.72C1.7 2.7.85 3.15 0 3.35-.85 3.15-1.7 2.7-2.55 1.77Z"/>
-    <path fill="#ffd200" d="M-.22-1.95h.44v5.15h-.44z"/>
-    <path fill="#ffd200" d="M-2.55-.2h5.1v.42h-5.1z"/>
-    <circle fill="#cc092f" cx="0" cy="-.62" r=".56"/>
-    <path fill="#f7d117" stroke="none" d="m0-1.1.13.32.35.03-.27.23.08.35L0-.35l-.29.18.08-.35-.27-.23.35-.03z"/>
-    <path stroke="#cc092f" d="M-2.5 2.02c.86.42 1.68.7 2.5.88.82-.18 1.64-.46 2.5-.88" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Drapelul istoric al Principatului Moldovei</title>
+  <desc id="desc">Câmp roșu cu stema aurie a Moldovei: cap de bour, stea, roză și semilună.</desc>
+  <rect width="600" height="400" fill="#b40021"/>
+  <g transform="translate(300 202)" fill="#f4c542" stroke="#8f5c14" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-103-74c-35-38-74-53-113-46 23 14 40 34 55 58-20-10-42-14-67-7 32 13 57 34 77 62 17-3 34-10 49-21z"/>
+    <path d="M103-74c35-38 74-53 113-46-23 14-40 34-55 58 20-10 42-14 67-7-32 13-57 34-77 62-17-3-34-10-49-21z"/>
+    <path d="M-67-48c11-25 30-39 67-45 37 6 56 20 67 45l18 97c-18 46-48 69-85 77-37-8-67-31-85-77z"/>
+    <path d="M-43-5c-11 29-8 68 12 101 8 13 19 22 31 28M43-5c11 29 8 68-12 101-8 13-19 22-31 28" fill="none"/>
+    <path d="M-33 62c18 12 48 12 66 0-5 29-16 42-33 42S-28 91-33 62z" fill="#b40021"/>
+    <path d="M-16-53 0-77l16 24-16 22z" fill="#b40021"/>
+    <path d="M-112 27c-13-12-27-13-42-3 10 15 24 21 41 16 9-3 13-8 14-13z"/>
+    <path d="M112 27c13-12 27-13 42-3-10 15-24 21-41 16-9-3-13-8-14-13z"/>
+    <path d="M-121 15c-11-11-19-21-20-35 16 7 25 19 27 35z" fill="#b40021"/>
+    <path d="M121 15c11-11 19-21 20-35-16 7-25 19-27 35z" fill="#b40021"/>
   </g>
 </svg>

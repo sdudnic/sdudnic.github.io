@@ -45,31 +45,37 @@
 
 (() => {
   const languageDetails = [...document.querySelectorAll('.language-switcher__details')];
+  const accountDetails = [...document.querySelectorAll('.site-account__menu')];
+  const detailsList = [...languageDetails, ...accountDetails];
 
-  if (!languageDetails.length) return;
+  if (!detailsList.length) return;
 
-  const closeLanguageSwitchers = (except = null) => {
-    languageDetails.forEach((details) => {
+  const closeDetails = (except = null) => {
+    detailsList.forEach((details) => {
       if (details !== except) details.removeAttribute('open');
     });
   };
 
-  languageDetails.forEach((details) => {
+  detailsList.forEach((details) => {
     details.addEventListener('toggle', () => {
-      if (details.open) closeLanguageSwitchers(details);
+      if (details.open) closeDetails(details);
     });
   });
 
   document.addEventListener('click', (event) => {
-    languageDetails.forEach((details) => {
-      const switcher = details.closest('.language-switcher');
-      if (details.open && switcher && !switcher.contains(event.target)) {
+    detailsList.forEach((details) => {
+      const owner = details.closest('.language-switcher, .site-account');
+      if (details.open && owner && !owner.contains(event.target)) {
         details.removeAttribute('open');
       }
     });
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeLanguageSwitchers();
+    if (event.key === 'Escape') {
+      const openDetails = detailsList.find((details) => details.open);
+      closeDetails();
+      openDetails?.querySelector('summary')?.focus();
+    }
   });
 })();

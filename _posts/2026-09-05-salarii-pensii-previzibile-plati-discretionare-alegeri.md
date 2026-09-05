@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Salarii și pensii previzibile: de ce trebuie interzise plățile discreționare din apropierea alegerilor
+title: "Salarii și pensii previzibile: de ce trebuie interzise plățile discreționare din apropierea alegerilor"
 date: 2026-09-05 12:00:00 +0300
 lang: mo
 news_label: Drepturi sociale și alegeri

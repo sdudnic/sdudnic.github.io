@@ -66,6 +66,7 @@
   });
   detailPreviousButton?.addEventListener('click', () => navigateDetail(-1));
   detailNextButton?.addEventListener('click', () => navigateDetail(1));
+  shareDetailButton?.addEventListener('click', shareCurrentDetail);
   closeDetailButton?.addEventListener('click', closeDetail);
   imageInput?.addEventListener('input', () => {
     renderImagePreview();
@@ -149,6 +150,10 @@
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && detailPanel && !detailPanel.hidden) closeDetail();
   });
+  window.addEventListener('popstate', async () => {
+    if (detailPanel && !detailPanel.hidden) closeDetail({ updateUrl: false });
+    if (sharedReferenceKeyFromUrl()) await restoreDetailFromUrl();
+  });
   editorForm?.addEventListener('submit', saveRecord);
 
   updateQuoteRequirement();
@@ -159,6 +164,7 @@
 
   if (!config.supabaseUrl || !config.supabaseAnonKey) {
     setCatalogLoading(false);
+    restoreDetailFromUrl();
     updateSelectionUi();
     loginButtons.forEach((button) => { button.disabled = true; });
     setAuthMessage('Catalogul public și căutarea funcționează fără cont; autentificarea Google/GitHub nu este încă configurată.');
@@ -173,6 +179,7 @@
       await loadProfile(sessionData?.session?.user || null);
       await loadRemoteRecords({ page: 1, allRecords: true });
       setCatalogLoading(false);
+      await restoreDetailFromUrl();
       updateSelectionUi();
       supabaseClient.auth.onAuthStateChange((_event, session) => {
         loadProfile(session?.user || null).catch((error) => {
@@ -181,6 +188,7 @@
       });
     } catch (error) {
       setCatalogLoading(false);
+      restoreDetailFromUrl();
       updateSelectionUi();
       loginButtons.forEach((button) => { button.disabled = true; });
       if (result) result.textContent = 'Sursa live nu răspunde; se afișează copia locală.';

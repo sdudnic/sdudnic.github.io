@@ -1,3 +1,8 @@
+  const detailHeadingText = (record) => {
+    const title = String(displayFields(record).title || '').trim();
+    return title && title !== '—' ? title : 'Sursă fără denumire';
+  };
+
   let detailSourceTable = null;
 
   const detailNavigationEntries = () => {
@@ -8,7 +13,12 @@
   };
 
   const sameDetailRecord = (left, right) => left === right
-    || Boolean(left?.id && right?.id && left.id === right.id);
+    || Boolean(left?.id && right?.id && String(left.id) === String(right.id));
+
+  const findDetailSourceTable = (record) => [table, ethnicityTable, unverifiedTable]
+    .filter(Boolean)
+    .find((candidate) => [...candidate.querySelectorAll('tbody tr')]
+      .some((row) => sameDetailRecord(row.catalogRecord, record))) || null;
 
   const detailNavigationPosition = () => {
     const entries = detailNavigationEntries();
@@ -20,9 +30,15 @@
 
   const updateDetailNavigation = () => {
     const { entries, index } = detailNavigationPosition();
-    const hasCurrentRecord = index >= 0;
-    if (detailPreviousButton) detailPreviousButton.disabled = !hasCurrentRecord || index <= 0;
-    if (detailNextButton) detailNextButton.disabled = !hasCurrentRecord || index >= entries.length - 1;
+    const available = Boolean(currentDetailRecord && !editorInDetail && index >= 0);
+    if (detailPreviousButton) {
+      detailPreviousButton.hidden = !available;
+      detailPreviousButton.disabled = !available || index <= 0;
+    }
+    if (detailNextButton) {
+      detailNextButton.hidden = !available;
+      detailNextButton.disabled = !available || index >= entries.length - 1;
+    }
   };
 
   const navigateDetail = (offset) => {
@@ -33,7 +49,8 @@
     openDetail(target.record, trigger);
   };
 
-  const closeDetail = () => {
+  const closeDetail = ({ updateUrl = true } = {}) => {
+    detailRestoreToken += 1;
     if (editorInDetail) closeEditor({ returnToDetail: false });
     if (detailPanel) {
       detailPanel.classList.remove('is-open');
@@ -45,6 +62,9 @@
     lastDetailTrigger = null;
     currentDetailRecord = null;
     detailSourceTable = null;
+    updateDetailNavigation();
+    updateDetailShareState(null);
+    if (updateUrl) clearReferenceUrl();
   };
 
   const renderDetailImage = (record) => {
@@ -69,21 +89,24 @@
     detailImage.hidden = false;
   };
 
-  const openDetail = (record, trigger) => {
+  const openDetail = (record, trigger, { updateUrl = true, replaceUrl = false } = {}) => {
     if (!detailPanel || !detailContent) return;
     if (editorInDetail) closeEditor({ returnToDetail: false });
-    const sourceTable = trigger?.closest?.('table');
-    if (sourceTable) detailSourceTable = sourceTable;
+    detailSourceTable = trigger?.closest?.('table') || findDetailSourceTable(record);
     currentDetailRecord = record || null;
+    if (updateUrl) setReferenceUrl(currentDetailRecord, { replace: replaceUrl });
+    updateDetailShareState(currentDetailRecord);
     const fields = displayFields(record);
     const urls = sourceUrls(record);
     detailContent.replaceChildren();
-    if (detailTitle) detailTitle.textContent = fields.title === '—' ? 'Detalii referință' : fields.title;
+    if (detailTitle) detailTitle.textContent = detailHeadingText(record);
     renderDetailImage(record);
     loadRecordImage(record).then((loadedRecord) => {
       if (currentDetailRecord === record || (record?.id && currentDetailRecord?.id === record.id)) {
         renderDetailImage(loadedRecord);
       }
+    }).catch(() => {
+      if (currentDetailRecord === record) setDetailShareStatus('Imaginea nu a putut fi încărcată. Redeschide referința pentru a reîncerca.');
     });
 
     const addDetailField = (label, value, render = null) => {
@@ -129,6 +152,7 @@
 
     if (detailView) detailView.hidden = false;
     if (detailEditorHost) detailEditorHost.hidden = true;
+    updateDetailNavigation();
     if (editDetailButton) {
       const isPrimaryAdmin = String(currentUser?.email || '').trim().toLowerCase() === 'sdudnic@gmail.com';
       editDetailButton.hidden = !(currentUser && record?.id && (

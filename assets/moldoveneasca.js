@@ -8,6 +8,7 @@
 {% include_relative moldoveneasca/row-metadata.js %}
 {% include_relative moldoveneasca/validation.js %}
 {% include_relative moldoveneasca/details.js %}
+{% include_relative moldoveneasca/share.js %}
 {% include_relative moldoveneasca/buttons.js %}
 {% include_relative moldoveneasca/rows.js %}
 {% include_relative moldoveneasca/grid.js %}

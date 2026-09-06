@@ -26,6 +26,7 @@
       login: 'M10 17l5-5-5-5M15 12H3M21 3v18',
       logout: 'M14 17l5-5-5-5M19 12H7M3 3v18',
       image: 'M4 5h16v14H4zM7 15l3-3 2 2 2-2 3 3M8.5 9.5h.01',
+      share: 'M18 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM8.59 13.51l6.83 3.98M15.41 6.51L8.59 10.49',
       'sort-up': 'M7 14l5-5 5 5',
       'sort-down': 'M7 10l5 5 5-5'
     };
@@ -74,6 +75,7 @@
     configureIconButton(unverifiedNextPageButton, 'Pagina următoare', 'next');
     configureIconButton(unverifiedLastPageButton, 'Ultima pagină', 'last');
     configureIconButton(editDetailButton, 'Modifică referința', 'edit');
+    configureIconButton(shareDetailButton, 'Distribuie referința', 'share');
     configureIconButton(closeDetailButton, 'Închide detaliile', 'cancel');
     configureIconButton(imagePickButton, 'Încarcă imaginea paginii citate', 'image');
     configureIconButton(imageUndoButton, 'Anulează ultima subliniere', 'undo');

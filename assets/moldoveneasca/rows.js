@@ -32,7 +32,7 @@
     titleCell.className = 'moldoveneasca-table__title';
     const titleText = fields.title || '—';
     const titleLink = document.createElement('a');
-    titleLink.href = '#reference-detail';
+    titleLink.href = referenceShareUrl(record) || '#reference-detail';
     titleLink.className = 'moldoveneasca-table__detail-link';
     titleLink.textContent = titleText;
     titleLink.title = titleText === '—' ? `Deschide detaliile referinței din ${fields.yearDisplay}` : titleText;

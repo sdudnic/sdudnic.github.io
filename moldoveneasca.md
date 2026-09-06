@@ -157,7 +157,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260906-detail-actions"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260906-detail-share"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>

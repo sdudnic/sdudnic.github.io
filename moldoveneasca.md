@@ -137,19 +137,18 @@ permalink: /moldoveneasca/
   <aside id="reference-detail" class="moldoveneasca-detail" data-reference-detail hidden role="dialog" aria-labelledby="detail-title" aria-modal="true">
     <div class="moldoveneasca-detail__heading">
       <div>
-        <p class="eyebrow">Detalii referință</p>
         <h3 id="detail-title" data-detail-title></h3>
       </div>
       <div class="moldoveneasca-detail__actions">
+        <button type="button" class="moldoveneasca-icon-button" data-detail-previous hidden aria-label="referința precedentă" title="referința precedentă" data-tooltip="referința precedentă"><span aria-hidden="true">&lt;</span></button>
+        <button type="button" class="moldoveneasca-icon-button" data-detail-next hidden aria-label="următoarea referință" title="următoarea referință" data-tooltip="următoarea referință"><span aria-hidden="true">&gt;</span></button>
         <button type="button" class="moldoveneasca-icon-button" data-edit-detail hidden aria-label="Modifică referința" title="Modifică referința"><span aria-hidden="true"></span></button>
+        <button type="button" class="moldoveneasca-icon-button" data-share-detail hidden aria-label="Distribuie referința" title="Distribuie referința"><span aria-hidden="true"></span></button>
         <button type="button" class="moldoveneasca-detail__close" data-close-detail aria-label="Închide detaliile" title="Închide detaliile">×</button>
       </div>
     </div>
+    <p class="moldoveneasca-detail__share-status" data-detail-share-status aria-live="polite"></p>
     <div data-detail-view>
-      <nav class="moldoveneasca-detail__navigation" data-detail-navigation aria-label="Navigarea referințelor">
-        <button type="button" class="moldoveneasca-icon-button" data-detail-previous aria-label="referința precedentă" title="referința precedentă" data-tooltip="referința precedentă"><span aria-hidden="true">&lt;</span></button>
-        <button type="button" class="moldoveneasca-icon-button" data-detail-next aria-label="următoarea referință" title="următoarea referință" data-tooltip="următoarea referință"><span aria-hidden="true">&gt;</span></button>
-      </nav>
       <div class="moldoveneasca-detail__image" data-detail-image hidden></div>
       <dl class="moldoveneasca-detail__content" data-detail-content></dl>
     </div>
@@ -158,7 +157,7 @@ permalink: /moldoveneasca/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260830-detail-navigation"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260906-detail-actions"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>

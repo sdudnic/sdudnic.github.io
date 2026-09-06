@@ -57,12 +57,13 @@
       editorInDetail = false;
       if (detailEditorHost) detailEditorHost.hidden = true;
       if (detailView) detailView.hidden = !returnToDetail;
+      updateDetailShareState(returnToDetail ? currentDetailRecord : null);
       if (editDetailButton) {
         editDetailButton.hidden = !(returnToDetail && canEditRecord(currentDetailRecord));
       }
+      updateDetailNavigation();
       if (returnToDetail && detailTitle && currentDetailRecord) {
-        const fields = displayFields(currentDetailRecord);
-        detailTitle.textContent = fields.title === '—' ? 'Detalii referință' : fields.title;
+        detailTitle.textContent = detailHeadingText(currentDetailRecord);
         editDetailButton?.focus();
       }
     }
@@ -88,6 +89,8 @@
       detailEditorHost.hidden = false;
       if (detailView) detailView.hidden = true;
       if (editDetailButton) editDetailButton.hidden = true;
+      updateDetailShareState(null);
+      updateDetailNavigation();
     }
     resetImageMarkup();
     editingId = record?.id || null;

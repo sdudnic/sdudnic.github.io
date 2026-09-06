@@ -37,7 +37,6 @@
 
   const referenceShareKey = (record) => {
     if (!record) return '';
-    if (record?.status && record.status !== 'published') return '';
     return referenceShareKeys(record)[0] || '';
   };
 
@@ -170,7 +169,7 @@
     if (!record && supabaseClient && !key.startsWith('legacy-')) {
       try {
         const { data, error } = await supabaseClient.from('language_references')
-          .select(remoteSelectFields).eq('id', key).eq('status', 'published').maybeSingle();
+          .select(remoteSelectFields).eq('id', key).maybeSingle();
         if (error) throw error;
         if (data) record = normalizeCitationRecord(data);
       } catch {

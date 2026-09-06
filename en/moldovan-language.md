@@ -154,7 +154,7 @@ permalink: /en/moldovan-language/
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260906-detail-share"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260906-detail-share-copy"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Loading references…</p>
 <script>

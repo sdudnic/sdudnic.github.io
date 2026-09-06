@@ -126,6 +126,11 @@
     const title = fields.title === '—' ? 'Referință documentară' : fields.title;
     shareDetailButton.disabled = true;
     try {
+      const copied = await copyShareUrl(url);
+      if (copied) {
+        setDetailShareStatus('Legătura a fost copiată.');
+        return;
+      }
       if (typeof window.navigator.share === 'function') {
         try {
           await window.navigator.share({
@@ -139,10 +144,7 @@
           if (error?.name === 'AbortError') return;
         }
       }
-      const copied = await copyShareUrl(url);
-      setDetailShareStatus(copied
-        ? 'Legătura a fost copiată.'
-        : 'Nu am putut copia automat legătura; copiaz-o din bara de adrese.');
+      setDetailShareStatus('Nu am putut copia automat legătura; copiaz-o din bara de adrese.');
     } finally {
       if (currentDetailRecord !== sharedRecord) updateDetailShareState(currentDetailRecord);
       else shareDetailButton.disabled = false;

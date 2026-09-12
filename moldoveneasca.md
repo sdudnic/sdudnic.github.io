@@ -191,7 +191,7 @@ catalog_maintenance: false
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260912-r2-gallery"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260912-r2-gallery-clean-captions"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>

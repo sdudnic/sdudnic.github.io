@@ -92,8 +92,9 @@
     const figure = document.createElement('figure');
     figure.className = className;
     const image = document.createElement('img');
+    const description = imageDescriptionForDisplay(item.description);
     image.src = item.url;
-    image.alt = item.description || (title === '—'
+    image.alt = description || (title === '—'
       ? `Imaginea referinței ${index + 1}`
       : `${title} — imaginea ${index + 1}`);
     image.loading = index === 0 ? 'eager' : 'lazy';
@@ -117,10 +118,10 @@
     } else {
       figure.appendChild(image);
     }
-    if (item.description) {
+    if (description) {
       const caption = document.createElement('figcaption');
       caption.className = 'moldoveneasca-detail__image-caption';
-      caption.textContent = item.description;
+      caption.textContent = description;
       figure.appendChild(caption);
     }
     return figure;

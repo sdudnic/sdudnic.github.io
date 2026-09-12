@@ -67,7 +67,7 @@ test('bundle-ul Jekyll este valid în ordinea declarată', () => {
 
 test('imaginile unei referințe se normalizează ca slide-uri cu descrieri proprii', () => {
   const source = partial('model');
-  const { imageItems } = vm.runInNewContext(`${source}\n({imageItems})`, {
+  const { imageItems, imageDescriptionForDisplay } = vm.runInNewContext(`${source}\n({imageItems, imageDescriptionForDisplay})`, {
     URL,
     window: { location: { href: 'https://example.test/moldoveneasca/' } }
   });
@@ -93,6 +93,9 @@ test('imaginile unei referințe se normalizează ca slide-uri cu descrieri propr
   assert.equal(legacy.length, 1);
   assert.equal(legacy[0].url, 'https://example.test/legacy.jpg');
   assert.equal(legacy[0].description, '');
+  assert.equal(imageDescriptionForDisplay('Imagine migrată din câmpul Base64 existent.'), '');
+  assert.equal(imageDescriptionForDisplay('Dovadă vizuală a sursei.'), '');
+  assert.equal(imageDescriptionForDisplay('Pagina întâi — glotonimul subliniat'), 'Pagina întâi — glotonimul subliniat');
 });
 
 test('imaginile simultane împart cererea și nu umplu metadatele listei', async () => {

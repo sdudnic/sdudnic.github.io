@@ -53,6 +53,18 @@ test('linkul direct încarcă numai referința lipsă și ignoră navigarea dep�
   assert.equal(opened.id, 'next');
 });
 
+test('linkul copiat din tabel este deep linkul public al referinței', () => {
+  const api = vm.runInNewContext(`${partial('share')}\n({referenceShareUrl})`, {
+    window: { location: { href: 'https://example.test/moldoveneasca/?pagina=2' } },
+    URL,
+    normalize: (value) => String(value || '').toLowerCase()
+  });
+  assert.equal(
+    api.referenceShareUrl({ id: 'abc-123', status: 'published' }),
+    'https://example.test/moldoveneasca/?referinta=abc-123'
+  );
+});
+
 test('un contributor autentificat poate deschide formularul de adăugare', () => {
   const canEdit = (currentUser) => vm.runInNewContext(`${partial('editor')}\ncanEditRecord(null)`, { currentUser, currentRole: 'viewer' });
   assert.equal(canEdit(null), false);

@@ -68,22 +68,42 @@
 
     const sourceCell = document.createElement('td');
     sourceCell.className = 'moldoveneasca-table__source';
-    const urls = sourceUrls(record);
-    if (urls.length) {
-      const sourceLinks = document.createElement('span');
-      sourceLinks.className = 'moldoveneasca-table__source-links';
-      urls.forEach((url, index) => {
-        const link = document.createElement('a');
-        link.href = url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.textContent = `[${index + 1}]`;
-        link.title = url;
-        link.className = 'moldoveneasca-table__source-link';
-        sourceLinks.appendChild(link);
-        if (index < urls.length - 1) sourceLinks.appendChild(document.createTextNode(', '));
-      });
-      sourceCell.appendChild(sourceLinks);
+    const referenceUrl = referenceShareUrl(record);
+    if (referenceUrl) {
+      let copyResetTimer = null;
+      const copyButton = createIconButton(
+        'Copiază linkul referinței Moldavica',
+        'copy',
+        async () => {
+          copyButton.disabled = true;
+          let copied = false;
+          try {
+            copied = await copyShareUrl(referenceUrl);
+          } catch {
+            copied = false;
+          }
+          copyButton.disabled = false;
+          const label = copied
+            ? 'Linkul referinței Moldavica a fost copiat'
+            : 'Linkul referinței Moldavica nu a putut fi copiat automat';
+          copyButton.setAttribute('aria-label', label);
+          copyButton.title = label;
+          copyButton.dataset.tooltip = label;
+          copyButton.replaceChildren(createIconSvg(copied ? 'save' : 'copy'));
+          copyButton.classList.toggle('is-copied', copied);
+          if (copyResetTimer) window.clearTimeout(copyResetTimer);
+          copyResetTimer = window.setTimeout(() => {
+            copyButton.setAttribute('aria-label', 'Copiază linkul referinței Moldavica');
+            copyButton.title = 'Copiază linkul referinței Moldavica';
+            copyButton.dataset.tooltip = 'Copiază linkul referinței Moldavica';
+            copyButton.replaceChildren(createIconSvg('copy'));
+            copyButton.classList.remove('is-copied');
+            copyResetTimer = null;
+          }, copied ? 1800 : 2800);
+        }
+      );
+      copyButton.classList.add('moldoveneasca-table__copy-button');
+      sourceCell.appendChild(copyButton);
     } else {
       sourceCell.textContent = '—';
     }
@@ -135,6 +155,7 @@
 
   configureCatalogButtons();
   ensureTableHeader();
+  ensureAuxiliaryTableHeaders();
   const staticRows = currentRows().map((row) => {
     const converted = createCatalogRow(recordFromStaticRow(row));
     row.replaceWith(converted);

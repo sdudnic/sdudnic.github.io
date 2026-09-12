@@ -68,6 +68,8 @@
   detailNextButton?.addEventListener('click', () => navigateDetail(1));
   shareDetailButton?.addEventListener('click', shareCurrentDetail);
   closeDetailButton?.addEventListener('click', closeDetail);
+  closeImageLightboxButton?.addEventListener('click', closeImageLightbox);
+  imageLightboxBackdrop?.addEventListener('click', closeImageLightbox);
   imageInput?.addEventListener('input', () => {
     renderImagePreview();
     if (!imageSourceDataUrl) imageOcrButtonState();
@@ -149,6 +151,29 @@
   });
   detailBackdrop?.addEventListener('click', closeDetail);
   document.addEventListener('keydown', (event) => {
+    if (imageLightbox && !imageLightbox.hidden) {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeImageLightbox();
+        return;
+      }
+      if (event.key === 'Tab') {
+        const focusable = [...imageLightbox.querySelectorAll('button, a[href], input, select, textarea, [tabindex="0"]')]
+          .filter((element) => !element.disabled && element.getClientRects().length);
+        const first = focusable[0];
+        const last = focusable.at(-1);
+        if (first && last && (event.shiftKey && (document.activeElement === first || !imageLightbox.contains(document.activeElement)))) {
+          event.preventDefault();
+          last.focus();
+          return;
+        }
+        if (first && last && (!event.shiftKey && (document.activeElement === last || !imageLightbox.contains(document.activeElement)))) {
+          event.preventDefault();
+          first.focus();
+          return;
+        }
+      }
+    }
     if (event.key === 'Escape' && detailPanel && !detailPanel.hidden) closeDetail();
     if (event.key === 'Tab' && detailPanel && !detailPanel.hidden) {
       const focusable = [...detailPanel.querySelectorAll('button, a[href], input, select, textarea, [tabindex="0"]')]

@@ -103,6 +103,11 @@ body.moldoveneasca-lightbox-open {
   margin-bottom: 1rem;
 }
 
+.moldoveneasca-detail__heading > div:first-child {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
 .moldoveneasca-detail__actions {
   display: flex;
   flex: 0 0 auto;
@@ -435,6 +440,14 @@ body.moldoveneasca-lightbox-open {
     padding: 0.75rem;
   }
 
+  .moldoveneasca-detail__heading {
+    gap: 0.5rem;
+  }
+
+  .moldoveneasca-detail__actions {
+    gap: 0.2rem;
+  }
+
   .moldoveneasca-detail__item {
     grid-template-columns: 1fr;
     gap: 0.25rem;
@@ -442,6 +455,15 @@ body.moldoveneasca-lightbox-open {
 
   .moldoveneasca-detail__carousel-slide {
     padding: 0.2rem;
+  }
+
+  .moldoveneasca-detail__image img,
+  .moldoveneasca-detail__figure img,
+  .moldoveneasca-detail__carousel-slide img {
+    width: 100%;
+    height: min(46vh, 22rem);
+    max-height: min(46vh, 22rem);
+    object-fit: contain;
   }
 }
 

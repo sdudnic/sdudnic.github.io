@@ -52,6 +52,11 @@
       } else if (key === 'actions') {
         th.className = 'moldoveneasca-table__actions-heading';
         th.setAttribute('aria-label', 'Acțiuni');
+      } else if (key === 'source') {
+        th.className = 'moldoveneasca-table__source-heading';
+        th.setAttribute('aria-label', 'Copiază linkul referinței Moldavica');
+        th.title = 'Copiază linkul referinței Moldavica';
+        th.appendChild(createIconSvg('copy'));
       } else {
         th.className = `moldoveneasca-table__${key}-heading`;
         th.textContent = label;
@@ -60,6 +65,16 @@
     });
 
     thead.querySelector('.moldoveneasca-table__filters')?.remove();
+  };
+
+  const ensureAuxiliaryTableHeaders = () => {
+    [unverifiedTable, ethnicityTable].filter(Boolean).forEach((catalogTable) => {
+      const sourceHeading = catalogTable.querySelector('thead .moldoveneasca-table__source-heading');
+      if (!sourceHeading) return;
+      sourceHeading.replaceChildren(createIconSvg('copy'));
+      sourceHeading.setAttribute('aria-label', 'Copiază linkul referinței Moldavica');
+      sourceHeading.title = 'Copiază linkul referinței Moldavica';
+    });
   };
 
   const currentRows = () => Array.from(tbody.rows);

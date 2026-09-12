@@ -188,10 +188,17 @@ catalog_maintenance: false
     </div>
     <div class="moldoveneasca-detail__editor" data-detail-editor-host hidden></div>
   </aside>
+  <div class="moldoveneasca-image-lightbox" data-image-lightbox hidden role="dialog" aria-modal="true" aria-label="Imagine mărită">
+    <div class="moldoveneasca-image-lightbox__backdrop" data-image-lightbox-backdrop></div>
+    <div class="moldoveneasca-image-lightbox__panel">
+      <button type="button" class="moldoveneasca-icon-button moldoveneasca-image-lightbox__close" data-close-image-lightbox aria-label="Închide imaginea mărită" title="Închide imaginea mărită"><span aria-hidden="true">×</span></button>
+      <img data-image-lightbox-image alt="">
+    </div>
+  </div>
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260912-r2-gallery"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260912-r3-blade-lightbox-copy"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>
@@ -413,7 +420,7 @@ catalog_maintenance: false
         <th scope="col" class="moldoveneasca-table__quote-heading">Citat</th>
         <th scope="col" class="moldoveneasca-table__language-heading">Limba</th>
         <th scope="col" class="moldoveneasca-table__author-heading">Autor</th>
-        <th scope="col" class="moldoveneasca-table__source-heading">Sursa</th>
+        <th scope="col" class="moldoveneasca-table__source-heading" aria-label="Copiază linkul referinței Moldavica"></th>
         <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>
       </tr>
     </thead>
@@ -452,7 +459,7 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
         <th scope="col">Citat</th>
         <th scope="col">Limba</th>
         <th scope="col">Autor</th>
-        <th scope="col">Sursa</th>
+        <th scope="col" class="moldoveneasca-table__source-heading" aria-label="Copiază linkul referinței Moldavica"></th>
         <th scope="col" class="moldoveneasca-table__actions-heading" aria-label="Acțiuni"></th>
       </tr>
     </thead>

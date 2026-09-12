@@ -53,6 +53,18 @@ test('linkul direct încarcă numai referința lipsă și ignoră navigarea dep�
   assert.equal(opened.id, 'next');
 });
 
+test('linkul copiat din tabel este deep linkul public al referinței', () => {
+  const api = vm.runInNewContext(`${partial('share')}\n({referenceShareUrl})`, {
+    window: { location: { href: 'https://example.test/moldoveneasca/?pagina=2' } },
+    URL,
+    normalize: (value) => String(value || '').toLowerCase()
+  });
+  assert.equal(
+    api.referenceShareUrl({ id: 'abc-123', status: 'published' }),
+    'https://example.test/moldoveneasca/?referinta=abc-123'
+  );
+});
+
 test('un contributor autentificat poate deschide formularul de adăugare', () => {
   const canEdit = (currentUser) => vm.runInNewContext(`${partial('editor')}\ncanEditRecord(null)`, { currentUser, currentRole: 'viewer' });
   assert.equal(canEdit(null), false);
@@ -67,7 +79,7 @@ test('bundle-ul Jekyll este valid în ordinea declarată', () => {
 
 test('imaginile unei referințe se normalizează ca slide-uri cu descrieri proprii', () => {
   const source = partial('model');
-  const { imageItems } = vm.runInNewContext(`${source}\n({imageItems})`, {
+  const { imageItems, imageDescriptionForDisplay } = vm.runInNewContext(`${source}\n({imageItems, imageDescriptionForDisplay})`, {
     URL,
     window: { location: { href: 'https://example.test/moldoveneasca/' } }
   });
@@ -93,6 +105,9 @@ test('imaginile unei referințe se normalizează ca slide-uri cu descrieri propr
   assert.equal(legacy.length, 1);
   assert.equal(legacy[0].url, 'https://example.test/legacy.jpg');
   assert.equal(legacy[0].description, '');
+  assert.equal(imageDescriptionForDisplay('Imagine migrată din câmpul Base64 existent.'), '');
+  assert.equal(imageDescriptionForDisplay('Dovadă vizuală a sursei.'), '');
+  assert.equal(imageDescriptionForDisplay('Pagina întâi — glotonimul subliniat'), 'Pagina întâi — glotonimul subliniat');
 });
 
 test('imaginile simultane împart cererea și nu umplu metadatele listei', async () => {

@@ -103,6 +103,10 @@
   const shareDetailButton = root.querySelector('[data-share-detail]');
   const detailShareStatus = root.querySelector('[data-detail-share-status]');
   const closeDetailButton = root.querySelector('[data-close-detail]');
+  const imageLightbox = root.querySelector('[data-image-lightbox]');
+  const imageLightboxBackdrop = root.querySelector('[data-image-lightbox-backdrop]');
+  const imageLightboxImage = root.querySelector('[data-image-lightbox-image]');
+  const closeImageLightboxButton = root.querySelector('[data-close-image-lightbox]');
   const quoteHint = root.querySelector('[data-catalog-quote-hint]');
   const catalogTypeField = editorForm?.elements.namedItem('catalog_type');
   const quoteField = editorForm?.elements.namedItem('quote');

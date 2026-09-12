@@ -47,8 +47,37 @@
     openDetail(target.record, trigger);
   };
 
+  let lastImageTrigger = null;
+
+  const closeImageLightbox = ({ restoreFocus = true } = {}) => {
+    if (!imageLightbox) return;
+    imageLightbox.hidden = true;
+    imageLightbox.classList.remove('is-open');
+    if (imageLightboxImage) {
+      imageLightboxImage.removeAttribute('src');
+      imageLightboxImage.alt = '';
+    }
+    document.body.classList.remove('moldoveneasca-lightbox-open');
+    const trigger = lastImageTrigger;
+    lastImageTrigger = null;
+    if (restoreFocus && trigger?.isConnected) trigger.focus({ preventScroll: true });
+  };
+
+  const openImageLightbox = (url, alt, trigger) => {
+    const imageUrl = String(url || '').trim();
+    if (!imageLightbox || !imageLightboxImage || !imageUrl) return;
+    lastImageTrigger = trigger || document.activeElement;
+    imageLightboxImage.src = imageUrl;
+    imageLightboxImage.alt = String(alt || 'Imagine mărită').trim();
+    imageLightbox.hidden = false;
+    imageLightbox.classList.add('is-open');
+    document.body.classList.add('moldoveneasca-lightbox-open');
+    closeImageLightboxButton?.focus({ preventScroll: true });
+  };
+
   const closeDetail = ({ updateUrl = true } = {}) => {
     detailRestoreToken += 1;
+    closeImageLightbox({ restoreFocus: false });
     if (editorInDetail) closeEditor({ returnToDetail: false });
     if (detailPanel) {
       detailPanel.classList.remove('is-open');
@@ -92,8 +121,9 @@
     const figure = document.createElement('figure');
     figure.className = className;
     const image = document.createElement('img');
+    const description = imageDescriptionForDisplay(item.description);
     image.src = item.url;
-    image.alt = item.description || (title === '—'
+    image.alt = description || (title === '—'
       ? `Imaginea referinței ${index + 1}`
       : `${title} — imaginea ${index + 1}`);
     image.loading = index === 0 ? 'eager' : 'lazy';
@@ -104,23 +134,20 @@
       figure.classList.add('is-unavailable');
     }, { once: true });
     const originalUrl = String(item.original_url || '').trim();
-    if (originalUrl && originalUrl !== item.url) {
-      const link = document.createElement('a');
-      link.className = 'moldoveneasca-detail__image-original';
-      link.href = originalUrl;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.title = 'Deschide imaginea originală pentru zoom';
-      link.setAttribute('aria-label', 'Deschide imaginea originală pentru zoom');
-      link.appendChild(image);
-      figure.appendChild(link);
-    } else {
-      figure.appendChild(image);
-    }
-    if (item.description) {
+    const imageTrigger = document.createElement('button');
+    imageTrigger.type = 'button';
+    imageTrigger.className = 'moldoveneasca-detail__image-trigger';
+    imageTrigger.title = 'Mărește imaginea';
+    imageTrigger.setAttribute('aria-label', 'Mărește imaginea');
+    imageTrigger.appendChild(image);
+    imageTrigger.addEventListener('click', () => {
+      openImageLightbox(originalUrl || item.url, image.alt, imageTrigger);
+    });
+    figure.appendChild(imageTrigger);
+    if (description) {
       const caption = document.createElement('figcaption');
       caption.className = 'moldoveneasca-detail__image-caption';
-      caption.textContent = item.description;
+      caption.textContent = description;
       figure.appendChild(caption);
     }
     return figure;

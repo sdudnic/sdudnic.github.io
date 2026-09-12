@@ -421,6 +421,17 @@
     }
   };
 
+  const nonInformativeImageDescriptions = new Set([
+    'imagine migrata din campul base64 existent.',
+    'dovada vizuala a sursei.'
+  ]);
+
+  const imageDescriptionForDisplay = (value) => {
+    const description = String(value || '').trim();
+    const normalized = normalize(description).replace(/\s+/g, ' ');
+    return nonInformativeImageDescriptions.has(normalized) ? '' : description;
+  };
+
   const imageItems = (record) => {
     let raw = record?.image_items;
     if (typeof raw === 'string') {

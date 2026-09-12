@@ -9,13 +9,11 @@
   const centurySelect = root.querySelector('[data-catalog-century]');
   const resetButton = root.querySelector('[data-catalog-reset]');
   const result = document.querySelector('[data-catalog-result]');
-  const authMessages = [...document.querySelectorAll('[data-auth-message]')];
+  const authMessages = [...document.querySelectorAll('[data-auth-message], [data-catalog-auth-message]')];
   const setAuthMessage = (message) => {
     authMessages.forEach((element) => { element.textContent = message; });
   };
   const authUser = document.querySelector('[data-auth-user]');
-  const authAvatar = document.querySelector('[data-auth-avatar]');
-  const authDefaultIcon = document.querySelector('[data-auth-default-icon]');
   const roleBadge = document.querySelector('[data-role-badge]');
   const authProfile = document.querySelector('[data-auth-profile]');
   const authProviders = document.querySelector('[data-auth-providers]');
@@ -29,6 +27,9 @@
   const imageInput = editorForm?.elements.namedItem('image_url');
   const imagePickButton = root.querySelector('[data-image-pick]');
   const imageFileInput = root.querySelector('[data-image-file]');
+  const imageDescriptionInput = editorForm?.elements.namedItem('image_description');
+  const imageGalleryList = root.querySelector('[data-image-gallery-list]');
+  const imageGalleryAddButton = root.querySelector('[data-image-gallery-add]');
   const imageAutoUnderlineButton = root.querySelector('[data-image-auto-underline]');
   const imageOcrStatus = root.querySelector('[data-image-ocr-status]');
   const imagePreview = root.querySelector('[data-image-preview]');
@@ -96,9 +97,9 @@
   const detailContent = root.querySelector('[data-detail-content]');
   const detailView = root.querySelector('[data-detail-view]');
   const detailEditorHost = root.querySelector('[data-detail-editor-host]');
-  const editDetailButton = root.querySelector('[data-edit-detail]');
   const detailPreviousButton = root.querySelector('[data-detail-previous]');
   const detailNextButton = root.querySelector('[data-detail-next]');
+  const editDetailButton = root.querySelector('[data-edit-detail]');
   const shareDetailButton = root.querySelector('[data-share-detail]');
   const detailShareStatus = root.querySelector('[data-detail-share-status]');
   const closeDetailButton = root.querySelector('[data-close-detail]');
@@ -128,31 +129,10 @@
 
   setCatalogLoading(isCatalogLoading);
 
-  const ensureTableAccessibility = (catalogTable, label) => {
-    if (!catalogTable) return;
-    let caption = catalogTable.querySelector('caption');
-    if (!caption) {
-      caption = document.createElement('caption');
-      caption.className = 'sr-only';
-      catalogTable.insertBefore(caption, catalogTable.firstChild);
-    }
-    if (!caption.textContent.trim()) caption.textContent = label;
-    catalogTable.querySelectorAll('thead th').forEach((header) => {
-      if (!header.hasAttribute('scope')) header.setAttribute('scope', 'col');
-    });
-  };
-
-  ensureTableAccessibility(table, 'Referințe istorice despre limba moldovenească');
-  ensureTableAccessibility(unverifiedTable, 'Referințe neverificate despre limba moldovenească');
-  ensureTableAccessibility(ethnicityTable, 'Referințe despre etnie, națiune și popor');
-
   const wrapPublicGrid = () => {
     if (!statusBar || !table.parentElement || statusBar.parentElement !== table.parentElement) return;
     const frame = document.createElement('div');
     frame.className = 'moldoveneasca-grid-frame';
-    frame.setAttribute('role', 'region');
-    frame.setAttribute('aria-label', 'Tabelul catalogului; derulați orizontal pe ecrane mici');
-    frame.setAttribute('tabindex', '0');
     table.parentElement.insertBefore(frame, table);
     if (selectionToolbar) frame.appendChild(selectionToolbar);
     frame.appendChild(table);
@@ -183,6 +163,7 @@
   let catalogTotalPages = 1;
   let lastDetailTrigger = null;
   let currentDetailRecord = null;
+  let detailSourceTable = null;
   let editorInDetail = false;
   let searchDebounceTimer = null;
   const searchDebounceMs = 120;

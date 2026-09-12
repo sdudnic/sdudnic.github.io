@@ -123,19 +123,37 @@ la anul sursei care conține citatul; dacă acel an nu este identificat, se păs
 
 ### Captura paginii și sublinierea glotonimului
 
-Pentru referințele noi, agentul atașează `image_url` numai dacă are captura
-reală a paginii și poate verifica termenul în limba sursei. Formularul web oferă
+Pentru referințele noi, agentul atașează `image_url` sau `image_items` numai dacă
+are captura reală a paginii și poate verifica termenul în limba sursei.
+`image_items` este o listă de obiecte `{ url, description }` (cu opționalele
+`original_url` și `thumbnail_url` pentru variantele R2), astfel încât mai
+multe pagini ale aceleiași opere rămân într-o singură referință și într-un singur
+blade; descrierea se schimbă împreună cu imaginea în carusel. Formularul web oferă
 OCR la cerere prin butonul „Subliniază automat din OCR”; OCR-ul trebuie să
 găsească exact glotonimul din citat, iar agentul verifică previzualizarea înainte
 de publicare. Pentru surse cu IIIF/ALTO, coordonatele din OCR pot fi folosite
 pentru a desena o linie roșie pe imaginea originală.
 
-Capturile `data:` sunt compactate la cel mult 2400 px pe latura lungă și
-aproximativ 1,5 MB binar. Nu încărca imagini mai mari în catalog; URL-urile HTTPS
-externe pot fi păstrate ca referință fără a descărca imaginea în baza de date.
+Pentru salvarea efectivă a mai multor imagini, schema Supabase trebuie să includă
+și migrarea `supabase/migrations/20260911_add_reference_image_items.sql`; până
+atunci, citirea imaginilor legacy cu `image_url` rămâne compatibilă, dar galeria nu
+se poate persista. În producție, Worker-ul transformă orice `data:` primit de
+interfață sau de MCP într-un obiect din binding-ul privat R2
+`MOLDOVENEASCA_IMAGES`; în Supabase se scriu numai URL-ul HTTPS și descrierea.
+Endpointul autentificat `POST /api/images` acceptă o singură imagine binară, iar
+`DELETE /api/images/{key}` este rezervat proprietarului catalogului pentru
+curățare explicită. Scoaterea din carusel se face prin editarea `image_items`,
+fără ștergere automată a obiectului, deoarece același obiect poate fi referit de
+mai multe fișe.
 
-Dacă nu există coordonate sau imaginea nu poate fi verificată, `image_url` rămâne
-`null` și intrarea poate fi publicată numai cu dovada bibliografică obișnuită;
+Capturile `data:` noi sunt reduse la jumătate din lățime și înălțime înainte de
+încărcarea în R2. Migrarea arhivistică păstrează originalul separat, un display
+cu plafon de 3000 px și un thumbnail de maximum 400 px; în Supabase se păstrează
+URL-urile HTTPS și descrierea, nu Base64. Nu încărca imagini mai mari în catalog; URL-urile HTTPS
+externe pot fi păstrate ca referință fără a descărca imaginea în R2 sau în baza de date.
+
+Dacă nu există coordonate sau imaginea nu poate fi verificată, `image_url` și
+`image_items` rămân necompletate, iar intrarea poate fi publicată numai cu dovada bibliografică obișnuită;
 nu se fabrică screenshot-uri și nu se subliniază un text recreat. La adăugare,
 transmite imaginea verificată în `add_moldoveneasca_reference`, iar la o intrare
 existentă folosește `edit_moldoveneasca_reference`. După lot, folosește

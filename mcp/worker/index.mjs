@@ -1,8 +1,27 @@
 import { catalogStatistics, normalizeReference, searchReferences, REFERENCE_FIELDS } from '../catalog-core.mjs';
 import { extractBearer, ServiceError, SupabaseGateway } from '../auth.mjs';
 import { handleRpc } from '../protocol.mjs';
+import { deleteStoredImage, getStoredImage, imageKeyFromPath, imageUrlForRequest, materializeReferenceImages, putImageBytes, IMAGE_MAX_DISPLAY_BYTES, IMAGE_MAX_ORIGINAL_BYTES, IMAGE_MAX_THUMBNAIL_BYTES, IMAGE_MAX_BYTES } from './image-storage.mjs';
 
 const VERSION = '0.1.0';
+const AUTH_CACHE_TTL_MS = 5 * 60 * 1_000;
+const AUTH_CACHE_MAX_ENTRIES = 32;
+const authCache = new Map();
+
+async function authenticateCached(gateway, token) {
+  const key = String(token || '').trim();
+  if (!key) return gateway.authenticate(token);
+  const now = Date.now();
+  const cached = authCache.get(key);
+  if (cached?.expiresAt > now) return cached.value;
+  if (cached) authCache.delete(key);
+  const value = await gateway.authenticate(key);
+  if (authCache.size >= AUTH_CACHE_MAX_ENTRIES) {
+    authCache.delete(authCache.keys().next().value);
+  }
+  authCache.set(key, { value, expiresAt: now + AUTH_CACHE_TTL_MS });
+  return value;
+}
 
 class RemoteCatalog {
   constructor(env) {
@@ -19,7 +38,7 @@ class RemoteCatalog {
     if (this.rowsCache) return this.rowsCache;
     if (!this.url || !this.key) throw new ServiceError('Catalogul public nu este configurat în Worker.', { status: 503, code: 'catalog_unavailable' });
     const rows = [];
-    const select = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url', 'image_url'].includes(field)).join(',');
+    const select = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url', 'image_url', 'image_items'].includes(field)).join(',');
     for (let offset = 0; offset < 100_000; offset += 1_000) {
       const url = new URL(`${this.url}/rest/v1/language_references`);
       url.searchParams.set('select', select);
@@ -46,18 +65,25 @@ class RemoteCatalog {
   }
 
   async get(id) {
-    const rows = await this.rows();
-    const cached = rows.find((row) => row.id === String(id)) || null;
-    if (!cached || !this.url || !this.key) return cached;
-    const url = new URL(`${this.url}/rest/v1/language_references`);
-    url.searchParams.set('select', REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url'].includes(field)).join(','));
-    url.searchParams.set('id', 'eq.' + encodeURIComponent(String(id)));
-    url.searchParams.set('status', 'eq.published');
-    url.searchParams.set('limit', '1');
-    const response = await fetch(url, { headers: { apikey: this.key, authorization: `Bearer ${this.key}` } });
+    if (!this.url || !this.key) throw new ServiceError('Catalogul public nu este configurat în Worker.', { status: 503, code: 'catalog_unavailable' });
+    const fields = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url'].includes(field));
+    const request = (selectedFields) => {
+      const url = new URL(`${this.url}/rest/v1/language_references`);
+      url.searchParams.set('select', selectedFields.join(','));
+      url.searchParams.set('id', 'eq.' + String(id));
+      url.searchParams.set('status', 'eq.published');
+      url.searchParams.set('limit', '1');
+      return fetch(url, { headers: { apikey: this.key, authorization: `Bearer ${this.key}` } });
+    };
+    let response = await request(fields);
+    // Keep detail links usable while an older Supabase project is waiting for
+    // the image_items migration. New deployments still return the gallery.
+    if (!response.ok && response.status === 400 && fields.includes('image_items')) {
+      response = await request(fields.filter((field) => field !== 'image_items'));
+    }
     if (!response.ok) throw new ServiceError(`Supabase a răspuns cu ${response.status}.`, { status: 502, code: 'supabase_error' });
     const batch = await response.json();
-    return normalizeReference(Array.isArray(batch) ? batch[0] : null) || cached;
+    return normalizeReference(Array.isArray(batch) ? batch[0] : null);
   }
 
   async statistics() {
@@ -69,7 +95,7 @@ class RemoteCatalog {
 function cors(env) {
   return {
     'access-control-allow-origin': env.MOLDOVENEASCA_CORS_ORIGIN || '*',
-    'access-control-allow-headers': 'Authorization, Content-Type, X-API-Key, MCP-Protocol-Version',
+    'access-control-allow-headers': 'Authorization, Content-Type, X-API-Key, X-Image-Variant, X-Image-Reference-Id, MCP-Protocol-Version',
     'access-control-allow-methods': 'GET, POST, PATCH, DELETE, OPTIONS',
     'access-control-expose-headers': 'MCP-Session-Id',
     'cache-control': 'no-store',
@@ -111,6 +137,8 @@ function openApi() {
       '/api/references': { get: {}, post: {} },
       '/api/references/{id}': { get: {}, patch: {}, delete: {} },
       '/api/references/{id}/review': { post: {} },
+      '/api/images': { post: {} },
+      '/api/images/{key}': { get: {}, delete: {} },
       '/api/unverified': { get: {} },
       '/api/moderation-requests': { get: {} },
       '/api/moderation-requests/{id}/review': { post: {} },
@@ -122,14 +150,25 @@ function openApi() {
 
 async function body(request, { allowEmpty = false } = {}) {
   const length = Number(request.headers.get('content-length') || 0);
-  // Permitem imaginea compactată de aproximativ 1,5 MB plus metadatele JSON;
-  // limita imaginii propriu-zise este verificată separat în auth.mjs.
-  if (length > 3_000_000) throw new ServiceError('Corpul cererii este prea mare.', { status: 413, code: 'payload_too_large' });
+  // Mai multe capturi compacte pot aparține aceleiași referințe; limita
+  // fiecărei imagini și limita agregată sunt verificate separat în auth.mjs.
+  if (length > 8_000_000) throw new ServiceError('Corpul cererii este prea mare.', { status: 413, code: 'payload_too_large' });
   if (!request.body) {
     if (allowEmpty) return {};
     throw new ServiceError('Corpul cererii trebuie să fie JSON valid.', { status: 400, code: 'invalid_json' });
   }
   try { return await request.json(); } catch { throw new ServiceError('Corpul cererii trebuie să fie JSON valid.', { status: 400, code: 'invalid_json' }); }
+}
+
+async function imageResponse(request, env, key) {
+  const object = await getStoredImage(env, key);
+  if (!object) return json({ error: { code: 'not_found', message: 'Imaginea nu a fost găsită.' } }, 404, env);
+  const headers = new Headers(cors(env));
+  object.writeHttpMetadata(headers);
+  headers.set('etag', object.httpEtag);
+  headers.set('cache-control', 'public, max-age=31536000, immutable');
+  headers.set('content-location', imageUrlForRequest(request, key));
+  return new Response(object.body, { status: 200, headers });
 }
 
 async function http(request, env) {
@@ -138,37 +177,77 @@ async function http(request, env) {
   if (!apiKeyAllowed(request, env)) return json({ error: { code: 'api_key_required', message: 'Este necesară cheia API.' } }, 401, env);
   const store = new RemoteCatalog(env);
   const gateway = gatewayFor(env);
-  const context = { store, gateway, authenticate: (token) => gateway.authenticate(token), headers: Object.fromEntries(request.headers), accessToken: extractBearer(Object.fromEntries(request.headers)) };
+  const context = {
+    store,
+    gateway,
+    authenticate: (token) => authenticateCached(gateway, token),
+    headers: Object.fromEntries(request.headers),
+    accessToken: extractBearer(Object.fromEntries(request.headers)),
+    prepareReferenceInput: (input, auth) => materializeReferenceImages(env, request, input, auth)
+  };
   try {
     if (url.pathname === '/health' && request.method === 'GET') return json({ ok: true, service: 'moldoveneasca-references', version: VERSION, runtime: 'cloudflare-workers' }, 200, env);
     if (url.pathname === '/openapi.json' && request.method === 'GET') return json(openApi(), 200, env);
     if ((url.pathname === '/' || url.pathname === '/api') && request.method === 'GET') return json({ service: 'moldoveneasca-references', mcp: '/mcp', rest: ['/api/references', '/api/references/{id}', '/api/stats'] }, 200, env);
+    if (url.pathname === '/api/images' && request.method === 'POST') {
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
+      const contentType = String(request.headers.get('content-type') || '').split(';', 1)[0].trim().toLowerCase();
+      if (!/^image\/(avif|gif|jpeg|jpg|png|webp)$/i.test(contentType)) {
+        throw new ServiceError('Imaginea trebuie să fie AVIF, GIF, JPEG, PNG sau WebP.', { status: 415, code: 'unsupported_media_type' });
+      }
+      const variantHeader = String(request.headers.get('x-image-variant') || '').trim().toLowerCase();
+      const variant = ['original', 'display', 'thumbnail'].includes(variantHeader) ? variantHeader : null;
+      if (variantHeader && !variant) throw new ServiceError('Varianta imaginii nu este validă.', { status: 400, code: 'invalid_input' });
+      const referenceId = String(request.headers.get('x-image-reference-id') || '').trim();
+      const maxBytes = variant === 'original'
+        ? IMAGE_MAX_ORIGINAL_BYTES
+        : variant === 'display'
+          ? IMAGE_MAX_DISPLAY_BYTES
+          : variant === 'thumbnail'
+            ? IMAGE_MAX_THUMBNAIL_BYTES
+            : IMAGE_MAX_BYTES;
+      const length = Number(request.headers.get('content-length') || 0);
+      if (length > maxBytes) throw new ServiceError(`Imaginea este prea mare. Limita pentru această variantă este ${Math.round(maxBytes / 1000)} KB.`, { status: 413, code: 'payload_too_large' });
+      const bytes = new Uint8Array(await request.arrayBuffer());
+      if (!bytes.byteLength || bytes.byteLength > maxBytes) throw new ServiceError('Imaginea este prea mare sau goală.', { status: 413, code: 'payload_too_large' });
+      const stored = await putImageBytes(env, bytes, { contentType, ownerId: auth.userId, variant, referenceId });
+      return json({ data: { url: imageUrlForRequest(request, stored.key), key: stored.key, bytes: stored.bytes, content_type: stored.contentType } }, 201, env);
+    }
+    const imageKey = imageKeyFromPath(url.pathname);
+    if (imageKey && request.method === 'GET') return imageResponse(request, env, imageKey);
+    if (imageKey && request.method === 'DELETE') {
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
+      if (!auth.isPrimaryAdmin) throw new ServiceError('Numai proprietarul catalogului poate elimina obiecte din R2.', { status: 403, code: 'image_delete_forbidden' });
+      await deleteStoredImage(env, imageKey);
+      return json({ data: { deleted: true, key: imageKey } }, 200, env);
+    }
     if (url.pathname === '/api/stats' && request.method === 'GET') return json({ data: await store.statistics() }, 200, env);
     if (url.pathname === '/api/references' && request.method === 'GET') return json({ data: await store.search(queryObject(url)) }, 200, env);
     if (url.pathname === '/api/references' && request.method === 'POST') {
-      const auth = await gateway.authenticate(extractBearer(request.headers));
-      return json({ data: await gateway.createReference(auth, await body(request)) }, 201, env);
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
+      const prepared = await materializeReferenceImages(env, request, await body(request), auth);
+      return json({ data: await gateway.createReference(auth, prepared.payload) }, 201, env);
     }
     if (url.pathname === '/api/unverified' && request.method === 'GET') {
-      const auth = await gateway.authenticate(extractBearer(request.headers));
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
       const items = await gateway.listUnverified(auth);
       return json({ data: { items, count: items.length } }, 200, env);
     }
     if (url.pathname === '/api/moderation-requests' && request.method === 'GET') {
-      const auth = await gateway.authenticate(extractBearer(request.headers));
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
       const query = queryObject(url);
       const items = await gateway.listModerationRequests(auth, { status: query.status || 'pending', requestType: query.request_type || null });
       return json({ data: { items, count: items.length } }, 200, env);
     }
     const reviewRequest = url.pathname.match(/^\/api\/moderation-requests\/([^/]+)\/review$/);
     if (reviewRequest && request.method === 'POST') {
-      const auth = await gateway.authenticate(extractBearer(request.headers));
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
       const input = await body(request);
       return json({ data: await gateway.reviewModerationRequest(auth, decodeURIComponent(reviewRequest[1]), input.action, input.note) }, 200, env);
     }
     const reviewReference = url.pathname.match(/^\/api\/references\/([^/]+)\/review$/);
     if (reviewReference && request.method === 'POST') {
-      const auth = await gateway.authenticate(extractBearer(request.headers));
+      const auth = await authenticateCached(gateway, extractBearer(request.headers));
       const input = await body(request);
       return json({ data: await gateway.reviewReference(auth, decodeURIComponent(reviewReference[1]), input.action, input.note) }, 200, env);
     }
@@ -181,7 +260,8 @@ async function http(request, env) {
       const auth = await gateway.authenticate(extractBearer(request.headers));
       const input = await body(request);
       const changes = input?.changes && typeof input.changes === 'object' ? input.changes : input;
-      return json({ data: await gateway.updateReference(auth, decodeURIComponent(reference[1]), changes, input?.reason) }, 200, env);
+      const prepared = await materializeReferenceImages(env, request, changes, auth);
+      return json({ data: await gateway.updateReference(auth, decodeURIComponent(reference[1]), prepared.payload, input?.reason) }, 200, env);
     }
     if (reference && request.method === 'DELETE') {
       const auth = await gateway.authenticate(extractBearer(request.headers));
@@ -192,7 +272,7 @@ async function http(request, env) {
       const token = extractBearer(request.headers);
       if (mcpAuthRequired(env)) {
         if (!token) return new Response(null, { status: 401, headers: { ...cors(env), 'www-authenticate': 'Bearer' } });
-        await gateway.authenticate(token);
+        await authenticateCached(gateway, token);
       }
       const input = await body(request);
       const inputs = Array.isArray(input) ? input : [input];

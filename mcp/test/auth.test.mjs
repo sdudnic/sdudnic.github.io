@@ -1,6 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { SupabaseGateway } from '../auth.mjs';
+import { extractBearer, SupabaseGateway, normalizeReferenceInput } from '../auth.mjs';
+
+test('extrage bearer token și din Headers nativ al Workerului', () => {
+  assert.equal(extractBearer(new Headers({ authorization: 'Bearer worker-token' })), 'worker-token');
+});
+
+test('anul necunoscut elimină intervalele deduse la adăugare și editare', () => {
+  const payload = normalizeReferenceInput({ year_label: 'Necunoscut', year_start: 1643, year_end: 1644 });
+  assert.equal(payload.year_label, 'necunoscut');
+  assert.equal(payload.year_start, null);
+  assert.equal(payload.year_end, null);
+});
 
 const reference = {
   id: 'reference-1',
@@ -141,4 +152,41 @@ test('respinge o imagine data URL peste limita de 1,5 MB', async () => {
     }),
     (error) => error?.code === 'payload_too_large' && /1,5 MB/.test(error.message)
   );
+});
+
+test('normalizează galeria și păstrează prima imagine pentru compatibilitate', () => {
+  const result = normalizeReferenceInput({
+    year_label: '1900',
+    title: 'Referință cu galerie',
+    quote: 'limba moldovenească',
+    image_items: [
+      { url: 'https://example.test/page-1.jpg', description: 'Pagina 1' },
+      { url: 'https://example.test/page-2.jpg', description: 'Pagina 2' }
+    ]
+  });
+  assert.equal(result.image_url, 'https://example.test/page-1.jpg');
+  assert.deepEqual(result.image_items, [
+    { url: 'https://example.test/page-1.jpg', description: 'Pagina 1' },
+    { url: 'https://example.test/page-2.jpg', description: 'Pagina 2' }
+  ]);
+});
+
+test('păstrează variantele R2 pe același slide', () => {
+  const result = normalizeReferenceInput({
+    year_label: '1900',
+    title: 'Referință cu variante',
+    quote: 'limba moldovenească',
+    image_items: [{
+      url: 'https://example.test/display.jpg',
+      description: 'Pagina verificată',
+      original_url: 'https://example.test/original.jpg',
+      thumbnail_url: 'https://example.test/thumbnail.jpg'
+    }]
+  });
+  assert.deepEqual(result.image_items[0], {
+    url: 'https://example.test/display.jpg',
+    description: 'Pagina verificată',
+    original_url: 'https://example.test/original.jpg',
+    thumbnail_url: 'https://example.test/thumbnail.jpg'
+  });
 });

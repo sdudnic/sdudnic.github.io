@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { readFile, stat } from 'node:fs/promises';
 import { dirname, isAbsolute, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { normalizeImageItems } from './catalog-core.mjs';
 
 const MODULE_DIR = dirname(fileURLToPath(import.meta.url));
 export const PROJECT_ROOT = resolve(MODULE_DIR, '..');
@@ -20,6 +21,7 @@ export const REFERENCE_FIELDS = [
   'location',
   'source_url',
   'image_url',
+  'image_items',
   'catalog_type',
   'status',
   'provider',
@@ -112,6 +114,7 @@ export function normalizeReference(row, sourceLabel = '') {
     location: text(row.location),
     source_url: sourceUrl,
     image_url: text(row.image_url),
+    image_items: normalizeImageItems(row.image_items, row.image_url),
     catalog_type: CATALOG_TYPES.has(text(row.catalog_type)) ? text(row.catalog_type) : 'language',
     status: STATUS_VALUES.has(text(row.status)) ? text(row.status) : 'pending',
     provider: text(row.provider),
@@ -312,6 +315,8 @@ export class CatalogStore {
     this.cache = null;
     this.cacheKey = '';
     this.remoteExpiresAt = 0;
+    this.pendingSnapshot = null;
+    this.generation = 0;
   }
 
   get sourceKind() {
@@ -321,6 +326,8 @@ export class CatalogStore {
   }
 
   invalidate() {
+    this.generation += 1;
+    this.pendingSnapshot = null;
     this.cache = null;
     this.cacheKey = '';
     this.remoteExpiresAt = 0;
@@ -375,7 +382,7 @@ export class CatalogStore {
     // Imaginea de dovadă poate fi un data URL mare; nu o încărca pentru
     // listări/statistici. Este cerută separat numai la deschiderea unei
     // referințe.
-    const select = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url', 'image_url'].includes(field)).join(',');
+    const select = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url', 'image_url', 'image_items'].includes(field)).join(',');
     for (let offset = 0; offset < 100_000; offset += 1_000) {
       const url = new URL(`${this.supabaseUrl}/rest/v1/language_references`);
       url.searchParams.set('select', select);
@@ -402,15 +409,24 @@ export class CatalogStore {
   }
 
   async _loadSupabaseReference(id) {
-    const select = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url'].includes(field)).join(',');
-    const url = new URL(`${this.supabaseUrl}/rest/v1/language_references`);
-    url.searchParams.set('select', select);
-    url.searchParams.set('id', `eq.${String(id)}`);
-    url.searchParams.set('status', 'eq.published');
-    url.searchParams.set('limit', '1');
-    const response = await this.fetchImpl(url, {
-      headers: { apikey: this.supabaseKey, authorization: `Bearer ${this.supabaseKey}` }
-    });
+    const fields = REFERENCE_FIELDS.filter((field) => !['provider', 'external_id', 'evidence_url'].includes(field));
+    const request = (selectedFields) => {
+      const url = new URL(`${this.supabaseUrl}/rest/v1/language_references`);
+      url.searchParams.set('select', selectedFields.join(','));
+      url.searchParams.set('id', `eq.${String(id)}`);
+      url.searchParams.set('status', 'eq.published');
+      url.searchParams.set('limit', '1');
+      return this.fetchImpl(url, {
+        headers: { apikey: this.supabaseKey, authorization: `Bearer ${this.supabaseKey}` }
+      });
+    };
+    let response = await request(fields);
+    // The public detail remains readable while an older Supabase project is
+    // waiting for the image_items migration. normalizeReference reconstructs
+    // a one-image gallery from the legacy image_url field in that case.
+    if (!response.ok && response.status === 400 && fields.includes('image_items')) {
+      response = await request(fields.filter((field) => field !== 'image_items'));
+    }
     if (!response.ok) throw new Error(`Supabase a răspuns cu ${response.status}.`);
     const batch = await response.json();
     return normalizeReference(Array.isArray(batch) ? batch[0] : null, 'supabase');
@@ -419,9 +435,21 @@ export class CatalogStore {
   async snapshot({ force = false } = {}) {
     if (this.sourceKind === 'supabase') {
       if (!force && this.cache && Date.now() < this.remoteExpiresAt) return this.cache;
-      this.cache = await this._loadSupabase();
-      this.remoteExpiresAt = Date.now() + this.cacheTtlMs;
-      return this.cache;
+      if (this.pendingSnapshot) return this.pendingSnapshot;
+      const generation = this.generation;
+      const pending = this._loadSupabase().then((snapshot) => {
+        if (generation === this.generation) {
+          this.cache = snapshot;
+          this.remoteExpiresAt = Date.now() + this.cacheTtlMs;
+        }
+        return snapshot;
+      });
+      this.pendingSnapshot = pending;
+      try {
+        return await pending;
+      } finally {
+        if (this.pendingSnapshot === pending) this.pendingSnapshot = null;
+      }
     }
     const key = await this._localSignature();
     if (!force && this.cache && this.cacheKey === key) return this.cache;
@@ -436,13 +464,13 @@ export class CatalogStore {
   }
 
   async get(id, { status = 'published' } = {}) {
-    const snapshot = await this.snapshot();
     const allowed = statusesFrom(status);
+    if (this.sourceKind === 'supabase') {
+      return allowed.includes('published') ? this._loadSupabaseReference(id) : null;
+    }
+    const snapshot = await this.snapshot();
     const row = snapshot.rows.find((entry) => entry.id === String(id) && allowed.includes(entry.status));
     if (!row) return null;
-    if (this.sourceKind === 'supabase' && allowed.includes('published')) {
-      return (await this._loadSupabaseReference(row.id)) || row;
-    }
     return row;
   }
 

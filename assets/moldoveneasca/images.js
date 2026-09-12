@@ -1,34 +1,78 @@
+  const pendingRecordImages = new Map();
+  const cacheRecordImage = (id, value, items) => {
+    const cached = value && typeof value === 'object' && !Array.isArray(value)
+      ? { ...value }
+      : { image_url: value || null };
+    if (items !== undefined) cached.image_items = items;
+    recordImageCache.delete(id);
+    recordImageCache.set(id, cached);
+    while (recordImageCache.size > 8) recordImageCache.delete(recordImageCache.keys().next().value);
+  };
+
   const loadRecordImage = async (record) => {
     if (!record) return record;
     const id = String(record.id || '');
-    if (Object.prototype.hasOwnProperty.call(record, 'image_url')) {
-      if (id) recordImageCache.set(id, record.image_url || null);
+    const hasImagePayload = Object.prototype.hasOwnProperty.call(record, 'image_url')
+      || Object.prototype.hasOwnProperty.call(record, 'image_items');
+    if (hasImagePayload) {
+      if (id) cacheRecordImage(id, record.image_url, record.image_items);
       return record;
     }
     if (id && recordImageCache.has(id)) {
-      record.image_url = recordImageCache.get(id);
-      return record;
+      return { ...record, ...recordImageCache.get(id) };
     }
     if (!id || !supabaseClient) return record;
-    const { data, error } = await supabaseClient
-      .from('language_references')
-      .select('image_url')
-      .eq('id', id)
-      .maybeSingle();
-    if (!error) {
-      record.image_url = data?.image_url || null;
-      recordImageCache.set(id, record.image_url);
+    if (!pendingRecordImages.has(id)) {
+      const userId = currentUser?.id;
+      const request = (async () => {
+        let response = await supabaseClient.from('language_references')
+          .select('image_url,image_items').eq('id', id).maybeSingle();
+        // Older deployments do not have image_items yet. Keep the legacy
+        // single-image blade usable until the SQL migration is applied.
+        if (response.error) {
+          response = await supabaseClient.from('language_references')
+            .select('image_url').eq('id', id).maybeSingle();
+        }
+        if (response.error) throw response.error;
+        const value = {
+          image_url: response.data?.image_url || null,
+          image_items: response.data?.image_items || []
+        };
+        if (userId === currentUser?.id) cacheRecordImage(id, value);
+        return value;
+      })();
+      pendingRecordImages.set(id, request);
     }
-    return record;
+    const request = pendingRecordImages.get(id);
+    try {
+      return { ...record, ...(await request) };
+    } finally {
+      if (pendingRecordImages.get(id) === request) pendingRecordImages.delete(id);
+    }
   };
 
-  // 2400 px păstrează detaliile unei pagini scanate la afișare și la zoom;
-  // aproximativ 1,5 MB este limita pentru o imagine data URL stocată în BD.
-  const imageMaxEdge = 2400;
+  // Capturile noi se păstrează la jumătate din lățimea și înălțimea originale;
+  // 1200 px rămâne limita pentru latura cea mai lungă, iar aproximativ 1,5 MB
+  // este limita pentru o imagine data URL stocată în BD.
+  const imageTargetScale = 0.5;
+  const imageMaxEdge = 1200;
   const imageMaxBytes = 1_500_000;
   const imageMaxDataUrlChars = 2_100_000;
+  const imageMaxItems = 12;
+  const imageMaxTotalDataUrlChars = 6_300_000;
   const imageJpegQualities = [0.84, 0.78, 0.72, 0.68, 0.64];
   const imageScaleFactors = [1, 0.9, 0.8, 0.7, 0.6, 0.5];
+
+  const imageTargetDimensions = (width, height) => {
+    const sourceWidth = Math.max(1, Number(width) || 1);
+    const sourceHeight = Math.max(1, Number(height) || 1);
+    const longestEdge = Math.max(sourceWidth, sourceHeight);
+    const scale = Math.min(imageTargetScale, imageMaxEdge / longestEdge);
+    return {
+      width: Math.max(1, Math.round(sourceWidth * scale)),
+      height: Math.max(1, Math.round(sourceHeight * scale))
+    };
+  };
   let imageSourceDataUrl = '';
   let imageHasExternalRed = false;
   let imageStrokes = [];
@@ -156,6 +200,16 @@
     return normalized.length <= imageMaxDataUrlChars && imageDataUrlBytes(normalized) <= imageMaxBytes;
   };
 
+  const imageItemsWithinLimit = (items) => {
+    if (!Array.isArray(items) || items.length > imageMaxItems) return false;
+    const totalDataUrlChars = items.reduce((total, item) => {
+      const url = String(item?.url || '').replace(/\s+/g, '');
+      return total + (/^data:image\//i.test(url) ? url.length : 0);
+    }, 0);
+    return totalDataUrlChars <= imageMaxTotalDataUrlChars
+      && items.every((item) => imageValueWithinLimit(item?.url));
+  };
+
   const encodeCanvasWithinLimit = (sourceCanvas, width, height) => {
     const sourceWidth = Math.max(1, Number(width) || sourceCanvas.width || 1);
     const sourceHeight = Math.max(1, Number(height) || sourceCanvas.height || 1);
@@ -188,10 +242,11 @@
   const resizeImageData = (dataUrl) => new Promise((resolve, reject) => {
     const image = new Image();
     image.onload = () => {
-      const longestEdge = Math.max(image.naturalWidth || image.width, image.naturalHeight || image.height);
-      const scale = longestEdge > imageMaxEdge ? imageMaxEdge / longestEdge : 1;
-      const width = Math.max(1, Math.round((image.naturalWidth || image.width) * scale));
-      const height = Math.max(1, Math.round((image.naturalHeight || image.height) * scale));
+      const originalWidth = image.naturalWidth || image.width;
+      const originalHeight = image.naturalHeight || image.height;
+      const dimensions = imageTargetDimensions(originalWidth, originalHeight);
+      const width = dimensions.width;
+      const height = dimensions.height;
       const canvas = document.createElement('canvas');
       canvas.width = width;
       canvas.height = height;
@@ -209,8 +264,8 @@
         width: encoded.width,
         height: encoded.height,
         bytes: encoded.bytes,
-        originalWidth: image.naturalWidth || image.width,
-        originalHeight: image.naturalHeight || image.height,
+        originalWidth,
+        originalHeight,
         hasRedAnnotations: detectRedAnnotations(context, width, height)
       });
     };

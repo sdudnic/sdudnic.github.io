@@ -76,6 +76,21 @@ const TOOL_DEFINITIONS = [
         location: { type: ['string', 'null'] },
         source_url: { type: ['string', 'null'] },
         image_url: { type: ['string', 'null'] },
+        image_items: {
+          type: ['array', 'null'],
+          maxItems: 12,
+          items: {
+            type: 'object',
+            additionalProperties: false,
+            required: ['url', 'description'],
+            properties: {
+              url: { type: 'string' },
+              description: { type: 'string', minLength: 1 },
+              original_url: { type: 'string', format: 'uri' },
+              thumbnail_url: { type: 'string', format: 'uri' }
+            }
+          }
+        },
         catalog_type: { type: 'string', enum: ['language', 'ethnicity', 'both'] }
       }
     }
@@ -159,6 +174,12 @@ function invalidateStore(store) {
   if (typeof store?.invalidate === 'function') store.invalidate();
 }
 
+async function prepareReferenceInput(context, input, auth) {
+  if (typeof context?.prepareReferenceInput !== 'function') return input;
+  const prepared = await context.prepareReferenceInput(input, auth);
+  return prepared?.payload ?? prepared ?? input;
+}
+
 async function callTool(name, args, context) {
   const store = context.store;
   const gateway = context.gateway;
@@ -198,13 +219,15 @@ async function callTool(name, args, context) {
     }
     case 'add_moldoveneasca_reference': {
       const auth = await context.authenticate(requestToken(context));
-      const result = await gateway.createReference(auth, argumentsObject);
+      const input = await prepareReferenceInput(context, argumentsObject, auth);
+      const result = await gateway.createReference(auth, input);
       invalidateStore(store);
       return result;
     }
     case 'edit_moldoveneasca_reference': {
       const auth = await context.authenticate(requestToken(context));
-      const result = await gateway.updateReference(auth, argumentsObject.id, argumentsObject.changes, argumentsObject.reason);
+      const changes = await prepareReferenceInput(context, argumentsObject.changes, auth);
+      const result = await gateway.updateReference(auth, argumentsObject.id, changes, argumentsObject.reason);
       invalidateStore(store);
       return result;
     }

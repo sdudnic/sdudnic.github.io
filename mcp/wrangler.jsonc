@@ -9,6 +9,12 @@
     "enabled": true,
     "head_sampling_rate": 0.1
   },
+  "r2_buckets": [
+    {
+      "binding": "MOLDOVENEASCA_IMAGES",
+      "bucket_name": "moldoveneasca-images"
+    }
+  ],
   "vars": {
     "MOLDOVENEASCA_PRIMARY_ADMIN_EMAIL": "sdudnic@gmail.com",
     "MOLDOVENEASCA_REQUIRE_MCP_AUTH": "true"

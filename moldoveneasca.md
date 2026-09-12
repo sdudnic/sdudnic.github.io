@@ -7,7 +7,7 @@ description: Catalog documentar cu referințe istorice despre denumirea limbii m
 permalink: /moldoveneasca/
 # Dezactivează temporar tabelul și încărcarea bazei de date cât timp catalogul
 # este în mentenanță; revenirea se face prin schimbarea valorii în false.
-catalog_maintenance: true
+catalog_maintenance: false
 ---
 
 {% if page.catalog_maintenance %}
@@ -52,6 +52,14 @@ catalog_maintenance: true
     <button type="button" class="moldoveneasca-icon-button" data-open-form hidden aria-label="Adaugă referință" title="Adaugă referință"><span aria-hidden="true">＋</span></button>
   </div>
 
+  <div class="moldoveneasca-auth" aria-live="polite">
+    <div>
+      <p class="eyebrow">Contribuții și verificare</p>
+      <p data-catalog-auth-message>Vizualizarea este deschisă tuturor. Autentifică-te pentru a adăuga referințe sau a propune modificări.</p>
+    </div>
+    <small>Autentificarea și ieșirea din cont sunt disponibile în bara de sus.</small>
+  </div>
+
   <section class="moldoveneasca-editor" data-reference-editor hidden aria-labelledby="editor-title">
     <div class="moldoveneasca-editor__heading">
       <div>
@@ -64,7 +72,7 @@ catalog_maintenance: true
       <div class="moldoveneasca-form-grid">
         <label class="moldoveneasca-field">
           <span>Anul / secolul publicării citatului</span>
-          <input name="year_label" required inputmode="text" minlength="1" maxlength="30" pattern="(?:1[0-9]{3}|20[0-9]{2}|(?:sec(?:ol)?\.?\s*)?(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI)(?:\s*[–—-]\s*(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI))?)" placeholder="Ex.: 1714 sau XVII" title="Introdu anul exact al publicării; dacă nu este cunoscut, introdu doar secolul">
+          <input name="year_label" required inputmode="text" minlength="1" maxlength="30" pattern="(?:necunoscut|1[0-9]{3}|20[0-9]{2}|(?:sec(?:ol)?\.?\s*)?(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI)(?:\s*[–—-]\s*(?:XIV|XV|XVI|XVII|XVIII|XIX|XX|XXI))?)" placeholder="Ex.: 1714, XVII sau necunoscut" title="Introdu anul publicării, secolul documentat sau necunoscut">
           <small class="moldoveneasca-field-hint">Dacă anul exact al citatului nu este cunoscut, trece doar secolul; datarea presupusă se explică la „Comentarii”.</small>
         </label>
         <label class="moldoveneasca-field">
@@ -121,7 +129,11 @@ catalog_maintenance: true
             <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-image-auto-underline disabled>Subliniază automat din OCR</button>
             <small class="moldoveneasca-field-hint" data-image-ocr-status aria-live="polite"></small>
           </span>
-          <small id="image-help" class="moldoveneasca-field-hint">Lipește cu Ctrl+V captura paginii unde apare citatul. Capturile sunt compactate automat la cel mult 2400 px pe latura lungă și aproximativ 1,5 MB, pentru încărcare rapidă fără pierderea lizibilității. OCR-ul rulează în browser și subliniază doar dacă găsește exact glotonimul din citat; verifică imaginea înainte de publicare.</small>
+          <small id="image-help" class="moldoveneasca-field-hint">Lipește cu Ctrl+V captura paginii unde apare citatul. Capturile sunt reduse automat la jumătate din lățime și înălțime, cu maximum 1200 px pe latura lungă și aproximativ 1,5 MB. La salvare, imaginea este încărcată în Cloudflare R2, iar în Supabase se păstrează doar URL-ul HTTPS și descrierea ei. OCR-ul rulează în browser și subliniază doar dacă găsește exact glotonimul din citat; verifică imaginea înainte de publicare.</small>
+          <span class="moldoveneasca-image-description">
+            <span>Descrierea imaginii principale</span>
+            <textarea name="image_description" rows="2" maxlength="1000" placeholder="Ex.: p. 263 — pasajul despre limba Moldovenească." aria-label="Descrierea imaginii principale"></textarea>
+          </span>
           <span class="moldoveneasca-image-preview" data-image-preview hidden></span>
           <span class="moldoveneasca-image-markup" data-image-markup hidden>
             <small class="moldoveneasca-field-hint" data-image-markup-status>Trasează cu mouse-ul sau degetul o linie roșie sub glotonim.</small>
@@ -130,6 +142,12 @@ catalog_maintenance: true
               <button type="button" class="moldoveneasca-icon-button" data-image-undo aria-label="Anulează ultima subliniere" title="Anulează ultima subliniere"><span aria-hidden="true">↶</span></button>
               <button type="button" class="moldoveneasca-icon-button" data-image-clear aria-label="Elimină sublinierile adăugate" title="Elimină sublinierile adăugate"><span aria-hidden="true">×</span></button>
             </span>
+          </span>
+          <span class="moldoveneasca-image-gallery-editor" data-image-gallery-editor>
+            <span class="moldoveneasca-field-hint">Imagini suplimentare pentru aceeași referință</span>
+            <span class="moldoveneasca-image-gallery-list" data-image-gallery-list></span>
+            <button type="button" class="moldoveneasca-button moldoveneasca-button--quiet" data-image-gallery-add>Adaugă imagine</button>
+            <small class="moldoveneasca-field-hint">Fiecare imagine trebuie să aibă o descriere proprie. În blade se afișează într-un singur carusel; eliminarea din listă scoate imaginea din referință.</small>
           </span>
         </label>
         <label class="moldoveneasca-field" data-admin-only hidden>
@@ -173,7 +191,7 @@ catalog_maintenance: true
 </section>
 
 <script src="{{ '/assets/moldoveneasca-config.js' | relative_url }}"></script>
-<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260906-detail-share-copy"></script>
+<script defer src="{{ '/assets/moldoveneasca.js' | relative_url }}?v=20260912-r2-gallery"></script>
 
 <p class="moldoveneasca-catalog__loading" data-catalog-loading role="status" aria-live="polite" hidden>Se încarcă referințele…</p>
 <script>
@@ -387,7 +405,6 @@ catalog_maintenance: true
   <h2 id="unverified-title"><strong>Referințe neverificate</strong></h2>
   <p>Aceste intrări sunt păstrate separat până la verificarea bibliografică a ediției, autorului, anului, paginii și sursei. O intrare poate fi deja clasificată la <strong>limbă</strong>; verificarea nu schimbă această clasificare. Contribuitorii văd propriile propuneri, administratorii văd lista de lucru, iar confirmarea sau infirmarea îi aparține numai proprietarului catalogului.</p>
   <table class="moldoveneasca-table" data-unverified-table aria-describedby="unverified-title">
-    <caption class="sr-only">Referințe neverificate despre limba moldovenească</caption>
     <thead>
       <tr>
         <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>
@@ -427,7 +444,6 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
   <h2 id="ethnicity-title" class="moldoveneasca-ethnicity__title">Etnie, națiune, popor: moldoveni, moldovean</h2>
   <p class="moldoveneasca-ethnicity__intro">Catalogul reunește mențiuni istorice despre moldoveni și denumiri etnice asociate Moldovei.</p>
   <table class="moldoveneasca-table moldoveneasca-table--ethnicity" data-ethnicity-table aria-describedby="ethnicity-title">
-    <caption class="sr-only">Referințe despre etnie, națiune și popor</caption>
     <thead>
       <tr>
         <th scope="col" class="moldoveneasca-table__selection-heading" data-selection-heading hidden aria-label="Selectare"></th>

@@ -50,6 +50,7 @@ create table if not exists public.language_references (
   location text,
   source_url text,
   image_url text,
+  image_items jsonb not null default '[]'::jsonb,
   catalog_type text not null default 'language',
   status public.reference_status not null default 'pending',
   owner_id uuid not null references public.profiles(id) on delete restrict,
@@ -65,6 +66,10 @@ create table if not exists public.language_references (
     image_url is null
     or image_url ~* '^https://'
     or image_url ~* '^data:image/(avif|gif|jpeg|jpg|png|webp);base64,[A-Za-z0-9+/=]+$'
+  ),
+  constraint language_references_image_items check (
+    jsonb_typeof(image_items) = 'array'
+    and jsonb_array_length(image_items) <= 12
   ),
   constraint language_references_catalog_type check (
     catalog_type in ('language', 'ethnicity', 'both')
@@ -82,6 +87,14 @@ alter table public.language_references
   add column if not exists image_url text;
 
 alter table public.language_references
+  add column if not exists image_items jsonb not null default '[]'::jsonb;
+
+-- Nu rescriem rândurile existente la aplicarea schemei: triggerul de istoric
+-- copiază rândul vechi în reference_revisions și ar duplica imaginile Base64.
+-- Compatibilitatea cu image_url este tratată de MCP și de interfață; conversia
+-- în galerie se face ulterior, în loturi controlate.
+
+alter table public.language_references
   add column if not exists catalog_type text not null default 'language';
 
 do $$
@@ -91,6 +104,18 @@ begin
   alter table public.language_references
     add constraint language_references_catalog_type
     check (catalog_type in ('language', 'ethnicity', 'both'));
+end
+$$;
+
+do $$
+begin
+  alter table public.language_references
+    drop constraint if exists language_references_image_items;
+  alter table public.language_references
+    add constraint language_references_image_items check (
+      jsonb_typeof(image_items) = 'array'
+      and jsonb_array_length(image_items) <= 12
+    ) not valid;
 end
 $$;
 
@@ -500,6 +525,7 @@ begin
           location = case when proposed ? 'location' then nullif(proposed ->> 'location', '') else location end,
           source_url = case when proposed ? 'source_url' then nullif(proposed ->> 'source_url', '') else source_url end,
           image_url = case when proposed ? 'image_url' then nullif(proposed ->> 'image_url', '') else image_url end,
+          image_items = case when proposed ? 'image_items' then coalesce(proposed -> 'image_items', '[]'::jsonb) else image_items end,
           catalog_type = case when proposed ? 'catalog_type' then nullif(proposed ->> 'catalog_type', '') else catalog_type end,
           updated_at = timezone('utc', now())
       where id = request_row.reference_id

@@ -16,36 +16,21 @@
   const remoteSelectFields = 'id, year_label, year_start, year_end, title, author, language, description, quote, source_type, location, source_url, catalog_type, status, owner_id';
   const mcpApiUrl = String(config.mcpApiUrl || '').replace(/\/$/, '');
 
-  const setAuthAvatar = (user) => {
-    if (!authAvatar || !authDefaultIcon) return;
-
-    const metadata = user?.user_metadata || {};
-    const candidate = metadata.avatar_url || metadata.picture || '';
-    let avatarUrl = '';
-    try {
-      const parsedUrl = new URL(String(candidate), window.location.origin);
-      if (parsedUrl.protocol === 'https:' || parsedUrl.protocol === 'http:') avatarUrl = parsedUrl.href;
-    } catch (_error) {
-      avatarUrl = '';
+  // Range explicit: listările complete nu depind de plafonul implicit PostgREST.
+  const loadAllRemoteRows = async (buildQuery, isCurrent = () => true) => {
+    const rows = [];
+    let count = null;
+    for (let offset = 0; ; offset += 100) {
+      const response = await buildQuery().range(offset, offset + 99);
+      if (!isCurrent()) return { data: [], count: 0 };
+      if (response.error) throw response.error;
+      if (Number.isFinite(response.count)) count = response.count;
+      const batch = response.data || [];
+      rows.push(...batch);
+      if (batch.length < 100 || (count !== null && rows.length >= count)) break;
     }
-
-    if (avatarUrl) {
-      authAvatar.src = avatarUrl;
-      authAvatar.hidden = false;
-      authDefaultIcon.hidden = true;
-      return;
-    }
-
-    authAvatar.removeAttribute('src');
-    authAvatar.hidden = true;
-    authDefaultIcon.hidden = false;
+    return { data: rows, count: count ?? rows.length };
   };
-
-  authAvatar?.addEventListener('error', () => {
-    authAvatar.removeAttribute('src');
-    authAvatar.hidden = true;
-    if (authDefaultIcon) authDefaultIcon.hidden = false;
-  });
 
   const mcpRequest = async (path, { method = 'GET', body: requestBody } = {}) => {
     if (!mcpApiUrl) return null;
@@ -66,13 +51,14 @@
     return payload;
   };
 
-  const loadRemoteRecords = async ({ page = currentPage, allRecords = remoteDataMode === 'all' } = {}) => {
+  const loadRemoteRecords = async ({ page = currentPage, allRecords = remoteDataMode === 'all', refreshRelated = true } = {}) => {
     if (!supabaseClient) return;
     const safePage = Math.max(1, Number(page) || 1);
     const targetMode = allRecords ? 'all' : 'page';
     const previousPage = currentPage;
     const previousMode = remoteDataMode;
     const requestToken = ++remoteLoadToken;
+    const isCurrent = () => requestToken === remoteLoadToken;
     currentPage = targetMode === 'all' ? 1 : safePage;
     remoteDataMode = targetMode;
     isRemotePageLoading = true;
@@ -80,37 +66,41 @@
     updatePagination(catalogTotalRecords || remoteRecords.length);
 
     try {
-      let languageQuery = supabaseClient
+      const languageQuery = () => supabaseClient
         .from('language_references')
         .select(remoteSelectFields, { count: 'exact' })
         .eq('status', 'published')
         .or('catalog_type.eq.language,catalog_type.eq.both,catalog_type.is.null')
-        .order('year_start', { ascending: true });
-      if (!allRecords) {
-        const from = (safePage - 1) * pageSize;
-        languageQuery = languageQuery.range(from, from + pageSize - 1);
-      }
+        .order('year_start', { ascending: sortAscending })
+        .order('id', { ascending: true });
+      const from = (safePage - 1) * pageSize;
 
-      const ethnicityQuery = supabaseClient
+      const ethnicityQuery = () => supabaseClient
         .from('language_references')
         .select(remoteSelectFields)
         .eq('status', 'published')
         .or('catalog_type.eq.ethnicity,catalog_type.eq.both')
-        .order('year_start', { ascending: true });
-      const requests = [languageQuery, ethnicityQuery];
+        .order('year_start', { ascending: true })
+        .order('id', { ascending: true });
+      const requests = [
+        allRecords ? loadAllRemoteRows(languageQuery, isCurrent) : languageQuery().range(from, from + pageSize - 1),
+        refreshRelated ? loadAllRemoteRows(ethnicityQuery, isCurrent) : { data: ethnicityRecords }
+      ];
       if (currentUser) {
-        let unverifiedQuery = supabaseClient
-          .from('language_references')
-          .select(remoteSelectFields)
-          .order('year_start', { ascending: true });
-        if (currentRole === 'admin') {
-          unverifiedQuery = unverifiedQuery.eq('status', 'pending');
-        } else {
-          unverifiedQuery = unverifiedQuery
-            .eq('owner_id', currentUser.id)
-            .eq('status', 'pending');
-        }
-        requests.push(unverifiedQuery);
+        const unverifiedQuery = () => {
+          let query = supabaseClient
+            .from('language_references')
+            .select(remoteSelectFields)
+            .order('year_start', { ascending: true })
+            .order('id', { ascending: true });
+          if (currentRole === 'admin') {
+            query = query.eq('status', 'pending');
+          } else {
+            query = query.eq('owner_id', currentUser.id).eq('status', 'pending');
+          }
+          return query;
+        };
+        requests.push(refreshRelated ? loadAllRemoteRows(unverifiedQuery, isCurrent) : { data: unverifiedRecords });
       }
 
       const [languageResponse, ethnicityResponse, unverifiedResponse] = await Promise.all(requests);
@@ -131,9 +121,11 @@
         ? (unverifiedResponse.data || []).map(normalizeCitationRecord)
         : [];
       remoteCatalogLoaded = true;
-      renderRemoteRows();
-      renderEthnicityRows();
-      renderUnverifiedRows();
+      renderRemoteRows({ refresh: false });
+      if (refreshRelated) {
+        renderEthnicityRows({ refresh: false });
+        renderUnverifiedRows({ refresh: false });
+      }
     } catch (error) {
       if (requestToken === remoteLoadToken) {
         currentPage = previousPage;
@@ -150,7 +142,6 @@
 
   const loadProfile = async (user) => {
     currentUser = user || null;
-    setAuthAvatar(currentUser);
     if (!currentUser) {
       setRole('viewer');
       if (authProfile) authProfile.hidden = true;
@@ -215,8 +206,37 @@
     const yearLabel = String(data.get('year_label') || '').trim();
     const languageValue = String(data.get('language') || '').trim();
     const descriptionValue = String(data.get('description') || '').trim();
+    const primaryImageUrl = String(data.get('image_url') || '').trim();
+    const primaryImageDescription = String(data.get('image_description') || '').trim();
+    const primaryOriginalUrl = String(data.get('image_original_url') || '').trim();
+    const primaryThumbnailUrl = String(data.get('image_thumbnail_url') || '').trim();
+    const extraImageUrls = typeof data.getAll === 'function' ? data.getAll('image_item_url') : [];
+    const extraImageDescriptions = typeof data.getAll === 'function' ? data.getAll('image_item_description') : [];
+    const extraOriginalUrls = typeof data.getAll === 'function' ? data.getAll('image_item_original_url') : [];
+    const extraThumbnailUrls = typeof data.getAll === 'function' ? data.getAll('image_item_thumbnail_url') : [];
+    const primaryImage = primaryImageUrl
+      ? {
+        url: primaryImageUrl,
+        description: primaryImageDescription,
+        ...(primaryOriginalUrl ? { original_url: primaryOriginalUrl } : {}),
+        ...(primaryThumbnailUrl ? { thumbnail_url: primaryThumbnailUrl } : {})
+      }
+      : null;
+    const imageItemsPayload = [
+      ...(primaryImage ? [primaryImage] : []),
+      ...extraImageUrls.map((value, index) => ({
+        url: String(value || '').trim(),
+        description: String(extraImageDescriptions[index] || '').trim(),
+        ...(String(extraOriginalUrls[index] || '').trim()
+          ? { original_url: String(extraOriginalUrls[index]).trim() }
+          : {}),
+        ...(String(extraThumbnailUrls[index] || '').trim()
+          ? { thumbnail_url: String(extraThumbnailUrls[index]).trim() }
+          : {})
+      })).filter((item) => item.url)
+    ];
     const [yearStartBound, yearEnd] = yearBoundsFromLabel(yearLabel);
-    const yearStart = sortYearFromValues(yearLabel, descriptionValue) || yearStartBound;
+    const yearStart = normalize(yearLabel) === 'necunoscut' ? null : yearStartBound;
     const payload = {
       year_label: yearLabel,
       year_start: yearStart,
@@ -234,7 +254,8 @@
       quote: String(data.get('quote') || '').trim() || null,
       location: String(data.get('location') || '').trim() || null,
       source_url: String(data.get('source_url') || '').trim() || null,
-      image_url: String(data.get('image_url') || '').trim() || null
+      image_url: imageItemsPayload[0]?.url || null,
+      image_items: imageItemsPayload
     };
     if (String(currentUser?.email || '').trim().toLowerCase() === 'sdudnic@gmail.com') {
       payload.status = String(data.get('status') || 'pending');
@@ -242,8 +263,9 @@
     return payload;
   };
 
-  const saveRecord = async (event) => {
+  const persistRecord = async (event) => {
     event.preventDefault();
+    if (editorForm.querySelector('button[type="submit"]')?.disabled) return;
     if (!supabaseClient || !currentUser) {
       setStatus('Autentifică-te pentru a adăuga sau propune o editare.', 'error');
       return;
@@ -251,16 +273,31 @@
     const payload = formPayload();
     const exactYear = /^(?:1[0-9]{3}|20[0-9]{2})$/.test(payload.year_label);
     const century = parseCenturyRange(payload.year_label);
-    if ((!exactYear && !century) || !payload.title) {
-      setStatus('Completează anul publicării citatului sau secolul (de exemplu XVII) și denumirea lucrării.', 'error');
+    if ((!exactYear && !century && normalize(payload.year_label) !== 'necunoscut') || !payload.title) {
+      setStatus('Completează anul, secolul sau „necunoscut” și denumirea lucrării.', 'error');
       return;
     }
     if (['ethnicity', 'both'].includes(payload.catalog_type) && !payload.source_url) {
       setStatus('Referințele din catalogul etnic trebuie să aibă o legătură către sursa verificabilă.', 'error');
       return;
     }
-    if (!imageValueWithinLimit(payload.image_url)) {
-      setStatus('Imaginea este prea mare. Folosește o captură compactată la maximum 1,5 MB.', 'error');
+    if (['ethnicity', 'both'].includes(payload.catalog_type) && !payload.author) {
+      setStatus('Indică autorul din sursă sau „autor neindicat în sursă”.', 'error');
+      return;
+    }
+    const galleryWithinLimit = typeof imageItemsWithinLimit === 'function'
+      ? imageItemsWithinLimit(payload.image_items)
+      : payload.image_items.every((item) => imageValueWithinLimit(item.url));
+    if (!galleryWithinLimit) {
+      setStatus('Galeria este prea mare. Compactează fiecare captură la maximum 1,5 MB și păstrează cel mult 12 imagini.', 'error');
+      return;
+    }
+    if (payload.image_items.some((item) => !String(item.description || '').trim())) {
+      setStatus('Fiecare imagine adăugată trebuie să aibă propria descriere.', 'error');
+      return;
+    }
+    if (!mcpApiUrl && payload.image_items.some((item) => /^data:image\//i.test(String(item.url || '').replace(/\s+/g, '')))) {
+      setStatus('Imaginile noi trebuie salvate prin Worker-ul conectat la Cloudflare R2.', 'error');
       return;
     }
     const quoteHasGlotonym = hasGlotonym(payload.quote);
@@ -287,7 +324,7 @@
 
     const submitButton = editorForm.querySelector('button[type="submit"]');
     if (submitButton) submitButton.disabled = true;
-    setStatus('Se salvează…');
+    setStatus(payload.image_items.length ? 'Se încarcă imaginile în R2 și se salvează referința…' : 'Se salvează…');
 
     let response;
     if (mcpApiUrl) {
@@ -351,7 +388,7 @@
       return;
     }
     const savedInDetail = editorInDetail;
-    if (response.data?.id) recordImageCache.set(String(response.data.id), response.data.image_url || null);
+    if (response.data?.id) cacheRecordImage(String(response.data.id), response.data.image_url, response.data.image_items);
     if (savedInDetail) currentDetailRecord = response.data;
     closeEditor();
     setAuthMessage(String(currentUser?.email || '').toLowerCase() === 'sdudnic@gmail.com'
@@ -359,6 +396,26 @@
         : 'Editarea voastră este trimisă premoderare și rămâne în lista de neverificate.');
     if (savedInDetail && response.data) openDetail(response.data, lastDetailTrigger);
     await loadRemoteRecords();
+  };
+
+  let isSavingRecord = false;
+  const saveRecord = async (event) => {
+    event.preventDefault();
+    if (isSavingRecord) return;
+    isSavingRecord = true;
+    try {
+      await persistRecord(event);
+    } catch (error) {
+      if (editorPanel?.hidden) {
+        setAuthMessage(`Salvarea a reușit, dar lista nu a putut fi reîncărcată: ${error.message}`);
+      } else {
+        setStatus(`Nu s-a putut salva referința: ${error.message}`, 'error');
+      }
+    } finally {
+      isSavingRecord = false;
+      const button = editorForm?.querySelector('button[type="submit"]');
+      if (button) button.disabled = false;
+    }
   };
 
   const deleteSelectedRecords = async () => {

@@ -28,6 +28,40 @@ test('instrumentul de contribuție returnează eroare controlată fără autenti
   assert.equal(response.result.isError, true);
 });
 
+test('MCP pregătește galeria în storage înainte de scrierea referinței', async () => {
+  let received = null;
+  const storageContext = {
+    store: { invalidate() {} },
+    gateway: {
+      createReference: async (_auth, input) => {
+        received = input;
+        return { reference: { id: 'stored-reference' } };
+      }
+    },
+    authenticate: async () => ({ userId: 'user-1' }),
+    prepareReferenceInput: async (input) => ({
+      payload: {
+        ...input,
+        image_url: 'https://mcp.example/api/images/references/hash.jpg',
+        image_items: [{ url: 'https://mcp.example/api/images/references/hash.jpg', description: 'Pagina verificată' }]
+      }
+    })
+  };
+  const response = await handleRpc({
+    jsonrpc: '2.0',
+    id: 6,
+    method: 'tools/call',
+    params: {
+      name: 'add_moldoveneasca_reference',
+      arguments: { year_label: '1900', title: 'Titlu', quote: 'limba moldovenească', image_items: [{ url: 'data:image/png;base64,AAAA', description: 'Pagina verificată' }] }
+    }
+  }, storageContext);
+
+  assert.equal(response.result.isError, undefined);
+  assert.equal(received.image_items[0].description, 'Pagina verificată');
+  assert.match(received.image_url, /^https:\/\//);
+});
+
 test('invalidează cache-ul după o modificare de moderare', async () => {
   let invalidations = 0;
   const reviewStore = { invalidate() { invalidations += 1; } };

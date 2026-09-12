@@ -34,13 +34,23 @@ Instrumentele MCP poartă aceleași reguli: `search_moldoveneasca_references`, `
 Pentru dovezile vizuale, formularul catalogului poate încărca o captură reală a
 paginii și poate sublinia automat glotonimul găsit exact de OCR. Dacă OCR-ul nu
 găsește o singură apariție neambiguă, marcajul rămâne manual. Agenții care scriu
-prin MCP transmit `image_url` numai pentru o imagine verificată; MCP gestionează
-referința și statutul ei, nu fabrică screenshot-uri și nu înlocuiește verificarea
-sursei originale.
+prin MCP transmit `image_url` pentru compatibilitate sau `image_items` pentru o
+galerie verificată. Fiecare element din `image_items` are `url` și `description`;
+toate imaginile rămân într-o singură referință, iar MCP gestionează referința și
+statutul ei, nu fabrică screenshot-uri și nu înlocuiește verificarea sursei originale.
 
-Imaginile `data:` sunt compactate în browser la cel mult 2400 px pe latura lungă
-și aproximativ 1,5 MB binar. MCP/API respinge imaginile care depășesc această
-limită; URL-urile HTTPS externe nu sunt încărcate în baza de date.
+Imaginile `data:` noi sunt reduse în browser la jumătate din lățime și înălțime,
+apoi Worker-ul le încarcă în bucketul privat Cloudflare R2 și trimite către
+Supabase numai URL-ul HTTPS al obiectului; descrierile rămân în `image_items`.
+Pentru migrarea arhivistică, fiecare captură are un obiect `original`, un
+`display` la jumătate (cu plafon de 3000 px) și un `thumbnail` de maximum 400 px.
+În carusel este folosit numai `display`; `original_url` este păstrat pe același
+element pentru zoom/verificare, iar `thumbnail_url` pentru liste sau preload.
+MCP/API respinge imaginile care depășesc limita per imagine și limitează galeria
+la 12 de imagini. URL-urile HTTPS externe nu sunt descărcate și rămân referințe
+externe.
+Eliminarea unui element din `image_items` îl scoate din carusel, iar ștergerea
+fizică a unui obiect R2 este rezervată proprietarului catalogului.
 
 ## Reguli de autorizare
 
@@ -91,24 +101,12 @@ Pentru deconectare locală: `npm run auth:logout`.
 Dacă preferi să gestionezi singur JWT-ul, poți completa `MOLDOVENEASCA_SUPABASE_ACCESS_TOKEN` în `.env`;
 acesta are prioritate față de sesiunea locală.
 
-### Migrații Supabase
+Înainte de contribuții, rulează în Supabase SQL Editor:
 
-Pentru o bază nouă, rulează integral `supabase/schema.sql`. Pentru o bază
-existentă, rulează în SQL Editor, în ordine, toate fișierele din
-`supabase/migrations/`:
-
-1. `20260821_add_catalog_type.sql`
-2. `20260821_add_google_auth_profile.sql`
-3. `20260821_add_reference_image_url.sql`
-4. `20260824_moderation_workflow.sql`
-5. `20260829_limit_reference_image_size.sql`
-6. `20260829_require_ethnicity_source.sql`
-
-Migrația de moderare este necesară pentru propuneri și revizuiri. Cele două
-migrații din 29 august adaugă limita pentru capturile `data:` și cer sursă
-verificabilă pentru intrările `ethnicity`/`both`. Fișierele folosesc operații
-idempotente acolo unde este posibil; rulează-le numai după ce ai verificat
-proiectul Supabase țintă.
+1. `supabase/schema.sql` pentru instalarea completă; sau
+2. `supabase/migrations/20260824_moderation_workflow.sql` peste schema existentă; și
+3. `supabase/migrations/20260911_add_reference_image_items.sql` pentru galeria
+   de imagini a unei singure referințe.
 
 Verifică apoi că profilul `sdudnic@gmail.com` există și are rolul `admin`. Migrarea îl promovează automat după ce contul există.
 
@@ -150,5 +148,26 @@ npm run deploy
 ```
 
 Secretele Worker-ului sunt gestionate separat prin `wrangler secret put` și nu
-se păstrează în repository. Fără migrația de moderare, citirea publică
-funcționează, dar propunerile de editare/ștergere nu pot fi înregistrate.
+se păstrează în repository. Înainte ca primul utilizator să contribuie, rulează
+[supabase/migrations/20260824_moderation_workflow.sql](../supabase/migrations/20260824_moderation_workflow.sql)
+și [supabase/migrations/20260911_add_reference_image_items.sql](../supabase/migrations/20260911_add_reference_image_items.sql)
+în Supabase SQL Editor peste schema existentă. Fără prima migrare, citirea
+publică funcționează, dar propunerile de editare/ștergere nu pot fi înregistrate;
+fără a doua, galeriile cu mai multe imagini nu pot fi salvate.
+
+## Cloudflare R2 pentru imaginile catalogului
+
+R2 este storage de obiecte, nu bază de date. Bucketul este privat; Worker-ul
+livrează imaginile prin `GET /api/images/{key}`, iar browserul nu are nevoie de
+o cheie R2. După activarea R2 în dashboard-ul Cloudflare, din directorul `mcp`:
+
+```powershell
+npx wrangler@latest r2 bucket create moldoveneasca-images
+npm run dry-run
+npm run deploy
+```
+
+Planul afișează 10 GB/lună, 1 milion de operații Class A și 10 milioane Class B
+incluse. Depășirea limitelor sau folosirea altui storage class poate genera
+costuri; monitorizează consumul în dashboard. Binding-ul se află în
+`mcp/wrangler.jsonc` și nu conține secrete.

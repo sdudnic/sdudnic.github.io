@@ -2,7 +2,7 @@
 
 export const REFERENCE_FIELDS = [
   'id', 'year_label', 'year_start', 'year_end', 'title', 'author', 'language',
-  'description', 'quote', 'source_type', 'location', 'source_url', 'image_url',
+  'description', 'quote', 'source_type', 'location', 'source_url', 'image_url', 'image_items',
   'catalog_type', 'status', 'provider', 'external_id', 'evidence_url'
 ];
 
@@ -11,6 +11,12 @@ export const REFERENCE_FIELDS = [
 // mare pentru Supabase și API.
 export const REFERENCE_IMAGE_MAX_BYTES = 1_500_000;
 export const REFERENCE_IMAGE_MAX_DATA_URL_CHARS = 2_100_000;
+export const REFERENCE_IMAGE_MAX_ITEMS = 12;
+export const REFERENCE_IMAGE_DESCRIPTION_MAX_CHARS = 1_000;
+export const REFERENCE_IMAGE_VARIANT_FIELDS = ['original_url', 'thumbnail_url'];
+// Several compacted page captures can belong to one reference. This keeps a
+// gallery bounded while still allowing the usual 2-4 page evidence set.
+export const REFERENCE_IMAGE_ITEMS_MAX_DATA_URL_CHARS = 6_300_000;
 
 const STATUS_VALUES = new Set(['pending', 'published', 'rejected', 'archived']);
 const CATALOG_TYPES = new Set(['language', 'ethnicity', 'both']);
@@ -20,6 +26,36 @@ function text(value) {
   if (value === null || value === undefined) return null;
   const result = String(value).trim();
   return result || null;
+}
+
+export function normalizeImageItems(value, legacyImageUrl = null) {
+  let raw = value;
+  if (typeof raw === 'string') {
+    try { raw = JSON.parse(raw); } catch { raw = []; }
+  }
+  const items = (Array.isArray(raw) ? raw : [])
+    .map((item) => {
+      const url = typeof item === 'string' ? item : item?.url ?? item?.image_url;
+      const description = typeof item === 'object' && item !== null
+        ? item.description ?? item.caption ?? ''
+        : '';
+      const cleanUrl = text(url);
+      if (!cleanUrl) return null;
+      const normalized = {
+        url: cleanUrl,
+        description: text(description) || ''
+      };
+      for (const field of REFERENCE_IMAGE_VARIANT_FIELDS) {
+        const variantUrl = text(item?.[field]);
+        if (/^https:\/\//i.test(variantUrl || '')) normalized[field] = variantUrl;
+      }
+      return normalized;
+    })
+    .filter(Boolean)
+    .slice(0, REFERENCE_IMAGE_MAX_ITEMS);
+  if (items.length) return items;
+  const legacy = text(legacyImageUrl);
+  return legacy ? [{ url: legacy, description: '' }] : [];
 }
 
 export function normalizeText(value) {
@@ -70,6 +106,7 @@ export function normalizeReference(row) {
     location: text(row.location),
     source_url: text(row.source_url),
     image_url: text(row.image_url),
+    image_items: normalizeImageItems(row.image_items, row.image_url),
     catalog_type: CATALOG_TYPES.has(text(row.catalog_type)) ? text(row.catalog_type) : 'language',
     status: STATUS_VALUES.has(text(row.status)) ? text(row.status) : 'pending',
     provider: text(row.provider),

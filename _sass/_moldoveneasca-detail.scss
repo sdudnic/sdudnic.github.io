@@ -146,7 +146,25 @@ body.moldoveneasca-detail-open {
 }
 
 .moldoveneasca-detail__image {
+  min-width: 0;
   margin: 0 0 1rem;
+}
+
+.moldoveneasca-detail__figure,
+.moldoveneasca-detail__carousel-slide {
+  margin: 0;
+}
+
+.moldoveneasca-detail__image-original {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.moldoveneasca-detail__image-original:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .moldoveneasca-detail__image img {
@@ -156,6 +174,110 @@ body.moldoveneasca-detail-open {
   height: auto;
   object-fit: contain;
   object-position: top left;
+}
+
+.moldoveneasca-detail__figure img,
+.moldoveneasca-detail__carousel-slide img {
+  max-width: 50%;
+  max-height: min(50vh, 30rem);
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  background: var(--subtle);
+}
+
+.moldoveneasca-detail__image-caption {
+  max-width: 68ch;
+  margin: 0.45rem auto 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.moldoveneasca-detail__carousel {
+  min-width: 0;
+  outline: none;
+}
+
+.moldoveneasca-detail__carousel:focus-visible {
+  border-radius: 5px;
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.moldoveneasca-detail__carousel-viewport {
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--subtle);
+  touch-action: pan-y;
+}
+
+.moldoveneasca-detail__carousel-track {
+  display: flex;
+  align-items: flex-start;
+  transition: transform 180ms ease;
+  will-change: transform;
+}
+
+.moldoveneasca-detail__carousel-slide {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  min-width: 100%;
+  padding: 0.35rem;
+}
+
+.moldoveneasca-detail__carousel-slide img {
+  width: auto;
+}
+
+.moldoveneasca-detail__carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 0.45rem;
+}
+
+.moldoveneasca-detail__carousel-controls .moldoveneasca-icon-button {
+  width: 1.9rem;
+  height: 1.9rem;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.moldoveneasca-detail__carousel-position {
+  min-width: 3.5rem;
+  color: var(--muted);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.moldoveneasca-detail__carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.moldoveneasca-detail__carousel-indicator {
+  width: 0.45rem;
+  height: 0.45rem;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.moldoveneasca-detail__carousel-indicator[aria-selected="true"] {
+  border-color: var(--ink);
+  background: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moldoveneasca-detail__carousel-track {
+    transition: none;
+  }
 }
 
 .moldoveneasca-detail__content {
@@ -214,6 +336,16 @@ body.moldoveneasca-detail-open {
   .moldoveneasca-detail__item {
     grid-template-columns: 1fr;
     gap: 0.25rem;
+  }
+
+  .moldoveneasca-detail__figure img,
+  .moldoveneasca-detail__carousel-slide img {
+    max-width: 50%;
+    max-height: 50vh;
+  }
+
+  .moldoveneasca-detail__carousel-slide {
+    padding: 0.2rem;
   }
 }
 

@@ -1,8 +1,12 @@
 import {
   publicReference,
   REFERENCE_FIELDS,
+  REFERENCE_IMAGE_DESCRIPTION_MAX_CHARS,
+  REFERENCE_IMAGE_ITEMS_MAX_DATA_URL_CHARS,
   REFERENCE_IMAGE_MAX_BYTES,
-  REFERENCE_IMAGE_MAX_DATA_URL_CHARS
+  REFERENCE_IMAGE_MAX_DATA_URL_CHARS,
+  REFERENCE_IMAGE_MAX_ITEMS,
+  REFERENCE_IMAGE_VARIANT_FIELDS
 } from './catalog-core.mjs';
 
 // These metadata fields are part of the normalized catalog shape but are not
@@ -26,6 +30,7 @@ const MUTABLE_FIELDS = [
   'location',
   'source_url',
   'image_url',
+  'image_items',
   'catalog_type',
   'status'
 ];
@@ -79,8 +84,55 @@ function validateImageSize(value) {
   }
 }
 
+function normalizeInputImageItems(value) {
+  if (value === null) return [];
+  if (!Array.isArray(value)) {
+    throw new ServiceError('image_items trebuie să fie o listă de imagini.', { code: 'invalid_input' });
+  }
+  if (value.length > REFERENCE_IMAGE_MAX_ITEMS) {
+    throw new ServiceError(`O referință poate avea cel mult ${REFERENCE_IMAGE_MAX_ITEMS} imagini.`, { code: 'invalid_input' });
+  }
+  let totalDataUrlChars = 0;
+  const items = value.map((item, index) => {
+    const rawUrl = typeof item === 'string' ? item : item?.url ?? item?.image_url;
+    const url = clean(rawUrl);
+    if (!url) throw new ServiceError(`Imaginea ${index + 1} nu are URL.`, { code: 'invalid_input' });
+    const normalizedUrl = /^data:image\//i.test(url) ? url.replace(/\s+/g, '') : url;
+    if (!/^https:\/\//i.test(normalizedUrl) && !DATA_IMAGE_PATTERN.test(normalizedUrl)) {
+      throw new ServiceError(`Imaginea ${index + 1} trebuie să fie HTTPS sau o imagine data: validă.`, { code: 'invalid_input' });
+    }
+    validateImageSize(normalizedUrl);
+    if (/^data:image\//i.test(normalizedUrl)) totalDataUrlChars += normalizedUrl.length;
+    const description = typeof item === 'object' && item !== null
+      ? clean(item.description ?? item.caption) || ''
+      : '';
+    if (!description) {
+      throw new ServiceError(`Imaginea ${index + 1} trebuie să aibă o descriere.`, { code: 'invalid_input' });
+    }
+    if (description.length > REFERENCE_IMAGE_DESCRIPTION_MAX_CHARS) {
+      throw new ServiceError(`Descrierea imaginii ${index + 1} depășește ${REFERENCE_IMAGE_DESCRIPTION_MAX_CHARS} de caractere.`, { code: 'invalid_input' });
+    }
+    const variants = {};
+    for (const field of REFERENCE_IMAGE_VARIANT_FIELDS) {
+      const variantUrl = clean(item?.[field]);
+      if (!variantUrl) continue;
+      if (!/^https:\/\//i.test(variantUrl)) {
+        throw new ServiceError(`${field} pentru imaginea ${index + 1} trebuie să fie HTTPS.`, { code: 'invalid_input' });
+      }
+      variants[field] = variantUrl;
+    }
+    return { url: normalizedUrl, description, ...variants };
+  });
+  if (totalDataUrlChars > REFERENCE_IMAGE_ITEMS_MAX_DATA_URL_CHARS) {
+    throw new ServiceError('Galeria este prea mare. Compactează imaginile înainte de încărcare.', { code: 'payload_too_large', status: 413 });
+  }
+  return items;
+}
+
 export function extractBearer(headers = {}) {
-  const authorization = headers.authorization || headers.Authorization || '';
+  const authorization = typeof headers?.get === 'function'
+    ? headers.get('authorization') || ''
+    : headers.authorization || headers.Authorization || '';
   const match = String(authorization).match(/^Bearer\s+(.+)$/i);
   return match ? match[1].trim() : null;
 }
@@ -92,10 +144,21 @@ export function normalizeReferenceInput(input = {}) {
   const payload = {};
   for (const field of MUTABLE_FIELDS) {
     if (!Object.prototype.hasOwnProperty.call(input, field)) continue;
-    payload[field] = ['year_start', 'year_end'].includes(field) ? intOrNull(input[field]) : clean(input[field]);
+    payload[field] = field === 'image_items'
+      ? normalizeInputImageItems(input[field])
+      : ['year_start', 'year_end'].includes(field) ? intOrNull(input[field]) : clean(input[field]);
+  }
+  if (Object.prototype.hasOwnProperty.call(payload, 'image_items')
+    && !Object.prototype.hasOwnProperty.call(payload, 'image_url')) {
+    payload.image_url = payload.image_items[0]?.url || null;
   }
   if (payload.catalog_type && !['language', 'ethnicity', 'both'].includes(payload.catalog_type)) {
     throw new ServiceError('catalog_type trebuie să fie language, ethnicity sau both.', { code: 'invalid_input' });
+  }
+  if (payload.year_label?.toLocaleLowerCase('ro-MD') === 'necunoscut') {
+    payload.year_label = 'necunoscut';
+    payload.year_start = null;
+    payload.year_end = null;
   }
   if (payload.status !== undefined && !STATUS_VALUES.has(payload.status)) {
     throw new ServiceError('status trebuie să fie pending, published, rejected sau archived.', { code: 'invalid_input' });
@@ -140,7 +203,11 @@ export class SupabaseGateway {
     this.url = String(url || '').replace(/\/$/, '');
     this.key = key;
     this.primaryAdminEmail = String(primaryAdminEmail || 'sdudnic@gmail.com').trim().toLowerCase();
-    this.fetchImpl = fetchImpl;
+    // Cloudflare's global fetch requires the runtime as `this` when invoked;
+    // injected test clients keep their own implementation unchanged.
+    this.fetchImpl = fetchImpl === globalThis.fetch && typeof fetchImpl === 'function'
+      ? fetchImpl.bind(globalThis)
+      : fetchImpl;
   }
 
   get configured() {

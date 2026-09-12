@@ -37,6 +37,7 @@
 
   const referenceShareKey = (record) => {
     if (!record) return '';
+    if (record?.status && record.status !== 'published') return '';
     return referenceShareKeys(record)[0] || '';
   };
 
@@ -126,11 +127,6 @@
     const title = fields.title === '—' ? 'Referință documentară' : fields.title;
     shareDetailButton.disabled = true;
     try {
-      const copied = await copyShareUrl(url);
-      if (copied) {
-        setDetailShareStatus('Legătura a fost copiată.');
-        return;
-      }
       if (typeof window.navigator.share === 'function') {
         try {
           await window.navigator.share({
@@ -144,7 +140,10 @@
           if (error?.name === 'AbortError') return;
         }
       }
-      setDetailShareStatus('Nu am putut copia automat legătura; copiaz-o din bara de adrese.');
+      const copied = await copyShareUrl(url);
+      setDetailShareStatus(copied
+        ? 'Legătura a fost copiată.'
+        : 'Nu am putut copia automat legătura; copiaz-o din bara de adrese.');
     } finally {
       if (currentDetailRecord !== sharedRecord) updateDetailShareState(currentDetailRecord);
       else shareDetailButton.disabled = false;
@@ -171,7 +170,7 @@
     if (!record && supabaseClient && !key.startsWith('legacy-')) {
       try {
         const { data, error } = await supabaseClient.from('language_references')
-          .select(remoteSelectFields).eq('id', key).maybeSingle();
+          .select(remoteSelectFields).eq('id', key).eq('status', 'published').maybeSingle();
         if (error) throw error;
         if (data) record = normalizeCitationRecord(data);
       } catch {

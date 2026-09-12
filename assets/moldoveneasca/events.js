@@ -5,7 +5,7 @@
     const isServerPage = remoteDataMode === 'page' && remoteCatalogLoaded && !hasFilter;
     if (isServerPage && supabaseClient) {
       try {
-        await loadRemoteRecords({ page: targetPage, allRecords: false });
+        await loadRemoteRecords({ page: targetPage, allRecords: false, refreshRelated: false });
       } catch (error) {
         if (result) result.textContent = `Pagina nu a putut fi încărcată: ${error.message}`;
       }
@@ -88,6 +88,7 @@
   });
   imagePickButton?.addEventListener('click', () => imageFileInput?.click());
   imageFileInput?.addEventListener('change', () => setImageFromFile(imageFileInput.files?.[0]));
+  imageGalleryAddButton?.addEventListener('click', appendImageGalleryItem);
   imageAutoUnderlineButton?.addEventListener('click', () => autoUnderlineImage());
   const imageCanvasPoint = (event) => {
     if (!imageCanvas) return null;
@@ -149,10 +150,25 @@
   detailBackdrop?.addEventListener('click', closeDetail);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && detailPanel && !detailPanel.hidden) closeDetail();
+    if (event.key === 'Tab' && detailPanel && !detailPanel.hidden) {
+      const focusable = [...detailPanel.querySelectorAll('button, a[href], input, select, textarea, [tabindex="0"]')]
+        .filter((element) => !element.disabled && element.getClientRects().length);
+      const first = focusable[0];
+      const last = focusable.at(-1);
+      if (event.shiftKey && (document.activeElement === first || !detailPanel.contains(document.activeElement))) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || !detailPanel.contains(document.activeElement))) {
+        event.preventDefault();
+        first?.focus();
+      }
+    }
   });
   window.addEventListener('popstate', async () => {
     if (detailPanel && !detailPanel.hidden) closeDetail({ updateUrl: false });
-    if (sharedReferenceKeyFromUrl()) await restoreDetailFromUrl();
+    if (sharedReferenceKeyFromUrl()) {
+      await restoreDetailFromUrl();
+    }
   });
   editorForm?.addEventListener('submit', saveRecord);
 
@@ -177,14 +193,24 @@
       supabaseClient = supabase.createClient(config.supabaseUrl, config.supabaseAnonKey);
       const { data: sessionData } = await supabaseClient.auth.getSession();
       await loadProfile(sessionData?.session?.user || null);
-      await loadRemoteRecords({ page: 1, allRecords: true });
+      await loadRemoteRecords({ page: 1, allRecords: false });
       setCatalogLoading(false);
       await restoreDetailFromUrl();
       updateSelectionUi();
       supabaseClient.auth.onAuthStateChange((_event, session) => {
-        loadProfile(session?.user || null).catch((error) => {
-          setAuthMessage(`Profilul nu a putut fi încărcat: ${error.message}`);
-        });
+        if ((session?.user?.id || null) === (currentUser?.id || null)) return;
+        window.setTimeout(async () => {
+          try {
+            recordImageCache.clear();
+            pendingRecordImages.clear();
+            if (currentDetailRecord?.status && currentDetailRecord.status !== 'published') closeDetail();
+            unverifiedRecords = [];
+            await loadProfile(session?.user || null);
+            await loadRemoteRecords();
+          } catch (error) {
+            setAuthMessage(`Profilul nu a putut fi încărcat: ${error.message}`);
+          }
+        }, 0);
       });
     } catch (error) {
       setCatalogLoading(false);

@@ -32,9 +32,19 @@
         sortButton.title = 'Sortează anii';
         sortButton.setAttribute('aria-label', 'Sortează anii');
         sortButton.appendChild(createIconSvg('sort-up'));
-        sortButton.addEventListener('click', () => {
+        sortButton.addEventListener('click', async () => {
+          if (isRemotePageLoading) return;
           sortAscending = !sortAscending;
           currentPage = 1;
+          if (remoteCatalogLoaded && remoteDataMode === 'page') {
+            try {
+              await loadRemoteRecords({ page: 1, allRecords: false, refreshRelated: false });
+            } catch (error) {
+              sortAscending = !sortAscending;
+              if (result) result.textContent = `Sortarea nu a putut fi încărcată: ${error.message}`;
+            }
+            return;
+          }
           sortRowsChronologically();
           filterRows();
         });

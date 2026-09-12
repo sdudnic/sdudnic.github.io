@@ -14,7 +14,7 @@
     "auth:github": "node --env-file=.env auth-github.mjs",
     "auth:password": "node --env-file=.env auth-login.mjs",
     "auth:logout": "node --env-file=.env auth-github.mjs --logout",
-    "check": "node --check catalog-core.mjs && node --check catalog.mjs && node --check auth.mjs && node --check auth-session.mjs && node --check auth-login.mjs && node --check auth-github.mjs && node --check protocol.mjs && node --check server.mjs && node --check worker/index.mjs",
+    "check": "node --check catalog-core.mjs && node --check catalog.mjs && node --check auth.mjs && node --check auth-session.mjs && node --check auth-login.mjs && node --check auth-github.mjs && node --check protocol.mjs && node --check image-storage-client.mjs && node --check server.mjs && node --check worker/image-storage.mjs && node --check worker/index.mjs",
     "deploy": "npx wrangler@latest deploy --config wrangler.jsonc",
     "dry-run": "npx wrangler@latest deploy --dry-run --config wrangler.jsonc",
     "test": "node --test test/*.test.mjs"

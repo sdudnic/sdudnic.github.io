@@ -8,6 +8,7 @@
 
   const canEditRecord = (record = null) => {
     if (!currentUser) return false;
+    if (!record) return true;
     if (isPrimaryAdmin() || currentRole === 'admin') return true;
     return Boolean(record?.id && (
       (record.owner_id === currentUser.id && record.status === 'pending')
@@ -45,6 +46,7 @@
     const wasInDetail = editorInDetail;
     editingId = null;
     if (editorForm) editorForm.reset();
+    renderImageGalleryEditor();
     updateQuoteRequirement();
     resetImageMarkup();
     renderImagePreview();
@@ -74,6 +76,73 @@
     if (field) field.value = value || '';
   };
 
+  const setHiddenField = (name, value) => {
+    if (!editorForm) return;
+    let field = editorForm.elements.namedItem(name);
+    if (!field) {
+      field = document.createElement('input');
+      field.type = 'hidden';
+      field.name = name;
+      editorForm.appendChild(field);
+    }
+    field.value = value || '';
+  };
+
+  const createImageGalleryEditorItem = (item = {}) => {
+    const row = document.createElement('span');
+    row.className = 'moldoveneasca-image-gallery-item';
+
+    const urlInput = document.createElement('input');
+    urlInput.type = 'text';
+    urlInput.name = 'image_item_url';
+    urlInput.value = item.url || '';
+    urlInput.placeholder = 'URL HTTPS sau data: pentru imaginea suplimentară';
+    urlInput.setAttribute('aria-label', 'URL imagine suplimentară');
+
+    const descriptionInput = document.createElement('textarea');
+    descriptionInput.name = 'image_item_description';
+    descriptionInput.rows = 2;
+    descriptionInput.maxLength = 1000;
+    descriptionInput.value = item.description || '';
+    descriptionInput.placeholder = 'Descrierea acestei imagini';
+    descriptionInput.setAttribute('aria-label', 'Descriere imagine suplimentară');
+
+    const removeButton = document.createElement('button');
+    removeButton.type = 'button';
+    removeButton.className = 'moldoveneasca-icon-button moldoveneasca-icon-button--danger';
+    removeButton.textContent = '×';
+    removeButton.setAttribute('aria-label', 'Elimină imaginea suplimentară');
+    removeButton.title = 'Elimină imaginea suplimentară';
+    removeButton.addEventListener('click', () => row.remove());
+
+    const originalUrlInput = document.createElement('input');
+    originalUrlInput.type = 'hidden';
+    originalUrlInput.name = 'image_item_original_url';
+    originalUrlInput.value = item.original_url || '';
+    const thumbnailUrlInput = document.createElement('input');
+    thumbnailUrlInput.type = 'hidden';
+    thumbnailUrlInput.name = 'image_item_thumbnail_url';
+    thumbnailUrlInput.value = item.thumbnail_url || '';
+
+    row.append(urlInput, descriptionInput, originalUrlInput, thumbnailUrlInput, removeButton);
+    return row;
+  };
+
+  const renderImageGalleryEditor = (record = null) => {
+    if (!imageGalleryList) return;
+    imageGalleryList.replaceChildren();
+    imageItems(record).slice(1).forEach((item) => {
+      imageGalleryList.appendChild(createImageGalleryEditorItem(item));
+    });
+  };
+
+  const appendImageGalleryItem = () => {
+    if (!imageGalleryList) return;
+    const row = createImageGalleryEditorItem();
+    imageGalleryList.appendChild(row);
+    row.querySelector('input')?.focus();
+  };
+
   const openEditor = async (record = null, { inDetail = false } = {}) => {
     if (!editorPanel || !editorForm) return;
     const canEdit = canEditRecord(record);
@@ -81,7 +150,17 @@
       setStatus('Contul nu are drepturi de editare.', 'error');
       return;
     }
-    if (record) await loadRecordImage(record);
+    if (record) {
+      const original = record;
+      try {
+        record = await loadRecordImage(record);
+      } catch (error) {
+        setAuthMessage(`Editorul nu a putut încărca imaginea existentă: ${error.message}. Reîncearcă.`);
+        if (inDetail) setDetailShareStatus('Imaginea existentă nu a putut fi încărcată. Reîncearcă editarea.');
+        return;
+      }
+      if (!canEditRecord(record) || (inDetail && currentDetailRecord?.id !== original.id)) return;
+    }
     if (inDetail && detailEditorHost) {
       if (!editorPanel.hidden) closeEditor({ returnToDetail: false });
       editorInDetail = true;
@@ -99,7 +178,7 @@
     const urls = sourceUrls(record);
     if (formTitle) formTitle.textContent = editingId ? 'Editează referința' : 'Adaugă o referință';
     setField('year_label', record
-      ? (citationYearIsExact(record) ? publicationYearLabel(record) : centuryLabel(record))
+      ? (normalize(record.year_label) === 'necunoscut' ? 'necunoscut' : (citationYearIsExact(record) ? publicationYearLabel(record) : centuryLabel(record)))
       : '');
     setField('title', imported ? (fields.title === '—' ? null : fields.title) : record?.title);
     setField('language', record ? citationLanguageCode(record) : '');
@@ -111,7 +190,12 @@
     setField('quote', fields.quote);
     setField('location', record?.location);
     setField('source_url', record?.source_url || urls[0]);
-    setField('image_url', record?.image_url);
+    const galleryItems = imageItems(record);
+    setField('image_url', galleryItems[0]?.url || record?.image_url);
+    setField('image_description', galleryItems[0]?.description);
+    setHiddenField('image_original_url', galleryItems[0]?.original_url);
+    setHiddenField('image_thumbnail_url', galleryItems[0]?.thumbnail_url);
+    renderImageGalleryEditor(record);
     renderImagePreview();
     setField('status', record?.status || 'pending');
     setStatus('');

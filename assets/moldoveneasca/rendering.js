@@ -1,4 +1,4 @@
-  const renderRemoteRows = () => {
+  const renderRemoteRows = ({ refresh = true } = {}) => {
     table.querySelectorAll('tr[data-remote-reference]').forEach((row) => row.remove());
     const languageRecords = remoteRecords.filter((record) => catalogIncludes(record, 'language'));
     if (remoteCatalogLoaded) {
@@ -8,13 +8,15 @@
         if (!tbody.contains(row)) tbody.appendChild(row);
       });
     }
-    languageRecords.forEach((record) => tbody.appendChild(createCatalogRow(record)));
+    const fragment = document.createDocumentFragment();
+    languageRecords.forEach((record) => fragment.appendChild(createCatalogRow(record)));
+    tbody.appendChild(fragment);
     sortRowsChronologically();
     updateStats();
-    filterRows();
+    if (refresh) filterRows();
   };
 
-  const renderEthnicityRows = () => {
+  const renderEthnicityRows = ({ refresh = true } = {}) => {
     if (!ethnicityTbody) return;
     ethnicityTbody.querySelectorAll('tr[data-remote-reference]').forEach((row) => row.remove());
     const remoteIdentities = new Set(ethnicityRecords.map(recordIdentity));
@@ -25,14 +27,14 @@
         ethnicityTbody.appendChild(row);
       }
     });
-    ethnicityRecords.forEach((record) => ethnicityTbody.appendChild(createCatalogRow(record)));
+    const fragment = document.createDocumentFragment();
+    ethnicityRecords.forEach((record) => fragment.appendChild(createCatalogRow(record)));
+    ethnicityTbody.appendChild(fragment);
     sortRowsChronologicallyIn(ethnicityTbody);
-    filterRows();
-    updateActionsColumnVisibility();
-    updateSelectionUi();
+    if (refresh) filterRows();
   };
 
-  const renderUnverifiedRows = () => {
+  const renderUnverifiedRows = ({ refresh = true } = {}) => {
     if (!unverifiedTbody) {
       updateSelectionUi();
       return;
@@ -46,7 +48,6 @@
       .slice()
       .sort((a, b) => (parseYearStart(a) || Number.POSITIVE_INFINITY) - (parseYearStart(b) || Number.POSITIVE_INFINITY))
       .forEach((record) => unverifiedTbody.appendChild(createCatalogRow(record, { showStatusBadge: false })));
-    filterRows();
-    updateSelectionUi();
+    if (refresh) filterRows();
   };
 

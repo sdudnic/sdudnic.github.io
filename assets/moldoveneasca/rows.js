@@ -1,7 +1,6 @@
   const createCatalogRow = (record, options = {}) => {
     const fields = displayFields(record);
     const row = document.createElement('tr');
-    row.catalogRecord = record;
     if (record.id) {
       row.dataset.remoteReference = record.id;
       row.dataset.referenceId = record.id;
@@ -130,6 +129,7 @@
     row.appendChild(sourceCell);
     row.appendChild(actionsCell);
     setRowMetadata(row, record);
+    row.catalogRecord = record;
     return row;
   };
 

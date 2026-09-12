@@ -2,11 +2,13 @@ import { createServer } from 'node:http';
 import { createCatalogStore } from './catalog.mjs';
 import { createSupabaseGateway, extractBearer, ServiceError } from './auth.mjs';
 import { createSupabaseSession } from './auth-session.mjs';
+import { createImageStorageClient } from './image-storage-client.mjs';
 import { handleRpc } from './protocol.mjs';
 
 const env = process.env;
 const store = createCatalogStore(env);
 const gateway = createSupabaseGateway(env);
+const imageStorage = createImageStorageClient(env);
 const apiKey = String(env.MOLDOVENEASCA_API_KEY || '');
 const stdioAccessToken = String(env.MOLDOVENEASCA_SUPABASE_ACCESS_TOKEN || '').trim() || null;
 const localSession = process.argv.includes('--stdio') && !stdioAccessToken ? createSupabaseSession(env, gateway) : null;
@@ -16,7 +18,8 @@ const context = {
   gateway,
   authenticate: (token) => localSession ? localSession.authenticate() : gateway.authenticate(token),
   accessToken: stdioAccessToken,
-  headers: {}
+  headers: {},
+  prepareReferenceInput: (input, auth) => imageStorage.materialize(input, auth)
 };
 
 function corsHeaders() {
@@ -49,9 +52,9 @@ function sendEmpty(response, status = 204) {
   response.end();
 }
 
-// Permitem o data URL compactat de aproximativ 1,5 MB plus metadatele JSON;
-// limita imaginii propriu-zise este verificată separat în auth.mjs.
-async function readBody(request, maxBytes = 3_000_000) {
+// Mai multe capturi compacte pot aparține aceleiași referințe; limita fiecărei
+// imagini și limita agregată a galeriei sunt verificate separat în auth.mjs.
+async function readBody(request, maxBytes = 8_000_000) {
   const chunks = [];
   let size = 0;
   for await (const chunk of request) {
@@ -108,7 +111,8 @@ async function handleHttp(request, response) {
     }
     if (url.pathname === '/api/references' && request.method === 'POST') {
       const auth = await gateway.authenticate(extractBearer(request.headers));
-      return sendJson(response, 201, { data: await gateway.createReference(auth, await readBody(request)) });
+      const prepared = await imageStorage.materialize(await readBody(request), auth);
+      return sendJson(response, 201, { data: await gateway.createReference(auth, prepared.payload) });
     }
     if (url.pathname === '/api/unverified' && request.method === 'GET') {
       const auth = await gateway.authenticate(extractBearer(request.headers));
@@ -131,7 +135,8 @@ async function handleHttp(request, response) {
       const auth = await gateway.authenticate(extractBearer(request.headers));
       const body = await readBody(request);
       const changes = body?.changes && typeof body.changes === 'object' ? body.changes : body;
-      return sendJson(response, 200, { data: await gateway.updateReference(auth, decodeURIComponent(referenceMatch[1]), changes, body?.reason) });
+      const prepared = await imageStorage.materialize(changes, auth);
+      return sendJson(response, 200, { data: await gateway.updateReference(auth, decodeURIComponent(referenceMatch[1]), prepared.payload, body?.reason) });
     }
     if (referenceMatch && request.method === 'DELETE') {
       const auth = await gateway.authenticate(extractBearer(request.headers));

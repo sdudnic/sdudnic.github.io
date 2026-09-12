@@ -239,6 +239,7 @@
   const languageCodeFor = (value) => {
     const text = String(value || '').trim();
     if (!text) return 'xx';
+    if (/^ro(?:-(?:ro|md|chr))?$/i.test(text)) return 'md';
     if (/^[a-z]{2}$/i.test(text)) return text.toLowerCase();
     if (/moldov|moldav|moldauisch|moldovin|moldeu|rom[aâ]n|romanian|rum[aâ]n|valah|valaque|молдов|молдав/i.test(text)) return 'md';
     if (/rus|russ|росс|рус|язык\s*рус/i.test(text)) return 'ru';
@@ -418,5 +419,36 @@
     } catch {
       return '';
     }
+  };
+
+  const imageItems = (record) => {
+    let raw = record?.image_items;
+    if (typeof raw === 'string') {
+      try { raw = JSON.parse(raw); } catch { raw = []; }
+    }
+    const items = (Array.isArray(raw) ? raw : [])
+      .map((item) => {
+        const value = typeof item === 'string' ? item : item?.url ?? item?.image_url;
+        const url = imageUrl({ image_url: value });
+        if (!url) return null;
+        const description = typeof item === 'object' && item !== null
+          ? String(item.description ?? item.caption ?? '').trim()
+          : '';
+        const normalized = { url, description };
+        if (typeof item === 'object' && item !== null) {
+          ['original_url', 'thumbnail_url'].forEach((field) => {
+            const variantUrl = imageUrl({ image_url: item[field] });
+            if (variantUrl) normalized[field] = variantUrl;
+          });
+        }
+        return normalized;
+      })
+      .filter(Boolean)
+      .slice(0, 12);
+    if (items.length) return items;
+    const legacyUrl = imageUrl(record);
+    return legacyUrl
+      ? [{ url: legacyUrl, description: String(record?.image_description || '').trim() }]
+      : [];
   };
 

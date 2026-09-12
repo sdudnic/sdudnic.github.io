@@ -5,8 +5,24 @@ nav_title: Catalogul LM
 tags: [moldoveneasca, limba, glotonim, moldovean, moldovenească, denumirea limbii, limba moldovenească, istorie, surse istorice]
 description: Catalog documentar cu referințe istorice despre denumirea limbii moldovenești, de la primele mențiuni până în prezent.
 permalink: /moldoveneasca/
+# Dezactivează temporar tabelul și încărcarea bazei de date cât timp catalogul
+# este în mentenanță; revenirea se face prin schimbarea valorii în false.
+catalog_maintenance: true
 ---
 
+{% if page.catalog_maintenance %}
+<section class="moldoveneasca-catalog moldoveneasca-catalog--maintenance" aria-labelledby="catalog-maintenance-title" role="status">
+  <p class="eyebrow">Mentenanță temporară</p>
+  <h1 id="catalog-maintenance-title" class="moldoveneasca-catalog__title">Catalogul este temporar indisponibil</h1>
+  <p class="moldoveneasca-catalog__intro">
+    Lucrăm la remedierea unei probleme tehnice a bazei de date. Pentru a evita afișarea
+    unor liste incomplete sau incorecte, referințele sunt ascunse temporar.
+  </p>
+  <p class="moldoveneasca-catalog__intro">
+    Catalogul va fi repus online după restabilirea și verificarea datelor.
+  </p>
+</section>
+{% else %}
 <section class="moldoveneasca-catalog" data-moldoveneasca-catalog aria-labelledby="catalog-description">
   <h1 class="moldoveneasca-catalog__title">Referințe istorice ale glotonimului „moldovenească”</h1>
   <p id="catalog-description" class="moldoveneasca-catalog__intro">
@@ -530,3 +546,4 @@ Doua chestii sa fie luate în considerare. Vom porni de la premiza ca
     </nav>
   </div>
 </section>
+{% endif %}

@@ -14,9 +14,9 @@ lang: mo
   <div class="dossier-grid">
     <article class="dossier-card dossier-card--featured">
       <p class="card-label">Referințe istorice</p>
-      <h2><a href="{{ '/moldoveneasca/' | relative_url }}">Denumirea istorică a limbii moldovenești</a></h2>
+      <h2><a href="https://moldoveneasca.md/arhiva/">Denumirea istorică a limbii moldovenești</a></h2>
       <p>Arhiva adună surse și mențiuni istorice despre denumirea limbii moldovenești, prezentate în ordine cronologică.</p>
-      <a class="card-link" href="{{ '/moldoveneasca/' | relative_url }}">Deschide referințele →</a>
+      <a class="card-link" href="https://moldoveneasca.md/arhiva/">Deschide referințele →</a>
     </article>
 
     <article class="dossier-card">

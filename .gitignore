@@ -5,16 +5,6 @@ _site
 vendor
 .drive-import-checklist.json
 
-# MCP/Cloudflare local state and secrets
-mcp/.env
-mcp/.moldoveneasca-session.json
-mcp/.dev.vars
-mcp/.wrangler/
-mcp/node_modules/
-
-# Configurația locală Codex poate conține căi și setări ale stației de lucru.
-.codex/config.toml
-
 # Prevent accidental commits of local credentials and key material.
 .env
 .env.*

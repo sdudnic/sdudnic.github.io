@@ -45,8 +45,7 @@
 
 (() => {
   const languageDetails = [...document.querySelectorAll('.language-switcher__details')];
-  const accountDetails = [...document.querySelectorAll('.site-account__menu')];
-  const detailsList = [...languageDetails, ...accountDetails];
+  const detailsList = languageDetails;
 
   if (!detailsList.length) return;
 
@@ -64,7 +63,7 @@
 
   document.addEventListener('click', (event) => {
     detailsList.forEach((details) => {
-      const owner = details.closest('.language-switcher, .site-account');
+      const owner = details.closest('.language-switcher');
       if (details.open && owner && !owner.contains(event.target)) {
         details.removeAttribute('open');
       }

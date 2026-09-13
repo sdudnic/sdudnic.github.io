@@ -28,9 +28,9 @@ lang: mo
 
     <article class="dossier-card">
       <p class="card-label">Limbă și identitate</p>
-      <h2><a href="{{ '/moldoveneasca/' | relative_url }}">Denumirea istorică a limbii moldovenești</a></h2>
+      <h2><a href="https://moldoveneasca.md/arhiva/">Denumirea istorică a limbii moldovenești</a></h2>
       <p>Documentare a referințelor istorice și susținere pentru restabilirea denumirii istorice a limbii moldovenești.</p>
-      <a class="card-link" href="{{ '/moldoveneasca/' | relative_url }}">Vezi referințele →</a>
+      <a class="card-link" href="https://moldoveneasca.md/arhiva/">Vezi referințele →</a>
     </article>
 
     <article class="dossier-card">

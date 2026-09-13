@@ -21,7 +21,7 @@ permalink: /istoria-romanilor/
     </ul>
 
     <h2>Materiale conexe</h2>
-    <p>Textele din arhivă dezvoltă separat subiectele istorice și identitare. Pentru lista completă, consultă <a href="{{ '/articole/' | relative_url }}">arhiva de articole</a> și pagina de <a href="{{ '/moldoveneasca/' | relative_url }}">referințe istorice ale glotonimului „moldovenească”</a>.</p>
+    <p>Textele din arhivă dezvoltă separat subiectele istorice și identitare. Pentru lista completă, consultă <a href="{{ '/articole/' | relative_url }}">arhiva de articole</a> și pagina de <a href="https://moldoveneasca.md/arhiva/">referințe istorice ale glotonimului „moldovenească”</a>.</p>
 
     <p class="source-note">Acest dosar este o pagină editorială a platformei MOLDOVA. Citatele și afirmațiile istorice trebuie verificate în sursele indicate în articolele aferente; opiniile sunt prezentate ca opinii.</p>
   </div>

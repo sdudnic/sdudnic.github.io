@@ -8,7 +8,7 @@ tags: [noutăți, limba moldovenească, catalog, referințe]
 published: true
 ---
 
-Am publicat [catalogul referințelor istorice ale limbii moldovenești]({{ '/moldoveneasca/' | relative_url }}), o bază de date cu surse, citate și informații bibliografice despre denumirea limbii moldovenești.
+Am publicat [catalogul referințelor istorice ale limbii moldovenești](https://moldoveneasca.md/arhiva/), o bază de date cu surse, citate și informații bibliografice despre denumirea limbii moldovenești.
 
 <!--more-->
 

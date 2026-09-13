@@ -14,9 +14,9 @@ permalink: /en/references-resources/
   <div class="dossier-grid">
     <article class="dossier-card dossier-card--featured">
       <p class="card-label">Historical references</p>
-      <h2><a href="{{ '/en/moldovan-language/' | relative_url }}">The historical name of the Moldovan language</a></h2>
+      <h2><a href="https://moldoveneasca.md/arhiva/">The historical name of the Moldovan language</a></h2>
       <p>The archive gathers historical sources and mentions of the name of the Moldovan language in chronological order.</p>
-      <a class="card-link" href="{{ '/en/moldovan-language/' | relative_url }}">Open the references →</a>
+      <a class="card-link" href="https://moldoveneasca.md/arhiva/">Open the references →</a>
     </article>
 
     <article class="dossier-card">

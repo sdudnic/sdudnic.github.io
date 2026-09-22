@@ -1,16 +1,23 @@
 ---
 layout: post
-title: "Milioanele din umbra Unirii: ce spun documentele despre votul Sfatului Țării"
+title: "Milioanele din umbra unirii: ce spun documentele despre votul Sfatului Țării"
 date: 2026-09-22 00:00:00 +0000
 lang: mo
 news_label: Istorie și memorie
-tags: [istorie, Basarabia, Sfatul Țării, Unirea din 1918]
+tags: [istorie, Basarabia, Sfatul Țării, evenimentele din 1918]
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg/960px-Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg
+image_alt: Clădirea Sfatului Țării din Chișinău, fotografie circa 1920
 published: true
 ---
 
-În jurul votului Sfatului Țării din 27 martie/9 aprilie 1918 s-a păstrat o întrebare care revine de fiecare dată cînd sînt recitite documentele Unirii Basarabiei cu Romînia: au existat plăți secrete pentru obținerea votului? Sursele arată un tablou mai complicat decît o singură poveste. Ele documentează negocieri politice intense, distribuiri publice de bani, acuzații despre milioane apărute încă din 1918 și mărturii ulterioare care indică sume și persoane concrete.
+În jurul votului Sfatului Țării din 27 martie/9 aprilie 1918 s-a păstrat o întrebare care revine de fiecare dată cînd sînt recitite documentele despre schimbarea statutului politic al Basarabiei: au existat plăți secrete pentru obținerea votului? Sursele arată un tablou mai complicat decît o singură poveste. Ele documentează negocieri politice intense, distribuiri publice de bani, acuzații despre milioane apărute încă din 1918 și mărturii ulterioare care indică sume și persoane concrete.
 
 <!--more-->
+
+<figure class="post-image" style="margin: 1.25rem 0 1.75rem; text-align: center;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg/960px-Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg" alt="Clădirea Sfatului Țării din Chișinău, fotografie circa 1920" loading="lazy" style="display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto;">
+  <figcaption>Clădirea Sfatului Țării din Chișinău, fotografie circa 1920. Autor necunoscut; sursa indicată pe <a href="https://commons.wikimedia.org/wiki/File:Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg">Wikimedia Commons</a>; licență <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</figcaption>
+</figure>
 
 ## Ziua de dinaintea votului
 
@@ -18,7 +25,7 @@ published: true
 
 Aceste note confirmă negocierile politice și contactul direct cu conducerea Sfatului Țării. Ele consemnează însă și plăți publice, cu destinații declarate: 20.000 de lei pentru săracii Chișinăului prin episcopul-vicar, 20.000 de lei pentru opere bisericești prin arhimandritul Gurie, 10.000 de lei pentru un azil prin marele rabin și 50.000 de lei pentru Primăria Chișinăului. Aceste ajutoare oficiale nu sînt identice cu o plată secretă către deputați.
 
-Rapoartele diplomatului spaniol Manuel Multedo descriu, la rîndul lor, întrevederile lui Marghiloman cu Ion Inculeț și cu alte personalități ale adunării. Diplomatul considera că negocierile urmăreau formula și procedura prin care Basarabia urma să fie legată de Romînia. Sursa confirmă intensitatea tratativelor politice și rapiditatea rezultatului, fără să transforme negocierile într-o dovadă contabilă a unei mite.
+Rapoartele diplomatului spaniol Manuel Multedo descriu, la rîndul lor, întrevederile lui Marghiloman cu Ion Inculeț și cu alte personalități ale adunării. Diplomatul considera că negocierile urmăreau formula și procedura prin care urma să fie stabilită relația politică a Basarabiei cu Romînia. Sursa confirmă intensitatea tratativelor politice și rapiditatea rezultatului, fără să transforme negocierile într-o dovadă contabilă a unei mite.
 
 ## Primele relatări despre bani apar în 1918
 
@@ -32,11 +39,11 @@ Relatarea îi menționează pe Ion Inculeț, Daniel Ciugureanu, Ion Pelivan, Pan
 
 Formularea arată cît de ferm era prezentată acuzația în acel mediu politic. Totodată, pasajul publicat nu reproduce documentul financiar la care face referire și nu precizează în acel loc nici suma, nici lista beneficiarilor. Cartea este astfel o mărturie despre existența și circulația acuzației în 1919, nu un registru financiar care poate fi verificat direct prin pasajul respectiv.
 
-În 1922, Christian Rakovsky a formulat în franceză aceeași acuzație în termeni de „tromperie” și „corruption”. Poziția lui era legată de opoziția sovietică și ucraineană față de recunoașterea alipirii Basarabiei la Romînia. Textul confirmă răspîndirea internațională a acuzației, dar trebuie citit împreună cu poziția politică a autorului.
+În 1922, Christian Rakovsky a formulat în franceză aceeași acuzație în termeni de „tromperie” și „corruption”. Poziția lui era legată de opoziția sovietică și ucraineană față de recunoașterea noului statut politic al Basarabiei. Textul confirmă răspîndirea internațională a acuzației, dar trebuie citit împreună cu poziția politică a autorului.
 
 ## Jurnalul Șcerbaciov și suma de șapte milioane
 
-În 1925, revista ucraineană sovietică „Летопись революции” a publicat studiul lui A. A. Reabinin-Skliarevski despre ocupația Basarabiei. Autorul folosea și însemnările fiului generalului Dmitri Șcerbaciov, care lucrase ca adjutant la comandamentul Frontului Romîn.
+În 1925, revista ucraineană sovietică „Летопись революции” a publicat studiul lui A. A. Reabinin-Skliarevski despre evenimentele politice din Basarabia. Autorul folosea și însemnările fiului generalului Dmitri Șcerbaciov, care lucrase ca adjutant la comandamentul Frontului Romîn.
 
 Potrivit transcrierii publicate, însemnările vorbeau despre intrarea a 47 de membri ai Sfatului Țării în serviciul Romîniei și despre cheltuirea a șapte milioane de lei pentru mituire. O altă relatare atribuită aceluiași jurnal afirma că, la două zile după vot, Basarabia îi costase pe romîni șapte milioane și că suma fusese folosită pentru Directorat și Sfatul Țării.
 
@@ -44,13 +51,13 @@ Textul a apărut într-o publicație editată de Istpart-ul Partidului Comunist 
 
 ## Pămîntul din 1928: un avantaj documentat, o altă întrebare
 
-Un fapt material, separat de acuzațiile despre vot, este documentat prin lege. Monitorul Oficial nr. 74 din 31 martie 1928 prevedea împroprietărirea foștilor deputați ai Sfatului Țării și a foștilor membri ai guvernului autonom „care au înfăptuit Unirea” cu cîte 50 de hectare. Terenurile urmau să fie acordate la prețul de expropriere.
+Un fapt material, separat de acuzațiile despre vot, este documentat prin lege. Monitorul Oficial nr. 74 din 31 martie 1928 prevedea împroprietărirea foștilor deputați ai Sfatului Țării și a foștilor membri ai guvernului autonom care avuseseră un rol în evenimentele din 1918, cu cîte 50 de hectare. Terenurile urmau să fie acordate la prețul de expropriere.
 
 Legea arată că statul romîn a acordat ulterior un avantaj juridic special unei categorii definite prin rolul său în evenimentele din 1918. Ea nu stabilește însă, prin ea însăși, că un asemenea avantaj fusese negociat ca plată secretă înaintea votului. Cele două fapte trebuie păstrate distinct: recompensa legală din 1928 este documentată, iar folosirea ei ca probă directă despre banii din martie 1918 ar fi o concluzie suplimentară.
 
 ## Mărturia lui Pilescu în jurnalul lui Argetoianu
 
-O relatare romînească ulterioară, dar concretă, apare în jurnalul privat al lui Constantin Argetoianu. La 27 octombrie 1935, el scria că dr. Pilescu îi confirmase din nou că, în apropierea votului Unirii, Pilescu și Andrei Corteanu îi duseseră și îi număraseră lui Ion Inculeț două milioane de lei din partea lui Marghiloman.
+O relatare romînească ulterioară, dar concretă, apare în jurnalul privat al lui Constantin Argetoianu. La 27 octombrie 1935, el scria că dr. Pilescu îi confirmase din nou că, în apropierea votului din 1918, Pilescu și Andrei Corteanu îi duseseră și îi număraseră lui Ion Inculeț două milioane de lei din partea lui Marghiloman.
 
 Relatarea indică o persoană, o sumă și doi presupuşi intermediari. Ea este mai precisă decît simpla repetare a unui zvon, dar rămîne o mărturie consemnată în 1935 de Argetoianu, nu un extras de contabilitate din martie 1918. În *Memorii*, Argetoianu a formulat acuzația și mai direct și a afirmat că deținea declarația celor doi intermediari. Diferența dintre o afirmație memorialistică și un document financiar verificabil este esențială pentru evaluarea sursei.
 

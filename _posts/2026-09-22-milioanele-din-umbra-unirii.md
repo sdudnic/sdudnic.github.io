@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Milioanele din umbra Unirii: ce spun documentele despre votul Sfatului Țării"
-date: 2026-09-22 12:00:00 +0200
+date: 2026-09-22 00:00:00 +0000
 lang: mo
 news_label: Istorie și memorie
 tags: [istorie, Basarabia, Sfatul Țării, Unirea din 1918]

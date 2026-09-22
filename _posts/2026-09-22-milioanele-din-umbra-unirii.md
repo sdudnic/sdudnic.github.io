@@ -5,8 +5,8 @@ date: 2026-09-22 00:00:00 +0000
 lang: mo
 news_label: Istorie și memorie
 tags: [istorie, Basarabia, Sfatul Țării, evenimentele din 1918]
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg/960px-Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg
-image_alt: Clădirea Sfatului Țării din Chișinău, fotografie circa 1920
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg/960px-Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg
+image_alt: Deputații aleși ai Sfatului Țării, fotografie din 1917
 published: true
 ---
 
@@ -15,8 +15,8 @@ published: true
 <!--more-->
 
 <figure class="post-image" style="margin: 1.25rem 0 1.75rem; text-align: center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg/960px-Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg" alt="Clădirea Sfatului Țării din Chișinău, fotografie circa 1920" loading="lazy" style="display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto;">
-  <figcaption>Clădirea Sfatului Țării din Chișinău, fotografie circa 1920. Autor necunoscut; sursa indicată pe <a href="https://commons.wikimedia.org/wiki/File:Sfatul_%C8%9A%C4%83rii_Palace_in_Chi%C8%99in%C4%83u.jpg">Wikimedia Commons</a>; licență <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</figcaption>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg/960px-Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg" alt="Deputații aleși ai Sfatului Țării, fotografie din 1917" loading="lazy" style="display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto;">
+  <figcaption>Deputații aleși ai Sfatului Țării, fotografie din 1917. Sursa: Parlamentul Republicii Moldova, prin <a href="https://commons.wikimedia.org/wiki/File:Sfatul_%C8%9A%C4%83rii_(to%C8%9Bi_deputa%C8%9Bii).jpg">Wikimedia Commons</a>; domeniu public.</figcaption>
 </figure>
 
 ## Ziua de dinaintea votului
@@ -71,7 +71,7 @@ Cele trei cifre principale nu trebuie adunate și nici tratate automat ca aceea�
 
 Diferențele de monedă, sumă și beneficiari arată că sursele transmit versiuni distincte. Ele nu permit o aritmetică retrospectivă prin care toate milioanele să fie puse în aceeași casă.
 
-Totuși, dimensiunea sumelor poate fi înțeleasă printr-un reper contemporan. Banca Națională a Romîniei indica pentru 1918 un preț mediu de aproximativ 0,46 lei pentru un kilogram de pîine. Raportată la acest preț, suma de două milioane de lei ar reprezenta nominal circa 4,35 milioane de kilograme de pîine. Calculul nu este o conversie în bani de astăzi, ci doar arată ordinul de mărime atribuit sumei în relatarea lui Argetoianu.
+Totuși, dimensiunea sumelor poate fi înțeleasă printr-un reper contemporan. Banca Națională a Romîniei indica pentru 1918 un preț mediu de aproximativ 0,46 lei pentru un kilogram de pîine. Suma de două milioane de lei însemna, la acel preț, circa 4,35 milioane de kilograme de pîine. Exprimată într-o unitate monetară actuală, această cantitate ar echivala cu aproximativ 4,35 milioane de euro la un reper rotund de 1 euro pentru un kilogram de pîine. Este o estimare comparativă, nu o conversie istorică a leului din 1918 în euro.
 
 ## Ce rămîne stabilit
 

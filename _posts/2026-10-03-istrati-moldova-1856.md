@@ -19,11 +19,13 @@ Istrati propune o confederație cu Valahia și Serbia, în care fiecare țară �
 
 Argumentul său privește și raportul cu marile puteri. Se teme că dispariția vechii organizări ar putea înlocui suzeranitatea otomană cu o stăpînire străină mai apăsătoare și ar putea transforma țările în provincii.
 
-Aceste idei sînt accesibile în [transcrierea broșurii](https://tiparituriromanesti.wordpress.com/2013/01/22/nicolae-istrati-despre-cvestiea-dzilei-in-moldova-iasi-1856-dorintele-si-fricile-antiunionistilor/), publicată în 2013 cu atribuirea exemplarului Bibliotecii Centrale Universitare din Iași. Pagina originală a exemplarului nu a fost verificată aici; formulările sînt prezentate prin această transcriere.
+Aceste idei sînt accesibile în [transcrierea broșurii](https://tiparituriromanesti.wordpress.com/2013/01/22/nicolae-istrati-despre-cvestiea-dzilei-in-moldova-iasi-1856-dorintele-si-fricile-antiunionistilor/), publicată în 2013 cu atribuirea exemplarului Bibliotecii Centrale Universitare din Iași. Prezentarea ideilor broșurii se bazează pe această transcriere.
 
 **Pentru Istrati, alternativa unirii era o alianță care să păstreze Moldova.** Avem o opoziție politică formulată înainte de 1859, nu un răspuns retrospectiv la nemulțumiri ulterioare.
 
-Broșura documentează temerile unui adversar al unirii. Ea nu dovedește, prin simpla existență, că previziunile sale s-au împlinit. Dar schimbă întrebarea: cine avea dreptul să hotărască ce putea pierde Moldova și ce trebuia să cîștige?
+Broșura documentează o avertizare formulată înainte de unire: Moldova putea pierde puterea de a hotărî pentru sine. Previziunile lui Istrati rămîn previziuni, dar existența acestei împotriviri este un fapt.
+
+Povestirea unirii ca dorință comună a tuturor ascunde tocmai această voce. Pentru adversarul ei, întrebarea era apăsătoare: cine putea garanta că promisiunea unui viitor mai bun nu cerea, în schimb, renunțarea definitivă la propria putere politică?
 
 
 ---

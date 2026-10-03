@@ -19,7 +19,9 @@ La **3/15 aprilie 1866**, după înlăturarea lui Cuza, adversarii unirii încea
 
 Armata intervine. Confruntarea lasă victime în ambele tabere; mitropolitul este rănit. Acestea sînt împrejurările reconstituite în [*Acta Moldaviae Meridionalis*, XLI, 2020, p. 71](https://www.biblioteca-digitala.ro/reviste/Acta-Moldaviae-Meridionalis/41_Acta-Moldaviae-Meridionalis_XLI_2020.pdf). Bilanțurile diferă între relatări; nu fixăm un număr unic.
 
-**Opoziția moldovenească față de unire a ajuns aici la confruntare armată și vărsare de sînge.** Prezența armelor în mulțime face parte din istorie, la fel ca forța folosită pentru înfrîngerea ei. Imaginea unanimă, festivă, a unirii lasă acest episod în afara cadrului.
+**Opoziția moldovenească față de unire a ajuns aici la confruntare armată și vărsare de sînge.** După șapte ani, statul comun încă avea adversari dispuși să-i conteste existența în stradă. Răspunsul autorităților a fost intervenția armatei. Morții și răniții fac imposibilă povestirea acestui episod ca o simplă sărbătoare a unității.
+
+Unirea fusese hotărîtă; împotrivirea nu dispăruse. La Iași, menținerea ei a trecut și prin înfrîngerea violentă a celor care cereau desfacerea statului comun.
 
 
 ---

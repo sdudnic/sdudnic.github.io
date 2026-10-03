@@ -21,7 +21,9 @@ Publicistul separatist susține cauza Moldovei prin gazeta **„Moldova”**, ap
 
 Gazeta încetează să apară în 1869, pe fondul dificultăților financiare, problemelor cu autoritățile și scăderii receptivității față de separatism.
 
-**Pentru acest adversar al unirii, polemica a trecut din paginile ziarului în sala de judecată și în violență fizică.** Achitarea rămîne parte a aceleiași istorii.
+**Pentru acest adversar al unirii, polemica a trecut din paginile ziarului în sala de judecată și în violență fizică.** Achitarea nu șterge procesul, iar incidentul cu ofițerii arată cît de primejdioasă putea deveni confruntarea politică.
+
+O gazetă care atacă unirea, un publicist chemat în judecată, o confruntare ce îi pune viața în pericol: acestea sînt faptele. Dispariția treptată a unei asemenea voci nu poate fi luată, de una singură, drept dovadă că toți ajunseseră să creadă în unire.
 
 Sursa: Mircea-Cristian Ghenghea, [„Din istoria separatismului moldovenesc: Teodor Boldur-Lățescu și gazeta «Moldova» (1866–1869)”](https://www.muzeulliteraturiiiasi.ro/wp-content/uploads/2020/03/Anuarul-Muzeului-National-al-Literaturii-Romane-Iasi-2015.pdf), 2015, pp. 66–75, în special p. 72, notele 23–24; [fișa studiului](https://www.ceeol.com/search/article-detail?id=579687).
 

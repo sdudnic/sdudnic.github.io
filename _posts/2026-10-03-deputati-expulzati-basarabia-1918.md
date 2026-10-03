@@ -19,9 +19,11 @@ La **29 octombrie 1918** sînt arestați deputații F. Stanevici, K. Misirkov, M
 
 La **8 noiembrie**, Stanevici cere revenirea. Guvernatorul A. Văitoianu acceptă, **cu condiția renunțării la activitatea politică**. Pantelimon Halippa și Boris Epure protestează invocînd inviolabilitatea deputaților.
 
-Memoriul din 20 noiembrie cere respectarea libertăților și a autonomiei. Printre participanții la această opoziție se află și oameni care susținuseră unirea condiționată. A-i numi pe toți adversari ai oricărei uniri ar șterge tocmai miza: respectarea condițiilor acceptate în martie.
+Memoriul din 20 noiembrie cere respectarea libertăților și a autonomiei. Miza este **păstrarea condițiilor în care fusese acceptată unirea în martie**. Cînd aceste garanții ajung să fie înlăturate, cei care cer respectarea lor se confruntă cu arestări și expulzări.
 
-**Un reprezentant ales putea fi expulzat, iar revenirea sa putea depinde de tăcerea politică.** Această faptă pune o întrebare directă despre libertatea opoziției în lunile în care unirea devenea necondiționată.
+**Un reprezentant ales putea fi expulzat, iar revenirea sa putea depinde de tăcerea politică.** În asemenea împrejurări, absența opoziției din viața publică nu dovedește consimțămîntul ei. Cum mai poate fi verificată libertatea unei decizii cînd oameni care ar putea să i se împotrivească sînt îndepărtați?
+
+Între condițiile acceptate în martie și renunțarea la ele în noiembrie se află această istorie a presiunii. Ea pune sub semnul întrebării încrederea în garanțiile politice oferite la unire: ce valoare are un angajament dacă apărătorii lui pot fi reduși la tăcere?
 
 Sursa: [Octavian Țîcu, „Controversele Unirii necondiționate (II): Memoriul din 20 noiembrie 1918”](https://www.europalibera.md/amp/blog-octavian-ticu-centenarul-unirii/29577783.html), 2 noiembrie 2018.
 

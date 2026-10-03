@@ -26,6 +26,12 @@ Articolele publicate au eticheta comună **folclor-si-societate** și sînt adun
 {% endfor %}
 </ol>
 
+## Personajele
+
+[Sexul](/serii/folclor-si-societate/sexul/) · [Vîrsta](/serii/folclor-si-societate/varsta/) · [Starea socială](/serii/folclor-si-societate/starea-sociala/) · [Ocupația](/serii/folclor-si-societate/ocupatia/) · [Averea](/serii/folclor-si-societate/averea/) · [Ierarhia](/serii/folclor-si-societate/ierarhia/) · [Atitudinea față de autorități](/serii/folclor-si-societate/autoritatea/) · [Apartenența etnică](/serii/folclor-si-societate/etnia/) · [Originea regională](/serii/folclor-si-societate/originea-regionala/).
+
+[Judecata morală](/serii/folclor-si-societate/judecata-morala/) · [Inteligența](/serii/folclor-si-societate/inteligenta/) · [Frumusețea](/serii/folclor-si-societate/frumusetea/) · [Relațiile afective](/serii/folclor-si-societate/relatiile-afective/) · [Inițiativa](/serii/folclor-si-societate/initiativa/) · [Răsplata](/serii/folclor-si-societate/rasplata/).
+
 ## Direcții propuse pentru continuare
 
 - **Femeile și bărbații:** inițiativă, muncă, alegere și dependență; cum se schimbă așteptările față de fiecare între epoci.

@@ -9,7 +9,7 @@ permalink: /2026/10/03/ierarhii-sociale-povesti-moldovenesti.html
 published: true
 ---
 
-În poveștile moldovenești, un om fără avere poate pune un boier în încurcătură, o fată alungată de acasă poate dobîndi bogății, iar cel socotit nepriceput poate găsi soluția pe care ceilalți n-o văd. Dincolo de aventură și haz, aceste întîmplări pun o întrebare foarte apropiată de viața noastră: de ce ar avea cineva mai multă dreptate numai pentru că are mai multă putere?
+De ce ținem partea fetei alungate de acasă? De ce ne bucură înfrîngerea unui boier care poate porunci tuturor? Și cum ajunge cel luat drept nepriceput să-i întreacă pe cei siguri de mintea lor? În poveștile moldovenești, asemenea răsturnări ne fac să rîdem, să ne indignăm și să așteptăm dreptatea. Dar după ce reguli alegem cui îi ținem partea?
 
 <!--more-->
 
@@ -31,13 +31,11 @@ published: true
 
 *Primul articol din seria [Folclor și societate]({{ '/serii/folclor-si-societate/' | relative_url }}).*
 
-## Introducere: societatea văzută prin poveste
+O fată muncește și primește răsplată. Un stăpîn dă porunci, dar pierde controlul. Un bătrîn trezește milă, deși nu-l apără pe cel care depinde de el. Dacă privim dincolo de finalul fericit, personajele devin mai greu de împărțit în buni și răi. Poate fi cineva isteț și nedrept? Slab și totuși vinovat? Puternic și demn de respect?
 
-Basmul, snoava și povestea nuvelistică ne arată feluri diferite de a judeca oamenii. În basm, eroul trece încercări și primește ajutor fantastic. În snoavă, o situație scurtă și comică scoate la iveală o slăbiciune. Povestea nuvelistică se apropie de conflictele cotidiene: munca, sărăcia, căsătoria, judecata și raporturile cu stăpînul. Genul trebuie păstrat în analiză, fiindcă aventura fantastică și comicul judecă faptele în moduri diferite.
+Relațiile dintre ei ne duc către întrebări despre lumea care a transmis poveștile: ce preț punea pe muncă, pe avere, pe ascultare sau pe curajul de a spune nu? Ce aștepta de la femei și bărbați, de la tineri și bătrîni? Iar cînd povestea trecea de la o generație la alta, se păstra și judecata asupra faptelor?
 
-O lectură socială urmărește trei lucruri simple: **cine poate porunci, cine suportă urmările și prin ce se schimbă situația**. Rangul, averea și autoritatea din familie alcătuiesc o ierarhie; inteligența, curajul și grija față de ceilalți pot alcătui alta. Conflictul apare cînd cele două nu se potrivesc.
-
-Articolul propune o analiză calitativă, explicată pe înțelesul tuturor. Tabelul pornește de la tipurile din materialul discutat și le organizează după rolul lor în conflict. El este o hartă de lectură, nu rezultatul numărării tuturor poveștilor moldovenești. Textele lui Ion Creangă sînt indicate separat, ca prelucrări literare ale unor motive populare; un personaj dintr-o poveste nu poate reprezenta singur o întreagă categorie de oameni.
+Vom urmări aceste întrebări prin conflictele și alegerile personajelor. Exemplele deschid lectura; comparația variantelor moldovenești va putea arăta ce valori rezistă și ce valori se schimbă.
 
 ## Spațiul moldovenesc
 
@@ -47,9 +45,9 @@ Pentru o variantă orală, locul culegerii și proveniența povestitorului stabi
 
 Exemplele literare analizate aici sînt ale lui Ion Creangă. Studiul lui Grigore Botezatu este folosit ca instrument de folcloristică; variantele din alte tradiții discutate de el nu intră în lotul moldovenesc. Tipurile din tabel sînt propuneri de clasificare: fiecare apariție concretă va trebui legată de un text din aria stabilită.
 
-## Sexul, vîrsta și poziția socială: dimensiuni distincte
+## Personajele
 
-Aceeași faptă capătă alt înțeles dacă o face un copil dependent, o slugă amenințată sau un împărat care poate porunci. De aceea, personajele trebuie privite pe mai multe planuri.
+Un personaj poate fi sărac și influent, tînăr și ascultat, bogat și lipsit de respect. Inițiativa, munca, averea și autoritatea nu îi dau întotdeauna același loc în poveste.
 
 <table class="folclor-table" role="table" aria-label="Dimensiunile analizei">
 <thead role="rowgroup"><tr role="row">
@@ -59,57 +57,55 @@ Aceeași faptă capătă alt înțeles dacă o face un copil dependent, o slugă
 </tr></thead>
 <tbody role="rowgroup">
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Sexul</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/sexul/">Sexul</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Personaj masculin sau feminin, după prezentarea din text</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cui îi este atribuită inițiativa, cine hotărăște și ce comportamente sînt apreciate?</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Vîrsta</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/varsta/">Vîrsta</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Copil, tînăr, adult sau vîrstnic; vîrstă neprecizată</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cum sînt judecate experiența, autoritatea bătrînilor și inițiativa celor tineri?</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Starea socială</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/starea-sociala/">Starea socială</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Poziția în societate: țăran, slugă, boier, membru al familiei conducătoare</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Statutul de pornire și accesul la drepturi ori privilegii. „Țăran” nu înseamnă automat „sărac”.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Profesia / ocupația</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/ocupatia/">Profesia / ocupația</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Munca descrisă: cioban, grădinar, negustor, soldat etc.</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cum este apreciată munca și ce relații creează ocupația?</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Bogăția</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/averea/">Bogăția</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Banii, pămîntul, animalele, bunurile; averea de la început și de la sfîrșit</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Sărăcia, îmbogățirea și redistribuirea răsplății. Bogăția poate fi cîștigată, moștenită sau luată altuia.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Poziția ierarhică</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/ierarhia/">Poziția ierarhică</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Cine decide asupra cui, în casă, la muncă sau la curte</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Un tată poate avea titlul de cap al familiei și totuși să nu controleze deciziile.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Atitudinea față de autorități</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/autoritatea/">Atitudinea față de autorități</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Supunere, respect, negociere, ironie, refuz sau împotrivire, după faptele din text</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Este apreciată ascultarea, contestarea abuzului sau contestarea autorității însăși?</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Apartenența etnică</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/etnia/">Apartenența etnică</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Denumirea explicită din text, de exemplu moldovean, rus, evreu, atunci cînd apare</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cum este reprezentat grupul și ce rol are apartenența în conflict? Nu o deducem din nume sau profesie.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Criteriu"><span>Originea regională</span></td>
+<td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/originea-regionala/">Originea regională</a></span></td>
 <td role="cell" data-label="Ce urmărim concret"><span>Proveniența locală indicată, de exemplu vrîncean, atunci cînd apare</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cum sînt reprezentați oamenii din alte regiuni și cum se definește apropierea sau diferența?</span></td>
 </tr>
 </tbody></table>
 
-Sexul și vîrsta se analizează separat, apoi se pot compara împreună: de pildă, femei tinere cu femei vîrstnice sau bărbați tineri cu bărbați vîrstnici. Astfel putem verifica dacă un contrast ține de sex, de vîrstă, de rolul familial ori de combinația lor.
+Identificările etnice și regionale se păstrează în sensul sursei. Ele descriu reprezentarea din poveste; nu stabilesc trăsăturile oamenilor reali.
 
-Apartenența etnică și originea regională permit studierea felului în care povestea îi prezintă pe „ai noștri” și pe ceilalți. Denumirile se păstrează în sensul și contextul sursei; „vrîncean” indică o proveniență regională și nu este transformat automat într-o etnie distinctă. Exemplele din tabel sînt categorii posibile pentru cercetare, nu grupuri deja identificate în toate textele discutate. Un stereotip dintr-o poveste este o reprezentare de analizat, nu o descriere a grupului real.
-
-## Valorile se păstrează sau se schimbă între epoci?
+## Valorile între epoci
 
 Întrebarea despre timp privește **evoluția judecății asupra personajelor**. Pentru același tip de conflict, ce apreciază o variantă mai veche și ce apreciază una documentată ulterior? Rămîne istețimea o virtute dacă ia forma înșelăciunii? Este răsplătită supunerea sau inițiativa? Este rangul respectat ori ridiculizat? Acestea sînt întrebări de cercetare, nu schimbări deja demonstrate.
 
@@ -117,7 +113,7 @@ Conservarea și adaptarea pot exista împreună: o poveste poate păstra conflic
 
 Pentru comparație avem nevoie de repere documentare: „Fata babei și fata moșneagului” apare în *Convorbiri literare*, la 1 septembrie 1877, conform [studiului despre folclorul publicat în revistă](https://biblioteca-digitala.ro/reviste/ins-calinescu-istorie-teorie-literara/016_revista-istorie-teorie-literara_XVI_3_1967.pdf). Aceasta datează publicarea textului lui Creangă, nu nașterea motivului oral. Data unei reproduceri pe internet nu datează valorile din poveste. Data culegerii sau publicării este un reper al variantei; schimbarea valorilor este obiectul comparației.
 
-## Tabel: personajele și locul lor în conflict
+## Chipuri și conflicte
 
 „Favorabil” înseamnă că povestea ne îndeamnă să ținem partea personajului în situația descrisă. „Ambivalent” înseamnă că judecata depinde de faptă și de variantă. Nu sînt etichete aplicate oamenilor reali.
 
@@ -303,7 +299,7 @@ Putem citi conflictul ca pe o contestare a abuzului: cererea cocoșului priveșt
 
 Studiul ar distinge între respectul față de o autoritate socotită dreaptă, supunerea din teamă, negociere, ironie și împotrivire la abuz. Ar nota separat cum se comportă personajul și cum îi judecă povestea comportamentul. Autoritatea poate fi a boierului, a judecătorului, a clerului, a stăpînului ori a părintelui; aceste relații nu sînt echivalente. Întrebarea între epoci este dacă se schimbă ceea ce povestea consideră legitim: porunca, ascultarea, cererea de dreptate sau refuzul.
 
-## Familia: nedreptatea poate începe în propria casă
+## Familia
 
 În [„Fata babei și fata moșneagului” de Ion Creangă](https://moldovenii.md/section/literature-document/sectionId/473/id/1358), cele două fete trăiesc în aceeași gospodărie, dar primesc tratamente diferite. Una duce greul muncii; cealaltă beneficiază de protecție și își însușește chiar rezultatul muncii surorii vitrege. Inegalitatea este produsă în interiorul familiei.
 
@@ -313,7 +309,7 @@ Moșneagul este slab în fața soției, însă el își trimite fata de acasă. 
 
 Folcloristul Grigore Botezatu studiază [motivul mamei vitrege și al fiicei vitrege, AaTh 480](https://ibn.idsi.md/sites/default/files/imag_file/68-82.pdf), comparînd variante și interpretări. El arată răspîndirea internațională a subiectului și discută atît relațiile de familie, cît și straturile mitice. Studiul ne ajută să deosebim textul literar al lui Creangă de tradiția mai largă în care se înscrie.
 
-## Femei, bărbați și ajutoare: valoarea se vede în relații
+## Inițiativa și ajutorul
 
 Tabelul pune alături aventura voinicului, munca fetei și inteligența eroinei care rezolvă o problemă. Această alăturare permite o întrebare despre așteptările diferite față de personaje: cine primește libertatea de a pleca, cine trebuie să îngrijească și cine poate hotărî?
 
@@ -321,7 +317,7 @@ Tabelul pune alături aventura voinicului, munca fetei și inteligența eroinei 
 
 Ajutorul primit de fata lui Creangă poate fi citit și ca **reciprocitate**: îngrijirea oferită la plecare se întoarce sub formă de sprijin. Este o interpretare a legăturii dintre fapte și răsplată. Pentru a susține că un sex este mai des protagonist sau că un tip este predominant negativ, ar trebui analizat un ansamblu delimitat de variante, cu aceeași metodă pentru fiecare text.
 
-## Cum ar arăta un studiu cu 50–100 de personaje?
+## Lectura personajelor
 
 Un studiu ar porni de la 50–100 de **apariții concrete ale personajelor în texte moldovenești cu proveniență documentată**, nu de la inventarea a 100 de etichete. Același tip de personaj din două variante locale ar avea două fișe, fiindcă poate acționa diferit. Arhetipurile ar rezulta apoi prin gruparea rolurilor asemănătoare. Lotul ar păstra separat basmele, snoavele și baladele, variantele culese și prelucrările literare ale scriitorilor moldoveni.
 
@@ -337,32 +333,32 @@ Fiecare fișă ar consemna sursa și pasajul pe care se sprijină evaluarea, dim
 </tr></thead>
 <tbody role="rowgroup">
 <tr role="row">
-<td role="cell" data-label="Dimensiune"><span>Bine / rău</span></td>
+<td role="cell" data-label="Dimensiune"><span><a href="/serii/folclor-si-societate/judecata-morala/">Bine / rău</a></span></td>
 <td role="cell" data-label="Cum poate fi codificată"><span>Ajută, produce rău, ambele, neclar</span></td>
 <td role="cell" data-label="Ce ținem separat"><span>Judecata explicită a naratorului și interpretarea cercetătorului.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Dimensiune"><span>Deștept / prost</span></td>
+<td role="cell" data-label="Dimensiune"><span><a href="/serii/folclor-si-societate/inteligenta/">Deștept / prost</a></span></td>
 <td role="cell" data-label="Cum poate fi codificată"><span>Rezolvă problema, greșește, oscilează, neprecizat</span></td>
 <td role="cell" data-label="Ce ținem separat"><span>Capacitatea demonstrată și eticheta pusă de ceilalți; prostia poate fi mimată.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Dimensiune"><span>Frumos / urît</span></td>
+<td role="cell" data-label="Dimensiune"><span><a href="/serii/folclor-si-societate/frumusetea/">Frumos / urît</a></span></td>
 <td role="cell" data-label="Cum poate fi codificată"><span>Frumos, urît, descriere mixtă, neprecizat</span></td>
 <td role="cell" data-label="Ce ținem separat"><span>Descrierea fizică și valoarea morală.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Dimensiune"><span>Iubit / detestat</span></td>
+<td role="cell" data-label="Dimensiune"><span><a href="/serii/folclor-si-societate/relatiile-afective/">Iubit / detestat</a></span></td>
 <td role="cell" data-label="Cum poate fi codificată"><span>Relație favorabilă, ostilă, mixtă, neprecizată</span></td>
 <td role="cell" data-label="Ce ținem separat"><span>Cine îl iubește sau îl respinge; reacția publicului nu se presupune.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Dimensiune"><span>Activ / dependent</span></td>
+<td role="cell" data-label="Dimensiune"><span><a href="/serii/folclor-si-societate/initiativa/">Activ / dependent</a></span></td>
 <td role="cell" data-label="Cum poate fi codificată"><span>Decide și acționează; urmează decizii; ambele</span></td>
 <td role="cell" data-label="Ce ținem separat"><span>Protagonistul și personajul care rezolvă efectiv conflictul.</span></td>
 </tr>
 <tr role="row">
-<td role="cell" data-label="Dimensiune"><span>Răsplătit / pedepsit</span></td>
+<td role="cell" data-label="Dimensiune"><span><a href="/serii/folclor-si-societate/rasplata/">Răsplătit / pedepsit</a></span></td>
 <td role="cell" data-label="Cum poate fi codificată"><span>Răsplată, pedeapsă, rezultat mixt, fără rezultat precizat</span></td>
 <td role="cell" data-label="Ce ținem separat"><span>Averea, căsătoria, rangul, eliberarea și recunoașterea.</span></td>
 </tr>
@@ -374,13 +370,11 @@ După codificare, graficele ar putea arăta proporția de protagoniști pe sexe,
 
 Două lecturi independente ale acelorași texte ar permite verificarea acordului dintre evaluatori. Unde interpretările diferă, diferența ar fi păstrată și explicată. Abia atunci intuițiile „baba negativă / moșneagul victimă”, „bărbatul protagonist” sau „săracul pozitiv / boierul negativ” ar deveni ipoteze care pot fi confirmate, nuanțate ori contrazise. Articolul de față propune această metodă; nu prezintă procente pentru un lot care încă nu a fost codificat.
 
-## O serie despre personaje și schimbarea valorilor
+## Folclor și societate
 
 Această introducere deschide seria **Folclor și societate**. Continuările propuse au titluri scurte: **„Femeile și bărbații”**, **„Tinerii și bătrînii”**, **„Săracii și bogații”**, **„Omul și autoritatea”**, **„Judecata personajelor”** și **„Ai noștri și ceilalți”**. Ele urmăresc separat sexul, vîrsta, starea socială și averea, ierarhia și atitudinea față de autorități, evaluarea personajelor, apartenența etnică și originea regională.
 
 Fiecare temă ar urmări **ce valori se păstrează și ce valori se schimbă între epoci**. Variantele comparabile ar fi analizate după aceeași metodă, păstrînd locul culegerii și felul ediției. Diferența dintre un text vechi și unul recent poate veni și din regiune, povestitor, gen sau intervenția editorului. O sinteză ar evalua apoi continuitatea și adaptarea valorilor, fără a trata întregul popor ca uniform conservator ori uniform schimbător. Temele rămîn propuneri de continuare; aici este publicată introducerea și metoda.
-
-## Scurtă concluzie
 
 Poveștile discutate pun la încercare dreptul celui puternic de a avea ultimul cuvînt. Istețimea, munca și grija pot schimba o relație de dependență, iar rangul nu garantează o judecată bună. Aceasta este o cheie de lectură a imaginarului social moldovenesc. Pentru a o transforma într-un portret general al tradiției, trebuie comparate variantele, inclusiv cele care contrazic schema.
 

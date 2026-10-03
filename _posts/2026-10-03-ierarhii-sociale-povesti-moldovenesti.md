@@ -45,11 +45,11 @@ Pentru timp avem, de pildă, un reper bibliografic: „Fata babei și fata moșn
 „Favorabil” înseamnă că povestea ne îndeamnă să ținem partea personajului în situația descrisă. „Ambivalent” înseamnă că judecata depinde de faptă și de variantă. Nu sînt etichete aplicate oamenilor reali.
 
 <style>
+.post-content table { white-space: normal; }
 .folclor-table-wrap { overflow-x: auto; margin: 1.5rem 0; }
-.post-content .folclor-table { display: table; width: 100%; min-width: 780px; table-layout: fixed; white-space: normal; margin: 0; font-size: .92rem; }
-.folclor-table th, .folclor-table td { padding: .65rem; vertical-align: top; overflow-wrap: anywhere; }
-.folclor-table caption { text-align: left; padding-bottom: .7rem; font-weight: 600; }
-.folclor-table th:first-child { width: 18%; }
+.post-content .folclor-table-wrap table { display: table; width: 100%; min-width: 780px; table-layout: fixed; white-space: normal; margin: 0; font-size: .92rem; }
+.folclor-table-wrap th, .folclor-table-wrap td { padding: .65rem; vertical-align: top; overflow-wrap: anywhere; }
+.folclor-table-wrap th:first-child { width: 18%; }
 </style>
 
 <div class="folclor-table-wrap" role="region" aria-label="Tabelul personajelor și relațiilor sociale" tabindex="0" markdown="1">

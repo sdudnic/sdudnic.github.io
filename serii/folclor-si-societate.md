@@ -28,6 +28,10 @@ Articolele publicate au eticheta comună **folclor-si-societate** și sînt adun
 
 ## Personajele
 
+Fiecare pagină tematică republică personajele pentru care avem informații relevante, păstrează scorul de simpatie și discută ce sugerează comparația. Listele provin din selecția articolului principal; ele nu reprezintă încă un corpus statistic independent.
+
+[Adaptabilitatea](/serii/folclor-si-societate/adaptabilitatea/) · [Simpatia povestitorului](/serii/folclor-si-societate/simpatia-povestitorului/) · [Manipularea](/serii/folclor-si-societate/manipularea/).
+
 [Sexul](/serii/folclor-si-societate/sexul/) · [Vîrsta](/serii/folclor-si-societate/varsta/) · [Starea socială](/serii/folclor-si-societate/starea-sociala/) · [Ocupația](/serii/folclor-si-societate/ocupatia/) · [Averea](/serii/folclor-si-societate/averea/) · [Ierarhia](/serii/folclor-si-societate/ierarhia/) · [Atitudinea față de autorități](/serii/folclor-si-societate/autoritatea/) · [Apartenența etnică](/serii/folclor-si-societate/etnia/) · [Originea regională](/serii/folclor-si-societate/originea-regionala/).
 
 [Judecata morală](/serii/folclor-si-societate/judecata-morala/) · [Inteligența](/serii/folclor-si-societate/inteligenta/) · [Frumusețea](/serii/folclor-si-societate/frumusetea/) · [Relațiile afective](/serii/folclor-si-societate/relatiile-afective/) · [Inițiativa](/serii/folclor-si-societate/initiativa/) · [Răsplata](/serii/folclor-si-societate/rasplata/).

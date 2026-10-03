@@ -1,0 +1,24 @@
+<style>
+.folclor-category-table { width:100%; max-width:100%; table-layout:fixed; white-space:normal; margin:1.5rem 0; }
+.folclor-category-table th,.folclor-category-table td { padding:.65rem; vertical-align:top; white-space:normal; overflow-wrap:anywhere; box-sizing:border-box; }
+.folclor-category-table th:first-child { width:3.5rem; }
+@media(max-width:700px) {
+.folclor-category-table,.folclor-category-table tbody,.folclor-category-table tr,.folclor-category-table td { display:block; width:100%; }
+.folclor-category-table { border:0; min-width:0; }
+.folclor-category-table thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.folclor-category-table tr { box-sizing:border-box; border:1px solid var(--line,#ddd); border-radius:.4rem; margin-bottom:1rem; }
+.folclor-category-table td { border:0; border-bottom:1px solid var(--line,#ddd); }
+.folclor-category-table td:last-child { border-bottom:0; }
+.folclor-category-table td::before { content:attr(data-label); display:block; font-weight:600; font-size:.82rem; margin-bottom:.2rem; }
+}
+</style>
+<table class="folclor-category-table" role="table" aria-label="{{ page.title | escape }}: personajele">
+<thead role="rowgroup"><tr role="row"><th scope="col">s</th><th scope="col">Personaj</th><th scope="col">{{ include.label | escape }}</th><th scope="col">Caracteristici</th></tr></thead>
+<tbody role="rowgroup">
+{% for character in site.data.folclor_personaje %}
+{% assign category_value = character.categories[include.category] %}
+{% if category_value %}
+<tr role="row"><td role="cell" data-label="s">{{ character.s | escape }}</td><td role="cell" data-label="Personaj">{{ character.name | escape }}</td><td role="cell" data-label="{{ include.label | escape }}">{{ category_value | escape }}</td><td role="cell" data-label="Caracteristici">{{ character.tags | join: ', ' | escape }}</td></tr>
+{% endif %}
+{% endfor %}
+</tbody></table>

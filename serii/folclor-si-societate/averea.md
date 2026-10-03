@@ -3,9 +3,20 @@ layout: default
 title: "Averea personajelor"
 permalink: /serii/folclor-si-societate/averea/
 lang: mo
+tags: [folclor-si-societate, averea]
 ---
 
 # Averea personajelor
+
+Povestea ține partea săracului fiindcă este sărac sau fiindcă a fost nedreptățit?
+
+Din cele 36 de rînduri ale [articolului principal](/2026/10/03/ierarhii-sociale-povesti-moldovenesti.html), 6 au informații pentru această temă. Lista păstrează ordinea după **s**, estimarea simpatiei între −10 și +10. Ea combină personaje din texte precizate și tipuri propuse pentru cercetare; numărul rîndurilor descrie selecția editorială, nu frecvența în folclor. O caracteristică omisă rămîne neprecizată.
+
+{% include folclor-personaje.html category="averea" label="Avere" %}
+
+Boierul și ciobanul moldovean au amîndoi tagul „bogat”, dar se află la capete diferite ale simpatiei. Cucoșul este favorabil prezentat și după îmbogățire. Averea nu produce automat o evaluare negativă.
+
+În aceste exemple, felul în care bunurile sînt dobîndite și apărate explică mai mult decît simpla lor existență. Din celelalte rînduri nu deducem sărăcia: averea neprecizată rămîne în afara listei.
 
 Averea cuprinde resursele descrise: bani, pămînt, animale, bunuri, hrană și locuință. Se consemnează averea de pornire și rezultatul final; tăcerea textului nu înseamnă sărăcie.
 
@@ -15,6 +26,6 @@ Se urmărește cum sînt obținute resursele: prin muncă, moștenire, dar, răs
 
 Compararea variantelor ar urmări dacă bogăția este admirată, suspectată sau justificată prin merit și dacă sărăcia atrage compasiune, dispreț ori solidaritate.
 
-[Societatea în poveștile moldovenești](/2026/10/03/ierarhii-sociale-povesti-moldovenesti.html) · [Folclor și societate](/serii/folclor-si-societate/)
+[Textele și sursele seriei](/2026/10/03/ierarhii-sociale-povesti-moldovenesti.html#surse-și-lecturi)
 
-Lecturi: [studiul lui Grigore Botezatu](https://ibn.idsi.md/sites/default/files/imag_file/68-82.pdf), [„Fata babei și fata moșneagului”](https://moldovenii.md/section/literature-document/sectionId/473/id/1358) și [„Punguța cu doi bani”](https://ro.wikisource.org/wiki/Pungu%C8%9Ba_cu_doi_bani).
+[Societatea în poveștile moldovenești](/2026/10/03/ierarhii-sociale-povesti-moldovenesti.html) · [Folclor și societate](/serii/folclor-si-societate/)

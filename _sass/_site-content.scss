@@ -527,3 +527,27 @@
   font-weight: 600;
 }
 
+
+// Inline editorial links stay monochrome and occupy no extra space.
+.post-content a,
+.page-content > .wrapper > p a,
+.page-content > .wrapper > ul li a,
+.page-content > .wrapper > table a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: currentColor;
+  text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+}
+
+.post-content a:hover,
+.post-content a:focus-visible,
+.page-content > .wrapper > p a:hover,
+.page-content > .wrapper > p a:focus-visible,
+.page-content > .wrapper > ul li a:hover,
+.page-content > .wrapper > ul li a:focus-visible,
+.page-content > .wrapper > table a:hover,
+.page-content > .wrapper > table a:focus-visible {
+  text-decoration-color: currentColor;
+}

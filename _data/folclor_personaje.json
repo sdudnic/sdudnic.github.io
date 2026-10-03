@@ -1,0 +1,664 @@
+[
+  {
+    "name": "Zmeul / balaurul",
+    "s": "-10",
+    "tags": [
+      "masculin",
+      "comandă",
+      "antipatic"
+    ],
+    "reading": "Captivitatea sau amenințarea — eliberarea. Nu reprezintă o pătură socială; permite o lectură simbolică a constrîngerii.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-10",
+      "ierarhia": "comandă"
+    }
+  },
+  {
+    "name": "Lupul",
+    "s": "-10",
+    "tags": [
+      "masculin",
+      "comandă",
+      "viclean",
+      "antipatic",
+      "manipulează"
+    ],
+    "reading": "Prădătorul — familia amenințată. În „Capra cu trei iezi”, înșelăciunea și violența lui îl așază de partea adversarului.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-10",
+      "ierarhia": "comandă",
+      "manipularea": "manipulează",
+      "judecata-morala": "înșală și produce rău",
+      "rasplata": "pedeapsă în „Capra cu trei iezi”"
+    }
+  },
+  {
+    "name": "Dracul",
+    "s": "-9",
+    "tags": [
+      "masculin",
+      "comandă",
+      "antipatic"
+    ],
+    "reading": "Puterea extraordinară — ingeniozitatea omului. Înfrîngerea lui poate avea forma unei răsturnări comice.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-9",
+      "ierarhia": "comandă"
+    }
+  },
+  {
+    "name": "Vulpea",
+    "s": "-8",
+    "tags": [
+      "feminin",
+      "înșelător",
+      "descurcăreț",
+      "deștept",
+      "antipatic",
+      "manipulează"
+    ],
+    "reading": "În „Ursul păcălit de vulpe”, soluția isteață servește înșelării celuilalt. Inteligența și simpatia primesc taguri diferite.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "-8",
+      "adaptabilitatea": "descurcăreț",
+      "inteligenta": "deștept",
+      "manipularea": "manipulează",
+      "judecata-morala": "înșală și produce rău"
+    }
+  },
+  {
+    "name": "Baba / mama vitregă",
+    "s": "-8",
+    "tags": [
+      "feminin",
+      "comandă",
+      "rigid",
+      "antipatic",
+      "manipulează"
+    ],
+    "reading": "Adultul cu putere — copilul dependent. Problema este folosirea puterii în mod părtinitor.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "-8",
+      "ierarhia": "comandă",
+      "adaptabilitatea": "rigid",
+      "manipularea": "manipulează",
+      "varsta": "vîrstnic",
+      "judecata-morala": "nedreptățește",
+      "relatiile-afective": "favorizează propria fiică; respinge fiica vitregă",
+      "rasplata": "pedeapsă"
+    }
+  },
+  {
+    "name": "Boierul / ciocoiul",
+    "s": "-8",
+    "tags": [
+      "masculin",
+      "bogat",
+      "comandă",
+      "rigid",
+      "antipatic"
+    ],
+    "reading": "Superioritatea de statut — pierderea controlului. Puterea îl poate face să-și supraestimeze judecata.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-8",
+      "averea": "bogat",
+      "ierarhia": "comandă",
+      "adaptabilitatea": "rigid",
+      "starea-sociala": "rang privilegiat",
+      "judecata-morala": "abuz de putere în exemplul lui Creangă",
+      "rasplata": "pierdere materială în „Punguța cu doi bani”"
+    }
+  },
+  {
+    "name": "Fata babei",
+    "s": "-7",
+    "tags": [
+      "feminin",
+      "execută",
+      "refractar",
+      "rigid",
+      "antipatic"
+    ],
+    "reading": "Privilegiul fără contribuție — încercarea reală. Protecția de acasă nu înlocuiește faptele proprii.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "-7",
+      "ierarhia": "execută",
+      "adaptabilitatea": "rigid",
+      "judecata-morala": "înșală; refuză ajutorul",
+      "frumusetea": "urît — descriere explicită a naratorului",
+      "relatiile-afective": "favorizată de mamă",
+      "rasplata": "pedeapsă"
+    }
+  },
+  {
+    "name": "Ciobanul vrîncean",
+    "s": "-7",
+    "tags": [
+      "masculin",
+      "vrîncean",
+      "comandă",
+      "conspirator",
+      "antipatic"
+    ],
+    "reading": "În versiunea publicată de Alecsandri, participă la planul de omor pentru însușirea turmei. Fapta personajului nu caracterizează grupul de origine.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-7",
+      "ierarhia": "comandă",
+      "ocupatia": "păstorit",
+      "originea-regionala": "vrîncean",
+      "judecata-morala": "plănuiește omorul"
+    }
+  },
+  {
+    "name": "Ciobanul ungurean",
+    "s": "-7",
+    "tags": [
+      "masculin",
+      "ungurean",
+      "comandă",
+      "conspirator",
+      "antipatic"
+    ],
+    "reading": "În versiunea publicată de Alecsandri, participă la planul de omor pentru însușirea turmei. Fapta personajului nu caracterizează grupul de origine.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-7",
+      "ierarhia": "comandă",
+      "ocupatia": "păstorit",
+      "originea-regionala": "ungurean — denumirea păstrată din text",
+      "judecata-morala": "plănuiește omorul"
+    }
+  },
+  {
+    "name": "Frații mai mari",
+    "s": "-6",
+    "tags": [
+      "masculin",
+      "favorizat",
+      "rigid",
+      "antipatic"
+    ],
+    "reading": "Solidaritatea de familie — competiția pentru răsplată. Vîrsta nu este o garanție a vredniciei.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-6",
+      "adaptabilitatea": "rigid",
+      "varsta": "mai mari decît mezinul; vîrstă exactă neprecizată"
+    }
+  },
+  {
+    "name": "Popa / reprezentantul clerului",
+    "s": "-5",
+    "tags": [
+      "masculin",
+      "comandă",
+      "antipatic"
+    ],
+    "reading": "Prestigiul moral — comportamentul concret. Satira pune la încercare concordanța dintre vorbă și faptă.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "-5",
+      "ierarhia": "comandă",
+      "starea-sociala": "cler",
+      "ocupatia": "slujire religioasă"
+    }
+  },
+  {
+    "name": "Tîndală",
+    "s": "0",
+    "tags": [
+      "masculin"
+    ],
+    "reading": "Așteptarea de comportament „normal” — răspunsul absurd. Comicul nu dovedește automat superioritate morală.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "0"
+    }
+  },
+  {
+    "name": "Împăratul",
+    "s": "0",
+    "tags": [
+      "masculin",
+      "bogat",
+      "comandă"
+    ],
+    "reading": "Porunca — proba prin care eroul răspunde. Contează dacă recunoaște meritul ori se împotrivește lui.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "0",
+      "averea": "bogat",
+      "ierarhia": "comandă",
+      "starea-sociala": "conducător"
+    }
+  },
+  {
+    "name": "Negustorul",
+    "s": "0",
+    "tags": [
+      "masculin",
+      "negociator"
+    ],
+    "reading": "Interesul material — încrederea dintre oameni. O înșelăciune nu caracterizează întreaga profesie.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "0",
+      "starea-sociala": "negustor",
+      "ocupatia": "comerț"
+    }
+  },
+  {
+    "name": "Ciobanul",
+    "s": "—",
+    "tags": [
+      "masculin"
+    ],
+    "reading": "Omul din afara curții — lumea puterii. Profesia trebuie deosebită de rolul de erou sau adversar.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "—",
+      "ocupatia": "păstorit"
+    }
+  },
+  {
+    "name": "Dumnezeu",
+    "s": "—",
+    "tags": [
+      "masculin",
+      "comandă"
+    ],
+    "reading": "Darul, porunca și limita impusă omului. Se codifică reprezentarea din poveste, fără a transforma fișa într-o judecată teologică.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "—",
+      "ierarhia": "comandă"
+    }
+  },
+  {
+    "name": "Sfîntul Petru",
+    "s": "—",
+    "tags": [
+      "masculin",
+      "execută",
+      "comic"
+    ],
+    "reading": "Intermediarul dintre om și autoritatea divină. Familiaritatea și umorul nu echivalează automat cu o evaluare negativă.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "—",
+      "ierarhia": "execută"
+    }
+  },
+  {
+    "name": "Fata împăratului / prințesa",
+    "s": "—",
+    "tags": [
+      "feminin",
+      "bogat"
+    ],
+    "reading": "Alegerea partenerului — interesul familiei. Poate avea inițiativă; nu trebuie redusă dinainte la o răsplată.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "—",
+      "averea": "bogat",
+      "starea-sociala": "familie conducătoare"
+    }
+  },
+  {
+    "name": "Moartea",
+    "s": "0",
+    "tags": [
+      "feminin",
+      "execută",
+      "comandă"
+    ],
+    "reading": "Forța abstractă devine interlocutor și adversar. Sexul privește personificarea literară, nu fenomenul biologic.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "0",
+      "ierarhia": "execută, comandă"
+    }
+  },
+  {
+    "name": "Ursul",
+    "s": "+1",
+    "tags": [
+      "masculin",
+      "credul",
+      "se lasă manipulat"
+    ],
+    "reading": "În „Ursul păcălit de vulpe”, forța fizică nu îl apără de înșelăciune. Credulitatea într-o situație nu stabilește inteligența tuturor urșilor din povești.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+1",
+      "manipularea": "se lasă manipulat",
+      "rasplata": "suferință provocată de înșelăciune"
+    }
+  },
+  {
+    "name": "Moșneagul",
+    "s": "+2",
+    "tags": [
+      "masculin",
+      "execută",
+      "se lasă manipulat"
+    ],
+    "reading": "Autoritatea nominală — capacitatea de a proteja. Blîndețea nu scuză abandonarea celui vulnerabil.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+2",
+      "ierarhia": "execută",
+      "manipularea": "se lasă manipulat",
+      "varsta": "vîrstnic",
+      "judecata-morala": "cedează presiunii și își alungă fata"
+    }
+  },
+  {
+    "name": "Păcală / Pepelea",
+    "s": "+3",
+    "tags": [
+      "masculin",
+      "execută",
+      "contestatar",
+      "descurcăreț",
+      "deștept",
+      "manipulează"
+    ],
+    "reading": "Istețul — autoritatea prinsă în propria capcană. Cîștigă prin limbaj și înscenare; procedeul poate fi discutabil.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+3",
+      "ierarhia": "execută",
+      "autoritatea": "contestatar",
+      "adaptabilitatea": "descurcăreț",
+      "inteligenta": "deștept",
+      "manipularea": "manipulează",
+      "initiativa": "contestatar"
+    }
+  },
+  {
+    "name": "Haiducul",
+    "s": "+7",
+    "tags": [
+      "masculin",
+      "contestatar",
+      "comandă",
+      "descurcăreț",
+      "simpatic"
+    ],
+    "reading": "Cel care răzbună nedreptatea — puterea abuzivă. Imaginea din cîntec trebuie separată de biografia istorică.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+7",
+      "ierarhia": "comandă",
+      "autoritatea": "contestatar",
+      "adaptabilitatea": "descurcăreț",
+      "initiativa": "contestatar",
+      "starea-sociala": "în afara ordinii oficiale"
+    }
+  },
+  {
+    "name": "Țăranul",
+    "s": "+7",
+    "tags": [
+      "masculin",
+      "sărac",
+      "execută",
+      "descurcăreț",
+      "simpatic"
+    ],
+    "reading": "Omul fără avere — cel care poate impune condiții. Soluția practică poate conta mai mult decît averea.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+7",
+      "averea": "sărac",
+      "ierarhia": "execută",
+      "adaptabilitatea": "descurcăreț",
+      "starea-sociala": "țăran",
+      "ocupatia": "muncă agricolă, în tipul propus"
+    }
+  },
+  {
+    "name": "Argatul / sluga",
+    "s": "+7",
+    "tags": [
+      "masculin",
+      "execută",
+      "simpatic"
+    ],
+    "reading": "Cel care muncește — cel care comandă. Cine stabilește plata și cine recunoaște meritul?",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+7",
+      "ierarhia": "execută",
+      "starea-sociala": "servitor",
+      "ocupatia": "slujire"
+    }
+  },
+  {
+    "name": "Soldatul / oșteanul",
+    "s": "+7",
+    "tags": [
+      "masculin",
+      "execută",
+      "descurcăreț",
+      "simpatic"
+    ],
+    "reading": "Executantul — autoritatea care cere rezultate. Priceperea lui poate contrasta cu neputința celui care poruncește.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+7",
+      "ierarhia": "execută",
+      "adaptabilitatea": "descurcăreț",
+      "starea-sociala": "oștean",
+      "ocupatia": "activitate militară"
+    }
+  },
+  {
+    "name": "Feciorul cel mic",
+    "s": "+8",
+    "tags": [
+      "masculin",
+      "execută",
+      "autonom",
+      "adaptabil",
+      "simpatic"
+    ],
+    "reading": "Cel subestimat — cei avantajați de vîrstă. Reușita pune la încercare ordinea moștenită.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+8",
+      "ierarhia": "execută",
+      "adaptabilitatea": "adaptabil",
+      "initiativa": "autonom",
+      "varsta": "mezin; vîrstă exactă neprecizată"
+    }
+  },
+  {
+    "name": "Făt-Frumos / voinicul",
+    "s": "+8",
+    "tags": [
+      "masculin",
+      "adaptabil",
+      "simpatic"
+    ],
+    "reading": "Eroul — forța care amenință sau ține captiv. Victoria depinde și de ajutoare, nu numai de forță.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+8",
+      "adaptabilitatea": "adaptabil"
+    }
+  },
+  {
+    "name": "Fata",
+    "s": "+9",
+    "tags": [
+      "feminin",
+      "autonom",
+      "descurcăreț",
+      "deștept",
+      "simpatic"
+    ],
+    "reading": "Inteligența fără rang — puterea de a decide. Femeia poate fi chiar cea care găsește soluția.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "+9",
+      "adaptabilitatea": "descurcăreț",
+      "inteligenta": "deștept",
+      "initiativa": "autonom"
+    }
+  },
+  {
+    "name": "Zîna",
+    "s": "+9",
+    "tags": [
+      "feminin",
+      "autonom",
+      "ajutător",
+      "simpatic"
+    ],
+    "reading": "Personaj fantastic propus pentru verificare în variante moldovenești documentate. Puterea magică nu se codifică automat drept inteligență.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "+9",
+      "initiativa": "autonom, ajutător"
+    }
+  },
+  {
+    "name": "Bătrîna",
+    "s": "+9",
+    "tags": [
+      "feminin",
+      "autonom",
+      "ajutător",
+      "simpatic"
+    ],
+    "reading": "Cel aflat în nevoie — protectoarea. Vîrsta și sexul nu fixează caracterul moral.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "+9",
+      "initiativa": "autonom, ajutător",
+      "varsta": "vîrstnic"
+    }
+  },
+  {
+    "name": "Capra",
+    "s": "+9",
+    "tags": [
+      "feminin",
+      "comandă",
+      "descurcăreț",
+      "deștept",
+      "simpatic"
+    ],
+    "reading": "În „Capra cu trei iezi”, mama impune reguli de protecție și răspunde violenței lupului. Grija, autoritatea și răzbunarea se evaluează separat.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "+9",
+      "ierarhia": "comandă",
+      "adaptabilitatea": "descurcăreț",
+      "inteligenta": "deștept",
+      "judecata-morala": "protejează; se răzbună",
+      "relatiile-afective": "grijă față de iezi"
+    }
+  },
+  {
+    "name": "Cucoșul",
+    "s": "+9",
+    "tags": [
+      "masculin",
+      "îmbogățit",
+      "dependent",
+      "contestatar",
+      "descurcăreț",
+      "simpatic"
+    ],
+    "reading": "În „Punguța cu doi bani”, cere înapoi bunul luat și înfruntă poruncile boierului. Reușita se sprijină și pe puteri fantastice, nu numai pe intelect.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+9",
+      "averea": "îmbogățit",
+      "autoritatea": "contestatar",
+      "adaptabilitatea": "descurcăreț",
+      "initiativa": "contestatar",
+      "judecata-morala": "cere restituirea bunului luat",
+      "rasplata": "recuperare și îmbogățire"
+    }
+  },
+  {
+    "name": "Ciobanul moldovean",
+    "s": "+9",
+    "tags": [
+      "masculin",
+      "moldovean",
+      "bogat",
+      "comandă",
+      "amenințat",
+      "simpatic"
+    ],
+    "reading": "Averea stîrnește rivalitatea. Răspunsul la avertisment nu se etichetează dinainte ca prostie, rigiditate sau fatalism. Versiunea editorială se păstrează distinctă de variantele orale locale.",
+    "categories": {
+      "sexul": "masculin",
+      "simpatia-povestitorului": "+9",
+      "averea": "bogat",
+      "ierarhia": "comandă",
+      "ocupatia": "păstorit",
+      "etnia": "moldovean — identificarea din text; sensul istoric se cercetează separat"
+    }
+  },
+  {
+    "name": "Miorița",
+    "s": "+10",
+    "tags": [
+      "feminin",
+      "animal",
+      "oaie",
+      "sfătuitor",
+      "protector",
+      "deștept",
+      "simpatic"
+    ],
+    "reading": "În versiunea publicată de Alecsandri, îl avertizează pe cioban și îi propune măsuri de apărare. Personajul animal are inițiativă, iar rolul său se codifică separat de răspunsul ciobanului.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "+10",
+      "inteligenta": "deștept",
+      "initiativa": "sfătuitor, protector",
+      "judecata-morala": "avertizează și sfătuiește",
+      "relatiile-afective": "grijă față de cioban"
+    }
+  },
+  {
+    "name": "Fata moșneagului",
+    "s": "+10",
+    "tags": [
+      "feminin",
+      "dependent",
+      "execută",
+      "autonom",
+      "adaptabil",
+      "simpatic"
+    ],
+    "reading": "Munca nerecunoscută — recunoașterea ulterioară. Grija pentru alții creează relații de ajutor.",
+    "categories": {
+      "sexul": "feminin",
+      "simpatia-povestitorului": "+10",
+      "ierarhia": "execută",
+      "adaptabilitatea": "adaptabil",
+      "initiativa": "autonom",
+      "ocupatia": "muncă gospodărească / slujire",
+      "judecata-morala": "ajută și îngrijește",
+      "frumusetea": "frumos — descriere explicită a naratorului",
+      "relatiile-afective": "respinsă de mama vitregă și de sora vitregă",
+      "rasplata": "răsplată materială"
+    }
+  }
+]

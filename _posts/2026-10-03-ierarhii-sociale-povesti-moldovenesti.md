@@ -23,22 +23,32 @@ O lectură socială urmărește trei lucruri simple: **cine poate porunci, cine 
 
 Articolul propune o analiză calitativă, explicată pe înțelesul tuturor. Tabelul pornește de la tipurile din materialul discutat și le organizează după rolul lor în conflict. El este o hartă de lectură, nu rezultatul numărării tuturor poveștilor moldovenești. Textele lui Ion Creangă sînt indicate separat, ca prelucrări literare ale unor motive populare; un personaj dintr-o poveste nu poate reprezenta singur o întreagă categorie de oameni.
 
-## Timpul, sexul, averea și religia: șase unghiuri de lectură
+## Sexul, vîrsta și poziția socială: dimensiuni distincte
 
 Aceeași faptă capătă alt înțeles dacă o face un copil dependent, o slugă amenințată sau un împărat care poate porunci. De aceea, personajele trebuie privite pe mai multe planuri.
 
 | Criteriu | Ce urmărim concret | Ce ne poate spune |
 |---|---|---|
-| Timpul | Epoca acțiunii; data culegerii; prima publicare; ediția citită | Un împărat din basm nu datează povestea. Variantele notate în perioade diferite pot schimba judecata asupra aceleiași fapte. |
-| Sexul și vîrsta | Cum sînt prezentate în text; copil, tînăr, adult sau vîrstnic | Cine are voie să plece, să aleagă, să poruncească și cine depinde de altcineva? |
-| Starea socială și profesia | Țăran, argat, boier; munca și condițiile de slujire | Poziția de pornire și relația de dependență. „Țăran” nu înseamnă automat „sărac”. |
+| Sexul | Personaj masculin sau feminin, după prezentarea din text | Cui îi este atribuită inițiativa, cine hotărăște și ce comportamente sînt apreciate? |
+| Vîrsta | Copil, tînăr, adult sau vîrstnic; vîrstă neprecizată | Cum sînt judecate experiența, autoritatea bătrînilor și inițiativa celor tineri? |
+| Starea socială | Poziția în societate: țăran, slugă, boier, membru al familiei conducătoare | Statutul de pornire și accesul la drepturi ori privilegii. „Țăran” nu înseamnă automat „sărac”. |
+| Profesia / ocupația | Munca descrisă: cioban, grădinar, negustor, soldat etc. | Cum este apreciată munca și ce relații creează ocupația? |
 | Bogăția | Banii, pămîntul, animalele, bunurile; averea de la început și de la sfîrșit | Sărăcia, îmbogățirea și redistribuirea răsplății. Bogăția poate fi cîștigată, moștenită sau luată altuia. |
 | Poziția ierarhică | Cine decide asupra cui, în casă, la muncă sau la curte | Un tată poate avea titlul de cap al familiei și totuși să nu controleze deciziile. |
-| Religia | Credințe exprimate, funcție clericală, personaje sacre, ritualuri | Se deosebesc credința personajului, prestigiul instituției și ajutorul supranatural. Prezența unui drac nu stabilește religia tuturor eroilor. |
+| Apartenența etnică | Denumirea explicită din text, de exemplu moldovean, rus, evreu, atunci cînd apare | Cum este reprezentat grupul și ce rol are apartenența în conflict? Nu o deducem din nume sau profesie. |
+| Originea regională | Proveniența locală indicată, de exemplu vrîncean, atunci cînd apare | Cum sînt reprezentați oamenii din alte regiuni și cum se definește apropierea sau diferența? |
 
-Pentru timp avem, de pildă, un reper bibliografic: „Fata babei și fata moșneagului” apare în *Convorbiri literare*, la 1 septembrie 1877, conform [studiului despre folclorul publicat în revistă](https://biblioteca-digitala.ro/reviste/ins-calinescu-istorie-teorie-literara/016_revista-istorie-teorie-literara_XVI_3_1967.pdf). Aceasta datează publicarea textului lui Creangă, nu nașterea motivului oral. În schimb, pagina online a snoavei „Boierul și Păcală” este datată 12 mai 2011, fără data culegerii. Nu putem transforma data încărcării pe internet în vîrsta poveștii.
+Sexul și vîrsta se analizează separat, apoi se pot compara împreună: de pildă, femei tinere cu femei vîrstnice sau bărbați tineri cu bărbați vîrstnici. Astfel putem verifica dacă un contrast ține de sex, de vîrstă, de rolul familial ori de combinația lor.
 
-În plan religios, textul lui Creangă asociază o figură sacră, Sfînta Duminică, cu încercarea și răsplata. În același timp, grija concretă pentru animale și lucruri hotărăște relația fetei cu lumea. Putem analiza împreună aceste două dimensiuni, fără să deducem din ele o confesiune a povestitorului sau a tuturor personajelor.
+Apartenența etnică și originea regională permit studierea felului în care povestea îi prezintă pe „ai noștri” și pe ceilalți. Denumirile se păstrează în sensul și contextul sursei; „vrîncean” indică o proveniență regională și nu este transformat automat într-o etnie distinctă. Exemplele din tabel sînt categorii posibile pentru cercetare, nu grupuri deja identificate în toate textele discutate. Un stereotip dintr-o poveste este o reprezentare de analizat, nu o descriere a grupului real.
+
+## Valorile se păstrează sau se schimbă între epoci?
+
+Întrebarea despre timp privește **evoluția judecății asupra personajelor**. Pentru același tip de conflict, ce apreciază o variantă mai veche și ce apreciază una documentată ulterior? Rămîne istețimea o virtute dacă ia forma înșelăciunii? Este răsplătită supunerea sau inițiativa? Este rangul respectat ori ridiculizat? Acestea sînt întrebări de cercetare, nu schimbări deja demonstrate.
+
+Conservarea și adaptarea pot exista împreună: o poveste poate păstra conflictul și personajele, dar poate schimba motivarea faptelor, răsplata sau judecata naratorului. Ipoteza conservării ar fi susținută de continuitatea evaluărilor în variante comparabile; ipoteza adaptării, de schimbări repetate ale acelor evaluări. Nu ajunge să constatăm că o variantă conține un obiect mai nou. Trebuie urmărit dacă se schimbă și ceea ce este socotit drept, demn de laudă sau condamnabil.
+
+Pentru comparație avem nevoie de repere documentare: „Fata babei și fata moșneagului” apare în *Convorbiri literare*, la 1 septembrie 1877, conform [studiului despre folclorul publicat în revistă](https://biblioteca-digitala.ro/reviste/ins-calinescu-istorie-teorie-literara/016_revista-istorie-teorie-literara_XVI_3_1967.pdf). Aceasta datează publicarea textului lui Creangă, nu nașterea motivului oral. Pagina online a snoavei „Boierul și Păcală” este datată 12 mai 2011, fără data culegerii: ea nu dovedește că snoava exprimă valori apărute în 2011. Data culegerii sau publicării este un reper al variantei; schimbarea valorilor este obiectul comparației.
 
 ## Tabel: personajele și locul lor în conflict
 
@@ -122,7 +132,7 @@ Ajutorul primit de fata lui Creangă poate fi citit și ca **reciprocitate**: î
 
 Un studiu ar porni de la 50–100 de **apariții concrete ale personajelor în texte identificate**, nu de la inventarea a 100 de etichete. Păcală din două snoave ar avea două fișe, fiindcă poate acționa diferit. Arhetipurile ar rezulta apoi prin gruparea rolurilor asemănătoare. Lotul ar păstra separat basmele, snoavele și baladele, variantele culese și prelucrările literare.
 
-Fiecare fișă ar consemna sursa și pasajul pe care se sprijină evaluarea, criteriile din tabelul de mai sus, cine asuprește personajul, pe cine asuprește el, cum reușește și ce primește. „Necunoscut” ar rămîne o valoare distinctă. O religie, o vîrstă sau o avere neprecizată nu ar fi completată din presupuneri.
+Fiecare fișă ar consemna sursa și pasajul pe care se sprijină evaluarea, dimensiunile din tabelul de mai sus, cine asuprește personajul, pe cine asuprește el, cum reușește și ce primește. Sexul și vîrsta ar avea cîmpuri distincte, la fel ca apartenența etnică și originea regională. „Necunoscut” ar rămîne o valoare distinctă. O etnie, o vîrstă sau o avere neprecizată nu ar fi completată din presupuneri. Datarea și proveniența variantei ar permite compararea judecăților între epoci.
 
 **„Pozitiv” trebuie desfăcut în întrebări diferite.** Un personaj poate fi inteligent și crud, frumos și egoist, iubit de cineva și detestat de altcineva. O medie unică ar ascunde aceste diferențe.
 
@@ -137,15 +147,15 @@ Fiecare fișă ar consemna sursa și pasajul pe care se sprijină evaluarea, cri
 
 De exemplu, boierul păcălit pierde controlul situației, dar snoava nu spune că ar fi urît sau neiubit. Moșneagul lui Creangă este dominat în familie și totuși participă la nedreptate. Aceste distincții împiedică transformarea fiecărui personaj într-un simplu „bun” sau „rău”.
 
-După codificare, graficele ar putea arăta proporția de protagoniști pe sexe, faptele favorabile sau ostile pe poziții sociale, schimbarea averii și legătura dintre inteligență și reușită. O comparație în timp ar folosi data documentării variantelor, cu mențiunea că aceasta nu este data originii lor. Fiecare grafic ar indica numărul de cazuri și datele lipsă; într-un lot mic, ar arăta distribuția lotului, nu „caracterul întregului popor”.
+După codificare, graficele ar putea arăta proporția de protagoniști pe sexe, evaluarea pe grupe de vîrstă, faptele favorabile sau ostile pe poziții sociale, reprezentarea grupurilor etnice și legătura dintre inteligență și reușită. Pentru fiecare dimensiune, comparațiile între epoci ar urmări dacă se schimbă criteriile de apreciere, cine primește răsplată și cine este condamnat. Fiecare grafic ar indica numărul de cazuri și datele lipsă; într-un lot mic, ar arăta distribuția lotului, nu „caracterul întregului popor”.
 
 Două lecturi independente ale acelorași texte ar permite verificarea acordului dintre evaluatori. Unde interpretările diferă, diferența ar fi păstrată și explicată. Abia atunci intuițiile „baba negativă / moșneagul victimă”, „bărbatul protagonist” sau „săracul pozitiv / boierul negativ” ar deveni ipoteze care pot fi confirmate, nuanțate ori contrazise. Articolul de față propune această metodă; nu prezintă procente pentru un lot care încă nu a fost codificat.
 
-## O serie de întrebări, cu timpul ca fir comun
+## O serie despre personaje și schimbarea valorilor
 
-Această introducere deschide seria **Folclor și societate**. Analiza poate continua prin cinci teme, fiecare cu întrebarea ei: femeile și bărbații — cine acționează și cine decide; starea socială și averea — cine muncește și cine primește; ierarhia — cine poate porunci și cine poate refuza; judecata asupra personajelor — cum se leagă inteligența, frumusețea și comportamentul; religia — cum se întîlnesc credința, autoritatea și ajutorul sacru.
+Această introducere deschide seria **Folclor și societate**. Analiza poate continua prin șase teme: **sexul** — femeile și bărbații, inițiativa și alegerea; **vîrsta** — tinerii și bătrînii, experiența și autoritatea; **starea socială și averea** — munca, privilegiul și răsplata; **ierarhia** — porunca și dependența; **judecata asupra personajelor** — inteligența, frumusețea și comportamentul; **apartenența etnică și originea regională** — reprezentarea grupurilor și relațiile dintre ele.
 
-Timpul ar traversa fiecare temă. Variantele documentate în perioade diferite ar fi comparate după aceleași criterii, păstrînd locul culegerii și felul ediției. Diferența dintre un text vechi și unul recent nu dovedește singură o schimbare istorică: poate veni și din regiune, povestitor, gen sau intervenția editorului. O sinteză despre evoluția în timp ar urma după aceste comparații. Temele rămîn propuneri de continuare; aici este publicată introducerea și metoda.
+Fiecare temă ar urmări **ce valori se păstrează și ce valori se schimbă între epoci**. Variantele comparabile ar fi analizate după aceeași metodă, păstrînd locul culegerii și felul ediției. Diferența dintre un text vechi și unul recent poate veni și din regiune, povestitor, gen sau intervenția editorului. O sinteză ar evalua apoi continuitatea și adaptarea valorilor, fără a trata întregul popor ca uniform conservator ori uniform schimbător. Temele rămîn propuneri de continuare; aici este publicată introducerea și metoda.
 
 ## Scurtă concluzie
 

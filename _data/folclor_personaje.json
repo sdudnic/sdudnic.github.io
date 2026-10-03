@@ -78,7 +78,9 @@
       "comandă",
       "rigid",
       "antipatic",
-      "manipulează"
+      "manipulează",
+      "avantajat",
+      "sărăcit"
     ],
     "reading": "Adultul cu putere — copilul dependent. Problema este folosirea puterii în mod părtinitor.",
     "categories": {
@@ -90,7 +92,8 @@
       "varsta": "vîrstnic",
       "judecata-morala": "nedreptățește",
       "relatiile-afective": "favorizează propria fiică; respinge fiica vitregă",
-      "rasplata": "pedeapsă"
+      "rasplata": "pedeapsă",
+      "averea": "avantaj material relativ la început → sărăcire la final, în „Punguța cu doi bani”"
     }
   },
   {
@@ -349,7 +352,10 @@
     "tags": [
       "masculin",
       "execută",
-      "se lasă manipulat"
+      "se lasă manipulat",
+      "dezavantajat",
+      "îmbogățit",
+      "supus"
     ],
     "reading": "Autoritatea nominală — capacitatea de a proteja. Blîndețea nu scuză abandonarea celui vulnerabil.",
     "categories": {
@@ -358,7 +364,8 @@
       "ierarhia": "execută",
       "manipularea": "se lasă manipulat",
       "varsta": "vîrstnic",
-      "judecata-morala": "cedează presiunii și își alungă fata"
+      "judecata-morala": "cedează presiunii și își alungă fata",
+      "averea": "dezavantaj material relativ la început → îmbogățire la final, în „Punguța cu doi bani”"
     }
   },
   {

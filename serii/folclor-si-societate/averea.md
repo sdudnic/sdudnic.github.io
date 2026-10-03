@@ -10,7 +10,7 @@ tags: [folclor-si-societate, averea]
 
 Povestea ține partea săracului fiindcă este sărac sau fiindcă a fost nedreptățit?
 
-Din cele 36 de rînduri ale [articolului principal](/2026/10/03/ierarhii-sociale-povesti-moldovenesti.html), 6 au informații pentru această temă. Lista păstrează ordinea după **s**, estimarea simpatiei între −10 și +10. Ea combină personaje din texte precizate și tipuri propuse pentru cercetare; numărul rîndurilor descrie selecția editorială, nu frecvența în folclor. O caracteristică omisă rămîne neprecizată.
+Din cele 36 de rînduri ale [articolului principal](/2026/10/03/ierarhii-sociale-povesti-moldovenesti.html), 8 au informații pentru această temă. Lista păstrează ordinea după **s**, estimarea simpatiei între −10 și +10. Ea combină personaje din texte precizate și tipuri propuse pentru cercetare; numărul rîndurilor descrie selecția editorială, nu frecvența în folclor. O caracteristică omisă rămîne neprecizată.
 
 {% include folclor-personaje.html category="averea" label="Avere" %}
 
@@ -21,6 +21,10 @@ O posibilă explicație ține de rol: bogatul care blochează drumul eroului est
 Boierul și ciobanul moldovean au amîndoi tagul „bogat”, dar se află la capete diferite ale simpatiei. Cucoșul este favorabil prezentat și după îmbogățire. Contraexemplele împiedică transformarea contrastului într-o regulă: presupunerea că bogații au de obicei roluri negative trebuie verificată într-un lot de texte, nu dedusă din această selecție.
 
 În aceste exemple, felul în care bunurile sînt dobîndite și apărate explică mai mult decît simpla lor existență. Din celelalte rînduri nu deducem sărăcia: averea neprecizată rămîne în afara listei.
+
+Baba și moșneagul adaugă o inegalitate la scara gospodăriei. La începutul [„Punguței cu doi bani”](https://ro.wikisource.org/wiki/Pungu%C8%9Ba_cu_doi_bani), baba controlează ouăle găinii și refuză să le împartă. Ea are un avantaj material relativ, fără a fi descrisă ca bogată în sensul boierului. Moșneagul nu are acces la aceste resurse; la final se îmbogățește, iar baba sărăcește. De aceea tabelul păstrează schimbarea, fără a fixa „baba bogată / moșneagul sărac” pentru întreaga poveste.
+
+Raportul de manipulare și supunere este documentat și în „Fata babei și fata moșneagului”: baba îl presează să-și alunge fata, iar el cedează. Același nume de tip din două povești nu înseamnă același individ. Lista de aici grupează roluri; studiul va avea fișe separate pentru fiecare apariție. Ipoteza că moșneagul este deseori sărac și baba relativ înstărită rămîne de verificat prin compararea variantelor.
 
 Averea cuprinde resursele descrise: bani, pămînt, animale, bunuri, hrană și locuință. Se consemnează averea de pornire și rezultatul final; tăcerea textului nu înseamnă sărăcie.
 

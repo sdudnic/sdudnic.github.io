@@ -16,6 +16,8 @@ Din cele 36 de rînduri ale [articolului principal](/2026/10/03/ierarhii-sociale
 
 Boierul, capra și ciobanul moldovean pot comanda, însă primesc evaluări diferite. Moșneagul cedează în familie, deși are autoritate nominală. Moartea execută porunci și exercită putere asupra altora: același personaj poate ocupa poziții diferite.
 
+În relația dintre babă și moșneag, ea poate controla hotărîrea, iar el poate fi supus, chiar dacă are titlul de cap al familiei. În „Fata babei și fata moșneagului”, cedarea lui are urmări asupra fetei, fără a-l scuti de răspundere.
+
 Ierarhia explică relația, fără a decide valoarea morală. O comparație utilă între epoci ar urmări cine poate contesta o poruncă și ce formă de autoritate este recunoscută drept legitimă.
 
 Ierarhia descrie relațiile concrete de putere: cine poate porunci cui, cine stabilește condițiile și cine suportă sancțiunile. Puterea din gospodărie, slujire și conducere publică se consemnează distinct.

@@ -551,3 +551,13 @@
 .page-content > .wrapper > table a:focus-visible {
   text-decoration-color: currentColor;
 }
+
+// Table links need a visible underline even when wrapped in cell spans.
+.page-content table a,
+.page-content table a:visited {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  text-decoration-color: currentColor;
+  text-decoration-skip-ink: auto;
+}

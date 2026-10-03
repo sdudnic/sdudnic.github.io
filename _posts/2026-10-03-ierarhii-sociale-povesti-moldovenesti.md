@@ -14,7 +14,7 @@ De ce ținem partea fetei alungate de acasă? De ce ne bucură înfrîngerea unu
 <!--more-->
 
 <style>
-.post-content .folclor-table { display: table; width: 100%; max-width: 100%; min-width: 0; table-layout: fixed; white-space: normal; margin: 1.5rem 0; font-size: .95rem; }
+.post-content .folclor-table { display: table; width: 100%; max-width: 100%; min-width: 0; table-layout: auto; white-space: normal; margin: 1.5rem 0; font-size: .95rem; }
 .folclor-table[aria-label="Personajele ordonate după simpatia povestitorului"] th:first-child { width: 3.5rem; }
 .folclor-table th, .folclor-table td { box-sizing: border-box; padding: .7rem; vertical-align: top; white-space: normal; overflow-wrap: anywhere; word-break: normal; }
 @media (max-width: 700px) {

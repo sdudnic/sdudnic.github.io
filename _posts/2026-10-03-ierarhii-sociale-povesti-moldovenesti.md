@@ -251,6 +251,8 @@ Poveștile discutate pun la încercare dreptul celui puternic de a avea ultimul 
 
 ## Surse și lecturi
 
+- Ion Creangă, [„Capra cu trei iezi”](https://ro.wikisource.org/wiki/Capra_cu_trei_iezi) și [„Ursul păcălit de vulpe”](https://ro.wikisource.org/wiki/Ursul_p%C4%83c%C4%83lit_de_vulpe) — textele literare pentru rolurile lupului, caprei, vulpii și ursului.
+
 - Grigore Botezatu, [„Subiectul de basm «Maștera (Meșteha) și fiica vitregă». AaTh 480”](https://ibn.idsi.md/sites/default/files/imag_file/68-82.pdf), *Philologia*, LXI, nr. 3–4, mai–august 2018, pp. 68–82 — studiu comparativ de folcloristică.
 - Ion Creangă, [„Punguța cu doi bani”](https://ro.wikisource.org/wiki/Pungu%C8%9Ba_cu_doi_bani) — text literar folosit pentru analiza raportului cu autoritatea boierului.
 - Ion Creangă, [„Fata babei și fata moșneagului”](https://moldovenii.md/section/literature-document/sectionId/473/id/1358) — text literar folosit pentru analiza relațiilor familiale.

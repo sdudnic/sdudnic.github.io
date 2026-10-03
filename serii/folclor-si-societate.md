@@ -9,6 +9,8 @@ lang: mo
 
 O serie de articole accesibile despre personajele poveștilor moldovenești și relațiile dintre ele. Sexul și vîrsta sînt analizate separat, alături de starea socială, avere, ierarhie, inteligență, judecată morală, apartenență etnică și origine regională.
 
+Aria cercetării este **Țara Moldovei**: spațiul dintre Carpați, Nistru și Marea Neagră, cu repere precum Iași, Suceava, Hotin, Cetatea Albă și Galați, precum și materialele locale din zona Nistrului, inclusiv preajma Tiraspolului. Se folosesc variante de folclor cu proveniență moldovenească documentată și opere ale scriitorilor din acest spațiu, consemnate separat. Locul unde este reprodus un text nu îi dovedește proveniența.
+
 Întrebarea comună este **cum se păstrează sau se schimbă valorile între epoci**: ce este lăudat, ce este condamnat și cine este răsplătit? Compararea variantelor ar permite evaluarea continuității și a adaptării, atunci cînd datarea și proveniența lor susțin concluzii.
 
 Articolele publicate au eticheta comună **folclor-si-societate** și sînt adunate automat mai jos.
@@ -26,12 +28,12 @@ Articolele publicate au eticheta comună **folclor-si-societate** și sînt adun
 
 ## Direcții propuse pentru continuare
 
-- **Sexul — femeile și bărbații:** inițiativă, muncă, alegere și dependență; cum se schimbă așteptările față de fiecare între epoci.
-- **Vîrsta — tinerii și bătrînii:** experiență, autoritate, vulnerabilitate și raporturi între generații; cum se schimbă aprecierea lor între epoci.
-- **Starea socială și averea:** țărani, argat și stăpîn, boier și negustor; sărăcia, munca și răsplata.
-- **Puterea și ierarhia:** cine poruncește, cine se supune și cum se schimbă raportul dintre ei.
-- **Inteligența și judecata asupra personajelor:** deștept sau prost, frumos sau urît, bine sau rău, iubit sau detestat — dimensiuni evaluate separat.
-- **Apartenența etnică și originea regională:** cum sînt numite și reprezentate grupurile — de exemplu moldoveni, ruși, evrei ori oameni din Vrancea, atunci cînd textul îi identifică; etnia și proveniența regională se consemnează distinct.
-- **Sinteza schimbării valorilor:** ce evaluări se păstrează între epoci, ce evaluări se modifică și ce indică acestea despre conservare și adaptare. Diferențele de regiune, gen și intervenție editorială trebuie luate în calcul.
+- **Femeile și bărbații:** inițiativă, muncă, alegere și dependență; cum se schimbă așteptările față de fiecare între epoci.
+- **Tinerii și bătrînii:** experiență, autoritate, vulnerabilitate și raporturi între generații; cum se schimbă aprecierea lor între epoci.
+- **Săracii și bogații:** starea socială, munca, privilegiul, averea și răsplata.
+- **Omul și autoritatea:** cine poruncește și cine se supune; respect, teamă, negociere, ironie și împotrivire la abuz.
+- **Judecata personajelor:** deștept sau prost, frumos sau urît, bine sau rău, iubit sau detestat — dimensiuni evaluate separat.
+- **Ai noștri și ceilalți:** reprezentarea grupurilor identificate în textele moldovenești; etnia și proveniența regională se consemnează distinct.
+- **Valorile între epoci:** sinteza continuității și adaptării valorilor, ținînd cont de regiune, gen și intervenția editorului.
 
 Aceste direcții sînt propuneri de cercetare. Lista de mai sus include numai articolele deja publicate.

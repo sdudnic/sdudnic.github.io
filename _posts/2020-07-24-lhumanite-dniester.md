@@ -3,6 +3,9 @@ layout: post
 title: Les dessous de la campagne des "Massacres du Dniester" - 1932
 tags: [Bessarabie, Roumanie, 1932, union, pravda, Geo London, l'humanité, URSS, massacre]
 published: true
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 (un article de L'Humanité (PCF), le 14 avril 1932 - [source - BnF](https://gallica.bnf.fr/ark:/12148/bpt6k404238k/f3.item.r=dnie.zoom))
 

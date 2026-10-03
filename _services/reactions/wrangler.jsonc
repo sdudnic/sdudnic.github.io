@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "dudnic-blog-reactions",
+  "account_id": "6c0f743340180d809fd8de5ce4c589f1",
+  "main": "index.mjs",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "preview_urls": false,
+  "triggers": { "crons": ["0 * * * *"] },
+  "observability": { "enabled": true, "head_sampling_rate": 0.1 },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "dudnic-blog-reactions",
+    "database_id": "bdc54e15-4f95-4f76-87ae-ba05eb1af89b",
+    "migrations_dir": "migrations"
+  }]
+}

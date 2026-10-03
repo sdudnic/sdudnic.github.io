@@ -7,6 +7,9 @@ permalink: /noutati-sesizare-parlament-partide-istoria-romanilor/
 news_label: Parlament și partide politice
 tags: [noutăți, Istoria Românilor, Parlament, partide politice]
 published: true
+illustration_id: parlament
+image: /assets/blog/parlament.webp
+image_alt: "Parlamentul Republicii Moldova."
 ---
 
 Grupul de Inițiativă „Pentru Istoria Moldovei” publică sesizarea adresată Parlamentului și partidelor politice cu privire la denumirea disciplinei „Istoria Românilor” și la lipsa unei intervenții instituționale efective.

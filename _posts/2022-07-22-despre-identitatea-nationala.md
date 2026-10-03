@@ -3,6 +3,9 @@ layout: post
 title: Despre identitatea națională. Partea I. 
 tags: [Moldova, identitate, etnie, naționalism, suveranitate, ideologie, propaganda]
 published: true
+illustration_id: moldova
+image: /assets/blog/moldova.webp
+image_alt: "Drapelul Republicii Moldova."
 ---
 
 Câteva concepții despre identitatea națională, moldoveni, limba moldoveneasca, suveranitatea Republicii Moldova, proiecte de unire cu România etc. 30 min. Partea I. 

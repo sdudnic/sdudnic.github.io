@@ -1,0 +1,13 @@
+<section class="post-reactions" aria-label="Reacțiile cititorilor" data-post-reactions data-article="{{ page.url | relative_url | escape }}" data-endpoint="https://dudnic-blog-reactions.dudnic-moldoveneasca-mcp.workers.dev/reactions">
+  <span class="post-reactions__label">Reacții</span>
+  <div class="post-reactions__buttons">
+    <button type="button" data-reaction="like" aria-label="Îmi place" title="Îmi place" aria-pressed="false" disabled><span aria-hidden="true">👍</span> <span data-count>–</span></button>
+    <button type="button" data-reaction="heart" aria-label="Apreciez" title="Apreciez" aria-pressed="false" disabled><span aria-hidden="true">❤️</span> <span data-count>–</span></button>
+    <button type="button" data-reaction="thoughtful" aria-label="Mă pune pe gînduri" title="Mă pune pe gînduri" aria-pressed="false" disabled><span aria-hidden="true">🤔</span> <span data-count>–</span></button>
+    <button type="button" data-reaction="sad" aria-label="Mă întristează" title="Mă întristează" aria-pressed="false" disabled><span aria-hidden="true">😢</span> <span data-count>–</span></button>
+    <button type="button" data-reaction="angry" aria-label="Mă indignează" title="Mă indignează" aria-pressed="false" disabled><span aria-hidden="true">😠</span> <span data-count>–</span></button>
+  </div>
+  <p class="post-reactions__status" data-reaction-status aria-live="polite"></p>
+  <noscript>Reacțiile necesită JavaScript.</noscript>
+</section>
+<script src="{{ '/assets/post-reactions.js' | relative_url }}?v=20261003" defer></script>

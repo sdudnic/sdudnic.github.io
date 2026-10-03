@@ -7,6 +7,9 @@ news_label: "România Mare: dragoste, uneori... cu deasila"
 tags: [romania-mare-cu-deasila, istorie, Moldova, opozitie-fata-de-unire]
 permalink: /2026/10/03/deputati-expulzati-basarabia-1918.html
 published: true
+illustration_id: sfat
+image: /assets/blog/sfat.webp
+image_alt: "Deputații Sfatului Țării."
 ---
 
 Poți fi deputat și totuși să fii scos din țară. Poți cere să revii și să primești acceptul cu o condiție: să nu mai faci politică. În Basarabia anului 1918, aceasta a fost experiența lui F. Stanevici.

@@ -4,6 +4,9 @@ title:  Livre historique, contenant les gouvernemens et les vies des princes de 
 date:   2020-07-05 00:49:00 +0100
 tags: [moldova, istorie, Costin, Miron Costin, Nicole Costin, Alexandru Amiras, Nicolas Génier, Moldavie]
 published: true
+illustration_id: miron
+image: /assets/blog/miron.webp
+image_alt: "Miron Costin, portret."
 ---
 
 "Livre historique, contenant les gouvernemens et les vies des princes de Moldavie et des autres souverains des pays circonvoisins à cette principauté, leurs contemporains depuis l'an... et le gouvernement de Drago Voda jusqu'en 1729, avec un abregé de l'histoire du monde, de l'origine et de l'etablissement de toutes les nations qui l'habitent depuis sa creation jusqu'au regne de l'empereur Trajan et au delà, composé en premier lieu dans l'idiome moldave, par le seigneur MYRON COSTY, grand logothete ou chancelier de Moldavie... traduit en grec vulgaire à Ghiassy, en 1729, par le seigneur ALEXANDRE AMIRA, de Smirne... et de ce dernier idiome a été mis en françois par NICOLAS GENIER, aussi de Smirne... 1741"

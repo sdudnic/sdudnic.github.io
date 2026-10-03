@@ -3,6 +3,9 @@ layout: post
 title: La mulți ani, Moldova!
 tags: [Moldova, independenta, 1991, istorie, suveranitate, ziua națională]
 published: true
+illustration_id: moldova
+image: /assets/blog/moldova.webp
+image_alt: "Drapelul Republicii Moldova."
 ---
  
 Astăzi, 27 august, marcăm ziua Independenței Republicii Moldova. Sa vedem de ce această independență importantă pentru fiecare stat. Care e sensul acestei independențe și ce ne aduce nouă, cetățenilor Republicii Moldova.

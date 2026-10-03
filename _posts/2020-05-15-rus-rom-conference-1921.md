@@ -4,6 +4,9 @@ title:  Материалы русско-румынской конференци�
 date:   2020-06-08 19:14:00 +0100
 tags: [istorie, romania, moldova, rusia, urss, conferinta de pace, varsovia, 1921, basarabia]
 published: true
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 
 ### Материалы русско-румынской конференции в Варшаве (сентябрь-октябрь 1921г.)

@@ -561,3 +561,40 @@
   text-decoration-color: currentColor;
   text-decoration-skip-ink: auto;
 }
+
+
+.post-illustration {
+  float: right;
+  width: clamp(150px, 24%, 220px);
+  margin: 0 0 1rem 1.4rem;
+  padding: .35rem;
+  border: 1px solid var(--line, #ddd);
+  background: transparent;
+}
+.post-illustration > a { display: block; }
+.post-content .post-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 0;
+}
+.post-illustration figcaption { margin-top: .35rem; font-size: .7rem; line-height: 1.4; color: var(--muted); }
+.post-illustration__credit { display: block; margin-top: .15rem; }
+.post-content::after { content: ""; display: block; clear: both; }
+.post-reactions { clear: both; margin-top: 2rem; padding-top: .8rem; border-top: 1px solid var(--line, #ddd); }
+.post-reactions__label { display: inline-block; margin-right: .6rem; color: var(--muted); font-size: .8rem; }
+.post-reactions__buttons { display: inline-flex; flex-wrap: wrap; gap: .25rem; vertical-align: middle; }
+.post-reactions button { min-height: 40px; padding: .3rem .55rem; border: 1px solid transparent; border-radius: 4px; background: transparent; color: var(--ink); font: inherit; font-size: .85rem; cursor: pointer; }
+.post-reactions button:hover, .post-reactions button:focus-visible { border-color: var(--line, #ccc); }
+.post-reactions button[aria-pressed="true"] { border-color: var(--muted); background: var(--surface); }
+.post-reactions button:disabled { cursor: default; opacity: .6; }
+.post-reactions__status { margin: .35rem 0 0; color: var(--muted); font-size: .75rem; }
+.post-reactions__status:empty { display: none; }
+@media (max-width: 640px) {
+  .post-illustration { float: none; width: min(220px, calc(100% - 1rem)); margin: 0 auto 1rem; }
+  .post-content .post-illustration img { max-height: 220px; }
+}
+
+.post-content > .post-media { clear: right; }

@@ -6,6 +6,9 @@ lang: mo
 news_label: Drepturi sociale și alegeri
 tags: [noutăți, drepturi sociale, alegeri, Moldova]
 published: true
+illustration_id: lei
+image: /assets/blog/lei.webp
+image_alt: "Bancnotă moldovenească de 100 de lei."
 ---
 
 Un profesor trebuie să știe ce salariu va primi luna viitoare. Un pensionar trebuie să poată calcula dacă îi ajung banii pentru medicamente, facturi și alimente. Siguranța materială a cetățenilor nu trebuie să depindă de apropierea alegerilor, de sărbători sau de disponibilitatea guvernării de a anunța încă un ajutor unic.

@@ -6,6 +6,9 @@ tags:
 modified_time: '2019-10-03T15:07:36.360+02:00'
 blogger_id: tag:blogger.com,1999:blog-3680355192440469326.post-5638183150074809046
 blogger_orig_url: https://www.dudnic.com/2019/10/jelui-m-as-si-n-am-cui
+illustration_id: peasants
+image: /assets/blog/peasants.webp
+image_alt: "Țărani moldoveni, gravură din 1838."
 ---
 
 > Jelui-m-aș și n-am cui,  

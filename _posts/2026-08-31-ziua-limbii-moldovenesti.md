@@ -5,9 +5,10 @@ date: 2026-08-31 12:00:00 +0300
 lang: mo
 news_label: Ziua Limbii Moldovenești
 tags: [noutăți, limba moldovenească, Moldova, identitate]
-image: /assets/2026-08-31-oficiul-telecomunicatii.png
-image_alt: Inscripție despre oficiul de telecomunicații al RSSM
 published: true
+illustration_id: moldova
+image: /assets/blog/moldova.webp
+image_alt: "Drapelul Republicii Moldova."
 ---
 
 Astăzi, 31 august, îi felicităm pe toți moldovenii cu **Ziua Limbii Moldovenești**! Limba noastră este parte din memoria familiilor noastre, din identitatea statului și din viața de fiecare zi. Ea a fost păstrată de oameni din generație în generație și merită să fie vorbită liber, cu demnitate și fără frică.

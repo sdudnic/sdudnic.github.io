@@ -5,19 +5,15 @@ date: 2026-09-22 00:00:00 +0000
 lang: mo
 news_label: Istorie și memorie
 tags: [istorie, Basarabia, Sfatul Țării, evenimentele din 1918]
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg/960px-Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg
-image_alt: Deputații aleși ai Sfatului Țării, fotografie din 1917
 published: true
+illustration_id: sfat
+image: /assets/blog/sfat.webp
+image_alt: "Deputații Sfatului Țării."
 ---
 
 În jurul votului Sfatului Țării din 27 martie/9 aprilie 1918 s-a păstrat o întrebare care revine de fiecare dată cînd sînt recitite documentele despre schimbarea statutului politic al Basarabiei: au existat plăți secrete pentru obținerea votului? Sursele arată un tablou mai complicat decît o singură poveste. Ele documentează negocieri politice intense, distribuiri publice de bani, acuzații despre milioane apărute încă din 1918 și mărturii ulterioare care indică sume și persoane concrete.
 
 <!--more-->
-
-<figure class="post-image" style="margin: 1.25rem 0 1.75rem; text-align: center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg/960px-Sfatul_%C8%9A%C4%83rii_%28to%C8%9Bi_deputa%C8%9Bii%29.jpg" alt="Deputații aleși ai Sfatului Țării, fotografie din 1917" loading="lazy" style="display: block; width: 100%; max-width: 960px; height: auto; margin: 0 auto;">
-  <figcaption>Deputații aleși ai Sfatului Țării, fotografie din 1917. Sursa: Parlamentul Republicii Moldova, prin <a href="https://commons.wikimedia.org/wiki/File:Sfatul_%C8%9A%C4%83rii_(to%C8%9Bi_deputa%C8%9Bii).jpg">Wikimedia Commons</a>; domeniu public.</figcaption>
-</figure>
 
 ## Ziua de dinaintea votului
 

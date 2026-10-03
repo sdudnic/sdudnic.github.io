@@ -4,6 +4,9 @@ title:  Despre ajutorul de materiale medicale oferit de România R. Moldova
 date:   2020-05-08 05:30:37 +0100
 tags: [ajutor, romania, moldova, echipamente medicale, show, politica, ambasador]
 published: true
+illustration_id: virus
+image: /assets/blog/virus.webp
+image_alt: "SARS-CoV-2 — ilustrație CDC."
 ---
 As dori sa adaug si yo câteva copeici despre ajutorul de materiale medicale oferit de România R. Moldova
 

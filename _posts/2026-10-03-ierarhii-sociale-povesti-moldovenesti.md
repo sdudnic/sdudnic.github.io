@@ -7,6 +7,9 @@ news_label: Folclor și societate
 tags: [folclor-si-societate, folclor moldovenesc, societate, basme, snoave, Ion Creangă]
 permalink: /2026/10/03/ierarhii-sociale-povesti-moldovenesti.html
 published: true
+illustration_id: creanga
+image: /assets/blog/creanga.webp
+image_alt: "Ion Creangă."
 ---
 
 De ce ținem partea fetei alungate de acasă? De ce ne bucură înfrîngerea unui boier care poate porunci tuturor? Și cum ajunge cel luat drept nepriceput să-i întreacă pe cei siguri de mintea lor? În poveștile moldovenești, asemenea răsturnări ne fac să rîdem, să ne indignăm și să așteptăm dreptatea. Dar după ce reguli alegem cui îi ținem partea?

@@ -7,6 +7,9 @@ news_label: "România Mare: dragoste, uneori... cu deasila"
 tags: [romania-mare-cu-deasila, istorie, Moldova, opozitie-fata-de-unire]
 permalink: /2026/10/03/congresul-intrerupt-rudiev-1918.html
 published: true
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 
 O adunare țărănească, o clădire înconjurată, mitraliere pe străzile din jur. În ianuarie 1918, la Chișinău, disputa despre viitorul Basarabiei se desfășura și sub amenințarea armelor.

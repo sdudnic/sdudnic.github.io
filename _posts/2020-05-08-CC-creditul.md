@@ -4,6 +4,9 @@ title:  Şi nastorojește în CuCo...
 date:   2020-05-08 00:06:37 +0100
 tags: [juridice, creditul rusesc, curtea constitutionala, moldova, credit]
 published: true
+illustration_id: curtea
+image: /assets/blog/curtea.webp
+image_alt: "Curtea Constituțională a Republicii Moldova."
 ---
 Joi, 7 mai 2020, Curtea Constituțională a declarat neconstituționale:
 

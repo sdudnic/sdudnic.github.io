@@ -3,6 +3,9 @@ layout: post
 title: Days of Romanian annexation of Bessarabia
 tags: [Bessarabia, Romania, 1918, union, great romania, annexation, Sfatul Tarii, Diet, history]
 published: true
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 
 Here bellow I present some extracts of the book **"Bessarabia. Russia and Roumania on the Black Sea"**  

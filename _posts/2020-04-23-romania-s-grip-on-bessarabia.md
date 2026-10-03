@@ -4,6 +4,9 @@ title:  "Rumania’s grip on Bessarabia / О румынском захвате �
 date:   2020-04-23 20:04:37 +0100
 categories: [moldova, romania]
 published: true
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 Представляем вашему вниманию перевод на русский новозеландской статьи о (цитирую) "Румынском захвате Бессарабии" 1918-го года.
  

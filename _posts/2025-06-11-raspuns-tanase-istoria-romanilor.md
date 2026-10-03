@@ -7,6 +7,9 @@ permalink: /noutati-raspuns-tanase-istoria-romanilor/
 news_label: Istoria Românilor
 tags: [noutăți, Istoria Românilor, educație, Consiliul pentru Egalitate]
 published: true
+illustration_id: parlament
+image: /assets/blog/parlament.webp
+image_alt: "Parlamentul Republicii Moldova."
 ---
 
 Grupul de Inițiativă „Pentru Istoria Moldovei” a publicat un răspuns detaliat la articolul lui Alexandru Tănase despre avizul consultativ al Consiliului pentru Egalitate privind denumirea disciplinei „Istoria Românilor”.

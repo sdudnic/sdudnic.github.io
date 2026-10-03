@@ -4,6 +4,9 @@ title: Забытая война - как украинско-румынский 
 tags: [Молдова, 1918]
 date:   2020-04-15 00:59:37 +0100
 published: true
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 
 ![Bessarabiya-Ukrayina-1918](/assets/ua-md-1918/Bessarabiya-Ukrayina-1918.jpg)

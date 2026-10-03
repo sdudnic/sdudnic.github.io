@@ -3,6 +3,9 @@ layout: post
 title: Fake unfake, sau cum StopFals.md simulează lupta cu fakeurile
 tags: [Moldova, stopFake, fakenews, stopfals.md, propaganda, Rusia, SUA, meta, cenzura, facebook]
 published: true
+illustration_id: curtea
+image: /assets/blog/curtea.webp
+image_alt: "Curtea Constituțională a Republicii Moldova."
 ---
 
 

@@ -5,6 +5,9 @@ date: 2020-06-08 19:14:00 +0100
 tags: [moldova, limba, moldovean, moldovenească, denumirea limbii, limba moldovenească, etnie moldoveana, istorie, surse istorice]
 published: true
 comment_issue_id: 3
+illustration_id: costin
+image: /assets/blog/costin.webp
+image_alt: "Miron Costin, ediția din 1886."
 ---
 
 Lista de referinte istorice a denumirii limbii (glotonimului) moldovenesti a fost deplasata  [AICI][1].

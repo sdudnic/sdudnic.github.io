@@ -7,6 +7,9 @@ news_label: "România Mare: dragoste, uneori... cu deasila"
 tags: [romania-mare-cu-deasila, istorie, Moldova, opozitie-fata-de-unire]
 permalink: /2026/10/03/boldur-latescu-proces-si-violenta.html
 published: true
+illustration_id: boldur
+image: /assets/blog/boldur.webp
+image_alt: "Teodor Boldur-Lățescu, circa 1870."
 ---
 
 Ce pățește un om care continuă să scrie împotriva unirii după ce statul comun există deja? Pentru Teodor Boldur-Lățescu, răspunsul cuprinde un proces și un incident violent cu doi ofițeri.

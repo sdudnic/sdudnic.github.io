@@ -6,6 +6,9 @@ lang: mo
 news_label: Catalogul limbii moldovenești
 tags: [noutăți, limba moldovenească, catalog, referințe]
 published: true
+illustration_id: costin
+image: /assets/blog/costin.webp
+image_alt: "Miron Costin, ediția din 1886."
 ---
 
 Am publicat [catalogul referințelor istorice ale limbii moldovenești](https://moldoveneasca.md/arhiva/), o bază de date cu surse, citate și informații bibliografice despre denumirea limbii moldovenești.

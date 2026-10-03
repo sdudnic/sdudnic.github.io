@@ -7,6 +7,9 @@ news_label: "România Mare: dragoste, uneori... cu deasila"
 tags: [romania-mare-cu-deasila, istorie, Moldova, opozitie-fata-de-unire]
 permalink: /2026/10/03/iasi-1866-opozitia-in-sange.html
 published: true
+illustration_id: calinic
+image: /assets/blog/calinic.webp
+image_alt: "Calinic Miclescu, portret din 1878."
 ---
 
 Un mitropolit cu crucea în mînă conduce o mulțime împotriva unirii. Urmează intervenția armatei, morți și răniți. Cum a ajuns fosta capitală a Moldovei la această confruntare?

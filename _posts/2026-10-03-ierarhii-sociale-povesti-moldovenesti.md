@@ -4,7 +4,7 @@ title: "Cine are dreptate în poveștile moldovenești? Omul simplu, puterea și
 date: 2026-10-03 00:00:00 +0200
 lang: mo
 news_label: Folclor și societate
-tags: [folclor moldovenesc, societate, basme, snoave, Ion Creangă]
+tags: [folclor-si-societate, folclor moldovenesc, societate, basme, snoave, Ion Creangă]
 permalink: /2026/10/03/ierarhii-sociale-povesti-moldovenesti.html
 published: true
 ---
@@ -12,6 +12,8 @@ published: true
 În poveștile moldovenești, un om fără avere poate pune un boier în încurcătură, o fată alungată de acasă poate dobîndi bogății, iar cel socotit nepriceput poate găsi soluția pe care ceilalți n-o văd. Dincolo de aventură și haz, aceste întîmplări pun o întrebare foarte apropiată de viața noastră: de ce ar avea cineva mai multă dreptate numai pentru că are mai multă putere?
 
 <!--more-->
+
+*Primul articol din seria [Folclor și societate]({{ '/serii/folclor-si-societate/' | relative_url }}).*
 
 ## Introducere: societatea văzută prin poveste
 
@@ -138,6 +140,12 @@ De exemplu, boierul păcălit pierde controlul situației, dar snoava nu spune c
 După codificare, graficele ar putea arăta proporția de protagoniști pe sexe, faptele favorabile sau ostile pe poziții sociale, schimbarea averii și legătura dintre inteligență și reușită. O comparație în timp ar folosi data documentării variantelor, cu mențiunea că aceasta nu este data originii lor. Fiecare grafic ar indica numărul de cazuri și datele lipsă; într-un lot mic, ar arăta distribuția lotului, nu „caracterul întregului popor”.
 
 Două lecturi independente ale acelorași texte ar permite verificarea acordului dintre evaluatori. Unde interpretările diferă, diferența ar fi păstrată și explicată. Abia atunci intuițiile „baba negativă / moșneagul victimă”, „bărbatul protagonist” sau „săracul pozitiv / boierul negativ” ar deveni ipoteze care pot fi confirmate, nuanțate ori contrazise. Articolul de față propune această metodă; nu prezintă procente pentru un lot care încă nu a fost codificat.
+
+## O serie de întrebări, cu timpul ca fir comun
+
+Această introducere deschide seria **Folclor și societate**. Analiza poate continua prin cinci teme, fiecare cu întrebarea ei: femeile și bărbații — cine acționează și cine decide; starea socială și averea — cine muncește și cine primește; ierarhia — cine poate porunci și cine poate refuza; judecata asupra personajelor — cum se leagă inteligența, frumusețea și comportamentul; religia — cum se întîlnesc credința, autoritatea și ajutorul sacru.
+
+Timpul ar traversa fiecare temă. Variantele documentate în perioade diferite ar fi comparate după aceleași criterii, păstrînd locul culegerii și felul ediției. Diferența dintre un text vechi și unul recent nu dovedește singură o schimbare istorică: poate veni și din regiune, povestitor, gen sau intervenția editorului. O sinteză despre evoluția în timp ar urma după aceste comparații. Temele rămîn propuneri de continuare; aici este publicată introducerea și metoda.
 
 ## Scurtă concluzie
 

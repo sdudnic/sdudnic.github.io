@@ -14,7 +14,11 @@ Din cele 36 de rînduri ale [articolului principal](/2026/10/03/ierarhii-sociale
 
 {% include folclor-personaje.html category="averea" label="Avere" %}
 
-Boierul și ciobanul moldovean au amîndoi tagul „bogat”, dar se află la capete diferite ale simpatiei. Cucoșul este favorabil prezentat și după îmbogățire. Averea nu produce automat o evaluare negativă.
+**Povestea ne invită uneori să ne bucurăm că eroul devine bogat, deși bogatul din fața lui este prezentat negativ.** Este o disonanță interesantă: averea apare ca răsplată la sfîrșit și ca sursă de putere nedreaptă la început. În „Punguța cu doi bani”, pierderea boierului și îmbogățirea gospodăriei moșneagului fac parte din aceeași răsturnare favorabilă eroului.
+
+O posibilă explicație ține de rol: bogatul care blochează drumul eroului este judecat prin abuzul său, iar cel care dobîndește avere prin reușită primește recunoaștere. Povestea se încheie adesea odată cu răsplata; nu mai vedem cum s-ar purta noul bogat cu cei dependenți de el. Tocmai de aceea merită întrebat dacă averea este condamnată sau dacă este condamnat felul în care o folosește adversarul.
+
+Boierul și ciobanul moldovean au amîndoi tagul „bogat”, dar se află la capete diferite ale simpatiei. Cucoșul este favorabil prezentat și după îmbogățire. Contraexemplele împiedică transformarea contrastului într-o regulă: presupunerea că bogații au de obicei roluri negative trebuie verificată într-un lot de texte, nu dedusă din această selecție.
 
 În aceste exemple, felul în care bunurile sînt dobîndite și apărate explică mai mult decît simpla lor existență. Din celelalte rînduri nu deducem sărăcia: averea neprecizată rămîne în afara listei.
 

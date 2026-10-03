@@ -13,8 +13,6 @@ Aria cercetării este **Țara Moldovei**: spațiul dintre Carpați, Nistru și M
 
 Întrebarea comună este **cum se păstrează sau se schimbă valorile între epoci**: ce este lăudat, ce este condamnat și cine este răsplătit? Compararea variantelor ar permite evaluarea continuității și a adaptării, atunci cînd datarea și proveniența lor susțin concluzii.
 
-Articolele publicate au eticheta comună **folclor-si-societate** și sînt adunate automat mai jos.
-
 <ol class="article-list">
 {% for post in site.posts %}
   {% if post.tags contains 'folclor-si-societate' %}

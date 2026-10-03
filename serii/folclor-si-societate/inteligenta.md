@@ -9,6 +9,8 @@ lang: mo
 
 Inteligența se analizează prin rezolvarea problemelor, înțelegerea situației și anticiparea reacțiilor. Eticheta de „prost” pusă de alt personaj poate contrazice priceperea demonstrată.
 
+Educația se notează separat: instruit, neinstruit sau neprecizat. „Intelectual” poate indica o ocupație sau o poziție culturală; nu este sinonim cu „deștept”. Un personaj fără școală poate rezolva mai bine o problemă decît unul învățat.
+
 Se notează problema, soluția, greșeala și rezultatul. Prostia mimată, naivitatea și nepriceperea reală se disting acolo unde textul permite.
 
 Reușita poate depinde de ajutor, noroc sau puteri fantastice. Acestea se consemnează, pentru a nu atribui inteligenței un rezultat produs de alt mecanism.

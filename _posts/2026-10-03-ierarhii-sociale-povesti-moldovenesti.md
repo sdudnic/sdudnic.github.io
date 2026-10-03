@@ -47,6 +47,43 @@ Exemplele literare analizate aici sînt ale lui Ion Creangă. Studiul lui Grigor
 
 ## Personajele
 
+De la adversarul care amenință la personajul căruia îi dorim reușita, ordinea de mai jos urmărește **simpatia povestitorului**. În centru rămîn figurile ambivalente sau fără o evaluare precizată. În interiorul fiecărui grup, ordinea este orientativă: nu avem încă un scor care să deosebească riguros două personaje.
+
+Tagurile descriu **rolurile propuse aici**, nu toate aparițiile unui arhetip. Încadrările se verifică pe fiecare text; „neprecizat” păstrează lipsa dovezii. Un personaj ridiculizat nu este neapărat cel mai rău, iar o greșeală nu îl face automat prost.
+
+<table class="folclor-table" role="table" aria-label="Personajele ordonate după simpatia povestitorului">
+<thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Personaj / tip</th><th scope="col" role="columnheader">Simpatia povestitorului</th><th scope="col" role="columnheader">Taguri de lucru</th><th scope="col" role="columnheader">Conflictul și lectura</th></tr></thead>
+<tbody role="rowgroup">
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Zmeul / balaurul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin în tipul numit; avere: neprecizat; poziție: constrînge; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Captivitatea sau amenințarea — eliberarea. Nu reprezintă o pătură socială; permite o lectură simbolică a constrîngerii.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Dracul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic / ridiculizat</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin în tipul numit; avere: neprecizat; poziție: constrînge; adaptabilitate: neprecizat; intelect: poate fi păcălit.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Puterea extraordinară — ingeniozitatea omului. Înfrîngerea lui poate avea forma unei răsturnări comice.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Baba / mama vitregă ostilă</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: feminin; avere: neprecizat; poziție: comandă în familie; adaptabilitate: rigid; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Adultul cu putere — copilul dependent. Problema este folosirea puterii în mod părtinitor.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Boierul / ciocoiul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic în rolul abuziv</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: bogat; poziție: comandă; adaptabilitate: rigid în conflict; intelect: greșește; intelect neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Superioritatea de statut — pierderea controlului. Puterea îl poate face să-și supraestimeze judecata.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Fata leneșă / fiica favorizată</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: feminin; avere: favorizată; avere neprecizată; poziție: execută / refuză; adaptabilitate: rigid; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Privilegiul fără contribuție — încercarea reală. Protecția de acasă nu înlocuiește faptele proprii.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Frații mai mari</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic în rolul trădător</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: avantaj familial; adaptabilitate: rigid în rolul rival; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Solidaritatea de familie — competiția pentru răsplată. Vîrsta nu este o garanție a vredniciei.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Popa / reprezentantul clerului</span></td><td role="cell" data-label="Simpatia povestitorului"><span>antipatic în satiră</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: autoritate comunitară; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Prestigiul moral — comportamentul concret. Satira pune la încercare concordanța dintre vorbă și faptă.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Tîndală</span></td><td role="cell" data-label="Simpatia povestitorului"><span>mixt</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: neprecizat; adaptabilitate: neprecizat; intelect: prost / aparent prost.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Așteptarea de comportament „normal” — răspunsul absurd. Comicul nu dovedește automat superioritate morală.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Împăratul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>mixt</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: bogat; poziție: comandă; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Porunca — proba prin care eroul răspunde. Contează dacă recunoaște meritul ori se împotrivește lui.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Negustorul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>mixt</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: negociază; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Interesul material — încrederea dintre oameni. O înșelăciune nu caracterizează întreaga profesie.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Ciobanul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>neprecizat</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: neprecizat; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Omul din afara curții — lumea puterii. Profesia trebuie deosebită de rolul de erou sau adversar.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Fata împăratului / prințesa</span></td><td role="cell" data-label="Simpatia povestitorului"><span>neprecizat</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: feminin; avere: mediu bogat; poziție: mixt; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Alegerea partenerului — interesul familiei. Poate avea inițiativă; nu trebuie redusă dinainte la o răsplată.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Moșneagul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>mixt</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: comandă formal / cedează; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Autoritatea nominală — capacitatea de a proteja. Blîndețea nu scuză abandonarea celui vulnerabil.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Păcală / Pepelea</span></td><td role="cell" data-label="Simpatia povestitorului"><span>mixt</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: execută / contestă; adaptabilitate: descurcăreț; intelect: deștept.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Istețul — autoritatea prinsă în propria capcană. Cîștigă prin limbaj și înscenare; procedeul poate fi discutabil.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Haiducul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic în reprezentarea eroizantă</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: contestă / comandă; adaptabilitate: descurcăreț; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Cel care răzbună nedreptatea — puterea abuzivă. Imaginea din cîntec trebuie separată de biografia istorică.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Țăranul sărac</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: sărac; poziție: execută; adaptabilitate: descurcăreț; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Omul fără avere — cel care poate impune condiții. Soluția practică poate conta mai mult decît averea.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Argatul / sluga</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: execută; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Cel care muncește — cel care comandă. Cine stabilește plata și cine recunoaște meritul?</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Soldatul / oșteanul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: execută; adaptabilitate: descurcăreț; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Executantul — autoritatea care cere rezultate. Priceperea lui poate contrasta cu neputința celui care poruncește.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Feciorul cel mic</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: execută → decide; adaptabilitate: adaptabil; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Cel subestimat — cei avantajați de vîrstă. Reușita pune la încercare ordinea moștenită.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Făt-Frumos / voinicul</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: masculin; avere: neprecizat; poziție: mixt; adaptabilitate: adaptabil; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Eroul — forța care amenință sau ține captiv. Victoria depinde și de ajutoare, nu numai de forță.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Fata înțeleaptă</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: feminin; avere: neprecizat; poziție: decide; adaptabilitate: descurcăreț; intelect: deștept.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Inteligența fără rang — puterea de a decide. Femeia poate fi chiar cea care găsește soluția.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Bătrîna ajutătoare</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: feminin; avere: neprecizat; poziție: decide / ajută; adaptabilitate: neprecizat; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Cel aflat în nevoie — protectoarea. Vîrsta și sexul nu fixează caracterul moral.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Personaj / tip"><span>Fata harnică / fiica vitregă</span></td><td role="cell" data-label="Simpatia povestitorului"><span>simpatic</span></td><td role="cell" data-label="Taguri de lucru"><span>Sex: feminin; avere: dependență materială; poziție: execută → decide; adaptabilitate: adaptabil; intelect: neprecizat.</span></td><td role="cell" data-label="Conflictul și lectura"><span>Munca nerecunoscută — recunoașterea ulterioară. Grija pentru alții creează relații de ajutor.</span></td></tr>
+</tbody></table>
+
+Tipurile și deosebirea dintre genuri pot fi urmărite în prezentările [creației populare](https://www.moldovenii.md/md/section/173) și ale [basmelor și poveștilor nuvelistice moldovenești](https://www.moldovenii.md/en/section/183). Exemplele de mai jos precizează ce se poate spune despre texte concrete.
+
+
+## Caracteristicile
+
 Un personaj poate fi sărac și influent, tînăr și ascultat, bogat și lipsit de respect. Inițiativa, munca, averea și autoritatea nu îi dau întotdeauna același loc în poveste.
 
 <table class="folclor-table" role="table" aria-label="Dimensiunile analizei">
@@ -58,7 +95,7 @@ Un personaj poate fi sărac și influent, tînăr și ascultat, bogat și lipsit
 <tbody role="rowgroup">
 <tr role="row">
 <td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/sexul/">Sexul</a></span></td>
-<td role="cell" data-label="Ce urmărim concret"><span>Personaj masculin sau feminin, după prezentarea din text</span></td>
+<td role="cell" data-label="Ce urmărim concret"><span>Masculin / feminin / neprecizat, după prezentarea din text</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cui îi este atribuită inițiativa, cine hotărăște și ce comportamente sînt apreciate?</span></td>
 </tr>
 <tr role="row">
@@ -78,12 +115,12 @@ Un personaj poate fi sărac și influent, tînăr și ascultat, bogat și lipsit
 </tr>
 <tr role="row">
 <td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/averea/">Bogăția</a></span></td>
-<td role="cell" data-label="Ce urmărim concret"><span>Banii, pămîntul, animalele, bunurile; averea de la început și de la sfîrșit</span></td>
+<td role="cell" data-label="Ce urmărim concret"><span>Bogat / sărac / intermediar / neprecizat; bunurile de la început și de la sfîrșit</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Sărăcia, îmbogățirea și redistribuirea răsplății. Bogăția poate fi cîștigată, moștenită sau luată altuia.</span></td>
 </tr>
 <tr role="row">
 <td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/ierarhia/">Poziția ierarhică</a></span></td>
-<td role="cell" data-label="Ce urmărim concret"><span>Cine decide asupra cui, în casă, la muncă sau la curte</span></td>
+<td role="cell" data-label="Ce urmărim concret"><span>Comandă / execută / ambele / neprecizat, în societate și în familie, separat pentru fiecare relație</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Un tată poate avea titlul de cap al familiei și totuși să nu controleze deciziile.</span></td>
 </tr>
 <tr role="row">
@@ -101,6 +138,9 @@ Un personaj poate fi sărac și influent, tînăr și ascultat, bogat și lipsit
 <td role="cell" data-label="Ce urmărim concret"><span>Proveniența locală indicată, de exemplu vrîncean, atunci cînd apare</span></td>
 <td role="cell" data-label="Ce ne poate spune"><span>Cum sînt reprezentați oamenii din alte regiuni și cum se definește apropierea sau diferența?</span></td>
 </tr>
+<tr role="row"><td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/adaptabilitatea/">Adaptabilitatea</a></span></td><td role="cell" data-label="Ce urmărim concret"><span>Rigid / conservator; adaptabil / descurcăreț; mixt; neprecizat</span></td><td role="cell" data-label="Ce ne poate spune"><span>Își schimbă soluția cînd situația o cere? Conservarea valorilor și rigiditatea practică se notează separat.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/inteligenta/">Intelectul</a></span></td><td role="cell" data-label="Ce urmărim concret"><span>Deștept / prost; mixt; neprecizat. Instruit / neinstruit / neprecizat într-un cîmp separat.</span></td><td role="cell" data-label="Ce ne poate spune"><span>Priceperea practică nu dovedește educație; „intelectual” descrie un statut sau o activitate, nu un grad de inteligență.</span></td></tr>
+<tr role="row"><td role="cell" data-label="Criteriu"><span><a href="/serii/folclor-si-societate/simpatia-povestitorului/">Simpatia povestitorului</a></span></td><td role="cell" data-label="Ce urmărim concret"><span>Antipatic; mai degrabă antipatic; mixt / neutru; mai degrabă simpatic; simpatic; neprecizat</span></td><td role="cell" data-label="Ce ne poate spune"><span>Cui îi ține partea povestitorul? Evaluarea lui poate diferi de faptele morale și de atitudinea altor personaje.</span></td></tr>
 </tbody></table>
 
 Identificările etnice și regionale se păstrează în sensul sursei. Ele descriu reprezentarea din poveste; nu stabilesc trăsăturile oamenilor reali.
@@ -112,184 +152,6 @@ Identificările etnice și regionale se păstrează în sensul sursei. Ele descr
 Conservarea și adaptarea pot exista împreună: o poveste poate păstra conflictul și personajele, dar poate schimba motivarea faptelor, răsplata sau judecata naratorului. Ipoteza conservării ar fi susținută de continuitatea evaluărilor în variante comparabile; ipoteza adaptării, de schimbări repetate ale acelor evaluări. Nu ajunge să constatăm că o variantă conține un obiect mai nou. Trebuie urmărit dacă se schimbă și ceea ce este socotit drept, demn de laudă sau condamnabil.
 
 Pentru comparație avem nevoie de repere documentare: „Fata babei și fata moșneagului” apare în *Convorbiri literare*, la 1 septembrie 1877, conform [studiului despre folclorul publicat în revistă](https://biblioteca-digitala.ro/reviste/ins-calinescu-istorie-teorie-literara/016_revista-istorie-teorie-literara_XVI_3_1967.pdf). Aceasta datează publicarea textului lui Creangă, nu nașterea motivului oral. Data unei reproduceri pe internet nu datează valorile din poveste. Data culegerii sau publicării este un reper al variantei; schimbarea valorilor este obiectul comparației.
-
-## Chipuri și conflicte
-
-„Favorabil” înseamnă că povestea ne îndeamnă să ținem partea personajului în situația descrisă. „Ambivalent” înseamnă că judecata depinde de faptă și de variantă. Nu sînt etichete aplicate oamenilor reali.
-
-<table class="folclor-table" role="table" aria-label="Personajele și relațiile sociale">
-<thead role="rowgroup"><tr role="row">
-<th scope="col" role="columnheader">Personaj / tip</th>
-<th scope="col" role="columnheader">Poziție în poveste</th>
-<th scope="col" role="columnheader">Cum poate fi judecat</th>
-<th scope="col" role="columnheader">Relația care pune povestea în mișcare</th>
-<th scope="col" role="columnheader">Ce merită urmărit</th>
-</tr></thead>
-<tbody role="rowgroup">
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Țăranul sărac</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Are puține resurse și puțină autoritate</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil cînd răspunde unei nedreptăți</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Omul fără avere — cel care poate impune condiții</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Soluția practică poate conta mai mult decît averea.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Păcală / Pepelea</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Personajul care răstoarnă așteptările</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil sau ambivalent</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Istețul — autoritatea prinsă în propria capcană</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Cîștigă prin limbaj și înscenare; procedeul poate fi discutabil.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Tîndală</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Personaj comic al snoavei</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Depinde de întîmplare</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Așteptarea de comportament „normal” — răspunsul absurd</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Comicul nu dovedește automat superioritate morală.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Argatul / sluga</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Depinde de stăpîn și de simbrie</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil în conflictul cu abuzul</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Cel care muncește — cel care comandă</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Cine stabilește plata și cine recunoaște meritul?</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Ciobanul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Personaj legat de munca pastorală</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Depinde de text</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Omul din afara curții — lumea puterii</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Profesia trebuie deosebită de rolul de erou sau adversar.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Soldatul / oșteanul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Om al acțiunii, supus unor ordine</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil cînd depășește încercările</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Executantul — autoritatea care cere rezultate</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Priceperea lui poate contrasta cu neputința celui care poruncește.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Făt-Frumos / voinicul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Erou al încercărilor fantastice</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil în lupta cu adversarul</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Eroul — forța care amenință sau ține captiv</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Victoria depinde și de ajutoare, nu numai de forță.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Feciorul cel mic</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Poate porni cu mai puțină încredere din partea familiei</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil în schema reușitei mezinului</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Cel subestimat — cei avantajați de vîrstă</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Reușita pune la încercare ordinea moștenită.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Frații mai mari</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Au un avantaj inițial</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Adversari dacă devin invidioși ori trădători</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Solidaritatea de familie — competiția pentru răsplată</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Vîrsta nu este o garanție a vredniciei.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Moșneagul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Tată, soț, membru vîrstnic al gospodăriei</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Compătimire, dar și critică</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Autoritatea nominală — capacitatea de a proteja</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Blîndețea nu scuză abandonarea celui vulnerabil.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Baba / mama vitregă ostilă</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Controlează resurse și decizii în casă</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Negativ în rolul persecutor</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Adultul cu putere — copilul dependent</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Problema este folosirea puterii în mod părtinitor.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Bătrîna ajutătoare</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Oferă adăpost, sfat sau ajutor fantastic</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Cel aflat în nevoie — protectoarea</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Vîrsta și sexul nu fixează caracterul moral.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Fata harnică / fiica vitregă</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Muncește, îngrijește și poate fi nedreptățită</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil în motivul răsplătirii</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Munca nerecunoscută — recunoașterea ulterioară</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Grija pentru alții creează relații de ajutor.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Fata leneșă / fiica favorizată</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Beneficiază de protecție în familie</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Negativ în povestea construită prin contrast</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Privilegiul fără contribuție — încercarea reală</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Protecția de acasă nu înlocuiește faptele proprii.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Fata înțeleaptă</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Rezolvă o dificultate prin judecată</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Favorabil</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Inteligența fără rang — puterea de a decide</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Femeia poate fi chiar cea care găsește soluția.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Fata împăratului / prințesa</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Aparține familiei conducătoare</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Depinde de libertatea și acțiunile ei</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Alegerea partenerului — interesul familiei</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Poate avea inițiativă; nu trebuie redusă dinainte la o răsplată.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Împăratul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Deține autoritatea publică în lumea basmului</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Drept, arbitrar sau ambivalent</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Porunca — proba prin care eroul răspunde</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Contează dacă recunoaște meritul ori se împotrivește lui.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Boierul / ciocoiul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Are rang și avere</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Ridiculizat în snoava satirică</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Superioritatea de statut — pierderea controlului</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Puterea îl poate face să-și supraestimeze judecata.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Negustorul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Participă la schimb și negociere</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Depinde de corectitudinea lui</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Interesul material — încrederea dintre oameni</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>O înșelăciune nu caracterizează întreaga profesie.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Popa / reprezentantul clerului</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Deține autoritate religioasă în comunitate</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Țintă comică în anumite snoave</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Prestigiul moral — comportamentul concret</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Satira pune la încercare concordanța dintre vorbă și faptă.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Haiducul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Acționează în afara ordinii oficiale</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Justițiar în reprezentarea eroizantă</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Cel care răzbună nedreptatea — puterea abuzivă</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Imaginea din cîntec trebuie separată de biografia istorică.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Zmeul / balaurul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Adversar fantastic</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Negativ în conflictul cu eroul</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Captivitatea sau amenințarea — eliberarea</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Nu reprezintă o pătură socială; permite o lectură simbolică a constrîngerii.</span></td>
-</tr>
-<tr role="row">
-<td role="cell" data-label="Personaj / tip"><span>Dracul</span></td>
-<td role="cell" data-label="Poziție în poveste"><span>Adversar supranatural, uneori comic</span></td>
-<td role="cell" data-label="Cum poate fi judecat"><span>Amenințător, dar poate fi păcălit</span></td>
-<td role="cell" data-label="Relația care pune povestea în mișcare"><span>Puterea extraordinară — ingeniozitatea omului</span></td>
-<td role="cell" data-label="Ce merită urmărit"><span>Înfrîngerea lui poate avea forma unei răsturnări comice.</span></td>
-</tr>
-</tbody></table>
-
-Tipurile și deosebirea dintre genuri pot fi urmărite în prezentările [creației populare](https://www.moldovenii.md/md/section/173) și ale [basmelor și poveștilor nuvelistice moldovenești](https://www.moldovenii.md/en/section/183). Exemplele de mai jos precizează ce se poate spune despre texte concrete.
 
 ## Omul și autoritatea
 
@@ -322,6 +184,8 @@ Ajutorul primit de fata lui Creangă poate fi citit și ca **reciprocitate**: î
 Un studiu ar porni de la 50–100 de **apariții concrete ale personajelor în texte moldovenești cu proveniență documentată**, nu de la inventarea a 100 de etichete. Același tip de personaj din două variante locale ar avea două fișe, fiindcă poate acționa diferit. Arhetipurile ar rezulta apoi prin gruparea rolurilor asemănătoare. Lotul ar păstra separat basmele, snoavele și baladele, variantele culese și prelucrările literare ale scriitorilor moldoveni.
 
 Fiecare fișă ar consemna sursa și pasajul pe care se sprijină evaluarea, dimensiunile din tabelul de mai sus, cine asuprește personajul, pe cine asuprește el, cum reușește și ce primește. Sexul și vîrsta ar avea cîmpuri distincte, la fel ca apartenența etnică și originea regională. „Necunoscut” ar rămîne o valoare distinctă. O etnie, o vîrstă sau o avere neprecizată nu ar fi completată din presupuneri. Datarea și proveniența variantei ar permite compararea judecăților între epoci.
+
+Tagurile ar fi păstrate în coloane separate, astfel încît să putem număra, de exemplu, personajele feminine simpatice, sărace și descurcărețe. O apariție poate avea mai multe caracteristici; categoria „mixt” și datele neprecizate rămîn vizibile. Schimbările dintre începutul și finalul poveștii se înregistrează distinct. Pentru ordonare, simpatia poate primi codurile −2, −1, 0, +1, +2; „neprecizat” rămîne fără scor. Aceste coduri exprimă o ordine, nu distanțe egale între sentimente.
 
 **„Pozitiv” trebuie desfăcut în întrebări diferite.** Un personaj poate fi inteligent și crud, frumos și egoist, iubit de cineva și detestat de altcineva. O medie unică ar ascunde aceste diferențe.
 

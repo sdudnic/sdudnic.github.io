@@ -3,6 +3,7 @@ layout: post
 title:  "Rumania’s grip on Bessarabia / О румынском захвате Бессарабии"
 date:   2020-04-23 20:04:37 +0100
 categories: [moldova, romania]
+permalink: /2020/04/23/romania-s-grip-on-bessarabia.html
 published: true
 illustration_id: basarabia
 image: /assets/blog/basarabia.webp

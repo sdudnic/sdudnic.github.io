@@ -4,9 +4,14 @@ title: "România Mare: dragoste, uneori... cu deasila"
 permalink: /serii/romania-mare-cu-deasila/
 lang: mo
 date: 2026-10-03 05:00:00 +0200
+illustration_id: basarabia
+image: /assets/blog/basarabia.webp
+image_alt: "Basarabia, hartă din 1918."
 ---
 
 # România Mare: dragoste, uneori... cu deasila
+
+{% include post-illustration.html %}
 
 Ce se întîmplă cu oamenii care refuză o unire? Cine îi ascultă, cine îi judecă și cine îi reduce la tăcere? Cinci istorii despre opoziția din Moldova și Basarabia urmăresc oameni, instituții și urmări concrete.
 

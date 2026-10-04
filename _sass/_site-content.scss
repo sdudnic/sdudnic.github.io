@@ -567,8 +567,8 @@
   float: right;
   width: clamp(150px, 24%, 220px);
   margin: 0 0 1rem 1.4rem;
-  padding: .35rem;
-  border: 1px solid var(--line, #ddd);
+  padding: 0;
+  border: 0;
   background: transparent;
 }
 .post-illustration > a { display: block; }
@@ -580,8 +580,7 @@
   object-fit: contain;
   border-radius: 0;
 }
-.post-illustration figcaption { margin-top: .35rem; font-size: .7rem; line-height: 1.4; color: var(--muted); }
-.post-illustration__credit { display: block; margin-top: .15rem; }
+.post-illustration figcaption { margin-top: .35rem; font-size: .7rem; line-height: 1.4; color: var(--muted); text-align: center; font-style: italic; }
 .post-content::after { content: ""; display: block; clear: both; }
 .post-reactions { clear: both; margin-top: 2rem; padding-top: .8rem; border-top: 1px solid var(--line, #ddd); }
 .post-reactions__label { display: inline-block; margin-right: .6rem; color: var(--muted); font-size: .8rem; }

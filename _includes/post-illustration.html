@@ -1,9 +1,9 @@
 {% assign illustration = site.data.blog_illustrations[page.illustration_id] %}
 {% if illustration %}
 <figure class="post-illustration">
-  <a href="{{ illustration.source | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ illustration.alt | escape }} — sursa imaginii" title="{{ illustration.changes | escape }}; sursa originală">
+  <a href="{{ illustration.source | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ illustration.alt | escape }} — {{ illustration.credit | escape }}; {{ illustration.license | escape }}; sursa imaginii" title="{{ illustration.credit | escape }} · {{ illustration.license | escape }} ({{ illustration.license_url | escape }}) · {{ illustration.changes | escape }} · Wikimedia Commons — deschide sursa">
     <img src="{{ illustration.image | relative_url }}" alt="{{ illustration.alt | escape }}" width="{{ illustration.width }}" height="{{ illustration.height }}" decoding="async" fetchpriority="high" itemprop="image">
   </a>
-  <figcaption>{{ illustration.caption | escape }}<span class="post-illustration__credit">{{ illustration.credit | escape }} · <a href="{{ illustration.license_url | escape }}" target="_blank" rel="noopener noreferrer">{{ illustration.license | escape }}</a></span></figcaption>
+  <figcaption>{{ illustration.caption | escape }}</figcaption>
 </figure>
 {% endif %}

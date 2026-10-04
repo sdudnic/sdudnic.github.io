@@ -597,3 +597,18 @@
 }
 
 .post-content > .post-media { clear: right; }
+
+// Shared treatment for article illustrations, document scans and galleries.
+.post-content img,
+.post-list img,
+.post-content figure {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+.page-content figcaption {
+  text-align: center;
+  font-style: italic;
+}

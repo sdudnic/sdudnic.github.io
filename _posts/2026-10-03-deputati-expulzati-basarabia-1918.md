@@ -37,4 +37,4 @@ Sursa: [Octavian Țîcu, „Controversele Unirii necondiționate (II): Memoriul 
 Din seria [**România Mare: dragoste, uneori... cu deasila**](/serii/romania-mare-cu-deasila/).
 {: .post-series}
 
-[Iași, 1866: opoziția în sînge](/2026/10/03/iasi-1866-opozitia-in-sange.html) · [Boldur-Lățescu: proces și violență](/2026/10/03/boldur-latescu-proces-si-violenta.html) · [Congresul întrerupt](/2026/10/03/congresul-intrerupt-rudiev-1918.html) · [Istrati: Moldova putea pierde](/2026/10/03/istrati-moldova-1856.html)
+[Iași, 1866: opoziția în sînge](/2026/10/03/iasi-1866-opozitia-in-sange.html) · [Boldur-Lățescu: proces și violență](/2026/10/03/boldur-latescu-proces-si-violenta.html) · [Congresul întrerupt](/2026/10/03/congresul-intrerupt-rudiev-1918.html) · [Istrati împotriva unirii](/2026/10/03/istrati-moldova-1856.html)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Istrati: Moldova putea pierde"
+title: "Istrati împotriva unirii"
 date: 2026-10-03 05:00:00 +0200
 lang: mo
 news_label: "România Mare: dragoste, uneori... cu deasila"

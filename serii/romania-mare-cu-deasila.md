@@ -23,7 +23,7 @@ Istoriile pornesc de la opoziția dinaintea unirii Principatelor, urmăresc conf
 - [Boldur-Lățescu: proces și violență](/2026/10/03/boldur-latescu-proces-si-violenta.html) — Un publicist adversar al unirii, urmărit în justiție și prins în conflictul politic de la Iași.
 - [Congresul întrerupt](/2026/10/03/congresul-intrerupt-rudiev-1918.html) — În Basarabia anului 1918, intrarea soldaților într-un congres țărănesc și arestarea unui opozant al intervenției militare.
 - [Deputați peste Nistru](/2026/10/03/deputati-expulzati-basarabia-1918.html) — Expulzarea unor deputați din Basarabia și efectul îndepărtării lor asupra opoziției politice.
-- [Istrati: Moldova putea pierde](/2026/10/03/istrati-moldova-1856.html) — Avertismentele din 1856 despre transformarea Moldovei în provincie și alternativa unei confederații care să-i păstreze statalitatea.
+- [Istrati împotriva unirii](/2026/10/03/istrati-moldova-1856.html) — Avertismentele din 1856 despre transformarea Moldovei în provincie și alternativa unei confederații care să-i păstreze statalitatea.
 
 Împreună, episoadele pun sub semnul întrebării povestirea unei uniri împlinite numai prin voință liberă: documentează represiunea opoziției și arată cît de vulnerabile puteau deveni garanțiile politice acceptate inițial.
 

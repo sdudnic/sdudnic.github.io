@@ -63,7 +63,9 @@ Programul păstrează limitele epocii: reprezentarea este legată de proprietate
 Broșura lasă o întrebare pe care imaginea unei uniri unanim dorite o ocolește: **putea Moldova să se modernizeze și să coopereze fără să renunțe la puterea de a hotărî pentru sine?** Înainte de 1859, Istrati răspundea afirmativ. Împotrivirea sa avea un program, iar prețul pe care îl vedea în centralizare era pierderea propriei țări.
 
 *Textul broșurii este disponibil în [transcrierea amplă păstrată în arhivă](https://web.archive.org/web/20161020112614/http%3A//graiesc.md/istoria-moldovei/despre-cvestia-dzilei.html). [Fragmentul final publicat de Tipărituri vechi](https://tiparituriromanesti.wordpress.com/2013/01/22/nicolae-istrati-despre-cvestiea-dzilei-in-moldova-iasi-1856-dorintele-si-fricile-antiunionistilor/) indică drept sursă Biblioteca Centrală Universitară din Iași.*
+{: .post-sources}
 
 ---
 
 Din seria [**România Mare: dragoste, uneori... cu deasila**](/serii/romania-mare-cu-deasila/).
+{: .post-series}

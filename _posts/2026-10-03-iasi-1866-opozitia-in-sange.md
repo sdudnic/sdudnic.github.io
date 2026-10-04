@@ -30,5 +30,6 @@ Unirea fusese hotărîtă; împotrivirea nu dispăruse. La Iași, menținerea ei
 ---
 
 Din seria [**România Mare: dragoste, uneori... cu deasila**](/serii/romania-mare-cu-deasila/).
+{: .post-series}
 
 [Boldur-Lățescu: proces și violență](/2026/10/03/boldur-latescu-proces-si-violenta.html) · [Congresul întrerupt](/2026/10/03/congresul-intrerupt-rudiev-1918.html) · [Deputați peste Nistru](/2026/10/03/deputati-expulzati-basarabia-1918.html) · [Istrati: Moldova putea pierde](/2026/10/03/istrati-moldova-1856.html)

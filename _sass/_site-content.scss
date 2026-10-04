@@ -572,7 +572,7 @@
   background: transparent;
 }
 .post-illustration > a { display: block; }
-.post-content .post-illustration img {
+.post-illustration img {
   display: block;
   width: 100%;
   height: auto;
@@ -593,7 +593,7 @@
 .post-reactions__status:empty { display: none; }
 @media (max-width: 640px) {
   .post-illustration { float: none; width: min(220px, calc(100% - 1rem)); margin: 0 auto 1rem; }
-  .post-content .post-illustration img { max-height: 220px; }
+  .post-illustration img { max-height: 220px; }
 }
 
 .post-content > .post-media { clear: right; }

@@ -614,7 +614,8 @@
 }
 .post-content .post-sources,
 .post-content .post-series,
-.post > .post-meta {
+.post > .post-meta,
+.publication-date {
   font-size: .8rem;
   line-height: 1.5;
   color: var(--muted);

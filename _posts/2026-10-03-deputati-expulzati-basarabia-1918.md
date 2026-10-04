@@ -29,6 +29,7 @@ Memoriul din 20 noiembrie cere respectarea libertăților și a autonomiei. Miza
 Între condițiile acceptate în martie și renunțarea la ele în noiembrie se află această istorie a presiunii. Ea pune sub semnul întrebării încrederea în garanțiile politice oferite la unire: ce valoare are un angajament dacă apărătorii lui pot fi reduși la tăcere?
 
 Sursa: [Octavian Țîcu, „Controversele Unirii necondiționate (II): Memoriul din 20 noiembrie 1918”](https://www.europalibera.md/amp/blog-octavian-ticu-centenarul-unirii/29577783.html), 2 noiembrie 2018.
+{: .post-sources}
 
 
 ---

@@ -70,6 +70,8 @@ Cu numai cîteva zile înaintea perioadei electorale din 2025, autoritățile au
 
 Inițiativa a fost promovată inclusiv de Igor Grosu și ministrul Educației, Dan Perciun. ODIHR a apreciat că măsura **nu părea să încalce legea**, dar putea oferi **un avantaj electoral inechitabil** și nu corespundea bunelor practici internaționale. Promo-LEX a criticat calendarul și prezentarea beneficiilor pentru acumularea de capital politic. Acordarea ajutorului nu constituie în sine un abuz; problema este exploatarea electorală a unei măsuri plătite din buget. [ODIHR][od25]; [Promo-LEX][pl31]
 
+**Evaluare de integritate electorală.** O plată unică, neurgentă, decisă sau anunțată de Guvern în intervalul imediat anterior alegerilor este, în general, un indicator puternic de folosire a resurselor publice pentru obținerea unui avantaj electoral și poate constitui corupție electorală în sens politic. Riscul crește atunci cînd plata este prezentată de demnitari care sînt și lideri sau candidați de partid, cînd nu există o justificare urgentă și transparentă a calendarului și cînd mesajul public leagă beneficiul de realizările guvernării. Pentru o constatare juridică de corupție electorală sînt necesare probe suplimentare despre intenție, condiționarea sprijinului sau încălcarea unei norme concrete. În cazul din 2025, ODIHR a folosit formula mai prudentă: măsura putea oferi un avantaj electoral inechitabil; această limită nu înlătură problema de integritate creată de momentul și modul anunțării.
+
 ## 4. Mai puține secții și buletine pentru alegătorii din Transnistria
 
 În 2025, CEC a redus infrastructura de vot pentru cetățenii domiciliați în regiunea transnistreană. [ODIHR][od25]

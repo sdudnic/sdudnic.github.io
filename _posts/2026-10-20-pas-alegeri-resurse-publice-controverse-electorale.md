@@ -225,6 +225,43 @@ CEC nr. 4140][cec-4140], este o serie separată. Nici această statistică nu tr
 plîngeri privind resursele administrative**, unde ODIHR numără **actorul vizat** — 31 împotriva PAS —, nu autorul
 plîngerii. [ODIHR, pp. 4, 17 și 29, notele 48 și 110][od25]
 
+### Bilanțul hotărîrilor publice care implică PAS
+
+Pentru întrebarea „cîte hotărîri ale CEC au fost favorabile PAS?”, am numărat **hotărîrile publice** din perioada
+14 iulie–27 septembrie 2025 în care actul CEC identifică explicit PAS fie ca autor al adresării, fie ca țintă a
+contestației. CEC numește aceste acte hotărîri. Un act în care sînt conexate două sau trei contestații este numărat
+o singură dată: unitatea este hotărîrea, nu numărul de plîngeri.
+
+<div class="pas-stats pas-three" aria-label="Bilanțul hotărîrilor CEC care implică PAS">
+<div><strong>15</strong><span>hotărîri publice cu PAS</span><small>14 iulie–27 septembrie 2025</small></div>
+<div><strong>8</strong><span>favorabile formal PAS</span><small>2 ca autor și 6 ca țintă</small></div>
+<div><strong>7</strong><span>defavorabile formal PAS</span><small>4 ca autor și 3 ca țintă</small></div>
+</div>
+
+| Cum apare PAS | Favorabile PAS | Defavorabile PAS | Total hotărîri |
+|:--|:--|:--|--:|
+| PAS este autorul adresării | **2** — [nr. 3942][cec-3942], [nr. 4116][cec-4116] | **4** — [nr. 3937][cec-3937], [nr. 3938][cec-3938], [nr. 4036][cec-4036], [nr. 4057][cec-4057] | 6 |
+| PAS este ținta contestației | **6** — [nr. 3931][cec-3931], [nr. 3941][cec-3941], [nr. 3968][cec-3968], [nr. 3972][cec-3972], [nr. 3988][cec-3988], [nr. 4121][cec-4121] | **3** — [nr. 3994][cec-3994], [nr. 3995][cec-3995], [nr. 4117][cec-4117] | 9 |
+| **Total, fără dublarea hotărîrilor** | **8** | **7** | **15** |
+{: .pas-table}
+
+În prima linie, „favorabil” înseamnă că o contestație depusă de PAS a fost admisă; „defavorabil” înseamnă că a fost
+respinsă formal. În a doua linie, „favorabil” înseamnă că o contestație împotriva PAS a fost respinsă, iar
+„defavorabil” că CEC a admis-o integral sau parțial și a aplicat ori a dispus măsuri împotriva PAS sau a unui
+candidat PAS. Aceasta este o clasificare a dispozitivului hotărîrii, nu o concluzie că fiecare acuzație respinsă era
+falsă sau că fiecare acuzație admisă a fost soluționată definitiv de Poliție.
+
+În unele dintre hotărîrile favorabile ca țintă, CEC a transmis separat anumite fapte către Poliție, de exemplu în
+hotărîrile nr. 3941 și 3968. Transmiterea nu schimbă faptul că plîngerea împotriva PAS a fost respinsă în dispozitiv
+și nu poate fi prezentată ca o achitare pe fond. Invers, la nr. 3994 și nr. 3995, admiterea parțială și avertismentul
+fac hotărîrile defavorabile PAS, chiar dacă restul pretențiilor au fost respinse.
+
+Această statistică nu este o repartizare a tuturor celor **124 de plîngeri și notificări** numărate de ODIHR. Ea se
+bazează numai pe paginile CEC publicate și identificabile cu autorul și ținta. Dacă se adaugă separat hotărîrea
+post-electorală nr. 4140, prin care a fost admisă parțial adresarea PAS împotriva formațiunii „Democrația Acasă”,
+rezultatul devine **9 favorabile și 7 defavorabile din 16 hotărîri**, dar acest act aparține unei perioade ulterioare
+zilei votării. [ODIHR, p. 29 și nota 112][od25]
+
 Nu trebuie confundată această statistică cu o altă serie de **șase plîngeri** menționată de ODIHR pentru campania
 timpurie: cinci împotriva PAS și una împotriva Heart of Moldova; două au fost respinse, iar patru au fost transmise
 Poliției. Aceasta este o serie distinctă de cele șase plîngeri acceptate în perioada 14 iulie–27 septembrie. O plîngere
@@ -343,7 +380,12 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 [cec-contestatii]: https://onlinecontestatii.cec.md/
 [cec-3937]: https://a.cec.md/ro/cu-privire-la-sesizarea-nr-cec-722510-din-1-2751_115093.html
 [cec-3938]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap7-din-2-2751_115094.html
+[cec-3931]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap8-din-3-2751_115079.html
 [cec-3942]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap11-din-4-2751_115100.html
+[cec-3941]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap10-din-3-2751_115099.html
+[cec-3968]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap25-din-9-2751_115164.html
+[cec-3972]: https://a.cec.md/ro/cu-privire-la-contestatiile-nrcec-10ap26-din-9-2751_115189.html
+[cec-3988]: https://a.cec.md/ro/cu-privire-la-contestatiile-nrcec-10ap31-din-11-2751_115196.html
 [cec-3993]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap6-din-2-2751_115216.html
 [cec-3994]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap36-din-12-2751_115217.html
 [cec-3995]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap43-si-nr-2751_115218.html
@@ -351,6 +393,7 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 [cec-4057]: https://a.cec.md/ro/cu-privire-la-sesizarea-nr-cec-723194-din-18-2751_115333.html
 [cec-4116]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap76-din-25-2751_115401.html
 [cec-4117]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap77-din-25-2751_115416.html
+[cec-4121]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap73-din-23-2751_115427.html
 [cec-4140]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap91-din-28-2751_115468.html
 [litigiu]: https://jurisprudenta.csj.md/search_col_civil.php?id=80806
 

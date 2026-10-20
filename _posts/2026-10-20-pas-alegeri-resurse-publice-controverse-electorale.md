@@ -15,9 +15,11 @@ Sute de situații documentate de observatori, campanii guvernamentale plătite d
 
 <!--more-->
 
-<figure class="post-illustration pas-illustration">
-  <img src="/assets/blog/pas-resurse-electorale.svg" alt="Promo-LEX: 282 de situații în 2024, circa 91% vizînd PAS și Maia Sandu; 260 în 2025, circa 79% vizînd PAS." width="640" height="420">
-  <figcaption>Grafic dudnic.com, date Promo-LEX. Grafic original, CC0.</figcaption>
+<figure class="pas-overview" aria-labelledby="pas-overview-title">
+  <figcaption id="pas-overview-title">Utilizarea resurselor administrative: cîte cazuri au vizat PAS</figcaption>
+  <div class="pas-overview-row"><div><strong>2024</strong><span>258 din 282 de cazuri au vizat PAS și Maia Sandu</span><b>≈91%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:91.49%;background:#94643d"></i></div></div>
+  <div class="pas-overview-row"><div><strong>2025</strong><span>Aproximativ 79% din 260 de cazuri au vizat PAS</span><b>≈79%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:79%;background:#356d77"></i></div></div>
+  <p class="pas-note">Sursa: rapoartele finale Promo-LEX. Numerele reprezintă situații documentate de observatori, nu sancțiuni aplicate.</p>
 </figure>
 
 Analiza acoperă perioada **2021–19 octombrie 2026**. Sursele principale sînt rapoartele observatorilor, documentele electorale și reacțiile publice ale instituțiilor și partidului. **Un caz observat sau o sesizare nu echivalează automat cu o încălcare confirmată printr-o hotărîre definitivă.**
@@ -248,7 +250,11 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 [litigiu]: https://precedentia.md/search/case/273976/3r-2626-anularea-actului-administrativ/
 
 <style>
-.pas-illustration{border:1px solid var(--line,#ddd)!important;padding:.35rem!important;max-width:290px}
+.post-content .pas-overview{clear:both;float:none;width:100%;max-width:850px;margin:1.5rem 0 2rem;padding:0!important}
+.pas-overview figcaption{text-align:left;font-style:normal;font-size:1.15rem;font-weight:600;line-height:1.4;margin-bottom:1.4rem}
+.pas-overview-row{margin:1.3rem 0}.pas-overview-row>div:first-child{display:grid;grid-template-columns:4rem minmax(0,1fr) 4rem;gap:.8rem;align-items:center;font-size:1rem;line-height:1.5}
+.pas-overview-row strong{font-size:1.2rem}.pas-overview-row b{text-align:right;font-size:1.35rem}.pas-overview-track{height:1.3rem;background:#e2e6e3;margin-top:.65rem;border-radius:3px;overflow:hidden}.pas-overview-track i{display:block;height:100%}
+@media(max-width:600px){.pas-overview-row>div:first-child{grid-template-columns:1fr auto;gap:.35rem}.pas-overview-row span{grid-column:1 / -1;grid-row:2}.pas-overview-row b{grid-column:2;grid-row:1}.pas-overview figcaption{font-size:1.1rem}}
 .pas-stats{clear:both;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:1.5rem 0}
 .pas-stats>div{padding:1rem;border:1px solid var(--line,#ddd);border-radius:5px;min-width:0}
 .pas-stats strong{display:block;font-size:1.7rem;line-height:1.25;color:var(--ink,#203e49)}

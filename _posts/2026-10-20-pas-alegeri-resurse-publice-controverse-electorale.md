@@ -187,36 +187,43 @@ contestația și o soluție procedurală, fără examinarea pe fond a legalită�
 tabel unic care să lege fiecare sesizare transmisă Poliției de un dosar al Poliției și de rezultatul final. [Încheierea
 oficială a CSJ][litigiu]
 
-Pentru cele **șase adresări acceptate** menționate de ODIHR, hotărîrile CEC publicate permit totuși identificarea
-autorului instituțional. Numărătoarea de mai jos este făcută după numărul de înregistrare al adresării, nu după numărul
-de hotărîri, de avertismente sau de persoane vizate:
+Raportul ODIHR nu publică pentru cele 124 de adresări numerele de înregistrare și autorii individuali. De aceea nu putem
+atribui fără rezervă numitorului ODIHR de **șase acceptate** o împărțire PAS–ceilalți: raportul nu enumeră acele șase
+dosare. În plus, hotărîrile CEC grupează uneori două adresări, admit unele doar parțial și publică separat sesizări și
+contestații. Numărarea tuturor formulelor „se admite” nu trebuie confundată automat cu statistica ODIHR.
 
-| Autorul adresării | Adresări acceptate | Pondere din 6 |
-|:--|--:|--:|
-| PAS | 1 | 16,7% |
-| Blocul Alternativa | 3 | 50,0% |
-| Partidul Național Moldovenesc | 1 | 16,7% |
-| Alianța Liberalilor și Democraților pentru Europa (ALDE) | 1 | 16,7% |
-| **Total** | **6** | **100%** |
+Hotărîrile CEC cu autor și țintă explicite arată însă direcția documentată a cel puțin opt adresări admise integral sau
+parțial în perioada de campanie:
+
+| Direcția documentată | Adresări admise integral/parțial | Ce indică hotărîrile CEC |
+|:--|--:|:--|
+| PAS → opoziție | 2 | [CEC nr. 3942][cec-3942], împotriva lui Ion Ceban/Blocul Alternativa; [CEC nr. 4116][cec-4116], împotriva Blocului Alternativa |
+| Blocul Alternativa → PAS | 4 | [CEC nr. 3994][cec-3994], o adresare; [CEC nr. 3995][cec-3995], două adresări; [CEC nr. 4117][cec-4117], o adresare |
+| PNM și ALDE → Blocul Patriotic | 2 | [CEC nr. 3993][cec-3993]: contestația PNM privind formațiunea „Inima Moldovei” și sesizarea ALDE privind finanțarea blocului |
 {: .pas-table}
 
-În gruparea simplă cerută de întrebare, rezultatul este **PAS: 1 din 6 (16,7%)** și **ceilalți autori: 5 din 6
-(83,3%)**. Corespondența publică este următoarea: [hotărîrea CEC nr. 3942][cec-3942] pentru adresarea PAS;
-[nr. 4117][cec-4117] pentru o adresare a Blocului Alternativa; [nr. 3995][cec-3995] pentru două adresări ale
-Blocului Alternativa; și [nr. 3993][cec-3993] pentru adresarea Partidului Național Moldovenesc și sesizarea ALDE.
-Unele hotărîri grupează două adresări și le admit doar parțial, de aceea numărul de adresări nu coincide cu numărul
-de avertismente. Acceptarea parțială arată ce a reținut CEC în acea procedură, nu confirmă automat fiecare acuzație.
+Acest tabel arată că adresările acceptate public nu au fost toate îndreptate împotriva PAS. Există adresări PAS admise
+împotriva opoziției și adresări ale opoziției admise împotriva PAS; hotărîrile nu oferă, însă, dovadă că una dintre
+formațiuni ar fi folosit alte persoane ca interpuși. O asemenea concluzie ar cere probe despre coordonare, nu doar faptul
+că autorul și ținta aparțin unor tabere diferite. Acceptarea parțială arată ce a reținut CEC în procedura respectivă, nu
+confirmă automat fiecare acuzație.
 
-Acesta este un rezultat pentru grupul de șase acceptate, nu pentru toate cele 124 de plîngeri și notificări. Nici nu trebuie
-confundat cu seria de **38 de plîngeri privind resursele administrative**, unde ODIHR numără **actorul vizat** — 31
-împotriva PAS —, nu autorul plîngerii. Pentru celelalte adresări, sursele publice nu oferă încă o bază unică și completă
-care să permită aceeași împărțire PAS–ceilalți.
+Da, există și adresări PAS respinse în hotărîrile publice CEC din aceeași perioadă:
 
-Se poate identifica și un caz descris separat în raport: **ALDE a sesizat CEC în privința finanțării formațiunii Heart of
-Moldova**, iar CEC a emis un avertisment preventiv Blocului Patriotic și a dispus un control financiar aprofundat. În
-alte cazuri sînt identificați destinatarii avertismentelor — un ministru PAS și candidatul Alternativa Ion Ceban —, dar
-autorul adresării trebuie stabilit din hotărîrea CEC, nu dedus din formațiunea vizată. [ODIHR, pp. 4, 17 și 29, notele
-48 și 110][od25]
+| Adresarea PAS | Ținta indicată în hotărîre | Soluția CEC |
+|:--|:--|:--|
+| [CEC-10AP/7, nr. 3938][cec-3938] | Partidul Nostru și candidata Nina Cereteu | respinsă; faptele au fost transmise Poliției |
+| [CEC-7/22510, nr. 3937][cec-3937] | Partidul Nostru și candidatul Mihail Dobrovolschi | respinsă |
+| [CEC-10AP/50, nr. 4036][cec-4036] | Partidul Nostru și candidata Nina Cereteu | respinsă; candidata a fost atenționată |
+| [CEC-7/23194, nr. 4057][cec-4057] | Pretura sectorului Ciocana și participarea la un cort Alternativa | respinsă |
+{: .pas-table}
+
+În lotul public identificat, PAS are astfel **două adresări admise și patru respinse formal** înainte de ziua alegerilor.
+Aceasta este o statistică a hotărîrilor CEC publicate cu autor PAS, nu o rată pentru toate adresările PAS din cele 124
+numărate de ODIHR. Cazul PAS împotriva formațiunii „Democrația Acasă”, admis parțial după ziua votării prin [hotărîrea
+CEC nr. 4140][cec-4140], este o serie separată. Nici această statistică nu trebuie confundată cu seria de **38 de
+plîngeri privind resursele administrative**, unde ODIHR numără **actorul vizat** — 31 împotriva PAS —, nu autorul
+plîngerii. [ODIHR, pp. 4, 17 și 29, notele 48 și 110][od25]
 
 Nu trebuie confundată această statistică cu o altă serie de **șase plîngeri** menționată de ODIHR pentru campania
 timpurie: cinci împotriva PAS și una împotriva Heart of Moldova; două au fost respinse, iar patru au fost transmise
@@ -334,10 +341,17 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 [sedinta]: https://www.privesc.eu/arhiva/109378/Sedinta-Comisiei-Electorale-Centrale-din-27-iulie-2025
 [cec-hotarari]: https://a.cec.md/hotarari-2751.html
 [cec-contestatii]: https://onlinecontestatii.cec.md/
+[cec-3937]: https://a.cec.md/ro/cu-privire-la-sesizarea-nr-cec-722510-din-1-2751_115093.html
+[cec-3938]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap7-din-2-2751_115094.html
 [cec-3942]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap11-din-4-2751_115100.html
 [cec-3993]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap6-din-2-2751_115216.html
+[cec-3994]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap36-din-12-2751_115217.html
 [cec-3995]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap43-si-nr-2751_115218.html
+[cec-4036]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap50-din-19-2751_115296.html
+[cec-4057]: https://a.cec.md/ro/cu-privire-la-sesizarea-nr-cec-723194-din-18-2751_115333.html
+[cec-4116]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap76-din-25-2751_115401.html
 [cec-4117]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap77-din-25-2751_115416.html
+[cec-4140]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap91-din-28-2751_115468.html
 [litigiu]: https://jurisprudenta.csj.md/search_col_civil.php?id=80806
 
 <style>

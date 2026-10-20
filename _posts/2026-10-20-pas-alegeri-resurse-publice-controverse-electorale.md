@@ -187,15 +187,36 @@ contestația și o soluție procedurală, fără examinarea pe fond a legalită�
 tabel unic care să lege fiecare sesizare transmisă Poliției de un dosar al Poliției și de rezultatul final. [Încheierea
 oficială a CSJ][litigiu]
 
-Raportul ODIHR nu publică, pentru aceste 124 de adresări, tabelul cu inițiatorul fiecăreia. De aceea nu se poate calcula
-corect cîte adresări ale PAS au fost acceptate și cîte au venit de la opoziție sau de la societatea civilă. Pentru cele
-șase acceptate, raportul arată rezultatul și obiectul avertismentului, dar nu le leagă nominal de autorii sesizărilor.
+Pentru cele **șase adresări acceptate** menționate de ODIHR, hotărîrile CEC publicate permit totuși identificarea
+autorului instituțional. Numărătoarea de mai jos este făcută după numărul de înregistrare al adresării, nu după numărul
+de hotărîri, de avertismente sau de persoane vizate:
 
-Se poate identifica un caz descris separat în raport: **ALDE a sesizat CEC în privința finanțării formațiunii Heart of
+| Autorul adresării | Adresări acceptate | Pondere din 6 |
+|:--|--:|--:|
+| PAS | 1 | 16,7% |
+| Blocul Alternativa | 3 | 50,0% |
+| Partidul Național Moldovenesc | 1 | 16,7% |
+| Alianța Liberalilor și Democraților pentru Europa (ALDE) | 1 | 16,7% |
+| **Total** | **6** | **100%** |
+{: .pas-table}
+
+În gruparea simplă cerută de întrebare, rezultatul este **PAS: 1 din 6 (16,7%)** și **ceilalți autori: 5 din 6
+(83,3%)**. Corespondența publică este următoarea: [hotărîrea CEC nr. 3942][cec-3942] pentru adresarea PAS;
+[nr. 4117][cec-4117] pentru o adresare a Blocului Alternativa; [nr. 3995][cec-3995] pentru două adresări ale
+Blocului Alternativa; și [nr. 3993][cec-3993] pentru adresarea Partidului Național Moldovenesc și sesizarea ALDE.
+Unele hotărîri grupează două adresări și le admit doar parțial, de aceea numărul de adresări nu coincide cu numărul
+de avertismente. Acceptarea parțială arată ce a reținut CEC în acea procedură, nu confirmă automat fiecare acuzație.
+
+Acesta este un rezultat pentru grupul de șase acceptate, nu pentru toate cele 124 de plîngeri și notificări. Nici nu trebuie
+confundat cu seria de **38 de plîngeri privind resursele administrative**, unde ODIHR numără **actorul vizat** — 31
+împotriva PAS —, nu autorul plîngerii. Pentru celelalte adresări, sursele publice nu oferă încă o bază unică și completă
+care să permită aceeași împărțire PAS–ceilalți.
+
+Se poate identifica și un caz descris separat în raport: **ALDE a sesizat CEC în privința finanțării formațiunii Heart of
 Moldova**, iar CEC a emis un avertisment preventiv Blocului Patriotic și a dispus un control financiar aprofundat. În
-alte cazuri sînt identificați destinatarii avertismentelor — un ministru PAS și candidatul Alternativa Ion Ceban —, nu
-autorii plîngerilor. Raportul nu spune explicit că sesizarea ALDE este una dintre cele șase acceptate de la p. 29, de
-aceea nu o numărăm astfel. [ODIHR, pp. 4, 17 și 29, notele 48 și 110][od25]
+alte cazuri sînt identificați destinatarii avertismentelor — un ministru PAS și candidatul Alternativa Ion Ceban —, dar
+autorul adresării trebuie stabilit din hotărîrea CEC, nu dedus din formațiunea vizată. [ODIHR, pp. 4, 17 și 29, notele
+48 și 110][od25]
 
 Nu trebuie confundată această statistică cu o altă serie de **șase plîngeri** menționată de ODIHR pentru campania
 timpurie: cinci împotriva PAS și una împotriva Heart of Moldova; două au fost respinse, iar patru au fost transmise
@@ -313,6 +334,10 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 [sedinta]: https://www.privesc.eu/arhiva/109378/Sedinta-Comisiei-Electorale-Centrale-din-27-iulie-2025
 [cec-hotarari]: https://a.cec.md/hotarari-2751.html
 [cec-contestatii]: https://onlinecontestatii.cec.md/
+[cec-3942]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap11-din-4-2751_115100.html
+[cec-3993]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap6-din-2-2751_115216.html
+[cec-3995]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap43-si-nr-2751_115218.html
+[cec-4117]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap77-din-25-2751_115416.html
 [litigiu]: https://jurisprudenta.csj.md/search_col_civil.php?id=80806
 
 <style>

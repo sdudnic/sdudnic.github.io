@@ -204,11 +204,10 @@ parțial în perioada de campanie:
 | PNM și ALDE → Blocul Patriotic | 2 | [CEC nr. 3993][cec-3993]: contestația PNM privind formațiunea „Inima Moldovei” și sesizarea ALDE privind finanțarea blocului |
 {: .pas-table}
 
-Acest tabel arată că adresările acceptate public nu au fost toate îndreptate împotriva PAS. Există adresări PAS admise
-împotriva opoziției și adresări ale opoziției admise împotriva PAS; hotărîrile nu oferă, însă, dovadă că una dintre
-formațiuni ar fi folosit alte persoane ca interpuși. O asemenea concluzie ar cere probe despre coordonare, nu doar faptul
-că autorul și ținta aparțin unor tabere diferite. Acceptarea parțială arată ce a reținut CEC în procedura respectivă, nu
-confirmă automat fiecare acuzație.
+Tabelul arată două direcții clare: CEC a admis adresări depuse de PAS împotriva opoziției și adresări depuse de opoziție
+împotriva PAS. Dispozitivele hotărîrilor indică măsurile concrete dispuse în fiecare procedură: avertisment,
+atenționare, sesizarea Poliției sau control financiar. În cazurile admise parțial, hotărîrile arată partea de pretenții
+reținută de CEC și măsura aplicată.
 
 Da, există și adresări PAS respinse în hotărîrile publice CEC din aceeași perioadă:
 

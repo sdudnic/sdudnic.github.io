@@ -13,7 +13,7 @@ published: true
 
 Sute de situații documentate de observatori, campanii guvernamentale plătite din buget, întruniri electorale în instituții publice și decizii contestate ale CEC arată aceeași problemă în alegerile din Moldova: folosirea resurselor statului în competiția politică. În cazul PAS, rapoartele Promo-LEX și OSCE/ODIHR consemnează repetat această suprapunere dintre partid și instituțiile publice. Controversa urnei electorale de la convenția din Milano completează tabloul.
 
-Articolul pune alături două serii documentare distincte. Rapoartele Promo-LEX și OSCE/ODIHR inventariază situații observate în teren și actorii avantajați; hotărîrile CEC înregistrează adresări individuale și soluțiile procedurale. Astfel, predominarea cazurilor care au vizat PAS și Maia Sandu descrie volumul documentat de observatori, iar bilanțul 8–7 descrie rezultatul formal al unui lot de hotărîri CEC în care PAS apare ca autor sau țintă.
+Articolul pune alături două serii documentare distincte. Rapoartele Promo-LEX și OSCE/ODIHR inventariază situații observate în teren și actorii avantajați; hotărîrile CEC înregistrează adresări individuale și soluțiile procedurale. Astfel, predominarea cazurilor care au vizat PAS și Maia Sandu descrie volumul documentat de observatori, bilanțul formal este 8–7, iar bilanțul efectului instituțional documentat este 10–5.
 
 <!--more-->
 
@@ -202,9 +202,9 @@ Da, există și adresări PAS respinse în hotărîrile publice CEC din aceeași
 
 | Adresarea PAS | Ținta indicată în hotărîre | Soluția CEC |
 |:--|:--|:--|
-| [CEC-10AP/7, nr. 3938][cec-3938] | Partidul Nostru și candidata Nina Cereteu | respinsă în privința candidatei; CEC a sesizat separat Poliția privind postarea Primăriei Drochia |
+| [CEC-10AP/7, nr. 3938][cec-3938] | Partidul Nostru și candidata Nina Cereteu | respinsă formal; efect instituțional favorabil prin sesizarea Poliției privind postarea Primăriei Drochia |
 | [CEC-7/22510, nr. 3937][cec-3937] | Partidul Nostru și candidatul Mihail Dobrovolschi | respinsă |
-| [CEC-10AP/50, nr. 4036][cec-4036] | Partidul Nostru și candidata Nina Cereteu | respinsă; candidata a fost atenționată |
+| [CEC-10AP/50, nr. 4036][cec-4036] | Partidul Nostru și candidata Nina Cereteu | respinsă formal; candidata a fost atenționată |
 | [CEC-7/23194, nr. 4057][cec-4057] | Pretura sectorului Ciocana și participarea la un cort Alternativa | respinsă |
 {: .pas-table}
 
@@ -221,6 +221,10 @@ Subiectul sesizării este conduita autorității publice; candidata apare în ho
 constatate. Cele două puncte au obiecte diferite: respingerea contestației PAS în privința candidatei și examinarea
 de către Poliție a conduitei Primăriei.
 
+Pentru contabilizarea efectului instituțional, cazul intră la **favorabile PAS**: proba furnizată de PAS a produs
+sesizarea Poliției, chiar dacă dispozitivul asupra contestației a fost de respingere. Hotărîrea nr. 4036 intră în
+aceeași categorie de efect, deoarece CEC a atenționat candidata după examinarea contestației PAS.
+
 În lotul public identificat, PAS are astfel **două adresări admise și patru respinse formal** înainte de ziua alegerilor.
 Aceasta este statistica hotărîrilor CEC publicate cu autor PAS, iar cazul PAS împotriva formațiunii „Democrația Acasă”,
 admis parțial după ziua votării prin [hotărîrea CEC nr. 4140][cec-4140], formează o serie post-electorală separată.
@@ -234,13 +238,17 @@ Pentru întrebarea „cîte hotărîri ale CEC au fost favorabile PAS?”, am nu
 contestației. CEC numește aceste acte hotărîri. În actele cu două sau trei contestații conexate, unitatea statistică
 este hotărîrea, iar plîngerile și măsurile apar în detaliile tabelului.
 
+Dispozitivul formal dă **8 favorabile și 7 defavorabile din 15 hotărîri**. Urmărind efectul instituțional obținut
+prin adresare — admitere, avertisment, atenționare sau sesizare a Poliției — bilanțul este **10 favorabile și 5
+defavorabile**.
+
 <div class="pas-stats pas-three" aria-label="Bilanțul hotărîrilor CEC care implică PAS">
 <div><strong>15</strong><span>hotărîri publice cu PAS</span><small>14 iulie–27 septembrie 2025</small></div>
 <div><strong>8</strong><span>favorabile formal PAS</span><small>2 ca autor și 6 ca țintă</small></div>
 <div><strong>7</strong><span>defavorabile formal PAS</span><small>4 ca autor și 3 ca țintă</small></div>
 </div>
 
-| Cum apare PAS | Favorabile PAS | Defavorabile PAS | Total hotărîri |
+| Cum apare PAS în soluția formală | Favorabile formal PAS | Defavorabile formal PAS | Total hotărîri |
 |:--|:--|:--|--:|
 | PAS este autorul adresării | **2** — [nr. 3942][cec-3942], [nr. 4116][cec-4116] | **4** — [nr. 3937][cec-3937], [nr. 3938][cec-3938], [nr. 4036][cec-4036], [nr. 4057][cec-4057] | 6 |
 | PAS este ținta contestației | **6** — [nr. 3931][cec-3931], [nr. 3941][cec-3941], [nr. 3968][cec-3968], [nr. 3972][cec-3972], [nr. 3988][cec-3988], [nr. 4121][cec-4121] | **3** — [nr. 3994][cec-3994], [nr. 3995][cec-3995], [nr. 4117][cec-4117] | 9 |
@@ -254,6 +262,16 @@ avertisment, atenționare, sesizarea Poliției sau respingerea pretențiilor.
 
 Bilanțul măsoară soluția formală pentru poziția procesuală a PAS. Măsurile instituționale dispuse în același act sînt
 prezentate separat, după obiectul lor concret, așa cum se vede în hotărîrea nr. 3938.
+
+| Tipul rezultatului | Favorabile PAS | Defavorabile PAS | Total |
+|:--|--:|--:|--:|
+| Dispozitiv formal | **8** | **7** | 15 |
+| Efect instituțional documentat | **10** | **5** | 15 |
+{: .pas-table}
+
+În bilanțul efectului, nr. 3938 este favorabil prin sesizarea Poliției, iar nr. 4036 prin atenționarea candidatei;
+aceste două măsuri se adaugă celor opt soluții formale favorabile. Indicatorul descrie răspunsul instituțional obținut
+prin adresare, iar eventualele sancțiuni ulterioare se contabilizează separat.
 
 În hotărîrile favorabile ca țintă, nr. 3941 și 3968, CEC a respins contestațiile împotriva PAS și a transmis separat
 anumite fapte către Poliție. În hotărîrile nr. 3994 și nr. 3995, CEC a admis parțial contestațiile și a aplicat

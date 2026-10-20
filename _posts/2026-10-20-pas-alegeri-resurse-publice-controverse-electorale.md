@@ -17,8 +17,8 @@ Sute de situații documentate de observatori, campanii guvernamentale plătite d
 
 <figure class="pas-overview" aria-labelledby="pas-overview-title">
   <figcaption id="pas-overview-title">Utilizarea resurselor administrative: cîte cazuri au vizat PAS</figcaption>
-  <div class="pas-overview-row"><div><strong>2024</strong><span>258 din 282 de cazuri au vizat PAS și Maia Sandu</span><b>≈91%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:91.49%;background:#94643d"></i></div></div>
-  <div class="pas-overview-row"><div><strong>2025</strong><span>Aproximativ 79% din 260 de cazuri au vizat PAS</span><b>≈79%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:79%;background:#356d77"></i></div></div>
+  <div class="pas-overview-row"><div><strong>2024</strong><span>258 din 282 de cazuri au vizat PAS și Maia Sandu</span><b>≈91%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:91.49%;background:#ffdb00"></i></div></div>
+  <div class="pas-overview-row"><div><strong>2025</strong><span>Aproximativ 79% din 260 de cazuri au vizat PAS</span><b>≈79%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:79%;background:#ffdb00"></i></div></div>
   <p class="pas-note">Sursa: rapoartele finale Promo-LEX. Numerele reprezintă situații documentate de observatori, nu sancțiuni aplicate.</p>
 </figure>
 
@@ -91,12 +91,12 @@ Raportul final Promo-LEX, publicat în ianuarie 2026, identifică **260 de situa
 <figure class="pas-chart" aria-labelledby="pas-chart-2025">
 <figcaption id="pas-chart-2025">Cine este vizat în situațiile observate în 2025</figcaption>
 <div class="pas-donut-layout"><svg class="pas-donut" viewBox="0 0 320 320" width="320" height="320" role="img" aria-labelledby="actors-title actors-desc"><title id="actors-title">situații observate</title><desc id="actors-desc">260; valorile segmentelor: 79, 9, 6, 6.</desc>
-<path d="M160.000,28.000 A132,132 0 1 1 32.147,127.173 L77.670,138.861 A85,85 0 1 0 160.000,75.000 Z" fill="#356d77" stroke="var(--surface,#fff)" stroke-width="2"/>
+<path d="M160.000,28.000 A132,132 0 1 1 32.147,127.173 L77.670,138.861 A85,85 0 1 0 160.000,75.000 Z" fill="#ffdb00" stroke="var(--surface,#fff)" stroke-width="2"/>
 <path d="M32.147,127.173 A132,132 0 0 1 69.640,63.776 L101.813,98.038 A85,85 0 0 0 77.670,138.861 Z" fill="#94643d" stroke="var(--surface,#fff)" stroke-width="2"/>
 <path d="M69.640,63.776 A132,132 0 0 1 111.408,37.270 L128.709,80.969 A85,85 0 0 0 101.813,98.038 Z" fill="#879564" stroke="var(--surface,#fff)" stroke-width="2"/>
 <path d="M111.408,37.270 A132,132 0 0 1 160.000,28.000 L160.000,75.000 A85,85 0 0 0 128.709,80.969 Z" fill="#a5aaa9" stroke="var(--surface,#fff)" stroke-width="2"/>
 <text x="160" y="156" text-anchor="middle" fill="currentColor" font-size="42" font-weight="700">260</text><text x="160" y="182" text-anchor="middle" fill="currentColor" font-size="14">situații observate</text></svg>
-<ul class="pas-donut-legend"><li><i style="background:#356d77"></i><span><b>~79%</b> PAS</span></li><li><i style="background:#94643d"></i><span><b>~9%</b> Blocul Patriotic</span></li><li><i style="background:#879564"></i><span><b>~6%</b> Alternativa</span></li><li><i style="background:#a5aaa9"></i><span><b>~6%</b> Alții</span></li></ul></div>
+<ul class="pas-donut-legend"><li><i style="background:#ffdb00"></i><span><b>~79%</b> PAS</span></li><li><i style="background:#94643d"></i><span><b>~9%</b> Blocul Patriotic</span></li><li><i style="background:#879564"></i><span><b>~6%</b> Alternativa</span></li><li><i style="background:#a5aaa9"></i><span><b>~6%</b> Alții</span></li></ul></div>
 <p class="pas-note">Procente rotunjite; sursa: Promo-LEX. Nu reprezintă distribuția condamnărilor sau a sancțiunilor.</p>
 </figure>
 

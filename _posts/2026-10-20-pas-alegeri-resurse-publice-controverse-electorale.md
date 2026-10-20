@@ -13,6 +13,8 @@ published: true
 
 Sute de situații documentate de observatori, campanii guvernamentale plătite din buget, întruniri electorale în instituții publice și decizii contestate ale CEC arată aceeași problemă în alegerile din Moldova: folosirea resurselor statului în competiția politică. În cazul PAS, rapoartele Promo-LEX și OSCE/ODIHR consemnează repetat această suprapunere dintre partid și instituțiile publice. Controversa urnei electorale de la convenția din Milano completează tabloul.
 
+Articolul pune alături două serii documentare distincte. Rapoartele Promo-LEX și OSCE/ODIHR inventariază situații observate în teren și actorii avantajați; hotărîrile CEC înregistrează adresări individuale și soluțiile procedurale. Astfel, predominarea cazurilor care au vizat PAS și Maia Sandu descrie volumul documentat de observatori, iar bilanțul 8–7 descrie rezultatul formal al unui lot de hotărîri CEC în care PAS apare ca autor sau țintă.
+
 <!--more-->
 
 <figure class="pas-overview" aria-labelledby="pas-overview-title">
@@ -200,7 +202,7 @@ Da, există și adresări PAS respinse în hotărîrile publice CEC din aceeași
 
 | Adresarea PAS | Ținta indicată în hotărîre | Soluția CEC |
 |:--|:--|:--|
-| [CEC-10AP/7, nr. 3938][cec-3938] | Partidul Nostru și candidata Nina Cereteu | respinsă; faptele au fost transmise Poliției |
+| [CEC-10AP/7, nr. 3938][cec-3938] | Partidul Nostru și candidata Nina Cereteu | respinsă în privința candidatei; CEC a sesizat separat Poliția privind postarea Primăriei Drochia |
 | [CEC-7/22510, nr. 3937][cec-3937] | Partidul Nostru și candidatul Mihail Dobrovolschi | respinsă |
 | [CEC-10AP/50, nr. 4036][cec-4036] | Partidul Nostru și candidata Nina Cereteu | respinsă; candidata a fost atenționată |
 | [CEC-7/23194, nr. 4057][cec-4057] | Pretura sectorului Ciocana și participarea la un cort Alternativa | respinsă |
@@ -211,13 +213,13 @@ verifice acțiunile Ninei Cereteu, candidată a Partidului Nostru și primară a
 PAS a susținut că, la un eveniment din 1 septembrie, au fost anunțate două premii de cîte 10.000 de lei achitate din
 bugetul local, iar candidata ar fi folosit funcția și resursele publice în campanie. CEC a stabilit însă, pe baza
 actelor prezentate, că evenimentul avusese loc la **28 august**, înainte de începerea campaniei la 29 august, și a
-respins contestația PAS împotriva candidatei. [Hotărîrea CEC nr. 3938][cec-3938]
+respins contestația PAS în privința candidatei. [Hotărîrea CEC nr. 3938][cec-3938]
 
-CEC a constatat separat că postarea Primăriei din 1 septembrie, publicată în timpul campaniei, întrunea elementele
-favorizării utilizării ilegale a resurselor administrative și a sesizat Poliția Drochia. Cazul arată **respingerea
-formală a cererii PAS** împotriva candidatei și sesizarea separată privind autoritatea publică. În tabel, el este
-numărat ca defavorabil PAS prin dispozitivul de respingere; sesizarea către Poliție apare ca măsură instituțională
-distinctă.
+În aceeași hotărîre, CEC a constatat că postarea Primăriei din 1 septembrie, publicată în timpul campaniei, întrunea
+elementele favorizării utilizării ilegale a resurselor administrative și a sesizat Inspectoratul de Poliție Drochia.
+Subiectul sesizării este conduita autorității publice; candidata apare în hotărîre ca beneficiară a favorizării
+constatate. Cele două puncte au obiecte diferite: respingerea contestației PAS în privința candidatei și examinarea
+de către Poliție a conduitei Primăriei.
 
 În lotul public identificat, PAS are astfel **două adresări admise și patru respinse formal** înainte de ziua alegerilor.
 Aceasta este statistica hotărîrilor CEC publicate cu autor PAS, iar cazul PAS împotriva formațiunii „Democrația Acasă”,
@@ -249,6 +251,9 @@ este hotărîrea, iar plîngerile și măsurile apar în detaliile tabelului.
 În a doua linie, „favorabil” indică respingerea contestației împotriva PAS, iar „defavorabil” indică admiterea integrală
 sau parțială și măsurile dispuse împotriva PAS ori a unui candidat PAS. Clasificarea urmează dispozitivul hotărîrii:
 avertisment, atenționare, sesizarea Poliției sau respingerea pretențiilor.
+
+Bilanțul măsoară soluția formală pentru poziția procesuală a PAS. Măsurile instituționale dispuse în același act sînt
+prezentate separat, după obiectul lor concret, așa cum se vede în hotărîrea nr. 3938.
 
 În hotărîrile favorabile ca țintă, nr. 3941 și 3968, CEC a respins contestațiile împotriva PAS și a transmis separat
 anumite fapte către Poliție. În hotărîrile nr. 3994 și nr. 3995, CEC a admis parțial contestațiile și a aplicat

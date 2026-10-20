@@ -13,7 +13,7 @@ published: true
 
 Sute de situații documentate de observatori, campanii guvernamentale plătite din buget, întruniri electorale în instituții publice și decizii contestate ale CEC arată aceeași problemă în alegerile din Moldova: folosirea resurselor statului în competiția politică. În cazul PAS, rapoartele Promo-LEX și OSCE/ODIHR consemnează repetat această suprapunere dintre partid și instituțiile publice. Controversa urnei electorale de la convenția din Milano completează tabloul.
 
-Articolul pune alături două serii documentare distincte. Rapoartele Promo-LEX și OSCE/ODIHR inventariază situații observate în teren și actorii avantajați; hotărîrile CEC înregistrează adresări individuale și soluțiile procedurale. Astfel, predominarea cazurilor care au vizat PAS și Maia Sandu descrie volumul documentat de observatori, bilanțul formal este 8–7, iar bilanțul efectului instituțional documentat este 10–5.
+Articolul pune alături două serii documentare distincte. Rapoartele Promo-LEX și OSCE/ODIHR inventariază situații observate în teren și actorii avantajați; hotărîrile CEC înregistrează adresări individuale și soluțiile procedurale. Astfel, predominarea cazurilor care au vizat PAS și Maia Sandu descrie volumul documentat de observatori, bilanțul formal este 8–7, iar bilanțul efectului se împarte în 10 favorabile, 3 defavorabile directe și 2 respingeri procedurale ale adresărilor PAS.
 
 <!--more-->
 
@@ -238,9 +238,9 @@ Pentru întrebarea „cîte hotărîri ale CEC au fost favorabile PAS?”, am nu
 contestației. CEC numește aceste acte hotărîri. În actele cu două sau trei contestații conexate, unitatea statistică
 este hotărîrea, iar plîngerile și măsurile apar în detaliile tabelului.
 
-Dispozitivul formal dă **8 favorabile și 7 defavorabile din 15 hotărîri**. Urmărind efectul instituțional obținut
-prin adresare — admitere, avertisment, atenționare sau sesizare a Poliției — bilanțul este **10 favorabile și 5
-defavorabile**.
+Dispozitivul formal dă **8 favorabile și 7 defavorabile din 15 hotărîri**. Pentru efectul real asupra PAS, lotul se
+împarte în **10 hotărîri cu efect favorabil**, **3 hotărîri cu măsuri directe împotriva PAS** și **2 respingeri ale
+adresărilor PAS fără măsură împotriva PAS**.
 
 <div class="pas-stats pas-three" aria-label="Bilanțul hotărîrilor CEC care implică PAS">
 <div><strong>15</strong><span>hotărîri publice cu PAS</span><small>14 iulie–27 septembrie 2025</small></div>
@@ -263,19 +263,20 @@ avertisment, atenționare, sesizarea Poliției sau respingerea pretențiilor.
 Bilanțul măsoară soluția formală pentru poziția procesuală a PAS. Măsurile instituționale dispuse în același act sînt
 prezentate separat, după obiectul lor concret, așa cum se vede în hotărîrea nr. 3938.
 
-| Tipul rezultatului | Favorabile PAS | Defavorabile PAS | Total |
-|:--|--:|--:|--:|
-| Dispozitiv formal | **8** | **7** | 15 |
-| Efect instituțional documentat | **10** | **5** | 15 |
+| Tipul rezultatului | Favorabil PAS | Defavorabil direct PAS | Respingere procedurală a adresării PAS | Total |
+|:--|--:|--:|--:|--:|
+| Dispozitiv formal | **8** | **3** | **4** | 15 |
+| Efect documentat | **10** | **3** | **2** | 15 |
 {: .pas-table}
 
 În bilanțul efectului, nr. 3938 este favorabil prin sesizarea Poliției, iar nr. 4036 prin atenționarea candidatei;
-aceste două măsuri se adaugă celor opt soluții formale favorabile. Indicatorul descrie răspunsul instituțional obținut
-prin adresare, iar eventualele sancțiuni ulterioare se contabilizează separat.
+aceste două măsuri se adaugă celor opt soluții formale favorabile. Hotărîrile nr. 3994, 3995 și 4117 sînt cele trei
+cazuri cu măsuri directe împotriva PAS. Nr. 3937 și 4057 sînt respingeri ale adresărilor PAS, cu efect procedural
+asupra demersului și fără măsură aplicată PAS.
 
 În hotărîrile favorabile ca țintă, nr. 3941 și 3968, CEC a respins contestațiile împotriva PAS și a transmis separat
 anumite fapte către Poliție. În hotărîrile nr. 3994 și nr. 3995, CEC a admis parțial contestațiile și a aplicat
-atenționări sau avertismente PAS.
+atenționări sau avertismente PAS; în nr. 4117, CEC a admis contestația și a aplicat avertisment candidatului PAS.
 
 Această statistică folosește paginile CEC publicate și identificabile cu autorul și ținta. Hotărîrea post-electorală
 nr. 4140, prin care a fost admisă parțial adresarea PAS împotriva formațiunii „Democrația Acasă”, adaugă **o hotărîre

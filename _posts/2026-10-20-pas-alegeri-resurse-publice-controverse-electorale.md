@@ -171,11 +171,21 @@ ilegală, două la avertismente privind resursele administrative și două la av
 Peste 40 au fost transmise Poliției, iar restul au fost respinse ca neîntemeiate. [ODIHR, p. 29][od25]
 
 Raportul ODIHR nu publică, pentru aceste 124 de adresări, tabelul cu inițiatorul fiecăreia. De aceea nu se poate calcula
-corect cîte adresări ale PAS au fost acceptate și cîte au venit de la opoziție sau de la societatea civilă. Există însă
-cazuri individuale documentate: o plîngere a PAS, depusă în ziua alegerilor, a stat la baza sancționării partidului
-Democrația Acasă pentru finanțare ilegală; sancțiunea a fost menținută în cele din urmă de Curtea Supremă. Separat,
-CEC a emis avertismente pentru un ministru PAS și pentru candidatul Alternativa Ion Ceban, dar persoana sancționată nu
-este același lucru cu autorul plîngerii. [ODIHR, pp. 4 și 29, notele 110–112][od25]
+corect cîte adresări ale PAS au fost acceptate și cîte au venit de la opoziție sau de la societatea civilă. Pentru cele
+șase acceptate, raportul arată rezultatul și obiectul avertismentului, dar nu le leagă nominal de autorii sesizărilor.
+
+Se poate identifica un caz descris separat în raport: **ALDE a sesizat CEC în privința finanțării formațiunii Heart of
+Moldova**, iar CEC a emis un avertisment preventiv Blocului Patriotic și a dispus un control financiar aprofundat. În
+alte cazuri sînt identificați destinatarii avertismentelor — un ministru PAS și candidatul Alternativa Ion Ceban —, nu
+autorii plîngerilor. Raportul nu spune explicit că sesizarea ALDE este una dintre cele șase acceptate de la p. 29, de
+aceea nu o numărăm astfel. [ODIHR, pp. 4, 17 și 29, notele 48 și 110][od25]
+
+Nu trebuie confundată această statistică cu o altă serie de **șase plîngeri** menționată de ODIHR pentru campania
+timpurie: cinci împotriva PAS și una împotriva Heart of Moldova; două au fost respinse, iar patru au fost transmise
+Poliției. Aceasta este o serie distinctă de cele șase plîngeri acceptate în perioada 14 iulie–27 septembrie. O plîngere
+a PAS depusă în ziua alegerilor, care a contribuit la sancționarea partidului Democrația Acasă pentru finanțare ilegală,
+este de asemenea un caz separat; sancțiunea a fost menținută în cele din urmă de Curtea Supremă. [ODIHR, pp. 4, 24 și
+29, notele 48 și 110–112][od25]
 
 ## 6. Miniștrii candidați și obligațiile funcției
 

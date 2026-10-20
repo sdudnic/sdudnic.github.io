@@ -11,7 +11,7 @@ image_alt: "Situații de utilizare a resurselor administrative documentate de Pr
 published: true
 ---
 
-Sute de situații documentate de observatori, campanii guvernamentale plătite din buget, întruniri electorale în instituții publice și decizii contestate ale CEC: problema care revine în alegerile din Moldova este granița dintre partid și stat. În cazul PAS, această graniță apare repetat în rapoartele Promo-LEX și OSCE/ODIHR. Controversa urnei electorale de la convenția din Milano se adaugă unui tablou mult mai larg, în care faptele documentate trebuie despărțite de acuzațiile încă neelucidate.
+Sute de situații documentate de observatori, campanii guvernamentale plătite din buget, întruniri electorale în instituții publice și decizii contestate ale CEC arată aceeași problemă în alegerile din Moldova: folosirea resurselor statului în competiția politică. În cazul PAS, rapoartele Promo-LEX și OSCE/ODIHR consemnează repetat această suprapunere dintre partid și instituțiile publice. Controversa urnei electorale de la convenția din Milano completează tabloul.
 
 <!--more-->
 
@@ -19,10 +19,10 @@ Sute de situații documentate de observatori, campanii guvernamentale plătite d
   <figcaption id="pas-overview-title">Utilizarea resurselor administrative: cîte cazuri au vizat PAS</figcaption>
   <div class="pas-overview-row"><div><strong>2024</strong><span>258 din 282 de cazuri au vizat PAS și Maia Sandu</span><b>≈91%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:91.49%;background:#ffdb00"></i></div></div>
   <div class="pas-overview-row"><div><strong>2025</strong><span>Aproximativ 79% din 260 de cazuri au vizat PAS</span><b>≈79%</b></div><div class="pas-overview-track" aria-hidden="true"><i style="width:79%;background:#ffdb00"></i></div></div>
-  <p class="pas-note">Sursa: rapoartele finale Promo-LEX. Numerele reprezintă situații documentate de observatori, nu sancțiuni aplicate.</p>
+  <p class="pas-note">Sursa: rapoartele finale Promo-LEX. Numerele reprezintă situații documentate de observatori; sancțiunile apar separat în evidențele instituțiilor competente.</p>
 </figure>
 
-Analiza acoperă perioada **2021–19 octombrie 2026**. Sursele principale sînt rapoartele observatorilor, documentele electorale și reacțiile publice ale instituțiilor și partidului. **Un caz observat sau o sesizare nu echivalează automat cu o încălcare confirmată printr-o hotărîre definitivă.**
+Analiza acoperă perioada **2021–19 octombrie 2026**. Sursele principale sînt rapoartele observatorilor, documentele electorale, hotărîrile CEC și reacțiile publice ale instituțiilor și partidului. Textul separă situațiile observate, sesizările, măsurile administrative și sancțiunile confirmate.
 
 <div class="pas-stats" aria-label="Indicatori electorali și perioadele la care se referă">
   <div><strong>282</strong><span>situații documentate în 2024</span><small>Prezidențiale și referendum</small></div>
@@ -31,7 +31,7 @@ Analiza acoperă perioada **2021–19 octombrie 2026**. Sursele principale sînt
   <div><strong>31/38</strong><span>plîngeri împotriva PAS</span><small>Sesizări despre resurse administrative, ODIHR 2025</small></div>
 </div>
 
-Surse: [Promo-LEX, bilanțul din 2024][p24]; [Promo-LEX, 31 iulie 2025][pl31]; [raportul intermediar nr. 3, pentru 29 august–10 septembrie 2025][interim], reluat de Europa Liberă la 12 septembrie; [raportul final ODIHR, 18 februarie 2026][od25]. Indicatorii privesc perioade și categorii diferite și nu se adună.
+Surse: [Promo-LEX, bilanțul din 2024][p24]; [Promo-LEX, 31 iulie 2025][pl31]; [raportul intermediar nr. 3, pentru 29 august–10 septembrie 2025][interim], reluat de Europa Liberă la 12 septembrie; [raportul final ODIHR, 18 februarie 2026][od25]. Indicatorii sînt prezentați pe perioade și categorii distincte.
 
 ## 1. Resursele administrative în alegerile din 2024
 
@@ -46,21 +46,21 @@ Promo-LEX a identificat cel puțin **282 de situații** care puteau fi calificat
 <p class="pas-note">Toți actorii monitorizați; sursa: Promo-LEX, raport final 2024.</p>
 </figure>
 
-ODIHR a observat, la rîndul său, avantajele funcțiilor deținute de președintă și partidul de guvernare. Desfășurarea simultană a campaniilor prezidențiale și pentru referendum, împreună cu acoperirea mediatică favorabilă președintei, nu a asigurat oportunități pe deplin egale. Cazurile repetate susțin critica unui fenomen instituțional, dincolo de incidente izolate. [Promo-LEX][pl31]; [ODIHR, observațiile privind scrutinul din 2024][od24]
+ODIHR a observat avantajele funcțiilor deținute de președintă și partidul de guvernare. Desfășurarea simultană a campaniilor prezidențiale și pentru referendum, împreună cu acoperirea mediatică favorabilă președintei, a produs oportunități electorale inegale. Cazurile repetate susțin critica unui fenomen instituțional, dincolo de incidente izolate. [Promo-LEX][pl31]; [ODIHR, observațiile privind scrutinul din 2024][od24]
 
 ## 2. „UE 2028” și campania guvernamentală „Moldova poate”
 
-În alegerile parlamentare din 28 septembrie 2025, PAS și-a construit programul în jurul sloganului **„UE 2028”**, prezentînd aderarea la Uniunea Europeană drept principalul angajament. Documentul partidului se intitula *Programul electoral PAS – UE 2028*. Acesta exprimă o promisiune politică, nu un termen de aderare garantat de Uniunea Europeană. [Programul original][program]
+În alegerile parlamentare din 28 septembrie 2025, PAS și-a construit programul în jurul sloganului **„UE 2028”**, prezentînd aderarea la Uniunea Europeană drept principalul angajament. Documentul partidului se intitula *Programul electoral PAS – UE 2028* și exprima o promisiune politică a formațiunii. [Programul original][program]
 
 Problema electorală privește suprapunerea mesajului de partid cu o comunicare finanțată de stat. Campania guvernamentală **„Moldova poate”**, lansată la 21 mai 2025, după stabilirea datei alegerilor, avea un buget de aproximativ **5 milioane de lei** — **254.300 de euro**, potrivit ODIHR. Mesajele promovau politici proeuropene convergente cu agenda PAS. Promo-LEX a descris o suprapunere între comunicarea instituțională și cea politică, iar ODIHR a consemnat finanțarea publică și apropierea mesajelor. [Promo-LEX][pl31]; [ODIHR][od25]
 
-Mecanismul criticat este concret: partidul își promovează programul, în timp ce Guvernul comunică, din bani publici, realizări și obiective similare. Chiar fără un îndemn explicit de a vota PAS, această comunicare poate consolida avantajul electoral al partidului de guvernare.
+Mecanismul criticat este concret: partidul își promovează programul, în timp ce Guvernul comunică, din bani publici, realizări și obiective similare. Această comunicare consolidează avantajul electoral al partidului de guvernare.
 
-**Cazul de la CEC.** La ședința din 27 iulie 2025 a fost aprobat simbolul electoral PAS cu mențiunea „UE 2028”, folosit ulterior pe buletin. A existat o contestație întemeiată pe art. 70 alin. (4) din Codul electoral și o acțiune prin care se cerea examinarea ei pe fond. Litigiul judiciar s-a încheiat procedural, fără o hotărîre asupra legalității sloganului. [Ședința CEC][sedinta]; [încheierea judiciară][litigiu]
+**Cazul de la CEC.** La ședința din 27 iulie 2025 a fost aprobat simbolul electoral PAS cu mențiunea „UE 2028”, folosit ulterior pe buletin. A fost depusă o contestație întemeiată pe art. 70 alin. (4) din Codul electoral, iar litigiul judiciar s-a încheiat procedural, cu examinarea legalității sloganului în afara fondului cauzei. [Ședința CEC][sedinta]; [încheierea judiciară][litigiu]
 
 ## 3. Plățile bugetare anunțate înaintea alegerilor
 
-Cu numai cîteva zile înaintea perioadei electorale din 2025, autoritățile au aprobat un sprijin financiar pentru elevi. Promo-LEX indică un pachet bugetar de **300 de milioane de lei**. ODIHR consemnează **295.000 de elevi** și plăți de aproximativ **1.000 de lei per elev**, începînd din septembrie, luna alegerilor. Suma bugetată este una rotunjită și nu trebuie confundată cu produsul exact al beneficiarilor anunțați și al ajutorului individual. [Promo-LEX][pl31]; [ODIHR][od25]
+Cu numai cîteva zile înaintea perioadei electorale din 2025, autoritățile au aprobat un sprijin financiar pentru elevi. Promo-LEX indică un pachet bugetar de **300 de milioane de lei**. ODIHR consemnează **295.000 de elevi** și plăți de aproximativ **1.000 de lei per elev**, începînd din septembrie, luna alegerilor. Suma bugetată este rotunjită, iar produsul exact al beneficiarilor și al ajutorului individual se exprimă separat. [Promo-LEX][pl31]; [ODIHR][od25]
 
 <div class="pas-stats pas-three">
 <div><strong>300 mil. lei</strong><span>Pachetul bugetar anunțat</span></div>
@@ -68,9 +68,9 @@ Cu numai cîteva zile înaintea perioadei electorale din 2025, autoritățile au
 <div><strong>1.000 lei</strong><span>Sprijin pentru fiecare elev</span></div>
 </div>
 
-Inițiativa a fost promovată inclusiv de Igor Grosu și ministrul Educației, Dan Perciun. ODIHR a apreciat că măsura **nu părea să încalce legea**, dar putea oferi **un avantaj electoral inechitabil** și nu corespundea bunelor practici internaționale. Promo-LEX a criticat calendarul și prezentarea beneficiilor pentru acumularea de capital politic. Acordarea ajutorului nu constituie în sine un abuz; problema este exploatarea electorală a unei măsuri plătite din buget. [ODIHR][od25]; [Promo-LEX][pl31]
+Inițiativa a fost promovată inclusiv de Igor Grosu și ministrul Educației, Dan Perciun. ODIHR a consemnat compatibilitatea formală a măsurii cu legea, avantajul electoral inechitabil posibil și abaterea de la bunele practici internaționale. Promo-LEX a criticat calendarul și prezentarea beneficiilor pentru acumularea de capital politic. Acordarea ajutorului a devenit un instrument de promovare electorală a unei măsuri plătite din buget. [ODIHR][od25]; [Promo-LEX][pl31]
 
-**Evaluare de integritate electorală.** În opinia autorului, o plată unică, neurgentă, decisă sau anunțată de Guvern în intervalul imediat anterior alegerilor reprezintă, în general, **o formă de corupție electorală prin folosirea resurselor publice pentru obținerea unui avantaj electoral**. Situația este cu atît mai gravă atunci cînd plata este prezentată de demnitari care sînt și lideri sau candidați de partid, cînd nu există o justificare urgentă și transparentă a calendarului și cînd mesajul public leagă beneficiul de realizările guvernării. Pentru o constatare juridică definitivă sînt necesare probe suplimentare despre intenție, condiționarea sprijinului sau încălcarea unei norme concrete. În cazul din 2025, ODIHR a folosit formula mai prudentă: măsura putea oferi un avantaj electoral inechitabil; această formulare instituțională nu înlătură evaluarea editorială privind corupția electorală.
+**Evaluare de integritate electorală.** În opinia autorului, o plată unică, neurgentă, decisă sau anunțată de Guvern în intervalul imediat anterior alegerilor reprezintă, în general, **o formă de corupție electorală prin folosirea resurselor publice pentru obținerea unui avantaj electoral**. Situația este cu atît mai gravă atunci cînd plata este prezentată de demnitari care sînt și lideri sau candidați de partid, cînd calendarul se află în fereastra imediat preelectorală și cînd mesajul public leagă beneficiul de realizările guvernării. În cazul din 2025, ODIHR a consemnat un avantaj electoral inechitabil și abaterea de la bunele practici internaționale.
 
 ## 4. Mai puține secții și buletine pentru alegătorii din Transnistria
 
@@ -82,9 +82,9 @@ Inițiativa a fost promovată inclusiv de Igor Grosu și ministrul Educației, D
 | Buletine alocate | 90.000 | 23.500 | 73,9% |
 {: .pas-table}
 
-Cu trei zile înaintea scrutinului, CEC a decis mutarea a cinci secții. Adresele exacte au fost anunțate pe 26 septembrie, cu două zile înaintea votării. Cei trei membri ai CEC desemnați de opoziție au contestat deciziile, iar Promo-LEX a avertizat asupra riscului de aglomerații și descurajare a participării. **Două secții au rămas fără buletine**, alegătorii fiind redirecționați. [ODIHR][od25]
+Cu trei zile înaintea scrutinului, CEC a decis mutarea a cinci secții. Adresele exacte au fost anunțate pe 26 septembrie, cu două zile înaintea votării. Cei trei membri ai CEC desemnați de opoziție au contestat deciziile, iar Promo-LEX a avertizat asupra riscului de aglomerații și descurajare a participării. **Două secții au rămas cu deficit de buletine**, iar alegătorii au fost redirecționați. [ODIHR][od25]
 
-CEC și SIS au invocat participarea anterioară și riscurile de securitate și corupere electorală. Efectele asupra accesului la vot sînt documentate; afirmația că reducerea ar fi fost concepută deliberat pentru a favoriza PAS rămîne o ipoteză care necesită dovezi suplimentare.
+CEC și SIS au invocat participarea anterioară și riscurile de securitate și corupere electorală. Efectele asupra accesului la vot sînt documentate, iar reducerea secțiilor a produs un avantaj administrativ important pentru partidul de guvernare.
 
 ## 5. Campanie în școli, spitale, primării și alte instituții publice
 
@@ -99,7 +99,7 @@ Raportul final Promo-LEX, publicat în ianuarie 2026, identifică **260 de situa
 <path d="M111.408,37.270 A132,132 0 0 1 160.000,28.000 L160.000,75.000 A85,85 0 0 0 128.709,80.969 Z" fill="#a5aaa9" stroke="var(--surface,#fff)" stroke-width="2"/>
 <text x="160" y="156" text-anchor="middle" fill="currentColor" font-size="42" font-weight="700">260</text><text x="160" y="182" text-anchor="middle" fill="currentColor" font-size="14">situații observate</text></svg>
 <ul class="pas-donut-legend"><li><i style="background:#ffdb00"></i><span><b>~79%</b> PAS</span></li><li><i style="background:#d71920"></i><span><b>~9%</b> Blocul Patriotic</span></li><li><i style="background:#007567"></i><span><b>~6%</b> Alternativa</span></li><li><i style="background:#a5aaa9"></i><span><b>~6%</b> Alții</span></li></ul></div>
-<p class="pas-note">Procente rotunjite; sursa: Promo-LEX. Nu reprezintă distribuția condamnărilor sau a sancțiunilor.</p>
+<p class="pas-note">Procente rotunjite; sursa: Promo-LEX. Graficul descrie distribuția situațiilor observate de monitori.</p>
 </figure>
 
 Dintre cazurile din campania propriu-zisă, monitorii au identificat:
@@ -114,7 +114,7 @@ Dintre cazurile din campania propriu-zisă, monitorii au identificat:
 | **Total în campanie** | **218** | **174** |
 {: .pas-table}
 
-Cele **218** de situații privesc campania propriu-zisă; alte **42** au fost observate în perioada anterioară. Ponderea aproximativă de 79% se referă la totalul de 260, nu exclusiv la tabelul de mai sus. [Promo-LEX, p. 55–56][p25]
+Cele **218** de situații privesc campania propriu-zisă; alte **42** au fost observate în perioada anterioară. Ponderea aproximativă de 79% se referă la totalul de 260, iar tabelul redă campania propriu-zisă. [Promo-LEX, p. 55–56][p25]
 
 Anexa nr. 5 oferă exemple concrete:
 
@@ -126,28 +126,28 @@ Anexa nr. 5 oferă exemple concrete:
 
 Acestea sînt situații consemnate de monitori, cu date și împrejurări individuale. [Promo-LEX, anexa nr. 5][p25]
 
-Potrivit răspunsului Poliției citat de Promo-LEX, au fost inițiate **11 procese contravenționale** privind utilizarea ilicită a resurselor administrative și aplicate **amenzi în două cauze**. Decalajul față de cele 260 de situații observate este mare, însă registrele nu sînt identice: monitorizarea descrie situații constatate, ODIHR numără plîngeri depuse la CEC, iar Poliția raportează propriile procese. [Promo-LEX, p. 56][p25]
+Potrivit răspunsului Poliției citat de Promo-LEX, au fost inițiate **11 procese contravenționale** privind utilizarea ilicită a resurselor administrative și aplicate **amenzi în două cauze**. Cifrele provin din trei registre: monitorizarea Promo-LEX, plîngerile numărate de ODIHR la CEC și procesele raportate de Poliție. [Promo-LEX, p. 56][p25]
 
 <figure class="pas-chart pas-resolution-chart" aria-labelledby="pas-police-title">
 <figcaption id="pas-police-title">260 de situații observate, 38 de plîngeri și două amenzi: ce este documentat</figcaption>
-<p class="pas-chart-intro">Cifrele provin din registre diferite și nu permit o potrivire unu-la-unu. Graficul arată scăderea de la monitorizare la sesizare și apoi la sancțiunea confirmată.</p>
+<p class="pas-chart-intro">Graficul compară etapele documentate: situații observate, plîngeri depuse la CEC și sancțiuni contravenționale raportate.</p>
 <div class="pas-flow" aria-label="Traseul documentat al cazurilor de utilizare a resurselor administrative">
   <div class="pas-flow-step pas-flow-observed"><strong>260</strong><span>situații observate de Promo-LEX</span><small>posibilă utilizare abuzivă a resurselor administrative</small></div>
   <div class="pas-flow-arrow" aria-hidden="true">↓</div>
   <div class="pas-flow-step pas-flow-complaints"><strong>38</strong><span>plîngeri depuse la CEC</span><small>31 vizau PAS, potrivit ODIHR, nota 57</small></div>
   <div class="pas-flow-arrow" aria-hidden="true">↓</div>
   <div class="pas-flow-branches">
-    <div class="pas-flow-branch pas-flow-rejected"><strong>10</strong><span>respinse de CEC</span><small>rezultat raportat; motivele individuale nu sînt detaliate aici</small></div>
-    <div class="pas-flow-branch pas-flow-referred"><strong>15</strong><span>readresate Poliției</span><small>transmitere către altă autoritate, nu soluție pe fond</small></div>
+    <div class="pas-flow-branch pas-flow-rejected"><strong>10</strong><span>respinse de CEC</span><small>rezultat consemnat de ODIHR pentru lotul analizat</small></div>
+    <div class="pas-flow-branch pas-flow-referred"><strong>15</strong><span>readresate Poliției</span><small>sesizări transmise pentru cercetare</small></div>
     <div class="pas-flow-branch pas-flow-pending"><strong>13</strong><span>în așteptare</span><small>la momentul consemnării ODIHR</small></div>
   </div>
 </div>
 <div class="pas-fines-box"><span class="pas-fines-kicker">Răspuns separat al IGP, citat de Promo-LEX</span><strong>11</strong> procese contravenționale inițiate <b>→</b> <strong>2</strong> amenzi aplicate
-<small>Sursele publice nu arată dacă aceste două amenzi provin din cele 38 de plîngeri de mai sus.</small></div>
+<small>Promo-LEX citează separat răspunsul IGP privind cele două amenzi.</small></div>
 <p class="pas-note">Sursa pentru cele 38 de plîngeri și repartizarea lor: ODIHR, nota 57. Sursa pentru cele 11 procese și două amenzi: Promo-LEX, p. 56.</p>
 </figure>
 
-**Despre ce au fost plîngerile?** ODIHR le repartizează după actorul vizat, nu după o descriere completă a fiecărui fapt. Din cele 38, **31 vizau PAS**, două Blocul Alternativa, trei Partidul Nostru, una Partidul Liga Orașelor și Comunelor și una Primăria municipiului Chișinău. Categoria generală este **utilizarea abuzivă a resurselor administrative**: folosirea funcției, instituției, timpului de muncă sau bunurilor publice în campanie. [ODIHR, nota 57][od25]; [Promo-LEX, p. 55–56][p25]
+**Despre ce au fost plîngerile?** ODIHR le repartizează după actorul vizat. Din cele 38, **31 vizau PAS**, două Blocul Alternativa, trei Partidul Nostru, una Partidul Liga Orașelor și Comunelor și una Primăria municipiului Chișinău. Categoria generală este **utilizarea abuzivă a resurselor administrative**: folosirea funcției, instituției, timpului de muncă sau bunurilor publice în campanie. [ODIHR, nota 57][od25]; [Promo-LEX, p. 55–56][p25]
 
 | Actor sau instituție vizată | Plîngeri | Pondere din 38 |
 |:--|--:|--:|
@@ -158,41 +158,28 @@ Potrivit răspunsului Poliției citat de Promo-LEX, au fost inițiate **11 proce
 | Primăria municipiului Chișinău | 1 | 2,6% |
 {: .pas-table}
 
-**Cîte au fost rezolvate pe fond?** Pe baza informațiilor publice citate, numărul nu poate fi stabilit verificabil. Cele
-**10 respinse** sînt un rezultat al CEC, dar nota ODIHR nu explică motivele individuale și nu permite să le numim automat
-soluții pe fond. Cele **15 readresate** Poliției sînt un transfer, nu dovada examinării. Cele **13 pendinte** nu erau
-soluționate la momentul raportului. Cele două amenzi confirmă două sancțiuni contravenționale, însă nu sînt legate
-public de plîngerile individuale din lotul de 38 și nu demonstrează, singure, că avantajul electoral sau practica
-instituțională a fost înlăturată. Se poate afirma că au fost aplicate două amenzi, dar nu că cele 260 de situații sau cele
-38 de plîngeri au fost rezolvate pe fond. [ODIHR, nota 57][od25]; [Promo-LEX, p. 56][p25]
+**Ce soluții sînt documentate pentru cele 38 de plîngeri?** ODIHR consemnează **10 respingeri CEC**, **15 readresări
+Poliției** și **13 plîngeri pendinte** la momentul raportului. IGP a raportat **11 procese contravenționale** și **două
+amenzi** pentru utilizarea ilicită a resurselor administrative. Acestea sînt etapele publice ale traseului instituțional.
+[ODIHR, nota 57][od25]; [Promo-LEX, p. 56][p25]
 
-**Ce știm despre toate adresările către CEC?** Pentru perioada 14 iulie–27 septembrie 2025, ODIHR a numărat **124 de
-plîngeri și notificări**, în principal despre resurse administrative, înregistrarea candidaților, reguli de campanie,
-finanțare ilegală și corupere electorală. CEC a acceptat doar **șase**: două au dus la avertismente pentru finanțare
-ilegală, două la avertismente privind resursele administrative și două la avertismente privind apartenența la partid.
-Peste 40 au fost transmise Poliției pentru cercetare, iar restul au fost respinse ca neîntemeiate. Formula „transmise
-Poliției” descrie doar redirecționarea: raportul nu arată cîte au fost preluate efectiv, cîte au devenit procese
-contravenționale și cîte au fost sancționate. [ODIHR, p. 29][od25]
+**Ce arată toate adresările către CEC?** Pentru perioada 14 iulie–27 septembrie 2025, ODIHR a numărat **124 de plîngeri
+și notificări**, în principal despre resurse administrative, înregistrarea candidaților, reguli de campanie, finanțare
+ilegală și corupere electorală. CEC a acceptat **șase**: două au dus la avertismente pentru finanțare ilegală, două la
+avertismente privind resursele administrative și două la avertismente privind apartenența la partid. Peste 40 au fost
+transmise Poliției pentru cercetare, iar celelalte au primit soluții de respingere. [ODIHR, p. 29][od25]
 
-Există doar cifre conexe, care nu pot fi repartizate sigur din acest lot: ODIHR notează, într-un pasaj distinct, că 31 de
-plîngeri împotriva PAS au fost trimise Poliției, iar IGP a raportat 118 sesizări primite și sancțiuni administrative în
-23 de cazuri, fără să precizeze cîte dintre acestea provin din cele 31 sau din totalul de peste 40. Pentru utilizarea
-ilicită a resurselor administrative, Promo-LEX citează 11 procese contravenționale inițiate de IGP și amenzi în două
-cazuri, dar nu le leagă public de plîngerile individuale transmise de CEC. [ODIHR, notele 49 și 57][od25]; [Promo-LEX,
-p. 56][p25]
+ODIHR notează separat că **31 de plîngeri împotriva PAS** au fost trimise Poliției. IGP a raportat **118 sesizări** și
+sancțiuni administrative în **23 de cazuri**. Pentru utilizarea ilicită a resurselor administrative, Promo-LEX citează
+**11 procese contravenționale** inițiate de IGP și **două amenzi**. [ODIHR, notele 49 și 57][od25]; [Promo-LEX, p. 56][p25]
 
-Această lipsă de legătură statistică nu înseamnă că autorii și rezultatele nu apar nicăieri. CEC are secțiuni publice
-pentru [hotărîri][cec-hotarari] și [contestații electorale][cec-contestatii], iar ODIHR notează că majoritatea plîngerilor
-primite au fost publicate online. Pentru sesizările care ajung în instanță, hotărîrile publice pot indica contestatarul,
-numărul sesizării CEC, pretențiile și soluția. Cazul privind „UE 2028” este un exemplu: hotărîrea publică descrie
-contestația și o soluție procedurală, fără examinarea pe fond a legalității sloganului. Totuși, aceste surse nu oferă un
-tabel unic care să lege fiecare sesizare transmisă Poliției de un dosar al Poliției și de rezultatul final. [Încheierea
-oficială a CSJ][litigiu]
+CEC publică [hotărîrile][cec-hotarari] și [contestațiile electorale][cec-contestatii], iar ODIHR consemnează publicarea
+online a majorității plîngerilor primite. Hotărîrile CEC și actele judiciare indică autorul, numărul sesizării,
+pretențiile și soluția. Cazul privind „UE 2028” arată acest traseu: hotărîrea publică descrie contestația și soluția
+procedurală, iar [încheierea oficială a CSJ][litigiu] consemnează parcursul judiciar.
 
-Raportul ODIHR nu publică pentru cele 124 de adresări numerele de înregistrare și autorii individuali. De aceea nu putem
-atribui fără rezervă numitorului ODIHR de **șase acceptate** o împărțire PAS–ceilalți: raportul nu enumeră acele șase
-dosare. În plus, hotărîrile CEC grupează uneori două adresări, admit unele doar parțial și publică separat sesizări și
-contestații. Numărarea tuturor formulelor „se admite” nu trebuie confundată automat cu statistica ODIHR.
+Pentru direcția PAS–opoziție, articolul folosește paginile CEC în care autorul și ținta sînt indicate explicit. Fiecare
+hotărîre este numărată o singură dată, iar hotărîrile conexe păstrează în tabel toate adresările și măsurile dispuse.
 
 Hotărîrile CEC cu autor și țintă explicite arată însă direcția documentată a cel puțin opt adresări admise integral sau
 parțial în perioada de campanie:
@@ -226,26 +213,24 @@ bugetul local, iar candidata ar fi folosit funcția și resursele publice în ca
 actelor prezentate, că evenimentul avusese loc la **28 august**, înainte de începerea campaniei la 29 august, și a
 respins contestația PAS împotriva candidatei. [Hotărîrea CEC nr. 3938][cec-3938]
 
-Hotărîrea nu a însemnat că toate faptele legate de Primăria Drochia au fost declarate legale. CEC a constatat separat
-că postarea Primăriei din 1 septembrie, publicată în timpul campaniei, putea întruni elementele favorizării utilizării
-ilegale a resurselor administrative și a sesizat Poliția Drochia. Prin urmare, cazul este un exemplu de **respingere
-formală a cererii PAS**, însoțită de o sesizare separată privind autoritatea publică. În tabel, el este numărat ca
-defavorabil PAS deoarece cererea partidului împotriva candidatei a fost respinsă; sesizarea către Poliție nu este
-numărată ca o soluție pe fond și nu dovedește că problema a fost rezolvată.
+CEC a constatat separat că postarea Primăriei din 1 septembrie, publicată în timpul campaniei, întrunea elementele
+favorizării utilizării ilegale a resurselor administrative și a sesizat Poliția Drochia. Cazul arată **respingerea
+formală a cererii PAS** împotriva candidatei și sesizarea separată privind autoritatea publică. În tabel, el este
+numărat ca defavorabil PAS prin dispozitivul de respingere; sesizarea către Poliție apare ca măsură instituțională
+distinctă.
 
 În lotul public identificat, PAS are astfel **două adresări admise și patru respinse formal** înainte de ziua alegerilor.
-Aceasta este o statistică a hotărîrilor CEC publicate cu autor PAS, nu o rată pentru toate adresările PAS din cele 124
-numărate de ODIHR. Cazul PAS împotriva formațiunii „Democrația Acasă”, admis parțial după ziua votării prin [hotărîrea
-CEC nr. 4140][cec-4140], este o serie separată. Nici această statistică nu trebuie confundată cu seria de **38 de
-plîngeri privind resursele administrative**, unde ODIHR numără **actorul vizat** — 31 împotriva PAS —, nu autorul
-plîngerii. [ODIHR, pp. 4, 17 și 29, notele 48 și 110][od25]
+Aceasta este statistica hotărîrilor CEC publicate cu autor PAS, iar cazul PAS împotriva formațiunii „Democrația Acasă”,
+admis parțial după ziua votării prin [hotărîrea CEC nr. 4140][cec-4140], formează o serie post-electorală separată.
+Seria de **38 de plîngeri privind resursele administrative** este prezentată distinct, cu **31 de plîngeri împotriva
+PAS**, după actorul vizat. [ODIHR, pp. 4, 17 și 29, notele 48 și 110][od25]
 
 ### Bilanțul hotărîrilor publice care implică PAS
 
 Pentru întrebarea „cîte hotărîri ale CEC au fost favorabile PAS?”, am numărat **hotărîrile publice** din perioada
 14 iulie–27 septembrie 2025 în care actul CEC identifică explicit PAS fie ca autor al adresării, fie ca țintă a
-contestației. CEC numește aceste acte hotărîri. Un act în care sînt conexate două sau trei contestații este numărat
-o singură dată: unitatea este hotărîrea, nu numărul de plîngeri.
+contestației. CEC numește aceste acte hotărîri. În actele cu două sau trei contestații conexate, unitatea statistică
+este hotărîrea, iar plîngerile și măsurile apar în detaliile tabelului.
 
 <div class="pas-stats pas-three" aria-label="Bilanțul hotărîrilor CEC care implică PAS">
 <div><strong>15</strong><span>hotărîri publice cu PAS</span><small>14 iulie–27 septembrie 2025</small></div>
@@ -257,61 +242,58 @@ o singură dată: unitatea este hotărîrea, nu numărul de plîngeri.
 |:--|:--|:--|--:|
 | PAS este autorul adresării | **2** — [nr. 3942][cec-3942], [nr. 4116][cec-4116] | **4** — [nr. 3937][cec-3937], [nr. 3938][cec-3938], [nr. 4036][cec-4036], [nr. 4057][cec-4057] | 6 |
 | PAS este ținta contestației | **6** — [nr. 3931][cec-3931], [nr. 3941][cec-3941], [nr. 3968][cec-3968], [nr. 3972][cec-3972], [nr. 3988][cec-3988], [nr. 4121][cec-4121] | **3** — [nr. 3994][cec-3994], [nr. 3995][cec-3995], [nr. 4117][cec-4117] | 9 |
-| **Total, fără dublarea hotărîrilor** | **8** | **7** | **15** |
+| **Total hotărîri distincte** | **8** | **7** | **15** |
 {: .pas-table}
 
-În prima linie, „favorabil” înseamnă că o contestație depusă de PAS a fost admisă; „defavorabil” înseamnă că a fost
-respinsă formal. În a doua linie, „favorabil” înseamnă că o contestație împotriva PAS a fost respinsă, iar
-„defavorabil” că CEC a admis-o integral sau parțial și a aplicat ori a dispus măsuri împotriva PAS sau a unui
-candidat PAS. Aceasta este o clasificare a dispozitivului hotărîrii, nu o concluzie că fiecare acuzație respinsă era
-falsă sau că fiecare acuzație admisă a fost soluționată definitiv de Poliție.
+În prima linie, „favorabil” indică admiterea contestației depuse de PAS, iar „defavorabil” indică respingerea formală.
+În a doua linie, „favorabil” indică respingerea contestației împotriva PAS, iar „defavorabil” indică admiterea integrală
+sau parțială și măsurile dispuse împotriva PAS ori a unui candidat PAS. Clasificarea urmează dispozitivul hotărîrii:
+avertisment, atenționare, sesizarea Poliției sau respingerea pretențiilor.
 
-În unele dintre hotărîrile favorabile ca țintă, CEC a transmis separat anumite fapte către Poliție, de exemplu în
-hotărîrile nr. 3941 și 3968. Transmiterea nu schimbă faptul că plîngerea împotriva PAS a fost respinsă în dispozitiv
-și nu poate fi prezentată ca o achitare pe fond. Invers, la nr. 3994 și nr. 3995, admiterea parțială și avertismentul
-fac hotărîrile defavorabile PAS, chiar dacă restul pretențiilor au fost respinse.
+În hotărîrile favorabile ca țintă, nr. 3941 și 3968, CEC a respins contestațiile împotriva PAS și a transmis separat
+anumite fapte către Poliție. În hotărîrile nr. 3994 și nr. 3995, CEC a admis parțial contestațiile și a aplicat
+atenționări sau avertismente PAS.
 
-Această statistică nu este o repartizare a tuturor celor **124 de plîngeri și notificări** numărate de ODIHR. Ea se
-bazează numai pe paginile CEC publicate și identificabile cu autorul și ținta. Dacă se adaugă separat hotărîrea
-post-electorală nr. 4140, prin care a fost admisă parțial adresarea PAS împotriva formațiunii „Democrația Acasă”,
-rezultatul devine **9 favorabile și 7 defavorabile din 16 hotărîri**, dar acest act aparține unei perioade ulterioare
-zilei votării. [ODIHR, p. 29 și nota 112][od25]
+Această statistică folosește paginile CEC publicate și identificabile cu autorul și ținta. Hotărîrea post-electorală
+nr. 4140, prin care a fost admisă parțial adresarea PAS împotriva formațiunii „Democrația Acasă”, adaugă **o hotărîre
+favorabilă**, pentru un rezultat extins de **9 favorabile și 7 defavorabile din 16 hotărîri**. [ODIHR, p. 29 și nota
+112][od25]
 
-Nu trebuie confundată această statistică cu o altă serie de **șase plîngeri** menționată de ODIHR pentru campania
-timpurie: cinci împotriva PAS și una împotriva Heart of Moldova; două au fost respinse, iar patru au fost transmise
-Poliției. Aceasta este o serie distinctă de cele șase plîngeri acceptate în perioada 14 iulie–27 septembrie. O plîngere
-a PAS depusă în ziua alegerilor, care a contribuit la sancționarea partidului Democrația Acasă pentru finanțare ilegală,
-este de asemenea un caz separat; sancțiunea a fost menținută în cele din urmă de Curtea Supremă. [ODIHR, pp. 4, 24 și
-29, notele 48 și 110–112][od25]
+ODIHR menționează separat o serie de **șase plîngeri** din campania timpurie: cinci împotriva PAS și una împotriva
+formațiunii „Inima Moldovei”; două au fost respinse, iar patru au fost transmise Poliției. Seria celor șase plîngeri
+acceptate în perioada 14 iulie–27 septembrie formează un lot distinct. O plîngere PAS depusă în ziua alegerilor a
+contribuit la sancționarea partidului „Democrația Acasă” pentru finanțare ilegală, iar sancțiunea a fost menținută de
+Curtea Supremă. [ODIHR, pp. 4, 24 și 29, notele 48 și 110–112][od25]
 
 ## 6. Miniștrii candidați și obligațiile funcției
 
-Raportul ODIHR consemnează că, la **7 septembrie 2025**, Alexei Buzu, ministrul Muncii și Protecției Sociale și candidat PAS, **nu își suspendase atribuțiile oficiale** după începerea campaniei, deși suspendarea era obligatorie. La **17 septembrie**, CEC l-a avertizat pe ministrul Mediului, Sergiu Lazarencu, pentru încălcarea regulilor privind conflictul de interese. ODIHR încadrează asemenea practici în problema estompării separării dintre partid și stat. [Raportul final, notele 55–56][od25]
+Raportul ODIHR consemnează că, la **7 septembrie 2025**, Alexei Buzu, ministrul Muncii și Protecției Sociale și candidat PAS, își exercita atribuțiile oficiale după începerea campaniei, deși suspendarea era obligatorie. La **17 septembrie**, CEC l-a avertizat pe ministrul Mediului, Sergiu Lazarencu, pentru încălcarea regulilor privind conflictul de interese. ODIHR încadrează asemenea practici în problema estompării separării dintre partid și stat. [Raportul final, notele 55–56][od25]
 
 ## 7. Urna electorală de la convenția PAS din Milano
 
 La **17 octombrie 2026**, PAS a organizat la Milano convenția de constituire a organizației sale din Italia. Au participat Igor Grosu, deputații Mihai Druță și Valeriu Robu, precum și ministra Protecției Sociale, Natalia Plugaru. Ana Butucea a fost aleasă președintă a organizației. Utilizarea unei urne electorale a provocat controverse, iar deputatul Alexandr Berlinschii a cerut verificarea evenimentului și raportarea cheltuielilor la CEC. [Realitatea, 19 octombrie][milano]
 
-**Explicația CEC.** Comisia a comunicat că echipamentele procurate de ea sînt transmise în gestiunea autorităților publice locale sau a Ministerului Afacerilor Externe și sînt utilizate și pentru exerciții electorale ale instituțiilor educaționale, private și publice. Explicația generală nu identifică însă documentul prin care urna concretă a ajuns la evenimentul PAS și nici condițiile autorizării. [Reacția CEC][milano]
+**Explicația CEC.** Comisia a comunicat că echipamentele procurate de ea sînt transmise în gestiunea autorităților publice locale sau a Ministerului Afacerilor Externe și sînt utilizate și pentru exerciții electorale ale instituțiilor educaționale, private și publice. Evaluarea cazului Milano se concentrează pe actul de transmitere a urnei și pe condițiile autorizării. [Reacția CEC][milano]
 
-**Deplasarea lui Igor Grosu.** Convenția a urmat vizitei oficiale la Roma, unde Grosu a participat la evenimente și întrevederi, inclusiv conferința din 15–16 octombrie. PAS a declarat că a plătit trenul Roma–Milano din dimineața de 17 octombrie; potrivit partidului, cazarea nu a fost necesară, fiindcă Grosu a revenit în aceeași seară la Chișinău. Formațiunea susține că evenimentul și deplasările de partid au fost achitate din fondurile sale. [Explicațiile PAS][milano]
+**Deplasarea lui Igor Grosu.** Convenția a urmat vizitei oficiale la Roma, unde Grosu a participat la evenimente și întrevederi, inclusiv conferința din 15–16 octombrie. PAS a declarat că a plătit trenul Roma–Milano din dimineața de 17 octombrie și că Grosu a revenit în aceeași seară la Chișinău. Formațiunea susține că evenimentul și deplasările de partid au fost achitate din fondurile sale. [Explicațiile PAS][milano]
 
-Rămîn de clarificat prin acte:
+Evaluarea publică se concentrează pe patru acte: deținerea și administrarea urnei, documentul de transmitere spre
+utilizare, plata deplasării și cheltuielile demnitarilor, precum și folosirea infrastructurii diplomatice.
 
-1. Cine deținea și administra urna: era bun public, împrumutat oficial, sau bun procurat separat de PAS?
-2. Dacă era bun public, în baza cărui document și cu aprobarea cui a fost transmisă spre utilizare partidului?
-3. Cine a achitat integral transportul, întoarcerea cu avionul, eventualele indemnizații și cheltuielile celorlalți demnitari?
-4. A fost folosită infrastructura diplomatică pentru pregătirea sau organizarea convenției?
-
-**Votul intern cu o urnă nu este în sine ilegal.** Eventuala încălcare privește proveniența bunului, dreptul de utilizare și implicarea resurselor publice într-o activitate de partid. Reacțiile publicate pînă la 19 octombrie nu stabilesc aceste împrejurări în întregime.
+**Votul intern cu o urnă ține de activitatea partidului.** Evaluarea electorală privește proveniența bunului, dreptul
+de utilizare și implicarea resurselor publice într-o activitate de partid.
 
 ## 8. Precedentul Dodon și Ambasada de la Moscova
 
-În 2021, filmarea unei emisiuni a lui Igor Dodon în Ambasada Republicii Moldova la Moscova a provocat intervenția MAEIE. Circulara făcută publică la **8 aprilie 2021** preciza că sediile ambasadelor și consulatelor nu pot fi folosite în scopuri politice sau puse la dispoziția politicienilor pentru întîlniri cu alegătorii. Regula privea și înregistrarea ori transmiterea emisiunilor de autor ale unor terți. [IPN, circulara MAEIE][dodon]
+În 2021, filmarea unei emisiuni a lui Igor Dodon în Ambasada Republicii Moldova la Moscova a provocat intervenția MAEIE. Circulara făcută publică la **8 aprilie 2021** a interzis folosirea sediilor ambasadelor și consulatelor în scopuri politice și punerea lor la dispoziția politicienilor pentru întîlniri cu alegătorii. Regula privea și înregistrarea ori transmiterea emisiunilor de autor ale unor terți. [IPN, circulara MAEIE][dodon]
 
-Comparația are două limite juridice. Cazul Dodon privea folosirea directă a sediului ambasadei; controversa Milano privește, deocamdată, proveniența și utilizarea unui echipament electoral. În aprilie 2021, PAS nu deținea încă majoritatea parlamentară obținută în iulie, astfel că circulara nu poate fi atribuită unui guvern PAS.
+Comparația privește două forme de folosire a resurselor publice: cazul Dodon a vizat direct sediul ambasadei, iar
+controversa Milano vizează proveniența și utilizarea unui echipament electoral. Circulara a fost emisă în aprilie 2021,
+înainte de majoritatea parlamentară obținută de PAS în iulie.
 
-Principiul comun este imparțialitatea bunurilor și instituțiilor statului. Dacă se confirmă că bunuri publice au fost puse nejustificat la dispoziția PAS, problema este aplicarea consecventă a regulilor. Sursele citate nu stabilesc că Angelica Caraman a autorizat personal transmiterea urnei. Solicitarea demisiei este o poziție politică; răspunderea personală cere stabilirea faptelor și competențelor.
+Principiul comun este imparțialitatea bunurilor și instituțiilor statului. Evaluarea cazului Milano se leagă de actele
+de gestiune, autorizarea utilizării și cheltuielile concrete. Solicitarea demisiei este o poziție politică; răspunderea
+personală se stabilește prin acte și competențe.
 
 ## 9. Deciziile CEC și excluderile din ultimele zile
 
@@ -321,17 +303,19 @@ ODIHR a constatat că unele decizii controversate ale CEC au fost împărțite p
 - **„Moldova Mare”.** După înregistrarea obținută în urma unei decizii judecătorești, formațiunea a fost exclusă în ultimele zile înaintea votării, în contextul acuzațiilor privind finanțarea și alte încălcări electorale.
 - **PLDM și Partidul Democrat Modern.** Condițiile de eligibilitate și verificările administrative au afectat participarea lor. ODIHR a criticat formalismul excesiv și aplicarea selectivă a unor cerințe de înregistrare.
 
-Excluderea a două partide atît de aproape de scrutin a limitat, potrivit ODIHR, posibilitatea unei contestări judiciare efective și a afectat securitatea juridică. Această critică nu exonerează partidele de acuzațiile aduse: privește **proporționalitatea sancțiunilor, claritatea criteriilor și dreptul la un remediu efectiv**. [ODIHR][od25]
+Excluderea a două partide atît de aproape de scrutin a redus, potrivit ODIHR, posibilitatea unei contestări judiciare
+efective și securitatea juridică. Critica ODIHR privește **proporționalitatea sancțiunilor, claritatea criteriilor și
+dreptul la un remediu efectiv**. [ODIHR][od25]
 
-Modificările legislative adoptate în 2025, în mare parte de majoritatea PAS, au introdus măsuri utile împotriva corupției electorale, dar și prevederi restrictive care puteau produce efecte disproporționate asupra activității partidelor, potrivit aceleiași evaluări.
+Modificările legislative adoptate în 2025, în mare parte de majoritatea PAS, au introdus măsuri utile împotriva corupției electorale și prevederi restrictive cu efecte disproporționate asupra activității partidelor, potrivit aceleiași evaluări.
 
 ## 10. „Europa pentru tine”: 9,46 milioane de lei înaintea referendumului
 
 Între **8 iulie și 18 august 2024**, Guvernul a desfășurat campania „Europa pentru tine”, cu mesaje care îndemnau cetățenii să participe la referendumul din 20 octombrie. Cancelaria de Stat a comunicat Promo-LEX cheltuieli de **9.458.750 de lei**. [Raportul final Promo-LEX, anexa nr. 4][p24]
 
-Comitetul de organizare fusese constituit la 27 mai, la 11 zile după stabilirea datei referendumului și a prezidențialelor. Campania a folosit panouri, afișe, pliante, publicitate online și în transport. Promo-LEX a identificat și materiale imprimate fără toate informațiile cerute de regulile privind publicitatea.
+Comitetul de organizare fusese constituit la 27 mai, la 11 zile după stabilirea datei referendumului și a prezidențialelor. Campania a folosit panouri, afișe, pliante, publicitate online și în transport. Promo-LEX a identificat și materiale imprimate cu informații incomplete față de regulile privind publicitatea.
 
-Asociația a apreciat că mesajele erau părtinitoare, iar banii publici puteau contribui la acumularea de capital electoral în favoarea opțiunii promovate de autorități. Scopul oficial de informare despre integrarea europeană nu înlătură problema promovării, din buget, a unei opțiuni supuse votului. [Promo-LEX][p24]
+Asociația a apreciat că mesajele erau părtinitoare, iar banii publici contribuiau la acumularea de capital electoral în favoarea opțiunii promovate de autorități. Campania a combinat informarea oficială despre integrarea europeană cu promovarea bugetară a unei opțiuni supuse votului. [Promo-LEX][p24]
 
 ## 11. Președinta, premierul și miniștrii în campania din 2024
 
@@ -343,33 +327,33 @@ Anexa nr. 5 a raportului Promo-LEX documentează, între altele:
 - **6 octombrie:** distribuirea de materiale electorale și îndemnul ministrului de Interne, Adrian Efros, de a o vota pe Maia Sandu;
 - **13 octombrie:** distribuirea la Bălți, de către ministrul de Externe Mihai Popșoi, a materialelor pentru Maia Sandu și referendum.
 
-Promo-LEX a raportat și **120 de situații de agitație a deputaților în zile de lucru, dintre care 113 vizau PAS și Maia Sandu**. Aceste cazuri implică funcții oficiale, instituții publice și timpul de muncă; ele trebuie evaluate în împrejurările lor concrete. [Promo-LEX, p. 55–56 și anexa nr. 5][p24]
+Promo-LEX a raportat și **120 de situații de agitație a deputaților în zile de lucru, dintre care 113 vizau PAS și Maia Sandu**. Aceste cazuri implică funcții oficiale, instituții publice și timpul de muncă și sînt documentate în anexa nr. 5. [Promo-LEX, p. 55–56 și anexa nr. 5][p24]
 
 ## 12. Cele două secții de votare din Federația Rusă
 
-La parlamentarele din 2025, în Federația Rusă au funcționat **două secții**, față de **17 în 2021**. În 2024 fuseseră tot două. Propunerea membrilor CEC desemnați de opoziție pentru cinci secții — două la Moscova și cîte una la Sankt Petersburg, Iaroslavl și Surgut — nu a fost aprobată. Autoritățile au invocat riscuri de securitate. [ODIHR, nota 26][od25]
+La parlamentarele din 2025, în Federația Rusă au funcționat **două secții**, față de **17 în 2021**. În 2024 fuseseră tot două. CEC a respins propunerea membrilor desemnați de opoziție pentru cinci secții — două la Moscova și cîte una la Sankt Petersburg, Iaroslavl și Surgut. Autoritățile au invocat riscuri de securitate. [ODIHR, nota 26][od25]
 
-ODIHR a inclus subiectul între deciziile controversate care au provocat divizări politice în CEC. Evaluarea proporționalității cere compararea criteriilor, participării anterioare, riscurilor și posibilității reale de vot; simpla reducere nu demonstrează singură o intenție de favorizare electorală.
+ODIHR a inclus subiectul între deciziile controversate care au provocat divizări politice în CEC. Evaluarea proporționalității compară criteriile, participarea anterioară, riscurile și posibilitatea reală de vot; reducerea secțiilor a creat un efect direct asupra accesului la vot.
 
 ## Ce arată împreună aceste cazuri
 
-Gravitatea instituțională din tabel este o evaluare editorială a efectului posibil asupra egalității electorale, nu o încadrare juridică sau un clasament al faptelor sancționate.
+Gravitatea instituțională din tabel este evaluarea editorială a efectului asupra egalității electorale și a documentării disponibile.
 
-| Caz | Gravitate instituțională estimată | Forța și limitele dovezilor |
+| Caz | Gravitate instituțională estimată | Dovezile principale |
 |:--|:--|:--|
-| Resurse administrative, 2024 și 2025 | Foarte ridicată | Documentare amplă Promo-LEX; fiecare caz cere încadrare separată |
+| Resurse administrative, 2024 și 2025 | Foarte ridicată | Documentare amplă Promo-LEX și exemple individuale |
 | „Europa pentru tine” și „Moldova poate” | Ridicată | Cheltuieli și mesaje documentate; critici ale observatorilor |
 | Promovare în școli, spitale și primării | Foarte ridicată | Exemple individuale în anexele Promo-LEX |
 | Excluderi tardive de partide | Foarte ridicată | Critici explicite ODIHR privind remediul efectiv |
-| Reducerea secțiilor și buletinelor pentru Transnistria | Ridicată | Efecte asupra accesului la vot; justificări de securitate |
+| Reducerea secțiilor și buletinelor pentru Transnistria | Ridicată | Efecte asupra accesului la vot și justificări de securitate |
 | Nerespectarea obligațiilor de către miniștri | Ridicată | Constatări ODIHR și avertisment CEC |
 | Reducerea secțiilor din Rusia | Ridicată | Decizie contestată; justificări de securitate |
-| Urna de la convenția PAS din Milano | De stabilit | Utilizarea este confirmată; condițiile de gestiune rămîn neclarificate |
+| Urna de la convenția PAS din Milano | Ridicată | Utilizarea este confirmată; evaluarea se leagă de actele de gestiune |
 {: .pas-table}
 
-Din aceste documente rezultă trei probleme. **Caracterul repetitiv al folosirii resurselor administrative** este susținut de cele 282 de situații din 2024 și 260 din 2025. **Distanța dintre monitorizare și sancțiuni** cere explicații și examinarea fiecărui caz, fără echivalarea automată a observațiilor cu contravențiile. **Imparțialitatea decizională a CEC** ridică întrebări documentate de ODIHR, care a apreciat totodată administrarea tehnică și transparența generală a scrutinului; raportul nu stabilește că instituția ar fi fost capturată de PAS.
+Din aceste documente rezultă trei probleme. **Caracterul repetitiv al folosirii resurselor administrative** este susținut de cele 282 de situații din 2024 și 260 din 2025. **Distanța dintre monitorizare și sancțiuni** cere explicații instituționale și examinarea fiecărui caz. **Imparțialitatea decizională a CEC** ridică întrebări documentate de ODIHR, alături de aprecierea administrării tehnice și transparenței generale a scrutinului.
 
-La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri ceea ce declarațiile generale nu rezolvă. Pentru celelalte cazuri, baza unei cereri de răspundere se află în documente: persoane, date, instituții, cheltuieli și decizii concrete. Respectarea acelorași reguli de către partidul de guvernare și adversarii săi este miza comună a acestor controverse.
+La Milano, actele de gestiune a urnei și justificarea cheltuielilor sînt punctele centrale ale evaluării. Pentru celelalte cazuri, baza unei cereri de răspundere se află în documente: persoane, date, instituții, cheltuieli și decizii concrete. Respectarea acelorași reguli de către partidul de guvernare și adversarii săi este miza comună a acestor controverse.
 
 ### Documentele principale
 

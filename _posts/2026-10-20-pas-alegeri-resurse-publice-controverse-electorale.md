@@ -289,6 +289,25 @@ acceptate în perioada 14 iulie–27 septembrie formează un lot distinct. O pl�
 contribuit la sancționarea partidului „Democrația Acasă” pentru finanțare ilegală, iar sancțiunea a fost menținută de
 Curtea Supremă. [ODIHR, pp. 4, 24 și 29, notele 48 și 110–112][od25]
 
+### Cine a sesizat CEC și ce a rămas după alegeri
+
+Pentru comparație, tabelul numără **adresările nominalizate în hotărîrile CEC** în care autorul și ținta pot fi identificați, nu cele 260 de situații observate de Promo-LEX. Numărul ODIHR se referă la lotul distinct de 38 de plîngeri privind resursele administrative. În coloanele CEC, forma este „împotriva actorului / depuse de actor”, iar la „acceptate” ordinea este aceeași. Adresările conexate sînt numărate separat; sesizarea Poliției nu este considerată automat o sancțiune sau o confirmare a faptei.
+
+| Actor | ODIHR: plîngeri din lotul de 38 | CEC: împotriva / depuse de actor | CEC: acceptate împotriva / depuse de actor | Măsuri și efect electoral documentat |
+|:--|:--|:--|:--|:--|
+| **PAS** | **31** | **15 / 7** — șase înaintea votului și una post-electorală | **4 / 3** — ultima este hotărîrea nr. 4140, după alegeri | Două avertismente și o atenționare; două sesizări directe la IGP și încă două privind autorități care ar fi favorizat PAS. PAS a rămas pe listă și a obținut **55 de mandate**. În acest lot nu apare radierea unui candidat sau tăierea finanțării. Rezultatul ulterior al sesizărilor directe nu este publicat în materialele verificate. [CEC nr. 3994][cec-3994], [CEC nr. 3995][cec-3995], [CEC nr. 4117][cec-4117], [CEC nr. 4140][cec-4140] |
+| **Blocul Patriotic** | Nu este separat de ODIHR în lotul de 38 | **3 / 4** — plus o sesizare comună în dosarul nr. 4119 | **2 / 0** | Avertisment pentru finanțare, control financiar complex și sesizarea Ministerului Justiției. După limitarea activității formațiunii „Inima Moldovei”, au fost scoși **30 de candidați** din lista blocului, dintre care 26 ai acestei formațiuni și patru pentru cota de gen. Blocul a rămas în buletin și a obținut **26 de mandate**. Nu apare o sesizare CEC distinctă la Poliție pentru aceste adresări; rezultatul controlului financiar nu este prezentat aici. [CEC nr. 3993][cec-3993], [CEC nr. 3944][cec-3944], [CEC nr. 4121][cec-4121], [ODIHR][od25] |
+| **Blocul „ALTERNATIVA”** | **2** | **2 / 7** — plus o sesizare comună în dosarul nr. 4119 | **2 / 4** | Ion Ceban a primit avertisment, iar blocul a primit un avertisment separat; au fost trimise două sesizări la Poliție. Blocul a rămas pe listă și a obținut **8 mandate**. Rezultatul final al sesizărilor Poliției nu este identificat în hotărîrile publice CEC sau în raportul ODIHR. [CEC nr. 3942][cec-3942], [CEC nr. 4116][cec-4116] |
+| **Partidul Nostru și candidata Nina Cereteu** | **3** | **3 / 4** — a patra a vizat un act al consiliului electoral | **0 / 0** | Cele trei plîngeri PAS au fost respinse formal; într-un caz CEC a atenționat-o pe Cereteu, iar într-altul a sesizat Poliția Drochia cu privire la conduita primăriei. Partidul a rămas în cursă și a obținut **6 mandate**. Rezultatul sesizării nu este publicat în materialele analizate. [CEC nr. 3938][cec-3938], [CEC nr. 3972][cec-3972], [CEC nr. 4007][cec-4007], [CEC nr. 4036][cec-4036] |
+| **„MOLDOVA MARE”** | — | **1 plîngere de partid + 11 comunicări instituționale / 0** | **1 / 0** | CEC a anulat înregistrarea concurentului și lista de candidați; contestația a fost respinsă de instanțe, iar formațiunea nu a participat la distribuirea mandatelor. Efectul electoral este direct: **0 mandate**. Sesizările organelor de drept au stat la baza dosarului, dar rezultatul penal separat nu este indicat aici. [CEC nr. 4119][cec-4119], [ODIHR][od25] |
+| **„Democrația Acasă”** | — | **1 contestație PAS admisă + 1 contestație AUR retrasă + 2 sesizări INI / 0** | **1 / 0** | Avertisment și lipsirea de alocații de la buget pentru 12 luni prin hotărîrea CEC nr. 4140; ODIHR consemnează două sancțiuni de acest tip, în total doi ani, menținute după calea de atac. Formațiunea a rămas pe buletin și a obținut **6 mandate**. IGP a raportat și amenzi aplicate lui Vasile Costiuc în alte cauze, dar suprapunerea cu sesizările CEC nu este stabilită. [CEC nr. 4140][cec-4140], [ODIHR][od25] |
+| **BUN și PL** | — | **cîte o adresare împotriva fiecăruia / 0** | **0 / 0** | În dosarul analizat, contestațiile Blocului Patriotic au fost respinse; nu rezultă avertisment, excludere sau tăiere de finanțare. Niciuna dintre formațiuni nu a obținut mandat. [CEC nr. 4121][cec-4121] |
+{: .pas-table}
+
+Această comparație arată diferența dintre trei niveluri: sesizarea, măsura CEC și rezultatul ulterior al Poliției. Pentru PAS și „ALTERNATIVA”, hotărîrile publice confirmă avertismentele și trimiterile la IGP, dar nu confirmă o sancțiune polițienească ulterioară. Pentru „MOLDOVA MARE”, efectul electoral al anulării este clar; pentru „Democrația Acasă”, efectul financiar este consemnat, în timp ce mandatele au rămas valabile. Cifrele 31 și 15 nu se adună: prima este statistica ODIHR pentru un lot de plîngeri, iar a doua este numărul adresărilor nominalizate în hotărîrile CEC folosite în comparație.
+
+Partidul Național Moldovenesc și ALDE apar ca autori ai celor două adresări admise parțial în dosarul privind finanțarea „Inimii Moldovei” și Blocului Patriotic. Efectul acelor adresări a fost avertismentul și controlul financiar asupra blocului, nu o sancțiune aplicată autorilor.
+
 ## 6. Miniștrii candidați și obligațiile funcției
 
 Raportul ODIHR consemnează că, la **7 septembrie 2025**, Alexei Buzu, ministrul Muncii și Protecției Sociale și candidat PAS, își exercita atribuțiile oficiale după începerea campaniei, deși suspendarea era obligatorie. La **17 septembrie**, CEC l-a avertizat pe ministrul Mediului, Sergiu Lazarencu, pentru încălcarea regulilor privind conflictul de interese. ODIHR încadrează asemenea practici în problema estompării separării dintre partid și stat. [Raportul final, notele 55–56][od25]
@@ -406,9 +425,11 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor sînt punct
 [cec-3931]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap8-din-3-2751_115079.html
 [cec-3942]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap11-din-4-2751_115100.html
 [cec-3941]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap10-din-3-2751_115099.html
+[cec-3944]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap17-din-6-2751_115110.html
 [cec-3968]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap25-din-9-2751_115164.html
 [cec-3972]: https://a.cec.md/ro/cu-privire-la-contestatiile-nrcec-10ap26-din-9-2751_115189.html
 [cec-3988]: https://a.cec.md/ro/cu-privire-la-contestatiile-nrcec-10ap31-din-11-2751_115196.html
+[cec-4007]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap44-din-16-2751_115262.html
 [cec-3993]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap6-din-2-2751_115216.html
 [cec-3994]: https://a.cec.md/ro/cu-privire-la-contestatia-nrcec-10ap36-din-12-2751_115217.html
 [cec-3995]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap43-si-nr-2751_115218.html
@@ -416,6 +437,7 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor sînt punct
 [cec-4057]: https://a.cec.md/ro/cu-privire-la-sesizarea-nr-cec-723194-din-18-2751_115333.html
 [cec-4116]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap76-din-25-2751_115401.html
 [cec-4117]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap77-din-25-2751_115416.html
+[cec-4119]: https://a.cec.md/ro/cu-privire-la-sesizarile-nr-cec-723379-din-22-2751_115400.html
 [cec-4121]: https://a.cec.md/ro/cu-privire-la-contestatiile-nr-cec-10ap73-din-23-2751_115427.html
 [cec-4140]: https://a.cec.md/ro/cu-privire-la-contestatia-nr-cec-10ap91-din-28-2751_115468.html
 [litigiu]: https://jurisprudenta.csj.md/search_col_civil.php?id=80806

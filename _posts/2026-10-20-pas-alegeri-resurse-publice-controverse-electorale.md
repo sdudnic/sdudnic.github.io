@@ -124,21 +124,58 @@ Anexa nr. 5 oferă exemple concrete:
 
 Acestea sînt situații consemnate de monitori, cu date și împrejurări individuale. [Promo-LEX, anexa nr. 5][p25]
 
-Potrivit răspunsului Poliției citat de Promo-LEX, au fost inițiate **11 procese contravenționale** privind utilizarea ilicită a resurselor administrative și aplicate **amenzi în două cauze**. Decalajul față de cele 260 de situații observate este mare, însă categoriile nu sînt identice: definiția folosită în monitorizare este mai largă, iar fiecare sancțiune cere verificarea elementelor prevăzute de lege. [Promo-LEX, p. 56][p25]
+Potrivit răspunsului Poliției citat de Promo-LEX, au fost inițiate **11 procese contravenționale** privind utilizarea ilicită a resurselor administrative și aplicate **amenzi în două cauze**. Decalajul față de cele 260 de situații observate este mare, însă registrele nu sînt identice: monitorizarea descrie situații constatate, ODIHR numără plîngeri depuse la CEC, iar Poliția raportează propriile procese. [Promo-LEX, p. 56][p25]
 
-<figure class="pas-chart" aria-labelledby="pas-police-title">
-<figcaption id="pas-police-title">Ce s-a întîmplat cu cele 38 de plîngeri la CEC</figcaption>
-<div class="pas-donut-layout"><svg class="pas-donut" viewBox="0 0 320 320" width="320" height="320" role="img" aria-labelledby="police-title police-desc"><title id="police-title">plîngeri la CEC</title><desc id="police-desc">38; valorile segmentelor: 15, 10, 13.</desc>
-<defs><pattern id="police-hatch" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(45)"><rect width="8" height="8" fill="#356d77"/><path d="M0 0V8" stroke="#fff" stroke-width="3"/></pattern></defs>
-<path d="M160.000,28.000 A132,132 0 0 1 241.076,264.167 L212.208,227.077 A85,85 0 0 0 160.000,75.000 Z" fill="url(#police-hatch)" stroke="var(--surface,#fff)" stroke-width="2"/>
-<path d="M241.076,264.167 A132,132 0 0 1 49.494,232.197 L88.841,206.491 A85,85 0 0 0 212.208,227.077 Z" fill="#94643d" stroke="var(--surface,#fff)" stroke-width="2"/>
-<path d="M49.494,232.197 A132,132 0 0 1 160.000,28.000 L160.000,75.000 A85,85 0 0 0 88.841,206.491 Z" fill="#a5aaa9" stroke="var(--surface,#fff)" stroke-width="2"/>
-<text x="160" y="156" text-anchor="middle" fill="currentColor" font-size="42" font-weight="700">38</text><text x="160" y="182" text-anchor="middle" fill="currentColor" font-size="14">plîngeri la CEC</text></svg>
-<ul class="pas-donut-legend"><li><i class="pas-hatch"></i><span><b>15 · 39,5%</b> transmise Poliției</span></li><li><i style="background:#94643d"></i><span><b>10 · 26,3%</b> respinse de CEC</span></li><li><i style="background:#a5aaa9"></i><span><b>13 · 34,2%</b> în așteptare la momentul consemnării</span></li></ul></div>
-<p class="pas-note">Hașura indică transmiterea către Poliție, nu confirmarea examinării pe fond sau a sancționării. Sursa: ODIHR, nota 57. Dintre cele 38 de plîngeri, 31 vizau PAS.</p>
+<figure class="pas-chart pas-resolution-chart" aria-labelledby="pas-police-title">
+<figcaption id="pas-police-title">260 de situații observate, 38 de plîngeri și două amenzi: ce este documentat</figcaption>
+<p class="pas-chart-intro">Cifrele provin din registre diferite și nu permit o potrivire unu-la-unu. Graficul arată scăderea de la monitorizare la sesizare și apoi la sancțiunea confirmată.</p>
+<div class="pas-flow" aria-label="Traseul documentat al cazurilor de utilizare a resurselor administrative">
+  <div class="pas-flow-step pas-flow-observed"><strong>260</strong><span>situații observate de Promo-LEX</span><small>posibilă utilizare abuzivă a resurselor administrative</small></div>
+  <div class="pas-flow-arrow" aria-hidden="true">↓</div>
+  <div class="pas-flow-step pas-flow-complaints"><strong>38</strong><span>plîngeri depuse la CEC</span><small>31 vizau PAS, potrivit ODIHR, nota 57</small></div>
+  <div class="pas-flow-arrow" aria-hidden="true">↓</div>
+  <div class="pas-flow-branches">
+    <div class="pas-flow-branch pas-flow-rejected"><strong>10</strong><span>respinse de CEC</span><small>rezultat raportat; motivele individuale nu sînt detaliate aici</small></div>
+    <div class="pas-flow-branch pas-flow-referred"><strong>15</strong><span>readresate Poliției</span><small>transmitere către altă autoritate, nu soluție pe fond</small></div>
+    <div class="pas-flow-branch pas-flow-pending"><strong>13</strong><span>în așteptare</span><small>la momentul consemnării ODIHR</small></div>
+  </div>
+</div>
+<div class="pas-fines-box"><span class="pas-fines-kicker">Răspuns separat al IGP, citat de Promo-LEX</span><strong>11</strong> procese contravenționale inițiate <b>→</b> <strong>2</strong> amenzi aplicate
+<small>Sursele publice nu arată dacă aceste două amenzi provin din cele 38 de plîngeri de mai sus.</small></div>
+<p class="pas-note">Sursa pentru cele 38 de plîngeri și repartizarea lor: ODIHR, nota 57. Sursa pentru cele 11 procese și două amenzi: Promo-LEX, p. 56.</p>
 </figure>
 
-**Examinarea efectivă de către Poliție:** separat, răspunsul IGP citat de Promo-LEX confirmă **11 procese contravenționale inițiate și amenzi în două cauze**. Sursele nu permit identificarea suprapunerii dintre aceste procese și cele 15 plîngeri transmise de CEC. Prin urmare, ponderea plîngerilor efectiv procesate de Poliție din întregul lot de 38 nu poate fi calculată verificabil. Nici cele 260 de situații observate nu pot fi folosite drept număr total de plîngeri. [ODIHR, nota 57][od25]; [Promo-LEX, p. 56][p25]
+**Despre ce au fost plîngerile?** ODIHR le repartizează după actorul vizat, nu după o descriere completă a fiecărui fapt. Din cele 38, **31 vizau PAS**, două Blocul Alternativa, trei Partidul Nostru, una Partidul Liga Orașelor și Comunelor și una Primăria municipiului Chișinău. Categoria generală este **utilizarea abuzivă a resurselor administrative**: folosirea funcției, instituției, timpului de muncă sau bunurilor publice în campanie. [ODIHR, nota 57][od25]; [Promo-LEX, p. 55–56][p25]
+
+| Actor sau instituție vizată | Plîngeri | Pondere din 38 |
+|:--|--:|--:|
+| PAS | 31 | 81,6% |
+| Blocul Alternativa | 2 | 5,3% |
+| Partidul Nostru | 3 | 7,9% |
+| Partidul Liga Orașelor și Comunelor | 1 | 2,6% |
+| Primăria municipiului Chișinău | 1 | 2,6% |
+{: .pas-table}
+
+**Cîte au fost rezolvate pe fond?** Pe baza informațiilor publice citate, numărul nu poate fi stabilit verificabil. Cele
+**10 respinse** sînt un rezultat al CEC, dar nota ODIHR nu explică motivele individuale și nu permite să le numim automat
+soluții pe fond. Cele **15 readresate** Poliției sînt un transfer, nu dovada examinării. Cele **13 pendinte** nu erau
+soluționate la momentul raportului. Cele două amenzi confirmă două sancțiuni contravenționale, însă nu sînt legate
+public de plîngerile individuale din lotul de 38 și nu demonstrează, singure, că avantajul electoral sau practica
+instituțională a fost înlăturată. Se poate afirma că au fost aplicate două amenzi, dar nu că cele 260 de situații sau cele
+38 de plîngeri au fost rezolvate pe fond. [ODIHR, nota 57][od25]; [Promo-LEX, p. 56][p25]
+
+**Ce știm despre toate adresările către CEC?** Pentru perioada 14 iulie–27 septembrie 2025, ODIHR a numărat **124 de
+plîngeri și notificări**, în principal despre resurse administrative, înregistrarea candidaților, reguli de campanie,
+finanțare ilegală și corupere electorală. CEC a acceptat doar **șase**: două au dus la avertismente pentru finanțare
+ilegală, două la avertismente privind resursele administrative și două la avertismente privind apartenența la partid.
+Peste 40 au fost transmise Poliției, iar restul au fost respinse ca neîntemeiate. [ODIHR, p. 29][od25]
+
+Raportul ODIHR nu publică, pentru aceste 124 de adresări, tabelul cu inițiatorul fiecăreia. De aceea nu se poate calcula
+corect cîte adresări ale PAS au fost acceptate și cîte au venit de la opoziție sau de la societatea civilă. Există însă
+cazuri individuale documentate: o plîngere a PAS, depusă în ziua alegerilor, a stat la baza sancționării partidului
+Democrația Acasă pentru finanțare ilegală; sancțiunea a fost menținută în cele din urmă de Curtea Supremă. Separat,
+CEC a emis avertismente pentru un ministru PAS și pentru candidatul Alternativa Ion Ceban, dar persoana sancționată nu
+este același lucru cu autorul plîngerii. [ODIHR, pp. 4 și 29, notele 110–112][od25]
 
 ## 6. Miniștrii candidați și obligațiile funcției
 
@@ -263,6 +300,23 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 .pas-three{grid-template-columns:repeat(3,minmax(0,1fr))}
 .post-content .pas-chart{clear:both;margin:1.5rem 0;padding:1rem!important;border:1px solid var(--line,#ddd)!important;border-radius:5px}
 .pas-chart figcaption{font-weight:600;text-align:left;font-style:normal;margin-bottom:1rem}
+.pas-chart-intro{margin:.2rem 0 1rem;font-size:.9rem;line-height:1.5;color:var(--muted,#666)}
+.pas-flow{max-width:850px;margin:0 auto;text-align:center}
+.pas-flow-step{padding:.8rem 1rem;border:1px solid var(--line,#ddd);border-left:.45rem solid #356d77;border-radius:4px;background:var(--surface,#fff);text-align:left}
+.pas-flow-step strong{display:block;font-size:2rem;line-height:1.1;color:var(--ink,#203e49)}
+.pas-flow-step span{display:block;margin-top:.2rem;font-weight:600;line-height:1.35}
+.pas-flow-step small,.pas-flow-branch small{display:block;margin-top:.3rem;font-size:.8rem;line-height:1.4;color:var(--muted,#666)}
+.pas-flow-observed{border-left-color:#356d77}.pas-flow-complaints{border-left-color:#203e49}
+.pas-flow-arrow{height:1.8rem;line-height:1.8rem;font-size:1.5rem;color:var(--muted,#666)}
+.pas-flow-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;text-align:left}
+.pas-flow-branch{min-width:0;padding:.75rem;border:1px solid var(--line,#ddd);border-top:.35rem solid #a5aaa9;border-radius:4px}
+.pas-flow-branch strong{display:block;font-size:1.65rem;line-height:1.1;color:var(--ink,#203e49)}
+.pas-flow-branch span{display:block;margin-top:.2rem;font-weight:600;line-height:1.35}
+.pas-flow-rejected{border-top-color:#94643d}.pas-flow-referred{border-top-color:#356d77}.pas-flow-pending{border-top-color:#a5aaa9}
+.pas-fines-box{margin-top:1rem;padding:.85rem 1rem;border-left:.45rem solid #ffdb00;background:#fff8d7;line-height:1.55}
+.pas-fines-box strong{font-size:1.6rem;color:var(--ink,#203e49)}.pas-fines-box b{padding:0 .35rem;color:var(--muted,#666)}
+.pas-fines-kicker{display:block;margin-bottom:.2rem;font-size:.78rem;font-weight:600;color:var(--muted,#666)}
+.pas-fines-box small{display:block;margin-top:.35rem;font-size:.8rem;line-height:1.4;color:var(--muted,#666)}
 .pas-bar{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 2.2rem;gap:.6rem;align-items:center;margin:.8rem 0;font-size:.9rem;line-height:1.4}
 .pas-bar>div{height:1.1rem;background:#e5e9e6}.pas-bar i{display:block;height:100%;background:#356d77}.pas-bar b{text-align:right}
 .pas-donut-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:1rem}.pas-donut{display:block;width:100%;max-width:320px;height:auto;margin:auto;color:var(--ink,#203e49)}.pas-donut-legend{list-style:none!important;margin:0!important;padding:0!important}.pas-donut-legend li{display:flex;gap:.6rem;align-items:center;margin:.8rem 0;line-height:1.5}.pas-donut-legend i{display:block;width:1.1rem;height:1.1rem;flex-shrink:0;border-radius:2px}.pas-donut-legend b{display:block}.pas-hatch{background:repeating-linear-gradient(45deg,#356d77 0px,#356d77 4px,#fff 4px,#fff 6px)}
@@ -271,5 +325,5 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 .post-content table.pas-table{display:table;table-layout:fixed;width:100%;max-width:100%;white-space:normal;overflow:visible;font-size:.88rem;line-height:1.45}
 .post-content table.pas-table th,.post-content table.pas-table td{white-space:normal;overflow-wrap:anywhere;padding:.6rem .5rem;vertical-align:top}
 .post-content table.pas-table th:first-child,.post-content table.pas-table td:first-child{width:46%}
-@media(max-width:600px){.pas-donut-layout{grid-template-columns:1fr}.pas-donut{max-width:260px}.pas-donut-legend{font-size:.9rem}.pas-three{grid-template-columns:1fr}.pas-stats strong{font-size:1.4rem}.pas-stats>div{padding:.75rem}.pas-bar{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) 1.8rem;font-size:.8rem}.post-content table.pas-table{font-size:.78rem}.post-content table.pas-table th,.post-content table.pas-table td{padding:.45rem .3rem}}
+@media(max-width:600px){.pas-donut-layout{grid-template-columns:1fr}.pas-donut{max-width:260px}.pas-donut-legend{font-size:.9rem}.pas-three{grid-template-columns:1fr}.pas-stats strong{font-size:1.4rem}.pas-stats>div{padding:.75rem}.pas-bar{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) 1.8rem;font-size:.8rem}.pas-flow-branches{grid-template-columns:1fr}.pas-flow-step strong{font-size:1.75rem}.post-content table.pas-table{font-size:.78rem}.post-content table.pas-table th,.post-content table.pas-table td{padding:.45rem .3rem}}
 </style>

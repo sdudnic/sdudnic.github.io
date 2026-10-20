@@ -168,7 +168,16 @@ instituțională a fost înlăturată. Se poate afirma că au fost aplicate dou�
 plîngeri și notificări**, în principal despre resurse administrative, înregistrarea candidaților, reguli de campanie,
 finanțare ilegală și corupere electorală. CEC a acceptat doar **șase**: două au dus la avertismente pentru finanțare
 ilegală, două la avertismente privind resursele administrative și două la avertismente privind apartenența la partid.
-Peste 40 au fost transmise Poliției, iar restul au fost respinse ca neîntemeiate. [ODIHR, p. 29][od25]
+Peste 40 au fost transmise Poliției pentru cercetare, iar restul au fost respinse ca neîntemeiate. Formula „transmise
+Poliției” descrie doar redirecționarea: raportul nu arată cîte au fost preluate efectiv, cîte au devenit procese
+contravenționale și cîte au fost sancționate. [ODIHR, p. 29][od25]
+
+Există doar cifre conexe, care nu pot fi repartizate sigur din acest lot: ODIHR notează, într-un pasaj distinct, că 31 de
+plîngeri împotriva PAS au fost trimise Poliției, iar IGP a raportat 118 sesizări primite și sancțiuni administrative în
+23 de cazuri, fără să precizeze cîte dintre acestea provin din cele 31 sau din totalul de peste 40. Pentru utilizarea
+ilicită a resurselor administrative, Promo-LEX citează 11 procese contravenționale inițiate de IGP și amenzi în două
+cazuri, dar nu le leagă public de plîngerile individuale transmise de CEC. [ODIHR, notele 49 și 57][od25]; [Promo-LEX,
+p. 56][p25]
 
 Raportul ODIHR nu publică, pentru aceste 124 de adresări, tabelul cu inițiatorul fiecăreia. De aceea nu se poate calcula
 corect cîte adresări ale PAS au fost acceptate și cîte au venit de la opoziție sau de la societatea civilă. Pentru cele

@@ -218,6 +218,20 @@ Da, există și adresări PAS respinse în hotărîrile publice CEC din aceeași
 | [CEC-7/23194, nr. 4057][cec-4057] | Pretura sectorului Ciocana și participarea la un cort Alternativa | respinsă |
 {: .pas-table}
 
+**Exemplu concret de adresare PAS respinsă — hotărîrea CEC nr. 3938.** La 2 septembrie 2025, PAS a cerut CEC să
+verifice acțiunile Ninei Cereteu, candidată a Partidului Nostru și primară a orașului Drochia, și să o sancționeze.
+PAS a susținut că, la un eveniment din 1 septembrie, au fost anunțate două premii de cîte 10.000 de lei achitate din
+bugetul local, iar candidata ar fi folosit funcția și resursele publice în campanie. CEC a stabilit însă, pe baza
+actelor prezentate, că evenimentul avusese loc la **28 august**, înainte de începerea campaniei la 29 august, și a
+respins contestația PAS împotriva candidatei. [Hotărîrea CEC nr. 3938][cec-3938]
+
+Hotărîrea nu a însemnat că toate faptele legate de Primăria Drochia au fost declarate legale. CEC a constatat separat
+că postarea Primăriei din 1 septembrie, publicată în timpul campaniei, putea întruni elementele favorizării utilizării
+ilegale a resurselor administrative și a sesizat Poliția Drochia. Prin urmare, cazul este un exemplu de **respingere
+formală a cererii PAS**, însoțită de o sesizare separată privind autoritatea publică. În tabel, el este numărat ca
+defavorabil PAS deoarece cererea partidului împotriva candidatei a fost respinsă; sesizarea către Poliție nu este
+numărată ca o soluție pe fond și nu dovedește că problema a fost rezolvată.
+
 În lotul public identificat, PAS are astfel **două adresări admise și patru respinse formal** înainte de ziua alegerilor.
 Aceasta este o statistică a hotărîrilor CEC publicate cu autor PAS, nu o rată pentru toate adresările PAS din cele 124
 numărate de ODIHR. Cazul PAS împotriva formațiunii „Democrația Acasă”, admis parțial după ziua votării prin [hotărîrea

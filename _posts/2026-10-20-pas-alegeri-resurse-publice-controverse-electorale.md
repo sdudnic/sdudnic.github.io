@@ -179,6 +179,14 @@ ilicită a resurselor administrative, Promo-LEX citează 11 procese contravenți
 cazuri, dar nu le leagă public de plîngerile individuale transmise de CEC. [ODIHR, notele 49 și 57][od25]; [Promo-LEX,
 p. 56][p25]
 
+Această lipsă de legătură statistică nu înseamnă că autorii și rezultatele nu apar nicăieri. CEC are secțiuni publice
+pentru [hotărîri][cec-hotarari] și [contestații electorale][cec-contestatii], iar ODIHR notează că majoritatea plîngerilor
+primite au fost publicate online. Pentru sesizările care ajung în instanță, hotărîrile publice pot indica contestatarul,
+numărul sesizării CEC, pretențiile și soluția. Cazul privind „UE 2028” este un exemplu: hotărîrea publică descrie
+contestația și o soluție procedurală, fără examinarea pe fond a legalității sloganului. Totuși, aceste surse nu oferă un
+tabel unic care să lege fiecare sesizare transmisă Poliției de un dosar al Poliției și de rezultatul final. [Încheierea
+oficială a CSJ][litigiu]
+
 Raportul ODIHR nu publică, pentru aceste 124 de adresări, tabelul cu inițiatorul fiecăreia. De aceea nu se poate calcula
 corect cîte adresări ale PAS au fost acceptate și cîte au venit de la opoziție sau de la societatea civilă. Pentru cele
 șase acceptate, raportul arată rezultatul și obiectul avertismentului, dar nu le leagă nominal de autorii sesizărilor.
@@ -291,7 +299,7 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 - [Promo-LEX: analiza resurselor administrative din 31 iulie 2025][pl31].
 - [Realitatea: explicațiile PAS și CEC despre convenția de la Milano][milano], 19 octombrie 2026.
 - [IPN: circulara MAEIE despre utilizarea spațiilor diplomatice][dodon], 8 aprilie 2021.
-- [Ședința CEC din 27 iulie 2025][sedinta] și [încheierea judiciară privind contestația „UE 2028”][litigiu].
+- [Ședința CEC din 27 iulie 2025][sedinta], [hotărîrile CEC][cec-hotarari], [registrul contestațiilor electorale][cec-contestatii] și [încheierea oficială a CSJ privind contestația „UE 2028”][litigiu].
 
 [p24]: https://promolex.md/wp-content/uploads/2025/02/raport-final-apr-si-rc-2024_19.02.2025.pdf
 [p25]: https://promolex.md/wp-content/uploads/2026/01/raport-final-mo-promo-lex-alegeri-parlamentare.pdf
@@ -303,7 +311,9 @@ La Milano, actele de gestiune a urnei și justificarea cheltuielilor pot lămuri
 [milano]: https://realitatea.md/conventia-pas-la-milano-cu-deputati-prezenti-pn-cere-raportarea-cheltuielilor-la-cec-reactia-si-explicatiile-pas/
 [dodon]: https://ipn.md/maeie-despre-vlogul-lui-dodon-la-ambasada-spatiile-nu-pot-fi-folosite-in-scop-politic/
 [sedinta]: https://www.privesc.eu/arhiva/109378/Sedinta-Comisiei-Electorale-Centrale-din-27-iulie-2025
-[litigiu]: https://precedentia.md/search/case/273976/3r-2626-anularea-actului-administrativ/
+[cec-hotarari]: https://a.cec.md/hotarari-2751.html
+[cec-contestatii]: https://onlinecontestatii.cec.md/
+[litigiu]: https://jurisprudenta.csj.md/search_col_civil.php?id=80806
 
 <style>
 .post-content .pas-overview{clear:both;float:none;width:100%;max-width:850px;margin:1.5rem 0 2rem;padding:0!important}

@@ -11,11 +11,9 @@ image_alt: "Situații de utilizare a resurselor administrative documentate de Pr
 published: true
 ---
 
-Sutele de situații documentate în alegerile din Moldova sînt punctul de plecare. Firul roșu al articolului este distanța dintre observație și efect: în 2024 și 2025, monitorii au consemnat sute de cazuri, dar numai o parte au devenit plîngeri, iar sancțiunile confirmate public au fost puține.
+În 2024 și 2025, monitorii au consemnat sute de situații legate de folosirea resurselor publice în alegeri. Firul roșu este distanța dintre observație și efect: numai o parte din cazuri au devenit plîngeri, iar sancțiunile confirmate public au fost puține.
 
-În lotul parlamentar din 2025, monitorii au consemnat 260 de situații; ODIHR a analizat separat 38 de plîngeri la CEC, iar Poliția a raportat 2 amenzi. Pentru a nu amesteca registrele, articolul separă observațiile, plîngerile, hotărîrile CEC și rezultatele electorale.
-
-Urmează patru întrebări: ce s-a observat, cum au fost folosite resursele publice, ce a făcut CEC și ce efect final au avut măsurile asupra PAS și asupra celorlalți concurenți.
+În lotul parlamentar din 2025 apar 260 de situații observate, 38 de plîngeri la CEC și 2 amenzi raportate de Poliție. Sînt registre diferite, urmărite separat mai jos pentru a vedea ce a făcut CEC și ce efect au avut măsurile asupra partidelor.
 
 <!--more-->
 
@@ -26,7 +24,7 @@ Urmează patru întrebări: ce s-a observat, cum au fost folosite resursele publ
   <p class="pas-note">Sursa: rapoartele finale Promo-LEX. Numerele reprezintă situații documentate de observatori; sancțiunile apar separat în evidențele instituțiilor competente.</p>
 </figure>
 
-Analiza acoperă perioada **2021–19 octombrie 2026**. Sursele principale sînt rapoartele observatorilor, documentele electorale, hotărîrile CEC și reacțiile publice ale instituțiilor și partidului. Textul separă situațiile observate, sesizările, măsurile administrative și sancțiunile confirmate.
+Analiza acoperă perioada **2021–19 octombrie 2026** și folosește rapoarte Promo-LEX și ODIHR, hotărîri CEC și acte judiciare.
 
 <div class="pas-stats" aria-label="Indicatori electorali și perioadele la care se referă">
   <div><strong>282</strong><span>situații documentate în 2024</span><small>Prezidențiale și referendum</small></div>
@@ -35,11 +33,10 @@ Analiza acoperă perioada **2021–19 octombrie 2026**. Sursele principale sînt
   <div><strong>31/38</strong><span>plîngeri împotriva PAS</span><small>Sesizări despre resurse administrative, ODIHR 2025</small></div>
 </div>
 
-Surse: [Promo-LEX, bilanțul din 2024][p24]; [Promo-LEX, 31 iulie 2025][pl31]; [raportul intermediar nr. 3, pentru 29 august–10 septembrie 2025][interim], reluat de Europa Liberă la 12 septembrie; [raportul final ODIHR, 18 februarie 2026][od25]. Indicatorii sînt prezentați pe perioade și categorii distincte.
 
 ## 1. 2024: resurse publice și campania pentru referendum
 
-Promo-LEX a identificat cel puțin **282 de situații** care puteau fi calificate drept utilizare abuzivă a resurselor administrative în contextul alegerilor prezidențiale și referendumului constituțional. **258, aproximativ 91%, vizau PAS și Maia Sandu.** Monitorizarea folosește și standardele internaționale, mai largi decît definiția din legislația națională. [Raportul final, p. 55–56][p24]
+Promo-LEX a identificat **282 de situații** de posibilă utilizare abuzivă a resurselor administrative. **258 (91%) vizau PAS și Maia Sandu.** [Raportul final, p. 55–56][p24]
 
 <figure class="pas-chart" aria-labelledby="pas-chart-2024">
 <figcaption id="pas-chart-2024">Cele 282 de situații din 2024, după tipul practicii</figcaption>
@@ -50,19 +47,15 @@ Promo-LEX a identificat cel puțin **282 de situații** care puteau fi calificat
 <p class="pas-note">Toți actorii monitorizați; sursa: Promo-LEX, raport final 2024.</p>
 </figure>
 
-ODIHR a observat avantajele funcțiilor deținute de președintă și partidul de guvernare. Desfășurarea simultană a campaniilor prezidențiale și pentru referendum, împreună cu acoperirea mediatică favorabilă președintei, a produs oportunități electorale inegale. Cazurile repetate susțin critica unui fenomen instituțional, dincolo de incidente izolate. [Promo-LEX][pl31]; [ODIHR, observațiile privind scrutinul din 2024][od24]
+ODIHR a constatat că funcția prezidențială și partidul de guvernare au avut avantaje electorale, iar campaniile simultane au accentuat inegalitatea. [Promo-LEX][pl31]; [ODIHR, scrutinul din 2024][od24]
 
 ### Campania „Europa pentru tine”
 
-Între **8 iulie și 18 august 2024**, Guvernul a desfășurat campania „Europa pentru tine”, cu mesaje care îndemnau cetățenii să participe la referendumul din 20 octombrie. Cancelaria de Stat a comunicat Promo-LEX cheltuieli de **9.458.750 de lei**. [Raportul final Promo-LEX, anexa nr. 4][p24]
-
-Comitetul de organizare fusese constituit la 27 mai, la 11 zile după stabilirea datei referendumului și a prezidențialelor. Campania a folosit panouri, afișe, pliante, publicitate online și în transport. Promo-LEX a identificat și materiale imprimate cu informații incomplete față de regulile privind publicitatea.
-
-Asociația a apreciat că mesajele erau părtinitoare, iar banii publici contribuiau la acumularea de capital electoral în favoarea opțiunii promovate de autorități. Campania a combinat informarea oficială despre integrarea europeană cu promovarea bugetară a unei opțiuni supuse votului. [Promo-LEX][p24]
+Între **8 iulie și 18 august 2024**, Guvernul a desfășurat campania „Europa pentru tine” pentru referendumul din 20 octombrie și a cheltuit **9.458.750 de lei**. Promo-LEX a descris mesajele drept părtinitoare și a semnalat folosirea banilor publici pentru promovarea opțiunii europene. [Raportul final Promo-LEX, anexele nr. 4–5][p24]
 
 ### Funcții publice și agitație
 
-Anexa nr. 5 a raportului Promo-LEX documentează, între altele:
+Anexa nr. 5 documentează, între altele:
 
 - **24 septembrie:** întîlnirea electorală a Maiei Sandu cu angajații și pacienții Centrului de Sănătate Puhoi, în timpul programului instituției;
 - **25 septembrie:** întîlnirea Maiei Sandu cu angajații Liceului „Mihai Eminescu” din Strășeni, în timpul programului;
@@ -70,25 +63,19 @@ Anexa nr. 5 a raportului Promo-LEX documentează, între altele:
 - **6 octombrie:** distribuirea de materiale electorale și îndemnul ministrului de Interne, Adrian Efros, de a o vota pe Maia Sandu;
 - **13 octombrie:** distribuirea la Bălți, de către ministrul de Externe Mihai Popșoi, a materialelor pentru Maia Sandu și referendum.
 
-Promo-LEX a raportat și **120 de situații de agitație a deputaților în zile de lucru, dintre care 113 vizau PAS și Maia Sandu**. Aceste cazuri implică funcții oficiale, instituții publice și timpul de muncă și sînt documentate în anexa nr. 5. [Promo-LEX, p. 55–56 și anexa nr. 5][p24]
-
-În 2024, aceleași documente leagă mesajul electoral de instituții, funcții și bani publici. Acest fundal explică de ce monitorizarea din 2025 urmărește aceleași practici.
+Promo-LEX a raportat **120 de situații de agitație a deputaților în zile de lucru**, dintre care **113 vizau PAS și Maia Sandu**. [Promo-LEX, p. 55–56 și anexa nr. 5][p24]
 
 ## 2. 2025: mesaj de partid, plăți publice și acces la vot
 
 ### „UE 2028” și „Moldova poate”
 
-În alegerile parlamentare din 28 septembrie 2025, PAS și-a construit programul în jurul sloganului **„UE 2028”**, prezentînd aderarea la Uniunea Europeană drept principalul angajament. Documentul partidului se intitula *Programul electoral PAS – UE 2028* și exprima o promisiune politică a formațiunii. [Programul original][program]
+În alegerile parlamentare din 28 septembrie 2025, PAS a folosit sloganul **„UE 2028”**. În paralel, Guvernul a lansat campania **„Moldova poate”**, cu un buget de aproximativ **5 milioane de lei** (254.300 de euro, potrivit ODIHR). Promo-LEX și ODIHR au consemnat apropierea dintre mesajul guvernului și agenda PAS. [Programul original][program]; [Promo-LEX][pl31]; [ODIHR][od25]
 
-Problema electorală privește suprapunerea mesajului de partid cu o comunicare finanțată de stat. Campania guvernamentală **„Moldova poate”**, lansată la 21 mai 2025, după stabilirea datei alegerilor, avea un buget de aproximativ **5 milioane de lei** — **254.300 de euro**, potrivit ODIHR. Mesajele promovau politici proeuropene convergente cu agenda PAS. Promo-LEX a descris o suprapunere între comunicarea instituțională și cea politică, iar ODIHR a consemnat finanțarea publică și apropierea mesajelor. [Promo-LEX][pl31]; [ODIHR][od25]
-
-Mecanismul criticat este concret: partidul își promovează programul, în timp ce Guvernul comunică, din bani publici, realizări și obiective similare. Această comunicare consolidează avantajul electoral al partidului de guvernare.
-
-**Cazul de la CEC.** La ședința din 27 iulie 2025 a fost aprobat simbolul electoral PAS cu mențiunea „UE 2028”, folosit ulterior pe buletin. A fost depusă o contestație întemeiată pe art. 70 alin. (4) din Codul electoral, iar litigiul judiciar s-a încheiat procedural, cu examinarea legalității sloganului în afara fondului cauzei. [Ședința CEC][sedinta]; [încheierea judiciară][litigiu]
+**La CEC.** Simbolul PAS cu mențiunea „UE 2028” a fost aprobat la 27 iulie 2025. Contestația și litigiul ulterior s-au încheiat procedural, fără examinarea fondului sloganului. [Ședința CEC][sedinta]; [încheierea judiciară][litigiu]
 
 ### Plățile bugetare înaintea alegerilor
 
-Cu numai cîteva zile înaintea perioadei electorale din 2025, autoritățile au aprobat un sprijin financiar pentru elevi. Promo-LEX indică un pachet bugetar de **300 de milioane de lei**. ODIHR consemnează **295.000 de elevi** și plăți de aproximativ **1.000 de lei per elev**, începînd din septembrie, luna alegerilor. Suma bugetată este rotunjită, iar produsul exact al beneficiarilor și al ajutorului individual se exprimă separat. [Promo-LEX][pl31]; [ODIHR][od25]
+Cu puține zile înainte de perioada electorală, autoritățile au anunțat un sprijin de **300 de milioane de lei** pentru **295.000 de elevi**, cîte aproximativ **1.000 de lei** începînd din septembrie. [Promo-LEX][pl31]; [ODIHR][od25]
 
 <div class="pas-stats pas-three">
 <div><strong>300 mil. lei</strong><span>Pachetul bugetar anunțat</span></div>
@@ -96,13 +83,13 @@ Cu numai cîteva zile înaintea perioadei electorale din 2025, autoritățile au
 <div><strong>1.000 lei</strong><span>Sprijin pentru fiecare elev</span></div>
 </div>
 
-Inițiativa a fost promovată inclusiv de Igor Grosu și ministrul Educației, Dan Perciun. ODIHR a consemnat compatibilitatea formală a măsurii cu legea, avantajul electoral inechitabil posibil și abaterea de la bunele practici internaționale. Promo-LEX a criticat calendarul și prezentarea beneficiilor pentru acumularea de capital politic. Acordarea ajutorului a devenit un instrument de promovare electorală a unei măsuri plătite din buget. [ODIHR][od25]; [Promo-LEX][pl31]
+Inițiativa a fost promovată de Igor Grosu și Dan Perciun. ODIHR a considerat-o legală formal, dar cu posibil avantaj electoral inechitabil; Promo-LEX a criticat calendarul și prezentarea ei. [ODIHR][od25]; [Promo-LEX][pl31]
 
-**Evaluare de integritate electorală.** În opinia autorului, o plată unică, neurgentă, decisă sau anunțată de Guvern în intervalul imediat anterior alegerilor reprezintă, în general, **o formă de corupție electorală prin folosirea resurselor publice pentru obținerea unui avantaj electoral**. Situația este cu atît mai gravă atunci cînd plata este prezentată de demnitari care sînt și lideri sau candidați de partid, cînd calendarul se află în fereastra imediat preelectorală și cînd mesajul public leagă beneficiul de realizările guvernării. În cazul din 2025, ODIHR a consemnat un avantaj electoral inechitabil și abaterea de la bunele practici internaționale.
+**Opinia autorului:** o plată unică și neurgentă, anunțată imediat înaintea alegerilor și prezentată de demnitari de partid, este corupție electorală prin folosirea resurselor publice.
 
 ### Secții și buletine pentru alegătorii din Transnistria
 
-În 2025, CEC a redus infrastructura de vot pentru cetățenii domiciliați în regiunea transnistreană. [ODIHR][od25]
+În 2025, CEC a redus secțiile și buletinele pentru alegătorii din regiunea transnistreană. [ODIHR][od25]
 
 | Indicator | 2024 | 2025 | Reducere |
 |:--|--:|--:|--:|
@@ -110,13 +97,11 @@ Inițiativa a fost promovată inclusiv de Igor Grosu și ministrul Educației, D
 | Buletine alocate | 90.000 | 23.500 | 73,9% |
 {: .pas-table}
 
-Cu trei zile înaintea scrutinului, CEC a decis mutarea a cinci secții. Adresele exacte au fost anunțate pe 26 septembrie, cu două zile înaintea votării. Cei trei membri ai CEC desemnați de opoziție au contestat deciziile, iar Promo-LEX a avertizat asupra riscului de aglomerații și descurajare a participării. **Două secții au rămas cu deficit de buletine**, iar alegătorii au fost redirecționați. [ODIHR][od25]
-
-CEC și SIS au invocat participarea anterioară și riscurile de securitate și corupere electorală. Efectele asupra accesului la vot sînt documentate, iar reducerea secțiilor a produs un avantaj administrativ important pentru partidul de guvernare.
+Cu trei zile înaintea scrutinului, CEC a mutat cinci secții; două au rămas cu deficit de buletine. Opoziția și Promo-LEX au contestat decizia, iar CEC și SIS au invocat riscuri de securitate. [ODIHR][od25]
 
 ## 3. 2025: situații observate, plîngeri și sancțiuni
 
-Raportul final Promo-LEX, publicat în ianuarie 2026, identifică **260 de situații** de posibilă utilizare abuzivă a resurselor administrative înaintea și în timpul campaniei parlamentare din 2025. Aproximativ **79% vizau PAS**, 9% Blocul Patriotic și 6% Alternativa. Restul de aproximativ 6% revine celorlalți actori. [Raportul final, p. 55–56][p25]
+Raportul final Promo-LEX identifică **260 de situații** în campania parlamentară din 2025: aproximativ **79% vizau PAS**, 9% Blocul Patriotic și 6% Alternativa. [Raportul final, p. 55–56][p25]
 
 <figure class="pas-chart" aria-labelledby="pas-chart-2025">
 <figcaption id="pas-chart-2025">Cine este vizat în situațiile observate în 2025</figcaption>
@@ -142,9 +127,9 @@ Dintre cazurile din campania propriu-zisă, monitorii au identificat:
 | **Total în campanie** | **218** | **174** |
 {: .pas-table}
 
-Cele **218** de situații privesc campania propriu-zisă; alte **42** au fost observate în perioada anterioară. Ponderea aproximativă de 79% se referă la totalul de 260, iar tabelul redă campania propriu-zisă. [Promo-LEX, p. 55–56][p25]
+Tabelul cuprinde cele **218** de situații din campania propriu-zisă; alte **42** au fost observate înaintea campaniei. [Promo-LEX, p. 55–56][p25]
 
-Anexa nr. 5 oferă exemple concrete:
+Anexa nr. 5 oferă exemple:
 
 - **7 septembrie 2025, Sărata Galbenă, raionul Hîncești:** la adunarea organizată pentru prezentarea activității primarului au fost distribuite materiale PAS; candidatul Iurie Levinschi a îndemnat la votarea partidului.
 - **9 septembrie, Cimișlia:** candidatul PAS Adrian Talmaci a organizat o întîlnire electorală cu șefii oficiilor poștale, în sala de ședințe a Poștei Moldovei.
@@ -152,7 +137,7 @@ Anexa nr. 5 oferă exemple concrete:
 - **20 septembrie, Ungheni:** candidatul PAS Andrian Cheptonar a publicat un video alături de directoarea spitalului raional, Elvira Stați, despre modernizările finanțate public, însoțit de un îndemn la vot pentru PAS.
 - **23 septembrie, Ungheni:** în sediul Consiliului raional, la o ședință cu managerii școlari, candidatul PAS Andrian Cheptonar a organizat o întrunire electorală.
 
-Acestea sînt situații consemnate de monitori, cu date și împrejurări individuale. [Promo-LEX, anexa nr. 5][p25]
+Sînt cazuri individuale consemnate de monitori. [Promo-LEX, anexa nr. 5][p25]
 
 <figure class="pas-chart pas-resolution-chart" aria-labelledby="pas-police-title">
 <figcaption id="pas-police-title">260 de situații observate, 38 de plîngeri și două amenzi: ce este documentat</figcaption>
@@ -173,13 +158,11 @@ Acestea sînt situații consemnate de monitori, cu date și împrejurări indivi
 <p class="pas-note">Sursa pentru cele 38 de plîngeri și repartizarea lor: ODIHR, nota 57. Sursa pentru cele 11 procese și două amenzi: Promo-LEX, p. 56.</p>
 </figure>
 
-### Traseul documentat
-
 Cele 38 de plîngeri au avut 10 respingeri, 15 readresări Poliției și 13 cazuri pendinte; IGP a raportat separat 11 procese contravenționale și 2 amenzi. [ODIHR][od25]; [Promo-LEX][p25]
 
 ### Cum se repartizează cele 38 de plîngeri
 
-ODIHR le repartizează după actorul vizat. Din cele 38, **31 vizau PAS**, două Blocul Alternativa, trei Partidul Nostru, una Partidul Liga Orașelor și Comunelor și una Primăria municipiului Chișinău. Categoria generală este **utilizarea abuzivă a resurselor administrative**: folosirea funcției, instituției, timpului de muncă sau bunurilor publice în campanie. [ODIHR, nota 57][od25]; [Promo-LEX, p. 55–56][p25]
+Din cele 38, **31 vizau PAS**, 2 Blocul Alternativa, 3 Partidul Nostru, 1 Partidul Liga Orașelor și Comunelor și 1 Primăria Chișinău. Toate priveau folosirea funcției, instituției, timpului de muncă sau bunurilor publice în campanie. [ODIHR, nota 57][od25]; [Promo-LEX, p. 55–56][p25]
 
 | Actor sau instituție vizată | Plîngeri | Pondere din 38 |
 |:--|--:|--:|
@@ -192,29 +175,15 @@ ODIHR le repartizează după actorul vizat. Din cele 38, **31 vizau PAS**, două
 
 ### Lotul mai larg: 124 de adresări CEC
 
-Pentru perioada 14 iulie–27 septembrie 2025, ODIHR a numărat **124 de plîngeri
-și notificări**, în principal despre resurse administrative, înregistrarea candidaților, reguli de campanie, finanțare
-ilegală și corupere electorală. CEC a acceptat **șase**: două au dus la avertismente pentru finanțare ilegală, două la
-avertismente privind resursele administrative și două la avertismente privind apartenența la partid. Peste 40 au fost
-transmise Poliției pentru cercetare, iar celelalte au primit soluții de respingere. [ODIHR, p. 29][od25]
+Între 14 iulie și 27 septembrie 2025, ODIHR a numărat **124 de plîngeri și notificări**. CEC a acceptat **6**, iar peste 40 au fost transmise Poliției. ODIHR notează separat că **31 de plîngeri împotriva PAS** au ajuns la Poliție; IGP a raportat **118 sesizări**, sancțiuni în **23 de cazuri**, 11 procese contravenționale și 2 amenzi. [ODIHR, p. 29, notele 49 și 57][od25]; [Promo-LEX, p. 56][p25]
 
-ODIHR notează separat că **31 de plîngeri împotriva PAS** au fost trimise Poliției. IGP a raportat **118 sesizări** și
-sancțiuni administrative în **23 de cazuri**. Pentru utilizarea ilicită a resurselor administrative, Promo-LEX citează
-**11 procese contravenționale** inițiate de IGP și **două amenzi**. [ODIHR, notele 49 și 57][od25]; [Promo-LEX, p. 56][p25]
-
-CEC publică hotărîrile și contestațiile, iar actele judiciare permit urmărirea autorului, țintei și soluției. Contestația privind „UE 2028” arată această succesiune: hotărîrea CEC și încheierea CSJ documentează parcursul procedural. [Hotărîrile CEC][cec-hotarari]; [contestațiile electorale][cec-contestatii]; [încheierea CSJ][litigiu]
+Hotărîrile CEC și actele judiciare indică autorul, ținta și soluția. Contestația privind „UE 2028” poate fi urmărită în [hotărîrile CEC][cec-hotarari], [registrul contestațiilor][cec-contestatii] și [încheierea CSJ][litigiu].
 
 ## 4. De la adresare la efect: ce a făcut CEC
 
 ### Bilanțul hotărîrilor în care apare PAS
 
-În lotul public din 14 iulie–27 septembrie 2025, CEC are 15 hotărîri în care PAS apare ca autor sau țintă. Dispozitivul formal dă 8 rezultate favorabile și 7 defavorabile. Dacă sînt incluse măsurile instituționale din aceeași hotărîre, bilanțul este 10 efecte favorabile, 3 măsuri directe împotriva PAS și 2 respingeri procedurale.
-
-<div class="pas-stats pas-three" aria-label="Bilanțul hotărîrilor CEC care implică PAS">
-<div><strong>15</strong><span>hotărîri publice</span><small>14 iulie–27 septembrie 2025</small></div>
-<div><strong>8 / 7</strong><span>favorabile / defavorabile formal</span><small>după poziția procesuală</small></div>
-<div><strong>10 / 3 / 2</strong><span>efect favorabil / direct împotriva PAS / procedural</span><small>măsura concretă primează</small></div>
-</div>
+În lotul public din 14 iulie–27 septembrie 2025 sînt 15 hotărîri în care PAS apare ca autor sau țintă. Formal, bilanțul este 8 favorabile și 7 defavorabile; după măsurile concrete, 10 au efect favorabil, 3 au măsuri directe împotriva PAS și 2 sînt respingeri procedurale.
 
 | Tipul rezultatului | Favorabil PAS | Defavorabil direct PAS | Respingere procedurală |
 |:--|--:|--:|--:|
@@ -222,15 +191,23 @@ CEC publică hotărîrile și contestațiile, iar actele judiciare permit urmăr
 | Efect documentat | 10 | 3 | 2 |
 {: .pas-table}
 
-Cele 3 măsuri directe împotriva PAS au fost 2 avertismente și 1 atenționare; 2 hotărîri au sesizat IGP. După alegeri, hotărîrea nr. 4140 a adăugat încă 1 rezultat favorabil PAS, pentru 9 favorabile și 7 defavorabile din 16 hotărîri. [ODIHR][od25]
+<figure class="pas-chart pas-compact-chart" aria-labelledby="pas-cec-chart-title">
+<figcaption id="pas-cec-chart-title">Hotărîri CEC care implică PAS</figcaption>
+<div class="pas-bar"><span>Favorabile formal</span><div><i style="width:53.33%;background:#356d77"></i></div><b>8</b></div>
+<div class="pas-bar"><span>Defavorabile directe</span><div><i style="width:20%;background:#94643d"></i></div><b>3</b></div>
+<div class="pas-bar"><span>Respingere procedurală</span><div><i style="width:26.67%;background:#a5aaa9"></i></div><b>4</b></div>
+<p class="pas-note">15 hotărîri; efectul documentat este 10 / 3 / 2.</p>
+</figure>
 
-Direcțiile admise public sînt: PAS → opoziție, 2; „ALTERNATIVA” → PAS, 4; PNM și ALDE → Blocul Patriotic, 2. [CEC 3942][cec-3942], [CEC 4116][cec-4116], [CEC 3994][cec-3994], [CEC 3995][cec-3995], [CEC 4117][cec-4117], [CEC 3993][cec-3993]
+Cele 3 măsuri directe împotriva PAS au fost 2 avertismente și 1 atenționare; 2 hotărîri au sesizat IGP. Hotărîrea nr. 4140, adoptată după alegeri, adaugă un rezultat favorabil PAS: 9 la 7 din 16. [ODIHR][od25]
 
-Lotul de 15: PAS autor — 2 admise ([3942][cec-3942], [4116][cec-4116]) și 4 respinse ([3937][cec-3937], [3938][cec-3938], [4036][cec-4036], [4057][cec-4057]); PAS țintă — 6 contestații respinse ([3931][cec-3931], [3941][cec-3941], [3968][cec-3968], [3972][cec-3972], [3988][cec-3988], [4121][cec-4121]) și 3 măsuri directe ([3994][cec-3994], [3995][cec-3995], [4117][cec-4117]).
+Direcțiile admise public: PAS → opoziție, 2; „ALTERNATIVA” → PAS, 4; PNM și ALDE → Blocul Patriotic, 2. [CEC 3942][cec-3942], [CEC 4116][cec-4116], [CEC 3994][cec-3994], [CEC 3995][cec-3995], [CEC 4117][cec-4117], [CEC 3993][cec-3993]
+
+Detaliile celor 15 hotărîri: PAS autor — 2 admise și 4 respinse; PAS țintă — 6 contestații respinse și 3 măsuri directe. [CEC 3931][cec-3931], [CEC 3937][cec-3937], [CEC 3941][cec-3941], [CEC 3968][cec-3968], [CEC 3972][cec-3972], [CEC 3988][cec-3988], [CEC 4057][cec-4057], [CEC 4121][cec-4121]
 
 ### De ce o respingere formală nu închide cazul
 
-În hotărîrea CEC nr. 3938, PAS a cerut sancționarea Ninei Cereteu pentru un eveniment cu premii din bugetul local. CEC a respins partea privind candidata, deoarece evenimentul avusese loc înainte de începerea campaniei, dar a sesizat Poliția Drochia pentru o postare a primăriei publicată în timpul campaniei. Hotărîrea nr. 4036 a dus la atenționarea candidatei. Astfel, efectul instituțional poate fi diferit de soluția formală a contestației. [CEC 3938][cec-3938], [CEC 4036][cec-4036]
+În hotărîrea nr. 3938, CEC a respins contestația PAS împotriva Ninei Cereteu deoarece evenimentul avusese loc înaintea campaniei, dar a sesizat Poliția pentru o postare a primăriei publicată în campanie. În nr. 4036, CEC a atenționat candidata. O respingere formală poate produce astfel un efect instituțional. [CEC 3938][cec-3938], [CEC 4036][cec-4036]
 
 ### Efectul final pentru actorii principali
 
@@ -248,59 +225,47 @@ Lotul de 15: PAS autor — 2 admise ([3942][cec-3942], [4116][cec-4116]) și 4 r
 
 \* La „MOLDOVA MARE”, 12 = 1 plîngere de partid + 11 comunicări instituționale. **La „Democrația Acasă”, 4 = 1 PAS + 1 AUR + 2 INI.**
 
+<figure class="pas-chart pas-compact-chart" aria-labelledby="pas-mandates-title">
+<figcaption id="pas-mandates-title">Mandate obținute la alegeri</figcaption>
+<div class="pas-bar"><span>PAS</span><div><i style="width:100%;background:#ffdb00"></i></div><b>55</b></div>
+<div class="pas-bar"><span>Blocul Patriotic</span><div><i style="width:47.27%;background:#d71920"></i></div><b>26</b></div>
+<div class="pas-bar"><span>„ALTERNATIVA”</span><div><i style="width:14.55%;background:#007567"></i></div><b>8</b></div>
+<div class="pas-bar"><span>Partidul Nostru</span><div><i style="width:10.91%;background:#94643d"></i></div><b>6</b></div>
+<div class="pas-bar"><span>„Democrația Acasă”</span><div><i style="width:10.91%;background:#a5aaa9"></i></div><b>6</b></div>
+<p class="pas-note">Sursa: rezultatele finale consemnate de ODIHR. „MOLDOVA MARE” nu a primit mandate.</p>
+</figure>
+
 Partidul Național Moldovenesc și ALDE apar ca autori ai celor două adresări admise parțial în dosarul privind finanțarea „Inimii Moldovei” și Blocului Patriotic. Efectul acelor adresări a fost avertismentul și controlul financiar asupra blocului, nu o sancțiune aplicată autorilor.
 
 ## 5. Sancțiuni cu efect electoral și accesul la vot
 
-ODIHR a constatat că unele decizii controversate ale CEC au fost împărțite pe linii politice, punînd sub semnul întrebării imparțialitatea și independența membrilor. Raportul din februarie 2026 discută și restricțiile asupra participării partidelor. [ODIHR][od25]
+ODIHR a constatat divizări politice în unele decizii ale CEC și a criticat restricțiile aplicate partidelor. [ODIHR][od25]
 
-- **„Inima Moldovei”.** Pe 25 septembrie 2025, instanța a admis solicitarea Ministerului Justiției de limitare a activității partidului, pe fondul suspiciunilor de finanțare ilegală și legături cu structurile lui Ilan Șor. Pe 26 septembrie, CEC a exclus candidații partidului din lista Blocului Patriotic.
-- **„Moldova Mare”.** După înregistrarea obținută în urma unei decizii judecătorești, formațiunea a fost exclusă în ultimele zile înaintea votării, în contextul acuzațiilor privind finanțarea și alte încălcări electorale.
-- **PLDM și Partidul Democrat Modern.** Condițiile de eligibilitate și verificările administrative au afectat participarea lor. ODIHR a criticat formalismul excesiv și aplicarea selectivă a unor cerințe de înregistrare.
+- **„Inima Moldovei”.** După limitarea activității partidului, CEC a exclus candidații lui din lista Blocului Patriotic.
+- **„Moldova Mare”.** CEC a anulat înregistrarea formațiunii în ultimele zile înaintea votării.
+- **PLDM și Partidul Democrat Modern.** Verificările de eligibilitate le-au afectat participarea; ODIHR a criticat formalismul și aplicarea selectivă a regulilor.
 
-Excluderea a două partide atît de aproape de scrutin a redus, potrivit ODIHR, posibilitatea unei contestări judiciare
-efective și securitatea juridică. Critica ODIHR privește **proporționalitatea sancțiunilor, claritatea criteriilor și
-dreptul la un remediu efectiv**. [ODIHR][od25]
-
-Modificările legislative adoptate în 2025, în mare parte de majoritatea PAS, au introdus măsuri utile împotriva corupției electorale și prevederi restrictive cu efecte disproporționate asupra activității partidelor, potrivit aceleiași evaluări.
+ODIHR a considerat că excluderile tardive au redus timpul pentru contestare și au ridicat probleme de proporționalitate și remediu efectiv. Raportul evaluează și modificările legislative adoptate în 2025 ca fiind utile împotriva corupției, dar restrictive pentru activitatea partidelor. [ODIHR][od25]
 
 ### Secțiile de votare din Federația Rusă
 
-La parlamentarele din 2025, în Federația Rusă au funcționat **două secții**, față de **17 în 2021**. În 2024 fuseseră tot două. CEC a respins propunerea membrilor desemnați de opoziție pentru cinci secții — două la Moscova și cîte una la Sankt Petersburg, Iaroslavl și Surgut. Autoritățile au invocat riscuri de securitate. [ODIHR, nota 26][od25]
-
-ODIHR a inclus subiectul între deciziile controversate care au provocat divizări politice în CEC. Evaluarea proporționalității compară criteriile, participarea anterioară, riscurile și posibilitatea reală de vot; reducerea secțiilor a creat un efect direct asupra accesului la vot.
+La parlamentarele din 2025 au funcționat **2 secții în Federația Rusă**, față de **17 în 2021**. CEC a respins propunerea opoziției pentru încă 5 secții, invocînd riscuri de securitate. ODIHR a inclus decizia între controversele care au afectat accesul la vot. [ODIHR, nota 26][od25]
 
 ## 6. Demnitari, instituții și urna de la Milano
 
 ### Obligațiile funcției în campanie
 
-Raportul ODIHR consemnează că, la **7 septembrie 2025**, Alexei Buzu, ministrul Muncii și Protecției Sociale și candidat PAS, își exercita atribuțiile oficiale după începerea campaniei, deși suspendarea era obligatorie. La **17 septembrie**, CEC l-a avertizat pe ministrul Mediului, Sergiu Lazarencu, pentru încălcarea regulilor privind conflictul de interese. ODIHR încadrează asemenea practici în problema estompării separării dintre partid și stat. [Raportul final, notele 55–56][od25]
+La **7 septembrie 2025**, Alexei Buzu, ministru și candidat PAS, își exercita atribuțiile după începerea campaniei, deși suspendarea era obligatorie. La **17 septembrie**, CEC l-a avertizat pe ministrul Sergiu Lazarencu. [ODIHR, notele 55–56][od25]
 
 ### Convenția PAS de la Milano
 
-La **17 octombrie 2026**, PAS a organizat la Milano convenția de constituire a organizației sale din Italia. Au participat Igor Grosu, deputații Mihai Druță și Valeriu Robu, precum și ministra Protecției Sociale, Natalia Plugaru. Ana Butucea a fost aleasă președintă a organizației. Utilizarea unei urne electorale a provocat controverse, iar deputatul Alexandr Berlinschii a cerut verificarea evenimentului și raportarea cheltuielilor la CEC. [Realitatea, 19 octombrie][milano]
+La **17 octombrie 2026**, PAS a organizat la Milano convenția organizației sale din Italia și a folosit o urnă electorală. Deputatul Alexandr Berlinschii a cerut verificarea urnei și a cheltuielilor. [Realitatea, 19 octombrie][milano]
 
-**Explicația CEC.** Comisia a comunicat că echipamentele procurate de ea sînt transmise în gestiunea autorităților publice locale sau a Ministerului Afacerilor Externe și sînt utilizate și pentru exerciții electorale ale instituțiilor educaționale, private și publice. Evaluarea cazului Milano se concentrează pe actul de transmitere a urnei și pe condițiile autorizării. [Reacția CEC][milano]
-
-**Deplasarea lui Igor Grosu.** Convenția a urmat vizitei oficiale la Roma, unde Grosu a participat la evenimente și întrevederi, inclusiv conferința din 15–16 octombrie. PAS a declarat că a plătit trenul Roma–Milano din dimineața de 17 octombrie și că Grosu a revenit în aceeași seară la Chișinău. Formațiunea susține că evenimentul și deplasările de partid au fost achitate din fondurile sale. [Explicațiile PAS][milano]
-
-Evaluarea publică se concentrează pe patru acte: deținerea și administrarea urnei, documentul de transmitere spre
-utilizare, plata deplasării și cheltuielile demnitarilor, precum și folosirea infrastructurii diplomatice.
-
-**Votul intern cu o urnă ține de activitatea partidului.** Evaluarea electorală privește proveniența bunului, dreptul
-de utilizare și implicarea resurselor publice într-o activitate de partid.
+CEC spune că urnele sînt transmise în gestiunea autorităților și pot fi folosite la exerciții electorale. PAS susține că a plătit deplasarea și evenimentul din fonduri proprii. Verificarea privește proveniența urnei, dreptul de utilizare și cheltuielile. [Reacția CEC și explicațiile PAS][milano]
 
 ## 7. Precedentul Dodon și concluzia
 
-În 2021, filmarea unei emisiuni a lui Igor Dodon în Ambasada Republicii Moldova la Moscova a provocat intervenția MAEIE. Circulara făcută publică la **8 aprilie 2021** a interzis folosirea sediilor ambasadelor și consulatelor în scopuri politice și punerea lor la dispoziția politicienilor pentru întîlniri cu alegătorii. Regula privea și înregistrarea ori transmiterea emisiunilor de autor ale unor terți. [IPN, circulara MAEIE][dodon]
-
-Comparația privește două forme de folosire a resurselor publice: cazul Dodon a vizat direct sediul ambasadei, iar
-controversa Milano vizează proveniența și utilizarea unui echipament electoral. Circulara a fost emisă în aprilie 2021,
-înainte de majoritatea parlamentară obținută de PAS în iulie.
-
-Principiul comun este imparțialitatea bunurilor și instituțiilor statului. Evaluarea cazului Milano se leagă de actele
-de gestiune, autorizarea utilizării și cheltuielile concrete. Solicitarea demisiei este o poziție politică; răspunderea
-personală se stabilește prin acte și competențe.
+În 2021, după filmarea unei emisiuni a lui Igor Dodon în ambasada de la Moscova, MAEIE a interzis folosirea sediilor diplomatice în scopuri politice. Cazul Milano ridică aceeași problemă de principiu: bunurile statului trebuie folosite imparțial și cu acte de gestiune verificabile. [Circulara MAEIE][dodon]
 
 ### Ce rămîne documentat
 
@@ -311,7 +276,7 @@ personală se stabilește prin acte și competențe.
 | Efectul electoral | Avertismentele și sesizările au fost frecvente, dar efectele decisive au fost excluderile, tăierea finanțării și accesul la buletin. |
 {: .pas-table}
 
-Documentele susțin o idee simplă: monitorizarea a fost mult mai largă decît sancționarea, iar efectul măsurilor a fost inegal. În cazul PAS apar avertismente, atenționări și sesizări la IGP; în cazul altor formațiuni apar și excluderi sau sancțiuni financiare. Cazul de la Milano trebuie evaluat prin aceleași reguli: proveniența bunului, dreptul de utilizare, cheltuielile și răspunderea concretă.
+Monitorizarea a fost mult mai largă decît sancționarea, iar efectul măsurilor a fost inegal: pentru PAS apar avertismente și sesizări, iar pentru alte formațiuni apar excluderi sau sancțiuni financiare. Aceleași reguli trebuie aplicate și cazului de la Milano.
 
 ### Documentele principale
 
@@ -328,7 +293,6 @@ Documentele susțin o idee simplă: monitorizarea a fost mult mai largă decît 
 [pl31]: https://promolex.md/abuzul-de-resurse-administrative-un-instrument-de-promovare-inainte-de-campanie/
 [od25]: https://odihr.osce.org/odihr/662251
 [od24]: https://odihr.osce.org/odihr/elections/moldova/587451
-[interim]: https://promolex.md/wp-content/uploads/2025/09/raport-nr.3_mo_promo-lex-2025.pdf
 [program]: https://pas2025.md/wp-content/uploads/2025/09/Programul-Electoral-PAS-UE-2028.pdf
 [milano]: https://realitatea.md/conventia-pas-la-milano-cu-deputati-prezenti-pn-cere-raportarea-cheltuielilor-la-cec-reactia-si-explicatiile-pas/
 [dodon]: https://ipn.md/maeie-despre-vlogul-lui-dodon-la-ambasada-spatiile-nu-pot-fi-folosite-in-scop-politic/
@@ -369,31 +333,34 @@ Documentele susțin o idee simplă: monitorizarea a fost mult mai largă decît 
 .pas-stats span,.pas-stats small{display:block;margin-top:.35rem;line-height:1.45}
 .pas-stats small,.pas-note{font-size:.8rem;color:var(--muted,#666)}
 .pas-three{grid-template-columns:repeat(3,minmax(0,1fr))}
-.post-content .pas-chart{clear:both;margin:1.5rem 0;padding:1rem!important;border:1px solid var(--line,#ddd)!important;border-radius:5px}
-.pas-chart figcaption{font-weight:600;text-align:left;font-style:normal;margin-bottom:1rem}
+.post-content .pas-chart{clear:both;margin:1.1rem 0;padding:.7rem!important;border:1px solid var(--line,#ddd)!important;border-radius:5px;font-size:.88rem}
+.pas-chart figcaption{font-weight:600;text-align:left;font-style:normal;margin-bottom:.65rem;font-size:1rem}
 .pas-chart-intro{margin:.2rem 0 1rem;font-size:.9rem;line-height:1.5;color:var(--muted,#666)}
-.pas-flow{max-width:850px;margin:0 auto;text-align:center}
-.pas-flow-step{padding:.8rem 1rem;border:1px solid var(--line,#ddd);border-left:.45rem solid #356d77;border-radius:4px;background:var(--surface,#fff);text-align:left}
-.pas-flow-step strong{display:block;font-size:2rem;line-height:1.1;color:var(--ink,#203e49)}
+.pas-compact-chart{max-width:720px}
+.pas-compact-chart .pas-bar{margin:.45rem 0;font-size:.82rem}
+.pas-compact-chart .pas-note{margin-top:.55rem}
+.pas-flow{max-width:850px;margin:0 auto;text-align:center;font-size:.88rem}
+.pas-flow-step{padding:.55rem .75rem;border:1px solid var(--line,#ddd);border-left:.35rem solid #356d77;border-radius:4px;background:var(--surface,#fff);text-align:left}
+.pas-flow-step strong{display:block;font-size:1.7rem;line-height:1.1;color:var(--ink,#203e49)}
 .pas-flow-step span{display:block;margin-top:.2rem;font-weight:600;line-height:1.35}
 .pas-flow-step small,.pas-flow-branch small{display:block;margin-top:.3rem;font-size:.8rem;line-height:1.4;color:var(--muted,#666)}
 .pas-flow-observed{border-left-color:#356d77}.pas-flow-complaints{border-left-color:#203e49}
-.pas-flow-arrow{height:1.8rem;line-height:1.8rem;font-size:1.5rem;color:var(--muted,#666)}
+.pas-flow-arrow{height:1.3rem;line-height:1.3rem;font-size:1.2rem;color:var(--muted,#666)}
 .pas-flow-branches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;text-align:left}
-.pas-flow-branch{min-width:0;padding:.75rem;border:1px solid var(--line,#ddd);border-top:.35rem solid #a5aaa9;border-radius:4px}
-.pas-flow-branch strong{display:block;font-size:1.65rem;line-height:1.1;color:var(--ink,#203e49)}
+.pas-flow-branch{min-width:0;padding:.55rem;border:1px solid var(--line,#ddd);border-top:.3rem solid #a5aaa9;border-radius:4px}
+.pas-flow-branch strong{display:block;font-size:1.45rem;line-height:1.1;color:var(--ink,#203e49)}
 .pas-flow-branch span{display:block;margin-top:.2rem;font-weight:600;line-height:1.35}
 .pas-flow-rejected{border-top-color:#94643d}.pas-flow-referred{border-top-color:#356d77}.pas-flow-pending{border-top-color:#a5aaa9}
-.pas-fines-box{margin-top:1rem;padding:.85rem 1rem;border-left:.45rem solid #ffdb00;background:#fff8d7;line-height:1.55}
-.pas-fines-box strong{font-size:1.6rem;color:var(--ink,#203e49)}.pas-fines-box b{padding:0 .35rem;color:var(--muted,#666)}
+.pas-fines-box{margin-top:.7rem;padding:.6rem .75rem;border-left:.35rem solid #ffdb00;background:#fff8d7;line-height:1.45}
+.pas-fines-box strong{font-size:1.4rem;color:var(--ink,#203e49)}.pas-fines-box b{padding:0 .3rem;color:var(--muted,#666)}
 .pas-fines-kicker{display:block;margin-bottom:.2rem;font-size:.78rem;font-weight:600;color:var(--muted,#666)}
 .pas-fines-box small{display:block;margin-top:.35rem;font-size:.8rem;line-height:1.4;color:var(--muted,#666)}
-.pas-bar{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 2.2rem;gap:.6rem;align-items:center;margin:.8rem 0;font-size:.9rem;line-height:1.4}
+.pas-bar{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) 2.2rem;gap:.6rem;align-items:center;margin:.55rem 0;font-size:.82rem;line-height:1.35}
 .pas-bar>div{height:1.1rem;background:#e5e9e6}.pas-bar i{display:block;height:100%;background:#356d77}.pas-bar b{text-align:right}
 .pas-donut-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:1rem}.pas-donut{display:block;width:100%;max-width:320px;height:auto;margin:auto;color:var(--ink,#203e49)}.pas-donut-legend{list-style:none!important;margin:0!important;padding:0!important}.pas-donut-legend li{display:flex;gap:.6rem;align-items:center;margin:.8rem 0;line-height:1.5}.pas-donut-legend i{display:block;width:1.1rem;height:1.1rem;flex-shrink:0;border-radius:2px}.pas-donut-legend b{display:block}.pas-hatch{background:repeating-linear-gradient(45deg,#356d77 0px,#356d77 4px,#fff 4px,#fff 6px)}
 .pas-stack{display:flex;height:1.7rem;overflow:hidden;border-radius:3px}.pas-stack i{display:block;height:100%}
 .pas-legend{display:flex;flex-wrap:wrap;gap:.5rem 1rem;list-style:none!important;padding:0!important;margin:1rem 0!important}.pas-legend li{margin:0}
-.post-content table.pas-table{display:table;table-layout:auto;width:100%;min-width:100%;max-width:100%;white-space:normal;overflow:visible;font-size:.88rem;line-height:1.45}
+.post-content table.pas-table{display:table;table-layout:auto;width:100%;min-width:100%;max-width:100%;white-space:normal;overflow:visible;font-size:.82rem;line-height:1.4}
 .post-content table.pas-table th,.post-content table.pas-table td{white-space:normal;overflow-wrap:anywhere;padding:.6rem .5rem;vertical-align:top}
-@media(max-width:600px){.pas-donut-layout{grid-template-columns:1fr}.pas-donut{max-width:260px}.pas-donut-legend{font-size:.9rem}.pas-three{grid-template-columns:1fr}.pas-stats strong{font-size:1.4rem}.pas-stats>div{padding:.75rem}.pas-bar{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) 1.8rem;font-size:.8rem}.pas-flow-branches{grid-template-columns:1fr}.pas-flow-step strong{font-size:1.75rem}.post-content table.pas-table{font-size:.78rem}.post-content table.pas-table th,.post-content table.pas-table td{padding:.45rem .3rem}}
+@media(max-width:600px){.pas-donut-layout{grid-template-columns:1fr}.pas-donut{max-width:260px}.pas-donut-legend{font-size:.85rem}.pas-three{grid-template-columns:1fr}.pas-stats strong{font-size:1.35rem}.pas-stats>div{padding:.65rem}.pas-bar{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) 1.8rem;font-size:.76rem}.pas-flow-branches{grid-template-columns:1fr}.pas-flow-step strong{font-size:1.6rem}.post-content table.pas-table{font-size:.72rem}.post-content table.pas-table th,.post-content table.pas-table td{padding:.4rem .28rem}}
 </style>

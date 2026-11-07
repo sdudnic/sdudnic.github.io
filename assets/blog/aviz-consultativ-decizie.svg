@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" role="img" aria-labelledby="title desc">
+  <title id="title">Aviz consultativ și decizie: funcții diferite</title>
+  <desc id="desc">Avizul privește un proiect normativ, decizia soluționează o plîngere, iar în cauza 150/20 Consiliul a invocat art. 12 alineatul 1 litera f și punctul 19.</desc>
+  <rect width="500" height="620" rx="28" fill="#f3f5f7"/>
+  <text x="32" y="57" fill="#24364b" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="1">DOUĂ ACTE</text>
+  <text x="32" y="87" fill="#526274" font-family="Arial, sans-serif" font-size="18">funcții diferite în lege</text>
+
+  <rect x="24" y="112" width="452" height="120" rx="16" fill="#ffffff" stroke="#d4dce4" stroke-width="2"/>
+  <rect x="24" y="112" width="9" height="120" rx="4" fill="#c68c24"/>
+  <text x="53" y="163" fill="#775312" font-family="Arial, sans-serif" font-size="35" font-weight="700">AVIZ</text>
+  <text x="53" y="202" fill="#526274" font-family="Arial, sans-serif" font-size="24">proiect normativ</text>
+
+  <rect x="24" y="252" width="452" height="120" rx="16" fill="#ffffff" stroke="#d4dce4" stroke-width="2"/>
+  <rect x="24" y="252" width="9" height="120" rx="4" fill="#087e79"/>
+  <text x="53" y="303" fill="#08645f" font-family="Arial, sans-serif" font-size="35" font-weight="700">DECIZIE</text>
+  <text x="53" y="342" fill="#526274" font-family="Arial, sans-serif" font-size="24">plîngere examinată</text>
+
+  <rect x="24" y="392" width="452" height="204" rx="16" fill="#24364b"/>
+  <text x="53" y="436" fill="#f3c35e" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">CAUZA NR. 150/20 · 2025</text>
+  <text x="53" y="484" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="700">Temei invocat</text>
+  <text x="53" y="525" fill="#ffffff" font-family="Arial, sans-serif" font-size="25">art. 12(1)(f) + pct. 19</text>
+  <text x="53" y="565" fill="#cbd5df" font-family="Arial, sans-serif" font-size="18">forma cere clarificare</text>
+</svg>

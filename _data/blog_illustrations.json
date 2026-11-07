@@ -193,5 +193,18 @@
     "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
     "changes": "Redimensionare și compresie WebP",
     "bytes": 29310
+  },
+  "aviz-decizie": {
+    "image": "/assets/blog/aviz-consultativ-decizie.svg",
+    "width": 500,
+    "height": 620,
+    "caption": "Avizul consultativ și decizia îndeplinesc funcții diferite; pentru cauza nr. 150/20 este indicat temeiul invocat.",
+    "alt": "Diagramă care compară avizul consultativ pentru un proiect normativ cu decizia adoptată la examinarea unei plîngeri și indică separat temeiul avizului din cauza nr. 150/20.",
+    "credit": "Grafic original: dudnic.com",
+    "source": "https://dudnic.com/assets/blog/aviz-consultativ-decizie.svg",
+    "license": "Grafic original © dudnic.com",
+    "license_url": "https://dudnic.com",
+    "changes": "Grafic SVG creat pentru acest articol",
+    "bytes": 2080
   }
 }

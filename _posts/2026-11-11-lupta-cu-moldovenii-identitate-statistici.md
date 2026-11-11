@@ -74,13 +74,21 @@ Comparația privește acest raționament, iar politicile concrete se cercetează
 
 ## 3. Numele șters prin lege
 
-La 5 decembrie 2013, Curtea Constituțională a stabilit prevalența denumirii din Declarația de Independență asupra denumirii moldovenești din articolul 13 al Constituției. Legea nr. 52 din 16 martie 2023 a impus substituirea denumirilor în actele normative. [Sinteza Bibliotecii Congresului](https://www.loc.gov/item/global-legal-monitor/2023-04-23/moldova-new-law-establishes-romanian-as-the-state-language-of-the-country/) prezintă succesiunea actelor.
+[Hotărîrea nr. 36 din 5 decembrie 2013](https://constcourt.md/ccdocview.php?docid=476&l=ro&tip=hotariri) conține două niveluri care trebuie citite separat. Dispozitivul stabilește că, în cazul divergențelor dintre Declarația de Independență și Constituție, prevalează Declarația. În motivare, la paragraful 124, majoritatea Curții aplică această regulă denumirii limbii. Tocmai trecerea de la regula generală la presupusul conflict lingvistic trebuie examinată.
 
-Schimbarea este amplă: numele moldovenesc al limbii este înlocuit în legislație prin denumirea „limba română”. [Curtea a explicat în 2024](https://constcourt.md/libview.php?id=2795&idc=7&l=ro) că substituirea executa jurisprudența sa și a declarat inadmisibilă contestarea articolelor respective. Separat, a invalidat eliminarea formulării privind grafia latină.
+[Declarația din 27 august 1991](https://new.constcourt.md/pageview.php?id=276&idc=11&l=ro) nu cuprinde un articol distinct care să decreteze limba de stat. Mențiunea lingvistică se află într-o frază care începe cu „REAMINTIND”: aceasta evocă aspirațiile mișcării de eliberare națională și documentele prin care s-ar fi exprimat ele, inclusiv actele despre limbă și alfabet din 31 august 1989. În aceeași enumerare apar drapelul, stema și schimbarea denumirii statului.
 
-Justificarea juridică explică mecanismul prin care s-a făcut schimbarea. Efectul identitar rămîne: statul încetează să folosească drept denumire oficială numele pe care o parte a populației îl dă propriei limbi.
+Prin urmare, formularea despre limbă este parte din relatarea unor evenimente și acte anterioare. A o desprinde din această construcție și a o trata ca pe o nouă decretare a limbii de stat schimbă funcția pasajului: o referire istorică este ridicată la rangul unei norme care înlătură textul expres al Constituției.
 
-Aceasta este o intervenție asupra recunoașterii publice a identității. Oamenii continuă să vorbească și să se identifice, însă numele lor lingvistic este scos din textele care organizează viața instituțională. Formularea „modificare tehnică” nu epuizează consecințele sociale ale unei asemenea substituiri.
+Mai există o contradicție pe care o asemenea lectură trebuie să o explice. [Legea nr. 3464 din 31 august 1989](https://bibliotecapublicadrept.wordpress.com/wp-content/uploads/2022/08/statutul-limbii-de-stat-a-rss-moldovenesti-.pdf), la care trimite contextul Declarației, consacra explicit limba moldovenească drept limbă de stat. Invocarea actelor din 1989 pentru a elimina tocmai denumirea pe care ele o stabileau răstoarnă conținutul juridic al trimiterii.
+
+Obiecția a fost formulată chiar în interiorul Curții. În [opinia sa separată, punctele 17–19](https://constcourt.md/ccdocview.php?docid=476&l=ro&tip=hotariri), judecătorul Aurel Băieșu arată că actele de referință din 1989 consacră denumirea moldovenească și contestă acordarea unei valori superioare simplei mențiuni din Declarație. La punctul 26, el apreciază că autorii sesizărilor urmăreau modificarea articolului 13 prin interpretare, ocolind procedura revizuirii Constituției.
+
+**Critica privește construirea conflictului însuși:** dacă fraza introductivă reamintește acte anterioare, fără să instituie o nouă regulă lingvistică, ce normă contrară articolului 13 ar fi trebuit să prevaleze? În această lectură critică, conflictul apare prin transformarea fragmentului narativ într-o normă autonomă. Majoritatea Curții a adoptat interpretarea opusă, calificînd pasajul drept normă primară imperativă. Faptul că interpretarea a devenit obligatorie nu înlătură disputa asupra temeiului ei textual.
+
+Legea nr. 52 din 16 martie 2023 a impus ulterior substituirea denumirilor în actele normative. Numele moldovenesc a fost înlocuit prin „limba română”. În [hotărîrea din 2024](https://constcourt.md/libview.php?id=2795&idc=7&l=ro), Curtea a tratat substituirea ca executare a jurisprudenței sale; separat, a invalidat eliminarea formulării despre grafia latină.
+
+Lanțul este astfel vizibil: o mențiune dintr-o frază istorică primește prin interpretare forța de a înlătura o denumire constituțională expresă, iar apoi această interpretare justifică înlocuirea numelui în legislație. A numi rezultatul „modificare tehnică” ascunde miza pasului inițial: **cine și prin ce lectură a textului a creat temeiul pentru scoaterea numelui moldovenesc din lege?**
 
 ## 4. Diplomația „inexistenței”
 

@@ -35,11 +35,11 @@ Prin „identitate moldovenească” înțelegem aici identificarea etnică asum
 
 Exemplele următoare arată cum funcționează această substituire: în statistici, în interpretarea istoriei, în drept, în relațiile dintre state și în educație.
 
-## 1. Recensămîntul din 1930: moldovenii există în explicație, dar dispar din categoriile distincte
+## 1. 1930: dispariția din condei
 
 În [volumul II al recensămîntului din 29 decembrie 1930, publicat în 1938](https://bibgtkneamt.ebibliophil.ro/d.php?l=bjn_recansamant-1930-vol-2-pdf-jwg553k9), statul român nu publică rubrici distincte pentru moldoveni și limba moldovenească. [Pagina XXIV](https://commons.wikimedia.org/wiki/File:Recensamant1930-II-XXIV.jpg) permite verificarea directă a listei.
 
-Absența este cu atît mai semnificativă cu cît Sabin Manuilă, directorul recensămîntului, recunoaște în prefață existența numelui prin care oamenii se identificau: „chiar şi acolo unde ei îşi spun: Moldoveni, Moţi, Mocani”. El susține că acești locuitori s-ar fi declarat români la recensămînt. Documentul juxtapune astfel numele moldovenesc folosit de oameni și interpretarea națională oferită de instituție.
+Absența este cu atît mai semnificativă cu cît Sabin Manuilă, directorul recensămîntului, recunoaște în prefață existența numelui prin care oamenii se identificau: „chiar şi acolo unde ei îşi spun: Moldoveni, Moţi, Mocani”. Tot el afirmă că acești locuitori s-au declarat români la recensămînt. **Oamenii își spun moldoveni, dar în rezultatul publicat nu mai au identitate distinctă: aceasta este contradicția pe care explicația oficială o lasă nerezolvată.**
 
 <figure class="document-image" style="max-width:480px;">
 <a href="https://bibgtkneamt.ebibliophil.ro/d.php?l=bjn_recansamant-1930-vol-2-pdf-jwg553k9"><img src="/assets/recensamant-1930-prefata-xiv.webp" alt="Pagina XIV a prefeței lui Sabin Manuilă, care menționează explicit numele Moldoveni" loading="lazy"></a>
@@ -48,11 +48,15 @@ Absența este cu atît mai semnificativă cu cît Sabin Manuilă, directorul rec
 
 Această încadrare nu este neutră. Așezarea moldovenilor lîngă moți și mocani îi tratează ca o subdiviziune regională în interiorul națiunii definite de stat. Posibilitatea unei identificări moldovenești etnice distincte este înlăturată din prezentarea generală a rezultatelor.
 
-Explicația conducerii recensămîntului trebuie citită ca justificare a propriei clasificări. Pentru stabilirea felului în care a fost consemnat fiecare răspuns ar fi necesare buletinele individuale. Efectul publicației este însă vizibil: **moldovenii nu pot fi regăsiți și numărați separat în acele tabele**, deși însuși autorul recunoaște că oamenii își spuneau moldoveni.
+De ce ar trebui acceptată fără probe ideea că o identificare recunoscută chiar de organizator a dispărut din declarațiile relevante pentru clasificare? Prefața nu publică o demonstrație a acestei presupuse renunțări colective la numele moldovenesc. O afirmă și cere cititorului să creadă instituția care a produs rezultatul.
+
+**Absența unei rubrici nu înseamnă absența oamenilor și nici absența declarațiilor moldovenești.** Tabelul general nu ne spune cîți au răspuns „moldovean”, cum au fost codificate asemenea răspunsuri sau dacă au fost absorbite în altă categorie. Pentru aceste întrebări, proba este în buletine și în regulile efective de prelucrare. Explicația directorului nu poate ține locul lor.
+
+Sarcina justificării aparține instituției care a înlăturat categoria distinctă. Moldovenilor nu li se poate cere să dovedească inexistența propriei lor dispariții. Faptul documentat rămîne brutal: **în aceste tabele, statul român nu le oferă posibilitatea de a exista statistic sub propriul nume**, deși numele este recunoscut în aceeași publicație.
 
 Cînd această publicație este folosită ulterior pentru a susține că moldovenii nu existau ca identificare proprie, absența produsă de clasificare devine argument împotriva identității excluse. Statistica ajunge să legitimeze propria ei omisiune.
 
-## 2. Teza „inventării”: intervenția asupra limbii este transformată în negarea istoriei ei
+## 2. Pretextul „inventării”
 
 Una dintre formulele cele mai răspîndite împotriva identității lingvistice moldovenești este că limba ar fi fost „inventată” în RASSM. Formula confundă existența unei limbi și a numelui ei cu politicile aplicate ulterior vocabularului, scrierii și normei literare.
 
@@ -68,7 +72,7 @@ Comparația cu influența franceză arată de ce este necesar același criteriu.
 
 Comparația privește acest raționament, iar politicile concrete se cercetează în împrejurările fiecărei epoci. O normă poate fi modificată prin decizie politică; istoria limbii și a denumirii sale nu începe cu acea decizie.
 
-## 3. Republica Moldova: denumirea este scoasă din legislație
+## 3. Numele șters prin lege
 
 La 5 decembrie 2013, Curtea Constituțională a stabilit prevalența denumirii din Declarația de Independență asupra denumirii moldovenești din articolul 13 al Constituției. Legea nr. 52 din 16 martie 2023 a impus substituirea denumirilor în actele normative. [Sinteza Bibliotecii Congresului](https://www.loc.gov/item/global-legal-monitor/2023-04-23/moldova-new-law-establishes-romanian-as-the-state-language-of-the-country/) prezintă succesiunea actelor.
 
@@ -78,7 +82,7 @@ Justificarea juridică explică mecanismul prin care s-a făcut schimbarea. Efec
 
 Aceasta este o intervenție asupra recunoașterii publice a identității. Oamenii continuă să vorbească și să se identifice, însă numele lor lingvistic este scos din textele care organizează viața instituțională. Formularea „modificare tehnică” nu epuizează consecințele sociale ale unei asemenea substituiri.
 
-## 4. Diplomația română cere recunoașterea „inexistenței” limbii moldovenești
+## 4. Diplomația „inexistenței”
 
 La 12 aprilie 2023, Bogdan Aurescu a reiterat în discuția cu ministrul ucrainean Dmytro Kuleba cererea privind recunoașterea inexistenței așa-zisei limbi moldovenești. Solicitarea figurează în [comunicatul MAE român](https://www.mae.ro/node/61623), [reprodus de Ziarul de Gardă](https://www.zdg.md/importante/ministrul-roman-de-externe-cere-autoritatilor-ucrainene-sa-adopte-masurile-necesare-pentru-recunoasterea-inexistentei-asa-zisei-limbi-moldovenesti/).
 
@@ -90,7 +94,7 @@ La 10 octombrie 2023, [declarația comună Iohannis–Zelenski](https://www.pres
 
 Se face astfel un salt de la apropierea sau unitatea lingvistică la anularea legitimității unei denumiri proprii. Disputa depășește cercetarea limbii: autoritatea diplomatică intervine pentru a decide cum are voie să fie reprezentată comunitatea în alt stat.
 
-## 5. Ucraina: înlocuirea manualelor și răspunderea disciplinară
+## 5. Manuale retrase, funcționari amenințați
 
 La 16 noiembrie 2023, [Ministerul Educației și Științei al Ucrainei anunța](https://www.kmu.gov.ua/en/news/ofitsiina-zaiava-shchodo-vykorystannia-v-ukraini-poniattia-rumunska-mova-zamist-poniattia-moldovska-mova) înlocuirea termenului moldovenesc cu cel românesc. Comunicatul preciza trei măsuri: alinierea actelor normative, răspunderea disciplinară a funcționarilor care încalcă decizia și oprirea tipăririi suplimentare a manualelor cu denumirea moldovenească. Era pregătită și înlocuirea exemplarelor deja tipărite.
 
@@ -100,7 +104,7 @@ Manualul poartă și un mesaj de recunoaștere. Înlocuirea denumirii îi spune 
 
 Răspunderea disciplinară anunțată privește funcționarii care aplică decizia. Tocmai această precizare face mecanismul concret: administrația este obligată să reproducă noua terminologie, iar menținerea celei moldovenești devine abatere de la regula oficială.
 
-## 6. Codurile și clasificările: moldoveneasca își pierde poziția distinctă
+## 6. Ștergerea din coduri
 
 La 3 noiembrie 2008, codurile `mo` și `mol` au fost retrase din uzul curent al standardului ISO 639. [Registrul Bibliotecii Congresului](https://www.loc.gov/standards/iso639-2/php/code_changes.php) indică folosirea codurilor comune, precizînd totodată că înregistrările vechi rămîn valide. [Glottolog](https://glottolog.org/resource/languoid/id/mold1248) prezintă moldoveneasca drept dialect și consemnează reunirea codului.
 
@@ -110,7 +114,7 @@ O asemenea decizie tehnică are consecințe culturale atunci cînd structura lis
 
 Există o diferență între o convenție de clasificare și fidelitatea față de persoană sau document. Titlul unei cărți, citatul unui autor și declarația unui vorbitor trebuie păstrate în forma lor. Substituirea lor prin eticheta curentă ar face să dispară din afișare tocmai mărturia istorică pe care catalogul ar trebui să o conserve.
 
-## 7. BNS: declarația moldovenească este reunită sub altă denumire
+## 7. BNS: declari una, apare alta
 
 În [precizările din 10 februarie 2025](https://statistica.gov.md/index.php/ro/precizarile-bns-privind-caracteristicile-etnoculturale-din-cadrul-recensamantulu-12_61647.html), BNS afirmă că înregistrează răspunsurile privind limba conform declarației persoanei. Instituția explică și reunirea răspunsurilor moldovenești și românești sub denumirea oficială a limbii de stat.
 
@@ -120,7 +124,7 @@ Această operație schimbă ceea ce vede publicul. Un total care reunește două
 
 Regula corectă de prezentare este simplă: să fie afișate cele două componente, denumirile declarate și motivul însumării. O analiză despre comunicarea lingvistică și una despre numele prin care oamenii se identifică au obiecte diferite. Folosirea primeia pentru a o înlocui pe a doua îi atribuie respondentului o alegere pe care nu a făcut-o.
 
-## Cifrele greșite rămîn publicate și sînt preluate mai departe
+## Cifre false, autoritate oficială
 
 Pe lîngă problema agregării, comunicatul BNS despre rezultatele finale conține o neconcordanță numerică. [Pagina din 20 octombrie 2025](https://statistica.gov.md/ro/rezultatele-finale-ale-recensamantului-populatiei-si-locuintelor-2024-caracteris-10121_62043.html) asociază 1.441,4 mii de persoane cu 48,1%, într-o populație de 2.409,2 mii. Pasajul rămînea necorectat la verificarea din 11 noiembrie 2026.
 
@@ -147,7 +151,7 @@ Cei care citează o publicație oficială nu recalculează neapărat fiecare pro
 
 BNS trebuie să corecteze chiar pasajul publicat, să dateze rectificarea și să precizeze valoarea înlocuită. Persistența erorii este o problemă de responsabilitate informațională; stabilirea intenției cu care a apărut cere probe despre producerea ei. Critica agregării și constatarea acestei cifre greșite se sprijină fiecare pe propriile documente.
 
-## Același mecanism în mai multe instituții
+## Anatomia unei ștergeri
 
 Cazurile pot fi urmărite într-o succesiune concretă:
 
@@ -165,7 +169,7 @@ Caracterul sistematic al luptei se vede în repetarea acestei substituiri în do
 
 Aceasta este miza: cine deține puterea de a transforma numele folosit de oameni într-o denumire pe care instituția o acceptă numai ca regionalism, eroare sau relicvă politică?
 
-## Identitatea nu poate fi anulată prin clasificare
+## Cine le dă dreptul?
 
 [Recomandările UNECE despre recensăminte](https://w3.unece.org/recs2030census/webpage24.html) acordă un rol central autoidentificării în colectarea datelor etnoculturale. Declarația persoanei trebuie să poată fi exprimată și regăsită în date, distinct de interpretările ulterioare.
 

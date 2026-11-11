@@ -136,6 +136,31 @@ Această operație schimbă ceea ce vede publicul. Un total care reunește două
 
 Regula corectă de prezentare este simplă: să fie afișate cele două componente, denumirile declarate și motivul însumării. O analiză despre comunicarea lingvistică și una despre numele prin care oamenii se identifică au obiecte diferite. Folosirea primeia pentru a o înlocui pe a doua îi atribuie respondentului o alegere pe care nu a făcut-o.
 
+## 8. Școala cu etnie în titlu
+
+În Republica Moldova, disciplina școlară oficială se numește **„Istoria românilor și universală”**. Aceasta este denumirea din [curriculumul național pentru liceu](https://mecc.gov.md/sites/default/files/istoria_curriculum_liceu_rom.pdf), care o include în trunchiul obligatoriu. Ea apare și în [Planul-cadru pentru anul de studii 2026–2027](https://www.mec.gov.md/sites/default/files/planul-cadru_2026-2027_09_09_2026.pdf). Este, așadar, o alegere a statului pentru școala publică, nu numai titlul unei cărți sau opțiunea unui profesor.
+
+Titlul alege un grup etnic ca subiect privilegiat al istoriei. Pentru elevii care se identifică moldoveni, ucraineni, găgăuzi, ruși, bulgari, romi sau altfel, întrebarea este directă: de ce istoria comună predată de stat poartă numele unei singure etnii? Republica Moldova este patria tuturor cetățenilor săi, iar apartenența la comunitatea politică nu cere adoptarea aceleiași identități etnice.
+
+Adăugarea cuvintelor „și universală” nu înlătură alegerea inițială. Din multitudinea comunităților, una este numită separat; celelalte intră în categoria generală. Nici includerea unor lecții despre alte comunități nu schimbă ierarhia simbolică din titlu. Problema este cine dă numele istoriei comune și cine este reprezentat numai în interiorul ei.
+
+Această obiecție are și un document instituțional precis. În [avizul consultativ din 15 mai 2025, cauza nr. 150/20](https://egalitate.md/wp-content/uploads/2021/01/150_20_Aviz_votat.pdf), Consiliul pentru egalitate conchide că denumirea „Istoria Românilor” reprezintă discriminare directă față de alte grupuri etnice și recomandă o denumire neutră etnic. Actul consemnează și denumirea completă invocată de minister, precum și argumentul acestuia că materia include istorie locală și conținuturi despre minorități. Consiliul apreciază că titlul poate rămîne etnocentric chiar în prezența unor asemenea conținuturi.
+
+<figure class="document-image" style="max-width:480px;">
+<a href="https://egalitate.md/wp-content/uploads/2021/01/150_20_Aviz_votat.pdf"><img src="/assets/aviz-istorie-150-20-concluzii.webp" alt="Ultima pagină a avizului Consiliului pentru egalitate din 15 mai 2025, cu concluzia și recomandarea despre denumirea disciplinei" loading="lazy"></a>
+<figcaption>Avizul consultativ din cauza nr. 150/20, p. 7: concluzia privind discriminarea și recomandarea unei denumiri neutre etnic.<small>Sursa: Consiliul pentru egalitate · reproducere a unui document oficial.</small></figcaption>
+</figure>
+
+Comparația europeană este documentată și în [colecția de coperte și denumiri publicată pe dudnic.com la 22 noiembrie 2019](https://dudnic.com/2019/11/22/denumirea-obiectului-scolar-de-istorie.html). Cititorul poate vedea formule generice precum *History*, *Geschichte*, *Histoire*, *Istorie*, dar și formule teritoriale: *Istoria Rusiei*, *Istoria Ucrainei*, *Istoria și geografia Portugaliei*. Chiar România figurează cu denumirea „Istorie”. Niciunul dintre aceste exemple nu atribuie disciplina unei singure etnii.
+
+[Studiul asociat colecției](https://dudnic.com/istoria/md.html) califică Republica Moldova drept unica țară europeană care păstrează elementul etnic în denumirea disciplinei. Este concluzia comparației publicate, datate, și trebuie citită în raport cu materialele reunite acolo. Colecția include și spațiul caucazian, unde titlul armean „Հայոց պատմություն”, redat în pagină ca „Istoria Armeniei”, are sensul de „Istoria armenilor”; [ministerul armean a propus în 2024 trecerea la titlul teritorial „Հայաստանի պատմություն”](https://escs.am/am/news/20267). Întinderea geografică, traducerea și anul contează pentru orice afirmație de unicitate.
+
+Avizul Consiliului compară, la rîndul său, denumirea cu formulele generice ori teritoriale din alte sisteme și dă exemplele României, Sloveniei și Serbiei. Concluzia sa despre discriminare este formulată într-un aviz consultativ, distinct de o hotărîre judecătorească. Critica alegerii etnice se sprijină astfel pe documente curriculare, pe comparația publicată și pe analiza instituției pentru egalitate.
+
+Pentru tema moldovenească, mecanismul este limpede: istoria țării și a populației ei este așezată sub o identitate etnică pe care numeroși cetățeni nu și-o asumă. Elevul care se numește moldovean găsește în titlul disciplinei alt nume colectiv. O alegere identitară disputată este astfel introdusă în rutina obligatorie a școlii.
+
+**Statul poate preda istoria românilor, a moldovenilor și a tuturor celorlalte comunități fără să atribuie istoria comună unei singure etnii.** Critica vizează denumirea oficială și autoritatea care o impune. Dreptul unei comunități de a-și studia trecutul nu îi conferă monopol asupra numelui disciplinei obligatorii pentru toți.
+
 ## Cifre false, autoritate oficială
 
 Pe lîngă problema agregării, comunicatul BNS despre rezultatele finale conține o neconcordanță numerică. [Pagina din 20 octombrie 2025](https://statistica.gov.md/ro/rezultatele-finale-ale-recensamantului-populatiei-si-locuintelor-2024-caracteris-10121_62043.html) asociază 1.441,4 mii de persoane cu 48,1%, într-o populație de 2.409,2 mii. Pasajul rămînea necorectat la verificarea din 11 noiembrie 2026.
@@ -176,6 +201,7 @@ Cazurile pot fi urmărite într-o succesiune concretă:
 | Educația din Ucraina | Schimbarea terminologiei și a manualelor | Denumirea moldovenească este îndepărtată din educația oficială |
 | Codurile internaționale | Retragerea identificatorilor distincți | Scade autonomia reprezentării tehnice |
 | Sintezele statistice | Reunirea răspunsurilor sub denumirea de stat | Alegerea moldovenească pierde vizibilitate în totalul agregat |
+| Școala publică din Moldova | Disciplina obligatorie poartă numele unei etnii | Identitatea moldovenească nu este numită distinct în titlul istoriei predate de stat |
 
 Caracterul sistematic al luptei se vede în repetarea acestei substituiri în domenii diferite. Mai întîi se contestă legitimitatea numelui. Apoi se modifică lista, legea, manualul sau codul. În final, absența produsă de schimbare poate fi prezentată drept dovadă că identitatea distinctă nici nu ar fi avut temei.
 

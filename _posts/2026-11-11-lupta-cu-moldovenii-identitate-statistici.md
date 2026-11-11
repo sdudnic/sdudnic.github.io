@@ -17,6 +17,10 @@ Un om spune că este moldovean și că vorbește moldovenește. Un tabel, o lege
 <style>
 .post-content table { display:table; width:100%; max-width:100%; table-layout:fixed; white-space:normal; overflow:visible; }
 .post-content th, .post-content td { white-space:normal; overflow-wrap:anywhere; padding:.55rem; vertical-align:top; }
+.post-content .document-image { clear:both; width:min(100%,760px); box-sizing:border-box; margin:1.5rem auto; padding:8px; border:1px solid #ddd; }
+.post-content .document-image img { display:block; width:100%; height:auto; }
+.post-content .document-image figcaption { margin-top:6px; font-size:.85rem; line-height:1.45; }
+.post-content .document-image small { display:block; color:#777; font-size:10px; }
 @media (max-width:600px) { .post-content .post-image { float:none !important; margin:1rem auto !important; } .post-content table { font-size:.82rem; } .post-content th, .post-content td { padding:.35rem; } }
 </style>
 
@@ -45,7 +49,20 @@ Cifra de aproximativ 1,441 milioane aparține anului 2014; procentul de 48,1% ap
 
 Aceasta documentează o eroare de comunicare, compatibilă cu preluarea cifrei din coloana greșită. Nu documentează, prin ea însăși, falsificarea răspunsurilor și nici coborîrea deliberată a unui rezultat de aproape 60% sub pragul de 50%.
 
-Distincția nu scuză instituția. O cifră greșită într-un subiect identitar sensibil poate fi multiplicată ani de zile de presă și de public. Corectarea ei ar trebui să fie vizibilă și datată, cu trimitere la tabelul corect. Însă acuzația trebuie să urmeze proba: eroarea din comunicat nu poate deveni dovada unei fraude din baza de date.
+## Eroarea necorectată devine sursă pentru alte publicații
+
+Distincția nu scuză instituția. La verificarea din 11 noiembrie 2026, pasajul rămînea necorectat pe pagina BNS. Nu există în sursele examinate o recunoaștere publică documentată a acestei erori. Publicarea tabelului cu valorile corecte nu repară automat comunicatul care continuă să ofere alte cifre.
+
+<figure class="document-image">
+<a href="https://statistica.gov.md/ro/rezultatele-finale-ale-recensamantului-populatiei-si-locuintelor-2024-caracteris-10121_62043.html"><img src="/assets/bns-2024-fragment-necorectat.webp" alt="Fragmentul real din comunicatul BNS care asociază 1.441,4 mii de persoane cu 48,1%" loading="lazy"></a>
+<figcaption>Pasajul necorectat din comunicatul BNS, capturat la 11 noiembrie 2026. Numărul absolut nu corespunde procentului indicat pentru 2024.<small>Sursa: BNS · reproducere documentară a datelor statistice oficiale.</small></figcaption>
+</figure>
+
+Consecința nu este doar ipotetică. [PRESShub, într-un articol din 21 octombrie 2025](https://www.presshub.ro/locuitorii-r-moldova-se-definesc-preponderent-drept-moldoveni-dar-creste-procentul-vorbitorilor-de-romana-in-detrimentul-limbii-moldovenesti-recensamant-national-391486/), reproduce aceeași asociere dintre 1.441,4 mii de persoane și 48,1%, atribuind informația BNS. Exemplul arată cum o neconcordanță din sursa oficială trece într-o altă publicație; nu dovedește că toate redacțiile au procedat la fel.
+
+Cititorii, jurnaliștii și cercetătorii care citează un comunicat statistic nu vor reface neapărat fiecare împărțire și nu vor confrunta fiecare frază cu toate anexele. Ei pot reproduce cifrele așa cum sînt, avînd încredere în autoritatea instituției. Astfel, **o cifră falsă pentru anul 2024 continuă să circule ca informație oficială**, chiar dacă numărul respectiv este autentic pentru anul 2014. Citarea fidelă a unei surse greșite nu face informația adevărată.
+
+Instituția trebuie să corecteze pasajul chiar în publicația citată, să dateze rectificarea și să explice ce valoare a fost înlocuită. O anexă corectă, lăsată alături de un comunicat greșit, transferă publicului sarcina de a descoperi contradicția. Pînă la corectare, pagina oficială rămîne un punct de propagare a erorii. Aceasta este problema verificabilă; intenția de a falsifica baza de date nu rezultă numai din persistența pasajului greșit.
 
 ## Cine este numărat și ce anume se măsoară
 
@@ -72,6 +89,11 @@ Un standard de transparență ar păstra alături rezultatul agregat, componente
 În volumul II al recensămîntului din 29 decembrie 1930, publicat la București în 1938, [tabelele generale de la pagina XXIV](https://commons.wikimedia.org/wiki/File:Recensamant1930-II-XXIV.jpg) nu conțin rubrici distincte pentru moldoveni și limba moldovenească. Ele folosesc categoriile naționale ale statului român. Este un fapt observabil în pagina originală.
 
 [Prefața lui Sabin Manuilă, pp. XI–XIV](https://bibgtkneamt.ebibliophil.ro/d.php?l=bjn_recansamant-1930-vol-2-pdf-jwg553k9), distinge declarația liberă de lista folosită la prelucrare. Autorul susține că recenzorii nu puteau modifica răspunsul și explică lipsa separării prin afirmația că locuitorii s-ar fi declarat români inclusiv acolo unde își spuneau moldoveni. Aceasta este explicația conducerii recensămîntului, nu o verificare independentă a fiecărui formular.
+
+<figure class="document-image" style="max-width:480px;">
+<a href="https://bibgtkneamt.ebibliophil.ro/d.php?l=bjn_recansamant-1930-vol-2-pdf-jwg553k9"><img src="/assets/recensamant-1930-prefata-xiv.webp" alt="Pagina XIV a prefeței lui Sabin Manuilă, cu explicația despre clasificarea moldovenilor" loading="lazy"></a>
+<figcaption>Pagina XIV a prefeței: explicația conducerii recensămîntului despre moldoveni și clasificarea lor. Ediția din 1938.<small>Sursa: Institutul Central de Statistică / Biblioteca Județeană G. T. Kirileanu Neamț · document statistic oficial, domeniul public.</small></figcaption>
+</figure>
 
 Prin urmare, sursa permite două constatări. Identificarea moldovenească nu este vizibilă ca o categorie distinctă în tabelele generale. În același timp, publicația nu recunoaște înlocuirea forțată a unor declarații moldovenești, ci invocă declarațiile populației pentru a justifica sistemul adoptat.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "„Lupta cu moldovenii”: cine decide numele unei identități"
-date: 2026-11-11 14:15:00 +0100
+date: 2026-11-11 14:00:00 +0100
 lang: mo
 news_label: Studiu documentar
 tags: [Moldova, identitate, moldoveni, recensămînt, limba moldovenească]

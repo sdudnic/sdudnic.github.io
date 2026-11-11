@@ -94,7 +94,11 @@ Lanțul este astfel vizibil: o mențiune dintr-o frază istorică primește prin
 
 La 12 aprilie 2023, Bogdan Aurescu a reiterat în discuția cu ministrul ucrainean Dmytro Kuleba cererea privind recunoașterea inexistenței așa-zisei limbi moldovenești. Solicitarea figurează în [comunicatul MAE român](https://www.mae.ro/node/61623), [reprodus de Ziarul de Gardă](https://www.zdg.md/importante/ministrul-roman-de-externe-cere-autoritatilor-ucrainene-sa-adopte-masurile-necesare-pentru-recunoasterea-inexistentei-asa-zisei-limbi-moldovenesti/).
 
-Formularea contează. O instituție diplomatică cere altui stat să adopte o poziție de negare a unei denumiri lingvistice folosite de o comunitate. Negarea devine obiectiv al relației dintre guverne.
+Formularea contează și își trădează propria confuzie. Dacă, așa cum susțin autoritățile române, cele două denumiri desemnează aceeași limbă, atunci obiectul lingvistic există sub ambele nume. În această premisă, a cere „inexistența” limbii moldovenești este la fel de incoerent ca a cere inexistența aceleiași limbi sub denumirea românească. Schimbarea numelui nu face să dispară limba vorbită.
+
+O cerere coerentă cu premisa identității lingvistice ar putea viza nerecunoașterea unei limbi *distincte* ori respingerea denumirii moldovenești în uzul oficial. Acestea sînt însă propoziții diferite de declararea inexistenței limbii. Formula diplomatică le amestecă și prezintă refuzul unui nume drept verdict asupra existenței a ceea ce numele desemnează.
+
+**Oamenilor li se spune că limba lor nu există, cînd disputa privește numele pe care instituția acceptă să-l folosească.** Aceasta este o imprecizie gravă într-un discurs oficial care pretinde rigoare științifică. Competența formulării se judecă după text: diplomația cere negarea, în loc să definească exact ce contestă. Refuzul denumirii moldovenești devine astfel obiectiv al relației dintre guverne, acoperit de retorica „inexistenței”.
 
 La 10 octombrie 2023, [declarația comună Iohannis–Zelenski](https://www.president.gov.ua/en/news/spilna-zayava-prezidenta-ukrayini-volodimira-zelenskogo-i-pr-86229) a cerut guvernelor rezolvarea fără întîrziere a distincției lingvistice, calificată de semnatari drept artificială. Astfel, poziția este înscrisă într-un document politic bilateral.
 

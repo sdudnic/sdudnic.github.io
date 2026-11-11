@@ -52,7 +52,7 @@ De ce ar trebui acceptată fără probe ideea că o identificare recunoscută ch
 
 **Absența unei rubrici nu înseamnă absența oamenilor și nici absența declarațiilor moldovenești.** Tabelul general nu ne spune cîți au răspuns „moldovean”, cum au fost codificate asemenea răspunsuri sau dacă au fost absorbite în altă categorie. Pentru aceste întrebări, proba este în buletine și în regulile efective de prelucrare. Explicația directorului nu poate ține locul lor.
 
-Sarcina justificării aparține instituției care a înlăturat categoria distinctă. Moldovenilor nu li se poate cere să dovedească inexistența propriei lor dispariții. Faptul documentat rămîne brutal: **în aceste tabele, statul român nu le oferă posibilitatea de a exista statistic sub propriul nume**, deși numele este recunoscut în aceeași publicație.
+Sarcina justificării aparține instituției care a înlăturat categoria distinctă. O comunitate nu poate fi declarată dispărută numai fiindcă statul nu i-a rezervat o rubrică. Faptul documentat rămîne brutal: **în aceste tabele, statul român nu le oferă posibilitatea de a exista statistic sub propriul nume**, deși numele este recunoscut în aceeași publicație.
 
 Cînd această publicație este folosită ulterior pentru a susține că moldovenii nu existau ca identificare proprie, absența produsă de clasificare devine argument împotriva identității excluse. Statistica ajunge să legitimeze propria ei omisiune.
 
@@ -104,7 +104,7 @@ Manualul poartă și un mesaj de recunoaștere. Înlocuirea denumirii îi spune 
 
 Răspunderea disciplinară anunțată privește funcționarii care aplică decizia. Tocmai această precizare face mecanismul concret: administrația este obligată să reproducă noua terminologie, iar menținerea celei moldovenești devine abatere de la regula oficială.
 
-## 6. Ștergerea din coduri
+## 6. Coduri retrase, nume absorbit
 
 La 3 noiembrie 2008, codurile `mo` și `mol` au fost retrase din uzul curent al standardului ISO 639. [Registrul Bibliotecii Congresului](https://www.loc.gov/standards/iso639-2/php/code_changes.php) indică folosirea codurilor comune, precizînd totodată că înregistrările vechi rămîn valide. [Glottolog](https://glottolog.org/resource/languoid/id/mold1248) prezintă moldoveneasca drept dialect și consemnează reunirea codului.
 
@@ -114,7 +114,7 @@ O asemenea decizie tehnică are consecințe culturale atunci cînd structura lis
 
 Există o diferență între o convenție de clasificare și fidelitatea față de persoană sau document. Titlul unei cărți, citatul unui autor și declarația unui vorbitor trebuie păstrate în forma lor. Substituirea lor prin eticheta curentă ar face să dispară din afișare tocmai mărturia istorică pe care catalogul ar trebui să o conserve.
 
-## 7. BNS: declari una, apare alta
+## 7. BNS: numele absorbit
 
 În [precizările din 10 februarie 2025](https://statistica.gov.md/index.php/ro/precizarile-bns-privind-caracteristicile-etnoculturale-din-cadrul-recensamantulu-12_61647.html), BNS afirmă că înregistrează răspunsurile privind limba conform declarației persoanei. Instituția explică și reunirea răspunsurilor moldovenești și românești sub denumirea oficială a limbii de stat.
 

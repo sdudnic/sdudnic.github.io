@@ -15,8 +15,8 @@ Preluarea operatorului Portului Internațional Liber Giurgiulești de către com
 <!--more-->
 
 <figure class="post-image" style="float:right; width:min(100%, 350px); margin:0 0 1rem 1.25rem; padding:6px; border:1px solid #ddd;">
-  <img src="/assets/giurgiulesti-terminal-pasageri.jpg" alt="Terminalul de pasageri de la Giurgiulești, în 2013" loading="lazy" style="display:block; width:100%; height:auto;">
-  <figcaption>Terminalul de pasageri de la Giurgiulești, în 2013. Foto: Spiridon Ion Cepleanu, <a href="https://commons.wikimedia.org/wiki/File:Giurgiulesti-Harbour.jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</figcaption>
+  <a href="https://commons.wikimedia.org/wiki/File:Giurgiulesti-Harbour.jpg" title="Sursa fotografiei și licența CC BY-SA 3.0"><img src="/assets/giurgiulesti-terminal-pasageri.jpg" alt="Terminalul de pasageri de la Giurgiulești, în 2013" loading="lazy" style="display:block; width:100%; height:auto;"></a>
+  <figcaption>Terminalul de pasageri de la Giurgiulești, în 2013.<small style="display:block; margin-top:3px; font-size:10px; line-height:1.3; font-style:normal; color:#777;">Foto: Spiridon Ion Cepleanu · CC BY-SA 3.0</small></figcaption>
 </figure>
 
 În aprilie 2026, Administrația Porturilor Maritime Constanța (APM), controlată de statul român, a cumpărat de la Banca Europeană pentru Reconstrucție și Dezvoltare (BERD) compania Danube Logistics, operatorul portului internațional liber. [BERD precizează](https://www.ebrd.com/home/news-and-events/news/2026/ebrd-completes-landmark-exit-from-giurgiulesti-international-fre.html) că a vîndut 100% din participația sa după o procedură competitivă internațională.

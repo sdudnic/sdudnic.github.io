@@ -36,7 +36,7 @@ Documentul [cere](https://limbaromana.md/index.php?go=articole&n=1000) condamnar
 
 ## Condamnarea începe cu denumirea
 
-Mihai Ghimpu, președinte interimar, a creat comisia la 14 ianuarie 2010, prin [Decretul nr. 165-V](https://cosmin-budeanca.blogspot.com/2010_01_16_archive.html). Ea trebuia să studieze instituțiile sovietice prin prisma drepturilor omului și să prezinte propuneri până la 1 iunie.
+Mihai Ghimpu, președinte interimar, [a creat](https://cosmin-budeanca.blogspot.com/2010_01_16_archive.html) comisia la 14 ianuarie 2010, prin Decretul nr. 165-V. Ea trebuia să studieze instituțiile sovietice prin prisma drepturilor omului și să prezinte propuneri până la 1 iunie.
 
 Denumirea **„regim comunist totalitar”** anunța deja direcția. Trecutul venea la cercetare cu eticheta pusă. Istoricilor le revenea sarcina să-l studieze și să-i dea o apreciere istorică și politico-juridică.
 
@@ -79,7 +79,7 @@ Povestind ulterior despre lucrările din 2010, Cușco [descrie](https://cultural
 
 Pasajul despre inventarea națiunii începe promițător: „Comisia a demonstrat”. Cititorul așteaptă, firesc, demonstrația. Primește concluzia. Documentele și argumentul prin care este exclus orice resort istoric anterior sovieticilor lipsesc din pasaj.
 
-Cartea lui Cojocaru, *Cominternul și originile „moldovenismului”*, din 2009, [cuprinde, potrivit unei recenzii din epocă](https://amnr.defense.ro/webroot/fileslib/upload/files/Revista_Document/Revista_049_2010.pdf), 157 de documente din anii 1924–1928. Acestea pot arăta cum a fost pregătit proiectul sovietic. Cum ar putea documentele despre acel proiect să dovedească și absența **oricărui** temei istoric anterior?
+Cartea lui Cojocaru, *Cominternul și originile „moldovenismului”*, din 2009, [cuprinde](https://amnr.defense.ro/webroot/fileslib/upload/files/Revista_Document/Revista_049_2010.pdf), potrivit unei recenzii din epocă, 157 de documente din anii 1924–1928. Acestea pot arăta cum a fost pregătit proiectul sovietic. Cum ar putea documentele despre acel proiect să dovedească și absența **oricărui** temei istoric anterior?
 
 Un stat poate prelua o identificare mai veche, îi poate schimba sensul și o poate folosi în scopurile sale. Pentru a explica ce au făcut sovieticii, trebuie cercetat și ce exista înaintea lor. Altfel, „au construit un proiect politic” devine, pe nesimțite, „au inventat totul”.
 
@@ -117,7 +117,7 @@ Nici „sovietic” nu însemna „rus”. Ordinele veneau de la conducerea sovi
 
 ## De la crime la „genocid”: lipsește o etapă a argumentului
 
-Raportul propune condamnarea sistemului și pentru acte de genocid, alături de crime împotriva umanității. În [definiția internațională a genocidului](https://www.ohchr.org/sites/default/files/2021-11/Genocide-Framework-of-Analysis-English.pdf) contează intenția de a distruge, integral sau parțial, un grup național, etnic, rasial sau religios ca atare. Raportul analitic nu identifică pentru fiecare fapt invocat grupul protejat, actul și dovezile acestei intenții. Calificarea juridică este avansată fără demonstrația individualizată necesară susținerii ei.
+Raportul propune condamnarea sistemului și pentru acte de genocid, alături de crime împotriva umanității. În definiția internațională a genocidului [contează](https://www.ohchr.org/sites/default/files/2021-11/Genocide-Framework-of-Analysis-English.pdf) intenția de a distruge, integral sau parțial, un grup național, etnic, rasial sau religios ca atare. Raportul analitic nu identifică pentru fiecare fapt invocat grupul protejat, actul și dovezile acestei intenții. Calificarea juridică este avansată fără demonstrația individualizată necesară susținerii ei.
 
 ## Ce intenție politică este documentată
 

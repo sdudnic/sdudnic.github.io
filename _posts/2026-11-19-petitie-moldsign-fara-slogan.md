@@ -23,7 +23,18 @@ Petiția se referă la felul în care un serviciu public folosește un mesaj de 
 .moldsign-petition-image img { display:block; width:100%; height:auto; }
 .moldsign-petition-image figcaption { margin-top:.35rem; font-size:.85rem; line-height:1.4; }
 @media (max-width:640px) { .moldsign-petition-image { float:none; width:100%; margin:0 auto 1rem; } }
+.moldsign-petition-model summary { cursor:pointer; text-decoration:underline; text-underline-offset:.15em; }
+.moldsign-petition-model iframe { display:block; width:100%; height:min(72vh,52rem); min-height:22rem; margin:.75rem 0 1.25rem; border:1px solid #ddd; box-sizing:border-box; }
 </style>
+
+### Model de petiție pentru completare
+
+Completați cîmpurile dintre paranteze drepte în copia proprie, apoi semnați și depuneți petiția. [Faceți o copie în Google Docs](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/copy) · [Descărcați modelul Word (.docx)](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=docx) · [Formularul STISC](https://stisc.gov.md/ro/depune-petitie)
+
+<details class="moldsign-petition-model">
+  <summary>Vedeți modelul Google Docs pe pagină</summary>
+  <iframe src="https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/preview" title="Model de petiție către STISC în Google Docs" loading="lazy"></iframe>
+</details>
 
 <figure class="moldsign-petition-image">
   <a href="{{ page.image | relative_url }}?v=2"><img src="{{ page.image | relative_url }}?v=2" alt="{{ page.image_alt | escape }}" width="521" height="164"></a>
@@ -50,7 +61,7 @@ Stema Republicii Moldova este un simbol de stat prevăzut de art. 12 din Constit
 
 ### De ce apar în engleză etichetele din PDF?
 
-Amprenta vizuală afișează în engleză etichete precum „Digitally signed by”, „Date”, „Reason” și „Location”. Ghidul STISC prezintă aceleași etichete în PDF chiar într-un exemplu cu interfața localizată. Ghidul nu documentează o setare pentru limba etichetelor imprimate pe pagină. Nici Legea nr. 124/2022, nici standardul PAdES consultat nu impun aceste etichete în engleză. [Ghidul STISC, p. 24](https://cdn.cts.md/moldsign/Dist/MoldSign_Desktop_Ghid_Utilizator.pdf#page=24) · [Legea nr. 124/2022, art. 24 și 29](https://www.legis.md/cautare/downloadpdf/149049) · [Standardul ETSI pentru semnături PDF PAdES, secțiunea 5](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.03.01_60/en_31914201v010301p.pdf)
+Amprenta vizuală afișează în engleză etichete precum „Digitally signed by”, „Date”, „Reason” și „Location”. Ghidul STISC ilustrează aceste etichete pe pagina PDF-ului semnat și nu indică o setare pentru schimbarea limbii lor. Nici Legea nr. 124/2022, nici standardul PAdES consultat nu impun aceste etichete în engleză. [Ghidul STISC, p. 24](https://cdn.cts.md/moldsign/Dist/MoldSign_Desktop_Ghid_Utilizator.pdf#page=24) · [Legea nr. 124/2022, art. 24 și 29](https://www.legis.md/cautare/downloadpdf/149049) · [Standardul ETSI pentru semnături PDF PAdES, secțiunea 5](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.03.01_60/en_31914201v010301p.pdf)
 
 ### Măsurile solicitate
 

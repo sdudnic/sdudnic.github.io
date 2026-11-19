@@ -61,8 +61,8 @@ Amprenta vizuală afișează în engleză etichete precum „Digitally signed by
 
 Art. 13 alin. (1) din Constituție consacră statutul limbii oficiale. Art. 54 alin. (1) din Legea nr. 100/2017 cere redactarea proiectelor de acte normative în limba oficială, iar art. 1 alin. (1) din Legea nr. 173/1994 cere publicarea în această limbă a actelor oficiale pe care le enumeră. [Constituția, art. 13](https://new.parlament.md/content/documents/Constitutia_2024_ro.pdf) · [Legea nr. 100/2017, art. 54](https://www.legis.md/cautare/downloadpdf/134916) · [Legea nr. 173/1994, art. 1](https://www.legis.md/cautare/downloadpdf/152531)
 
-Standardul PAdES reglementează formatul tehnic al semnăturii. Petiția cere STISC să folosească limba moldovenească și pentru textele vizibile pe care MoldSign le adaugă în PDF, inclusiv cînd aplicația este folosită pentru semnarea actelor oficiale. [Standardul ETSI PAdES, secțiunea 5](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.03.01_60/en_31914201v010301p.pdf)
+Standardul PAdES reglementează formatul tehnic al semnăturii. Cînd un act oficial redactat în limba moldovenească este semnat cu MoldSign, etichetele adăugate în PDF ar trebui să fie în aceeași limbă. [Standardul ETSI PAdES, secțiunea 5](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.03.01_60/en_31914201v010301p.pdf)
 
 ### Ce cere petiția
 
-Modelul cere retragerea sloganului și a chenarului din șablonul implicit, cu păstrarea datelor semnatarului și a stemei acolo unde legea o permite. Cere și documentele care justifică folosirea mesajului, precum și afișarea implicită a etichetelor din PDF în limba moldovenească.
+Modelul cere retragerea sloganului și a chenarului din șablonul implicit, cu păstrarea datelor semnatarului și a stemei acolo unde legea o permite. Cere și documentele care justifică folosirea mesajului, precum și afișarea implicită a etichetelor din PDF în limba oficială.

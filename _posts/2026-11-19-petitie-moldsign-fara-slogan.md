@@ -19,6 +19,9 @@ Semnezi un PDF cu MoldSign și sub numele tău apare, într-un chenar, mesajul �
 .moldsign-petition-image img { display:block; width:100%; height:auto; }
 .moldsign-petition-image figcaption { margin-top:.35rem; font-size:.85rem; line-height:1.4; }
 @media (max-width:640px) { .moldsign-petition-image { float:none; width:100%; margin:0 auto 1rem; } }
+.moldsign-petition-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 .75rem; }
+.moldsign-petition-actions a { display:inline-flex; align-items:center; min-height:2.75rem; padding:.4rem .8rem; box-sizing:border-box; border:1px solid currentColor; border-radius:.3rem; font-weight:600; text-decoration:none; }
+.moldsign-petition-actions a:is(:hover,:focus-visible) { text-decoration:underline; text-underline-offset:.15em; }
 .moldsign-petition-model iframe { display:block; width:100%; height:min(72vh,52rem); min-height:22rem; margin:.75rem 0 1.25rem; border:1px solid #ddd; box-sizing:border-box; }
 </style>
 
@@ -43,12 +46,19 @@ Legea stabilește cum se verifică o semnătură calificată. Contează certific
 
 Pe document pot apărea „Digitally signed by”, „Date”, „Reason” și „Location”. În ghidul STISC, aceste cuvinte apar chiar pe pagina PDF-ului semnat. Dacă actul e scris în limba moldovenească, e firesc ca și datele vizibile ale semnării să poată fi citite în aceeași limbă. Petiția cere ca MoldSign să afișeze implicit etichetele în limba moldovenească. [Exemplul din ghidul STISC, p. 24](https://cdn.cts.md/moldsign/Dist/MoldSign_Desktop_Ghid_Utilizator.pdf#page=24)
 
-Pentru actele oficiale există deja reguli de limbă. Art. 13 din Constituție stabilește statutul limbii oficiale, Legea nr. 100/2017 reglementează limba în care se redactează proiectele de acte normative, iar Legea nr. 173/1994 stabilește limba de publicare pentru actele oficiale pe care le enumeră. În petiție, aceste reguli susțin cererea ca STISC să folosească limba moldovenească și pentru textele pe care aplicația le adaugă pe pagină. [Constituția, art. 13](https://new.parlament.md/content/documents/Constitutia_2024_ro.pdf) · [Legea nr. 100/2017, art. 54](https://www.legis.md/cautare/downloadpdf/134916) · [Legea nr. 173/1994, art. 1](https://www.legis.md/cautare/downloadpdf/152531)
+Pentru actele oficiale există deja reguli de limbă. Art. 13 din Constituție stabilește statutul limbii oficiale, Legea nr. 100/2017 reglementează limba în care se redactează proiectele de acte normative, iar Legea nr. 173/1994 stabilește limba de publicare pentru actele oficiale pe care le enumeră. [Constituția, art. 13](https://new.parlament.md/content/documents/Constitutia_2024_ro.pdf) · [Legea nr. 100/2017, art. 54](https://www.legis.md/cautare/downloadpdf/134916) · [Legea nr. 173/1994, art. 1](https://www.legis.md/cautare/downloadpdf/152531)
 
 ### Cum poți trimite petiția
 
-Modelul de mai jos cere scoaterea sloganului și a chenarului din șablonul implicit, cu păstrarea numelui, a datei și a stemei acolo unde legea permite folosirea ei. Ca să-l trimiți, completează o copie proprie și semneaz-o. Poți și să descarci PDF-ul, să-l tipărești și să-l completezi de mînă. [Faceți o copie în Google Docs](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/copy) · [Descărcați modelul Word (.docx)](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=docx) · [Descărcați PDF-ul pentru tipărire](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=pdf) · [Formularul STISC](https://stisc.gov.md/ro/depune-petitie)
+Modelul de mai jos cere scoaterea sloganului și a chenarului din șablonul implicit, cu păstrarea numelui, a datei și a stemei acolo unde legea permite folosirea ei. Completează o copie proprie și semneaz-o. Pentru completare de mînă, descarcă și tipărește PDF-ul.
+
+Pentru depunere online, încarcă petiția semnată electronic prin [formularul STISC](https://stisc.gov.md/ro/depune-petitie).
 
 <div class="moldsign-petition-model">
+  <nav class="moldsign-petition-actions" aria-label="Opțiuni pentru modelul de petiție">
+    <a href="https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/copy">Fă o copie în Google Docs</a>
+    <a href="https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=docx">Descarcă Word</a>
+    <a href="https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=pdf">Descarcă PDF</a>
+  </nav>
   <iframe src="https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/preview" title="Model de petiție către STISC în Google Docs" loading="lazy"></iframe>
 </div>

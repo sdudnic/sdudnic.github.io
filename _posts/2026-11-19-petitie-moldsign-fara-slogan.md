@@ -21,7 +21,13 @@ Semnezi un PDF cu MoldSign și sub numele tău apare, într-un chenar, mesajul �
 .moldsign-petition-image img { display:block; width:100%; height:auto; }
 .moldsign-petition-image figcaption { margin-top:.35rem; font-size:.85rem; line-height:1.4; }
 @media (max-width:640px) { .moldsign-petition-image { float:none; width:100%; margin:0 auto 1rem; } }
-#model-petitie { clear:both; scroll-margin-top:1.25rem; }
+.moldsign-petition-layout { clear:both; }
+#model-petitie { scroll-margin-top:1.25rem; }
+@media (min-width:1000px) {
+  .moldsign-petition-layout { display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); grid-template-areas:"explanation model"; align-items:start; gap:clamp(1.5rem,3vw,2.5rem); }
+  .moldsign-petition-panel { grid-area:model; min-width:0; }
+  .moldsign-petition-explanation { grid-area:explanation; min-width:0; }
+}
 .moldsign-petition-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 .75rem; }
 .moldsign-petition-actions a { display:inline-flex; align-items:center; min-height:2.75rem; padding:.4rem .8rem; box-sizing:border-box; border:1px solid currentColor; border-radius:.3rem; font-weight:600; text-decoration:none; }
 .moldsign-petition-actions a:is(:hover,:focus-visible) { text-decoration:underline; text-underline-offset:.15em; }
@@ -38,6 +44,10 @@ Semnezi un PDF cu MoldSign și sub numele tău apare, într-un chenar, mesajul �
 În iulie 2024, Serviciul Tehnologia Informației și Securitate Cibernetică (STISC) a explicat că a adăugat mesajul pentru campania guvernamentală „Europa pentru tine”. Campania fusese anunțată pînă la 18 august 2024. Peste doi ani, chenarul încă apărea pe PDF-uri semnate, inclusiv pe un document publicat de Guvern în noiembrie 2026. [Explicația STISC pentru NewsMaker](https://newsmaker.md/ro/semnatura-electronica-la-pachet-cu-moldova-europeana-criticile-internautilor-si-explicatia-guvernului) · [Anunțul Guvernului](https://old.gov.md/ro/content/guvernul-lanseaza-campania-europa-pentru-tine-informeaza-te-despre-beneficiile-si) · [PDF publicat de Guvern în 2026](https://gov.md/sites/default/files/media/documents/sedinte-de-guvern/2026-11/1046-MDED-2026.pdf)
 
 Chenarul negru poate aminti de un anunț funerar. E o alegere ciudată pentru un mesaj care trebuia să inspire încredere în integrarea europeană. Mai important este locul în care apare textul. Cînd îl vede imediat sub numele semnatarului, destinatarul poate crede că mesajul îi aparține acelei persoane. Orice semnatar ar trebui să poată decide ce mesaj apare lîngă numele său, indiferent de opinia pe care o are despre aderarea la UE. [Constituția, art. 32](https://new.parlament.md/content/documents/Constitutia_2024_ro.pdf) · [Comentariul general ONU nr. 34, par. 10](https://www.ohchr.org/sites/default/files/english/bodies/hrc/docs/gc34.pdf)
+
+<div class="moldsign-petition-layout" markdown="1">
+
+<div class="moldsign-petition-panel" markdown="1">
 
 ### Modelul de petiție {#model-petitie}
 
@@ -56,6 +66,10 @@ Pentru depunere online, încarcă petiția semnată electronic prin [formularul 
 
 [Deschide documentul direct în Google Docs](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/preview).
 
+</div>
+
+<div class="moldsign-petition-explanation" markdown="1">
+
 ### Poți păstra stema fără slogan?
 
 Ghidul MoldSign Desktop Suite arată cum să ascunzi tot blocul vizibil. Odată cu sloganul dispar de pe pagină stema, numele și data. Semnătura electronică rămîne în fișier și poate fi verificată. Ghidul nu arată cum să scoți doar sloganul și să păstrezi stema și datele semnării. [Ghidul MoldSign, p. 10](https://semnatura.md/files/documents/MoldSign_Desktop_Ghid_Utilizator.pdf#page=10)
@@ -67,3 +81,7 @@ Legea stabilește cum se verifică o semnătură calificată. Contează certific
 Pe document pot apărea „Digitally signed by”, „Date”, „Reason” și „Location”. În ghidul STISC, aceste cuvinte apar chiar pe pagina PDF-ului semnat. Dacă actul e scris în limba moldovenească, e firesc ca și datele vizibile ale semnării să poată fi citite în aceeași limbă. Petiția cere ca MoldSign să afișeze implicit etichetele în limba moldovenească. [Exemplul din ghidul STISC, p. 24](https://cdn.cts.md/moldsign/Dist/MoldSign_Desktop_Ghid_Utilizator.pdf#page=24)
 
 Pentru actele oficiale există deja reguli de limbă. Art. 13 din Constituție stabilește statutul limbii oficiale, Legea nr. 100/2017 reglementează limba în care se redactează proiectele de acte normative, iar Legea nr. 173/1994 stabilește limba de publicare pentru actele oficiale pe care le enumeră. [Constituția, art. 13](https://new.parlament.md/content/documents/Constitutia_2024_ro.pdf) · [Legea nr. 100/2017, art. 54](https://www.legis.md/cautare/downloadpdf/134916) · [Legea nr. 173/1994, art. 1](https://www.legis.md/cautare/downloadpdf/152531)
+
+</div>
+
+</div>

@@ -26,7 +26,7 @@ Petiția se referă la felul în care un serviciu public folosește un mesaj de 
 
 ### Model de petiție pentru completare
 
-Completați cîmpurile dintre paranteze drepte în copia proprie, apoi semnați și depuneți petiția. [Faceți o copie în Google Docs](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/copy) · [Descărcați modelul Word (.docx)](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=docx) · [Formularul STISC](https://stisc.gov.md/ro/depune-petitie)
+Completați rubricile în copia proprie sau descărcați PDF-ul, tipăriți-l și completați-l de mînă. Semnați documentul înainte de depunere. [Faceți o copie în Google Docs](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/copy) · [Descărcați modelul Word (.docx)](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=docx) · [Descărcați PDF-ul pentru tipărire](https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/export?format=pdf) · [Formularul STISC](https://stisc.gov.md/ro/depune-petitie)
 
 <div class="moldsign-petition-model">
   <iframe src="https://docs.google.com/document/d/1uQHo-f6lmeTeelu9xKnbxybqhPG1xAkDBZxMDfs91vw/preview" title="Model de petiție către STISC în Google Docs" loading="lazy"></iframe>

@@ -6,7 +6,7 @@ date: 2026-11-19 11:30:00 +0100
 lang: mo
 tags: [Moldova, semnătură electronică, petiție, STISC]
 image: /assets/2026-11-19-moldsign-amprenta.png
-image_alt: 'Amprentă MoldSign cu Stema de Stat și inscripția „MOLDOVA EUROPEANĂ”, cu numele semnatarului acoperit'
+image_alt: 'Amprentă MoldSign cu Stema de Stat și inscripția „MOLDOVA EUROPEANĂ”'
 published: true
 ---
 
@@ -16,6 +16,8 @@ published: true
 
 <!--more-->
 
+Petiția se referă la felul în care un serviciu public folosește un mesaj de campanie pe documentele particularilor. Fiecare semnatar este liber să își formeze și să își exprime propria opinie despre integrarea europeană. Această petiție nu ia poziție asupra aderării Republicii Moldova la Uniunea Europeană.
+
 <style>
 .moldsign-petition-image { float:right; width:48%; max-width:420px; margin:0 0 1rem 1.25rem; border:1px solid #ddd; padding:.5rem; box-sizing:border-box; }
 .moldsign-petition-image img { display:block; width:100%; height:auto; }
@@ -24,8 +26,8 @@ published: true
 </style>
 
 <figure class="moldsign-petition-image">
-  <a href="{{ page.image | relative_url }}"><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="521" height="164"></a>
-  <figcaption>Amprentă MoldSign datată 17 noiembrie 2026. Numele semnatarului a fost acoperit.</figcaption>
+  <a href="{{ page.image | relative_url }}?v=2"><img src="{{ page.image | relative_url }}?v=2" alt="{{ page.image_alt | escape }}" width="521" height="164"></a>
+  <figcaption>Amprentă MoldSign din 17 noiembrie 2026.</figcaption>
 </figure>
 
 ### Cum a ajuns mesajul în documentele semnate
@@ -46,8 +48,13 @@ Art. 32 alin. (1) din Constituție garantează libertatea opiniei și a exprimă
 
 Stema Republicii Moldova este un simbol de stat prevăzut de art. 12 din Constituție. Solicit clarificarea temeiului reproducerii ei în șablon și a aplicabilității art. 8 alin. (4) din Legea nr. 32/2013, care reglementează folosirea însemnelor emblematice neheraldice alături de Stemă, dacă STISC califică astfel marcajul de campanie. În plus, chenarul negru îmi amintește de anunțurile funerare. Consider că această asociere poate submina chiar mesajul despre integrarea europeană pe care campania a urmărit să îl promoveze. [Constituția, art. 12](https://new.parlament.md/content/documents/Constitutia_2024_ro.pdf) · [Legea nr. 32/2013 privind Stema de Stat](https://www.legis.md/cautare/getResults?doc_id=51965&lang=ro)
 
+### De ce apar în engleză etichetele din PDF?
+
+Amprenta vizuală afișează în engleză etichete precum „Digitally signed by”, „Date”, „Reason” și „Location”. Ghidul STISC prezintă aceleași etichete în PDF chiar într-un exemplu cu interfața localizată. Ghidul nu documentează o setare pentru limba etichetelor imprimate pe pagină. Nici Legea nr. 124/2022, nici standardul PAdES consultat nu impun aceste etichete în engleză. [Ghidul STISC, p. 24](https://cdn.cts.md/moldsign/Dist/MoldSign_Desktop_Ghid_Utilizator.pdf#page=24) · [Legea nr. 124/2022, art. 24 și 29](https://www.legis.md/cautare/downloadpdf/149049) · [Standardul ETSI pentru semnături PDF PAdES, secțiunea 5](https://www.etsi.org/deliver/etsi_en/319100_319199/31914201/01.03.01_60/en_31914201v010301p.pdf)
+
 ### Măsurile solicitate
 
 1. Eliminați inscripția „MOLDOVA EUROPEANĂ” și chenarul ei din șablonul implicit pentru documentele semnate de particulari. Păstrați în amprenta vizuală numele, data și, acolo unde legea permite, Stema de Stat.
 2. Comunicați copia actului sau documentului care a aprobat introducerea inscripției, documentele existente care motivează menținerea ei după campanie și eventualul aviz heraldic. Dacă astfel de documente nu există, vă rog să precizați acest lucru.
-3. Comunicați un răspuns motivat în fapt și în drept pentru fiecare solicitare. În cazul menținerii inscripției în șablonul implicit, indicați norma concretă care autorizează această practică, scopul actual al măsurii și motivele pentru care un șablon fără slogan ar fi insuficient. Dacă soluționarea ține de competența altei autorități, solicit readresarea petiției în condițiile art. 74 din Codul administrativ. [Codul administrativ, art. 31 și 74](https://legi.md/LP_116-2018)
+3. Explicați de ce etichetele amprentei sînt afișate în engleză, precizați dacă există o cerință care impune această limbă și indicați dacă utilizatorul poate afișa etichetele în limba moldovenească. Dacă există o astfel de setare, comunicați versiunea aplicației și pașii necesari.
+4. Comunicați un răspuns motivat în fapt și în drept pentru fiecare solicitare. În cazul menținerii inscripției în șablonul implicit, indicați norma concretă care autorizează această practică, scopul actual al măsurii și motivele pentru care un șablon fără slogan ar fi insuficient. Dacă soluționarea ține de competența altei autorități, solicit readresarea petiției în condițiile art. 74 din Codul administrativ. [Codul administrativ, art. 31 și 74](https://legi.md/LP_116-2018)
